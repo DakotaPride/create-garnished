@@ -48,6 +48,10 @@ public class WithMeltedCinderFlourItem extends GarnishedNutItem {
 	@Nullable
 	@Override
 	public FoodProperties getFoodProperties() {
-		return new FoodProperties.Builder().effect(new MobEffectInstance(getEffect(), 240, 1), 1.0F).build();
+		if (getEffect() != null) {
+			return new FoodProperties.Builder().effect(new MobEffectInstance(getEffect(), 240, 1), 1.0F).build();
+		} else {
+			return new FoodProperties.Builder().saturationMod(0.3F).nutrition(6).build();
+		}
 	}
 }
