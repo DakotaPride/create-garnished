@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "garnished",
+  "version": "${version}",
+  "name": "Create: Garnished",
+  "description": "Cashews! Almonds! Walnuts...",
+  "authors": [
+    "DakotaPride"
+  ],
+  "contact": {
+    "sources": "https://github.com/Fabricators-of-Create/create-fabric-addon-template"
+  },
+  "license": "MIT",
+  "icon": "assets/garnished/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.dakotapride.garnished.CreateGarnished"
+    ],
+    "client": [
+      "net.dakotapride.garnished.CreateGarnishedClient"
+    ]
+  },
+  "mixins": [
+    "garnished.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabric_loader_version}",
+    "fabric-api": ">=${fabric_api_version}",
+    "create": "${create_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}

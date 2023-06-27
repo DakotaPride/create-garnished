@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "garnished:ungarnished_cashew"
+    },
+    {
+      "amount": 27000,
+      "fluid": "garnished:garnished_water",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:cashew"
+    },
+    {
+      "amount": 1000,
+      "fluid": "minecraft:water"
+    }
+  ]
+}

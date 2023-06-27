@@ -1,0 +1,22 @@
+{
+  "itemGroup.create.garnished": "Create: Garnished",
+  "text.garnished.nut.ungarnished": "Ungarnished",
+  "text.garnished.nut.garnished": "Garnished",
+  "text.garnished.nut.cracked": "Cracked [HOLD SHIFT]",
+  "text.garnished.nut.cracked.desc": "Cracked nuts are used for reproduction!",
+  "text.garnished.nut.cracked.desc.secondary": "Place this down on tilled soil and wait.",
+  "text.garnished.hold_shift": "[HOLD SHIFT]",
+  "text.garnished.soil.desc": "Use garnished soil to garnish your water!",
+  "text.garnished.nut.cinder_flour": "Cinder Flour",
+  "text.garnished.nut.cinder_flour.melted": "Melted Cinder Flour",
+  "text.garnished.nut.cinder_flour.effect": "Available Effect: [%d]",
+
+  "item.garnished.cashew": "Cashew",
+  "item.garnished.ungarnished_cashew": "Cashew",
+  "item.garnished.cinder_cashew": "Cashew",
+  "item.garnished.melted_cinder_cashew": "Cashew",
+  "block.garnished.cashew_crop": "Cashew",
+  "item.garnished.garnished_soil": "Garnished Soil",
+
+  "block.garnished.garnishing_stand": "[Dev] Garnishing Stand"
+}

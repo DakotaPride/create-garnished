@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "garnished:cinder_cashew"
+    },
+    {
+      "amount": 27000,
+      "fluid": "minecraft:lava",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:melted_cinder_cashew"
+    }
+  ]
+}
