@@ -1,0 +1,20 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "garnished:walnut"
+    }
+  ],
+  "processingTime": 150,
+  "results": [
+    {
+      "count": 1,
+      "item": "garnished:cracked_walnut"
+    },
+    {
+      "chance": 0.15,
+      "item": "garnished:cracked_walnut",
+      "count": 2
+    }
+  ]
+}

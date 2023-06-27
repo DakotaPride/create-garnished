@@ -51,7 +51,7 @@ public class GarnishedItems {
 			REGISTRATE.item("melted_cinder_walnut", WithMeltedCinderFlourItem::new).register();
 	public static final ItemEntry<SweetenedNutItem> SWEETENED_WALNUT =
 			REGISTRATE.item("sweetened_walnut", SweetenedNutItem::new).register();
-	public static final ItemEntry<WithMeltedCinderFlourItem> SPEED_CINDER_WALNUT =
+	public static final ItemEntry<WithMeltedCinderFlourItem> STRENGTH_CINDER_WALNUT =
 			REGISTRATE.item("cinder_walnut_strength", WithMeltedCinderFlourItem::new).register();
 
 	// Almonds
@@ -68,8 +68,8 @@ public class GarnishedItems {
 			REGISTRATE.item("melted_cinder_almond", WithMeltedCinderFlourItem::new).register();
 	public static final ItemEntry<SweetenedNutItem> SWEETENED_ALMOND =
 			REGISTRATE.item("sweetened_almond", SweetenedNutItem::new).register();
-	public static final ItemEntry<WithMeltedCinderFlourItem> SPEED_CINDER_ALMOND =
-			REGISTRATE.item("cinder_almond_strength", WithMeltedCinderFlourItem::new).register();
+	public static final ItemEntry<WithMeltedCinderFlourItem> HASTE_CINDER_ALMOND =
+			REGISTRATE.item("cinder_almond_haste", WithMeltedCinderFlourItem::new).register();
 
 	public static final ItemEntry<GarnishedSoilItem> GARNISHED_SOIL =
 			REGISTRATE.item("garnished_soil", GarnishedSoilItem::new).register();

@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "garnished:cinder_walnut"
+    },
+    {
+      "amount": 27000,
+      "fluid": "minecraft:lava",
+      "nbt": {}
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:cinder_walnut_strength"
+    }
+  ]
+}
