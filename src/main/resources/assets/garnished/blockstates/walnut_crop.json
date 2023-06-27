@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "garnished:block/walnut_stage0"
+    },
+    "age=1": {
+      "model": "garnished:block/walnut_stage1"
+    },
+    "age=2": {
+      "model": "garnished:block/walnut_stage2"
+    },
+    "age=3": {
+      "model": "garnished:block/walnut_stage3"
+    }
+  }
+}

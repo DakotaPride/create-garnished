@@ -10,13 +10,28 @@
   "text.garnished.nut.cinder_flour": "Cinder Flour",
   "text.garnished.nut.cinder_flour.melted": "Melted Cinder Flour",
   "text.garnished.nut.cinder_flour.effect": "Available Effect: [%d]",
+  "text.garnished.nut.sweetened": "Sweetened",
 
   "item.garnished.cashew": "Cashew",
   "item.garnished.ungarnished_cashew": "Cashew",
   "item.garnished.cinder_cashew": "Cashew",
   "item.garnished.melted_cinder_cashew": "Cashew",
+  "item.garnished.sweetened_cashew": "Cashew",
   "block.garnished.cashew_crop": "Cashew",
-  "item.garnished.garnished_soil": "Garnished Soil",
 
-  "block.garnished.garnishing_stand": "[Dev] Garnishing Stand"
+  "item.garnished.walnut": "Walnut",
+  "item.garnished.ungarnished_walnut": "Walnut",
+  "item.garnished.cinder_walnut": "Walnut",
+  "item.garnished.melted_cinder_walnut": "Walnut",
+  "item.garnished.sweetened_walnut": "Walnut",
+  "block.garnished.walnut_crop": "Walnut",
+
+  "item.garnished.almond": "Almond",
+  "item.garnished.ungarnished_almond": "Almond",
+  "item.garnished.cinder_almond": "Almond",
+  "item.garnished.melted_cinder_almond": "Almond",
+  "item.garnished.sweetened_almond": "Almond",
+  "block.garnished.almond_crop": "Almond",
+
+  "item.garnished.garnished_soil": "Garnished Soil"
 }

@@ -13,6 +13,8 @@ public class CreateGarnishedClient implements ClientModInitializer {
 	public void onInitializeClient() {
 
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.CASHEW_CROP.get(), RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.WALNUT_CROP.get(), RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.ALMOND_CROP.get(), RenderType.cutout());
 
 		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.GARNISHED_WATER.get().getSource(),
 				GarnishedFluids.GARNISHED_WATER.get().getFlowing(), SimpleFluidRenderHandler.coloredWater(0x5A92ED));
