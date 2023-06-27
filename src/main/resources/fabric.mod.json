@@ -8,7 +8,8 @@
     "DakotaPride"
   ],
   "contact": {
-    "sources": "https://github.com/Fabricators-of-Create/create-fabric-addon-template"
+    "sources": "https://github.com/DakotaPride/create-garnished",
+    "issues": "https://github.com/DakotaPride/create-garnished/issues"
   },
   "license": "MIT",
   "icon": "assets/garnished/icon.png",

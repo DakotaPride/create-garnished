@@ -1,7 +1,5 @@
 package net.dakotapride.garnished;
 
-import com.jozufozu.flywheel.backend.RenderLayer;
-
 import net.dakotapride.garnished.registry.GarnishedBlocks;
 import net.dakotapride.garnished.registry.GarnishedFluids;
 import net.fabricmc.api.ClientModInitializer;
