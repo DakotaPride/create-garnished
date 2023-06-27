@@ -27,7 +27,7 @@ public class WithMeltedCinderFlourItem extends GarnishedNutItem {
 	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, @NotNull List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
 		tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.melted").withStyle(ChatFormatting.RED));
 		if (getEffect() != null) {
-			tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect", getEffect().getDescriptionId()).withStyle(ChatFormatting.GRAY));
+			tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect", getEffect().getDisplayName()).withStyle(ChatFormatting.GRAY));
 		}
 	}
 
