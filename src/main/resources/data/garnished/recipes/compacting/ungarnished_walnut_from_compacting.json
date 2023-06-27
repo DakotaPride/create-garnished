@@ -5,10 +5,10 @@
       "item": "create:dough"
     },
     {
-      "item": "minecraft:pumpkin_seeds"
+      "item": "minecraft:wheat_seeds"
     },
     {
-      "amount": 8100,
+      "amount": 16200,
       "fluid": "minecraft:water",
       "nbt": {}
     }
