@@ -1,0 +1,21 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "create:dough"
+    },
+    {
+      "item": "minecraft:beetroot_seeds"
+    },
+    {
+      "amount": 8100,
+      "fluid": "minecraft:water",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:ungarnished_almond"
+    }
+  ]
+}
