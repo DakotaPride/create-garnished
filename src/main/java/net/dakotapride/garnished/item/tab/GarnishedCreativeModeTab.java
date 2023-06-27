@@ -16,6 +16,6 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 
 	@Override
 	public @NotNull ItemStack makeIcon() {
-		return GarnishedBlocks.GARNISHING_STAND.asStack();
+		return GarnishedItems.GARNISHED_SOIL.asStack();
 	}
 }
