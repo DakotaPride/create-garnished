@@ -1,0 +1,20 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "garnished:pecan"
+    }
+  ],
+  "processingTime": 150,
+  "results": [
+    {
+      "count": 1,
+      "item": "garnished:cracked_pecan"
+    },
+    {
+      "chance": 0.15,
+      "item": "garnished:cracked_pecan",
+      "count": 2
+    }
+  ]
+}

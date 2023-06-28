@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "garnished:cashew_template",
+    "garnished:walnut_template",
+    "garnished:almond_template",
+    "garnished:pecan_template"
+  ]
+}

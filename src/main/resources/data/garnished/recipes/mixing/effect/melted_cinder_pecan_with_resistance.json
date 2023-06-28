@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "garnished:cinder_pecan"
+    },
+    {
+      "amount": 333,
+      "fluid": "minecraft:lava",
+      "nbt": {}
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:cinder_pecan_resistance"
+    }
+  ]
+}

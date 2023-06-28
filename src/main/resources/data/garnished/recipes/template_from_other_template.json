@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "templates",
+  "ingredients": [
+    {
+      "tag": "garnished:templates"
+    }
+  ],
+  "result": {
+    "item": "garnished:template"
+  }
+}

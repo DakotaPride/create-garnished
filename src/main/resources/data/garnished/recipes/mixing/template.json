@@ -1,21 +1,22 @@
 {
-  "type": "create:compacting",
+  "type": "create:mixing",
+  "heatRequirement": "heated",
   "ingredients": [
     {
       "item": "create:dough"
     },
     {
-      "item": "minecraft:wheat_seeds"
+      "item": "create:iron_sheet"
     },
     {
-      "amount": 16200,
+      "amount": 27000,
       "fluid": "minecraft:water",
       "nbt": {}
     }
   ],
   "results": [
     {
-      "item": "garnished:ungarnished_walnut"
+      "item": "garnished:template"
     }
   ]
 }

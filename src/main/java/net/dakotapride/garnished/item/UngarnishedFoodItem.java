@@ -15,9 +15,14 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class UngarnishedNutItem extends UngarnishedFoodItem {
-	public UngarnishedNutItem(Properties properties) {
-		super(properties.food(new FoodProperties.Builder().saturationMod(0.2F).nutrition(3)
+public class UngarnishedFoodItem extends Item {
+	public UngarnishedFoodItem(Properties properties) {
+		super(properties.food(new FoodProperties.Builder().saturationMod(0.3F).nutrition(4)
 				.effect(new MobEffectInstance(MobEffects.CONFUSION, 240), 1.0F).build()));
+	}
+
+	@Override
+	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltipComponents, @NotNull TooltipFlag isAdvanced) {
+		tooltipComponents.add(Component.translatable("text.garnished.nut.ungarnished").withStyle(ChatFormatting.GRAY));
 	}
 }

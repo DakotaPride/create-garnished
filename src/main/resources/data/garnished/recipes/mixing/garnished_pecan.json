@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "garnished:ungarnished_pecan"
+    },
+    {
+      "amount": 27000,
+      "fluid": "garnished:garnished_water",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:pecan"
+    },
+    {
+      "amount": 1000,
+      "fluid": "minecraft:water"
+    }
+  ]
+}

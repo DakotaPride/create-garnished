@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "amount": 27000,
+      "fluid": "garnished:garnished_water",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:garnished_sweet_berries"
+    }
+  ]
+}

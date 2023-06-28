@@ -27,5 +27,10 @@ public class GarnishedBlocks {
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.register();
 
+	public static final BlockEntry<NutCropBlock> PECAN_CROP =
+			REGISTRATE.block("pecan_crop", NutCropBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.register();
+
 	public static void setRegister() {}
 }

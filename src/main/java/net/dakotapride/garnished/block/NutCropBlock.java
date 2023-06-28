@@ -38,6 +38,8 @@ public class NutCropBlock extends CropBlock {
 			return GarnishedItems.CRACKED_WALNUT.get();
 		} else if (this == GarnishedBlocks.ALMOND_CROP.get()) {
 			return GarnishedItems.CRACKED_ALMOND.get();
+		} else if (this == GarnishedBlocks.PECAN_CROP.get()) {
+			return GarnishedItems.CRACKED_PECAN.get();
 		} else {
 			return GarnishedItems.CRACKED_CASHEW.get();
 		}

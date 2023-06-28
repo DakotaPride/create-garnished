@@ -11,6 +11,14 @@
   "text.garnished.nut.cinder_flour.melted": "Melted Cinder Flour",
   "text.garnished.nut.cinder_flour.effect": "Available Effect: [%d]",
   "text.garnished.nut.sweetened": "Sweetened",
+  "text.garnished.template.standard": "No Nut Mould",
+  "text.garnished.template.cashew": "Cashew Mould",
+  "text.garnished.template.walnut": "Walnut Mould",
+  "text.garnished.template.almond": "Almond Mould",
+  "text.garnished.template.pecan": "Pecan Mould",
+  "text.garnished.template.applying": "",
+  "text.garnished.template.desc": "[Requires Polymorph mod]",
+  "text.garnished.template.desc.secondary": "Similar to Gearboxes, can be used to craft other templates!",
 
   "item.garnished.cashew": "Cashew",
   "item.garnished.ungarnished_cashew": "Cashew",
@@ -18,6 +26,7 @@
   "item.garnished.melted_cinder_cashew": "Cashew",
   "item.garnished.sweetened_cashew": "Cashew",
   "block.garnished.cashew_crop": "Cashew",
+  "item.garnished.cinder_cashew_speed": "Cashew",
 
   "item.garnished.walnut": "Walnut",
   "item.garnished.ungarnished_walnut": "Walnut",
@@ -25,6 +34,7 @@
   "item.garnished.melted_cinder_walnut": "Walnut",
   "item.garnished.sweetened_walnut": "Walnut",
   "block.garnished.walnut_crop": "Walnut",
+  "item.garnished.cinder_walnut_strength": "Walnut",
 
   "item.garnished.almond": "Almond",
   "item.garnished.ungarnished_almond": "Almond",
@@ -32,6 +42,23 @@
   "item.garnished.melted_cinder_almond": "Almond",
   "item.garnished.sweetened_almond": "Almond",
   "block.garnished.almond_crop": "Almond",
+  "item.garnished.cinder_almond_haste": "Almond",
+
+  "item.garnished.pecan": "Pecan",
+  "item.garnished.ungarnished_pecan": "Pecan",
+  "item.garnished.cinder_pecan": "Pecan",
+  "item.garnished.melted_cinder_pecan": "Pecan",
+  "item.garnished.sweetened_pecan": "Pecan",
+  "block.garnished.pecan_crop": "Pecan",
+  "item.garnished.cinder_pecan_resistance": "Pecan",
+
+  "item.garnished.garnished_sweet_berries": "Sweet Berries",
+
+  "item.garnished.template": "Garnishment Template",
+  "item.garnished.cashew_template": "Garnishment Template",
+  "item.garnished.walnut_template": "Garnishment Template",
+  "item.garnished.almond_template": "Garnishment Template",
+  "item.garnished.pecan_template": "Garnishment Template",
 
   "item.garnished.garnished_soil": "Garnished Soil",
   "item.garnished.garnished_water_bucket": "Garnished Water Bucket",

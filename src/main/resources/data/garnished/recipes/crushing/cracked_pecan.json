@@ -1,0 +1,20 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "garnished:pecan"
+    }
+  ],
+  "processingTime": 150,
+  "results": [
+    {
+      "count": 1,
+      "item": "garnished:cracked_pecan"
+    },
+    {
+      "chance": 0.25,
+      "item": "garnished:cracked_pecan",
+      "count": 1
+    }
+  ]
+}

@@ -18,7 +18,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 
-public class WithMeltedCinderFlourItem extends GarnishedNutItem {
+public class WithMeltedCinderFlourItem extends GarnishedFoodItem {
 	public WithMeltedCinderFlourItem(Properties properties) {
 		super(properties);
 	}
@@ -40,6 +40,8 @@ public class WithMeltedCinderFlourItem extends GarnishedNutItem {
 			effect = MobEffects.DAMAGE_BOOST;
 		} else if (this.getDefaultInstance().getItem() == GarnishedItems.HASTE_CINDER_ALMOND.get()) {
 			effect = MobEffects.DIG_SPEED;
+		} else if (this.getDefaultInstance().getItem() == GarnishedItems.RESISTANCE_CINDER_PECAN.get()) {
+			effect = MobEffects.DAMAGE_RESISTANCE;
 		}
 
 		return effect;
