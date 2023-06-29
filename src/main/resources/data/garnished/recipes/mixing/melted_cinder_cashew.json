@@ -6,9 +6,12 @@
       "item": "garnished:cinder_cashew"
     },
     {
-      "amount": 27000,
-      "fluid": "minecraft:lava",
+      "amount": 14000,
+      "fluid": "minecraft:water",
       "nbt": {}
+    },
+    {
+      "item": "minecraft:nether_wart"
     }
   ],
   "results": [

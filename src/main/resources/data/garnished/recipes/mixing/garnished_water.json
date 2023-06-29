@@ -2,8 +2,19 @@
   "type": "create:mixing",
   "ingredients": [
     {
-      "item": "garnished:garnished_soil"
+      "item": "minecraft:sugar"
     },
+    [
+      {
+        "item": "garnished:vanilla"
+      },
+      {
+        "item": "minecraft:pumpkin"
+      },
+      {
+        "tag": "c:seeds"
+      }
+    ],
     {
       "amount": 81000,
       "fluid": "minecraft:water",
