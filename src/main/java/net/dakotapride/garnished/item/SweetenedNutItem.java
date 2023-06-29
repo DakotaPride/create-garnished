@@ -14,7 +14,7 @@ import java.util.List;
 
 public class SweetenedNutItem extends Item {
 	public SweetenedNutItem(Properties properties) {
-		super(properties.food(new FoodProperties.Builder().saturationMod(0.6F).nutrition(4).build()));
+		super(properties.food(new FoodProperties.Builder().saturationMod(0.4F).nutrition(7).build()));
 	}
 
 	@Override
