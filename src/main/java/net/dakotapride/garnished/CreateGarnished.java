@@ -37,6 +37,7 @@ public class CreateGarnished implements ModInitializer {
 		GarnishedBlocks.setRegister();
 		GarnishedTabs.setRegister();
 		GarnishedFluids.setRegister();
+		GarnishedFeatures.setRegister();
 		REGISTRATE.get().register();
 
 		// Generation

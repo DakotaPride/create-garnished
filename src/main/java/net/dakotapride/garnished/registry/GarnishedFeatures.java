@@ -24,6 +24,8 @@ public class GarnishedFeatures {
 	public static final Holder<PlacedFeature> NUT_PLANT_PLACED = PlacementUtils.register(CreateGarnished.ID + ":nut_plant_placed",
 			NUT_PLANT_CONFIGURED, RarityFilter.onAverageOnceEvery(4), InSquarePlacement.spread(),
 			PlacementUtils.HEIGHTMAP, BiomeFilter.biome());
+
+	public static void setRegister() {}
 }
 
 
