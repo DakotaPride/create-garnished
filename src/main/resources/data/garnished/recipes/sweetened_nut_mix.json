@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "garnished:sweetened_nuts"
+    },
+    {
+      "tag": "garnished:sweetened_nuts"
+    },
+    [
+      {
+        "item": "garnished:garnished_sweet_berries"
+      },
+      {
+        "item": "minecraft:sweet_berries"
+      },
+      {
+        "item": "create:chocolate_glazed_berries"
+      }
+    ]
+  ],
+  "result": {
+    "item": "garnished:sweetened_nut_mix"
+  }
+}

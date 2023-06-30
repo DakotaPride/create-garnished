@@ -31,20 +31,20 @@ public class GarnishedFluids {
 			.creativeModeTab(() -> GarnishedTabs.GARNISHED);
 
 
-	public static final FluidEntry<SimpleFlowableFluid.Flowing> GARNISHED_WATER;
+	public static final FluidEntry<SimpleFlowableFluid.Flowing> GARNISH;
 
 	static  {
-		GARNISHED_WATER = REGISTRATE
-				.fluid("garnished_water",
-						new ResourceLocation(CreateGarnished.ID, "fluid/garnished_water_still"),
-						new ResourceLocation(CreateGarnished.ID, "fluid/garnished_water_flowing")
+		GARNISH = REGISTRATE
+				.fluid("garnish",
+						new ResourceLocation(CreateGarnished.ID, "fluid/garnish_still"),
+						new ResourceLocation(CreateGarnished.ID, "fluid/garnish_flowing")
 				)
-				.fluidProperties(p -> p.levelDecreasePerBlock(1)
+				.fluidProperties(p -> p.levelDecreasePerBlock(2)
 						.canMultiply()
-						.tickRate(5)
-						.flowSpeed(2)
+						.tickRate(25)
+						.flowSpeed(3)
 						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished_water", 1500, 800))
+				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.liquid_garnish", 1500, 800))
 				.onRegisterAfter(Registry.ITEM_REGISTRY, fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->

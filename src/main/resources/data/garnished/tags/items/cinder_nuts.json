@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#garnished:melted_cinder_nuts",
+    "garnished:cinder_almond",
+    "garnished:cinder_pecan",
+    "garnished:cinder_walnut",
+    "garnished:cinder_cashew",
+    "garnished:cinder_pistachio"
+  ]
+}

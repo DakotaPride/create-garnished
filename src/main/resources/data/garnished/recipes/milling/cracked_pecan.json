@@ -2,7 +2,7 @@
   "type": "create:milling",
   "ingredients": [
     {
-      "item": "garnished:pecan"
+      "item": "garnished:ungarnished_pecan"
     }
   ],
   "processingTime": 150,

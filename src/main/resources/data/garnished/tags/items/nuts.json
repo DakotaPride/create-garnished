@@ -1,9 +1,10 @@
 {
   "replace": false,
   "values": [
-    "garnished:cashew",
-    "garnished:walnut",
-    "garnished:almond",
-    "garnished:pecan"
+    "#garnished:sweetened_nuts",
+    "#garnished:unsweetened_nuts",
+    "#garnished:cracked_nuts",
+    "#garnished:ungarnished_nuts",
+    "#garnished:cinder_nuts"
   ]
 }

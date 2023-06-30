@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "garnished:ungarnished_walnut"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "garnished:ungarnished_pistachio"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "garnished:ungarnished_pecan"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "garnished:ungarnished_cashew"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "garnished:ungarnished_almond"
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:explosion_decay"
+    }
+  ]
+}

@@ -22,7 +22,7 @@ public class NutCropBlock extends CropBlock {
 	public static final IntegerProperty AGE = IntegerProperty.create("age", 0, 3);
 
 	public NutCropBlock(Properties properties) {
-		super(FabricBlockSettings.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP));
+		super(Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP));
 	}
 
 	@Override
@@ -40,6 +40,8 @@ public class NutCropBlock extends CropBlock {
 			return GarnishedItems.CRACKED_ALMOND.get();
 		} else if (this == GarnishedBlocks.PECAN_CROP.get()) {
 			return GarnishedItems.CRACKED_PECAN.get();
+		} else if (this == GarnishedBlocks.PISTACHIO_CROP.get()) {
+			return GarnishedItems.CRACKED_PISTACHIO.get();
 		} else {
 			return GarnishedItems.CRACKED_CASHEW.get();
 		}

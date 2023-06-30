@@ -42,6 +42,8 @@ public class WithMeltedCinderFlourItem extends GarnishedFoodItem {
 			effect = MobEffects.DIG_SPEED;
 		} else if (this.getDefaultInstance().getItem() == GarnishedItems.RESISTANCE_CINDER_PECAN.get()) {
 			effect = MobEffects.DAMAGE_RESISTANCE;
+		} else if (this.getDefaultInstance().getItem() == GarnishedItems.NIGHT_VISION_CINDER_PISTACHIO.get()) {
+			effect = MobEffects.NIGHT_VISION;
 		}
 
 		return effect;

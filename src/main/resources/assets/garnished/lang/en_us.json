@@ -11,14 +11,6 @@
   "text.garnished.nut.cinder_flour.melted": "Melted Cinder Flour",
   "text.garnished.nut.cinder_flour.effect": "Available Effect: [%d]",
   "text.garnished.nut.sweetened": "Sweetened",
-  "text.garnished.template.standard": "No Nut Mould",
-  "text.garnished.template.cashew": "Cashew Mould",
-  "text.garnished.template.walnut": "Walnut Mould",
-  "text.garnished.template.almond": "Almond Mould",
-  "text.garnished.template.pecan": "Pecan Mould",
-  "text.garnished.template.applying": "",
-  "text.garnished.template.desc": "[Requires Polymorph mod]",
-  "text.garnished.template.desc.secondary": "Similar to Gearboxes, can be used to craft other templates!",
 
   "item.garnished.cashew": "Cashew",
   "item.garnished.ungarnished_cashew": "Cashew",
@@ -52,15 +44,22 @@
   "block.garnished.pecan_crop": "Pecan",
   "item.garnished.cinder_pecan_resistance": "Pecan",
 
+  "item.garnished.pistachio": "Pistachio",
+  "item.garnished.ungarnished_pistachio": "Pistachio",
+  "item.garnished.cinder_pistachio": "Pistachio",
+  "item.garnished.melted_cinder_pistachio": "Pistachio",
+  "item.garnished.sweetened_pistachio": "Pistachio",
+  "block.garnished.pistachio_crop": "Pistachio",
+  "item.garnished.cinder_pistachio_night_vision": "Pistachio",
+
   "item.garnished.garnished_sweet_berries": "Sweet Berries",
+  "item.garnished.honeyed_sweet_berries": "Honeyed Sweet Berries",
 
-  "item.garnished.template": "Garnishment Template",
-  "item.garnished.cashew_template": "Garnishment Template",
-  "item.garnished.walnut_template": "Garnishment Template",
-  "item.garnished.almond_template": "Garnishment Template",
-  "item.garnished.pecan_template": "Garnishment Template",
+  "item.garnished.nut_mix": "Nut Mix",
+  "item.garnished.sweetened_nut_mix": "Nut Mix",
 
-  "item.garnished.garnished_soil": "Garnished Soil",
-  "item.garnished.garnished_water_bucket": "Garnished Water Bucket",
-  "fluid.garnished_water": "Garnished Water"
+  "item.garnished.garnish_bucket": "Bucket of Garnish",
+  "fluid.liquid_garnish": "Liquid Garnish",
+
+  "block.garnished.nut_plant": "Nut Growth"
 }

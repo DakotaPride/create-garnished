@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "garnished:ungarnished_cashew"
+    },
+    {
+      "amount": 20250,
+      "fluid": "garnished:garnish"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:cashew"
+    }
+  ]
+}

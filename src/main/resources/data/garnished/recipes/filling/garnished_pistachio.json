@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "garnished:ungarnished_pistachio"
+    },
+    {
+      "amount": 20250,
+      "fluid": "garnished:garnish"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:pistachio"
+    }
+  ]
+}

@@ -2,6 +2,13 @@ package net.dakotapride.garnished;
 
 import net.dakotapride.garnished.registry.GarnishedFluids;
 
+import net.dakotapride.garnished.registry.GarnishedFeatures;
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+
+import net.minecraft.world.level.biome.Biomes;
+import net.minecraft.world.level.levelgen.GenerationStep;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,6 +38,10 @@ public class CreateGarnished implements ModInitializer {
 		GarnishedTabs.setRegister();
 		GarnishedFluids.setRegister();
 		REGISTRATE.get().register();
+
+		// Generation
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.PLAINS),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.NUT_PLANT_PLACED.unwrapKey().get());
 
 		LOGGER.info("Create addon mod [{}] is loading alongside Create [{}]!", NAME, Create.VERSION);
 		LOGGER.info(EnvExecutor.unsafeRunForDist(

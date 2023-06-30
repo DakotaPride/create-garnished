@@ -6,6 +6,7 @@ import com.tterrag.registrate.util.entry.BlockEntry;
 
 import net.dakotapride.garnished.CreateGarnished;
 import net.dakotapride.garnished.block.NutCropBlock;
+import net.dakotapride.garnished.block.NutPlantBlock;
 
 @SuppressWarnings({"unused"})
 public class GarnishedBlocks {
@@ -29,6 +30,16 @@ public class GarnishedBlocks {
 
 	public static final BlockEntry<NutCropBlock> PECAN_CROP =
 			REGISTRATE.block("pecan_crop", NutCropBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.register();
+
+	public static final BlockEntry<NutCropBlock> PISTACHIO_CROP =
+			REGISTRATE.block("pistachio_crop", NutCropBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.register();
+
+	public static final BlockEntry<NutPlantBlock> NUT_PLANT =
+			REGISTRATE.block("nut_plant", NutPlantBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.register();
 

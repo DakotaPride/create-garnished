@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "garnished:sweetened_cashew",
+    "garnished:sweetened_walnut",
+    "garnished:sweetened_almond",
+    "garnished:sweetened_pecan",
+    "garnished:sweetened_pistachio"
+  ]
+}

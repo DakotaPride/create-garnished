@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "garnished:cracked_almond",
+    "garnished:cracked_pecan",
+    "garnished:cracked_walnut",
+    "garnished:cracked_cashew",
+    "garnished:cracked_pistachio"
+  ]
+}

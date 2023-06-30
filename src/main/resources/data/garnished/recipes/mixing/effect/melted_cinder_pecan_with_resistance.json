@@ -6,7 +6,7 @@
       "item": "garnished:cinder_pecan"
     },
     {
-      "amount": 14000,
+      "amount": 8100,
       "fluid": "minecraft:water",
       "nbt": {}
     },
@@ -15,7 +15,21 @@
     },
     {
       "item": "minecraft:sugar"
-    }
+    },
+    [
+      {
+        "item": "minecraft:iron_nugget"
+      },
+      {
+        "item": "minecraft:gold_nugget"
+      },
+      {
+        "item": "create:zinc_nugget"
+      },
+      {
+        "item": "create:brass_nugget"
+      }
+    ]
   ],
   "results": [
     {
