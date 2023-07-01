@@ -2,18 +2,18 @@
   "type": "create:milling",
   "ingredients": [
     {
-      "item": "garnished:ungarnished_pistachio"
+      "item": "garnished:ungarnished_macadamia"
     }
   ],
   "processingTime": 150,
   "results": [
     {
       "count": 1,
-      "item": "garnished:cracked_pistachio"
+      "item": "garnished:cracked_macadamia"
     },
     {
       "chance": 0.15,
-      "item": "garnished:cracked_pistachio",
+      "item": "garnished:cracked_macadamia",
       "count": 2
     }
   ]

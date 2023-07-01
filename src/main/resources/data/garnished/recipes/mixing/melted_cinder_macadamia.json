@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "garnished:cinder_macadamia"
+    },
+    {
+      "amount": 8100,
+      "fluid": "minecraft:water",
+      "nbt": {}
+    },
+    {
+      "item": "minecraft:nether_wart"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:melted_cinder_macadamia"
+    }
+  ]
+}

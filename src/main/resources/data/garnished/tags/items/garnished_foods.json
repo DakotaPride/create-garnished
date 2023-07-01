@@ -4,8 +4,7 @@
     "#garnished:sweetened_nuts",
     "#garnished:unsweetened_nuts",
     "#garnished:cinder_nuts",
-    "garnished:garnished_sweet_berries",
-    "garnished:nut_mix",
-    "garnished:sweetened_nut_mix"
+    "#garnished:nut_mix",
+    "garnished:garnished_sweet_berries"
   ]
 }

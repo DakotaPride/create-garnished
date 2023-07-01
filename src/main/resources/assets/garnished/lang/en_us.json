@@ -52,11 +52,20 @@
   "block.garnished.pistachio_crop": "Pistachio",
   "item.garnished.cinder_pistachio_night_vision": "Pistachio",
 
+  "item.garnished.macadamia": "Macadamia",
+  "item.garnished.ungarnished_macadamia": "Macadamia",
+  "item.garnished.cinder_macadamia": "Macadamia",
+  "item.garnished.melted_cinder_macadamia": "Macadamia",
+  "item.garnished.sweetened_macadamia": "Macadamia",
+  "block.garnished.macadamia_crop": "Macadamia",
+  "item.garnished.cinder_macadamia_fire_resistance": "Macadamia",
+
   "item.garnished.garnished_sweet_berries": "Sweet Berries",
   "item.garnished.honeyed_sweet_berries": "Honeyed Sweet Berries",
 
   "item.garnished.nut_mix": "Nut Mix",
   "item.garnished.sweetened_nut_mix": "Nut Mix",
+  "item.garnished.honeyed_nut_mix": "Honeyed Nut Mix",
 
   "item.garnished.garnish_bucket": "Bucket of Garnish",
   "fluid.liquid_garnish": "Liquid Garnish",

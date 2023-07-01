@@ -23,6 +23,10 @@
         {
           "type": "minecraft:item",
           "name": "garnished:ungarnished_almond"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "garnished:ungarnished_macadamia"
         }
       ]
     }

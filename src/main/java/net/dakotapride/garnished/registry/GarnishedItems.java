@@ -4,15 +4,7 @@ import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.util.entry.ItemEntry;
 
 import net.dakotapride.garnished.CreateGarnished;
-import net.dakotapride.garnished.item.GarnishedNutFoodItem;
-import net.dakotapride.garnished.item.HoneyedSweetBerriesItem;
-import net.dakotapride.garnished.item.NutMixItem;
-import net.dakotapride.garnished.item.SweetenedNutItem;
-import net.dakotapride.garnished.item.GarnishedFoodItem;
-import net.dakotapride.garnished.item.SweetenedNutMixItem;
-import net.dakotapride.garnished.item.UngarnishedNutItem;
-import net.dakotapride.garnished.item.WithCinderFlourItem;
-import net.dakotapride.garnished.item.WithMeltedCinderFlourItem;
+import net.dakotapride.garnished.item.*;
 import net.dakotapride.garnished.item.cracked.*;
 
 @SuppressWarnings({"unused"})
@@ -106,11 +98,31 @@ public class GarnishedItems {
 	public static final ItemEntry<SweetenedNutItem> SWEETENED_PISTACHIO =
 			REGISTRATE.item("sweetened_pistachio", SweetenedNutItem::new).register();
 
+	// Macadamia
+	public static final ItemEntry<CrackedMacadamiaItem> CRACKED_MACADAMIA =
+			REGISTRATE.item("cracked_macadamia", CrackedMacadamiaItem::new).register();
+
+	public static final ItemEntry<UngarnishedNutItem> UNGARNISHED_MACADAMIA =
+			REGISTRATE.item("ungarnished_macadamia", UngarnishedNutItem::new).register();
+	public static final ItemEntry<GarnishedNutFoodItem> MACADAMIA =
+			REGISTRATE.item("macadamia", GarnishedNutFoodItem::new).register();
+	public static final ItemEntry<WithCinderFlourItem> CINDER_FLOUR_MACADAMIA =
+			REGISTRATE.item("cinder_macadamia", WithCinderFlourItem::new).register();
+	public static final ItemEntry<WithMeltedCinderFlourItem> MELTED_CINDER_FLOUR_MACADAMIA =
+			REGISTRATE.item("melted_cinder_macadamia", WithMeltedCinderFlourItem::new).register();
+	public static final ItemEntry<WithMeltedCinderFlourItem> NIGHT_VISION_CINDER_MACADAMIA =
+			REGISTRATE.item("cinder_macadamia_fire_resistance", WithMeltedCinderFlourItem::new).register();
+	public static final ItemEntry<SweetenedNutItem> SWEETENED_MACADAMIA =
+			REGISTRATE.item("sweetened_macadamia", SweetenedNutItem::new).register();
+
 	// Nut mix
 	public static final ItemEntry<NutMixItem> NUT_MIX =
 			REGISTRATE.item("nut_mix", NutMixItem::new).register();
 	public static final ItemEntry<SweetenedNutMixItem> SWEETENED_NUT_MIX =
 			REGISTRATE.item("sweetened_nut_mix", SweetenedNutMixItem::new).register();
+
+	public static final ItemEntry<HoneyedNutMixItem> HONEYED_NUT_MIX =
+			REGISTRATE.item("honeyed_nut_mix", HoneyedNutMixItem::new).register();
 
 	// Sweet Berries
 	public static final ItemEntry<GarnishedFoodItem> GARNISHED_SWEET_BERRIES =
