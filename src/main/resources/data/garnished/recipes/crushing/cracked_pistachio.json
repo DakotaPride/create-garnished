@@ -2,7 +2,7 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "garnished:ungarnished_pistachio"
+      "tag": "garnished:crushable/pistachio"
     }
   ],
   "processingTime": 150,

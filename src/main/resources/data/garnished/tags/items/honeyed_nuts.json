@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "garnished:honeyed_cashew",
+    "garnished:honeyed_walnut",
+    "garnished:honeyed_almond",
+    "garnished:honeyed_pecan",
+    "garnished:honeyed_pistachio",
+    "garnished:honeyed_macadamia"
+  ]
+}

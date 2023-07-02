@@ -2,7 +2,7 @@
   "type": "create:milling",
   "ingredients": [
     {
-      "item": "garnished:ungarnished_walnut"
+      "tag": "garnished:crushable/walnut"
     }
   ],
   "processingTime": 150,

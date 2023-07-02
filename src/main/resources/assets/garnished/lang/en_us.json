@@ -11,6 +11,7 @@
   "text.garnished.nut.cinder_flour.melted": "Melted Cinder Flour",
   "text.garnished.nut.cinder_flour.effect": "Available Effect: [%d]",
   "text.garnished.nut.sweetened": "Sweetened",
+  "text.garnished.nut.honeyed": "Honeyed",
 
   "item.garnished.cashew": "Cashew",
   "item.garnished.ungarnished_cashew": "Cashew",
@@ -19,6 +20,7 @@
   "item.garnished.sweetened_cashew": "Cashew",
   "block.garnished.cashew_crop": "Cashew",
   "item.garnished.cinder_cashew_speed": "Cashew",
+  "item.garnished.honeyed_cashew": "Cashew",
 
   "item.garnished.walnut": "Walnut",
   "item.garnished.ungarnished_walnut": "Walnut",
@@ -27,6 +29,7 @@
   "item.garnished.sweetened_walnut": "Walnut",
   "block.garnished.walnut_crop": "Walnut",
   "item.garnished.cinder_walnut_strength": "Walnut",
+  "item.garnished.honeyed_walnut": "Walnut",
 
   "item.garnished.almond": "Almond",
   "item.garnished.ungarnished_almond": "Almond",
@@ -35,6 +38,7 @@
   "item.garnished.sweetened_almond": "Almond",
   "block.garnished.almond_crop": "Almond",
   "item.garnished.cinder_almond_haste": "Almond",
+  "item.garnished.honeyed_almond": "Almond",
 
   "item.garnished.pecan": "Pecan",
   "item.garnished.ungarnished_pecan": "Pecan",
@@ -43,6 +47,7 @@
   "item.garnished.sweetened_pecan": "Pecan",
   "block.garnished.pecan_crop": "Pecan",
   "item.garnished.cinder_pecan_resistance": "Pecan",
+  "item.garnished.honeyed_pecan": "Pecan",
 
   "item.garnished.pistachio": "Pistachio",
   "item.garnished.ungarnished_pistachio": "Pistachio",
@@ -51,6 +56,7 @@
   "item.garnished.sweetened_pistachio": "Pistachio",
   "block.garnished.pistachio_crop": "Pistachio",
   "item.garnished.cinder_pistachio_night_vision": "Pistachio",
+  "item.garnished.honeyed_pistachio": "Pistachio",
 
   "item.garnished.macadamia": "Macadamia",
   "item.garnished.ungarnished_macadamia": "Macadamia",
@@ -59,13 +65,14 @@
   "item.garnished.sweetened_macadamia": "Macadamia",
   "block.garnished.macadamia_crop": "Macadamia",
   "item.garnished.cinder_macadamia_fire_resistance": "Macadamia",
+  "item.garnished.honeyed_macadamia": "Macadamia",
 
   "item.garnished.garnished_sweet_berries": "Sweet Berries",
-  "item.garnished.honeyed_sweet_berries": "Honeyed Sweet Berries",
+  "item.garnished.honeyed_sweet_berries": "Sweet Berries",
 
   "item.garnished.nut_mix": "Nut Mix",
   "item.garnished.sweetened_nut_mix": "Nut Mix",
-  "item.garnished.honeyed_nut_mix": "Honeyed Nut Mix",
+  "item.garnished.honeyed_nut_mix": "Nut Mix",
 
   "item.garnished.garnish_bucket": "Bucket of Garnish",
   "fluid.liquid_garnish": "Liquid Garnish",

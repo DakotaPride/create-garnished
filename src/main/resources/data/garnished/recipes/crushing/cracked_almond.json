@@ -2,7 +2,7 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "garnished:ungarnished_almond"
+      "tag": "garnished:crushable/almond"
     }
   ],
   "processingTime": 150,

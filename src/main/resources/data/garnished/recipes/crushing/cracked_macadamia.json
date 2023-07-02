@@ -2,7 +2,7 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "garnished:ungarnished_macadamia"
+      "tag": "garnished:crushable/macadamia"
     }
   ],
   "processingTime": 150,

@@ -12,13 +12,13 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 
-public class GarnishedNutFoodItem extends Item implements IGarnishedItem {
-	public GarnishedNutFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.GARNISHED_NUT));
+public class HoneyedNutFoodItem extends Item implements IGarnishedItem {
+	public HoneyedNutFoodItem(Properties properties) {
+		super(properties.food(GarnishedFoods.HONEYED_NUT));
 	}
 
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
-		tooltip.add(Component.translatable(garnishedText()).withStyle(getStandardColouring()));
+		tooltip.add(Component.translatable(honeyedText()).setStyle(getHoneyedColouring()));
 	}
 }

@@ -2,7 +2,7 @@
   "type": "create:crushing",
   "ingredients": [
     {
-      "item": "garnished:ungarnished_pecan"
+      "tag": "garnished:crushable/pecan"
     }
   ],
   "processingTime": 150,

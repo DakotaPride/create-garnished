@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "garnished:sweetened_nuts"
+      "tag": "garnished:honeyed_nuts"
     },
     {
-      "tag": "garnished:sweetened_nuts"
+      "tag": "garnished:honeyed_nuts"
     },
     {
       "tag": "garnished:berries"
     }
   ],
   "result": {
-    "item": "garnished:sweetened_nut_mix"
+    "item": "garnished:honeyed_nut_mix"
   }
 }

@@ -2,7 +2,7 @@
   "type": "create:milling",
   "ingredients": [
     {
-      "item": "garnished:ungarnished_cashew"
+      "tag": "garnished:crushable/cashew"
     }
   ],
   "processingTime": 150,
