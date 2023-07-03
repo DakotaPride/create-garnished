@@ -38,8 +38,11 @@ public class CreateGarnished implements ModInitializer {
 		GarnishedBlocks.setRegister();
 		GarnishedTabs.setRegister();
 		GarnishedFluids.setRegister();
-		GarnishedFeatures.setRegister();
 		REGISTRATE.get().register();
+
+		// Generation
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.PLAINS),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.NUT_PLANT_PLACED.unwrapKey().get());
 
 		LOGGER.info("Create addon mod [{}] is loading alongside Create [{}]!", NAME, Create.VERSION);
 		LOGGER.info(EnvExecutor.unsafeRunForDist(

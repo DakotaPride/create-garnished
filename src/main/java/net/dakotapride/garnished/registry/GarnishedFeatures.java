@@ -25,23 +25,14 @@ import net.minecraft.world.level.levelgen.placement.RarityFilter;
 import java.util.List;
 
 public class GarnishedFeatures {
-	public static final LazyRegistrar<ConfiguredFeature<?, ?>> CONFIGURED_FEATURES =
-			LazyRegistrar.create(Registry.CONFIGURED_FEATURE_REGISTRY, CreateGarnished.ID);
-	public static final LazyRegistrar<PlacedFeature> PLACED_FEATURES =
-			LazyRegistrar.create(Registry.PLACED_FEATURE_REGISTRY, CreateGarnished.ID);
 
-	public static final RegistryObject<ConfiguredFeature<?, ?>> NUT_PLANT_CONFIGURED = CONFIGURED_FEATURES.register("nut_plant_configured",
-			() -> new ConfiguredFeature<>(Feature.FLOWER,
-					new RandomPatchConfiguration(16, 6, 2, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
-							new SimpleBlockConfiguration(BlockStateProvider.simple(GarnishedBlocks.NUT_PLANT.get()))))));
+	public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> NUT_PLANT_CONFIGURED =
+			FeatureUtils.register(CreateGarnished.ID + ":nut_plant_configured", Feature.FLOWER,
+					FeatureUtils.simpleRandomPatchConfiguration(32, PlacementUtils.onlyWhenEmpty(Feature.SIMPLE_BLOCK,
+							new SimpleBlockConfiguration(BlockStateProvider.simple(GarnishedBlocks.NUT_PLANT.get())))));
 
-	public static final RegistryObject<PlacedFeature> NUT_PLANT_PLACED = PLACED_FEATURES.register("nut_plant_placed",
-			() -> new PlacedFeature(NUT_PLANT_CONFIGURED.getHolder().get(), List.of(RarityFilter.onAverageOnceEvery(8),
-					InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
-
-	public static void setRegister() {
-		CONFIGURED_FEATURES.register();
-		PLACED_FEATURES.register();
-	}
+	public static final Holder<PlacedFeature> NUT_PLANT_PLACED = PlacementUtils.register(CreateGarnished.ID + ":nut_plant_placed",
+			NUT_PLANT_CONFIGURED, RarityFilter.onAverageOnceEvery(4), InSquarePlacement.spread(),
+			PlacementUtils.HEIGHTMAP, BiomeFilter.biome());
 
 }
