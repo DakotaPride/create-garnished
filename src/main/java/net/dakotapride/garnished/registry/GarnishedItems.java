@@ -130,7 +130,7 @@ public class GarnishedItems {
 			REGISTRATE.item("cinder_macadamia", CinderFlourNutFoodItem::new).register();
 	public static final ItemEntry<MeltedCinderFlourNutFoodItem> MELTED_CINDER_FLOUR_MACADAMIA =
 			REGISTRATE.item("melted_cinder_macadamia", MeltedCinderFlourNutFoodItem::new).register();
-	public static final ItemEntry<MeltedCinderFlourNutFoodItem> NIGHT_VISION_CINDER_MACADAMIA =
+	public static final ItemEntry<MeltedCinderFlourNutFoodItem> FIRE_RESISTANCE_CINDER_MACADAMIA =
 			REGISTRATE.item("cinder_macadamia_fire_resistance", MeltedCinderFlourNutFoodItem::new).register();
 	public static final ItemEntry<SweetenedNutFoodItem> SWEETENED_MACADAMIA =
 			REGISTRATE.item("sweetened_macadamia", SweetenedNutFoodItem::new).register();
