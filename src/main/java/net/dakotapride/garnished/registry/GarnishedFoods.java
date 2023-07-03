@@ -1,10 +1,14 @@
 package net.dakotapride.garnished.registry;
 
+import net.dakotapride.garnished.item.IGarnishedItem;
+import net.dakotapride.garnished.item.MeltedCinderFlourNutFoodItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.Item;
 
-public class GarnishedFoods {
+public class GarnishedFoods implements IGarnishedItem {
+
 	// Ungarnished
 	public static final FoodProperties UNGARNISHED_NUT = new FoodProperties.Builder().nutrition(3).saturationMod(0.2F)
 			.effect(new MobEffectInstance(MobEffects.CONFUSION, 240), 1.0F).build();

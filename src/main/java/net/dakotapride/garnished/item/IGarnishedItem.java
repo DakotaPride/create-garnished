@@ -1,7 +1,13 @@
 package net.dakotapride.garnished.item;
 
+import net.dakotapride.garnished.registry.GarnishedItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Style;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 
 public interface IGarnishedItem {
 
