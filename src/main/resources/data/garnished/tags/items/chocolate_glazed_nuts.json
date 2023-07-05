@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "garnished:chocolate_glazed_cashew",
+    "garnished:chocolate_glazed_walnut",
+    "garnished:chocolate_glazed_almond",
+    "garnished:chocolate_glazed_pecan",
+    "garnished:chocolate_glazed_pistachio",
+    "garnished:chocolate_glazed_macadamia"
+  ]
+}

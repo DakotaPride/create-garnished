@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "garnished:walnut"
+    },
+    {
+      "amount": 27000,
+      "fluid": "create:chocolate",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:chocolate_glazed_walnut"
+    }
+  ]
+}

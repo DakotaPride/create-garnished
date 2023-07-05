@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "garnished:chocolate_glazed_nuts"
+    },
+    {
+      "tag": "garnished:chocolate_glazed_nuts"
+    },
+    {
+      "tag": "garnished:berries"
+    }
+  ],
+  "result": {
+    "item": "garnished:chocolate_glazed_nut_mix"
+  }
+}

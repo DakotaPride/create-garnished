@@ -5,7 +5,7 @@ import net.minecraft.world.item.Item;
 
 public class GarnishedMealFoodItem extends Item implements IGarnishedItem {
 	public GarnishedMealFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.GARNISHED_MEAL));
+		super(properties.food(GarnishedFoods.GARNISHED_MEAL).stacksTo(16));
 	}
 
 }

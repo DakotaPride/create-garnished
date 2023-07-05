@@ -1,11 +1,15 @@
 package net.dakotapride.garnished.registry;
 
+import com.simibubi.create.content.decoration.palettes.AllPaletteStoneTypes;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 
+import com.simibubi.create.foundation.fluid.FluidHelper;
+import com.simibubi.create.foundation.utility.Iterate;
 import com.tterrag.registrate.fabric.SimpleFlowableFluid;
 
 import com.tterrag.registrate.util.entry.FluidEntry;
 
+import io.github.fabricators_of_create.porting_lib.event.common.FluidPlaceBlockCallback;
 import net.dakotapride.garnished.CreateGarnished;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidStorage;
@@ -14,11 +18,17 @@ import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariantAttributeHandler;
 import net.fabricmc.fabric.api.transfer.v1.fluid.base.EmptyItemFluidStorage;
 import net.fabricmc.fabric.api.transfer.v1.fluid.base.FullItemFluidStorage;
 import net.fabricmc.fabric.api.transfer.v1.item.ItemVariant;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.FluidTags;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.network.chat.Component;
+import net.minecraft.world.level.material.FluidState;
 
 import javax.annotation.Nullable;
 
@@ -26,7 +36,9 @@ import static net.minecraft.world.item.Items.BUCKET;
 
 @SuppressWarnings("UnstableApiUsage")
 public class GarnishedFluids {
-	public static void setRegister() {}
+	public static void setRegister() {
+		FluidPlaceBlockCallback.EVENT.register(GarnishedFluids::whenFluidsMeet);
+	}
 	private static final CreateRegistrate REGISTRATE = CreateGarnished.registrate()
 			.creativeModeTab(() -> GarnishedTabs.GARNISHED);
 
@@ -74,5 +86,34 @@ public class GarnishedFluids {
 		public boolean isLighterThanAir(FluidVariant variant) {
 			return lighterThanAir;
 		}
+	}
+
+	public static BlockState whenFluidsMeet(LevelAccessor world, BlockPos pos, BlockState blockState) {
+		FluidState fluidState = blockState.getFluidState();
+
+		if (fluidState.isSource() && FluidHelper.isLava(fluidState.getType()))
+			return null;
+
+		for (Direction direction : Iterate.directions) {
+			FluidState metFluidState =
+					fluidState.isSource() ? fluidState : world.getFluidState(pos.relative(direction));
+			if (!metFluidState.is(FluidTags.WATER))
+				continue;
+			BlockState lavaInteraction = GarnishedFluids.getLavaInteraction(metFluidState);
+			if (lavaInteraction == null)
+				continue;
+			return lavaInteraction;
+		}
+		return null;
+	}
+
+	@Nullable
+	public static BlockState getLavaInteraction(FluidState fluidState) {
+		Fluid fluid = fluidState.getType();
+		if (fluid.isSame(GARNISH.get()))
+			return AllPaletteStoneTypes.OCHRUM.getBaseBlock()
+					.get()
+					.defaultBlockState();
+		return null;
 	}
 }

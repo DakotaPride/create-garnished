@@ -2,6 +2,8 @@ package net.dakotapride.garnished.item;
 
 import java.util.List;
 
+import net.dakotapride.garnished.registry.GarnishedFoods;
+
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -16,7 +18,7 @@ import net.minecraft.world.level.Level;
 
 public class MeltedCinderFlourNutFoodItem extends Item implements IGarnishedItem {
 	public MeltedCinderFlourNutFoodItem(Properties properties) {
-		super(properties.food(new FoodProperties.Builder().saturationMod(0.5F).nutrition(7).build()));
+		super(properties.food(new FoodProperties.Builder().saturationMod(GarnishedFoods.MELTED_CINDER_FLOUR_NUT.getSaturationModifier()).nutrition(7).build()));
 	}
 
 	@Override

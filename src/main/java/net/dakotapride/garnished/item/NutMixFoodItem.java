@@ -14,7 +14,7 @@ import java.util.List;
 
 public class NutMixFoodItem extends Item implements IGarnishedItem {
 	public NutMixFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.GARNISHED_NUT_MIX));
+		super(properties.food(GarnishedFoods.GARNISHED_NUT_MIX).stacksTo(16));
 	}
 
 	@Override

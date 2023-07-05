@@ -53,6 +53,14 @@ public interface IGarnishedItem {
 		return ChatFormatting.RED;
 	}
 
+	default String chocolateGlazedText() {
+		return "text.garnished.nut.chocolate_glazed";
+	}
+
+	default Style getChocolateGlazedColouring() {
+		return Style.EMPTY.withColor(0xB1543E);
+	}
+
 	default MobEffect getEffect(ItemStack stack) {
 		MobEffect effect = null;
 		Item item = stack.getItem();
