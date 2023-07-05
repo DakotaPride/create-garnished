@@ -25,6 +25,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.network.chat.Component;
@@ -44,6 +45,7 @@ public class GarnishedFluids {
 
 
 	public static final FluidEntry<SimpleFlowableFluid.Flowing> GARNISH;
+	public static final FluidEntry<SimpleFlowableFluid.Flowing> APPLE_CIDER;
 
 	static  {
 		GARNISH = REGISTRATE
@@ -52,11 +54,27 @@ public class GarnishedFluids {
 						new ResourceLocation(CreateGarnished.ID, "fluid/garnish_flowing")
 				)
 				.fluidProperties(p -> p.levelDecreasePerBlock(2)
-						.canMultiply()
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
 				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.liquid_garnish", 1500, 800))
+				.onRegisterAfter(Registry.ITEM_REGISTRY, fluid -> {
+					Fluid source = fluid.getSource();
+					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
+							new FullItemFluidStorage(context, bucket -> ItemVariant.of(BUCKET), FluidVariant.of(source), FluidConstants.BUCKET));
+					FluidStorage.combinedItemApiProvider(BUCKET).register(context ->
+							new EmptyItemFluidStorage(context, bucket -> ItemVariant.of(source.getBucket()), source, FluidConstants.BUCKET));
+				}).register();
+		APPLE_CIDER = REGISTRATE
+				.fluid("apple_cider",
+						new ResourceLocation(CreateGarnished.ID, "fluid/apple_cider_still"),
+						new ResourceLocation(CreateGarnished.ID, "fluid/apple_cider_flowing")
+				)
+				.fluidProperties(p -> p.levelDecreasePerBlock(2)
+						.tickRate(25)
+						.flowSpeed(3)
+						.blastResistance(100f))
+				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.apple_cider", 1500, 800))
 				.onRegisterAfter(Registry.ITEM_REGISTRY, fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
@@ -111,9 +129,9 @@ public class GarnishedFluids {
 	public static BlockState getLavaInteraction(FluidState fluidState) {
 		Fluid fluid = fluidState.getType();
 		if (fluid.isSame(GARNISH.get()))
-			return AllPaletteStoneTypes.OCHRUM.getBaseBlock()
-					.get()
-					.defaultBlockState();
+			return Blocks.CALCITE.defaultBlockState();
+		if (fluid.isSame(APPLE_CIDER.get()))
+			return AllPaletteStoneTypes.OCHRUM.getBaseBlock().get().defaultBlockState();
 		return null;
 	}
 }

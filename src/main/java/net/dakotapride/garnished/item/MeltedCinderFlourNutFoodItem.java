@@ -24,7 +24,7 @@ public class MeltedCinderFlourNutFoodItem extends Item implements IGarnishedItem
 	@Override
 	public @NotNull ItemStack finishUsingItem(@NotNull ItemStack stack, @NotNull Level level, @NotNull LivingEntity livingEntity) {
 
-		livingEntity.addEffect(new MobEffectInstance(getEffect(stack), getBaseEffectDuration));
+		livingEntity.addEffect(new MobEffectInstance(getCinderEffect(stack), getCinderEffectDuration));
 
 		return super.finishUsingItem(stack, level, livingEntity);
 	}
@@ -32,9 +32,9 @@ public class MeltedCinderFlourNutFoodItem extends Item implements IGarnishedItem
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
 		tooltip.add(Component.translatable(meltedCinderFlourText()).withStyle(getCinderFlourColouring()));
-		if (getEffect(stack) != null) {
+		if (getCinderEffect(stack) != null) {
 			tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect",
-					getEffect(stack).getDisplayName()).withStyle(getStandardColouring()));
+					getCinderEffect(stack).getDisplayName()).withStyle(getStandardColouring()));
 		}
 	}
 }

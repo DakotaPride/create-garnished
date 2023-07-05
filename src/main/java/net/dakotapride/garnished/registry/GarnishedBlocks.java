@@ -55,10 +55,5 @@ public class GarnishedBlocks {
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem().register();
 
-	public static final BlockEntry<Block> CANDIED_OBSIDIAN =
-			REGISTRATE.block("candied_obsidian", Block::new)
-					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
-					.simpleItem().register();
-
 	public static void setRegister() {}
 }

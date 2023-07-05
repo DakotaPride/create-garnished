@@ -83,12 +83,17 @@
 
   "item.garnished.garnished_meal": "Garnished Meal",
 
+  "item.garnished.apple_cider": "Bottled Apple Cider",
+
   "item.garnished.garnish_bucket": "Bucket of Garnish",
+  "item.garnished.apple_cider_bucket": "Bucket of Apple Cider",
   "fluid.liquid_garnish": "Liquid Garnish",
+  "fluid.apple_cider": "Apple Cider",
 
   "block.garnished.nut_plant": "Nut Growth",
 
   "block.garnished.solidified_garnish": "Solidified Garnish Block",
+  "block.garnished.candied_obsidian": "Candied Obsidian",
   "item.garnished.garnish_compound": "Garnish Compound",
   "item.garnished.mortar_and_pestle": "Mortar And Pestle"
 }

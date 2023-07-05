@@ -4,6 +4,7 @@ import net.dakotapride.garnished.item.IGarnishedItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.food.Foods;
 
 public class GarnishedFoods implements IGarnishedItem {
 
@@ -32,8 +33,13 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties HONEYED_NUT_MIX = new FoodProperties.Builder().nutrition(10).saturationMod(0.7F).build();
 	public static final FoodProperties HONEYED_BERRIES = new FoodProperties.Builder().nutrition(7).saturationMod(0.6F).build();
 
+	// Apple Cider
+	public static final FoodProperties APPLE_CIDER = new FoodProperties.Builder().nutrition(7).saturationMod(0.5F).build();
+	public static final FoodProperties CRYPTIC_APPLE_CIDER = new FoodProperties.Builder().nutrition(8).saturationMod(0.7F).build();
+
 	// Misc
 	public static final FoodProperties GARNISHED_MEAL = new FoodProperties.Builder().nutrition(11).saturationMod(0.8F).build();
+
 
 	public static void setRegister() {}
 

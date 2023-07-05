@@ -8,9 +8,12 @@ import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
+import java.util.Random;
+
 public interface IGarnishedItem {
 	int baseTick = 20;
-	int getBaseEffectDuration = baseTick * 90;
+	int getCinderEffectDuration = baseTick * 90;
+	int getCrypticAppleCiderEffectDuration = baseTick * 45;
 
 
 	default String garnishedText() {
@@ -61,7 +64,7 @@ public interface IGarnishedItem {
 		return Style.EMPTY.withColor(0xB1543E);
 	}
 
-	default MobEffect getEffect(ItemStack stack) {
+	default MobEffect getCinderEffect(ItemStack stack) {
 		MobEffect effect = null;
 		Item item = stack.getItem();
 
@@ -80,6 +83,16 @@ public interface IGarnishedItem {
 		}
 
 		return effect;
+	}
+
+	default MobEffect getCrypticAppleCiderEffect() {
+		int random = new Random().nextInt(2);
+
+		if (random == 1) {
+			return MobEffects.DAMAGE_BOOST;
+		} else {
+			return MobEffects.MOVEMENT_SLOWDOWN;
+		}
 	}
 
 }

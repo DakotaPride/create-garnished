@@ -159,14 +159,15 @@ public class GarnishedItems {
 	public static final ItemEntry<HoneyedSweetBerriesFoodItem> HONEYED_SWEET_BERRIES =
 			REGISTRATE.item("honeyed_sweet_berries", HoneyedSweetBerriesFoodItem::new).register();
 
-	// Flowers
+	// Apple Cider
+	public static final ItemEntry<AppleCiderFoodItem> APPLE_CIDER =
+			REGISTRATE.item("apple_cider", AppleCiderFoodItem::new).register();
+	public static final ItemEntry<CrypticAppleCiderFoodItem> CRYPTIC_APPLE_CIDER =
+			REGISTRATE.item("cryptic_apple_cider", CrypticAppleCiderFoodItem::new).register();
 
 	// Misc
 	public static final ItemEntry<Item> GARNISH_COMPOUND =
 			REGISTRATE.item("garnish_compound", Item::new).register();
-
-	public static final ItemEntry<MortarAndPestleItem> MORTAR_AND_PESTLE =
-			REGISTRATE.item("mortar_and_pestle", MortarAndPestleItem::new).register();
 
 	public static void setRegister() {}
 
