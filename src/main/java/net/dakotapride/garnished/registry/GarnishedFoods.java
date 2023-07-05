@@ -1,11 +1,9 @@
 package net.dakotapride.garnished.registry;
 
 import net.dakotapride.garnished.item.IGarnishedItem;
-import net.dakotapride.garnished.item.MeltedCinderFlourNutFoodItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.Item;
 
 public class GarnishedFoods implements IGarnishedItem {
 
@@ -29,5 +27,10 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties HONEYED_NUT = new FoodProperties.Builder().nutrition(8).saturationMod(0.5F).build();
 	public static final FoodProperties HONEYED_NUT_MIX = new FoodProperties.Builder().nutrition(12).saturationMod(0.7F).build();
 	public static final FoodProperties HONEYED_BERRIES = new FoodProperties.Builder().nutrition(8).saturationMod(0.6F).build();
+
+	// Misc
+	public static final FoodProperties GARNISHED_MEAL = new FoodProperties.Builder().nutrition(14).saturationMod(0.8F).build();
+
+	public static void setRegister() {}
 
 }

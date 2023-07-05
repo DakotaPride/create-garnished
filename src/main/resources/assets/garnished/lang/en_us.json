@@ -6,7 +6,6 @@
   "text.garnished.nut.cracked.desc": "Cracked nuts are used for reproduction!",
   "text.garnished.nut.cracked.desc.secondary": "Place this down on tilled soil and wait.",
   "text.garnished.hold_shift": "[HOLD SHIFT]",
-  "text.garnished.soil.desc": "Use garnished soil to garnish your water!",
   "text.garnished.nut.cinder_flour": "Cinder Flour",
   "text.garnished.nut.cinder_flour.melted": "Melted Cinder Flour",
   "text.garnished.nut.cinder_flour.effect": "Available Effect: [%d]",
@@ -74,8 +73,14 @@
   "item.garnished.sweetened_nut_mix": "Nut Mix",
   "item.garnished.honeyed_nut_mix": "Nut Mix",
 
+  "item.garnished.garnished_meal": "Garnished Meal",
+
   "item.garnished.garnish_bucket": "Bucket of Garnish",
   "fluid.liquid_garnish": "Liquid Garnish",
 
-  "block.garnished.nut_plant": "Nut Growth"
+  "block.garnished.nut_plant": "Nut Growth",
+
+  "block.garnished.solidified_garnish": "Solidified Garnish Block",
+  "item.garnished.garnish_compound": "Garnish Compound",
+  "item.garnished.mortar_and_pestle": "Mortar And Pestle"
 }

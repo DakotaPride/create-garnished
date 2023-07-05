@@ -1,0 +1,25 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "garnished:solidified_garnish"
+    }
+  ],
+  "processingTime": 150,
+  "results": [
+    {
+      "count": 2,
+      "item": "garnished:garnish_compound"
+    },
+    {
+      "chance": 0.15,
+      "item": "garnished:garnish_compound",
+      "count": 2
+    },
+    {
+      "chance": 0.05,
+      "item": "garnished:garnish_compound",
+      "count": 1
+    }
+  ]
+}

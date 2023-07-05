@@ -4,18 +4,9 @@ import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.util.entry.ItemEntry;
 
 import net.dakotapride.garnished.CreateGarnished;
-import net.dakotapride.garnished.item.CinderFlourNutFoodItem;
-import net.dakotapride.garnished.item.GarnishedNutFoodItem;
-import net.dakotapride.garnished.item.GarnishedSweetBerriesFoodItem;
-import net.dakotapride.garnished.item.HoneyedNutFoodItem;
-import net.dakotapride.garnished.item.HoneyedNutMixFoodItem;
-import net.dakotapride.garnished.item.HoneyedSweetBerriesFoodItem;
-import net.dakotapride.garnished.item.MeltedCinderFlourNutFoodItem;
-import net.dakotapride.garnished.item.NutMixFoodItem;
-import net.dakotapride.garnished.item.SweetenedNutFoodItem;
-import net.dakotapride.garnished.item.SweetenedNutMixFoodItem;
-import net.dakotapride.garnished.item.UngarnishedNutFoodItem;
+import net.dakotapride.garnished.item.*;
 import net.dakotapride.garnished.item.cracked.*;
+import net.minecraft.world.item.Item;
 
 @SuppressWarnings({"unused"})
 public class GarnishedItems {
@@ -151,7 +142,18 @@ public class GarnishedItems {
 	public static final ItemEntry<HoneyedSweetBerriesFoodItem> HONEYED_SWEET_BERRIES =
 			REGISTRATE.item("honeyed_sweet_berries", HoneyedSweetBerriesFoodItem::new).register();
 
-	public static void setRegister() {
-	}
+	// Flowers
+
+	// Misc
+	public static final ItemEntry<GarnishedMealFoodItem> GARNISHED_MEAL =
+			REGISTRATE.item("garnished_meal", GarnishedMealFoodItem::new).register();
+
+	public static final ItemEntry<Item> GARNISH_COMPOUND =
+			REGISTRATE.item("garnish_compound", Item::new).register();
+
+	public static final ItemEntry<MortarAndPestleItem> MORTAR_AND_PESTLE =
+			REGISTRATE.item("mortar_and_pestle", MortarAndPestleItem::new).register();
+
+	public static void setRegister() {}
 
 }

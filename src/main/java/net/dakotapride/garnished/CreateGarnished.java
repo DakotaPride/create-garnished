@@ -1,27 +1,25 @@
 package net.dakotapride.garnished;
 
-import net.dakotapride.garnished.registry.GarnishedFluids;
-
-import net.dakotapride.garnished.registry.GarnishedFeatures;
-import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
-import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
-
-import net.minecraft.tags.BiomeTags;
-import net.minecraft.world.level.biome.Biomes;
-import net.minecraft.world.level.levelgen.GenerationStep;
+import net.dakotapride.garnished.registry.GarnishedFoods;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import com.simibubi.create.Create;
 import com.simibubi.create.foundation.data.CreateRegistrate;
+import com.tterrag.registrate.util.nullness.NonNullSupplier;
 
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
-import com.tterrag.registrate.util.nullness.NonNullSupplier;
 import net.dakotapride.garnished.registry.GarnishedBlocks;
+import net.dakotapride.garnished.registry.GarnishedFeatures;
+import net.dakotapride.garnished.registry.GarnishedFluids;
 import net.dakotapride.garnished.registry.GarnishedItems;
 import net.dakotapride.garnished.registry.GarnishedTabs;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.minecraft.world.level.biome.Biomes;
+import net.minecraft.world.level.levelgen.GenerationStep;
 
 public class CreateGarnished implements ModInitializer {
 
@@ -38,6 +36,7 @@ public class CreateGarnished implements ModInitializer {
 		GarnishedBlocks.setRegister();
 		GarnishedTabs.setRegister();
 		GarnishedFluids.setRegister();
+		GarnishedFoods.setRegister();
 		REGISTRATE.get().register();
 
 		// Generation

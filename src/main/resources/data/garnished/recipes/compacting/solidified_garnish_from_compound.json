@@ -1,0 +1,34 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "amount": 27000,
+      "fluid": "minecraft:water",
+      "nbt": {}
+    },
+    {
+      "item": "garnished:garnish_compound"
+    },
+    [
+      {
+        "item": "minecraft:sugar"
+      },
+      {
+        "item": "minecraft:sugar_cane"
+      }
+    ],
+    [
+      {
+        "item": "minecraft:sugar"
+      },
+      {
+        "item": "minecraft:sugar_cane"
+      }
+    ]
+  ],
+  "results": [
+    {
+      "item": "garnished:solidified_garnish"
+    }
+  ]
+}

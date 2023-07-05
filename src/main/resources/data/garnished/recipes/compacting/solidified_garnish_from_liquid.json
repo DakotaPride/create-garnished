@@ -1,0 +1,21 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "amount": 81000,
+      "fluid": "garnished:garnish",
+      "nbt": {}
+    },
+    {
+      "item": "minecraft:wheat"
+    },
+    {
+      "item": "minecraft:wheat"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:solidified_garnish"
+    }
+  ]
+}
