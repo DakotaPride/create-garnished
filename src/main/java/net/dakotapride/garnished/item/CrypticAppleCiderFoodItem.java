@@ -51,11 +51,12 @@ public class CrypticAppleCiderFoodItem extends Item implements IGarnishedItem {
 	@Override
 	public @NotNull ItemStack finishUsingItem(@NotNull ItemStack stack, @NotNull Level level, @NotNull LivingEntity livingEntity) {
 		super.finishUsingItem(stack, level, livingEntity);
-		livingEntity.addEffect(new MobEffectInstance(getCrypticAppleCiderEffect(), getCrypticAppleCiderEffectDuration, 2));
 
 		if (livingEntity instanceof ServerPlayer serverPlayer) {
 			CriteriaTriggers.CONSUME_ITEM.trigger(serverPlayer, stack);
 			serverPlayer.awardStat(Stats.ITEM_USED.get(this));
+
+			livingEntity.addEffect(new MobEffectInstance(getCrypticAppleCiderEffect(), getCrypticAppleCiderEffectDuration, 2));
 		}
 
 		if (stack.isEmpty()) {
