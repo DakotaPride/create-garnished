@@ -15,14 +15,14 @@
       "tag": "garnished:cracked_nuts"
     },
     {
-      "amount": 27000,
+      "amount": 20250,
       "fluid": "minecraft:water",
       "nbt": {}
     }
   ],
   "results": [
     {
-      "amount": 27000,
+      "amount": 20250,
       "fluid": "garnished:apple_cider"
     }
   ]

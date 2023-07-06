@@ -17,14 +17,14 @@
       }
     ],
     {
-      "amount": 27000,
+      "amount": 20250,
       "fluid": "minecraft:water",
       "nbt": {}
     }
   ],
   "results": [
     {
-      "amount": 27000,
+      "amount": 20250,
       "fluid": "garnished:garnish"
     }
   ]
