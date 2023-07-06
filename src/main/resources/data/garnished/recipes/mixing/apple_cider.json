@@ -3,7 +3,7 @@
   "heatRequirement": "heating",
   "ingredients": [
     {
-      "item": "minecraft:sugar"
+      "item": "garnished:garnish_compound"
     },
     {
       "item": "minecraft:apple"
