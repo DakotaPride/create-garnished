@@ -12,6 +12,10 @@
   "text.garnished.nut.sweetened": "Sweetened",
   "text.garnished.nut.honeyed": "Honeyed",
   "text.garnished.nut.chocolate_glazed": "Chocolate Glazed",
+  "text.garnished.cider.cryptic": "Cryptic [HOLD SHIFT]",
+  "text.garnished.cider.cryptic.desc": "This Apple Cider provides the consumer",
+  "text.garnished.cider.cryptic.desc.secondary": "with either Strength or Slowness",
+  "text.garnished.cider.cryptic.desc.third": "A 50/50 chance, will you take it?",
 
   "item.garnished.cashew": "Cashew",
   "item.garnished.ungarnished_cashew": "Cashew",
@@ -84,6 +88,7 @@
   "item.garnished.garnished_meal": "Garnished Meal",
 
   "item.garnished.apple_cider": "Bottled Apple Cider",
+  "item.garnished.cryptic_apple_cider": "Bottled Apple Cider",
 
   "item.garnished.garnish_bucket": "Bucket of Garnish",
   "item.garnished.apple_cider_bucket": "Bucket of Apple Cider",

@@ -20,12 +20,16 @@ public interface IGarnishedItem {
 		return "text.garnished.nut.garnished";
 	}
 
-	default ChatFormatting getStandardColouring() {
-		return ChatFormatting.GRAY;
-	}
-
 	default String ungarnishedText() {
 		return "text.garnished.nut.ungarnished";
+	}
+
+	default String crypticAppleCiderText() {
+		return "text.garnished.cider.cryptic";
+	}
+
+	default ChatFormatting getStandardColouring() {
+		return ChatFormatting.GRAY;
 	}
 
 	default String sweetenedText() {

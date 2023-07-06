@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "garnished:apple_cider"
+    },
+    {
+      "tag": "minecraft:flowers"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:cryptic_apple_cider"
+    }
+  ]
+}
