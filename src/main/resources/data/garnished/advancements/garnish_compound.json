@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:garnish_compound"
+    },
+    "title": {
+      "translate": "advancement.garnished.garnish_compound.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.garnish_compound.description",
+      "color": "#DBA213"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "garnished:liquid_garnish",
+  "criteria": {
+    "obtain_garnish_compound": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "garnished:garnish_compound"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_garnish_compound"
+    ]
+  ]
+}

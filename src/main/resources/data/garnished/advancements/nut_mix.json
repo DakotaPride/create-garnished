@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:nut_mix"
+    },
+    "title": {
+      "translate": "advancement.garnished.nut_mix.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.nut_mix.description",
+      "color": "#DBA213"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": false,
+    "hidden": false
+  },
+  "parent": "garnished:garnished_nuts",
+  "criteria": {
+    "obtain_nut_mix": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "garnished:nut_mix"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_nut_mix"
+    ]
+  ]
+}

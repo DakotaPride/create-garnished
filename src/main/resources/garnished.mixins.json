@@ -3,10 +3,8 @@
   "minVersion": "0.8",
   "package": "net.dakotapride.garnished.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": [
-  ],
-  "client": [
-  ],
+  "mixins": [],
+  "client": [],
   "injectors": {
     "defaultRequire": 1
   }
