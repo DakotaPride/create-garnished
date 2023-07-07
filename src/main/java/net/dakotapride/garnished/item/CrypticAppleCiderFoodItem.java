@@ -12,6 +12,7 @@ import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -57,6 +58,10 @@ public class CrypticAppleCiderFoodItem extends Item implements IGarnishedItem {
 			serverPlayer.awardStat(Stats.ITEM_USED.get(this));
 
 			livingEntity.addEffect(new MobEffectInstance(getCrypticAppleCiderEffect(), getCrypticAppleCiderEffectDuration, 2));
+		}
+
+		if (!level.isClientSide) {
+			livingEntity.removeEffect(MobEffects.WITHER);
 		}
 
 		if (stack.isEmpty()) {
