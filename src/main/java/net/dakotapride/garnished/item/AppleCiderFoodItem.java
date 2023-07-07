@@ -1,7 +1,10 @@
 package net.dakotapride.garnished.item;
 
 import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.minecraft.ChatFormatting;
 import net.minecraft.advancements.CriteriaTriggers;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -15,16 +18,32 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
 
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
 
 public class AppleCiderFoodItem extends Item {
 	private static final int DRINK_DURATION = 40;
 
 	public AppleCiderFoodItem(Properties properties) {
 		super(properties.stacksTo(8).food(GarnishedFoods.APPLE_CIDER));
+	}
+
+	@Override
+	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level pLevel, @NotNull List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
+		if (!Screen.hasShiftDown()) {
+			tooltip.add(Component.translatable("text.garnished.hold_shift").withStyle(ChatFormatting.GRAY));
+		}
+
+		if (Screen.hasShiftDown()) {
+			tooltip.add(Component.literal(""));
+			tooltip.add(Component.translatable("text.garnished.cider.cryptic.desc.wither").withStyle(ChatFormatting.DARK_PURPLE));
+		}
 	}
 
 	@Override

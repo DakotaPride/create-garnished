@@ -16,6 +16,7 @@
   "text.garnished.cider.cryptic.desc": "This Apple Cider provides the consumer",
   "text.garnished.cider.cryptic.desc.secondary": "with either Strength or Slowness",
   "text.garnished.cider.cryptic.desc.third": "A 50/50 chance, will you take it?",
+  "text.garnished.cider.cryptic.desc.wither": "Cleanses the user of Withering upon consumption",
 
   "item.garnished.cashew": "Cashew",
   "item.garnished.ungarnished_cashew": "Cashew",

@@ -42,6 +42,8 @@ public class CrypticAppleCiderFoodItem extends Item implements IGarnishedItem {
 
 		if (Screen.hasShiftDown()) {
 			tooltip.add(Component.literal(""));
+			tooltip.add(Component.translatable("text.garnished.cider.cryptic.desc.wither").withStyle(ChatFormatting.DARK_PURPLE));
+			tooltip.add(Component.literal(""));
 			tooltip.add(Component.translatable("text.garnished.cider.cryptic.desc").withStyle(ChatFormatting.DARK_PURPLE));
 			tooltip.add(Component.translatable("text.garnished.cider.cryptic.desc.secondary").withStyle(ChatFormatting.DARK_PURPLE));
 			tooltip.add(Component.literal(""));
