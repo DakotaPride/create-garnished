@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "garnished:ungarnished_peanut"
+    },
+    {
+      "amount": 20250,
+      "fluid": "garnished:garnish"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:peanut"
+    }
+  ]
+}

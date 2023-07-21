@@ -15,7 +15,7 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "garnished:garnished_nuts",
+  "parent": "garnished:buhg",
   "criteria": {
     "obtain_nut_mix": {
       "trigger": "minecraft:inventory_changed",

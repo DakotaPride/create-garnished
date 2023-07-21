@@ -1,9 +1,7 @@
 {
   "replace": false,
   "values": [
-    "garnished:flowing_garnish",
-    "garnished:garnish",
-    "garnished:flowing_apple_cider",
-    "garnished:apple_cider"
+    "#garnished:liquid_garnish",
+    "#garnished:apple_cider"
   ]
 }

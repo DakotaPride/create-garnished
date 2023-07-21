@@ -9,6 +9,7 @@
   "text.garnished.nut.cinder_flour": "Cinder Flour",
   "text.garnished.nut.cinder_flour.melted": "Melted Cinder Flour",
   "text.garnished.nut.cinder_flour.effect": "Available Effect: [%d]",
+  "text.garnished.nut.cinder_flour.effect.multiple": "Available Effect: [Several Effects]",
   "text.garnished.nut.sweetened": "Sweetened",
   "text.garnished.nut.honeyed": "Honeyed",
   "text.garnished.nut.chocolate_glazed": "Chocolate Glazed",
@@ -78,6 +79,16 @@
   "item.garnished.honeyed_macadamia": "Macadamia",
   "item.garnished.chocolate_glazed_macadamia": "Macadamia",
 
+  "item.garnished.peanut": "Peanut",
+  "item.garnished.ungarnished_peanut": "Peanut",
+  "item.garnished.cinder_peanut": "Peanut",
+  "item.garnished.melted_cinder_peanut": "Peanut",
+  "item.garnished.sweetened_peanut": "Peanut",
+  "block.garnished.peanut_crop": "Peanut",
+  "item.garnished.cinder_peanut_effect": "Peanut",
+  "item.garnished.honeyed_peanut": "Peanut",
+  "item.garnished.chocolate_glazed_peanut": "Peanut",
+
   "item.garnished.garnished_sweet_berries": "Sweet Berries",
   "item.garnished.honeyed_sweet_berries": "Sweet Berries",
 
@@ -107,7 +118,7 @@
   "advancement.garnished.cracked_nuts.description": "Crack your nuts open and make way for automation",
   "advancement.garnished.garnished_nuts.title": "Garnishment",
   "advancement.garnished.garnished_nuts.description": "Apply Liquid Garnish onto your nuts",
-  "advancement.garnished.sweetened_nuts.title": "Confectionary... Wait",
+  "advancement.garnished.sweetened_nuts.title": "Confectionery... Wait",
   "advancement.garnished.sweetened_nuts.description": "Sweeten your nuts using Deployers and Sugar",
   "advancement.garnished.liquid_garnish.title": "Chef's Kiss",
   "advancement.garnished.liquid_garnish.description": "Mix Sugar, Water, and Seeds to make Liquid Garnish",
@@ -126,5 +137,7 @@
   "advancement.garnished.apple_cider.title": "Classical Drinks",
   "advancement.garnished.apple_cider.description": "Mix Apples, Water, a Cracked Nut, and Garnish Compound to make Apple Cider",
   "advancement.garnished.cryptic_apple_cider.title": "Gambling",
-  "advancement.garnished.cryptic_apple_cider.description": "Apply a flower to Bottled Apple Cider"
+  "advancement.garnished.cryptic_apple_cider.description": "Apply a flower to Bottled Apple Cider",
+  "advancement.garnished.ina_buhg.title": "It's a Buhg",
+  "advancement.garnished.ina_buhg.description": "Obtain some variation of a Peanut"
 }

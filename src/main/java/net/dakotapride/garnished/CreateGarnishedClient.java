@@ -17,6 +17,7 @@ public class CreateGarnishedClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.PECAN_CROP.get(), RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.PISTACHIO_CROP.get(), RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.MACADAMIA_CROP.get(), RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.BUHG_CROP.get(), RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.NUT_PLANT.get(), RenderType.cutout());
 

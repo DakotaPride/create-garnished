@@ -140,6 +140,28 @@ public class GarnishedItems {
 	public static final ItemEntry<HoneyedNutFoodItem> HONEYED_MACADAMIA =
 			REGISTRATE.item("honeyed_macadamia", HoneyedNutFoodItem::new).register();
 
+	// Ina, why?
+	// Buhgs
+	public static final ItemEntry<CrackedBuhgItem> CRACKED_BUHG =
+			REGISTRATE.item("cracked_peanut", CrackedBuhgItem::new).register();
+
+	public static final ItemEntry<UngarnishedNutFoodItem> UNGARNISHED_BUHG =
+			REGISTRATE.item("ungarnished_peanut", UngarnishedNutFoodItem::new).register();
+	public static final ItemEntry<GarnishedNutFoodItem> BUHG =
+			REGISTRATE.item("peanut", GarnishedNutFoodItem::new).register();
+	public static final ItemEntry<CinderFlourNutFoodItem> CINDER_FLOUR_BUHG =
+			REGISTRATE.item("cinder_peanut", CinderFlourNutFoodItem::new).register();
+	public static final ItemEntry<MeltedCinderFlourNutFoodItem> MELTED_CINDER_FLOUR_BUHG =
+			REGISTRATE.item("melted_cinder_peanut", MeltedCinderFlourNutFoodItem::new).register();
+	public static final ItemEntry<MeltedCinderFlourNutFoodItem> EFFECT_CINDER_BUHG =
+			REGISTRATE.item("cinder_peanut_effect", MeltedCinderFlourNutFoodItem::new).register();
+	public static final ItemEntry<SweetenedNutFoodItem> SWEETENED_BUHG =
+			REGISTRATE.item("sweetened_peanut", SweetenedNutFoodItem::new).register();
+	public static final ItemEntry<ChocholateGlazedNutFoodItem> CHOCOLATE_GLAZED_BUHG =
+			REGISTRATE.item("chocolate_glazed_peanut", ChocholateGlazedNutFoodItem::new).register();
+	public static final ItemEntry<HoneyedNutFoodItem> HONEYED_BUHG =
+			REGISTRATE.item("honeyed_peanut", HoneyedNutFoodItem::new).register();
+
 	// Nut mix
 	public static final ItemEntry<NutMixFoodItem> NUT_MIX =
 			REGISTRATE.item("nut_mix", NutMixFoodItem::new).register();

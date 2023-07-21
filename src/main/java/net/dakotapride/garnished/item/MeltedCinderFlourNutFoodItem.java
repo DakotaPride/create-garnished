@@ -4,6 +4,10 @@ import java.util.List;
 
 import net.dakotapride.garnished.registry.GarnishedFoods;
 
+import net.dakotapride.garnished.registry.GarnishedItems;
+
+import net.minecraft.world.effect.MobEffects;
+
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -24,7 +28,12 @@ public class MeltedCinderFlourNutFoodItem extends Item implements IGarnishedItem
 	@Override
 	public @NotNull ItemStack finishUsingItem(@NotNull ItemStack stack, @NotNull Level level, @NotNull LivingEntity livingEntity) {
 
-		livingEntity.addEffect(new MobEffectInstance(getCinderEffect(stack), getCinderEffectDuration));
+		if (!stack.is(GarnishedItems.EFFECT_CINDER_BUHG.get())) {
+			livingEntity.addEffect(new MobEffectInstance(getCinderEffect(stack), getCinderEffectDuration));
+		} else {
+			livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, getCinderEffectDuration));
+			livingEntity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, getCinderEffectDuration));
+		}
 
 		return super.finishUsingItem(stack, level, livingEntity);
 	}
@@ -32,9 +41,11 @@ public class MeltedCinderFlourNutFoodItem extends Item implements IGarnishedItem
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
 		tooltip.add(Component.translatable(meltedCinderFlourText()).withStyle(getCinderFlourColouring()));
-		if (getCinderEffect(stack) != null) {
+		if (getCinderEffect(stack) != null && !stack.is(GarnishedItems.EFFECT_CINDER_BUHG.get())) {
 			tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect",
 					getCinderEffect(stack).getDisplayName()).withStyle(getStandardColouring()));
+		} else if (stack.is(GarnishedItems.EFFECT_CINDER_BUHG.get())) {
+			tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect.multiple").withStyle(getStandardColouring()));
 		}
 	}
 }

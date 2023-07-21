@@ -5,21 +5,16 @@
       "item": "garnished:solidified_garnish"
     }
   ],
-  "processingTime": 150,
+  "processingTime": 100,
   "results": [
     {
-      "count": 2,
+      "count": 5,
       "item": "garnished:garnish_compound"
     },
     {
-      "chance": 0.15,
+      "chance": 0.20,
       "item": "garnished:garnish_compound",
-      "count": 2
-    },
-    {
-      "chance": 0.05,
-      "item": "garnished:garnish_compound",
-      "count": 1
+      "count": 3
     }
   ]
 }

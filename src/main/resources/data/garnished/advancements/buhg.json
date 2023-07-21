@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "garnished:cinder_walnut_strength"
+      "item": "garnished:peanut"
     },
     "title": {
-      "translate": "advancement.garnished.melted_cinder_effect_nuts.title"
+      "translate": "advancement.garnished.ina_buhg.title"
     },
     "description": {
-      "translate": "advancement.garnished.melted_cinder_effect_nuts.description",
+      "translate": "advancement.garnished.ina_buhg.description",
       "color": "#DBA213"
     },
     "frame": "task",
@@ -15,14 +15,14 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "garnished:honeyed_nuts",
+  "parent": "garnished:garnished_nuts",
   "criteria": {
-    "obtain_melted_cinder_effect_nut": {
+    "obtain_peanut": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "tag": "garnished:melted_cinder_nuts_with_effects"
+            "tag": "garnished:buhg"
           }
         ]
       }
@@ -30,7 +30,7 @@
   },
   "requirements": [
     [
-      "obtain_melted_cinder_effect_nut"
+      "obtain_peanut"
     ]
   ]
 }
