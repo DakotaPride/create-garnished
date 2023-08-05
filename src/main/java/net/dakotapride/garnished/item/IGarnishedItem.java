@@ -84,6 +84,8 @@ public interface IGarnishedItem {
 			effect = MobEffects.NIGHT_VISION;
 		} else if (item == GarnishedItems.FIRE_RESISTANCE_CINDER_MACADAMIA.get()) {
 			effect = MobEffects.FIRE_RESISTANCE;
+		} else {
+			return MobEffects.BLINDNESS;
 		}
 
 		return effect;
