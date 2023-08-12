@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:stone",
+    "minecraft:andesite",
+    "minecraft:granite",
+    "minecraft:diorite",
+    "minecraft:tuff",
+    "minecraft:calcite",
+    "minecraft:dripstone",
+
+    "create:ochrum",
+    "create:veridium",
+    "create:crimsite",
+    "create:asurine",
+    "create:limestone"
+  ]
+}

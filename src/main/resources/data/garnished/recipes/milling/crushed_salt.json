@@ -1,0 +1,25 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "tag": "garnished:crushable/stone"
+    }
+  ],
+  "processingTime": 150,
+  "results": [
+    {
+      "count": 1,
+      "item": "garnished:crushed_salt"
+    },
+    {
+      "chance": 0.10,
+      "item": "minecraft:iron_nugget",
+      "count": 2
+    },
+    {
+      "chance": 0.10,
+      "item": "create:zinc_nugget",
+      "count": 2
+    }
+  ]
+}

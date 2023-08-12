@@ -37,6 +37,9 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties APPLE_CIDER = new FoodProperties.Builder().nutrition(7).saturationMod(0.5F).build();
 	public static final FoodProperties CRYPTIC_APPLE_CIDER = new FoodProperties.Builder().nutrition(8).saturationMod(0.7F).build();
 
+	// Salad
+	public static final FoodProperties SALAD = new FoodProperties.Builder().nutrition(7).saturationMod(0.6F).build();
+
 	// Misc
 	public static final FoodProperties GARNISHED_MEAL = new FoodProperties.Builder().nutrition(11).saturationMod(0.8F).build();
 
