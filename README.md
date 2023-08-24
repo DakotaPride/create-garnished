@@ -23,5 +23,7 @@ An additional nut will be added, **Hazelnuts**! While I wasn't planning on addin
 
 **Melted Cinder Flour Nut** recipes that conflicted with Create/Vanilla recipes are now fixed! The recipe now requires **Garnish Powder** or **Processed Salt** instead of sugar and is also converted from a mixing recipe to a compacting recipe. If any other conflicts come up, feel free to open a report here or message me in some variation!
 
+**Salt Compound** will now be created via a sequenced assembly line recipe. Similar to the train track recipe, only requiring one full cycle. The first and second steps of the assembly require you to press it, and the final step requires you to apply **Garnish Compound** onto the item.
 
-More information may be added in the future, but until then, thank you so much for all of the support on this mod! (please report any issues/suggestions here, and if you have questions, feel free to ask them!)
+
+More information may be added in the future, but until then, thank you so much for all of the support on this mod! (Please report any issues/suggestions here, and if you have questions, feel free to ask them!)
