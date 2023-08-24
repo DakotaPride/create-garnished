@@ -1,20 +1,23 @@
 package net.dakotapride.garnished.block;
 
+import net.dakotapride.garnished.gen.NutTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.BushBlock;
+import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.grower.AbstractTreeGrower;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import org.jetbrains.annotations.NotNull;
 
-public class NutPlantBlock extends BushBlock {
-	public NutPlantBlock(Properties properties) {
-		super(properties.noCollission().instabreak().sound(SoundType.CROP));
+public class NutSaplingBlock extends SaplingBlock {
+	public NutSaplingBlock(Properties properties) {
+		super(new NutTreeGrower(), properties);
 	}
 
 	@Override

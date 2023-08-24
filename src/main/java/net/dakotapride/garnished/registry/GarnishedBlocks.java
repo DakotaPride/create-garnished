@@ -6,9 +6,11 @@ import com.tterrag.registrate.util.entry.BlockEntry;
 
 import net.dakotapride.garnished.CreateGarnished;
 import net.dakotapride.garnished.block.NutCropBlock;
-import net.dakotapride.garnished.block.NutPlantBlock;
+import net.dakotapride.garnished.block.NutLeavesBlock;
+import net.dakotapride.garnished.block.NutSaplingBlock;
 import net.dakotapride.garnished.block.SolidifiedGarnishBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.SaplingBlock;
 
 @SuppressWarnings({"unused"})
 public class GarnishedBlocks {
@@ -50,10 +52,20 @@ public class GarnishedBlocks {
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.register();
 
-	public static final BlockEntry<NutPlantBlock> NUT_PLANT =
-			REGISTRATE.block("nut_plant", NutPlantBlock::new)
+	public static final BlockEntry<Block> NUT_PLANT =
+			REGISTRATE.block("nut_plant", Block::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.register();
+
+	public static final BlockEntry<NutSaplingBlock> NUT_SAPLING =
+			REGISTRATE.block("nut_sapling", NutSaplingBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem().register();
+
+	public static final BlockEntry<NutLeavesBlock> NUT_LEAVES =
+			REGISTRATE.block("nut_leaves", NutLeavesBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem().register();
 
 	public static final BlockEntry<SolidifiedGarnishBlock> SOLIDIFIED_GARNISH_BLOCK =
 			REGISTRATE.block("solidified_garnish", SolidifiedGarnishBlock::new)
