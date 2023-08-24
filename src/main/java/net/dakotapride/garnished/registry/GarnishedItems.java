@@ -140,6 +140,27 @@ public class GarnishedItems {
 	public static final ItemEntry<HoneyedNutFoodItem> HONEYED_MACADAMIA =
 			REGISTRATE.item("honeyed_macadamia", HoneyedNutFoodItem::new).register();
 
+	// Macadamia
+	public static final ItemEntry<CrackedMacadamiaItem> CRACKED_HAZELNUT =
+			REGISTRATE.item("cracked_hazelnut", CrackedMacadamiaItem::new).register();
+
+	public static final ItemEntry<UngarnishedNutFoodItem> UNGARNISHED_HAZELNUT =
+			REGISTRATE.item("ungarnished_hazelnut", UngarnishedNutFoodItem::new).register();
+	public static final ItemEntry<GarnishedNutFoodItem> HAZELNUT =
+			REGISTRATE.item("hazelnut", GarnishedNutFoodItem::new).register();
+	public static final ItemEntry<CinderFlourNutFoodItem> CINDER_FLOUR_HAZELNUT =
+			REGISTRATE.item("cinder_hazelnut", CinderFlourNutFoodItem::new).register();
+	public static final ItemEntry<MeltedCinderFlourNutFoodItem> MELTED_CINDER_FLOUR_HAZELNUT =
+			REGISTRATE.item("melted_cinder_hazelnut", MeltedCinderFlourNutFoodItem::new).register();
+	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem> POTENT_SPEED_CINDER_HAZELNUT =
+			REGISTRATE.item("cinder_hazelnut_speed_potent", MeltedCinderFlourNutWithEffectFoodItem::new).register();
+	public static final ItemEntry<SweetenedNutFoodItem> SWEETENED_HAZELNUT =
+			REGISTRATE.item("sweetened_hazelnut", SweetenedNutFoodItem::new).register();
+	public static final ItemEntry<ChocholateGlazedNutFoodItem> CHOCOLATE_GLAZED_HAZELNUT =
+			REGISTRATE.item("chocolate_glazed_hazelnut", ChocholateGlazedNutFoodItem::new).register();
+	public static final ItemEntry<HoneyedNutFoodItem> HONEYED_HAZELNUT =
+			REGISTRATE.item("honeyed_hazelnut", HoneyedNutFoodItem::new).register();
+
 	// Ina, why?
 	// Buhgs
 	public static final ItemEntry<CrackedBuhgItem> CRACKED_BUHG =
@@ -196,6 +217,8 @@ public class GarnishedItems {
 			REGISTRATE.item("crushed_salt", Item::new).register();
 	public static final ItemEntry<Item> SALT_COMPOUND =
 			REGISTRATE.item("salt_compound", Item::new).register();
+	public static final ItemEntry<Item> UNPROCESSED_SALT_COMPOUND =
+			REGISTRATE.item("unprocessed_salt_compound", Item::new).register();
 
 	// Misc
 	public static final ItemEntry<Item> GARNISH_COMPOUND =

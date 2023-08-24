@@ -10,6 +10,7 @@
   "text.garnished.nut.cinder_flour.melted": "融化的余烬面粉",
   "text.garnished.nut.cinder_flour.effect": "可用效果：[%d]",
   "text.garnished.nut.cinder_flour.effect.multiple": "可用效果：[多种效果]",
+  "text.garnished.nut.cinder_flour.effect.hazelnut": "[Translation Unavailable]",
   "text.garnished.nut.sweetened": "加糖",
   "text.garnished.nut.honeyed": "涂蜜",
   "text.garnished.nut.chocolate_glazed": "涂有巧克力",
@@ -99,6 +100,7 @@
   "item.garnished.chocolate_glazed_nut_mix": "混合坚果",
 
   "item.garnished.crushed_salt": "碎盐",
+  "item.garnished.unprocessed_salt_compound": "[Translation Unavailable]", //
   "item.garnished.salt_compound": "盐复合物",
 
   "item.garnished.salad": "沙拉",

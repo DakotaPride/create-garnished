@@ -27,9 +27,11 @@ public class MeltedCinderFlourNutWithEffectFoodItem extends Item implements IGar
 
 		if (!stack.is(GarnishedItems.EFFECT_CINDER_BUHG.get())) {
 			livingEntity.addEffect(new MobEffectInstance(getCinderEffect(stack), getCinderEffectDuration));
-		} else {
+		} else if (!stack.is(GarnishedItems.POTENT_SPEED_CINDER_HAZELNUT.get())) {
 			livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, getCinderEffectDuration));
 			livingEntity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, getCinderEffectDuration));
+		} else if (stack.is(GarnishedItems.POTENT_SPEED_CINDER_HAZELNUT.get())) {
+			livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, getCinderEffectDuration, 1));
 		}
 
 		return super.finishUsingItem(stack, level, livingEntity);
@@ -38,11 +40,13 @@ public class MeltedCinderFlourNutWithEffectFoodItem extends Item implements IGar
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
 		tooltip.add(Component.translatable(meltedCinderFlourText()).withStyle(getCinderFlourColouring()));
-		if (getCinderEffect(stack) != null && !stack.is(GarnishedItems.EFFECT_CINDER_BUHG.get())) {
+		if (getCinderEffect(stack) != null && !stack.is(GarnishedItems.EFFECT_CINDER_BUHG.get()) && !stack.is(GarnishedItems.POTENT_SPEED_CINDER_HAZELNUT.get())) {
 			tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect",
 					getCinderEffect(stack).getDisplayName()).withStyle(getStandardColouring()));
 		} else if (stack.is(GarnishedItems.EFFECT_CINDER_BUHG.get())) {
 			tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect.multiple").withStyle(getStandardColouring()));
+		} else if (stack.is(GarnishedItems.POTENT_SPEED_CINDER_HAZELNUT.get())) {
+			tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect.hazelnut").withStyle(getStandardColouring()));
 		}
 	}
 }

@@ -3,8 +3,8 @@ package net.dakotapride.garnished.item.cracked;
 import net.dakotapride.garnished.registry.GarnishedBlocks;
 import net.minecraft.world.level.block.Blocks;
 
-public class CrackedPecanItem extends CrackedNutItem {
-	public CrackedPecanItem(Properties properties) {
+public class CrackedHazelnutItem extends CrackedNutItem {
+	public CrackedHazelnutItem(Properties properties) {
 		super(Blocks.WHITE_WOOL, properties);
 	}
 }

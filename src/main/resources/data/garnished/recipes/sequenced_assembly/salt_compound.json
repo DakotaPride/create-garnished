@@ -1,0 +1,59 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "garnished:crushed_salt"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "garnished:salt_compound"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "garnished:unprocessed_salt_compound"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:unprocessed_salt_compound"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "garnished:unprocessed_salt_compound"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:unprocessed_salt_compound"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:unprocessed_salt_compound"
+        },
+        {
+          "item": "garnished:garnish_compound"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:unprocessed_salt_compound"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "garnished:unprocessed_salt_compound"
+  }
+}

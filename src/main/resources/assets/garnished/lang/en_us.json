@@ -10,6 +10,7 @@
   "text.garnished.nut.cinder_flour.melted": "Melted Cinder Flour",
   "text.garnished.nut.cinder_flour.effect": "Available Effect: [%d]",
   "text.garnished.nut.cinder_flour.effect.multiple": "Available Effect: [Several Effects]",
+  "text.garnished.nut.cinder_flour.effect.hazelnut": "Available Effect: [Potent Speed]",
   "text.garnished.nut.sweetened": "Sweetened",
   "text.garnished.nut.honeyed": "Honeyed",
   "text.garnished.nut.chocolate_glazed": "Chocolate Glazed",
@@ -99,6 +100,7 @@
   "item.garnished.chocolate_glazed_nut_mix": "Nut Mix",
 
   "item.garnished.crushed_salt": "Crushed Salt",
+  "item.garnished.unprocessed_salt_compound": "Unprocessed Salt Compound",
   "item.garnished.salt_compound": "Salt Compound",
 
   "item.garnished.salad": "Salad",

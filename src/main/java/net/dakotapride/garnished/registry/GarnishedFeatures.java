@@ -20,6 +20,8 @@ import net.minecraft.world.level.levelgen.feature.foliageplacers.RandomSpreadFol
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.BendingTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 import net.minecraft.world.level.levelgen.placement.BiomeFilter;
 import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
@@ -31,7 +33,7 @@ public class GarnishedFeatures {
 			FeatureUtils.register(CreateGarnished.ID + ":nut_tree_configured", Feature.TREE,
 					new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.OAK_LOG),
 							new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
-							new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.OAK_LEAVES.defaultBlockState(), 3)
+							new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.OAK_LEAVES.defaultBlockState(), 5)
 									.add(GarnishedBlocks.NUT_LEAVES.get().defaultBlockState(), 1)),
 							new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
 							new TwoLayersFeatureSize(1, 0, 1)).dirt(BlockStateProvider.simple(Blocks.DIRT)).forceDirt().build());
@@ -39,5 +41,14 @@ public class GarnishedFeatures {
 	public static final Holder<PlacedFeature> NUT_TREE_PLACED = PlacementUtils.register("nut_tree_placed",
 			NUT_TREE_CONFIGURED, RarityFilter.onAverageOnceEvery(8),
 					InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome());
+
+	public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> BUHG_TREE_CONFIGURED =
+			FeatureUtils.register(CreateGarnished.ID + ":peanut_tree_configured", Feature.TREE,
+					new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.OAK_LOG),
+							new StraightTrunkPlacer(1, 1, 2),
+							new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.OAK_LEAVES.defaultBlockState(), 3)
+									.add(GarnishedBlocks.BUHG_LEAVES.get().defaultBlockState(), 1)),
+							new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 40),
+							new TwoLayersFeatureSize(1, 0, 1)).dirt(BlockStateProvider.simple(Blocks.DIRT)).forceDirt().build());
 
 }
