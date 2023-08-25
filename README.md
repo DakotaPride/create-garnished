@@ -25,6 +25,8 @@ An additional nut will be added, **Hazelnuts**! While I wasn't planning on addin
 
 **Salt Compound** will now be created via a sequenced assembly line recipe. Similar to the train track recipe, only requiring one full cycle. The first and second steps of the assembly require you to press it, and the final step requires you to apply **Garnish Compound** onto the item.
 
+**Crushed Salt** now requires **Limestone** instead of all stones. This change was made due to other conflictions regarding crushing recipes being automatically generated.
+
 As a byproduct of other changes, **Botany Pots** Compatibility will also be removed. This may be changed in the future, as **Botany Trees** exists, and compatibility may come along. This is unlikely, however.
 
 
