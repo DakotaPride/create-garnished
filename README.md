@@ -25,5 +25,7 @@ An additional nut will be added, **Hazelnuts**! While I wasn't planning on addin
 
 **Salt Compound** will now be created via a sequenced assembly line recipe. Similar to the train track recipe, only requiring one full cycle. The first and second steps of the assembly require you to press it, and the final step requires you to apply **Garnish Compound** onto the item.
 
+As a byproduct of other changes, **Botany Pots** Compatibility will also be removed. This may be changed in the future, as **Botany Trees** exists, and compatibility may come along. This is unlikely, however.
+
 
 More information may be added in the future, but until then, thank you so much for all of the support on this mod! (Please report any issues/suggestions here, and if you have questions, feel free to ask them!)
