@@ -17,7 +17,9 @@ This also gets rid of the flaw that was Mechanical Harvesters automatically repl
 
 The crushing recipe for **Garnished Compound** has been adjusted once more to only bear a base total of 4 compounds alongside a 10% chance of 2 additional compounds.
 
-The compacting recipe for **Solidified Garnish Blocks** has also been changed, requiring 3 sugar/sugarcane instead of the original 2, alongside now requiring 1 **Salt Compound**.
+Both compacting recipes for the **Solidified Garnish Block** have been changed.
+- [From compound] 1x Water (bucket), 1x Garnish Compound, 1x Salt Compound, 2x Sugar
+- [From liquid] 1x Liqiufied Garnish (bucket), 1x Salt Compound, 2x Wheat
 
 An additional nut will be added, **Hazelnuts**! While I wasn't planning on adding any more nuts, I felt that since this was an overhaul update, I might as well also look at community suggestions. Over here on Github, there aren't many suggestions currently circulating, if any. However, almost a week ago **Create: Garnished** was put into the spotlight on **[Dejojo's Channel](https://www.youtube.com/@dejojotheawsome)** (for those who may not know, the entire reason that this mod exists, is because of a stupid debacle that happened on a live stream of his). So I looked through the comments on the video and saw a decent few people enjoy the idea of hazelnuts being added that could be used in an alternative chocolate recipe.
 
