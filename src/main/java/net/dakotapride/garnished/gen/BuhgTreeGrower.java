@@ -9,6 +9,7 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import org.jetbrains.annotations.Nullable;
 
 public class BuhgTreeGrower extends AbstractTreeGrower {
+
 	@Nullable
 	@Override
 	protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource random, boolean largeHive) {

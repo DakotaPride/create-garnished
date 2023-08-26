@@ -41,6 +41,8 @@ public class CreateGarnishedClient implements ClientModInitializer {
 
 		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.GARNISH.get().getSource(),
 				GarnishedFluids.GARNISH.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.GARNISH.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.APPLE_CIDER.get().getSource(),
+				GarnishedFluids.APPLE_CIDER.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.APPLE_CIDER.get()));
 
 	}
 

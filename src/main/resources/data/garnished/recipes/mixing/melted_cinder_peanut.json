@@ -6,11 +6,6 @@
       "item": "garnished:cinder_peanut"
     },
     {
-      "amount": 8100,
-      "fluid": "minecraft:water",
-      "nbt": {}
-    },
-    {
       "item": "minecraft:nether_wart"
     }
   ],

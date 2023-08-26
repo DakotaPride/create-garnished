@@ -9,7 +9,6 @@ import net.minecraft.world.level.block.grower.AbstractTreeGrower;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 
 public class NutTreeGrower extends AbstractTreeGrower {
-	public NutTreeGrower() {}
 
 	@Nullable
 	@Override

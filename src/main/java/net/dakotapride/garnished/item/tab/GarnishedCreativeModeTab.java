@@ -109,14 +109,20 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 		items.add(77, GarnishedItems.GARNISHED_SWEET_BERRIES.asStack());
 		items.add(78, GarnishedItems.HONEYED_SWEET_BERRIES.asStack());
 
-		items.add(79, GarnishedItems.APPLE_CIDER.asStack());
-		items.add(80, GarnishedItems.CRYPTIC_APPLE_CIDER.asStack());
+		items.add(79, GarnishedItems.SALAD.asStack());
+		items.add(80, GarnishedItems.PHANTOM_STEAK.asStack());
 
-		items.add(81, GarnishedItems.GARNISH_COMPOUND.asStack());
-		items.add(82, GarnishedBlocks.SOLIDIFIED_GARNISH_BLOCK.asStack());
+		items.add(81, GarnishedItems.CRUSHED_SALT_COMPOUND.asStack());
+		items.add(82, GarnishedItems.SALT_COMPOUND.asStack());
 
-		items.add(83, GarnishedFluids.GARNISH.getBucket().get().getDefaultInstance());
-		items.add(84, GarnishedFluids.APPLE_CIDER.getBucket().get().getDefaultInstance());
+		items.add(83, GarnishedItems.APPLE_CIDER.asStack());
+		items.add(84, GarnishedItems.CRYPTIC_APPLE_CIDER.asStack());
+
+		items.add(85, GarnishedItems.GARNISH_COMPOUND.asStack());
+		items.add(86, GarnishedBlocks.SOLIDIFIED_GARNISH_BLOCK.asStack());
+
+		items.add(87, GarnishedFluids.GARNISH.getBucket().get().getDefaultInstance());
+		items.add(88, GarnishedFluids.APPLE_CIDER.getBucket().get().getDefaultInstance());
 	}
 
 	@Override

@@ -141,8 +141,8 @@ public class GarnishedItems {
 			REGISTRATE.item("honeyed_macadamia", HoneyedNutFoodItem::new).register();
 
 	// Macadamia
-	public static final ItemEntry<CrackedMacadamiaItem> CRACKED_HAZELNUT =
-			REGISTRATE.item("cracked_hazelnut", CrackedMacadamiaItem::new).register();
+	public static final ItemEntry<CrackedHazelnutItem> CRACKED_HAZELNUT =
+			REGISTRATE.item("cracked_hazelnut", CrackedHazelnutItem::new).register();
 
 	public static final ItemEntry<UngarnishedNutFoodItem> UNGARNISHED_HAZELNUT =
 			REGISTRATE.item("ungarnished_hazelnut", UngarnishedNutFoodItem::new).register();
@@ -208,10 +208,6 @@ public class GarnishedItems {
 	public static final ItemEntry<CrypticAppleCiderFoodItem> CRYPTIC_APPLE_CIDER =
 			REGISTRATE.item("cryptic_apple_cider", CrypticAppleCiderFoodItem::new).register();
 
-	// Salad
-	public static final ItemEntry<SaltedFoodItem> SALAD =
-			REGISTRATE.item("salad", SaltedFoodItem::new).register();
-
 	// Salt Compounds
 	public static final ItemEntry<Item> CRUSHED_SALT_COMPOUND =
 			REGISTRATE.item("crushed_salt", Item::new).register();
@@ -223,6 +219,16 @@ public class GarnishedItems {
 	// Misc
 	public static final ItemEntry<Item> GARNISH_COMPOUND =
 			REGISTRATE.item("garnish_compound", Item::new).register();
+	public static final ItemEntry<Item> GARNISH_POWDER =
+			REGISTRATE.item("garnish_powder", Item::new).register();
+
+	// Misc Foods
+	public static final ItemEntry<SaladFoodItem> SALAD =
+			REGISTRATE.item("salad", SaladFoodItem::new).register();
+	public static final ItemEntry<SaltedFoodItem> INCOMPLETE_PHANTOM_STEAK =
+			REGISTRATE.item("incomplete_phantom_steak", SaltedFoodItem::new).register();
+	public static final ItemEntry<PhantomSteakFoodItem> PHANTOM_STEAK =
+			REGISTRATE.item("phantom_steak", PhantomSteakFoodItem::new).register();
 
 	public static void setRegister() {}
 

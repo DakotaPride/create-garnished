@@ -1,0 +1,31 @@
+{   "parent": "block/block",
+  "textures": {
+    "particle": "garnished:block/nut_leaves",
+    "bottom": "garnished:block/nut_leaves",
+    "top": "garnished:block/nut_leaves",
+    "side": "garnished:block/nut_leaves",
+    "overlay": "garnished:block/leaves/almond"
+  },
+  "elements": [
+    {   "from": [ 0, 0, 0 ],
+      "to": [ 16, 16, 16 ],
+      "faces": {
+        "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#bottom", "cullface": "down", "tintindex": 1 },
+        "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#top",    "cullface": "up", "tintindex": 1 },
+        "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#side",   "cullface": "north", "tintindex": 1 },
+        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#side",   "cullface": "south", "tintindex": 1 },
+        "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#side",   "cullface": "west", "tintindex": 1 },
+        "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#side",   "cullface": "east", "tintindex": 1 }
+      }
+    },
+    {   "from": [ 0, 0, 0 ],
+      "to": [ 16, 16, 16 ],
+      "faces": {
+        "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#overlay", "cullface": "north" },
+        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#overlay", "cullface": "south" },
+        "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#overlay", "cullface": "west" },
+        "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#overlay", "cullface": "east" }
+      }
+    }
+  ]
+}

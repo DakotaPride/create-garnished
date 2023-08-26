@@ -5,6 +5,6 @@ import net.minecraft.world.level.block.Blocks;
 
 public class CrackedPistachioItem extends CrackedNutItem {
 	public CrackedPistachioItem(Properties properties) {
-		super(Blocks.WHITE_WOOL, properties);
+		super(GarnishedBlocks.PISTACHIO_SAPLING.get(), properties);
 	}
 }

@@ -15,7 +15,7 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "garnished:nut_growth",
+  "parent": "garnished:nut_tree",
   "criteria": {
     "obtain_cracked_nut": {
       "trigger": "minecraft:inventory_changed",

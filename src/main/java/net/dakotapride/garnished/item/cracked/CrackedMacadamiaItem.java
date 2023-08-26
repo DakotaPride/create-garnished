@@ -5,6 +5,6 @@ import net.minecraft.world.level.block.Blocks;
 
 public class CrackedMacadamiaItem extends CrackedNutItem {
 	public CrackedMacadamiaItem(Properties properties) {
-		super(Blocks.WHITE_WOOL, properties);
+		super(GarnishedBlocks.MACADAMIA_SAPLING.get(), properties);
 	}
 }

@@ -2,7 +2,7 @@
   "type": "create:milling",
   "ingredients": [
     {
-      "tag": "garnished:crushable/stone"
+      "item": "create:limestone"
     }
   ],
   "processingTime": 150,

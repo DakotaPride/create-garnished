@@ -1,0 +1,25 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "garnished:crushable/hazelnut"
+    },
+    {
+      "tag": "garnished:crushable/hazelnut"
+    },
+    {
+      "amount": 27000,
+      "fluidTag": "c:milk"
+    }
+  ],
+  "results": [
+    {
+      "amount": 27000,
+      "fluid": "create:chocolate"
+    }
+  ]
+}

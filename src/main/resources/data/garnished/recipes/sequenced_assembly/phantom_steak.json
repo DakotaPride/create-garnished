@@ -1,0 +1,67 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:cooked_beef"
+  },
+  "loops": 2,
+  "results": [
+    {
+      "item": "garnished:phantom_steak"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_phantom_steak"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_phantom_steak"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_phantom_steak"
+        },
+        [
+          {
+            "item": "minecraft:soul_sand"
+          },
+          {
+            "item": "minecraft:soul_soil"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_phantom_steak"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_phantom_steak"
+        },
+        {
+          "item": "garnished:salt_compound"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_phantom_steak"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "garnished:incomplete_phantom_steak"
+  }
+}

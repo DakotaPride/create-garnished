@@ -5,6 +5,6 @@ import net.minecraft.world.level.block.Blocks;
 
 public class CrackedBuhgItem extends CrackedNutItem {
 	public CrackedBuhgItem(Properties properties) {
-		super(Blocks.WHITE_WOOL, properties);
+		super(GarnishedBlocks.BUHG_SAPLING.get(), properties);
 	}
 }

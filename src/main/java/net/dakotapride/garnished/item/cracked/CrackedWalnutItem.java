@@ -5,6 +5,6 @@ import net.minecraft.world.level.block.Blocks;
 
 public class CrackedWalnutItem extends CrackedNutItem {
 	public CrackedWalnutItem(Properties properties) {
-		super(Blocks.WHITE_WOOL, properties);
+		super(GarnishedBlocks.WALNUT_SAPLING.get(), properties);
 	}
 }
