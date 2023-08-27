@@ -59,6 +59,22 @@
           "item": "garnished:incomplete_phantom_steak"
         }
       ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_phantom_steak"
+        },
+        {
+          "item": "garnished:garnish_powder"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_phantom_steak"
+        }
+      ]
     }
   ],
   "transitionalItem": {
