@@ -140,7 +140,7 @@ public class GarnishedItems {
 	public static final ItemEntry<HoneyedNutFoodItem> HONEYED_MACADAMIA =
 			REGISTRATE.item("honeyed_macadamia", HoneyedNutFoodItem::new).register();
 
-	// Macadamia
+	// Hazelnut
 	public static final ItemEntry<CrackedHazelnutItem> CRACKED_HAZELNUT =
 			REGISTRATE.item("cracked_hazelnut", CrackedHazelnutItem::new).register();
 
