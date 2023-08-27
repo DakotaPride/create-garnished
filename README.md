@@ -29,6 +29,8 @@ An additional nut will be added, **Hazelnuts**! While I wasn't planning on addin
 
 **Crushed Salt** now requires **Limestone** instead of all stones. This change was made due to other conflictions regarding crushing recipes being automatically generated.
 
+**Phantom Steak** is a new food item being added that will also be obtained via a sequenced assembly recipe. The first step is to press it, and then to apply soul sand or soul soil onto it, and the final step is to apply a **Salt Compound** to it. This process will need to be done twice in order to obtain the finalized product.
+
 As a byproduct of other changes, **Botany Pots** Compatibility will also be removed. This may be changed in the future, as **Botany Trees** exists, and compatibility may come along. This is unlikely, however.
 
 
