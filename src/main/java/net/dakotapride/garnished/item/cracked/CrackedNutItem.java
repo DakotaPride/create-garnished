@@ -29,6 +29,7 @@ public class CrackedNutItem extends BlockItem {
 			tooltip.add(Component.literal(""));
 			tooltip.add(Component.translatable("text.garnished.nut.cracked.desc").withStyle(ChatFormatting.DARK_PURPLE));
 			tooltip.add(Component.translatable("text.garnished.nut.cracked.desc.secondary").withStyle(ChatFormatting.DARK_PURPLE));
+			tooltip.add(Component.translatable("text.garnished.nut.cracked.desc.third").withStyle(ChatFormatting.DARK_PURPLE));
 		}
 	}
 }

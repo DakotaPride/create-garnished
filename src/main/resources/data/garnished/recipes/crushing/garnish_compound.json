@@ -8,13 +8,13 @@
   "processingTime": 100,
   "results": [
     {
-      "count": 5,
+      "count": 4,
       "item": "garnished:garnish_compound"
     },
     {
-      "chance": 0.20,
+      "chance": 0.10,
       "item": "garnished:garnish_compound",
-      "count": 3
+      "count": 2
     }
   ]
 }

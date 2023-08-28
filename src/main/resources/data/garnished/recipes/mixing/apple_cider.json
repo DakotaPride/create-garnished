@@ -1,6 +1,6 @@
 {
   "type": "create:mixing",
-  "heatRequirement": "heating",
+  "heatRequirement": "heated",
   "ingredients": [
     {
       "item": "garnished:garnish_compound"

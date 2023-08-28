@@ -15,7 +15,7 @@
     "announce_to_chat": false,
     "hidden": false
   },
-  "parent": "garnished:nut_growth",
+  "parent": "garnished:nut_tree",
   "criteria": {
     "obtain_bucket_of_garnish": {
       "trigger": "minecraft:inventory_changed",

@@ -39,6 +39,8 @@ public class GarnishedFoods implements IGarnishedItem {
 
 	// Misc
 	public static final FoodProperties GARNISHED_MEAL = new FoodProperties.Builder().nutrition(11).saturationMod(0.8F).build();
+	public static final FoodProperties SALAD = new FoodProperties.Builder().nutrition(7).saturationMod(0.6F).build();
+	public static final FoodProperties PHANTOM_STEAK = new FoodProperties.Builder().nutrition(10).saturationMod(0.8F).build();
 
 
 	public static void setRegister() {}

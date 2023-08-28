@@ -9,22 +9,15 @@
     {
       "item": "garnished:garnish_compound"
     },
-    [
-      {
-        "item": "minecraft:sugar"
-      },
-      {
-        "item": "minecraft:sugar_cane"
-      }
-    ],
-    [
-      {
-        "item": "minecraft:sugar"
-      },
-      {
-        "item": "minecraft:sugar_cane"
-      }
-    ]
+    {
+      "item": "garnished:salt_compound"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
   ],
   "results": [
     {
