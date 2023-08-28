@@ -129,7 +129,7 @@ public class GarnishedFluids {
 	public static BlockState getLavaInteraction(FluidState fluidState) {
 		Fluid fluid = fluidState.getType();
 		if (fluid.isSame(GARNISH.get()))
-			return Blocks.CALCITE.defaultBlockState();
+			return AllPaletteStoneTypes.LIMESTONE.getBaseBlock().get().defaultBlockState();
 		if (fluid.isSame(APPLE_CIDER.get()))
 			return AllPaletteStoneTypes.OCHRUM.getBaseBlock().get().defaultBlockState();
 		return null;
