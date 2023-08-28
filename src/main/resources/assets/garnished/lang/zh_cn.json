@@ -4,14 +4,14 @@
   "text.garnished.nut.garnished": "已装食",
   "text.garnished.nut.cracked": "已粉碎[按住SHIFT]",
   "text.garnished.nut.cracked.desc": "粉碎的坚果是用来种植的！",
-  "text.garnished.nut.cracked.desc.secondary": "[Translation Unavailable]", //
-  "text.garnished.nut.cracked.desc.third": "[Translation Unavailable]", //
+  "text.garnished.nut.cracked.desc.secondary": "请将它种任意泥土上",
+  "text.garnished.nut.cracked.desc.third": "就能长出一颗独一无二的树！",
   "text.garnished.hold_shift": "[按住SHIFT]",
   "text.garnished.nut.cinder_flour": "余烬面粉",
   "text.garnished.nut.cinder_flour.melted": "融化的余烬面粉",
   "text.garnished.nut.cinder_flour.effect": "可用效果：[%d]",
   "text.garnished.nut.cinder_flour.effect.multiple": "可用效果：[多种效果]",
-  "text.garnished.nut.cinder_flour.effect.hazelnut": "[Translation Unavailable]", //
+  "text.garnished.nut.cinder_flour.effect.hazelnut": "可用效果：[强效速度]",
   "text.garnished.nut.sweetened": "加糖",
   "text.garnished.nut.honeyed": "涂蜜",
   "text.garnished.nut.chocolate_glazed": "涂有巧克力",
@@ -92,15 +92,15 @@
   "item.garnished.honeyed_peanut": "花生",
   "item.garnished.chocolate_glazed_peanut": "花生",
 
-  "item.garnished.hazelnut": "[Translation Unavailable]", //
-  "item.garnished.ungarnished_hazelnut": "[Translation Unavailable]", //
-  "item.garnished.cinder_hazelnut": "[Translation Unavailable]", //
-  "item.garnished.melted_cinder_hazelnut": "[Translation Unavailable]", //
-  "item.garnished.sweetened_hazelnut": "[Translation Unavailable]", //
-  "block.garnished.hazelnut_sapling": "[Translation Unavailable]", //
-  "item.garnished.cinder_hazelnut_speed_potent": "[Translation Unavailable]", //
-  "item.garnished.honeyed_hazelnut": "[Translation Unavailable]", //
-  "item.garnished.chocolate_glazed_hazelnut": "[Translation Unavailable]", //
+  "item.garnished.hazelnut": "榛子",
+  "item.garnished.ungarnished_hazelnut": "榛子",
+  "item.garnished.cinder_hazelnut": "榛子",
+  "item.garnished.melted_cinder_hazelnut": "榛子",
+  "item.garnished.sweetened_hazelnut": "榛子",
+  "block.garnished.hazelnut_sapling": "榛子",
+  "item.garnished.cinder_hazelnut_speed_potent": "榛子",
+  "item.garnished.honeyed_hazelnut": "榛子",
+  "item.garnished.chocolate_glazed_hazelnut": "榛子",
 
   "item.garnished.garnished_sweet_berries": "甜浆果",
   "item.garnished.honeyed_sweet_berries": "甜浆果",
@@ -111,12 +111,12 @@
   "item.garnished.chocolate_glazed_nut_mix": "混合坚果",
 
   "item.garnished.crushed_salt": "碎盐",
-  "item.garnished.unprocessed_salt_compound": "[Translation Unavailable]", //
+  "item.garnished.unprocessed_salt_compound": "未经处理的盐复合物",
   "item.garnished.salt_compound": "盐复合物",
 
   "item.garnished.salad": "沙拉",
-  "item.garnished.incomplete_phantom_steak": "[Translation Unavailable]",
-  "item.garnished.phantom_steak": "[Translation Unavailable]",
+  "item.garnished.incomplete_phantom_steak": "未经处理的幽影牛排",
+  "item.garnished.phantom_steak": "幽影牛排",
 
   "item.garnished.garnished_meal": "精致大餐",
 
@@ -128,11 +128,12 @@
   "fluid.liquid_garnish": "液态装食",
   "fluid.apple_cider": "苹果西打",
 
-  "block.garnished.nut_plant": "[LEGACY] 坚果植株",
+  "block.garnished.nut_plant": "坚果植株",
+  "block.garnished.nut_sapling": "坚果树苗",
 
   "block.garnished.solidified_garnish": "固化装食块",
   "item.garnished.garnish_compound": "装食复合物",
-  "item.garnished.garnish_powder": "[Translation Unavailable]", //
+  "item.garnished.garnish_powder": "粉状装食",
 
   "advancement.garnished.nut_tree.title": "广袤荒野",
   "advancement.garnished.nut_tree.description": "通过探索世界获得未装食的坚果",
