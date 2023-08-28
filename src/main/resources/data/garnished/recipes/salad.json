@@ -20,7 +20,7 @@
       "tag": "garnished:berries"
     },
     {
-      "tag": "garnished:salt_compound"
+      "item": "garnished:salt_compound"
     }
   ],
   "result": {
