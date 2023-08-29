@@ -19,18 +19,21 @@ import net.minecraft.world.level.Level;
 
 public class MeltedCinderFlourNutWithEffectFoodItem extends Item implements IGarnishedItem {
 	public MeltedCinderFlourNutWithEffectFoodItem(Properties properties) {
-		super(properties.food(new FoodProperties.Builder().saturationMod(GarnishedFoods.MELTED_CINDER_FLOUR_NUT.getSaturationModifier()).nutrition(7).build()));
+		super(properties.food(GarnishedFoods.MELTED_CINDER_FLOUR_NUT));
 	}
 
 	@Override
 	public @NotNull ItemStack finishUsingItem(@NotNull ItemStack stack, @NotNull Level level, @NotNull LivingEntity livingEntity) {
-
-		if (!stack.is(GarnishedItems.EFFECT_CINDER_BUHG.get())) {
+		if (!stack.is(GarnishedItems.EFFECT_CINDER_BUHG.get()) && !stack.is(GarnishedItems.POTENT_SPEED_CINDER_HAZELNUT.get())) {
 			livingEntity.addEffect(new MobEffectInstance(getCinderEffect(stack), getCinderEffectDuration));
-		} else if (!stack.is(GarnishedItems.POTENT_SPEED_CINDER_HAZELNUT.get())) {
+		}
+
+		if (stack.is(GarnishedItems.EFFECT_CINDER_BUHG.get())) {
 			livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, getCinderEffectDuration));
 			livingEntity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, getCinderEffectDuration));
-		} else if (stack.is(GarnishedItems.POTENT_SPEED_CINDER_HAZELNUT.get())) {
+		}
+
+		if (stack.is(GarnishedItems.POTENT_SPEED_CINDER_HAZELNUT.get())) {
 			livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, getCinderEffectDuration, 1));
 		}
 
