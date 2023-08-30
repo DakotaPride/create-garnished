@@ -5,6 +5,7 @@ import net.dakotapride.garnished.CreateGarnished;
 import net.minecraft.core.Holder;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.util.random.SimpleWeightedRandomList;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -12,6 +13,8 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.WeightedPlacedFeature;
+import net.minecraft.world.level.levelgen.feature.configurations.RandomFeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.RandomPatchConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
@@ -40,9 +43,15 @@ public class GarnishedFeatures {
 							new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 50),
 							new TwoLayersFeatureSize(1, 0, 1)).dirt(BlockStateProvider.simple(Blocks.DIRT)).forceDirt().build());
 
-	public static final Holder<PlacedFeature> NUT_TREE_PLACED = PlacementUtils.register("nut_tree_placed",
-			NUT_TREE_CONFIGURED, RarityFilter.onAverageOnceEvery(8),
-					InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome());
+	public static final Holder<PlacedFeature> NUT_TREE_CHECKED = PlacementUtils.register(CreateGarnished.ID + "nut_tree_checked",
+			NUT_TREE_CONFIGURED, List.of(PlacementUtils.filteredByBlockSurvival(GarnishedBlocks.CASHEW_SAPLING.get())));
+
+	public static final Holder<ConfiguredFeature<RandomFeatureConfiguration, ?>> TREE_SPAWN_CONDITIONS =
+			FeatureUtils.register(CreateGarnished.ID + "spawn_conditions", Feature.RANDOM_SELECTOR,
+					new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(NUT_TREE_CHECKED, 0.5F)), NUT_TREE_CHECKED));
+
+	public static final Holder<PlacedFeature> NUT_TREE_PLACED = PlacementUtils.register(CreateGarnished.ID + "nut_tree_placed",
+			TREE_SPAWN_CONDITIONS, RarityFilter.onAverageOnceEvery(12), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome());
 
 	public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> BUHG_TREE_CONFIGURED =
 			FeatureUtils.register(CreateGarnished.ID + ":peanut_tree_configured", Feature.TREE,

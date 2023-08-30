@@ -31,6 +31,10 @@
         {
           "type": "minecraft:item",
           "name": "garnished:ungarnished_peanut"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "garnished:ungarnished_hazelnut"
         }
       ]
     }

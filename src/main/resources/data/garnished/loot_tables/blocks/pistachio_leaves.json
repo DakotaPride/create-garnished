@@ -11,8 +11,10 @@
           "functions": [
             {
               "function": "minecraft:set_count",
-              "count": 2,
-              "add": false
+              "count": {
+                "type": "minecraft:constant",
+                "value": 2
+              }
             }
           ]
         }

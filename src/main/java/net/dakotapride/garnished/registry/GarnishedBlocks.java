@@ -78,56 +78,56 @@ public class GarnishedBlocks {
 			REGISTRATE.block("nut_leaves", LeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(Material.LEAVES)
-					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion())
+					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
 					.register();
 
 	public static final BlockEntry<LeavesBlock> BUHG_LEAVES =
 			REGISTRATE.block("peanut_leaves", LeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(Material.LEAVES)
-					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion())
+					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
 					.register();
 	public static final BlockEntry<LeavesBlock> WALNUT_LEAVES =
 			REGISTRATE.block("walnut_leaves", LeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(Material.LEAVES)
-					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion())
+					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
 					.register();
 	public static final BlockEntry<LeavesBlock> CASHEW_LEAVES =
 			REGISTRATE.block("cashew_leaves", LeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(Material.LEAVES)
-					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion())
+					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
 					.register();
 	public static final BlockEntry<LeavesBlock> MACADAMIA_LEAVES =
 			REGISTRATE.block("macadamia_leaves", LeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(Material.LEAVES)
-					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion())
+					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
 					.register();
 	public static final BlockEntry<LeavesBlock> PISTACHIO_LEAVES =
 			REGISTRATE.block("pistachio_leaves", LeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(Material.LEAVES)
-					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion())
+					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
 					.register();
 	public static final BlockEntry<LeavesBlock> ALMOND_LEAVES =
 			REGISTRATE.block("almond_leaves", LeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(Material.LEAVES)
-					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion())
+					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
 					.register();
 	public static final BlockEntry<LeavesBlock> PECAN_LEAVES =
 			REGISTRATE.block("pecan_leaves", LeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(Material.LEAVES)
-					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion())
+					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
 					.register();
 	public static final BlockEntry<LeavesBlock> HAZELNUT_LEAVES =
 			REGISTRATE.block("hazelnut_leaves", LeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(Material.LEAVES)
-					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion())
+					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
 					.register();
 
 	public static final BlockEntry<SolidifiedGarnishBlock> SOLIDIFIED_GARNISH_BLOCK =
