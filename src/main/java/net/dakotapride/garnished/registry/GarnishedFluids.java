@@ -21,6 +21,7 @@ import net.fabricmc.fabric.api.transfer.v1.item.ItemVariant;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.world.level.Level;
@@ -41,7 +42,7 @@ public class GarnishedFluids {
 		FluidPlaceBlockCallback.EVENT.register(GarnishedFluids::whenFluidsMeet);
 	}
 	private static final CreateRegistrate REGISTRATE = CreateGarnished.registrate()
-			.creativeModeTab(() -> GarnishedTabs.GARNISHED);
+			.useCreativeTab(GarnishedTabs.GARNISHED.key());
 
 
 	public static final FluidEntry<SimpleFlowableFluid.Flowing> GARNISH;
@@ -58,7 +59,7 @@ public class GarnishedFluids {
 						.flowSpeed(3)
 						.blastResistance(100f))
 				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.liquid_garnish", 1500, 800))
-				.onRegisterAfter(Registry.ITEM_REGISTRY, fluid -> {
+				.onRegisterAfter(Registries.ITEM, fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
 							new FullItemFluidStorage(context, bucket -> ItemVariant.of(BUCKET), FluidVariant.of(source), FluidConstants.BUCKET));
@@ -75,7 +76,7 @@ public class GarnishedFluids {
 						.flowSpeed(3)
 						.blastResistance(100f))
 				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.apple_cider", 1500, 800))
-				.onRegisterAfter(Registry.ITEM_REGISTRY, fluid -> {
+				.onRegisterAfter(Registries.ITEM, fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
 							new FullItemFluidStorage(context, bucket -> ItemVariant.of(BUCKET), FluidVariant.of(source), FluidConstants.BUCKET));

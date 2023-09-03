@@ -1,5 +1,7 @@
 package net.dakotapride.garnished.gen;
 
+import net.minecraft.resources.ResourceKey;
+
 import org.jetbrains.annotations.Nullable;
 
 import net.dakotapride.garnished.registry.GarnishedFeatures;
@@ -12,7 +14,7 @@ public class PecanTreeGrower extends AbstractTreeGrower {
 
 	@Nullable
 	@Override
-	protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource random, boolean largeHive) {
+	protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource random, boolean largeHive) {
 		return GarnishedFeatures.PECAN_TREE_CONFIGURED;
 	}
 }
