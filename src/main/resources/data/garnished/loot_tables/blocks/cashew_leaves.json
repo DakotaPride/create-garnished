@@ -7,6 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "weight": 5,
           "name": "garnished:ungarnished_cashew",
           "functions": [
             {
@@ -17,11 +18,55 @@
               }
             }
           ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "garnished:ungarnished_cashew",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:constant",
+                "value": 1
+              }
+            }
+          ]
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:survives_explosion"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "garnished:cashew_fruit",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 1
+              },
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.15
+                }
+              ]
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:survives_explosion"
+            }
+          ]
         }
       ]
     }

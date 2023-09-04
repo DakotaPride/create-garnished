@@ -1,0 +1,67 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create:dough"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "minecraft:cookie"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_cookie"
+        },
+        {
+          "amount": 27000,
+          "fluid": "create:chocolate",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_cookie"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_cookie"
+        },
+        {
+          "item": "garnished:macadamia"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_cookie"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_cookie"
+        },
+        {
+          "item": "garnished:macadamia"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_cookie"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "garnished:incomplete_cookie"
+  }
+}

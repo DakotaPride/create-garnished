@@ -16,10 +16,15 @@
   "text.garnished.nut.honeyed": "Honeyed",
   "text.garnished.nut.chocolate_glazed": "Chocolate Glazed",
   "text.garnished.cider.cryptic": "Cryptic [HOLD SHIFT]",
+  "text.garnished.cider.bitter": "Bitter [HOLD SHIFT]",
   "text.garnished.cider.cryptic.desc": "This Apple Cider provides the consumer",
   "text.garnished.cider.cryptic.desc.secondary": "with either Strength or Slowness",
   "text.garnished.cider.cryptic.desc.third": "A 50/50 chance, will you take it?",
   "text.garnished.cider.cryptic.desc.wither": "Cleanses the user of Withering upon consumption",
+  "text.garnished.peanut_oil.desc.poison": "Cleanses the user of Poisoning upon consumption",
+  "text.garnished.cashew_fruit.poisoning": "Are you going to eat that?",
+  "text.garnished.cashew_fruit.poisoning.chance": "1/4 chance to get poisoned if you do",
+  "text.garnished.cider.bitter.desc.secondary": "with Slowness and Resistance",
   "text.garnished.salted_food": "Salted",
 
   "item.garnished.cashew": "Cashew",
@@ -122,11 +127,22 @@
 
   "item.garnished.apple_cider": "Bottled Apple Cider",
   "item.garnished.cryptic_apple_cider": "Bottled Apple Cider",
+  "item.garnished.bitter_apple_cider": "Bottled Apple Cider",
+
+  "item.garnished.peanut_oil": "Bottled Peanut Oil",
+  "item.garnished.cashew_fruit": "Cashew Apple",
+  "item.garnished.bitter_almond": "Almond",
+  "item.garnished.brownie_walnuts": "Brownie with Walnuts",
+  "item.garnished.incomplete_brownie_walnuts": "Incomplete Brownie with Walnuts",
+  "item.garnished.incomplete_cookie": "Incomplete Cookie",
+  "item.garnished.pecan_pie": "Pecan Pie",
 
   "item.garnished.garnish_bucket": "Bucket of Garnish",
   "item.garnished.apple_cider_bucket": "Bucket of Apple Cider",
+  "item.garnished.peanut_oil_bucket": "Bucket of Peanut Oil",
   "fluid.liquid_garnish": "Liquid Garnish",
   "fluid.apple_cider": "Apple Cider",
+  "fluid.peanut_oil": "Peanut Oil",
 
   "block.garnished.nut_plant": "[Legacy] Nut Growth",
   "block.garnished.nut_sapling": "Nut Tree Sapling",

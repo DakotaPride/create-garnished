@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "garnished:item/cryptic_apple_cider"
+    "layer0": "garnished:item/incomplete_walnut_brownie"
   }
 }
