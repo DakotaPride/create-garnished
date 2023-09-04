@@ -13,7 +13,7 @@ public class HazelnutTreeGrower extends AbstractTreeGrower {
 
 	@Nullable
 	@Override
-	protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource random, boolean largeHive) {
+	protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource random, boolean largeHive) {
 		return GarnishedFeatures.HAZELNUT_TREE_CONFIGURED;
 	}
 }

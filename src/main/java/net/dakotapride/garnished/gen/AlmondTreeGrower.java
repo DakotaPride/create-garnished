@@ -14,7 +14,7 @@ public class AlmondTreeGrower extends AbstractTreeGrower {
 
 	@Nullable
 	@Override
-	protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource random, boolean largeHive) {
+	protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource random, boolean largeHive) {
 		return GarnishedFeatures.ALMOND_TREE_CONFIGURED;
 	}
 }

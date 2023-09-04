@@ -12,7 +12,7 @@ import net.minecraft.world.item.Item;
 public class GarnishedItems {
 
 	private static final CreateRegistrate REGISTRATE = CreateGarnished.registrate()
-			.useCreativeTab(GarnishedTabs.GARNISHED.key());
+			.creativeModeTab(() -> GarnishedTabs.GARNISHED);
 
 	// Cashews
 	public static final ItemEntry<CrackedCashewItem> CRACKED_CASHEW =

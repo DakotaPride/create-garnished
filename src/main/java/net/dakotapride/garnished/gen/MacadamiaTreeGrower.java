@@ -13,7 +13,7 @@ public class MacadamiaTreeGrower extends AbstractTreeGrower {
 
 	@Nullable
 	@Override
-	protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource random, boolean largeHive) {
+	protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource random, boolean largeHive) {
 		return GarnishedFeatures.MACADAMIA_TREE_CONFIGURED;
 	}
 }
