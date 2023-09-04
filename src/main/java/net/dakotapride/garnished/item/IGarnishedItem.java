@@ -14,6 +14,9 @@ public interface IGarnishedItem {
 	int baseTick = 20;
 	int getCinderEffectDuration = baseTick * 90;
 	int getCrypticAppleCiderEffectDuration = baseTick * 45;
+	int getBitterAppleCiderEffectDuration = baseTick * 40;
+	int getCashewFruitEffectDuration = baseTick * 50;
+	int getBitterAlmondEffectDuration = baseTick * 25;
 
 
 	default String garnishedText() {
@@ -26,6 +29,10 @@ public interface IGarnishedItem {
 
 	default String crypticAppleCiderText() {
 		return "text.garnished.cider.cryptic";
+	}
+
+	default String bitterAppleCiderText() {
+		return "text.garnished.cider.bitter";
 	}
 
 	default ChatFormatting getStandardColouring() {

@@ -1,0 +1,17 @@
+{
+  "type": "create:emptying",
+  "ingredients": [
+    {
+      "tag": "garnished:bottled/peanut_oil_from_peanut"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "amount": 6750,
+      "fluid": "garnished:peanut_oil"
+    }
+  ]
+}

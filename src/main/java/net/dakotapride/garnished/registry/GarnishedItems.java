@@ -207,6 +207,8 @@ public class GarnishedItems {
 			REGISTRATE.item("apple_cider", AppleCiderFoodItem::new).register();
 	public static final ItemEntry<CrypticAppleCiderFoodItem> CRYPTIC_APPLE_CIDER =
 			REGISTRATE.item("cryptic_apple_cider", CrypticAppleCiderFoodItem::new).register();
+	public static final ItemEntry<BitterAppleCiderFoodItem> BITTER_APPLE_CIDER =
+			REGISTRATE.item("bitter_apple_cider", BitterAppleCiderFoodItem::new).register();
 
 	// Salt Compounds
 	public static final ItemEntry<Item> CRUSHED_SALT_COMPOUND =
@@ -215,6 +217,18 @@ public class GarnishedItems {
 			REGISTRATE.item("salt_compound", Item::new).register();
 	public static final ItemEntry<Item> UNPROCESSED_SALT_COMPOUND =
 			REGISTRATE.item("unprocessed_salt_compound", Item::new).register();
+
+	// Unique Uses
+	public static final ItemEntry<BottledPeanutOilItem> BOTTLED_PEANUT_OIL =
+			REGISTRATE.item("peanut_oil", BottledPeanutOilItem::new).register();
+	public static final ItemEntry<CashewFruitItem> CASHEW_APPLE =
+			REGISTRATE.item("cashew_fruit", CashewFruitItem::new).register();
+	public static final ItemEntry<BitterAlmondFoodItem> BITTER_ALMOND =
+			REGISTRATE.item("bitter_almond", BitterAlmondFoodItem::new).register();
+	public static final ItemEntry<WalnutBrownieFoodItem> WALNUT_BROWNIE =
+			REGISTRATE.item("brownie_walnuts", WalnutBrownieFoodItem::new).register();
+	public static final ItemEntry<PecanPieFoodItem> PECAN_PIE =
+			REGISTRATE.item("pecan_pie", PecanPieFoodItem::new).register();
 
 	// Misc
 	public static final ItemEntry<Item> GARNISH_COMPOUND =
@@ -229,6 +243,10 @@ public class GarnishedItems {
 			REGISTRATE.item("incomplete_phantom_steak", SaltedFoodItem::new).register();
 	public static final ItemEntry<PhantomSteakFoodItem> PHANTOM_STEAK =
 			REGISTRATE.item("phantom_steak", PhantomSteakFoodItem::new).register();
+	public static final ItemEntry<Item> INCOMPLETE_WALNUT_BROWNIE =
+			REGISTRATE.item("incomplete_brownie_walnuts", Item::new).register();
+	public static final ItemEntry<Item> INCOMPLETE_COOKIE =
+			REGISTRATE.item("incomplete_cookie", Item::new).register();
 
 	public static void setRegister() {}
 

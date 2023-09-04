@@ -7,6 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "weight": 5,
           "name": "garnished:ungarnished_hazelnut",
           "functions": [
             {
@@ -14,6 +15,20 @@
               "count": {
                 "type": "minecraft:constant",
                 "value": 2
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "garnished:ungarnished_hazelnut",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:constant",
+                "value": 1
               }
             }
           ]

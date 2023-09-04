@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "#garnished:liquid_garnish",
-    "#garnished:apple_cider"
+    "#garnished:apple_cider",
+    "#garnished:peanut_oil"
   ]
 }

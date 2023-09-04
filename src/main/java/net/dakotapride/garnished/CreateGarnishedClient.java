@@ -43,6 +43,8 @@ public class CreateGarnishedClient implements ClientModInitializer {
 				GarnishedFluids.GARNISH.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.GARNISH.get()));
 		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.APPLE_CIDER.get().getSource(),
 				GarnishedFluids.APPLE_CIDER.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.APPLE_CIDER.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.PEANUT_OIL.get().getSource(),
+				GarnishedFluids.PEANUT_OIL.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.PEANUT_OIL.get()));
 
 	}
 

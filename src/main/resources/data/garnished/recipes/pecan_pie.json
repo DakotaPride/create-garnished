@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "create:dough"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "garnished:pecan"
+    },
+    {
+      "item": "garnished:pecan"
+    }
+  ],
+  "result": {
+    "item": "garnished:pecan_pie"
+  }
+}
