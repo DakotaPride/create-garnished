@@ -130,15 +130,25 @@ public class GarnishedTabs {
 
 			output.accept(GarnishedItems.SALAD.asStack());
 			output.accept(GarnishedItems.PHANTOM_STEAK.asStack());
+			output.accept(GarnishedItems.BITTER_ALMOND.asStack());
+			output.accept(GarnishedItems.CASHEW_APPLE.asStack());
+			output.accept(GarnishedItems.WALNUT_BROWNIE.asStack());
+			output.accept(GarnishedItems.PECAN_PIE.asStack());
 
 			output.accept(GarnishedItems.CRUSHED_SALT_COMPOUND.asStack());
 			output.accept(GarnishedItems.SALT_COMPOUND.asStack());
 
 			output.accept(GarnishedItems.APPLE_CIDER.asStack());
 			output.accept(GarnishedItems.CRYPTIC_APPLE_CIDER.asStack());
+			output.accept(GarnishedItems.BITTER_APPLE_CIDER.asStack());
+			output.accept(GarnishedItems.BOTTLED_PEANUT_OIL.asStack());
 
 			output.accept(GarnishedItems.GARNISH_COMPOUND.asStack());
 			output.accept(GarnishedBlocks.SOLIDIFIED_GARNISH_BLOCK.asStack());
+
+			output.accept(GarnishedFluids.GARNISH.getBucket().get());
+			output.accept(GarnishedFluids.APPLE_CIDER.getBucket().get());
+			output.accept(GarnishedFluids.PEANUT_OIL.getBucket().get());
 		}
 	}
 }
