@@ -178,5 +178,7 @@
   "advancement.garnished.cryptic_apple_cider.title": "豪赌",
   "advancement.garnished.cryptic_apple_cider.description": "将花装在苹果西打中",
   "advancement.garnished.ina_buhg.title": "这是个巴格",
-  "advancement.garnished.ina_buhg.description": "获得花生的一些变种"
+  "advancement.garnished.ina_buhg.description": "获得花生的一些变种",
+  "advancement.garnished.walnut_brownie.title": "Don't be Mad", //
+  "advancement.garnished.walnut_brownie.description": "Obtain a Brownie With Walnuts" //
 }

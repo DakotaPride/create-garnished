@@ -1,13 +1,13 @@
 {
   "display": {
     "icon": {
-      "item": "garnished:peanut"
+      "item": "garnished:brownie_walnuts"
     },
     "title": {
-      "translate": "advancement.garnished.ina_buhg.title"
+      "translate": "advancement.garnished.walnut_brownie.title"
     },
     "description": {
-      "translate": "advancement.garnished.ina_buhg.description",
+      "translate": "advancement.garnished.walnut_brownie.description",
       "color": "#DBA213"
     },
     "frame": "task",
@@ -15,14 +15,16 @@
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "garnished:garnished_nuts",
+  "parent": "garnished:chocolate_glazed_nuts",
   "criteria": {
-    "obtain_peanut": {
+    "walnut_brownie": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "tag": "garnished:buhg"
+            "items": [
+              "garnished:brownie_walnuts"
+            ]
           }
         ]
       }
@@ -30,7 +32,7 @@
   },
   "requirements": [
     [
-      "obtain_peanut"
+      "walnut_brownie"
     ]
   ]
 }
