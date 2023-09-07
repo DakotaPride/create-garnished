@@ -11,13 +11,10 @@
   ],
   "sequence": [
     {
-      "type": "create:deploying",
+      "type": "create:pressing",
       "ingredients": [
         {
           "item": "garnished:incomplete_cashew_cookie"
-        },
-        {
-          "item": "garnished:cashew"
         }
       ],
       "results": [
@@ -49,7 +46,7 @@
           "item": "garnished:incomplete_cashew_cookie"
         },
         {
-          "item": "minecraft:sugar"
+          "item": "garnished:cashew"
         }
       ],
       "results": [
