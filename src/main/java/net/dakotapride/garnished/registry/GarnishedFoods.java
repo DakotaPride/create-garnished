@@ -46,6 +46,7 @@ public class GarnishedFoods implements IGarnishedItem {
 			.effect(new MobEffectInstance(MobEffects.POISON, getBitterAlmondEffectDuration), 1.0F).build();
 	public static final FoodProperties WALNUT_BROWNIE = new FoodProperties.Builder().nutrition(8).saturationMod(0.7F).build();
 	public static final FoodProperties PECAN_PIE = new FoodProperties.Builder().nutrition(9).saturationMod(0.4F).build();
+	public static final FoodProperties CASHEW_COOKIE = new FoodProperties.Builder().nutrition(7).saturationMod(0.5F).build();
 
 
 	public static void setRegister() {}

@@ -114,21 +114,22 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 		items.add(82, GarnishedItems.CASHEW_APPLE.asStack());
 		items.add(83, GarnishedItems.WALNUT_BROWNIE.asStack());
 		items.add(84, GarnishedItems.PECAN_PIE.asStack());
+		items.add(85, GarnishedItems.CASHEW_COOKIE.asStack());
 
-		items.add(85, GarnishedItems.CRUSHED_SALT_COMPOUND.asStack());
-		items.add(86, GarnishedItems.SALT_COMPOUND.asStack());
+		items.add(86, GarnishedItems.CRUSHED_SALT_COMPOUND.asStack());
+		items.add(87, GarnishedItems.SALT_COMPOUND.asStack());
 
-		items.add(87, GarnishedItems.APPLE_CIDER.asStack());
-		items.add(88, GarnishedItems.CRYPTIC_APPLE_CIDER.asStack());
-		items.add(89, GarnishedItems.BITTER_APPLE_CIDER.asStack());
-		items.add(90, GarnishedItems.BOTTLED_PEANUT_OIL.asStack());
+		items.add(88, GarnishedItems.APPLE_CIDER.asStack());
+		items.add(89, GarnishedItems.CRYPTIC_APPLE_CIDER.asStack());
+		items.add(90, GarnishedItems.BITTER_APPLE_CIDER.asStack());
+		items.add(91, GarnishedItems.BOTTLED_PEANUT_OIL.asStack());
 
-		items.add(91, GarnishedItems.GARNISH_COMPOUND.asStack());
-		items.add(92, GarnishedBlocks.SOLIDIFIED_GARNISH_BLOCK.asStack());
+		items.add(92, GarnishedItems.GARNISH_COMPOUND.asStack());
+		items.add(93, GarnishedBlocks.SOLIDIFIED_GARNISH_BLOCK.asStack());
 
-		items.add(93, GarnishedFluids.GARNISH.getBucket().get().getDefaultInstance());
-		items.add(94, GarnishedFluids.APPLE_CIDER.getBucket().get().getDefaultInstance());
-		items.add(95, GarnishedFluids.PEANUT_OIL.getBucket().get().getDefaultInstance());
+		items.add(94, GarnishedFluids.GARNISH.getBucket().get().getDefaultInstance());
+		items.add(95, GarnishedFluids.APPLE_CIDER.getBucket().get().getDefaultInstance());
+		items.add(96, GarnishedFluids.PEANUT_OIL.getBucket().get().getDefaultInstance());
 	}
 
 	@Override

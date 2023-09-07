@@ -229,6 +229,8 @@ public class GarnishedItems {
 			REGISTRATE.item("brownie_walnuts", WalnutBrownieFoodItem::new).register();
 	public static final ItemEntry<PecanPieFoodItem> PECAN_PIE =
 			REGISTRATE.item("pecan_pie", PecanPieFoodItem::new).register();
+	public static final ItemEntry<CashewCookieFoodItem> CASHEW_COOKIE =
+			REGISTRATE.item("cashew_cookie", CashewCookieFoodItem::new).register();
 
 	// Misc
 	public static final ItemEntry<Item> GARNISH_COMPOUND =
@@ -243,10 +245,12 @@ public class GarnishedItems {
 			REGISTRATE.item("incomplete_phantom_steak", SaltedFoodItem::new).register();
 	public static final ItemEntry<PhantomSteakFoodItem> PHANTOM_STEAK =
 			REGISTRATE.item("phantom_steak", PhantomSteakFoodItem::new).register();
-	public static final ItemEntry<WalnutBrownieFoodItem> INCOMPLETE_WALNUT_BROWNIE =
-			REGISTRATE.item("incomplete_brownie_walnuts", WalnutBrownieFoodItem::new).register();
+	public static final ItemEntry<Item> INCOMPLETE_WALNUT_BROWNIE =
+			REGISTRATE.item("incomplete_brownie_walnuts", Item::new).register();
 	public static final ItemEntry<Item> INCOMPLETE_COOKIE =
 			REGISTRATE.item("incomplete_cookie", Item::new).register();
+	public static final ItemEntry<Item> INCOMPLETE_CASHEW_COOKIE =
+			REGISTRATE.item("incomplete_cashew_cookie", Item::new).register();
 
 	public static void setRegister() {}
 
