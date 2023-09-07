@@ -134,6 +134,7 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.CASHEW_APPLE.asStack());
 			output.accept(GarnishedItems.WALNUT_BROWNIE.asStack());
 			output.accept(GarnishedItems.PECAN_PIE.asStack());
+			output.accept(GarnishedItems.CASHEW_COOKIE.asStack());
 
 			output.accept(GarnishedItems.CRUSHED_SALT_COMPOUND.asStack());
 			output.accept(GarnishedItems.SALT_COMPOUND.asStack());

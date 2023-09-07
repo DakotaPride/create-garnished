@@ -1,0 +1,78 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:cookie"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "garnished:cashew_cookie"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_cashew_cookie"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_cashew_cookie"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_cashew_cookie"
+        },
+        {
+          "item": "garnished:cashew"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_cashew_cookie"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_cashew_cookie"
+        },
+        {
+          "item": "garnished:cashew"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_cashew_cookie"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_cashew_cookie"
+        },
+        {
+          "item": "minecraft:sugar"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_cashew_cookie"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "garnished:incomplete_cashew_cookie"
+  }
+}
