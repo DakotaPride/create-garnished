@@ -127,11 +127,11 @@
 
   "item.garnished.apple_cider": "苹果西打瓶",
   "item.garnished.cryptic_apple_cider": "苹果西打瓶",
-  "item.garnished.bitter_apple_cider": "Bottled Apple Cider", //
+  "item.garnished.bitter_apple_cider": "苹果西打瓶",
 
   "item.garnished.peanut_oil": "Bottled Peanut Oil", //
   "item.garnished.cashew_fruit": "Cashew Apple", //
-  "item.garnished.bitter_almond": "Almond", //
+  "item.garnished.bitter_almond": "杏仁",
   "item.garnished.brownie_walnuts": "Brownie with Walnuts", //
   "item.garnished.incomplete_brownie_walnuts": "Incomplete Brownie with Walnuts", //
   "item.garnished.incomplete_cookie": "Incomplete Cookie", //
