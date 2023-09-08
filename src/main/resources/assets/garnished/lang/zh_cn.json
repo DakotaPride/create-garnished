@@ -4,7 +4,7 @@
   "text.garnished.nut.garnished": "已装食",
   "text.garnished.nut.cracked": "已粉碎[按住SHIFT]",
   "text.garnished.nut.cracked.desc": "粉碎的坚果是用来种植的！",
-  "text.garnished.nut.cracked.desc.secondary": "请将它种任意泥土上",
+  "text.garnished.nut.cracked.desc.secondary": "将它种在任意泥土上",
   "text.garnished.nut.cracked.desc.third": "就能长出一颗独一无二的树！",
   "text.garnished.hold_shift": "[按住SHIFT]",
   "text.garnished.nut.cinder_flour": "余烬面粉",
@@ -16,15 +16,15 @@
   "text.garnished.nut.honeyed": "涂蜜",
   "text.garnished.nut.chocolate_glazed": "涂有巧克力",
   "text.garnished.cider.cryptic": "神秘属性[按住SHIFT]",
-  "text.garnished.cider.bitter": "Bitter [HOLD SHIFT]", //
+  "text.garnished.cider.bitter": "苦[按住SHIFT]", 
   "text.garnished.cider.cryptic.desc": "这款苹果西打酒会提供给客户",
   "text.garnished.cider.cryptic.desc.secondary": "力量或者缓慢效果之一",
   "text.garnished.cider.cryptic.desc.third": "50比50的可能性，你会喝它吗？",
   "text.garnished.cider.cryptic.desc.wither": "在被喝掉时消除饮用者的凋零效果",
-  "text.garnished.peanut_oil.desc.poison": "Cleanses the user of Poisoning upon consumption", //
-  "text.garnished.cashew_fruit.poisoning": "Are you going to eat that?", //
-  "text.garnished.cashew_fruit.poisoning.chance": "1/4 chance to get poisoned if you do", //
-  "text.garnished.cider.bitter.desc.secondary": "with Slowness and Resistance", //
+  "text.garnished.peanut_oil.desc.poison": "在被喝掉时消除饮用者的剧毒效果", 
+  "text.garnished.cashew_fruit.poisoning": "你会吃它吗？", 
+  "text.garnished.cashew_fruit.poisoning.chance": "如果你吃掉它，会有1/4的几率中毒", 
+  "text.garnished.cider.bitter.desc.secondary": "获得缓慢和抗性提升", 
   "text.garnished.salted_food": "盐渍",
 
   "item.garnished.cashew": "腰果",
@@ -116,11 +116,11 @@
   "item.garnished.chocolate_glazed_nut_mix": "混合坚果",
 
   "item.garnished.crushed_salt": "碎盐",
-  "item.garnished.unprocessed_salt_compound": "未经处理的盐复合物",
+  "item.garnished.unprocessed_salt_compound": "未加工的盐复合物",
   "item.garnished.salt_compound": "盐复合物",
 
   "item.garnished.salad": "沙拉",
-  "item.garnished.incomplete_phantom_steak": "未经处理的幽影牛排",
+  "item.garnished.incomplete_phantom_steak": "未加工的幽影牛排",
   "item.garnished.phantom_steak": "幽影牛排",
 
   "item.garnished.garnished_meal": "精致大餐",
@@ -129,22 +129,22 @@
   "item.garnished.cryptic_apple_cider": "苹果西打瓶",
   "item.garnished.bitter_apple_cider": "苹果西打瓶",
 
-  "item.garnished.peanut_oil": "Bottled Peanut Oil", //
-  "item.garnished.cashew_fruit": "Cashew Apple", //
-  "item.garnished.bitter_almond": "杏仁",
-  "item.garnished.brownie_walnuts": "Brownie with Walnuts", //
-  "item.garnished.incomplete_brownie_walnuts": "Incomplete Brownie with Walnuts", //
-  "item.garnished.incomplete_cookie": "Incomplete Cookie", //
-  "item.garnished.pecan_pie": "Pecan Pie", //
-  "item.garnished.cashew_cookie": "Cashew Cookie", //
-  "item.garnished.incomplete_cashew_cookie": "Incomplete Cashew Cookie", //
+  "item.garnished.peanut_oil": "瓶装花生油", 
+  "item.garnished.cashew_fruit": "腰果梨", 
+  "item.garnished.bitter_almond": "杏仁", 
+  "item.garnished.brownie_walnuts": "核桃布朗尼", 
+  "item.garnished.incomplete_brownie_walnuts": "未加工的核桃布朗尼", 
+  "item.garnished.incomplete_cookie": "未加工的曲奇", 
+  "item.garnished.pecan_pie": "山核桃派", 
+  "item.garnished.cashew_cookie": "腰果曲奇", 
+  "item.garnished.incomplete_cashew_cookie": "未加工的腰果曲奇", 
 
   "item.garnished.garnish_bucket": "装食桶",
   "item.garnished.apple_cider_bucket": "苹果西打桶",
-  "item.garnished.peanut_oil_bucket": "Bucket of Peanut Oil", //
+  "item.garnished.peanut_oil_bucket": "花生油桶",
   "fluid.liquid_garnish": "液态装食",
   "fluid.apple_cider": "苹果西打",
-  "fluid.peanut_oil": "Peanut Oil", //
+  "fluid.peanut_oil": "花生油",
 
   "block.garnished.nut_plant": "坚果植株",
   "block.garnished.nut_sapling": "坚果树苗",
@@ -181,6 +181,6 @@
   "advancement.garnished.cryptic_apple_cider.description": "将花装在苹果西打中",
   "advancement.garnished.ina_buhg.title": "这是个巴格",
   "advancement.garnished.ina_buhg.description": "获得花生的一些变种",
-  "advancement.garnished.walnut_brownie.title": "Don't be Mad", //
-  "advancement.garnished.walnut_brownie.description": "Obtain a Brownie With Walnuts" //
+  "advancement.garnished.walnut_brownie.title": "别发飙啦",
+  "advancement.garnished.walnut_brownie.description": "获得核桃布朗尼" 
 }
