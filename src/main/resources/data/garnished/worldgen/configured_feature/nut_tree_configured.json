@@ -66,11 +66,10 @@
       "min_height_for_leaves": 3
     },
     "foliage_placer": {
-      "type": "minecraft:random_spread_foliage_placer",
-      "radius": 3,
+      "type": "minecraft:blob_foliage_placer",
+      "radius": 2,
       "offset": 0,
-      "foliage_height": 2,
-      "leaf_placement_attempts": 50
+      "foliage_height": 3
     },
     "decorators": []
   }

@@ -41,7 +41,7 @@
         {
           "weight": 1,
           "data": {
-            "Name": "garnished:pecan_leaves",
+            "Name": "garnished:peanut_leaves",
             "Properties": {
               "distance": "7",
               "persistent": "false",
@@ -52,17 +52,16 @@
       ]
     },
     "trunk_placer": {
-      "type": "minecraft:forking_trunk_placer",
+      "type": "minecraft:straight_trunk_placer",
       "base_height": 4,
       "height_rand_a": 2,
-      "height_rand_b": 3
+      "height_rand_b": 0
     },
     "foliage_placer": {
-      "type": "minecraft:random_spread_foliage_placer",
-      "radius": 3,
+      "type": "minecraft:blob_foliage_placer",
+      "radius": 2,
       "offset": 0,
-      "foliage_height": 2,
-      "leaf_placement_attempts": 40
+      "height": 3
     },
     "decorators": []
   }

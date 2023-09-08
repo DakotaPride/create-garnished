@@ -52,17 +52,16 @@
       ]
     },
     "trunk_placer": {
-      "type": "minecraft:forking_trunk_placer",
-      "base_height": 3,
-      "height_rand_a": 1,
-      "height_rand_b": 2
+      "type": "minecraft:straight_trunk_placer",
+      "base_height": 4,
+      "height_rand_a": 2,
+      "height_rand_b": 0
     },
     "foliage_placer": {
-      "type": "minecraft:random_spread_foliage_placer",
-      "radius": 3,
+      "type": "minecraft:blob_foliage_placer",
+      "radius": 2,
       "offset": 0,
-      "foliage_height": 2,
-      "leaf_placement_attempts": 25
+      "height": 3
     },
     "decorators": []
   }

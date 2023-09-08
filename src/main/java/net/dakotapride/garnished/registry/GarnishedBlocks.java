@@ -5,6 +5,7 @@ import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.util.entry.BlockEntry;
 
 import net.dakotapride.garnished.CreateGarnished;
+import net.dakotapride.garnished.block.NutSackBlock;
 import net.dakotapride.garnished.block.SolidifiedGarnishBlock;
 import net.dakotapride.garnished.block.sapling.AlmondSaplingBlock;
 import net.dakotapride.garnished.block.sapling.BuhgSaplingBlock;
@@ -29,6 +30,63 @@ public class GarnishedBlocks {
 			REGISTRATE.block("nut_plant", Block::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.properties(p -> p.mapColor(MapColor.GRASS).noCollission().instabreak().sound(SoundType.GRASS))
+					.register();
+
+	public static final BlockEntry<NutSackBlock> BUHG_SACK =
+			REGISTRATE.block("peanut_sack", NutSackBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.initialProperties(() -> Blocks.WHITE_WOOL)
+					.properties(p -> p.mapColor(MapColor.TERRACOTTA_BROWN))
+					.simpleItem()
+					.register();
+	public static final BlockEntry<NutSackBlock> WALNUT_SACK =
+			REGISTRATE.block("walnut_sack", NutSackBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.initialProperties(() -> Blocks.WHITE_WOOL)
+					.properties(p -> p.mapColor(MapColor.TERRACOTTA_BROWN))
+					.simpleItem()
+					.register();
+	public static final BlockEntry<NutSackBlock> CASHEW_SACK =
+			REGISTRATE.block("cashew_sack", NutSackBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.initialProperties(() -> Blocks.WHITE_WOOL)
+					.properties(p -> p.mapColor(MapColor.TERRACOTTA_BROWN))
+					.simpleItem()
+					.register();
+	public static final BlockEntry<NutSackBlock> MACADAMIA_SACK =
+			REGISTRATE.block("macadamia_sack", NutSackBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.initialProperties(() -> Blocks.WHITE_WOOL)
+					.properties(p -> p.mapColor(MapColor.TERRACOTTA_BROWN))
+					.simpleItem()
+					.register();
+	public static final BlockEntry<NutSackBlock> PISTACHIO_SACK =
+			REGISTRATE.block("pistachio_sack", NutSackBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.initialProperties(() -> Blocks.WHITE_WOOL)
+					.properties(p -> p.mapColor(MapColor.TERRACOTTA_BROWN))
+					.simpleItem()
+					.register();
+	public static final BlockEntry<NutSackBlock> ALMOND_SACK =
+			REGISTRATE.block("almond_sack", NutSackBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.initialProperties(() -> Blocks.WHITE_WOOL)
+					.properties(p -> p.mapColor(MapColor.TERRACOTTA_BROWN))
+					.simpleItem()
+					.register();
+	public static final BlockEntry<NutSackBlock> PECAN_SACK =
+			REGISTRATE.block("pecan_sack", NutSackBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.initialProperties(() -> Blocks.WHITE_WOOL)
+					.properties(p -> p.mapColor(MapColor.TERRACOTTA_BROWN))
+					.simpleItem()
+					.register();
+	public static final BlockEntry<NutSackBlock> HAZELNUT_SACK =
+			REGISTRATE.block("hazelnut_sack", NutSackBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.initialProperties(() -> Blocks.WHITE_WOOL)
+					.properties(p -> p.mapColor(MapColor.TERRACOTTA_BROWN))
+					.simpleItem()
 					.register();
 
 	public static final BlockEntry<BuhgSaplingBlock> BUHG_SAPLING =

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "nut_sack",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:walnut"
+    }
+  },
+  "result": {
+    "item": "garnished:walnut_sack",
+    "count": 1
+  }
+}
