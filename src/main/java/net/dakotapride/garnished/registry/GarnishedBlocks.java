@@ -33,41 +33,49 @@ public class GarnishedBlocks {
 
 	public static final BlockEntry<BuhgSaplingBlock> BUHG_SAPLING =
 			REGISTRATE.block("peanut_sapling", BuhgSaplingBlock::new)
+					.initialProperties(() -> Blocks.OAK_SAPLING)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.properties(p -> p.color(MaterialColor.GRASS).noCollission().instabreak().sound(SoundType.GRASS))
 					.register();
 	public static final BlockEntry<WalnutSaplingBlock> WALNUT_SAPLING =
 			REGISTRATE.block("walnut_sapling", WalnutSaplingBlock::new)
+					.initialProperties(() -> Blocks.OAK_SAPLING)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.properties(p -> p.color(MaterialColor.GRASS).noCollission().instabreak().sound(SoundType.GRASS))
 					.register();
 	public static final BlockEntry<CashewSaplingBlock> CASHEW_SAPLING =
 			REGISTRATE.block("cashew_sapling", CashewSaplingBlock::new)
+					.initialProperties(() -> Blocks.OAK_SAPLING)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.properties(p -> p.color(MaterialColor.GRASS).noCollission().instabreak().sound(SoundType.GRASS))
 					.register();
 	public static final BlockEntry<MacadamiaSaplingBlock> MACADAMIA_SAPLING =
 			REGISTRATE.block("macadamia_sapling", MacadamiaSaplingBlock::new)
+					.initialProperties(() -> Blocks.OAK_SAPLING)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.properties(p -> p.color(MaterialColor.GRASS).noCollission().instabreak().sound(SoundType.GRASS))
 					.register();
 	public static final BlockEntry<PistachioSaplingBlock> PISTACHIO_SAPLING =
 			REGISTRATE.block("pistachio_sapling", PistachioSaplingBlock::new)
+					.initialProperties(() -> Blocks.OAK_SAPLING)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.properties(p -> p.color(MaterialColor.GRASS).noCollission().instabreak().sound(SoundType.GRASS))
 					.register();
 	public static final BlockEntry<AlmondSaplingBlock> ALMOND_SAPLING =
 			REGISTRATE.block("almond_sapling", AlmondSaplingBlock::new)
+					.initialProperties(() -> Blocks.OAK_SAPLING)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.properties(p -> p.color(MaterialColor.GRASS).noCollission().instabreak().sound(SoundType.GRASS))
 					.register();
 	public static final BlockEntry<PecanSaplingBlock> PECAN_SAPLING =
 			REGISTRATE.block("pecan_sapling", PecanSaplingBlock::new)
+					.initialProperties(() -> Blocks.OAK_SAPLING)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.properties(p -> p.color(MaterialColor.GRASS).noCollission().instabreak().sound(SoundType.GRASS))
 					.register();
 	public static final BlockEntry<HazelnutSaplingBlock> HAZELNUT_SAPLING =
 			REGISTRATE.block("hazelnut_sapling", HazelnutSaplingBlock::new)
+					.initialProperties(() -> Blocks.OAK_SAPLING)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.properties(p -> p.color(MaterialColor.GRASS).noCollission().instabreak().sound(SoundType.GRASS))
 					.register();
