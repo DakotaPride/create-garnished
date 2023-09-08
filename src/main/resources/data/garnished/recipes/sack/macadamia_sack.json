@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "nut_sack",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:macadamia"
+    }
+  },
+  "result": {
+    "item": "garnished:macadamia_sack",
+    "count": 1
+  }
+}

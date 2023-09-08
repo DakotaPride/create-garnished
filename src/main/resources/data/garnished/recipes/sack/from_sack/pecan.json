@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "nut_sack",
+  "ingredients": [
+    {
+      "item": "garnished:pecan_sack"
+    }
+  ],
+  "result": {
+    "item": "garnished:pecan",
+    "count": 4
+  }
+}
