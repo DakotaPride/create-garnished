@@ -7,11 +7,11 @@
   ],
   "key": {
     "#": {
-      "item": "garnished:peanut"
+      "item": "garnished:hazelnut"
     }
   },
   "result": {
-    "item": "garnished:peanut_sack",
+    "item": "garnished:hazelnut_sack",
     "count": 1
   }
 }
