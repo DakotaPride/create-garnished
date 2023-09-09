@@ -149,6 +149,15 @@
   "block.garnished.pistachio_sack": "Compacted Nut Sack",
   "block.garnished.hazelnut_sack": "Compacted Nut Sack",
 
+  "block.garnished.nut_leaves": "Nut Leaves",
+  "block.garnished.peanut_leaves": "Nut Leaves",
+  "block.garnished.cashew_leaves": "Nut Leaves",
+  "block.garnished.almond_leaves": "Nut Leaves",
+  "block.garnished.walnut_leaves": "Nut Leaves",
+  "block.garnished.macadamia_leaves": "Nut Leaves",
+  "block.garnished.pistachio_leaves": "Nut Leaves",
+  "block.garnished.hazelnut_leaves": "Nut Leaves",
+
   "item.garnished.garnish_bucket": "Bucket of Garnish",
   "item.garnished.apple_cider_bucket": "Bucket of Apple Cider",
   "item.garnished.peanut_oil_bucket": "Bucket of Peanut Oil",
