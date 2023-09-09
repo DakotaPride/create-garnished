@@ -35,7 +35,7 @@ public class GarnishedFeatures {
 	public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> NUT_TREE_CONFIGURED =
 			FeatureUtils.register(CreateGarnished.ID + ":nut_tree_configured", Feature.TREE,
 					new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.OAK_LOG),
-							new BendingTrunkPlacer(4, 2, 0, 3, UniformInt.of(1, 2)),
+							new StraightTrunkPlacer(4, 2, 0),
 							new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.OAK_LEAVES.defaultBlockState(), 5)
 									.add(GarnishedBlocks.NUT_LEAVES.get().defaultBlockState(), 1)),
 							new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
