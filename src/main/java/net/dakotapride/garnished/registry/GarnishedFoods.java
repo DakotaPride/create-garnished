@@ -39,8 +39,8 @@ public class GarnishedFoods implements IGarnishedItem {
 
 	// Misc
 	public static final FoodProperties GARNISHED_MEAL = new FoodProperties.Builder().nutrition(11).saturationMod(0.8F).build();
-	public static final FoodProperties SALAD = new FoodProperties.Builder().nutrition(7).saturationMod(0.6F).build();
-	public static final FoodProperties PHANTOM_STEAK = new FoodProperties.Builder().nutrition(10).saturationMod(0.8F).build();
+	public static final FoodProperties SALAD = new FoodProperties.Builder().nutrition(8).saturationMod(0.6F).build();
+	public static final FoodProperties PHANTOM_STEAK = new FoodProperties.Builder().nutrition(12).saturationMod(0.9F).build();
 	public static final FoodProperties PEANUT_OIL = new FoodProperties.Builder().nutrition(4).saturationMod(0.4F).build();
 	public static final FoodProperties CASHEW_FRUIT = new FoodProperties.Builder().nutrition(6).saturationMod(0.4F).build();
 	public static final FoodProperties BITTER_ALMOND = new FoodProperties.Builder().nutrition(5).saturationMod(0.6F)
@@ -48,6 +48,7 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties WALNUT_BROWNIE = new FoodProperties.Builder().nutrition(8).saturationMod(0.7F).build();
 	public static final FoodProperties PECAN_PIE = new FoodProperties.Builder().nutrition(9).saturationMod(0.4F).build();
 	public static final FoodProperties CASHEW_COOKIE = new FoodProperties.Builder().nutrition(7).saturationMod(0.5F).build();
+	public static final FoodProperties ALMOND_CHEESE = new FoodProperties.Builder().nutrition(4).saturationMod(0.3F).build();
 
 
 	public static void setRegister() {}
