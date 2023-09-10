@@ -9,8 +9,11 @@
       "item": "garnished:salt_compound"
     },
     {
-      "amount": 8100,
-      "fluidTag": "c:milk"
+      "item": "garnished:salt_compound"
+    },
+    {
+      "amount": 40500,
+      "fluidTag": "minecraft:milk"
     }
   ],
   "results": [
