@@ -13,7 +13,7 @@
     },
     {
       "amount": 40500,
-      "fluidTag": "minecraft:milk"
+      "fluid": "minecraft:water"
     }
   ],
   "results": [
