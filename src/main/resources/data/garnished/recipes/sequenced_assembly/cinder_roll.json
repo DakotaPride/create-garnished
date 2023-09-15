@@ -11,10 +11,13 @@
   ],
   "sequence": [
     {
-      "type": "create:pressing",
+      "type": "create:deploying",
       "ingredients": [
         {
           "item": "garnished:incomplete_cinder_roll"
+        },
+        {
+          "item": "garnished:crushed_shroomlight"
         }
       ],
       "results": [
@@ -24,13 +27,10 @@
       ]
     },
     {
-      "type": "create:deploying",
+      "type": "create:pressing",
       "ingredients": [
         {
           "item": "garnished:incomplete_cinder_roll"
-        },
-        {
-          "item": "garnished:crushed_shroomlight"
         }
       ],
       "results": [
