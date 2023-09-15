@@ -1,0 +1,17 @@
+{
+  "items": [
+    "garnished:sweetened_cashew",
+    "garnished:sweetened_walnut",
+    "garnished:sweetened_almond",
+    "garnished:sweetened_pecan",
+    "garnished:sweetened_pistachio",
+    "garnished:sweetened_macadamia",
+    "garnished:sweetened_peanut",
+    "garnished:sweetened_hazelnut"
+  ],
+  "damage": 6,
+  "reload_ticks": 8,
+  "knockback": 0.2,
+  "velocity_multiplier": 1.8,
+  "sound_pitch": 1.2
+}

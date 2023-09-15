@@ -136,6 +136,22 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.PECAN_PIE.asStack());
 			output.accept(GarnishedItems.CASHEW_COOKIE.asStack());
 
+			output.accept(GarnishedItems.PEANUT_OIL_AND_CINDER_SANDWICH.asStack());
+			output.accept(GarnishedItems.TROPHET_BREW.asStack());
+			output.accept(GarnishedItems.GRIM_STEW.asStack());
+			output.accept(GarnishedItems.CINDER_ROLL.asStack());
+			output.accept(GarnishedItems.WRAPPED_CRIMSON_TANGLE.asStack());
+			output.accept(GarnishedItems.WRAPPED_WARPED_TANGLE.asStack());
+			output.accept(GarnishedItems.WEEPING_TANGLE.asStack());
+			output.accept(GarnishedItems.BLAZING_DELIGHT.asStack());
+			output.accept(GarnishedItems.CRUSHED_CRIMSON_FUNGUS.asStack());
+			output.accept(GarnishedItems.CRUSHED_WARPED_FUNGUS.asStack());
+			output.accept(GarnishedItems.CRUSHED_SHROOMLIGHT.asStack());
+			output.accept(GarnishedItems.CRUSHED_ENDER_PEARL.asStack());
+			output.accept(GarnishedItems.CRIMSON_TUSK.asStack());
+			output.accept(GarnishedItems.SILICA_HARDENED_WRAP.asStack());
+			output.accept(GarnishedItems.ENFLAMED_MANDIBLE.asStack());
+
 			output.accept(GarnishedItems.CRUSHED_SALT_COMPOUND.asStack());
 			output.accept(GarnishedItems.SALT_COMPOUND.asStack());
 

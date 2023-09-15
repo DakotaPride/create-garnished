@@ -1,0 +1,20 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "minecraft:shroomlight"
+    }
+  ],
+  "processingTime": 150,
+  "results": [
+    {
+      "count": 2,
+      "item": "garnished:crushed_shroomlight"
+    },
+    {
+      "chance": 0.75,
+      "item": "garnished:crushed_shroomlight",
+      "count": 1
+    }
+  ]
+}

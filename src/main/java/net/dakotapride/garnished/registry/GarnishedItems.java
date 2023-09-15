@@ -254,6 +254,53 @@ public class GarnishedItems {
 	public static final ItemEntry<Item> INCOMPLETE_CASHEW_COOKIE =
 			REGISTRATE.item("incomplete_cashew_cookie", Item::new).register();
 
+	// Garnished v0.9: Incineration
+	public static final ItemEntry<PeanutOilAndCinderSandwichFoodItem> PEANUT_OIL_AND_CINDER_SANDWICH =
+			REGISTRATE.item("peanut_cinder_sandwich", PeanutOilAndCinderSandwichFoodItem::new).register();
+	public static final ItemEntry<Item> INCOMPLETE_PEANUT_OIL_AND_CINDER_SANDWICH =
+			REGISTRATE.item("incomplete_peanut_cinder_sandwich", Item::new).register();
+	public static final ItemEntry<TrophetBrewFoodItem> TROPHET_BREW =
+			REGISTRATE.item("trophet_brew", TrophetBrewFoodItem::new).register();
+	public static final ItemEntry<Item> INCOMPLETE_TROPHET_BREW =
+			REGISTRATE.item("incomplete_trophet_brew", Item::new).register();
+	public static final ItemEntry<GrimStewFoodItem> GRIM_STEW =
+			REGISTRATE.item("grim_stew", GrimStewFoodItem::new).register();
+	public static final ItemEntry<WrappedWarpedTangleFoodItem> WRAPPED_WARPED_TANGLE =
+			REGISTRATE.item("wrapped_warped_tangle", WrappedWarpedTangleFoodItem::new).register();
+	public static final ItemEntry<WrappedCrimsonTangleFoodItem> WRAPPED_CRIMSON_TANGLE =
+			REGISTRATE.item("wrapped_crimson_tangle", WrappedCrimsonTangleFoodItem::new).register();
+	public static final ItemEntry<WeepingTangleFoodItem> WEEPING_TANGLE =
+			REGISTRATE.item("weeping_tangle", WeepingTangleFoodItem::new).register();
+	public static final ItemEntry<Item> INCOMPLETE_TANGLE =
+			REGISTRATE.item("incomplete_tangle", Item::new).register();
+	public static final ItemEntry<CinderRollFoodItem> CINDER_ROLL =
+			REGISTRATE.item("cinder_roll", CinderRollFoodItem::new).register();
+	public static final ItemEntry<Item> INCOMPLETE_CINDER_ROLL =
+			REGISTRATE.item("incomplete_cinder_roll", Item::new).register();
+	public static final ItemEntry<BlazingDelightFoodItem> BLAZING_DELIGHT =
+			REGISTRATE.item("blazing_delight", BlazingDelightFoodItem::new).register();
+
+	public static final ItemEntry<Item> CRUSHED_SHROOMLIGHT =
+			REGISTRATE.item("crushed_shroomlight", Item::new).register();
+	public static final ItemEntry<Item> ENFLAMED_MANDIBLE =
+			REGISTRATE.item("enflamed_mandible", Item::new).register();
+	public static final ItemEntry<Item> CRIMSON_TUSK =
+			REGISTRATE.item("crimson_tusk", Item::new).register();
+	public static final ItemEntry<Item> INCOMPLETE_CRIMSON_TUSK =
+			REGISTRATE.item("incomplete_crimson_tusk", Item::new).register();
+	public static final ItemEntry<Item> EMPTY_CRIMSON_TUSK =
+			REGISTRATE.item("empty_crimson_tusk", Item::new).register();
+	public static final ItemEntry<Item> CRUSHED_ENDER_PEARL =
+			REGISTRATE.item("crushed_ender_pearl", Item::new).register();
+	public static final ItemEntry<Item> SILICA_HARDENED_WRAP =
+			REGISTRATE.item("hardened_wrap", Item::new).register();
+	public static final ItemEntry<Item> INCOMPLETE_SILICA_HARDENED_WRAP =
+			REGISTRATE.item("incomplete_hardened_wrap", Item::new).register();
+	public static final ItemEntry<Item> CRUSHED_WARPED_FUNGUS =
+			REGISTRATE.item("crushed_warped_fungus", Item::new).register();
+	public static final ItemEntry<Item> CRUSHED_CRIMSON_FUNGUS =
+			REGISTRATE.item("crushed_crimson_fungus", Item::new).register();
+
 	public static void setRegister() {}
 
 }

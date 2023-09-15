@@ -1,0 +1,49 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "garnished:hardened_wrap"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "garnished:wrapped_crimson_tangle"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_tangle"
+        },
+        {
+          "item": "garnished:crushed_crimson_fungus"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_tangle"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_tangle"
+        },
+        {
+          "item": "garnished:almond_cheese"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_tangle"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "garnished:incomplete_tangle"
+  }
+}

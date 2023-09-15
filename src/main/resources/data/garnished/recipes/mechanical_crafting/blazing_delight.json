@@ -1,0 +1,25 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "A": {
+      "item": "garnished:enflamed_mandible"
+    },
+    "B": {
+      "item": "garnished:crushed_ender_pearl"
+    },
+    "C": {
+      "item": "garnished:crushed_shroomlight"
+    },
+    "#": {
+      "item": "garnished:crimson_tusk"
+    }
+  },
+  "pattern": [
+    "BAC",
+    " # "
+  ],
+  "result": {
+    "item": "garnished:blazing_delight"
+  }
+}
