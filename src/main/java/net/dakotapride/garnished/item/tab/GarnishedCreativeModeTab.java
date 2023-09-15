@@ -116,20 +116,36 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 		items.add(84, GarnishedItems.PECAN_PIE.asStack());
 		items.add(85, GarnishedItems.CASHEW_COOKIE.asStack());
 
-		items.add(86, GarnishedItems.CRUSHED_SALT_COMPOUND.asStack());
-		items.add(87, GarnishedItems.SALT_COMPOUND.asStack());
+		items.add(86, GarnishedItems.PEANUT_OIL_AND_CINDER_SANDWICH.asStack());
+		items.add(87, GarnishedItems.TROPHET_BREW.asStack());
+		items.add(88, GarnishedItems.GRIM_STEW.asStack());
+		items.add(89, GarnishedItems.CINDER_ROLL.asStack());
+		items.add(90, GarnishedItems.WRAPPED_CRIMSON_TANGLE.asStack());
+		items.add(91, GarnishedItems.WRAPPED_WARPED_TANGLE.asStack());
+		items.add(92, GarnishedItems.WEEPING_TANGLE.asStack());
+		items.add(93, GarnishedItems.BLAZING_DELIGHT.asStack());
+		items.add(94, GarnishedItems.CRUSHED_CRIMSON_FUNGUS.asStack());
+		items.add(95, GarnishedItems.CRUSHED_WARPED_FUNGUS.asStack());
+		items.add(96, GarnishedItems.CRUSHED_SHROOMLIGHT.asStack());
+		items.add(97, GarnishedItems.CRUSHED_ENDER_PEARL.asStack());
+		items.add(98, GarnishedItems.CRIMSON_TUSK.asStack());
+		items.add(99, GarnishedItems.SILICA_HARDENED_WRAP.asStack());
+		items.add(100, GarnishedItems.ENFLAMED_MANDIBLE.asStack());
 
-		items.add(88, GarnishedItems.APPLE_CIDER.asStack());
-		items.add(89, GarnishedItems.CRYPTIC_APPLE_CIDER.asStack());
-		items.add(90, GarnishedItems.BITTER_APPLE_CIDER.asStack());
-		items.add(91, GarnishedItems.BOTTLED_PEANUT_OIL.asStack());
+		items.add(101, GarnishedItems.CRUSHED_SALT_COMPOUND.asStack());
+		items.add(102, GarnishedItems.SALT_COMPOUND.asStack());
 
-		items.add(92, GarnishedItems.GARNISH_COMPOUND.asStack());
-		items.add(93, GarnishedBlocks.SOLIDIFIED_GARNISH_BLOCK.asStack());
+		items.add(103, GarnishedItems.APPLE_CIDER.asStack());
+		items.add(104, GarnishedItems.CRYPTIC_APPLE_CIDER.asStack());
+		items.add(105, GarnishedItems.BITTER_APPLE_CIDER.asStack());
+		items.add(106, GarnishedItems.BOTTLED_PEANUT_OIL.asStack());
 
-		items.add(94, GarnishedFluids.GARNISH.getBucket().get().getDefaultInstance());
-		items.add(95, GarnishedFluids.APPLE_CIDER.getBucket().get().getDefaultInstance());
-		items.add(96, GarnishedFluids.PEANUT_OIL.getBucket().get().getDefaultInstance());
+		items.add(107, GarnishedItems.GARNISH_COMPOUND.asStack());
+		items.add(108, GarnishedBlocks.SOLIDIFIED_GARNISH_BLOCK.asStack());
+
+		items.add(109, GarnishedFluids.GARNISH.getBucket().get().getDefaultInstance());
+		items.add(110, GarnishedFluids.APPLE_CIDER.getBucket().get().getDefaultInstance());
+		items.add(111, GarnishedFluids.PEANUT_OIL.getBucket().get().getDefaultInstance());
 	}
 
 	@Override

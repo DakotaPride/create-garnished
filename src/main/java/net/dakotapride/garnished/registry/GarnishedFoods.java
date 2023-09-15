@@ -49,6 +49,18 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties CASHEW_COOKIE = new FoodProperties.Builder().nutrition(7).saturationMod(0.5F).build();
 	public static final FoodProperties ALMOND_CHEESE = new FoodProperties.Builder().nutrition(7).saturationMod(0.5F).build();
 
+	// Incineration
+	public static final FoodProperties PEANUT_OIL_AND_CINDER_SANDWICH = new FoodProperties.Builder().nutrition(10).saturationMod(0.6F).build();
+	public static final FoodProperties TROPHET_BREW = new FoodProperties.Builder().nutrition(12).saturationMod(0.8F).build();
+	public static final FoodProperties GRIM_STEW = new FoodProperties.Builder().nutrition(14).saturationMod(0.9F).build();
+	public static final FoodProperties WRAPPED_WARPED_TANGLE = new FoodProperties.Builder().nutrition(9).saturationMod(0.5F)
+			.effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, getWrappedTangleEffectDuration, 1), 0.8F).build();
+	public static final FoodProperties WRAPPED_CRIMSON_TANGLE = new FoodProperties.Builder().nutrition(9).saturationMod(0.5F)
+			.effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, getWrappedTangleEffectDuration, 1), 0.8F).build();
+	public static final FoodProperties CINDER_ROLL = new FoodProperties.Builder().nutrition(8).saturationMod(0.7F).build();
+	public static final FoodProperties WEEPING_TANGLE = new FoodProperties.Builder().nutrition(11).saturationMod(0.5F).build();
+	public static final FoodProperties BLAZING_DELIGHT = new FoodProperties.Builder().nutrition(16).saturationMod(0.7F).build();
+
 
     public static void setRegister() {}
 

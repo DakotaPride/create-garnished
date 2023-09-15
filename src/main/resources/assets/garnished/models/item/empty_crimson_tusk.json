@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "garnished:block/nut_sapling"
+    "layer0": "garnished:item/empty_tusk"
   }
 }

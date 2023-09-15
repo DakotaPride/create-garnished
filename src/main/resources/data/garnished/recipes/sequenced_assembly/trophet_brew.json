@@ -1,0 +1,67 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:bowl"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "garnished:trophet_brew"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_trophet_brew"
+        },
+        {
+          "amount": 8100,
+          "fluid": "minecraft:lava",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_trophet_brew"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_trophet_brew"
+        },
+        {
+          "item": "garnished:crushed_warped_fungus"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_trophet_brew"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_trophet_brew"
+        },
+        {
+          "item": "garnished:crushed_crimson_fungus"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_trophet_brew"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "garnished:incomplete_trophet_brew"
+  }
+}

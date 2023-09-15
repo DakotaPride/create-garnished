@@ -1,0 +1,26 @@
+{
+  "items": [
+    "garnished:cinder_almond_haste",
+    "garnished:cinder_pecan_resistance",
+    "garnished:cinder_walnut_strength",
+    "garnished:cinder_cashew_speed",
+    "garnished:cinder_pistachio_night_vision",
+    "garnished:cinder_macadamia_fire_resistance",
+    "garnished:cinder_peanut_effect",
+    "garnished:cinder_hazelnut_speed_potent",
+
+    "garnished:melted_cinder_almond",
+    "garnished:melted_cinder_pecan",
+    "garnished:melted_cinder_walnut",
+    "garnished:melted_cinder_cashew",
+    "garnished:melted_cinder_pistachio",
+    "garnished:melted_cinder_macadamia",
+    "garnished:melted_cinder_peanut",
+    "garnished:melted_cinder_hazelnut"
+  ],
+  "damage": 6,
+  "reload_ticks": 10,
+  "knockback": 0.3,
+  "velocity_multiplier": 1.5,
+  "sound_pitch": 1.0
+}

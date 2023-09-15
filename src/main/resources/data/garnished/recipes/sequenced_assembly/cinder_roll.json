@@ -1,0 +1,62 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:netherrack"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "garnished:cinder_roll"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_cinder_roll"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_cinder_roll"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_cinder_roll"
+        },
+        {
+          "item": "garnished:crushed_shroomlight"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_cinder_roll"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_cinder_roll"
+        },
+        {
+          "item": "garnished:crushed_ender_pearl"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_cinder_roll"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "garnished:incomplete_cinder_roll"
+  }
+}

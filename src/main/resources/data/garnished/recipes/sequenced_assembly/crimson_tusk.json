@@ -1,0 +1,75 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:netherrack"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "garnished:crimson_tusk"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_crimson_tusk"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_crimson_tusk"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_crimson_tusk"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_crimson_tusk"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_crimson_tusk"
+        },
+        {
+          "item": "garnished:crushed_crimson_fungus"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_crimson_tusk"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_crimson_tusk"
+        },
+        {
+          "item": "garnished:crushed_crimson_fungus"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_crimson_tusk"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "garnished:incomplete_crimson_tusk"
+  }
+}

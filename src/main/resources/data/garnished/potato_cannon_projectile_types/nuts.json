@@ -1,0 +1,17 @@
+{
+  "items": [
+    "garnished:cashew",
+    "garnished:walnut",
+    "garnished:almond",
+    "garnished:pecan",
+    "garnished:pistachio",
+    "garnished:macadamia",
+    "garnished:peanut",
+    "garnished:hazelnut"
+  ],
+  "damage": 6,
+  "reload_ticks": 10,
+  "knockback": 0.3,
+  "velocity_multiplier": 1.5,
+  "sound_pitch": 1.0
+}

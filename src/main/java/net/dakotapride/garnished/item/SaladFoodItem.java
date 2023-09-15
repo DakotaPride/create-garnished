@@ -13,7 +13,7 @@ import java.util.List;
 
 public class SaladFoodItem extends Item implements IGarnishedItem {
 	public SaladFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.SALAD));
+		super(properties.food(GarnishedFoods.SALAD).stacksTo(16));
 	}
 
 	@Override

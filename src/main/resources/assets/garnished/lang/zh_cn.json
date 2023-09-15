@@ -140,6 +140,29 @@
   "item.garnished.incomplete_cashew_cookie": "未加工的腰果曲奇",
   "item.garnished.almond_cheese": "杏仁奶酪",
 
+  "item.garnished.peanut_cinder_sandwich": "Peanut Oil and Cinder Sandwich", //
+  "item.garnished.incomplete_peanut_cinder_sandwich": "Incomplete Peanut Oil and Cinder Sandwich", //
+  "item.garnished.trophet_brew": "Trophet Brew", //
+  "item.garnished.incomplete_trophet_brew": "Incomplete Trophet Brew", //
+  "item.garnished.grim_stew": "Grim Stew", //
+  "item.garnished.wrapped_warped_tangle": "Wrapped Warped Tangle", //
+  "item.garnished.wrapped_crimson_tangle": "Wrapped Crimson Tangle", //
+  "item.garnished.weeping_tangle": "Weeping Tangle", //
+  "item.garnished.incomplete_tangle": "Incomplete Tangle", //
+  "item.garnished.cinder_roll": "Cinder Shroom Roll", //
+  "item.garnished.incomplete_cinder_roll": "Incomplete Cinder Shroom Roll", //
+  "item.garnished.blazing_delight": "Blazing Delight", //
+  "item.garnished.crushed_warped_fungus": "Crushed Warped Fungus", //
+  "item.garnished.crushed_crimson_fungus": "Crushed Crimson Fungus", //
+  "item.garnished.enflamed_mandible": "Enflamed Mandible", //
+  "item.garnished.crushed_ender_pearl": "Ender Dust", //
+  "item.garnished.crimson_tusk": "Crimson Tusk", //
+  "item.garnished.incomplete_crimson_tusk": "Incomplete Crimson Tusk", //
+  "item.garnished.empty_crimson_tusk": "Empty Crimson Tusk", //
+  "item.garnished.hardened_wrap": "Silica Hardened Wrap", //
+  "item.garnished.incomplete_hardened_wrap": "Incomplete Silica Hardened Wrap", //
+  "item.garnished.crushed_shroomlight": "Crushed Shroomlight", //
+
   "block.garnished.peanut_sack": "压实坚果袋",
   "block.garnished.cashew_sack": "压实坚果袋",
   "block.garnished.almond_sack": "压实坚果袋",
@@ -162,8 +185,11 @@
   "item.garnished.apple_cider_bucket": "苹果西打桶",
   "item.garnished.peanut_oil_bucket": "花生油桶",
   "fluid.liquid_garnish": "液态装食",
+  "block.garnished.liquid_garnish": "液态装食",
   "fluid.apple_cider": "苹果西打",
+  "block.garnished.apple_cider": "苹果西打",
   "fluid.peanut_oil": "花生油",
+  "block.garnished.peanut_oil": "花生油",
 
   "block.garnished.nut_plant": "坚果植株",
   "block.garnished.nut_sapling": "坚果树苗",
