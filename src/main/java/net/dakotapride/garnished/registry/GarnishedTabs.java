@@ -159,6 +159,7 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.CRYPTIC_APPLE_CIDER.asStack());
 			output.accept(GarnishedItems.BITTER_APPLE_CIDER.asStack());
 			output.accept(GarnishedItems.BOTTLED_PEANUT_OIL.asStack());
+			output.accept(GarnishedItems.FERMENTED_CASHEW_MIXTURE.asStack());
 
 			output.accept(GarnishedItems.GARNISH_COMPOUND.asStack());
 			output.accept(GarnishedBlocks.SOLIDIFIED_GARNISH_BLOCK.asStack());
@@ -166,6 +167,7 @@ public class GarnishedTabs {
 			output.accept(GarnishedFluids.GARNISH.getBucket().get());
 			output.accept(GarnishedFluids.APPLE_CIDER.getBucket().get());
 			output.accept(GarnishedFluids.PEANUT_OIL.getBucket().get());
+			output.accept(GarnishedFluids.CASHEW_MIXTURE.getBucket().get());
 		}
 	}
 }

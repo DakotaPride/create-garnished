@@ -1,0 +1,24 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "garnished:cashew_apple"
+    },
+    {
+      "item": "garnished:cashew_apple"
+    },
+    {
+      "tag": "garnished:crushable/peanut"
+    },
+    {
+      "tag": "garnished:crushable/peanut"
+    }
+  ],
+  "results": [
+    {
+      "amount": 20250,
+      "fluid": "garnished:cashew_mixture"
+    }
+  ]
+}

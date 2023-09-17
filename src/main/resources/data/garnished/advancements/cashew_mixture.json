@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:cashew_mixture"
+    },
+    "title": {
+      "translate": "advancement.garnished.cashew_mixture.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.cashew_mixture.description",
+      "color": "#DBA213"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "garnished:cryptic_apple_cider",
+  "criteria": {
+    "obtain_fermented_cashew_mixture": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "garnished:cashew_mixture"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_fermented_cashew_mixture"
+    ]
+  ]
+}

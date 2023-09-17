@@ -279,6 +279,10 @@ public class GarnishedItems {
 			REGISTRATE.item("incomplete_cinder_roll", Item::new).register();
 	public static final ItemEntry<BlazingDelightFoodItem> BLAZING_DELIGHT =
 			REGISTRATE.item("blazing_delight", BlazingDelightFoodItem::new).register();
+	public static final ItemEntry<Item> INCOMPLETE_FERMENTED_CASHEW_MIXTURE =
+			REGISTRATE.item("incomplete_cashew_mixture", Item::new).register();
+	public static final ItemEntry<FermentedCashewMixtureItem> FERMENTED_CASHEW_MIXTURE =
+			REGISTRATE.item("cashew_mixture", FermentedCashewMixtureItem::new).register();
 
 	public static final ItemEntry<Item> CRUSHED_SHROOMLIGHT =
 			REGISTRATE.item("crushed_shroomlight", Item::new).register();
