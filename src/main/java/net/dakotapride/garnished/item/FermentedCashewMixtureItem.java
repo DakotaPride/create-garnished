@@ -31,13 +31,6 @@ public class FermentedCashewMixtureItem extends Item implements IGarnishedItem {
 	public @NotNull ItemStack finishUsingItem(@NotNull ItemStack stack, @NotNull Level level, @NotNull LivingEntity livingEntity) {
 		super.finishUsingItem(stack, level, livingEntity);
 
-		if (livingEntity instanceof ServerPlayer serverPlayer) {
-			CriteriaTriggers.CONSUME_ITEM.trigger(serverPlayer, stack);
-			serverPlayer.awardStat(Stats.ITEM_USED.get(this));
-
-			livingEntity.addEffect(new MobEffectInstance(getCrypticAppleCiderEffect(), getCrypticAppleCiderEffectDuration, 2));
-		}
-
 		if (stack.isEmpty()) {
 			return new ItemStack(Items.GLASS_BOTTLE);
 		} else {
