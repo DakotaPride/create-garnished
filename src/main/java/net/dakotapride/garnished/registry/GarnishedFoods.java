@@ -60,6 +60,7 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties CINDER_ROLL = new FoodProperties.Builder().nutrition(8).saturationMod(0.7F).build();
 	public static final FoodProperties WEEPING_TANGLE = new FoodProperties.Builder().nutrition(11).saturationMod(0.5F).build();
 	public static final FoodProperties BLAZING_DELIGHT = new FoodProperties.Builder().nutrition(16).saturationMod(0.7F).build();
+	public static final FoodProperties FERMENTED_CASHEW_MIXTURE = new FoodProperties.Builder().nutrition(3).saturationMod(0.4F).build();
 
 
     public static void setRegister() {}

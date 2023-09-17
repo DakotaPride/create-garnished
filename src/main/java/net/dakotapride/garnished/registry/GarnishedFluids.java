@@ -45,6 +45,7 @@ public class GarnishedFluids {
 	public static final FluidEntry<SimpleFlowableFluid.Flowing> GARNISH;
 	public static final FluidEntry<SimpleFlowableFluid.Flowing> APPLE_CIDER;
 	public static final FluidEntry<SimpleFlowableFluid.Flowing> PEANUT_OIL;
+	public static final FluidEntry<SimpleFlowableFluid.Flowing> CASHEW_MIXTURE;
 
 	static  {
 		GARNISH = REGISTRATE
@@ -91,6 +92,23 @@ public class GarnishedFluids {
 						.flowSpeed(3)
 						.blastResistance(100f))
 				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.peanut_oil", 1500, 800))
+				.onRegisterAfter(Registry.ITEM_REGISTRY, fluid -> {
+					Fluid source = fluid.getSource();
+					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
+							new FullItemFluidStorage(context, bucket -> ItemVariant.of(BUCKET), FluidVariant.of(source), FluidConstants.BUCKET));
+					FluidStorage.combinedItemApiProvider(BUCKET).register(context ->
+							new EmptyItemFluidStorage(context, bucket -> ItemVariant.of(source.getBucket()), source, FluidConstants.BUCKET));
+				}).register();
+		CASHEW_MIXTURE = REGISTRATE
+				.fluid("cashew_mixture",
+						new ResourceLocation(CreateGarnished.ID, "fluid/cashew_mixture_still"),
+						new ResourceLocation(CreateGarnished.ID, "fluid/cashew_mixture_flowing")
+				)
+				.fluidProperties(p -> p.levelDecreasePerBlock(2)
+						.tickRate(25)
+						.flowSpeed(3)
+						.blastResistance(100f))
+				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.cashew_mixture", 1500, 800))
 				.onRegisterAfter(Registry.ITEM_REGISTRY, fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->

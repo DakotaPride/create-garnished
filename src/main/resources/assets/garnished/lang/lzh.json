@@ -152,6 +152,8 @@
   "item.garnished.cinder_roll": "Cinder Shroom Roll",
   "item.garnished.incomplete_cinder_roll": "Incomplete Cinder Shroom Roll",
   "item.garnished.blazing_delight": "Blazing Delight",
+  "item.garnished.cashew_mixture": "Fermented Cashew Mixture",
+  "item.garnished.incomplete_cashew_mixture": "Incomplete Fermented Cashew Mixture",
   "item.garnished.crushed_warped_fungus": "Crushed Warped Fungus",
   "item.garnished.crushed_crimson_fungus": "Crushed Crimson Fungus",
   "item.garnished.enflamed_mandible": "Enflamed Mandible",
@@ -184,12 +186,15 @@
   "item.garnished.garnish_bucket": "Bucket of Garnish",
   "item.garnished.apple_cider_bucket": "Bucket of Apple Cider",
   "item.garnished.peanut_oil_bucket": "Bucket of Peanut Oil",
+  "item.garnished.cashew_mixture_bucket": "Bucket of Cashew Mixture",
   "fluid.liquid_garnish": "Liquid Garnish",
   "block.garnished.liquid_garnish": "Peanut Oil",
   "fluid.apple_cider": "Apple Cider",
   "block.garnished.apple_cider": "Peanut Oil",
   "fluid.peanut_oil": "Peanut Oil",
   "block.garnished.peanut_oil": "Peanut Oil",
+  "fluid.cashew_mixture": "Cashew Mixture",
+  "block.garnished.cashew_mixture": "Cashew Mixture",
 
   "block.garnished.nut_plant": "Nut Growth",
   "block.garnished.nut_sapling": "Nut Tree Sapling",
@@ -227,5 +232,7 @@
   "advancement.garnished.ina_buhg.title": "It's a Buhg",
   "advancement.garnished.ina_buhg.description": "Obtain some variation of a Peanut",
   "advancement.garnished.walnut_brownie.title": "Don't be Mad",
-  "advancement.garnished.walnut_brownie.description": "Obtain a Brownie With Walnuts"
+  "advancement.garnished.walnut_brownie.description": "Obtain a Brownie With Walnuts",
+  "advancement.garnished.cashew_mixture.title": "Raise a Glass!",
+  "advancement.garnished.cashew_mixture.description": "Obtain Bottled Fermented Cashew Mixture"
 }
