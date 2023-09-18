@@ -259,10 +259,10 @@ public class GarnishedItems {
 			REGISTRATE.item("peanut_cinder_sandwich", PeanutOilAndCinderSandwichFoodItem::new).register();
 	public static final ItemEntry<Item> INCOMPLETE_PEANUT_OIL_AND_CINDER_SANDWICH =
 			REGISTRATE.item("incomplete_peanut_cinder_sandwich", Item::new).register();
-	public static final ItemEntry<TrophetBrewFoodItem> TROPHET_BREW =
-			REGISTRATE.item("trophet_brew", TrophetBrewFoodItem::new).register();
-	public static final ItemEntry<Item> INCOMPLETE_TROPHET_BREW =
-			REGISTRATE.item("incomplete_trophet_brew", Item::new).register();
+	public static final ItemEntry<TophetBrewFoodItem> TOPHET_BREW =
+			REGISTRATE.item("tophet_brew", TophetBrewFoodItem::new).register();
+	public static final ItemEntry<Item> INCOMPLETE_TOPHET_BREW =
+			REGISTRATE.item("incomplete_tophet_brew", Item::new).register();
 	public static final ItemEntry<GrimStewFoodItem> GRIM_STEW =
 			REGISTRATE.item("grim_stew", GrimStewFoodItem::new).register();
 	public static final ItemEntry<WrappedWarpedTangleFoodItem> WRAPPED_WARPED_TANGLE =

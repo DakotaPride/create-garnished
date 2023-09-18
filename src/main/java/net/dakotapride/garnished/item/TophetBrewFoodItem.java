@@ -16,9 +16,9 @@ import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
-public class TrophetBrewFoodItem extends Item implements IGarnishedItem {
-	public TrophetBrewFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.TROPHET_BREW).stacksTo(1));
+public class TophetBrewFoodItem extends Item implements IGarnishedItem {
+	public TophetBrewFoodItem(Properties properties) {
+		super(properties.food(GarnishedFoods.TOPHET_BREW).stacksTo(1));
 	}
 
 	@Override

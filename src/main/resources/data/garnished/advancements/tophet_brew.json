@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:tophet_brew"
+    },
+    "title": {
+      "translate": "advancement.garnished.tophet_brew.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.tophet_brew.description",
+      "color": "#DBA213"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "garnished:cashew_mixture",
+  "criteria": {
+    "obtain_tophet_brew": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "garnished:tophet_brew"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_tophet_brew"
+    ]
+  ]
+}

@@ -137,7 +137,7 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.CASHEW_COOKIE.asStack());
 
 			output.accept(GarnishedItems.PEANUT_OIL_AND_CINDER_SANDWICH.asStack());
-			output.accept(GarnishedItems.TROPHET_BREW.asStack());
+			output.accept(GarnishedItems.TOPHET_BREW.asStack());
 			output.accept(GarnishedItems.GRIM_STEW.asStack());
 			output.accept(GarnishedItems.CINDER_ROLL.asStack());
 			output.accept(GarnishedItems.WRAPPED_CRIMSON_TANGLE.asStack());
