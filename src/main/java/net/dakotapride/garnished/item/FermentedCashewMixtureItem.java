@@ -24,7 +24,7 @@ import org.jetbrains.annotations.NotNull;
 public class FermentedCashewMixtureItem extends Item implements IGarnishedItem {
 	private static final int DRINK_DURATION = 10;
 	public FermentedCashewMixtureItem(Properties properties) {
-		super(properties.food(GarnishedFoods.FERMENTED_CASHEW_MIXTURE));
+		super(properties.food(GarnishedFoods.FERMENTED_CASHEW_MIXTURE).stacksTo(16));
 	}
 
 	@Override
