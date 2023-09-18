@@ -61,7 +61,8 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties WEEPING_TANGLE = new FoodProperties.Builder().nutrition(11).saturationMod(0.5F).build();
 	public static final FoodProperties BLAZING_DELIGHT = new FoodProperties.Builder().nutrition(16).saturationMod(0.7F).build();
 	public static final FoodProperties FERMENTED_CASHEW_MIXTURE = new FoodProperties.Builder().nutrition(3).saturationMod(0.4F)
-			.effect(new MobEffectInstance(MobEffects.CONFUSION, getFermentedCashewMixtureEffectDuration), 0.05F).build();
+			.effect(new MobEffectInstance(MobEffects.CONFUSION, getFermentedCashewMixtureEffectDuration,2 ), 0.05F)
+			.effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, getFermentedCashewMixtureEffectDuration, 2), 0.05F).build();
 
 
     public static void setRegister() {}
