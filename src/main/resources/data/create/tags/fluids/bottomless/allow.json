@@ -1,8 +1,8 @@
 {
   "replace": false,
   "values": [
-    "#garnished:liquid_garnish",
     "#garnished:apple_cider",
+    "#garnished:liquid_garnish",
     "#garnished:peanut_oil",
     "#garnished:cashew_mixture"
   ]
