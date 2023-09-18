@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "garnished:item/trophet_brew"
+    "layer0": "garnished:item/tophet_brew"
   }
 }

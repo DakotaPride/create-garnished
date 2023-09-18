@@ -51,7 +51,7 @@ public class GarnishedFoods implements IGarnishedItem {
 
 	// Incineration
 	public static final FoodProperties PEANUT_OIL_AND_CINDER_SANDWICH = new FoodProperties.Builder().nutrition(10).saturationMod(0.6F).build();
-	public static final FoodProperties TROPHET_BREW = new FoodProperties.Builder().nutrition(12).saturationMod(0.8F).build();
+	public static final FoodProperties TOPHET_BREW = new FoodProperties.Builder().nutrition(12).saturationMod(0.8F).build();
 	public static final FoodProperties GRIM_STEW = new FoodProperties.Builder().nutrition(14).saturationMod(0.9F).build();
 	public static final FoodProperties WRAPPED_WARPED_TANGLE = new FoodProperties.Builder().nutrition(9).saturationMod(0.5F)
 			.effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, getWrappedTangleEffectDuration, 1), 0.8F).build();
