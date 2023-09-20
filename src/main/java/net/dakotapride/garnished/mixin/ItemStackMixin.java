@@ -1,11 +1,7 @@
 package net.dakotapride.garnished.mixin;
 
-import com.simibubi.create.foundation.advancement.AllAdvancements;
-import com.simibubi.create.foundation.advancement.CreateAdvancement;
-
 import net.dakotapride.garnished.registry.GarnishedEffects;
 import net.dakotapride.garnished.registry.GarnishedTags;
-import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
@@ -26,7 +22,7 @@ public class ItemStackMixin {
 		ItemStack activeItem = entity.getUseItem();
 
 
-		if (entity.hasEffect(GarnishedEffects.AVERSION) && activeItem.is(GarnishedTags.NUTS_TAG)) {
+		if (entity.hasEffect(GarnishedEffects.AVERSION) && activeItem.is(GarnishedTags.AVERSION_FOODS_TAG)) {
 
 			entity.addEffect(new MobEffectInstance(MobEffects.CONFUSION, 400, 2));
 

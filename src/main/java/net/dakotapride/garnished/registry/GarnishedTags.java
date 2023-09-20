@@ -8,7 +8,7 @@ import net.minecraft.world.item.Item;
 
 public class GarnishedTags {
 
-	public static TagKey<Item> NUTS_TAG = itemTag("nuts");
+	public static TagKey<Item> AVERSION_FOODS_TAG = itemTag("aversion_foods");
 
 	private static TagKey<Item> itemTag(String name) {
 		return TagKey.create(Registry.ITEM_REGISTRY, new ResourceLocation(CreateGarnished.ID, name));
