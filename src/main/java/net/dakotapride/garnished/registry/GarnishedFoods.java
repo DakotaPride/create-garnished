@@ -63,6 +63,8 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties FERMENTED_CASHEW_MIXTURE = new FoodProperties.Builder().nutrition(3).saturationMod(0.4F)
 			.effect(new MobEffectInstance(MobEffects.CONFUSION, getFermentedCashewMixtureEffectDuration,2 ), 0.05F)
 			.effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, getFermentedCashewMixtureEffectDuration, 2), 0.05F).build();
+	public static final FoodProperties PUTRID_STEW = new FoodProperties.Builder().nutrition(7).saturationMod(0.3F)
+			.effect(new MobEffectInstance(MobEffects.CONFUSION, 200), 1.0F).build();
 
 
 	public static void setRegister() {}

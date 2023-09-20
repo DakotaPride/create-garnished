@@ -283,6 +283,8 @@ public class GarnishedItems {
 			REGISTRATE.item("incomplete_cashew_mixture", Item::new).register();
 	public static final ItemEntry<FermentedCashewMixtureItem> FERMENTED_CASHEW_MIXTURE =
 			REGISTRATE.item("cashew_mixture", FermentedCashewMixtureItem::new).register();
+	public static final ItemEntry<PutridStewFoodItem> PUTRID_STEW =
+			REGISTRATE.item("putrid_stew", PutridStewFoodItem::new).register();
 
 	public static final ItemEntry<Item> CRUSHED_SHROOMLIGHT =
 			REGISTRATE.item("crushed_shroomlight", Item::new).register();
@@ -304,6 +306,8 @@ public class GarnishedItems {
 			REGISTRATE.item("crushed_warped_fungus", Item::new).register();
 	public static final ItemEntry<Item> CRUSHED_CRIMSON_FUNGUS =
 			REGISTRATE.item("crushed_crimson_fungus", Item::new).register();
+	public static final ItemEntry<Item> BRITTLE_DUST =
+			REGISTRATE.item("brittle_dust", Item::new).register();
 
 	public static void setRegister() {}
 
