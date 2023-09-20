@@ -164,6 +164,13 @@
   "item.garnished.hardened_wrap": "Silica Hardened Wrap",
   "item.garnished.incomplete_hardened_wrap": "Incomplete Silica Hardened Wrap",
   "item.garnished.crushed_shroomlight": "Crushed Shroomlight",
+  "item.garnished.brittle_dust": "Brittle Dust",
+  "item.garnished.putrid_stew": "Putrid Stew",
+  "effect.garnished.aversion": "Aversion",
+  "item.minecraft.potion.effect.aversion": "Potion of Aversion",
+  "item.minecraft.splash_potion.effect.aversion": "Splash Potion of Aversion",
+  "item.minecraft.lingering_potion.effect.aversion": "Lingering Potion of Aversion",
+  "item.minecraft.tipped_arrow.effect.aversion": "Tipped Arrow of Aversion",
 
   "block.garnished.peanut_sack": "Compacted Nut Sack",
   "block.garnished.cashew_sack": "Compacted Nut Sack",
@@ -236,5 +243,7 @@
   "advancement.garnished.cashew_mixture.title": "Raise a Glass!",
   "advancement.garnished.cashew_mixture.description": "Obtain Bottled Fermented Cashew Mixture",
   "advancement.garnished.tophet_brew.title": "Dining in Hell",
-  "advancement.garnished.tophet_brew.description": "Obtain a Tophet Brew"
+  "advancement.garnished.tophet_brew.description": "Obtain a Tophet Brew",
+  "advancement.garnished.aversion_effect.title": "Could've Been Worse",
+  "advancement.garnished.aversion_effect.description": "Suffer from your new nut allergy"
 }

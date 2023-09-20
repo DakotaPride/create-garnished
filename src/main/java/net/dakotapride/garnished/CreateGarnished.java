@@ -1,6 +1,14 @@
 package net.dakotapride.garnished;
 
+import io.github.fabricators_of_create.porting_lib.brewing.BrewingRecipeRegistry;
+import net.dakotapride.garnished.registry.GarnishedEffects;
 import net.dakotapride.garnished.registry.GarnishedFoods;
+
+import net.dakotapride.garnished.registry.GarnishedTags;
+
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.PotionBrewing;
+import net.minecraft.world.item.alchemy.Potions;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -37,6 +45,8 @@ public class CreateGarnished implements ModInitializer {
 		GarnishedTabs.setRegister();
 		GarnishedFluids.setRegister();
 		GarnishedFoods.setRegister();
+		GarnishedEffects.setRegister();
+		GarnishedTags.setRegister();
 		REGISTRATE.get().register();
 
 		// Generation
@@ -48,6 +58,10 @@ public class CreateGarnished implements ModInitializer {
 				() -> () -> "{} is accessing Porting Lib from the client!",
 				() -> () -> "{} is accessing Porting Lib from the server!"
 		), NAME);
+
+		PotionBrewing.addMix(Potions.AWKWARD, GarnishedItems.BRITTLE_DUST.get(), GarnishedEffects.AVERSION_POTION);
+		PotionBrewing.addMix(GarnishedEffects.AVERSION_POTION, Items.REDSTONE, GarnishedEffects.LONG_AVERSION_POTION);
+
 	}
 
 	public static CreateRegistrate registrate() {

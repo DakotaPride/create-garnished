@@ -3,7 +3,9 @@
   "minVersion": "0.8",
   "package": "net.dakotapride.garnished.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": [],
+  "mixins": [
+    "ItemStackMixin"
+  ],
   "client": [
     "BlockColoursMixin",
     "ItemColoursMixin"

@@ -14,12 +14,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
-
 import org.jetbrains.annotations.NotNull;
 
-public class TophetBrewFoodItem extends Item implements IGarnishedItem {
-	public TophetBrewFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.TOPHET_BREW).stacksTo(1));
+public class PutridStewFoodItem extends Item implements IGarnishedItem {
+	public PutridStewFoodItem(Properties properties) {
+		super(properties.food(GarnishedFoods.PUTRID_STEW).stacksTo(1));
 	}
 
 	@Override
@@ -28,6 +27,10 @@ public class TophetBrewFoodItem extends Item implements IGarnishedItem {
 		if (livingEntity instanceof ServerPlayer serverPlayer) {
 			CriteriaTriggers.CONSUME_ITEM.trigger(serverPlayer, stack);
 			serverPlayer.awardStat(Stats.ITEM_USED.get(this));
+		}
+
+		if (livingEntity.hasEffect(GarnishedEffects.AVERSION)) {
+			livingEntity.removeEffect(GarnishedEffects.AVERSION);
 		}
 
 		if (stack.isEmpty()) {

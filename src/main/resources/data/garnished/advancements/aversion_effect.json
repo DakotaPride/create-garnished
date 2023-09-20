@@ -1,0 +1,39 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:brittle_dust"
+    },
+    "title": {
+      "translate": "advancement.garnished.aversion_effect.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.aversion_effect.description",
+      "color": "#DBA213"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "garnished:garnished_nuts",
+  "criteria": {
+    "aversion_requirements": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "player": {
+          "effects": {
+            "garnished:aversion": {}
+          }
+        },
+        "item": {
+          "tag": "garnished:nuts"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "aversion_requirements"
+    ]
+  ]
+}
