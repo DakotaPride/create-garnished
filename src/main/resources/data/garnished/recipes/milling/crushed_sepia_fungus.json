@@ -1,0 +1,20 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "garnished:sepia_fungus"
+    }
+  ],
+  "processingTime": 150,
+  "results": [
+    {
+      "count": 1,
+      "item": "garnished:crushed_sepia_fungus"
+    },
+    {
+      "chance": 0.75,
+      "item": "garnished:crushed_sepia_fungus",
+      "count": 1
+    }
+  ]
+}
