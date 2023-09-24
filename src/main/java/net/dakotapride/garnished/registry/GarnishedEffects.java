@@ -2,6 +2,7 @@ package net.dakotapride.garnished.registry;
 
 import net.dakotapride.garnished.CreateGarnished;
 import net.dakotapride.garnished.effect.AversionMobEffect;
+import net.dakotapride.garnished.effect.SpiritedResistanceMobEffect;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistry;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
@@ -22,6 +23,8 @@ public class GarnishedEffects {
 					-0.25, AttributeModifier.Operation.MULTIPLY_TOTAL)
 			.addAttributeModifier(Attributes.ATTACK_DAMAGE, "9f2c068e-013e-4413-8df6-6a08f19cdcc2",
 					-0.15, AttributeModifier.Operation.MULTIPLY_TOTAL));
+
+	public static MobEffect SPIRITED_RESISTANCE = effect("spirited_resistance", new SpiritedResistanceMobEffect());
 
 	public static Potion AVERSION_POTION = potion("aversion", new Potion(
 			new MobEffectInstance(AVERSION, 2400)));

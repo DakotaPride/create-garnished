@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#garnished:sepia_logs",
+    "garnished:sepia_planks",
+    "garnished:sepia_slab",
+    "garnished:sepia_stairs",
+    "garnished:sepia_door",
+    "garnished:sepia_trapdoor"
+  ]
+}

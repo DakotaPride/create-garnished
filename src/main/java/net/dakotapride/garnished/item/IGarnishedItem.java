@@ -110,4 +110,14 @@ public interface IGarnishedItem {
 		}
 	}
 
+	default boolean getWrappedTangleEffectChance() {
+		int random = new Random().nextInt(10);
+
+		if (random == 1 || random == 2) {
+			return false;
+		} else {
+			return true;
+		}
+	}
+
 }

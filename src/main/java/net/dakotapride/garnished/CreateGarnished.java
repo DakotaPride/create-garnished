@@ -6,6 +6,7 @@ import net.dakotapride.garnished.registry.GarnishedFoods;
 
 import net.dakotapride.garnished.registry.GarnishedTags;
 
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.PotionBrewing;
 import net.minecraft.world.item.alchemy.Potions;
@@ -52,6 +53,10 @@ public class CreateGarnished implements ModInitializer {
 		// Generation
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.PLAINS),
 				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.NUT_TREE_PLACED.unwrapKey().get());
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.SOUL_SAND_VALLEY),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.PATCH_SOUL_ROOTS_PLACED.unwrapKey().get());
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.SOUL_SAND_VALLEY),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.PATCH_SEPIA_FUNGUS_PLACED.unwrapKey().get());
 
 		LOGGER.info("Create addon mod [{}] is loading alongside Create [{}]!", NAME, Create.VERSION);
 		LOGGER.info(EnvExecutor.unsafeRunForDist(
@@ -61,6 +66,9 @@ public class CreateGarnished implements ModInitializer {
 
 		PotionBrewing.addMix(Potions.AWKWARD, GarnishedItems.BRITTLE_DUST.get(), GarnishedEffects.AVERSION_POTION);
 		PotionBrewing.addMix(GarnishedEffects.AVERSION_POTION, Items.REDSTONE, GarnishedEffects.LONG_AVERSION_POTION);
+
+		StrippableBlockRegistry.register(GarnishedBlocks.SEPIA_STEM.get(), GarnishedBlocks.STRIPPED_SEPIA_STEM.get());
+		StrippableBlockRegistry.register(GarnishedBlocks.SEPIA_HYPHAE.get(), GarnishedBlocks.STRIPPED_SEPIA_HYPHAE.get());
 
 	}
 

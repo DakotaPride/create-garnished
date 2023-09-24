@@ -147,15 +147,17 @@
   "item.garnished.grim_stew": "Grim Stew", //
   "item.garnished.wrapped_warped_tangle": "Wrapped Warped Tangle", //
   "item.garnished.wrapped_crimson_tangle": "Wrapped Crimson Tangle", //
+  "item.garnished.wrapped_sepia_tangle": "Wrapped Sepia Tangle", //
   "item.garnished.weeping_tangle": "Weeping Tangle", //
   "item.garnished.incomplete_tangle": "Incomplete Tangle", //
   "item.garnished.cinder_roll": "Cinder Shroom Roll", //
   "item.garnished.incomplete_cinder_roll": "Incomplete Cinder Shroom Roll", //
   "item.garnished.blazing_delight": "Blazing Delight", //
-  "item.garnished.cashew_mixture": "Fermented Cashew Mixture", //
-  "item.garnished.incomplete_cashew_mixture": "Incomplete Fermented Cashew Mixture", //
+  "item.garnished.cashew_mixture": "Bottled Fermented Cashew Mixture", //
+  "item.garnished.incomplete_cashew_mixture": "Incomplete Bottled Fermented Cashew Mixture", //
   "item.garnished.crushed_warped_fungus": "Crushed Warped Fungus", //
   "item.garnished.crushed_crimson_fungus": "Crushed Crimson Fungus", //
+  "item.garnished.crushed_sepia_fungus": "Crushed Sepia Fungus", //
   "item.garnished.enflamed_mandible": "Enflamed Mandible", //
   "item.garnished.crushed_ender_pearl": "Ender Dust", //
   "item.garnished.crimson_tusk": "Crimson Tusk", //
@@ -164,13 +166,30 @@
   "item.garnished.hardened_wrap": "Silica Hardened Wrap", //
   "item.garnished.incomplete_hardened_wrap": "Incomplete Silica Hardened Wrap", //
   "item.garnished.crushed_shroomlight": "Crushed Shroomlight", //
+  "item.garnished.nut_flour": "Nut Flour", //
   "item.garnished.brittle_dust": "Brittle Dust", //
+  "item.garnished.senile_dust": "Senile Dust", //
   "item.garnished.putrid_stew": "Putrid Stew", //
+  "item.garnished.soul_khana": "Soul Khana", //
+  "item.garnished.spirited_concoction": "Spirited Concoction", //
+  "effect.garnished.spirited_resistance": "Spirited Resistance", //
   "effect.garnished.aversion": "Aversion", //
   "item.minecraft.potion.effect.aversion": "Potion of Aversion", //
   "item.minecraft.splash_potion.effect.aversion": "Splash Potion of Aversion", //
   "item.minecraft.lingering_potion.effect.aversion": "Lingering Potion of Aversion", //
   "item.minecraft.tipped_arrow.effect.aversion": "Tipped Arrow of Aversion", //
+  "block.garnished.sepia_fungus": "Sepia Fungus", //
+  "block.garnished.sepia_stem": "Sepia Stem", //
+  "block.garnished.stripped_sepia_stem": "Stripped Sepia Stem", //
+  "block.garnished.sepia_hyphae": "Sepia Hyphae", //
+  "block.garnished.stripped_sepia_hyphae": "Stripped Sepia Hyphae", //
+  "block.garnished.sepia_planks": "Sepia Planks", //
+  "block.garnished.sepia_wart_block": "Sepia Wart Block", //
+  "block.garnished.sepia_slab": "Sepia Slab", //
+  "block.garnished.sepia_stairs": "Sepia Stairs", //
+  "block.garnished.sepia_door": "Sepia Door", //
+  "block.garnished.sepia_trapdoor": "Sepia Trapdoor", //
+  "block.garnished.soul_roots": "Soul Roots", //
 
   "block.garnished.peanut_sack": "压实坚果袋",
   "block.garnished.cashew_sack": "压实坚果袋",

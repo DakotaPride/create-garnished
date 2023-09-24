@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "garnished:block/stripped_sepia_stem_top",
+    "side": "garnished:block/stripped_sepia_stem"
+  }
+}

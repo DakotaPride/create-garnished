@@ -57,6 +57,9 @@ public class GarnishedFoods implements IGarnishedItem {
 			.effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, getWrappedTangleEffectDuration, 1), 0.8F).build();
 	public static final FoodProperties WRAPPED_CRIMSON_TANGLE = new FoodProperties.Builder().nutrition(9).saturationMod(0.5F)
 			.effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, getWrappedTangleEffectDuration, 1), 0.8F).build();
+	public static final FoodProperties WRAPPED_SEPIA_TANGLE = new FoodProperties.Builder().nutrition(9).saturationMod(0.5F)
+			// .effect(new MobEffectInstance(GarnishedEffects.SPIRITED_RESISTANCE.get(), getWrappedTangleEffectDuration, 1), 0.8F)
+			.build();
 	public static final FoodProperties CINDER_ROLL = new FoodProperties.Builder().nutrition(8).saturationMod(0.7F).build();
 	public static final FoodProperties WEEPING_TANGLE = new FoodProperties.Builder().nutrition(11).saturationMod(0.5F).build();
 	public static final FoodProperties BLAZING_DELIGHT = new FoodProperties.Builder().nutrition(16).saturationMod(0.7F).build();
@@ -65,6 +68,12 @@ public class GarnishedFoods implements IGarnishedItem {
 			.effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, getFermentedCashewMixtureEffectDuration, 2), 0.05F).build();
 	public static final FoodProperties PUTRID_STEW = new FoodProperties.Builder().nutrition(7).saturationMod(0.3F)
 			.effect(new MobEffectInstance(MobEffects.CONFUSION, 200), 1.0F).build();
+	public static final FoodProperties SOUL_KHANA = new FoodProperties.Builder().nutrition(7).saturationMod(0.3F)
+			.effect(new MobEffectInstance(MobEffects.INVISIBILITY, 2400), 1.0F)
+			.effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 3000), 1.0F).build();
+	public static final FoodProperties SPIRITED_CONCOCTION = new FoodProperties.Builder().nutrition(7).saturationMod(0.3F)
+			// .effect(new MobEffectInstance(GarnishedEffects.SPIRITED_RESISTANCE.get(), 900), 1.0F)
+			.build();
 
 
     public static void setRegister() {}

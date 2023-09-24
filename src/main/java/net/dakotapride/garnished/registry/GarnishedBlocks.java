@@ -6,7 +6,12 @@ import com.tterrag.registrate.util.entry.BlockEntry;
 
 import net.dakotapride.garnished.CreateGarnished;
 import net.dakotapride.garnished.block.NutSackBlock;
+import net.dakotapride.garnished.block.SepiaDoorBlock;
+import net.dakotapride.garnished.block.SepiaStairsBlock;
+import net.dakotapride.garnished.block.SepiaStemBlock;
+import net.dakotapride.garnished.block.SepiaTrapdoorBlock;
 import net.dakotapride.garnished.block.SolidifiedGarnishBlock;
+import net.dakotapride.garnished.block.SoulPlantBlock;
 import net.dakotapride.garnished.block.sapling.AlmondSaplingBlock;
 import net.dakotapride.garnished.block.sapling.BuhgSaplingBlock;
 import net.dakotapride.garnished.block.sapling.CashewSaplingBlock;
@@ -14,10 +19,12 @@ import net.dakotapride.garnished.block.sapling.HazelnutSaplingBlock;
 import net.dakotapride.garnished.block.sapling.MacadamiaSaplingBlock;
 import net.dakotapride.garnished.block.sapling.PecanSaplingBlock;
 import net.dakotapride.garnished.block.sapling.PistachioSaplingBlock;
+import net.dakotapride.garnished.block.sapling.SepiaFungusBlock;
 import net.dakotapride.garnished.block.sapling.WalnutSaplingBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.LeavesBlock;
+import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.material.MaterialColor;
 
@@ -198,6 +205,79 @@ public class GarnishedBlocks {
 			REGISTRATE.block("solidified_garnish", SolidifiedGarnishBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem().register();
+
+	public static final BlockEntry<SepiaFungusBlock> SEPIA_FUNGUS =
+			REGISTRATE.block("sepia_fungus", SepiaFungusBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.CRIMSON_FUNGUS)
+					.properties(p -> p.color(MaterialColor.TERRACOTTA_BROWN).noCollission().noOcclusion().instabreak()).register();
+
+	public static final BlockEntry<SepiaStemBlock> SEPIA_STEM =
+			REGISTRATE.block("sepia_stem", SepiaStemBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.CRIMSON_STEM).register();
+	public static final BlockEntry<SepiaStemBlock> STRIPPED_SEPIA_STEM =
+			REGISTRATE.block("stripped_sepia_stem", SepiaStemBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STRIPPED_CRIMSON_STEM)
+					.properties(p -> p.color(MaterialColor.TERRACOTTA_BROWN)).register();
+	public static final BlockEntry<SepiaStemBlock> SEPIA_HYPHAE =
+			REGISTRATE.block("sepia_hyphae", SepiaStemBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.CRIMSON_HYPHAE).register();
+	public static final BlockEntry<SepiaStemBlock> STRIPPED_SEPIA_HYPHAE =
+			REGISTRATE.block("stripped_sepia_hyphae", SepiaStemBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STRIPPED_CRIMSON_HYPHAE)
+					.properties(p -> p.color(MaterialColor.TERRACOTTA_BROWN)).register();
+	public static final BlockEntry<Block> SEPIA_WART_BLOCK =
+			REGISTRATE.block("sepia_wart_block", Block::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.NETHER_WART_BLOCK)
+					.properties(p -> p.color(MaterialColor.TERRACOTTA_BROWN)).register();
+	public static final BlockEntry<SepiaTrapdoorBlock> SEPIA_TRAPDOOR =
+			REGISTRATE.block("sepia_trapdoor", SepiaTrapdoorBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.CRIMSON_TRAPDOOR)
+					.properties(p -> p.color(MaterialColor.TERRACOTTA_BROWN)).register();
+	public static final BlockEntry<SepiaDoorBlock> SEPIA_DOOR =
+			REGISTRATE.block("sepia_door", SepiaDoorBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.CRIMSON_DOOR)
+					.properties(p -> p.color(MaterialColor.TERRACOTTA_BROWN)).register();
+	public static final BlockEntry<Block> SEPIA_PLANKS =
+			REGISTRATE.block("sepia_planks", Block::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.CRIMSON_PLANKS)
+					.properties(p -> p.color(MaterialColor.TERRACOTTA_BROWN)).register();
+	public static final BlockEntry<SlabBlock> SEPIA_SLAB =
+			REGISTRATE.block("sepia_slab", SlabBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.CRIMSON_SLAB)
+					.properties(p -> p.color(MaterialColor.TERRACOTTA_BROWN)).register();
+	public static final BlockEntry<SepiaStairsBlock> SEPIA_STAIRS =
+			REGISTRATE.block("sepia_stairs", SepiaStairsBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.CRIMSON_STAIRS)
+					.properties(p -> p.color(MaterialColor.TERRACOTTA_BROWN)).register();
+
+	public static final BlockEntry<SoulPlantBlock> SOUL_ROOTS =
+			REGISTRATE.block("soul_roots", SoulPlantBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.CRIMSON_ROOTS)
+					.properties(p -> p.color(MaterialColor.TERRACOTTA_LIGHT_BLUE).noCollission().noOcclusion().instabreak()).register();
 
 	public static void setRegister() {}
 }

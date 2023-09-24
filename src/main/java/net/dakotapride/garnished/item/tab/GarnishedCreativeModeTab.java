@@ -144,12 +144,13 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 		items.add(109, GarnishedItems.FERMENTED_CASHEW_MIXTURE.asStack());
 
 		items.add(110, GarnishedItems.GARNISH_COMPOUND.asStack());
-		items.add(111, GarnishedBlocks.SOLIDIFIED_GARNISH_BLOCK.asStack());
+		items.add(111, GarnishedItems.GARNISH_POWDER.asStack());
+		items.add(112, GarnishedBlocks.SOLIDIFIED_GARNISH_BLOCK.asStack());
 
-		items.add(112, GarnishedFluids.GARNISH.getBucket().get().getDefaultInstance());
-		items.add(113, GarnishedFluids.APPLE_CIDER.getBucket().get().getDefaultInstance());
-		items.add(114, GarnishedFluids.PEANUT_OIL.getBucket().get().getDefaultInstance());
-		items.add(115, GarnishedFluids.CASHEW_MIXTURE.getBucket().get().getDefaultInstance());
+		items.add(113, GarnishedFluids.GARNISH.getBucket().get().getDefaultInstance());
+		items.add(114, GarnishedFluids.APPLE_CIDER.getBucket().get().getDefaultInstance());
+		items.add(115, GarnishedFluids.PEANUT_OIL.getBucket().get().getDefaultInstance());
+		items.add(116, GarnishedFluids.CASHEW_MIXTURE.getBucket().get().getDefaultInstance());
 	}
 
 	@Override

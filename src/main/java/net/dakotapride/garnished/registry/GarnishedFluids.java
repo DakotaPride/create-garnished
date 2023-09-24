@@ -28,7 +28,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.FluidState;
@@ -41,6 +40,17 @@ public class GarnishedFluids {
 	private static final CreateRegistrate REGISTRATE = CreateGarnished.registrate()
 			.creativeModeTab(() -> GarnishedTabs.GARNISHED);
 
+	private static ResourceLocation createLocation(String fluid, boolean isFlowing) {
+		String getMotion;
+
+		if (isFlowing) {
+			getMotion = "_flow";
+		} else {
+			getMotion = "_still";
+		}
+
+		return new ResourceLocation(CreateGarnished.ID, "fluid/" + fluid + getMotion);
+	}
 
 	public static final FluidEntry<SimpleFlowableFluid.Flowing> GARNISH;
 	public static final FluidEntry<SimpleFlowableFluid.Flowing> APPLE_CIDER;
@@ -50,15 +60,15 @@ public class GarnishedFluids {
 	static  {
 		GARNISH = REGISTRATE
 				.fluid("garnish",
-						new ResourceLocation(CreateGarnished.ID, "fluid/garnish_still"),
-						new ResourceLocation(CreateGarnished.ID, "fluid/garnish_flowing")
+						createLocation("garnish", false),
+						createLocation("garnish", true)
 				)
 				.fluidProperties(p -> p.levelDecreasePerBlock(2)
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
 				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.liquid_garnish", 1500, 800))
-				.onRegisterAfter(Registry.ITEM_REGISTRY, fluid -> {
+				.onRegisterAfter(Registry.ITEM.key(), fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
 							new FullItemFluidStorage(context, bucket -> ItemVariant.of(BUCKET), FluidVariant.of(source), FluidConstants.BUCKET));
@@ -67,15 +77,15 @@ public class GarnishedFluids {
 				}).register();
 		APPLE_CIDER = REGISTRATE
 				.fluid("apple_cider",
-						new ResourceLocation(CreateGarnished.ID, "fluid/apple_cider_still"),
-						new ResourceLocation(CreateGarnished.ID, "fluid/apple_cider_flowing")
+						createLocation("apple_cider", false),
+						createLocation("apple_cider", true)
 				)
 				.fluidProperties(p -> p.levelDecreasePerBlock(2)
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
 				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.apple_cider", 1500, 800))
-				.onRegisterAfter(Registry.ITEM_REGISTRY, fluid -> {
+				.onRegisterAfter(Registry.ITEM.key(), fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
 							new FullItemFluidStorage(context, bucket -> ItemVariant.of(BUCKET), FluidVariant.of(source), FluidConstants.BUCKET));
@@ -84,15 +94,15 @@ public class GarnishedFluids {
 				}).register();
 		PEANUT_OIL = REGISTRATE
 				.fluid("peanut_oil",
-						new ResourceLocation(CreateGarnished.ID, "fluid/peanut_oil_still"),
-						new ResourceLocation(CreateGarnished.ID, "fluid/peanut_oil_flowing")
+						createLocation("peanut_oil", false),
+						createLocation("peanut_oil", true)
 				)
 				.fluidProperties(p -> p.levelDecreasePerBlock(2)
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
 				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.peanut_oil", 1500, 800))
-				.onRegisterAfter(Registry.ITEM_REGISTRY, fluid -> {
+				.onRegisterAfter(Registry.ITEM.key(), fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
 							new FullItemFluidStorage(context, bucket -> ItemVariant.of(BUCKET), FluidVariant.of(source), FluidConstants.BUCKET));
@@ -101,15 +111,15 @@ public class GarnishedFluids {
 				}).register();
 		CASHEW_MIXTURE = REGISTRATE
 				.fluid("cashew_mixture",
-						new ResourceLocation(CreateGarnished.ID, "fluid/cashew_mixture_still"),
-						new ResourceLocation(CreateGarnished.ID, "fluid/cashew_mixture_flowing")
+						createLocation("cashew_mixture", false),
+						createLocation("cashew_mixture", true)
 				)
 				.fluidProperties(p -> p.levelDecreasePerBlock(2)
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
 				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.cashew_mixture", 1500, 800))
-				.onRegisterAfter(Registry.ITEM_REGISTRY, fluid -> {
+				.onRegisterAfter(Registry.ITEM.key(), fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
 							new FullItemFluidStorage(context, bucket -> ItemVariant.of(BUCKET), FluidVariant.of(source), FluidConstants.BUCKET));
@@ -149,13 +159,25 @@ public class GarnishedFluids {
 		for (Direction direction : Iterate.directions) {
 			FluidState metFluidState =
 					fluidState.isSource() ? fluidState : world.getFluidState(pos.relative(direction));
-			if (!metFluidState.is(FluidTags.WATER))
+			if (metFluidState.is(FluidTags.LAVA))
 				continue;
 			BlockState lavaInteraction = GarnishedFluids.getLavaInteraction(metFluidState);
 			if (lavaInteraction == null)
 				continue;
 			return lavaInteraction;
 		}
+
+		for (Direction direction : Iterate.directions) {
+			FluidState metFluidState =
+					fluidState.isSource() ? fluidState : world.getFluidState(pos.relative(direction));
+			if (metFluidState.is(GarnishedTags.GARNISHED_FLUIDS_TAG))
+				continue;
+			BlockState garnishedFluidInteraction = GarnishedFluids.getLavaInteraction(metFluidState);
+			if (garnishedFluidInteraction == null)
+				continue;
+			return garnishedFluidInteraction;
+		}
+
 		return null;
 	}
 
@@ -163,11 +185,17 @@ public class GarnishedFluids {
 	public static BlockState getLavaInteraction(FluidState fluidState) {
 		Fluid fluid = fluidState.getType();
 		if (fluid.isSame(GARNISH.get()))
-			return Blocks.CALCITE.defaultBlockState();
+			return AllPaletteStoneTypes.CALCITE.getBaseBlock()
+					.get()
+					.defaultBlockState();
 		if (fluid.isSame(APPLE_CIDER.get()))
-			return AllPaletteStoneTypes.OCHRUM.getBaseBlock().get().defaultBlockState();
+			return AllPaletteStoneTypes.OCHRUM.getBaseBlock()
+					.get()
+					.defaultBlockState();
 		if (fluid.isSame(PEANUT_OIL.get()))
-			return Blocks.DRIPSTONE_BLOCK.defaultBlockState();
+			return AllPaletteStoneTypes.DRIPSTONE.getBaseBlock()
+					.get()
+					.defaultBlockState();
 		return null;
 	}
 }

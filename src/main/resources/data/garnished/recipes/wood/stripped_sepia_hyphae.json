@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:stripped_sepia_stem"
+    }
+  },
+  "result": {
+    "item": "garnished:stripped_sepia_hyphae",
+    "count": 3
+  }
+}
