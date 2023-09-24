@@ -308,6 +308,20 @@ public class GarnishedItems {
 			REGISTRATE.item("crushed_crimson_fungus", Item::new).register();
 	public static final ItemEntry<Item> BRITTLE_DUST =
 			REGISTRATE.item("brittle_dust", Item::new).register();
+	public static final ItemEntry<Item> SENILE_DUST =
+			REGISTRATE.item("senile_dust", Item::new).register();
+
+	public static final ItemEntry<Item> CRUSHED_SEPIA_FUNGUS =
+			REGISTRATE.item("crushed_sepia_fungus", Item::new).register();
+	public static final ItemEntry<WrappedSepiaTangleFoodItem> WRAPPED_SEPIA_TANGLE =
+			REGISTRATE.item("wrapped_sepia_tangle", WrappedSepiaTangleFoodItem::new).register();
+	public static final ItemEntry<SoulKhanaFoodItem> SOUL_KHANA =
+			REGISTRATE.item("soul_khana", SoulKhanaFoodItem::new).register();
+	public static final ItemEntry<SpiritedConcoctionFoodItem> SPIRITED_CONCOCTION =
+			REGISTRATE.item("spirited_concoction", SpiritedConcoctionFoodItem::new).register();
+
+	public static final ItemEntry<Item> NUT_FLOUR =
+			REGISTRATE.item("nut_flour", Item::new).register();
 
 	public static void setRegister() {}
 

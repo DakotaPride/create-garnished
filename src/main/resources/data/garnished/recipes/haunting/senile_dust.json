@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "garnished:brittle_dust"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:senile_dust"
+    }
+  ]
+}

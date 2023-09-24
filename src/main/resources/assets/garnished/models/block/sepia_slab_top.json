@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "garnished:block/sepia_planks",
+    "side": "garnished:block/sepia_planks",
+    "top": "garnished:block/sepia_planks"
+  }
+}

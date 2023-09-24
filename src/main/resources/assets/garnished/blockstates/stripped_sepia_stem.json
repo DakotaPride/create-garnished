@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "garnished:block/stripped_sepia_stem_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "garnished:block/stripped_sepia_stem"
+    },
+    "axis=z": {
+      "model": "garnished:block/stripped_sepia_stem_horizontal",
+      "x": 90
+    }
+  }
+}

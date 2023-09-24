@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "garnished:sepia_logs"
+    }
+  ],
+  "result": {
+    "item": "garnished:sepia_planks",
+    "count": 4
+  }
+}
