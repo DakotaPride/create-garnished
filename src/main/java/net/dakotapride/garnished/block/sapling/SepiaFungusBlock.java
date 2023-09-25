@@ -1,7 +1,5 @@
 package net.dakotapride.garnished.block.sapling;
 
-import org.jetbrains.annotations.NotNull;
-
 import net.dakotapride.garnished.gen.SepiaFungusGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.BlockTags;
@@ -11,6 +9,7 @@ import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
 
 public class SepiaFungusBlock extends SaplingBlock {
 	protected static final VoxelShape SHAPE = Block.box(4.0, 0.0, 4.0, 12.0, 9.0, 12.0);
@@ -19,7 +18,7 @@ public class SepiaFungusBlock extends SaplingBlock {
 	}
 
 	@Override
-	public @NotNull VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
+	public @NotNull VoxelShape getShape(@NotNull BlockState state, @NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull CollisionContext context) {
 		return SHAPE;
 	}
 
