@@ -31,6 +31,9 @@ public class GarnishedEffects {
 	public static Potion LONG_AVERSION_POTION = potion("long_aversion", new Potion("aversion",
 			new MobEffectInstance(AVERSION, 3600)));
 
+	public static Potion BLINDNESS_POTION = vanillaPotion("blindness", new Potion(
+			new MobEffectInstance(AVERSION, 2400)));
+
 
 	private static MobEffect effect(String key, MobEffect effect) {
 		return Registry.register(Registry.MOB_EFFECT, new ResourceLocation(CreateGarnished.ID, key), effect);
@@ -38,6 +41,10 @@ public class GarnishedEffects {
 
 	private static Potion potion(String key, Potion potion) {
 		return Registry.register(Registry.POTION, new ResourceLocation(CreateGarnished.ID, key), potion);
+	}
+
+	private static Potion vanillaPotion(String key, Potion potion) {
+		return Registry.register(Registry.POTION, new ResourceLocation(key), potion);
 	}
 
 	public static void setRegister() {
