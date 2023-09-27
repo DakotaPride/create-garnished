@@ -1,0 +1,34 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:senile_sweet_basalt"
+    },
+    "title": {
+      "translate": "advancement.garnished.senile_sweet.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.senile_sweet.description",
+      "color": "#DBA213"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "garnished:cashew_mixture",
+  "criteria": {
+    "eat_senile_sweet": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "tag": "garnished:senile_sweets"
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "eat_senile_sweet"
+    ]
+  ]
+}

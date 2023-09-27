@@ -159,6 +159,10 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.CRIMSON_TUSK.asStack());
 			output.accept(GarnishedItems.SILICA_HARDENED_WRAP.asStack());
 			output.accept(GarnishedItems.ENFLAMED_MANDIBLE.asStack());
+			output.accept(GarnishedItems.SENILE_SWEET_BLACKSTONE.asStack());
+			output.accept(GarnishedItems.SENILE_SWEET_BASALT.asStack());
+			output.accept(GarnishedItems.SENILE_SWEET_SCORIA.asStack());
+			output.accept(GarnishedItems.SENILE_SWEET_SCORCHIA.asStack());
 
 			output.accept(GarnishedBlocks.SEPIA_FUNGUS.asStack());
 			output.accept(GarnishedBlocks.SOUL_ROOTS.asStack());

@@ -8,6 +8,7 @@ import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.alchemy.Potion;
@@ -26,6 +27,8 @@ public class GarnishedEffects {
 			new MobEffectInstance(AVERSION, 2400)));
 	public static Potion LONG_AVERSION_POTION = potion("long_aversion", new Potion("aversion",
 			new MobEffectInstance(AVERSION, 3600)));
+	public static Potion BLINDNESS_POTION = vanillaPotion("blindness", new Potion(
+			new MobEffectInstance(MobEffects.BLINDNESS, 2400)));
 
 
 	private static MobEffect effect(String key, MobEffect effect) {
@@ -34,6 +37,10 @@ public class GarnishedEffects {
 
 	private static Potion potion(String key, Potion potion) {
 		return Registry.register(BuiltInRegistries.POTION, new ResourceLocation(CreateGarnished.ID, key), potion);
+	}
+
+	private static Potion vanillaPotion(String key, Potion potion) {
+		return Registry.register(BuiltInRegistries.POTION, new ResourceLocation(key), potion);
 	}
 
 	public static void setRegister() {
