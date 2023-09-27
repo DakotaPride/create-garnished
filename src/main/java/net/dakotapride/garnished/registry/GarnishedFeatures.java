@@ -5,8 +5,11 @@ import java.util.List;
 
 import net.dakotapride.garnished.CreateGarnished;
 import net.minecraft.core.Holder;
+import net.minecraft.data.BuiltinRegistries;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
+import net.minecraft.resources.ResourceKey;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.random.SimpleWeightedRandomList;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -35,103 +38,30 @@ import net.minecraft.world.level.levelgen.placement.RarityFilter;
 
 public class GarnishedFeatures {
 
-	public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> NUT_TREE_CONFIGURED =
-			FeatureUtils.register(CreateGarnished.ID + ":nut_tree_configured", Feature.TREE,
-					new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.OAK_LOG),
-							new StraightTrunkPlacer(4, 2, 0),
-							new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.OAK_LEAVES.defaultBlockState(), 5)
-									.add(GarnishedBlocks.NUT_LEAVES.get().defaultBlockState(), 1)),
-							new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
-							new TwoLayersFeatureSize(1, 0, 1)).dirt(BlockStateProvider.simple(Blocks.DIRT)).forceDirt().build());
+	public static final ResourceLocation NUT_TREE_CONFIGURED = set("nut_tree_configured");
+	public static final ResourceLocation NUT_TREE_PLACED = set("nut_tree_placed");
 
-	public static final Holder<PlacedFeature> NUT_TREE_CHECKED = PlacementUtils.register(CreateGarnished.ID + "nut_tree_checked",
-			NUT_TREE_CONFIGURED, List.of(PlacementUtils.filteredByBlockSurvival(GarnishedBlocks.CASHEW_SAPLING.get())));
+	public static final ResourceLocation BUHG_TREE_CONFIGURED = set("peanut_tree_configured");
+	public static final ResourceLocation WALNUT_TREE_CONFIGURED = set("walnut_tree_configured");
+	public static final ResourceLocation ALMOND_TREE_CONFIGURED = set("almond_tree_configured");
+	public static final ResourceLocation CASHEW_TREE_CONFIGURED = set("cashew_tree_configured");
+	public static final ResourceLocation HAZELNUT_TREE_CONFIGURED = set("hazelnut_tree_configured");
+	public static final ResourceLocation MACADAMIA_TREE_CONFIGURED = set("macadamia_tree_configured");
+	public static final ResourceLocation PECAN_TREE_CONFIGURED = set("pecan_tree_configured");
+	public static final ResourceLocation PISTACHIO_TREE_CONFIGURED = set("pistachio_tree_configured");
 
-	public static final Holder<ConfiguredFeature<RandomFeatureConfiguration, ?>> TREE_SPAWN_CONDITIONS =
-			FeatureUtils.register(CreateGarnished.ID + "spawn_conditions", Feature.RANDOM_SELECTOR,
-					new RandomFeatureConfiguration(List.of(new WeightedPlacedFeature(NUT_TREE_CHECKED, 0.5F)), NUT_TREE_CHECKED));
+	public static final ResourceLocation SEPIA_FUNGUS_CONFIGURED = set("patch_sepia_fungus_configured");
+	public static final ResourceLocation SEPIA_FUNGUS_PLACED = set("patch_sepia_fungus_placed");
+	public static final ResourceLocation SEPIA_FUNGUS_TREE_CONFIGURED = set("sepia_fungus_tree_configured");
+	public static final ResourceLocation SOUL_ROOTS_CONFIGURED = set("patch_soul_roots_configured");
+	public static final ResourceLocation SOUL_ROOTS_PLACED = set("patch_soul_roots_placed");
 
-	public static final Holder<PlacedFeature> NUT_TREE_PLACED = PlacementUtils.register(CreateGarnished.ID + "nut_tree_placed",
-			TREE_SPAWN_CONDITIONS, RarityFilter.onAverageOnceEvery(12), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome());
+	public static final ResourceLocation SOUL_SAND_VEGETATION_BONEMEAL_CONFIGURED = set("soul_sand_vegetation_bonemeal");
 
-	public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> BUHG_TREE_CONFIGURED =
-			FeatureUtils.register(CreateGarnished.ID + ":peanut_tree_configured", Feature.TREE,
-					new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.OAK_LOG),
-							new StraightTrunkPlacer(4, 2, 0),
-							new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.OAK_LEAVES.defaultBlockState(), 3)
-									.add(GarnishedBlocks.BUHG_LEAVES.get().defaultBlockState(), 1)),
-							new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
-							new TwoLayersFeatureSize(1, 0, 1)).dirt(BlockStateProvider.simple(Blocks.DIRT)).forceDirt().build());
-	public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> WALNUT_TREE_CONFIGURED =
-			FeatureUtils.register(CreateGarnished.ID + ":walnut_tree_configured", Feature.TREE,
-					new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.OAK_LOG),
-							new StraightTrunkPlacer(4, 2, 0),
-							new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.OAK_LEAVES.defaultBlockState(), 3)
-									.add(GarnishedBlocks.WALNUT_LEAVES.get().defaultBlockState(), 1)),
-							new RandomSpreadFoliagePlacer(ConstantInt.of(3), ConstantInt.of(0), ConstantInt.of(2), 45),
-							new TwoLayersFeatureSize(1, 0, 1)).dirt(BlockStateProvider.simple(Blocks.DIRT)).forceDirt().build());
-	public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> ALMOND_TREE_CONFIGURED =
-			FeatureUtils.register(CreateGarnished.ID + ":almond_tree_configured", Feature.TREE,
-					new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.OAK_LOG),
-							new StraightTrunkPlacer(4, 2, 0),
-							new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.OAK_LEAVES.defaultBlockState(), 3)
-									.add(GarnishedBlocks.ALMOND_LEAVES.get().defaultBlockState(), 1)),
-							new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
-							new TwoLayersFeatureSize(1, 0, 1)).dirt(BlockStateProvider.simple(Blocks.DIRT)).forceDirt().build());
-	public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> CASHEW_TREE_CONFIGURED =
-			FeatureUtils.register(CreateGarnished.ID + ":cashew_tree_configured", Feature.TREE,
-					new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.OAK_LOG),
-							new StraightTrunkPlacer(4, 2, 0),
-							new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.OAK_LEAVES.defaultBlockState(), 3)
-									.add(GarnishedBlocks.CASHEW_LEAVES.get().defaultBlockState(), 1)),
-							new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
-							new TwoLayersFeatureSize(1, 0, 1)).dirt(BlockStateProvider.simple(Blocks.DIRT)).forceDirt().build());
-	public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> HAZELNUT_TREE_CONFIGURED =
-			FeatureUtils.register(CreateGarnished.ID + ":hazelnut_tree_configured", Feature.TREE,
-					new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.OAK_LOG),
-							new StraightTrunkPlacer(4, 2, 0),
-							new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.OAK_LEAVES.defaultBlockState(), 3)
-									.add(GarnishedBlocks.HAZELNUT_LEAVES.get().defaultBlockState(), 1)),
-							new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
-							new TwoLayersFeatureSize(1, 0, 1)).dirt(BlockStateProvider.simple(Blocks.DIRT)).forceDirt().build());
-	public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> MACADAMIA_TREE_CONFIGURED =
-			FeatureUtils.register(CreateGarnished.ID + ":macadamia_tree_configured", Feature.TREE,
-					new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.OAK_LOG),
-							new StraightTrunkPlacer(4, 2, 0),
-							new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.OAK_LEAVES.defaultBlockState(), 3)
-									.add(GarnishedBlocks.MACADAMIA_LEAVES.get().defaultBlockState(), 1)),
-							new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
-							new TwoLayersFeatureSize(1, 0, 1)).dirt(BlockStateProvider.simple(Blocks.DIRT)).forceDirt().build());
-	public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> PECAN_TREE_CONFIGURED =
-			FeatureUtils.register(CreateGarnished.ID + ":pecan_tree_configured", Feature.TREE,
-					new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.OAK_LOG),
-							new StraightTrunkPlacer(4, 2, 0),
-							new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.OAK_LEAVES.defaultBlockState(), 3)
-									.add(GarnishedBlocks.PECAN_LEAVES.get().defaultBlockState(), 1)),
-							new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
-							new TwoLayersFeatureSize(1, 0, 1)).dirt(BlockStateProvider.simple(Blocks.DIRT)).forceDirt().build());
-	public static final Holder<ConfiguredFeature<TreeConfiguration, ?>> PISTACHIO_TREE_CONFIGURED =
-			FeatureUtils.register(CreateGarnished.ID + ":pistachio_tree_configured", Feature.TREE,
-					new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.OAK_LOG),
-							new StraightTrunkPlacer(4, 2, 0),
-							new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(Blocks.OAK_LEAVES.defaultBlockState(), 3)
-									.add(GarnishedBlocks.PISTACHIO_LEAVES.get().defaultBlockState(), 1)),
-							new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3),
-							new TwoLayersFeatureSize(1, 0, 1)).dirt(BlockStateProvider.simple(Blocks.DIRT)).forceDirt().build());
+	public static ResourceLocation set(String id) {
+		return new ResourceLocation(CreateGarnished.ID, id);
+	}
 
-	public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> PATCH_SEPIA_FUNGUS_CONFIGURED =
-			FeatureUtils.register(CreateGarnished.ID + ":patch_sepia_fungus_configured", Feature.RANDOM_PATCH,
-					FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(GarnishedBlocks.SEPIA_FUNGUS.get()))));
-	public static final Holder<PlacedFeature> PATCH_SEPIA_FUNGUS_PLACED = PlacementUtils.register(CreateGarnished.ID + ":patch_sepia_fungus_placed",
-			PATCH_SEPIA_FUNGUS_CONFIGURED, PlacementUtils.FULL_RANGE, BiomeFilter.biome());
-	public static final Holder<ConfiguredFeature<HugeFungusConfiguration, ?>> SEPIA_FUNGUS_TREE_CONFIGURED =
-			FeatureUtils.register(CreateGarnished.ID + ":sepia_fungus_tree_configured", Feature.HUGE_FUNGUS, new HugeFungusConfiguration(Blocks.SOUL_SOIL.defaultBlockState(),
-					GarnishedBlocks.SEPIA_STEM.getDefaultState(), GarnishedBlocks.SEPIA_WART_BLOCK.getDefaultState(),
-					Blocks.SHROOMLIGHT.defaultBlockState(), false));
-	public static final Holder<ConfiguredFeature<RandomPatchConfiguration, ?>> PATCH_SOUL_ROOTS_CONFIGURED =
-			FeatureUtils.register(CreateGarnished.ID + ":patch_soul_roots_configured", Feature.RANDOM_PATCH,
-					FeatureUtils.simplePatchConfiguration(Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(BlockStateProvider.simple(GarnishedBlocks.SOUL_ROOTS.get()))));
-	public static final Holder<PlacedFeature> PATCH_SOUL_ROOTS_PLACED = PlacementUtils.register(CreateGarnished.ID + ":patch_soul_roots_placed",
-			PATCH_SOUL_ROOTS_CONFIGURED, PlacementUtils.FULL_RANGE, BiomeFilter.biome());
+	public static void setRegister() {}
 
 }

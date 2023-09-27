@@ -1,15 +1,6 @@
 package net.dakotapride.garnished;
 
-import io.github.fabricators_of_create.porting_lib.brewing.BrewingRecipeRegistry;
-import net.dakotapride.garnished.registry.GarnishedEffects;
-import net.dakotapride.garnished.registry.GarnishedFoods;
-
-import net.dakotapride.garnished.registry.GarnishedTags;
-
-import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
-import net.minecraft.world.item.Items;
-import net.minecraft.world.item.alchemy.PotionBrewing;
-import net.minecraft.world.item.alchemy.Potions;
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,15 +11,18 @@ import com.tterrag.registrate.util.nullness.NonNullSupplier;
 
 import io.github.fabricators_of_create.porting_lib.util.EnvExecutor;
 import net.dakotapride.garnished.registry.GarnishedBlocks;
+import net.dakotapride.garnished.registry.GarnishedEffects;
 import net.dakotapride.garnished.registry.GarnishedFeatures;
 import net.dakotapride.garnished.registry.GarnishedFluids;
+import net.dakotapride.garnished.registry.GarnishedFoods;
 import net.dakotapride.garnished.registry.GarnishedItems;
 import net.dakotapride.garnished.registry.GarnishedTabs;
+import net.dakotapride.garnished.registry.GarnishedTags;
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
-import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
-import net.minecraft.world.level.biome.Biomes;
-import net.minecraft.world.level.levelgen.GenerationStep;
+import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.alchemy.PotionBrewing;
+import net.minecraft.world.item.alchemy.Potions;
 
 public class CreateGarnished implements ModInitializer {
 
@@ -47,17 +41,17 @@ public class CreateGarnished implements ModInitializer {
 		GarnishedFluids.setRegister();
 		GarnishedFoods.setRegister();
 		GarnishedEffects.setRegister();
+		GarnishedFeatures.setRegister();
 		GarnishedTags.setRegister();
 		REGISTRATE.get().register();
 
 		// Generation
-		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.PLAINS),
-				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.NUT_TREE_PLACED.unwrapKey().get());
-		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.SOUL_SAND_VALLEY),
-				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.PATCH_SOUL_ROOTS_PLACED.unwrapKey().get());
-		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.SOUL_SAND_VALLEY),
-				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.PATCH_SEPIA_FUNGUS_PLACED.unwrapKey().get());
-
+		// BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.PLAINS),
+		// 		GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.NUT_TREE_PLACED);
+		// BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.SOUL_SAND_VALLEY),
+		// 		GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SOUL_ROOTS_PLACED);
+		// BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.SOUL_SAND_VALLEY),
+		// 		GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SEPIA_FUNGUS_PLACED);
 		LOGGER.info("Create addon mod [{}] is loading alongside Create [{}]!", NAME, Create.VERSION);
 		LOGGER.info(EnvExecutor.unsafeRunForDist(
 				() -> () -> "{} is accessing Porting Lib from the client!",
