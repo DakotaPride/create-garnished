@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "minecraft:soul_sand_valley",
-  "features": "garnished:patch_soul_roots_placed",
-  "step": "vegetal_decoration"
-}

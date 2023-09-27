@@ -20,7 +20,7 @@ public class SepiaFungusGrower extends AbstractTreeGrower {
 	@Nullable
 	@Override
 	protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(@NotNull RandomSource random, boolean largeHive) {
-		ResourceLocation locateFeature = GarnishedFeatures.SEPIA_FUNGUS_TREE_CONFIGURED;
+		ResourceLocation locateFeature = GarnishedFeatures.SEPIA_FUNGUS_TREE_CONFIGURED.location();
 		ConfiguredFeature<?, ?> feature = ServerLifecycleHooks.getCurrentServer().registryAccess()
 				.registryOrThrow(Registry.CONFIGURED_FEATURE_REGISTRY).get(locateFeature);
 		if (null == feature) {

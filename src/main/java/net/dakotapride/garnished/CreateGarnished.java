@@ -2,6 +2,10 @@ package net.dakotapride.garnished;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.minecraft.world.level.biome.Biomes;
+import net.minecraft.world.level.levelgen.GenerationStep;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -46,12 +50,13 @@ public class CreateGarnished implements ModInitializer {
 		REGISTRATE.get().register();
 
 		// Generation
-		// BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.PLAINS),
-		// 		GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.NUT_TREE_PLACED);
-		// BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.SOUL_SAND_VALLEY),
-		// 		GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SOUL_ROOTS_PLACED);
-		// BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.SOUL_SAND_VALLEY),
-		// 		GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SEPIA_FUNGUS_PLACED);
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.PLAINS),
+		 		GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.NUT_TREE_PLACED);
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.SOUL_SAND_VALLEY),
+		 		GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SOUL_ROOTS_PLACED);
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.SOUL_SAND_VALLEY),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SEPIA_FUNGUS_PLACED);
+
 		LOGGER.info("Create addon mod [{}] is loading alongside Create [{}]!", NAME, Create.VERSION);
 		LOGGER.info(EnvExecutor.unsafeRunForDist(
 				() -> () -> "{} is accessing Porting Lib from the client!",

@@ -19,7 +19,7 @@ public class NutTreeGrower extends AbstractTreeGrower {
 	@Nullable
 	@Override
 	protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource random, boolean largeHive) {
-		ResourceLocation locateFeature = GarnishedFeatures.NUT_TREE_CONFIGURED;
+		ResourceLocation locateFeature = GarnishedFeatures.NUT_TREE_CONFIGURED.location();
 		ConfiguredFeature<?, ?> feature = ServerLifecycleHooks.getCurrentServer().registryAccess()
 				.registryOrThrow(Registry.CONFIGURED_FEATURE_REGISTRY).get(locateFeature);
 		if (null == feature) {

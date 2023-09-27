@@ -17,7 +17,7 @@ public class HazelnutTreeGrower extends AbstractTreeGrower {
 	@Nullable
 	@Override
 	protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource random, boolean largeHive) {
-		ResourceLocation locateFeature = GarnishedFeatures.HAZELNUT_TREE_CONFIGURED;
+		ResourceLocation locateFeature = GarnishedFeatures.HAZELNUT_TREE_CONFIGURED.location();
 		ConfiguredFeature<?, ?> feature = ServerLifecycleHooks.getCurrentServer().registryAccess()
 				.registryOrThrow(Registry.CONFIGURED_FEATURE_REGISTRY).get(locateFeature);
 		if (null == feature) {
