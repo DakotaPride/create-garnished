@@ -169,6 +169,7 @@
   "item.garnished.nut_flour": "坚果粉",
   "item.garnished.brittle_dust": "脆尘",
   "item.garnished.senile_dust": "衰尘",
+  "item.garnished.senile_spread": "衰酱",
   "item.garnished.putrid_stew": "腐烂炖",
   "item.garnished.soul_khana": "灵魂美食",
   "item.garnished.spirited_concoction": "Spirited Concoction",
@@ -190,6 +191,14 @@
   "block.garnished.sepia_door": "棕褐木门",
   "block.garnished.sepia_trapdoor": "棕褐木活板门",
   "block.garnished.soul_roots": "灵魂菌索",
+  "item.garnished.senile_sweet_blackstone": "衰糖", 
+  "item.garnished.senile_sweet_basalt": "衰糖", 
+  "item.garnished.senile_sweet_scoria": "衰糖", 
+  "item.garnished.senile_sweet_scorchia": "衰糖", 
+  "item.garnished.incomplete_senile_sweet_blackstone": "未加工的衰糖", 
+  "item.garnished.incomplete_senile_sweet_basalt": "未加工的衰糖", 
+  "item.garnished.incomplete_senile_sweet_scoria": "未加工的衰糖", 
+  "item.garnished.incomplete_senile_sweet_scorchia": "未加工的衰糖", 
 
   "block.garnished.peanut_sack": "压实坚果袋",
   "block.garnished.cashew_sack": "压实坚果袋",
@@ -264,5 +273,7 @@
   "advancement.garnished.tophet_brew.title": "宴于地狱",
   "advancement.garnished.tophet_brew.description": "获得地狱煮",
   "advancement.garnished.aversion_effect.title": "本还可以更糟",
-  "advancement.garnished.aversion_effect.description": "被新的坚果过敏折磨"
+  "advancement.garnished.aversion_effect.description": "被新的坚果过敏折磨",
+  "advancement.garnished.senile_sweet.title": "石之沙", 
+  "advancement.garnished.senile_sweet.description": "品尝衰糖" 
 }
