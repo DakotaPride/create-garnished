@@ -310,6 +310,8 @@ public class GarnishedItems {
 			REGISTRATE.item("brittle_dust", Item::new).register();
 	public static final ItemEntry<Item> SENILE_DUST =
 			REGISTRATE.item("senile_dust", Item::new).register();
+	public static final ItemEntry<SenileSpreadItem> SENILE_SPREAD =
+			REGISTRATE.item("senile_spread", SenileSpreadItem::new).register();
 
 	public static final ItemEntry<Item> CRUSHED_SEPIA_FUNGUS =
 			REGISTRATE.item("crushed_sepia_fungus", Item::new).register();
@@ -319,6 +321,23 @@ public class GarnishedItems {
 			REGISTRATE.item("soul_khana", SoulKhanaFoodItem::new).register();
 	public static final ItemEntry<SpiritedConcoctionFoodItem> SPIRITED_CONCOCTION =
 			REGISTRATE.item("spirited_concoction", SpiritedConcoctionFoodItem::new).register();
+
+	public static final ItemEntry<SenileSweetFoodItem> SENILE_SWEET_BLACKSTONE =
+			REGISTRATE.item("senile_sweet_blackstone", SenileSweetFoodItem::new).register();
+	public static final ItemEntry<SenileSweetFoodItem> SENILE_SWEET_BASALT =
+			REGISTRATE.item("senile_sweet_basalt", SenileSweetFoodItem::new).register();
+	public static final ItemEntry<SenileSweetFoodItem> SENILE_SWEET_SCORIA =
+			REGISTRATE.item("senile_sweet_scoria", SenileSweetFoodItem::new).register();
+	public static final ItemEntry<SenileSweetFoodItem> SENILE_SWEET_SCORCHIA =
+			REGISTRATE.item("senile_sweet_scorchia", SenileSweetFoodItem::new).register();
+	public static final ItemEntry<Item> INCOMPLETE_SENILE_SWEET_BLACKSTONE =
+			REGISTRATE.item("incomplete_senile_sweet_blackstone", Item::new).register();
+	public static final ItemEntry<Item> INCOMPLETE_SENILE_SWEET_BASALT =
+			REGISTRATE.item("incomplete_senile_sweet_basalt", Item::new).register();
+	public static final ItemEntry<Item> INCOMPLETE_SENILE_SWEET_SCORIA =
+			REGISTRATE.item("incomplete_senile_sweet_scoria", Item::new).register();
+	public static final ItemEntry<Item> INCOMPLETE_SENILE_SWEET_SCORCHIA =
+			REGISTRATE.item("incomplete_senile_sweet_scorchia", Item::new).register();
 
 	public static final ItemEntry<Item> NUT_FLOUR =
 			REGISTRATE.item("nut_flour", Item::new).register();

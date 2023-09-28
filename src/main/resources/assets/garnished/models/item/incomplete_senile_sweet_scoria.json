@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "garnished:item/incomplete_senile_sweet_scoria"
+  }
+}
