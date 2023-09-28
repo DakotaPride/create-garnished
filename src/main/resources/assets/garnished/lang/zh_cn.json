@@ -140,65 +140,65 @@
   "item.garnished.incomplete_cashew_cookie": "未加工的腰果曲奇",
   "item.garnished.almond_cheese": "杏仁奶酪",
 
-  "item.garnished.peanut_cinder_sandwich": "Peanut Oil and Cinder Sandwich", //
-  "item.garnished.incomplete_peanut_cinder_sandwich": "Incomplete Peanut Oil and Cinder Sandwich", //
-  "item.garnished.tophet_brew": "Tophet Brew", //
-  "item.garnished.incomplete_tophet_brew": "Incomplete Tophet Brew", //
-  "item.garnished.grim_stew": "Grim Stew", //
-  "item.garnished.wrapped_warped_tangle": "Wrapped Warped Tangle", //
-  "item.garnished.wrapped_crimson_tangle": "Wrapped Crimson Tangle", //
-  "item.garnished.wrapped_sepia_tangle": "Wrapped Sepia Tangle", //
-  "item.garnished.weeping_tangle": "Weeping Tangle", //
-  "item.garnished.incomplete_tangle": "Incomplete Tangle", //
-  "item.garnished.cinder_roll": "Cinder Shroom Roll", //
-  "item.garnished.incomplete_cinder_roll": "Incomplete Cinder Shroom Roll", //
-  "item.garnished.blazing_delight": "Blazing Delight", //
-  "item.garnished.cashew_mixture": "Bottled Fermented Cashew Mixture", //
-  "item.garnished.incomplete_cashew_mixture": "Incomplete Bottled Fermented Cashew Mixture", //
-  "item.garnished.crushed_warped_fungus": "Crushed Warped Fungus", //
-  "item.garnished.crushed_crimson_fungus": "Crushed Crimson Fungus", //
-  "item.garnished.crushed_sepia_fungus": "Crushed Sepia Fungus", //
-  "item.garnished.enflamed_mandible": "Enflamed Mandible", //
-  "item.garnished.crushed_ender_pearl": "Ender Dust", //
-  "item.garnished.crimson_tusk": "Crimson Tusk", //
-  "item.garnished.incomplete_crimson_tusk": "Incomplete Crimson Tusk", //
-  "item.garnished.empty_crimson_tusk": "Empty Crimson Tusk", //
-  "item.garnished.hardened_wrap": "Silica Hardened Wrap", //
-  "item.garnished.incomplete_hardened_wrap": "Incomplete Silica Hardened Wrap", //
-  "item.garnished.crushed_shroomlight": "Crushed Shroomlight", //
-  "item.garnished.nut_flour": "Nut Flour", //
-  "item.garnished.brittle_dust": "Brittle Dust", //
-  "item.garnished.senile_dust": "Senile Dust", //
-  "item.garnished.senile_spread": "Senile Spread", //
-  "item.garnished.putrid_stew": "Putrid Stew", //
-  "item.garnished.soul_khana": "Soul Khana", //
-  "item.garnished.spirited_concoction": "Spirited Concoction", //
-  "effect.garnished.spirited_resistance": "Spirited Resistance", //
-  "effect.garnished.aversion": "Aversion", //
-  "item.minecraft.potion.effect.aversion": "Potion of Aversion", //
-  "item.minecraft.splash_potion.effect.aversion": "Splash Potion of Aversion", //
-  "item.minecraft.lingering_potion.effect.aversion": "Lingering Potion of Aversion", //
-  "item.minecraft.tipped_arrow.effect.aversion": "Tipped Arrow of Aversion", //
-  "block.garnished.sepia_fungus": "Sepia Fungus", //
-  "block.garnished.sepia_stem": "Sepia Stem", //
-  "block.garnished.stripped_sepia_stem": "Stripped Sepia Stem", //
-  "block.garnished.sepia_hyphae": "Sepia Hyphae", //
-  "block.garnished.stripped_sepia_hyphae": "Stripped Sepia Hyphae", //
-  "block.garnished.sepia_planks": "Sepia Planks", //
-  "block.garnished.sepia_wart_block": "Sepia Wart Block", //
-  "block.garnished.sepia_slab": "Sepia Slab", //
-  "block.garnished.sepia_stairs": "Sepia Stairs", //
-  "block.garnished.sepia_door": "Sepia Door", //
-  "block.garnished.sepia_trapdoor": "Sepia Trapdoor", //
-  "block.garnished.soul_roots": "Soul Roots", //
-  "item.garnished.senile_sweet_blackstone": "Senile Sweet", //
-  "item.garnished.senile_sweet_basalt": "Senile Sweet", //
-  "item.garnished.senile_sweet_scoria": "Senile Sweet", //
-  "item.garnished.senile_sweet_scorchia": "Senile Sweet", //
-  "item.garnished.incomplete_senile_sweet_blackstone": "Incomplete Senile Sweet", //
-  "item.garnished.incomplete_senile_sweet_basalt": "Incomplete Senile Sweet", //
-  "item.garnished.incomplete_senile_sweet_scoria": "Incomplete Senile Sweet", //
-  "item.garnished.incomplete_senile_sweet_scorchia": "Incomplete Senile Sweet", //
+  "item.garnished.peanut_cinder_sandwich": "淋花生油的余烬三明治",
+  "item.garnished.incomplete_peanut_cinder_sandwich": "未加工的淋花生油的余烬三明治",
+  "item.garnished.tophet_brew": "地狱煮",
+  "item.garnished.incomplete_tophet_brew": "未加工的地狱煮",
+  "item.garnished.grim_stew": "可怖炖",
+  "item.garnished.wrapped_warped_tangle": "包装过的诡异缠藤",
+  "item.garnished.wrapped_crimson_tangle": "包装过的绯红缠藤",
+  "item.garnished.wrapped_sepia_tangle": "包装过的棕褐缠藤",
+  "item.garnished.weeping_tangle": "哭泣缠藤",
+  "item.garnished.incomplete_tangle": "未完成的缠藤",
+  "item.garnished.cinder_roll": "余烬菇卷",
+  "item.garnished.incomplete_cinder_roll": "未加工的余烬菇卷",
+  "item.garnished.blazing_delight": "烈焰乐食",
+  "item.garnished.cashew_mixture": "发酵腰果混合物瓶",
+  "item.garnished.incomplete_cashew_mixture": "未加工的发酵腰果混合物瓶",
+  "item.garnished.crushed_warped_fungus": "碎诡异真菌",
+  "item.garnished.crushed_crimson_fungus": "碎绯红真菌",
+  "item.garnished.crushed_sepia_fungus": "碎棕褐真菌",
+  "item.garnished.enflamed_mandible": "烧灼下颌骨",
+  "item.garnished.crushed_ender_pearl": "末影尘",
+  "item.garnished.crimson_tusk": "深红长牙",
+  "item.garnished.incomplete_crimson_tusk": "未加工的深红长牙",
+  "item.garnished.empty_crimson_tusk": "空的深红长牙",
+  "item.garnished.hardened_wrap": "硬化硅胶包装",
+  "item.garnished.incomplete_hardened_wrap": "未加工的硬化硅胶包装",
+  "item.garnished.crushed_shroomlight": "碎菌光体",
+  "item.garnished.nut_flour": "坚果粉",
+  "item.garnished.brittle_dust": "脆尘",
+  "item.garnished.senile_dust": "衰尘",
+  "item.garnished.senile_spread": "衰酱",
+  "item.garnished.putrid_stew": "腐烂炖",
+  "item.garnished.soul_khana": "灵魂美食",
+  "item.garnished.spirited_concoction": "Spirited Concoction",
+  "effect.garnished.spirited_resistance": "Spirited Resistance",
+  "effect.garnished.aversion": "厌恶",
+  "item.minecraft.potion.effect.aversion": "厌恶药水",
+  "item.minecraft.splash_potion.effect.aversion": "喷溅型厌恶药水",
+  "item.minecraft.lingering_potion.effect.aversion": "滞留型厌恶药水",
+  "item.minecraft.tipped_arrow.effect.aversion": "厌恶之箭",
+  "block.garnished.sepia_fungus": "棕褐真菌",
+  "block.garnished.sepia_stem": "棕褐菌柄",
+  "block.garnished.stripped_sepia_stem": "去皮棕褐菌柄",
+  "block.garnished.sepia_hyphae": "棕褐菌核",
+  "block.garnished.stripped_sepia_hyphae": "去皮棕褐菌核",
+  "block.garnished.sepia_planks": "棕褐木板",
+  "block.garnished.sepia_wart_block": "棕褐疣块",
+  "block.garnished.sepia_slab": "棕褐台阶",
+  "block.garnished.sepia_stairs": "棕褐楼梯",
+  "block.garnished.sepia_door": "棕褐木门",
+  "block.garnished.sepia_trapdoor": "棕褐木活板门",
+  "block.garnished.soul_roots": "灵魂菌索",
+  "item.garnished.senile_sweet_blackstone": "衰糖",
+  "item.garnished.senile_sweet_basalt": "衰糖",
+  "item.garnished.senile_sweet_scoria": "衰糖",
+  "item.garnished.senile_sweet_scorchia": "衰糖",
+  "item.garnished.incomplete_senile_sweet_blackstone": "未加工的衰糖",
+  "item.garnished.incomplete_senile_sweet_basalt": "未加工的衰糖",
+  "item.garnished.incomplete_senile_sweet_scoria": "未加工的衰糖",
+  "item.garnished.incomplete_senile_sweet_scorchia": "未加工的衰糖",
 
   "block.garnished.peanut_sack": "压实坚果袋",
   "block.garnished.cashew_sack": "压实坚果袋",
@@ -221,11 +221,15 @@
   "item.garnished.garnish_bucket": "装食桶",
   "item.garnished.apple_cider_bucket": "苹果西打桶",
   "item.garnished.peanut_oil_bucket": "花生油桶",
-  "item.garnished.cashew_mixture_bucket": "Bucket of Cashew Mixture", //
+  "item.garnished.cashew_mixture_bucket": "腰果混合物桶",
   "fluid.liquid_garnish": "液态装食",
+  "block.garnished.liquid_garnish": "液态装食",
   "fluid.apple_cider": "苹果西打",
+  "block.garnished.apple_cider": "苹果西打",
   "fluid.peanut_oil": "花生油",
-  "fluid.cashew_mixture": "Cashew Mixture", //
+  "block.garnished.peanut_oil": "花生油",
+  "fluid.cashew_mixture": "腰果混合物",
+  "block.garnished.cashew_mixture": "腰果混合物",
 
   "block.garnished.nut_plant": "坚果植株",
   "block.garnished.nut_sapling": "坚果树苗",
@@ -264,12 +268,12 @@
   "advancement.garnished.ina_buhg.description": "获得花生的一些变种",
   "advancement.garnished.walnut_brownie.title": "别发飙啦",
   "advancement.garnished.walnut_brownie.description": "获得核桃布朗尼",
-  "advancement.garnished.cashew_mixture.title": "Raise a Glass!", //
-  "advancement.garnished.cashew_mixture.description": "Obtain Bottled Fermented Cashew Mixture" //
-  "advancement.garnished.tophet_brew.title": "Dining in Hell", //
-  "advancement.garnished.tophet_brew.description": "Obtain a Tophet Brew", //
-  "advancement.garnished.aversion_effect.title": "Could've Been Worse", //
-  "advancement.garnished.aversion_effect.description": "Suffer from your new nut allergy", //
-  "advancement.garnished.senile_sweet.title": "Stoned Desserts", //
-  "advancement.garnished.senile_sweet.description": "Consume a Senile Sweet" //
+  "advancement.garnished.cashew_mixture.title": "干杯！",
+  "advancement.garnished.cashew_mixture.description": "获得发酵腰果混合物瓶",
+  "advancement.garnished.tophet_brew.title": "宴于地狱",
+  "advancement.garnished.tophet_brew.description": "获得地狱煮",
+  "advancement.garnished.aversion_effect.title": "本还可以更糟",
+  "advancement.garnished.aversion_effect.description": "被新的坚果过敏折磨",
+  "advancement.garnished.senile_sweet.title": "石之沙", // May be mistranslated due to spelling error in previous rendition of file
+  "advancement.garnished.senile_sweet.description": "品尝衰糖"
 }

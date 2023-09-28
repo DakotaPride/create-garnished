@@ -223,9 +223,13 @@
   "item.garnished.peanut_oil_bucket": "Bucket of Peanut Oil",
   "item.garnished.cashew_mixture_bucket": "Bucket of Cashew Mixture",
   "fluid.liquid_garnish": "Liquid Garnish",
+  "block.garnished.liquid_garnish": "Liquid Garnish",
   "fluid.apple_cider": "Apple Cider",
+  "block.garnished.apple_cider": "Apple Cider",
   "fluid.peanut_oil": "Peanut Oil",
+  "block.garnished.peanut_oil": "Peanut Oil",
   "fluid.cashew_mixture": "Cashew Mixture",
+  "block.garnished.cashew_mixture": "Cashew Mixture",
 
   "block.garnished.nut_plant": "[Legacy] Nut Growth",
   "block.garnished.nut_sapling": "Nut Tree Sapling",
