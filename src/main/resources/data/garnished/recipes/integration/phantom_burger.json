@@ -10,7 +10,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "tag": "forge:bread"
+      "tag": "c:bread"
     },
     {
       "item": "garnished:phantom_beef_patty"
