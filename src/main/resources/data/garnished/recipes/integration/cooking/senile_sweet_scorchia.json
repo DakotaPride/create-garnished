@@ -7,27 +7,25 @@
       ]
     }
   ],
-  "recipe": {
-    "type": "farmersdelight:cooking",
-    "container": {
-      "item": "create:scorchia"
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "create:scorchia"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "garnished:salt_compound"
     },
-    "cookingtime": 200,
-    "experience": 1.0,
-    "ingredients": [
-      {
-        "item": "garnished:salt_compound"
-      },
-      {
-        "item": "garnished:garnish_powder"
-      },
-      {
-        "item": "garnished:senile_spread"
-      }
-    ],
-    "recipe_book_tab": "misc",
-    "result": {
-      "item": "garnished:senile_sweet_scorchia"
+    {
+      "item": "garnished:garnish_powder"
+    },
+    {
+      "item": "garnished:senile_spread"
     }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "item": "garnished:senile_sweet_scorchia"
   }
 }

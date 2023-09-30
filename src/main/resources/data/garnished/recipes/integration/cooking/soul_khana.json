@@ -7,30 +7,28 @@
       ]
     }
   ],
-  "recipe": {
-    "type": "farmersdelight:cooking",
-    "container": {
-      "item": "minecraft:bowl"
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "garnished:crushed_sepia_fungus"
     },
-    "cookingtime": 200,
-    "experience": 1.0,
-    "ingredients": [
-      {
-        "item": "garnished:crushed_sepia_fungus"
-      },
-      {
-        "item": "garnished:crushed_sepia_fungus"
-      },
-      {
-        "item": "garnished:soul_roots"
-      },
-      {
-        "item": "garnished:soul_roots"
-      }
-    ],
-    "recipe_book_tab": "meals",
-    "result": {
-      "item": "garnished:soul_khana"
+    {
+      "item": "garnished:crushed_sepia_fungus"
+    },
+    {
+      "item": "garnished:soul_roots"
+    },
+    {
+      "item": "garnished:soul_roots"
     }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "garnished:soul_khana"
   }
 }

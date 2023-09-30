@@ -7,30 +7,28 @@
       ]
     }
   ],
-  "recipe": {
-    "type": "farmersdelight:cooking",
-    "container": {
-      "item": "minecraft:glass_bottle"
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:glass_bottle"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "garnished:peanut"
     },
-    "cookingtime": 200,
-    "experience": 1.0,
-    "ingredients": [
-      {
-        "item": "garnished:peanut"
-      },
-      {
-        "item": "garnished:peanut"
-      },
-      {
-        "item": "garnished:garnish_powder"
-      },
-      {
-        "item": "garnished:garnish_powder"
-      }
-    ],
-    "recipe_book_tab": "drinks",
-    "result": {
-      "item": "garnished:peanut_oil"
+    {
+      "item": "garnished:peanut"
+    },
+    {
+      "item": "garnished:garnish_powder"
+    },
+    {
+      "item": "garnished:garnish_powder"
     }
+  ],
+  "recipe_book_tab": "drinks",
+  "result": {
+    "item": "garnished:peanut_oil"
   }
 }

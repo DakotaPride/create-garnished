@@ -7,33 +7,31 @@
       ]
     }
   ],
-  "recipe": {
-    "type": "farmersdelight:cooking",
-    "container": {
-      "item": "minecraft:glass_bottle"
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:glass_bottle"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "minecraft:apple"
     },
-    "cookingtime": 200,
-    "experience": 1.0,
-    "ingredients": [
-      {
-        "item": "minecraft:apple"
-      },
-      {
-        "item": "minecraft:apple"
-      },
-      {
-        "item": "garnished:garnish_compound"
-      },
-      {
-        "tag": "garnished:cracked_nuts"
-      },
-      {
-        "item": "garnished:cashew_apple"
-      }
-    ],
-    "recipe_book_tab": "drinks",
-    "result": {
-      "item": "garnished:bitter_apple_cider"
+    {
+      "item": "minecraft:apple"
+    },
+    {
+      "item": "garnished:garnish_compound"
+    },
+    {
+      "tag": "garnished:cracked_nuts"
+    },
+    {
+      "item": "garnished:cashew_apple"
     }
+  ],
+  "recipe_book_tab": "drinks",
+  "result": {
+    "item": "garnished:bitter_apple_cider"
   }
 }
