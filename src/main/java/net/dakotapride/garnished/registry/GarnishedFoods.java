@@ -73,6 +73,13 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties SPIRITED_CONCOCTION = new FoodProperties.Builder().nutrition(7).saturationMod(0.3F)
 			.effect(new MobEffectInstance(GarnishedEffects.SPIRITED_RESISTANCE, 900), 1.0F).build();
 	public static final FoodProperties SENILE_SWEET = new FoodProperties.Builder().nutrition(4).saturationMod(0.4F).build();
+	public static final FoodProperties NUT_NACHO = new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build();
+	public static final FoodProperties NUT_NACHO_BOWL = new FoodProperties.Builder().nutrition(9).saturationMod(0.5F).build();
+
+	// Farmer's Delight Foods
+	public static final FoodProperties PECAN_PIE_SLICE = new FoodProperties.Builder().nutrition(3).saturationMod(0.4F).build();
+	public static final FoodProperties PHANTOM_BURGER = new FoodProperties.Builder().nutrition(14).saturationMod(0.9F).build();
+	public static final FoodProperties PHANTOM_BEEF_PATTY = new FoodProperties.Builder().nutrition(5).saturationMod(0.5F).build();
 
 
 	public static void setRegister() {}

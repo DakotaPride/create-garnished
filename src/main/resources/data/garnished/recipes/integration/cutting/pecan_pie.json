@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "recipe": {
+    "type": "farmersdelight:cutting",
+    "ingredients": [
+      {
+        "item": "garnished:pecan_pie"
+      }
+    ],
+    "result": [
+      {
+        "count": 4,
+        "item": "garnished:pecan_pie_slice"
+      }
+    ],
+    "tool": {
+      "tag": "forge:tools/knives"
+    }
+  }
+}

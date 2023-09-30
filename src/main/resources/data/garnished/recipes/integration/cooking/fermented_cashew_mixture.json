@@ -1,0 +1,39 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "recipe": {
+    "type": "farmersdelight:cooking",
+    "container": {
+      "item": "minecraft:glass_bottle"
+    },
+    "cookingtime": 200,
+    "experience": 1.0,
+    "ingredients": [
+      {
+        "item": "garnished:ungarnished_cashew"
+      },
+      {
+        "item": "garnished:ungarnished_cashew"
+      },
+      {
+        "item": "create:cinder_flour"
+      },
+      {
+        "item": "garnished:cashew_apple"
+      },
+      {
+        "item": "garnished:cashew_apple"
+      }
+    ],
+    "recipe_book_tab": "drinks",
+    "result": {
+      "item": "garnished:cashew_mixture"
+    }
+  }
+}

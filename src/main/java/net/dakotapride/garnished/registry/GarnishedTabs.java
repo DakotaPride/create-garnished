@@ -142,6 +142,7 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.SOUL_KHANA.asStack());
 			output.accept(GarnishedItems.SPIRITED_CONCOCTION.asStack());
 			output.accept(GarnishedItems.PUTRID_STEW.asStack());
+			output.accept(GarnishedItems.NUT_NACHO_BOWL.asStack());
 			output.accept(GarnishedItems.CINDER_ROLL.asStack());
 			output.accept(GarnishedItems.WRAPPED_CRIMSON_TANGLE.asStack());
 			output.accept(GarnishedItems.WRAPPED_WARPED_TANGLE.asStack());
@@ -154,6 +155,7 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.CRUSHED_SHROOMLIGHT.asStack());
 			output.accept(GarnishedItems.CRUSHED_ENDER_PEARL.asStack());
 			output.accept(GarnishedItems.NUT_FLOUR.asStack());
+			output.accept(GarnishedItems.NUT_NACHO.asStack());
 			output.accept(GarnishedItems.BRITTLE_DUST.asStack());
 			output.accept(GarnishedItems.SENILE_DUST.asStack());
 			output.accept(GarnishedItems.CRIMSON_TUSK.asStack());

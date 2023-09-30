@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "garnished:nut_nacho"
+    },
+    {
+      "item": "garnished:nut_nacho"
+    },
+    {
+      "item": "garnished:nut_nacho"
+    },
+    {
+      "item": "garnished:nut_nacho"
+    },
+    {
+      "item": "garnished:almond_cheese"
+    }
+  ],
+  "result": {
+    "item": "garnished:nut_nacho_bowl"
+  }
+}

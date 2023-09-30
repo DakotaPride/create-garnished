@@ -1,0 +1,39 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "recipe": {
+    "type": "farmersdelight:cooking",
+    "cookingtime": 200,
+    "experience": 1.0,
+    "ingredients": [
+      {
+        "tag": "garnished:unsweetened_nuts"
+      },
+      {
+        "tag": "garnished:unsweetened_nuts"
+      },
+      {
+        "tag": "garnished:honeyed_nuts"
+      },
+      {
+        "tag": "garnished:chocolate_glazed_nuts"
+      },
+      {
+        "tag": "garnished:berries"
+      },
+      {
+        "item": "garnished:garnish_compound"
+      }
+    ],
+    "recipe_book_tab": "meals",
+    "result": {
+      "item": "garnished:garnished_meal"
+    }
+  }
+}
