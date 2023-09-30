@@ -1,0 +1,39 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "recipe": {
+    "type": "farmersdelight:cooking",
+    "container": {
+      "item": "minecraft:bowl"
+    },
+    "cookingtime": 200,
+    "experience": 1.0,
+    "ingredients": [
+      {
+        "item": "garnished:crushed_shroomlight"
+      },
+      {
+        "item": "garnished:crushed_shroomlight"
+      },
+      {
+        "item": "minecraft:ghast_tear"
+      },
+      {
+        "item": "garnished:crushed_warped_fungus"
+      },
+      {
+        "item": "garnished:crushed_crimson_fungus"
+      }
+    ],
+    "recipe_book_tab": "meals",
+    "result": {
+      "item": "garnished:grim_stew"
+    }
+  }
+}

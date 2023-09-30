@@ -1,0 +1,30 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "recipe": {
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+      {
+        "tag": "forge:bread"
+      },
+      {
+        "item": "garnished:phantom_beef_patty"
+      },
+      {
+        "item": "garnished:senile_dust"
+      },
+      {
+        "item": "garnished:soul_roots"
+      }
+    ],
+    "result": {
+      "item": "garnished:phantom_burger"
+    }
+  }
+}

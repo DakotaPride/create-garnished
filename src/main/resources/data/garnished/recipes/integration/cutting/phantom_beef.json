@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "recipe": {
+    "type": "farmersdelight:cutting",
+    "ingredients": [
+      {
+        "item": "garnished:phantom_steak"
+      }
+    ],
+    "result": [
+      {
+        "count": 2,
+        "item": "farmersdelight:minced_beef"
+      }
+    ],
+    "tool": {
+      "tag": "forge:tools/knives"
+    }
+  }
+}
