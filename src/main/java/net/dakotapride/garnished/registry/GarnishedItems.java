@@ -349,10 +349,10 @@ public class GarnishedItems {
 	// Farmer's Delight Items
 	public static final ItemEntry<PecanPieSliceFoodItem> PECAN_PIE_SLICE =
 			REGISTRATE.item("pecan_pie_slice", PecanPieSliceFoodItem::new).register();
-	public static final ItemEntry<PhantomBeefPattyFoodItem> PHANTOM_BURGER =
-			REGISTRATE.item("phantom_burger", PhantomBeefPattyFoodItem::new).register();
-	public static final ItemEntry<PhantomBurgerFoodItem> PHANTOM_BEEF_PATTY =
-			REGISTRATE.item("phantom_beef_patty", PhantomBurgerFoodItem::new).register();
+	public static final ItemEntry<PhantomBurgerFoodItem> PHANTOM_BURGER =
+			REGISTRATE.item("phantom_burger", PhantomBurgerFoodItem::new).register();
+	public static final ItemEntry<PhantomBeefPattyFoodItem> PHANTOM_BEEF_PATTY =
+			REGISTRATE.item("phantom_beef_patty", PhantomBeefPattyFoodItem::new).register();
 
 	public static void setRegister() {}
 
