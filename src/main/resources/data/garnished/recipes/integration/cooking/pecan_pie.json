@@ -7,33 +7,31 @@
       ]
     }
   ],
-  "recipe": {
-    "type": "farmersdelight:cooking",
-    "container": {
-      "item": "farmersdelight:pie_crust"
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "farmersdelight:pie_crust"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "garnished:pecan"
     },
-    "cookingtime": 200,
-    "experience": 1.0,
-    "ingredients": [
-      {
-        "item": "garnished:pecan"
-      },
-      {
-        "item": "garnished:pecan"
-      },
-      {
-        "item": "minecraft:egg"
-      },
-      {
-        "item": "minecraft:sugar"
-      },
-      {
-        "tag": "forge:dough"
-      }
-    ],
-    "recipe_book_tab": "misc",
-    "result": {
-      "item": "garnished:pecan_pie"
+    {
+      "item": "garnished:pecan"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "forge:dough"
     }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "item": "garnished:pecan_pie"
   }
 }

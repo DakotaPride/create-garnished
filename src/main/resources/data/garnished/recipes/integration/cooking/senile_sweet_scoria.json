@@ -7,27 +7,25 @@
       ]
     }
   ],
-  "recipe": {
-    "type": "farmersdelight:cooking",
-    "container": {
-      "item": "create:scoria"
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "create:scoria"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "garnished:salt_compound"
     },
-    "cookingtime": 200,
-    "experience": 1.0,
-    "ingredients": [
-      {
-        "item": "garnished:salt_compound"
-      },
-      {
-        "item": "garnished:garnish_powder"
-      },
-      {
-        "item": "garnished:senile_spread"
-      }
-    ],
-    "recipe_book_tab": "misc",
-    "result": {
-      "item": "garnished:senile_sweet_scoria"
+    {
+      "item": "garnished:garnish_powder"
+    },
+    {
+      "item": "garnished:senile_spread"
     }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "item": "garnished:senile_sweet_scoria"
   }
 }

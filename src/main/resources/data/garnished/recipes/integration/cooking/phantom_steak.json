@@ -7,36 +7,34 @@
       ]
     }
   ],
-  "recipe": {
-    "type": "farmersdelight:cooking",
-    "container": {
-      "item": "minecraft:cooked_beef"
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:cooked_beef"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "minecraft:soul_fire_base_blocks"
     },
-    "cookingtime": 200,
-    "experience": 1.0,
-    "ingredients": [
-      {
-        "tag": "minecraft:soul_fire_base_blocks"
-      },
-      {
-        "tag": "minecraft:soul_fire_base_blocks"
-      },
-      {
-        "item": "garnished:garnish_powder"
-      },
-      {
-        "item": "garnished:garnish_powder"
-      },
-      {
-        "item": "garnished:salt_compound"
-      },
-      {
-        "item": "garnished:salt_compound"
-      }
-    ],
-    "recipe_book_tab": "misc",
-    "result": {
-      "item": "garnished:phantom_steak"
+    {
+      "tag": "minecraft:soul_fire_base_blocks"
+    },
+    {
+      "item": "garnished:garnish_powder"
+    },
+    {
+      "item": "garnished:garnish_powder"
+    },
+    {
+      "item": "garnished:salt_compound"
+    },
+    {
+      "item": "garnished:salt_compound"
     }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "item": "garnished:phantom_steak"
   }
 }

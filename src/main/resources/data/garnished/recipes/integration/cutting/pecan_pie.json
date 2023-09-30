@@ -7,21 +7,19 @@
       ]
     }
   ],
-  "recipe": {
-    "type": "farmersdelight:cutting",
-    "ingredients": [
-      {
-        "item": "garnished:pecan_pie"
-      }
-    ],
-    "result": [
-      {
-        "count": 4,
-        "item": "garnished:pecan_pie_slice"
-      }
-    ],
-    "tool": {
-      "tag": "forge:tools/knives"
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "garnished:pecan_pie"
     }
+  ],
+  "result": [
+    {
+      "count": 4,
+      "item": "garnished:pecan_pie_slice"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
   }
 }

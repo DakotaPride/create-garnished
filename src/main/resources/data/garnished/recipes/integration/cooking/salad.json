@@ -7,33 +7,31 @@
       ]
     }
   ],
-  "recipe": {
-    "type": "farmersdelight:cooking",
-    "cookingtime": 200,
-    "experience": 1.0,
-    "ingredients": [
-      {
-        "tag": "minecraft:leaves"
-      },
-      {
-        "item": "garnished:pistachio"
-      },
-      {
-        "item": "garnished:salt_compound"
-      },
-      {
-        "item": "minecraft:carrot"
-      },
-      {
-        "item": "minecraft:carrot"
-      },
-      {
-        "tag": "garnished:berries"
-      }
-    ],
-    "recipe_book_tab": "misc",
-    "result": {
-      "item": "garnished:salad"
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "minecraft:leaves"
+    },
+    {
+      "item": "garnished:pistachio"
+    },
+    {
+      "item": "garnished:salt_compound"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "tag": "garnished:berries"
     }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "item": "garnished:salad"
   }
 }

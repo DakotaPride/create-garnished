@@ -7,30 +7,28 @@
       ]
     }
   ],
-  "recipe": {
-    "type": "farmersdelight:cooking",
-    "container": {
-      "item": "minecraft:bowl"
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "minecraft:slime_ball"
     },
-    "cookingtime": 200,
-    "experience": 1.0,
-    "ingredients": [
-      {
-        "item": "minecraft:slime_ball"
-      },
-      {
-        "item": "minecraft:slime_ball"
-      },
-      {
-        "item": "minecraft:bone"
-      },
-      {
-        "item": "minecraft:rotten_flesh"
-      }
-    ],
-    "recipe_book_tab": "meals",
-    "result": {
-      "item": "garnished:putrid_stew"
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
     }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "garnished:putrid_stew"
   }
 }
