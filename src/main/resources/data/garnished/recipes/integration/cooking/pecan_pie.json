@@ -27,7 +27,7 @@
       "item": "minecraft:sugar"
     },
     {
-      "tag": "forge:dough"
+      "tag": "c:dough"
     }
   ],
   "recipe_book_tab": "misc",
