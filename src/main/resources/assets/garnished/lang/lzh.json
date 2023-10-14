@@ -213,7 +213,7 @@
   "item.minecraft.lingering_potion.effect.blindness": "Lingering Potion of Blindness",
   "item.minecraft.tipped_arrow.effect.blindness": "Tipped Arrow of Blindness",
 
-  "item.garnished.bottled_ender_jelly": "Bottle of Ender Jelly",
+  "item.garnished.ender_jelly_bottle": "Bottle of Ender Jelly",
   "item.garnished.chorus_cocktail": "Chorus Cocktail",
   "item.garnished.cosmic_brew": "Cosmic Brew",
   "item.garnished.desolate_stew": "Desolate Stew",
@@ -234,6 +234,8 @@
   "block.garnished.ender_jelly_block": "Block of Ender Jelly",
   "block.garnished.ungarnished_nut_block": "Block of Ungarnished Nuts",
   "block.garnished.garnished_nut_block": "Block of Garnished Nuts",
+  "block.garnished.small_chorus_plant": "Small Chorus Plant",
+  "block.garnished.barren_roots": "Barren Roots",
   "effect.garnished.cognate": "Cognate",
   "effect.garnished.flagrant": "Flagrant",
   "item.minecraft.potion.effect.flagrant": "Potion of Flagrance",
