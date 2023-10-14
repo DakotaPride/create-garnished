@@ -78,10 +78,26 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties NUT_NACHO = new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build();
 	public static final FoodProperties NUT_NACHO_BOWL = new FoodProperties.Builder().nutrition(9).saturationMod(0.5F).build();
 
+	// Desolation
+	public static final FoodProperties BOTTLED_ENDER_JELLY = new FoodProperties.Builder().nutrition(10).saturationMod(0.5F).build();
+	public static final FoodProperties CHORUS_COCKTAIL = new FoodProperties.Builder().nutrition(14).saturationMod(0.8F).build();
+	public static final FoodProperties COSMIC_BREW = new FoodProperties.Builder().nutrition(18).saturationMod(0.8F).build();
+	public static final FoodProperties DESOLATE_STEW = new FoodProperties.Builder().nutrition(12).saturationMod(0.6F).build();
+	public static final FoodProperties ETHEREAL_CONCOCTION = new FoodProperties.Builder().nutrition(16).saturationMod(0.6F).build();
+	public static final FoodProperties VOID_MIXTURE = new FoodProperties.Builder().nutrition(12).saturationMod(0.4F).build();
+	public static final FoodProperties CHORUS_BOWL = new FoodProperties.Builder().nutrition(16).saturationMod(0.6F).build();
+	public static final FoodProperties CHORUS_COOKIE = new FoodProperties.Builder().nutrition(6).saturationMod(0.2F).build();
+	public static final FoodProperties ENDER_JELLY = new FoodProperties.Builder().nutrition(8).saturationMod(0.2F).build();
+	public static final FoodProperties ILLUMINATING_COCKTAIL = new FoodProperties.Builder().nutrition(16).saturationMod(0.8F).build();
+	public static final FoodProperties MULCH = new FoodProperties.Builder().nutrition(5).saturationMod(0.3F).build();
+	public static final FoodProperties MUD_PIE = new FoodProperties.Builder().nutrition(9).saturationMod(0.2F).build();
+
 	// Farmer's Delight Foods
 	public static final FoodProperties PECAN_PIE_SLICE = new FoodProperties.Builder().nutrition(3).saturationMod(0.4F).build();
 	public static final FoodProperties PHANTOM_BURGER = new FoodProperties.Builder().nutrition(14).saturationMod(0.9F).build();
 	public static final FoodProperties PHANTOM_BEEF_PATTY = new FoodProperties.Builder().nutrition(5).saturationMod(0.5F).build();
+	public static final FoodProperties GLOW_INK_ROLL = new FoodProperties.Builder().nutrition(12).saturationMod(0.6F).build();
+	public static final FoodProperties GLOW_INK_ROLL_SLICE = new FoodProperties.Builder().nutrition(6).saturationMod(0.5F).build();
 
 
     public static void setRegister() {}

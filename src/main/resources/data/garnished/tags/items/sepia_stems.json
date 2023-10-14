@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "garnished:sepia_stem",
+    "garnished:sepia_hyphae",
+    "#garnished:stripped_sepia_stems"
+  ]
+}

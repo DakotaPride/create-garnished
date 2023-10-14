@@ -1,0 +1,25 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:warped_fungus"
+    }
+  ],
+  "result": [
+    {
+      "count": 3,
+      "item": "garnished:crushed_warped_fungus"
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knives"
+  }
+}

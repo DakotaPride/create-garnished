@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "garnished:item/integration/glow_ink_roll_slice"
+  }
+}

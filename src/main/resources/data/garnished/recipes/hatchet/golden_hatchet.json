@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "hatchet",
+  "pattern": [
+    "AX ",
+    "X# ",
+    " # "
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:string"
+    },
+    "X": {
+      "item": "minecraft:gold_ingot"
+    },
+    "#": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "garnished:golden_hatchet",
+    "count": 1
+  }
+}

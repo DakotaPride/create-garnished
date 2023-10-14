@@ -1,5 +1,7 @@
 package net.dakotapride.garnished.item;
 
+import java.util.Random;
+
 import net.dakotapride.garnished.registry.GarnishedItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Style;
@@ -7,8 +9,6 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-
-import java.util.Random;
 
 public interface IGarnishedItem {
 	int baseTick = 20;
@@ -19,6 +19,7 @@ public interface IGarnishedItem {
 	int getBitterAlmondEffectDuration = baseTick * 25;
 	int getWrappedTangleEffectDuration = baseTick * 45;
 	int getFermentedCashewMixtureEffectDuration = baseTick * 180;
+	int getCognateEffectBaseTick = baseTick * 60;
 
 
 	default String garnishedText() {

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "garnished:block/ungarnished_nut_block"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "garnished:cosmic_powder"
+    },
+    {
+      "item": "garnished:cosmic_powder"
+    },
+    {
+      "item": "garnished:chorus_tuft"
+    },
+    {
+      "item": "garnished:chorus_tuft"
+    }
+  ],
+  "result": {
+    "item": "garnished:cosmic_brew"
+  }
+}

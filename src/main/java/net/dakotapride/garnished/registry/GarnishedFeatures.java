@@ -30,6 +30,13 @@ public class GarnishedFeatures {
 
 	public static final ResourceKey<ConfiguredFeature<?, ?>> SOUL_SAND_VEGETATION_BONEMEAL_CONFIGURED = registerConfiguredKey("soul_sand_vegetation_bonemeal");
 
+	public static final ResourceKey<ConfiguredFeature<?, ?>> BARREN_ROOTS_CONFIGURED = registerConfiguredKey("patch_barren_roots_configured");
+	public static final ResourceKey<PlacedFeature> BARREN_ROOTS_PLACED = registerPlacedKey("patch_barren_roots_placed");
+	public static final ResourceKey<ConfiguredFeature<?, ?>> CHORUS_PLANT_CONFIGURED = registerConfiguredKey("patch_chorus_plant_configured");
+	public static final ResourceKey<PlacedFeature> CHORUS_PLANT_PLACED = registerPlacedKey("patch_chorus_plant_placed");
+
+	public static final ResourceKey<ConfiguredFeature<?, ?>> END_STONE_VEGETATION_BONEMEAL_CONFIGURED = registerConfiguredKey("end_stone_vegetation_bonemeal");
+
 	public static ResourceLocation set(String id) {
 		return new ResourceLocation(CreateGarnished.ID, id);
 	}

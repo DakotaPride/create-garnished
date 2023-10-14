@@ -1,8 +1,10 @@
 package net.dakotapride.garnished;
 
+import net.dakotapride.garnished.registry.GarnishedEnchantments;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.GenerationStep;
 
@@ -47,15 +49,20 @@ public class CreateGarnished implements ModInitializer {
 		GarnishedEffects.setRegister();
 		GarnishedFeatures.setRegister();
 		GarnishedTags.setRegister();
+		GarnishedEnchantments.setRegister();
 		REGISTRATE.get().register();
 
 		// Generation
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.PLAINS),
 		 		GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.NUT_TREE_PLACED);
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.SOUL_SAND_VALLEY),
-		 		GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SOUL_ROOTS_PLACED);
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SOUL_ROOTS_PLACED);
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.SOUL_SAND_VALLEY),
 				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SEPIA_FUNGUS_PLACED);
+		BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_END),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.BARREN_ROOTS_PLACED);
+		BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_END),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.CHORUS_PLANT_PLACED);
 
 		LOGGER.info("Create addon mod [{}] is loading alongside Create [{}]!", NAME, Create.VERSION);
 		LOGGER.info(EnvExecutor.unsafeRunForDist(
@@ -65,6 +72,7 @@ public class CreateGarnished implements ModInitializer {
 
 		PotionBrewing.addMix(Potions.AWKWARD, GarnishedItems.BRITTLE_DUST.get(), GarnishedEffects.AVERSION_POTION);
 		PotionBrewing.addMix(GarnishedEffects.AVERSION_POTION, Items.REDSTONE, GarnishedEffects.LONG_AVERSION_POTION);
+		PotionBrewing.addMix(Potions.AWKWARD, GarnishedItems.ENDER_JELLY_BLOB.get(), GarnishedEffects.FLAGRANT_POTION);
 
 		PotionBrewing.addMix(Potions.AWKWARD, GarnishedItems.SENILE_SWEET_BLACKSTONE.get(), GarnishedEffects.BLINDNESS_POTION);
 		PotionBrewing.addMix(Potions.AWKWARD, GarnishedItems.SENILE_SWEET_BASALT.get(), Potions.WEAKNESS);

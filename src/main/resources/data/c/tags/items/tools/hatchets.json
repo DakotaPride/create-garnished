@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "garnished:wooden_hatchet",
+    "garnished:stone_hatchet",
+    "garnished:iron_hatchet",
+    "garnished:golden_hatchet",
+    "garnished:diamond_hatchet",
+    "garnished:netherite_hatchet"
+  ]
+}

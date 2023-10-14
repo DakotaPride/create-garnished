@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "garnished:chorus_tuft"
+    },
+    {
+      "item": "garnished:ender_jelly"
+    },
+    {
+      "item": "garnished:void_dust"
+    },
+    {
+      "item": "garnished:void_dust"
+    }
+  ],
+  "result": {
+    "item": "garnished:desolate_stew"
+  }
+}

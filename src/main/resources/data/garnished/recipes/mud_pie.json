@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "garnished:mulch"
+    },
+    {
+      "tag": "minecraft:dirt"
+    },
+    {
+      "tag": "minecraft:dirt"
+    }
+  ],
+  "result": {
+    "item": "garnished:mud_pie"
+  }
+}
