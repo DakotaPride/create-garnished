@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "garnished:ender_jelly"
+    },
+    {
+      "item": "garnished:ender_jelly"
+    }
+  ],
+  "result": {
+    "item": "garnished:ender_jelly_bottle"
+  }
+}

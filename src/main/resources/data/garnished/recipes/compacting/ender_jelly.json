@@ -1,0 +1,25 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "garnished:crushed_ender_pearl"
+    },
+    {
+      "item": "garnished:crushed_ender_pearl"
+    },
+    {
+      "item": "garnished:salt_compound"
+    },
+    {
+      "amount": 500,
+      "fluid": "minecraft:water",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:ender_jelly",
+      "count": 2
+    }
+  ]
+}

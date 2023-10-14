@@ -1,5 +1,6 @@
 package net.dakotapride.garnished;
 
+import net.dakotapride.garnished.registry.GarnishedEnchantments;
 import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 
 import org.slf4j.Logger;
@@ -44,6 +45,7 @@ public class CreateGarnished implements ModInitializer {
 		GarnishedFluids.setRegister();
 		GarnishedFoods.setRegister();
 		GarnishedEffects.setRegister();
+		GarnishedEnchantments.setRegister();
 		GarnishedTags.setRegister();
 		REGISTRATE.get().register();
 
@@ -63,6 +65,7 @@ public class CreateGarnished implements ModInitializer {
 
 		PotionBrewing.addMix(Potions.AWKWARD, GarnishedItems.BRITTLE_DUST.get(), GarnishedEffects.AVERSION_POTION);
 		PotionBrewing.addMix(GarnishedEffects.AVERSION_POTION, Items.REDSTONE, GarnishedEffects.LONG_AVERSION_POTION);
+		PotionBrewing.addMix(Potions.AWKWARD, GarnishedItems.ENDER_JELLY_BLOB.get(), GarnishedEffects.FLAGRANT_POTION);
 
 		PotionBrewing.addMix(Potions.AWKWARD, GarnishedItems.SENILE_SWEET_BLACKSTONE.get(), GarnishedEffects.BLINDNESS_POTION);
 		PotionBrewing.addMix(Potions.AWKWARD, GarnishedItems.SENILE_SWEET_BASALT.get(), Potions.WEAKNESS);

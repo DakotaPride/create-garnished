@@ -2,6 +2,8 @@ package net.dakotapride.garnished.registry;
 
 import net.dakotapride.garnished.CreateGarnished;
 import net.dakotapride.garnished.effect.AversionMobEffect;
+import net.dakotapride.garnished.effect.CognateMobEffect;
+import net.dakotapride.garnished.effect.FlagrantMobEffect;
 import net.dakotapride.garnished.effect.SpiritedResistanceMobEffect;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -23,12 +25,19 @@ public class GarnishedEffects {
 
 	public static MobEffect SPIRITED_RESISTANCE = effect("spirited_resistance", new SpiritedResistanceMobEffect());
 
+	public static MobEffect COGNATE = effect("cognate", new CognateMobEffect());
+	public static MobEffect FLAGRANT = effect("flagrant", new FlagrantMobEffect());
+
 	public static Potion AVERSION_POTION = potion("aversion", new Potion(
 			new MobEffectInstance(AVERSION, 2400)));
 	public static Potion LONG_AVERSION_POTION = potion("long_aversion", new Potion("aversion",
 			new MobEffectInstance(AVERSION, 3600)));
-	public static Potion BLINDNESS_POTION = vanillaPotion("blindness", new Potion(
-			new MobEffectInstance(MobEffects.BLINDNESS, 2400)));
+
+	public static final Potion FLAGRANT_POTION = potion("flagrant",
+			new Potion(new MobEffectInstance(FLAGRANT, 2400)));
+
+	public static Potion BLINDNESS_POTION = vanillaPotion("blindness",
+			new Potion(new MobEffectInstance(MobEffects.BLINDNESS, 2400)));
 
 
 	private static MobEffect effect(String key, MobEffect effect) {

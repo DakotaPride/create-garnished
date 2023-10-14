@@ -1,29 +1,28 @@
 package net.dakotapride.garnished.mixin;
 
-import net.minecraft.world.damagesource.DamageSource;
-
-import net.minecraft.world.entity.boss.wither.WitherBoss;
-import net.minecraft.world.entity.monster.Ghast;
-import net.minecraft.world.entity.monster.Skeleton;
-
-import net.minecraft.world.entity.monster.WitherSkeleton;
-
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import net.dakotapride.garnished.registry.GarnishedEffects;
+import net.dakotapride.garnished.registry.GarnishedEnchantments;
+import net.dakotapride.garnished.registry.GarnishedTags;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.boss.wither.WitherBoss;
+import net.minecraft.world.entity.monster.Ghast;
+import net.minecraft.world.entity.monster.Skeleton;
+import net.minecraft.world.entity.monster.WitherSkeleton;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraft.world.level.Level;
-
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-
-import java.util.Objects;
 
 @Mixin(LivingEntity.class)
 public abstract class LivingEntityMixin extends Entity {
@@ -46,8 +45,32 @@ public abstract class LivingEntityMixin extends Entity {
 		}
 	}
 
+	@Unique
+	private boolean isEnchantmentLevelHigherThan(Enchantment enchantment, int level) {
+		return EnchantmentHelper.getEnchantmentLevel(enchantment, entity) > level;
+	}
+
+	@Inject(method = "dropCustomDeathLoot", at = @At("HEAD"))
+	private void dropsFromHatchet$dropFromLootTable(DamageSource source, int looting, boolean hitByPlayer, CallbackInfo ci) {
+		LivingEntity attacker = (LivingEntity) source.getEntity();
+
+		if (attacker instanceof Player player) {
+			if (player.getMainHandItem().is(GarnishedTags.HATCHETS_TAG)) {
+				if (isEnchantmentLevelHigherThan(GarnishedEnchantments.SALVAGING.get(), 0)
+						&& entity.getType().is(GarnishedTags.IS_AFFECTED_BY_SALVAGING)) {
+					// added loot table goes here
+				}
+
+				if (isEnchantmentLevelHigherThan(GarnishedEnchantments.RAVAGING.get(), 0)
+						&& entity.getType().is(GarnishedTags.IS_AFFECTED_BY_RAVAGING)) {
+					// added loot table goes here
+				}
+			}
+		}
+	}
+
 	@Inject(method = "getDamageAfterMagicAbsorb", at = @At("HEAD"))
-	private void d(DamageSource source, float amount, CallbackInfoReturnable<Float> cir) {
+	private void spiritedResistanceThorns$getDamageAfterMagicAbsorb(DamageSource source, float amount, CallbackInfoReturnable<Float> cir) {
 		LivingEntity attacker = (LivingEntity) source.getEntity();
 
 		boolean isSkeleton = attacker instanceof Skeleton;
@@ -55,7 +78,7 @@ public abstract class LivingEntityMixin extends Entity {
 		boolean isWither = attacker instanceof WitherBoss;
 		boolean isGhast = attacker instanceof Ghast;
 
-		if(entity.hasEffect(GarnishedEffects.SPIRITED_RESISTANCE)) {
+		if (entity.hasEffect(GarnishedEffects.SPIRITED_RESISTANCE)) {
 			if (isSkeleton || isWitherSkeleton || isWither || isGhast) {
 				attacker.hurt(source, amount * 1.336745F);
 			}

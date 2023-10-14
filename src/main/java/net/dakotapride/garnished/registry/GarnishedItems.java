@@ -6,6 +6,12 @@ import com.tterrag.registrate.util.entry.ItemEntry;
 import net.dakotapride.garnished.CreateGarnished;
 import net.dakotapride.garnished.item.*;
 import net.dakotapride.garnished.item.cracked.*;
+import net.dakotapride.garnished.item.hatchet.tier.DiamondHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.GoldHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.IronHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.NetheriteHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.StoneHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.WoodenHatchetToolItem;
 import net.minecraft.world.item.Item;
 
 @SuppressWarnings({"unused"})
@@ -346,6 +352,61 @@ public class GarnishedItems {
 	public static final ItemEntry<NutNachoBowlFoodItem> NUT_NACHO_BOWL =
 			REGISTRATE.item("nut_nacho_bowl", NutNachoBowlFoodItem::new).register();
 
+	// Garnished v1.0: Desolation
+	public static final ItemEntry<BottledEnderJellyFoodItem> BOTTLED_ENDER_JELLY =
+			REGISTRATE.item("ender_jelly_bottle", BottledEnderJellyFoodItem::new).register();
+	public static final ItemEntry<ChorusCocktailItem> CHORUS_COCKTAIL =
+			REGISTRATE.item("chorus_cocktail", ChorusCocktailItem::new).register();
+	public static final ItemEntry<CosmicBrewFoodItem> COSMIC_BREW =
+			REGISTRATE.item("cosmic_brew", CosmicBrewFoodItem::new).register();
+	public static final ItemEntry<DesolateStewFoodItem> DESOLATE_STEW =
+			REGISTRATE.item("desolate_stew", DesolateStewFoodItem::new).register();
+	public static final ItemEntry<EtherealConcoctionFoodItem> ETHEREAL_CONCOCTION =
+			REGISTRATE.item("ethereal_concoction", EtherealConcoctionFoodItem::new).register();
+	public static final ItemEntry<VoidMixtureFoodItem> VOID_MIXTURE =
+			REGISTRATE.item("void_mixture", VoidMixtureFoodItem::new).register();
+	public static final ItemEntry<ChorusBowlFoodItem> CHORUS_BOWL =
+			REGISTRATE.item("chorus_bowl", ChorusBowlFoodItem::new).register();
+	public static final ItemEntry<ChorusCookieFoodItem> CHORUS_COOKIE =
+			REGISTRATE.item("chorus_cookie", ChorusCookieFoodItem::new).register();
+	public static final ItemEntry<EnderJellyFoodItem> ENDER_JELLY_BLOB =
+			REGISTRATE.item("ender_jelly", EnderJellyFoodItem::new).register();
+
+	public static final ItemEntry<IlluminatingCocktailItem> ILLUMINATING_COCKTAIL =
+			REGISTRATE.item("illuminating_cocktail", IlluminatingCocktailItem::new).register();
+
+	public static final ItemEntry<Item> VOID_DUST =
+			REGISTRATE.item("void_dust", Item::new).register();
+	public static final ItemEntry<Item> CHORUS_TUFT =
+			REGISTRATE.item("chorus_tuft", Item::new).register();
+	public static final ItemEntry<Item> HOLLOWED_CHORUS_FRUIT =
+			REGISTRATE.item("hollowed_chorus_fruit", Item::new).register();
+	public static final ItemEntry<Item> ETHEREAL_COMPOUND =
+			REGISTRATE.item("ethereal_compound", Item::new).register();
+	public static final ItemEntry<Item> COSMIC_POWDER =
+			REGISTRATE.item("cosmic_powder", Item::new).register();
+	public static final ItemEntry<DesolateSpreadItem> DESOLATE_SPREAD =
+			REGISTRATE.item("desolate_spread", DesolateSpreadItem::new).register();
+
+	public static final ItemEntry<MulchItem> MULCH =
+			REGISTRATE.item("mulch", MulchItem::new).register();
+	public static final ItemEntry<MudPieFoodItem> MUD_PIE =
+			REGISTRATE.item("mud_pie", MudPieFoodItem::new).register();
+
+	// Hatchets
+	public static final ItemEntry<WoodenHatchetToolItem> WOODEN_HATCHET =
+			REGISTRATE.item("wooden_hatchet", WoodenHatchetToolItem::new).register();
+	public static final ItemEntry<StoneHatchetToolItem> STONE_HATCHET =
+			REGISTRATE.item("stone_hatchet", StoneHatchetToolItem::new).register();
+	public static final ItemEntry<IronHatchetToolItem> IRON_HATCHET =
+			REGISTRATE.item("iron_hatchet", IronHatchetToolItem::new).register();
+	public static final ItemEntry<GoldHatchetToolItem> GOLDEN_HATCHET =
+			REGISTRATE.item("golden_hatchet", GoldHatchetToolItem::new).register();
+	public static final ItemEntry<DiamondHatchetToolItem> DIAMOND_HATCHET =
+			REGISTRATE.item("diamond_hatchet", DiamondHatchetToolItem::new).register();
+	public static final ItemEntry<NetheriteHatchetToolItem> NETHERITE_HATCHET =
+			REGISTRATE.item("netherite_hatchet", NetheriteHatchetToolItem::new).register();
+
 	// Farmer's Delight Items
 	public static final ItemEntry<PecanPieSliceFoodItem> PECAN_PIE_SLICE =
 			REGISTRATE.item("pecan_pie_slice", PecanPieSliceFoodItem::new).register();
@@ -353,6 +414,11 @@ public class GarnishedItems {
 			REGISTRATE.item("phantom_burger", PhantomBurgerFoodItem::new).register();
 	public static final ItemEntry<PhantomBeefPattyFoodItem> PHANTOM_BEEF_PATTY =
 			REGISTRATE.item("phantom_beef_patty", PhantomBeefPattyFoodItem::new).register();
+
+	public static final ItemEntry<GlowInkRollFoodItem> GLOW_INK_ROLL =
+			REGISTRATE.item("glow_ink_roll", GlowInkRollFoodItem::new).register();
+	public static final ItemEntry<GlowInkRollSliceFoodItem> GLOW_INK_ROLL_SLICE =
+			REGISTRATE.item("glow_ink_roll_slice", GlowInkRollSliceFoodItem::new).register();
 
 
 	public static void setRegister() {}
