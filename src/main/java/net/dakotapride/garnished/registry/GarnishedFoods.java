@@ -92,6 +92,9 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties MULCH = new FoodProperties.Builder().nutrition(5).saturationMod(0.3F).build();
 	public static final FoodProperties MUD_PIE = new FoodProperties.Builder().nutrition(9).saturationMod(0.2F).build();
 
+	// Snare & Tear
+	public static final FoodProperties MOLTEN_STEW = new FoodProperties.Builder().nutrition(12).saturationMod(0.6F).build();
+
 	// Farmer's Delight Foods
 	public static final FoodProperties PECAN_PIE_SLICE = new FoodProperties.Builder().nutrition(3).saturationMod(0.4F).build();
 	public static final FoodProperties PHANTOM_BURGER = new FoodProperties.Builder().nutrition(14).saturationMod(0.9F).build();
