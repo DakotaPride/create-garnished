@@ -5,18 +5,13 @@ import net.dakotapride.garnished.effect.AversionMobEffect;
 import net.dakotapride.garnished.effect.CognateMobEffect;
 import net.dakotapride.garnished.effect.FlagrantMobEffect;
 import net.dakotapride.garnished.effect.SpiritedResistanceMobEffect;
-import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistry;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.Potion;
-import net.minecraft.world.item.alchemy.PotionBrewing;
-import net.minecraft.world.item.alchemy.Potions;
-import net.minecraft.world.item.crafting.Ingredient;
 
 public class GarnishedEffects {
 

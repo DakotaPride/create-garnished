@@ -24,6 +24,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.world.level.Level;
@@ -63,11 +64,11 @@ public class GarnishedFluids {
 						createLocation("garnish", false),
 						createLocation("garnish", true)
 				)
-				.fluidProperties(p -> p.levelDecreasePerBlock(2)
+				.properties(p -> p.levelDecreasePerBlock(2)
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.liquid_garnish", 1500, 800))
+				// .fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.liquid_garnish", 1500, 800))
 				.onRegisterAfter(Registry.ITEM.key(), fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
@@ -80,11 +81,11 @@ public class GarnishedFluids {
 						createLocation("apple_cider", false),
 						createLocation("apple_cider", true)
 				)
-				.fluidProperties(p -> p.levelDecreasePerBlock(2)
+				.properties(p -> p.levelDecreasePerBlock(2)
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.apple_cider", 1500, 800))
+				// .fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.apple_cider", 1500, 800))
 				.onRegisterAfter(Registry.ITEM.key(), fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
@@ -97,11 +98,11 @@ public class GarnishedFluids {
 						createLocation("peanut_oil", false),
 						createLocation("peanut_oil", true)
 				)
-				.fluidProperties(p -> p.levelDecreasePerBlock(2)
+				.properties(p -> p.levelDecreasePerBlock(2)
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.peanut_oil", 1500, 800))
+				// .fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.peanut_oil", 1500, 800))
 				.onRegisterAfter(Registry.ITEM.key(), fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
@@ -114,11 +115,11 @@ public class GarnishedFluids {
 						createLocation("cashew_mixture", false),
 						createLocation("cashew_mixture", true)
 				)
-				.fluidProperties(p -> p.levelDecreasePerBlock(2)
+				.properties(p -> p.levelDecreasePerBlock(2)
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.cashew_mixture", 1500, 800))
+				// .fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.cashew_mixture", 1500, 800))
 				.onRegisterAfter(Registry.ITEM.key(), fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
@@ -126,28 +127,6 @@ public class GarnishedFluids {
 					FluidStorage.combinedItemApiProvider(BUCKET).register(context ->
 							new EmptyItemFluidStorage(context, bucket -> ItemVariant.of(source.getBucket()), source, FluidConstants.BUCKET));
 				}).register();
-	}
-
-
-	private record CreateAdditionsAttributeHandler(Component name, int viscosity, boolean lighterThanAir) implements FluidVariantAttributeHandler {
-		private CreateAdditionsAttributeHandler(String key, int viscosity, int density) {
-			this(Component.translatable(key), viscosity, density <= 0);
-		}
-
-		@Override
-		public Component getName(FluidVariant fluidVariant) {
-			return name.copy();
-		}
-
-		@Override
-		public int getViscosity(FluidVariant variant, @Nullable Level world) {
-			return viscosity;
-		}
-
-		@Override
-		public boolean isLighterThanAir(FluidVariant variant) {
-			return lighterThanAir;
-		}
 	}
 
 	public static BlockState whenFluidsMeet(LevelAccessor world, BlockPos pos, BlockState blockState) {

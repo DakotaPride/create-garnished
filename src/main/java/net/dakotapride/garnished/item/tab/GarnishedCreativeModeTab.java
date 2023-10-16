@@ -200,10 +200,10 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 		items.add(GarnishedBlocks.SEPIA_TRAPDOOR.asStack());
 		items.add(GarnishedBlocks.SEPIA_DOOR.asStack());
 
-		items.add(GarnishedFluids.GARNISH.getBucket().get().getDefaultInstance());
-		items.add(GarnishedFluids.APPLE_CIDER.getBucket().get().getDefaultInstance());
-		items.add(GarnishedFluids.PEANUT_OIL.getBucket().get().getDefaultInstance());
-		items.add(GarnishedFluids.CASHEW_MIXTURE.getBucket().get().getDefaultInstance());
+		items.add(GarnishedFluids.GARNISH.get().getBucket().getDefaultInstance());
+		items.add(GarnishedFluids.APPLE_CIDER.get().getBucket().getDefaultInstance());
+		items.add(GarnishedFluids.PEANUT_OIL.get().getBucket().getDefaultInstance());
+		items.add(GarnishedFluids.CASHEW_MIXTURE.get().getBucket().getDefaultInstance());
 
 		items.add(GarnishedItems.WOODEN_HATCHET.asStack());
 		items.add(GarnishedItems.STONE_HATCHET.asStack());

@@ -6,6 +6,7 @@ import net.dakotapride.garnished.registry.GarnishedFoods;
 
 import net.dakotapride.garnished.registry.GarnishedItems;
 
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.effect.MobEffects;
 
 import org.jetbrains.annotations.NotNull;
@@ -27,6 +28,6 @@ public class MeltedCinderFlourNutFoodItem extends Item implements IGarnishedItem
 
 	@Override
 	public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag isAdvanced) {
-		tooltip.add(Component.translatable(meltedCinderFlourText()).withStyle(getCinderFlourColouring()));
+		tooltip.add(new TranslatableComponent(meltedCinderFlourText()).withStyle(getCinderFlourColouring()));
 	}
 }

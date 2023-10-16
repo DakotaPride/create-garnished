@@ -59,9 +59,9 @@ public class CreateGarnished implements ModInitializer {
 				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SOUL_ROOTS_PLACED);
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.SOUL_SAND_VALLEY),
 				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SEPIA_FUNGUS_PLACED);
-		BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_END),
+		BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.HAS_END_CITY),
 				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.BARREN_ROOTS_PLACED);
-		BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_END),
+		BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.HAS_END_CITY),
 				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.CHORUS_PLANT_PLACED);
 
 		LOGGER.info("Create addon mod [{}] is loading alongside Create [{}]!", NAME, Create.VERSION);

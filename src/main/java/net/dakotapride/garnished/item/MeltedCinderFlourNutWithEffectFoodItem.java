@@ -2,6 +2,8 @@ package net.dakotapride.garnished.item;
 
 import java.util.List;
 
+import net.minecraft.network.chat.TranslatableComponent;
+
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -42,14 +44,14 @@ public class MeltedCinderFlourNutWithEffectFoodItem extends Item implements IGar
 
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
-		tooltip.add(Component.translatable(meltedCinderFlourText()).withStyle(getCinderFlourColouring()));
+		tooltip.add(new TranslatableComponent(meltedCinderFlourText()).withStyle(getCinderFlourColouring()));
 		if (getCinderEffect(stack) != null && !stack.is(GarnishedItems.EFFECT_CINDER_BUHG.get()) && !stack.is(GarnishedItems.POTENT_SPEED_CINDER_HAZELNUT.get())) {
-			tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect",
+			tooltip.add(new TranslatableComponent("text.garnished.nut.cinder_flour.effect",
 					getCinderEffect(stack).getDisplayName()).withStyle(getStandardColouring()));
 		} else if (stack.is(GarnishedItems.EFFECT_CINDER_BUHG.get())) {
-			tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect.multiple").withStyle(getStandardColouring()));
+			tooltip.add(new TranslatableComponent("text.garnished.nut.cinder_flour.effect.multiple").withStyle(getStandardColouring()));
 		} else if (stack.is(GarnishedItems.POTENT_SPEED_CINDER_HAZELNUT.get())) {
-			tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect.hazelnut").withStyle(getStandardColouring()));
+			tooltip.add(new TranslatableComponent("text.garnished.nut.cinder_flour.effect.hazelnut").withStyle(getStandardColouring()));
 		}
 	}
 }

@@ -1,17 +1,15 @@
 package net.dakotapride.garnished.gen;
 
-import io.github.fabricators_of_create.porting_lib.util.ServerLifecycleHooks;
-
-import net.minecraft.core.Registry;
-
-import net.minecraft.resources.ResourceLocation;
+import java.util.Random;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+import io.github.fabricators_of_create.porting_lib.util.ServerLifecycleHooks;
 import net.dakotapride.garnished.registry.GarnishedFeatures;
 import net.minecraft.core.Holder;
-import net.minecraft.util.RandomSource;
+import net.minecraft.core.Registry;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.grower.AbstractTreeGrower;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 
@@ -19,7 +17,7 @@ public class SepiaFungusGrower extends AbstractTreeGrower {
 
 	@Nullable
 	@Override
-	protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(@NotNull RandomSource random, boolean largeHive) {
+	protected Holder<? extends ConfiguredFeature<?, ?>> getConfiguredFeature(@NotNull Random random, boolean largeHive) {
 		ResourceLocation locateFeature = GarnishedFeatures.SEPIA_FUNGUS_TREE_CONFIGURED.location();
 		ConfiguredFeature<?, ?> feature = ServerLifecycleHooks.getCurrentServer().registryAccess()
 				.registryOrThrow(Registry.CONFIGURED_FEATURE_REGISTRY).get(locateFeature);

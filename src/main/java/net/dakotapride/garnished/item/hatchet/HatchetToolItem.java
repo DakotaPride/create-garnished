@@ -55,9 +55,7 @@ public class HatchetToolItem extends DiggerItem implements Vanishable, CustomEnc
                     .put(Blocks.WARPED_STEM, Blocks.STRIPPED_WARPED_STEM)
                     .put(Blocks.WARPED_HYPHAE, Blocks.STRIPPED_WARPED_HYPHAE)
                     .put(Blocks.CRIMSON_STEM, Blocks.STRIPPED_CRIMSON_STEM)
-                    .put(Blocks.CRIMSON_HYPHAE, Blocks.STRIPPED_CRIMSON_HYPHAE)
-                    .put(Blocks.MANGROVE_WOOD, Blocks.STRIPPED_MANGROVE_WOOD)
-                    .put(Blocks.MANGROVE_LOG, Blocks.STRIPPED_MANGROVE_LOG).build();
+                    .put(Blocks.CRIMSON_HYPHAE, Blocks.STRIPPED_CRIMSON_HYPHAE).build();
 
     public HatchetToolItem(Tier tier, float damage, float speed, Properties properties) {
         super(damage, speed, tier, GarnishedTags.MINEABLE_WITH_HATCHET, properties);
@@ -127,7 +125,6 @@ public class HatchetToolItem extends DiggerItem implements Vanishable, CustomEnc
             }
 
             level.setBlock(blockpos, optional3.get(), 11);
-            level.gameEvent(GameEvent.BLOCK_CHANGE, blockpos, GameEvent.Context.of(player, optional3.get()));
             if (player != null) {
                 itemstack.hurtAndBreak(1, player, (p_150686_) -> {
                     p_150686_.broadcastBreakEvent(pContext.getHand());

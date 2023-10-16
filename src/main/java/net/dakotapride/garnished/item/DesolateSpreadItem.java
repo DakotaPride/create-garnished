@@ -1,5 +1,7 @@
 package net.dakotapride.garnished.item;
 
+import java.util.Random;
+
 import org.jetbrains.annotations.NotNull;
 
 import net.dakotapride.garnished.registry.GarnishedFeatures;
@@ -8,7 +10,6 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -70,7 +71,7 @@ public class DesolateSpreadItem extends Item {
         return true;
     }
 
-    public void performSpread(ServerLevel level, RandomSource random, BlockPos pos) {
+    public void performSpread(ServerLevel level, Random random, BlockPos pos) {
         BlockState blockstate = level.getBlockState(pos);
         BlockPos blockpos = pos.above();
         ChunkGenerator chunkgenerator = level.getChunkSource().getGenerator();
@@ -81,7 +82,7 @@ public class DesolateSpreadItem extends Item {
 
     }
 
-    private void place(Registry<ConfiguredFeature<?, ?>> registry, ServerLevel level, ChunkGenerator generator, RandomSource random, BlockPos pos) {
+    private void place(Registry<ConfiguredFeature<?, ?>> registry, ServerLevel level, ChunkGenerator generator, Random random, BlockPos pos) {
         registry.getHolder(GarnishedFeatures.END_STONE_VEGETATION_BONEMEAL_CONFIGURED).ifPresent((p_255920_) -> {
             p_255920_.value().place(level, generator, random, pos);
         });
@@ -106,16 +107,16 @@ public class DesolateSpreadItem extends Item {
             }
 
             level.addParticle(ParticleTypes.PORTAL, (double)pos.getX() + 0.5D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.5D, 0.0D, 0.0D, 0.0D);
-            RandomSource randomsource = level.getRandom();
+			Random random = level.getRandom();
 
             for(int i = 0; i < data; ++i) {
-                double d2 = randomsource.nextGaussian() * 0.02D;
-                double d3 = randomsource.nextGaussian() * 0.02D;
-                double d4 = randomsource.nextGaussian() * 0.02D;
+                double d2 = random.nextGaussian() * 0.02D;
+                double d3 = random.nextGaussian() * 0.02D;
+                double d4 = random.nextGaussian() * 0.02D;
                 double d5 = 0.5D - d0;
-                double d6 = (double)pos.getX() + d5 + randomsource.nextDouble() * d0 * 2.0D;
-                double d7 = (double)pos.getY() + randomsource.nextDouble() * d1;
-                double d8 = (double)pos.getZ() + d5 + randomsource.nextDouble() * d0 * 2.0D;
+                double d6 = (double)pos.getX() + d5 + random.nextDouble() * d0 * 2.0D;
+                double d7 = (double)pos.getY() + random.nextDouble() * d1;
+                double d8 = (double)pos.getZ() + d5 + random.nextDouble() * d0 * 2.0D;
                 if (!level.getBlockState(new BlockPos(d6, d7, d8).below()).isAir()) {
                     level.addParticle(ParticleTypes.PORTAL, d6, d7, d8, d2, d3, d4);
                 }

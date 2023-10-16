@@ -1,6 +1,7 @@
 package net.dakotapride.garnished.item;
 
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -17,6 +18,6 @@ public class SaltedFoodItem extends Item implements IGarnishedItem {
 
 	@Override
 	public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag isAdvanced) {
-		tooltip.add(Component.translatable("text.garnished.salted_food").withStyle(getStandardColouring()));
+		tooltip.add(new TranslatableComponent("text.garnished.salted_food").withStyle(getStandardColouring()));
 	}
 }

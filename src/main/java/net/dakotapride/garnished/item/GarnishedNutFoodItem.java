@@ -2,6 +2,8 @@ package net.dakotapride.garnished.item;
 
 import java.util.List;
 
+import net.minecraft.network.chat.TranslatableComponent;
+
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -19,6 +21,6 @@ public class GarnishedNutFoodItem extends Item implements IGarnishedItem {
 
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
-		tooltip.add(Component.translatable(garnishedText()).withStyle(getStandardColouring()));
+		tooltip.add(new TranslatableComponent(garnishedText()).withStyle(getStandardColouring()));
 	}
 }
