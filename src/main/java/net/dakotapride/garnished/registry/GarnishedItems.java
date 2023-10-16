@@ -393,6 +393,12 @@ public class GarnishedItems {
 	public static final ItemEntry<MudPieFoodItem> MUD_PIE =
 			REGISTRATE.item("mud_pie", MudPieFoodItem::new).register();
 
+	// Garnished v1.1: Snare & Tear
+	public static final ItemEntry<Item> MOLTEN_REMNANT =
+			REGISTRATE.item("molten_remnant", Item::new).register();
+	public static final ItemEntry<MoltenStewFoodItem> MOLTEN_STEW =
+			REGISTRATE.item("molten_stew", MoltenStewFoodItem::new).register();
+
 	// Hatchets
 	public static final ItemEntry<WoodenHatchetToolItem> WOODEN_HATCHET =
 			REGISTRATE.item("wooden_hatchet", WoodenHatchetToolItem::new).register();
