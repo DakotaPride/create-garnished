@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "garnished:molten_remnant"
+    },
+    {
+      "item": "minecraft:magma_cream"
+    },
+    {
+      "item": "minecraft:magma_cream"
+    },
+    {
+      "item": "garnished:blaze_powder"
+    }
+  ],
+  "result": {
+    "item": "garnished:molten_stew"
+  }
+}
