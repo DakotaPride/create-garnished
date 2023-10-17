@@ -252,8 +252,8 @@
   "enchantment.garnished.salvaging": "回收",
   "enchantment.garnished.ravaging": "破裂",
 
-  "item.garnished.molten_remnant": "Molten Remnant", //
-  "item.garnished.molten_stew": "Molten Stew", //
+  "item.garnished.molten_remnant": "熔火遗物", 
+  "item.garnished.molten_stew": "熔火炖", 
 
   "block.garnished.peanut_sack": "压实坚果袋",
   "block.garnished.cashew_sack": "压实坚果袋",
