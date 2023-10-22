@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_rh",
+  "textures": {
+    "top": "garnished:block/sepia_door_top",
+    "bottom": "garnished:block/sepia_door_bottom"
+  }
+}
