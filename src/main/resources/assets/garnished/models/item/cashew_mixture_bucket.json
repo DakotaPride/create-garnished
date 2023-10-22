@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "garnished:item/casew_mixture_bucket"
+    "layer0": "garnished:item/cashew_mixture_bucket"
   }
 }

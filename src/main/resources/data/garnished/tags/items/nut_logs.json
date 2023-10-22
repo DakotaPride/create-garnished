@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "garnished:nut_log",
+    "garnished:nut_wood",
+    "#garnished:stripped_nut_logs"
+  ]
+}
