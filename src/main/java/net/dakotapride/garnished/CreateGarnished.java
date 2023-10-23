@@ -81,6 +81,8 @@ public class CreateGarnished implements ModInitializer {
 
 		StrippableBlockRegistry.register(GarnishedBlocks.SEPIA_STEM.get(), GarnishedBlocks.STRIPPED_SEPIA_STEM.get());
 		StrippableBlockRegistry.register(GarnishedBlocks.SEPIA_HYPHAE.get(), GarnishedBlocks.STRIPPED_SEPIA_HYPHAE.get());
+		StrippableBlockRegistry.register(GarnishedBlocks.NUT_LOG.get(), GarnishedBlocks.STRIPPED_NUT_LOG.get());
+		StrippableBlockRegistry.register(GarnishedBlocks.NUT_WOOD.get(), GarnishedBlocks.STRIPPED_NUT_WOOD.get());
 
 	}
 

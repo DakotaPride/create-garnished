@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top",
+  "textures": {
+    "top": "garnished:block/nut_door_top",
+    "bottom": "garnished:block/nut_door_bottom"
+  }
+}

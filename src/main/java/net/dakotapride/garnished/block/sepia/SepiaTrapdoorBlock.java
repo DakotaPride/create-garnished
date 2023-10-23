@@ -1,4 +1,4 @@
-package net.dakotapride.garnished.block;
+package net.dakotapride.garnished.block.sepia;
 
 import net.minecraft.world.level.block.TrapDoorBlock;
 

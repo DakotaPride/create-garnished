@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "tag": "garnished:nut_logs"
+    }
+  ],
+  "result": {
+    "item": "garnished:nut_planks",
+    "count": 4
+  }
+}

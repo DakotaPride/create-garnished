@@ -255,6 +255,16 @@
   "item.garnished.molten_remnant": "熔火遗物",
   "item.garnished.molten_stew": "熔火炖",
 
+  "block.garnished.nut_log": "Nut Log", //
+  "block.garnished.stripped_nut_log": "Stripped Nut Log", //
+  "block.garnished.nut_wood": "Nut Wood", //
+  "block.garnished.stripped_nut_wood": "Stripped Nut Wood", //
+  "block.garnished.nut_planks": "Nut Planks", //
+  "block.garnished.nut_slab": "Nut Slab", //
+  "block.garnished.nut_stairs": "Nut Stairs", //
+  "block.garnished.nut_door": "Nut Door", //
+  "block.garnished.nut_trapdoor": "Nuy Trapdoor", //
+
   "block.garnished.peanut_sack": "压实坚果袋",
   "block.garnished.cashew_sack": "压实坚果袋",
   "block.garnished.almond_sack": "压实坚果袋",
@@ -333,5 +343,7 @@
   "advancement.garnished.aversion_effect.title": "本还可以更糟",
   "advancement.garnished.aversion_effect.description": "被新的坚果过敏折磨",
   "advancement.garnished.senile_sweet.title": "石之沙",
-  "advancement.garnished.senile_sweet.description": "品尝衰糖"
+  "advancement.garnished.senile_sweet.description": "品尝衰糖",
+  "advancement.garnished.hatchets.title": "Cut it Out!", //
+  "advancement.garnished.hatchets.description": "Obtain any Hatchet tool" //
 }

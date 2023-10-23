@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "bark",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:stripped_nut_log"
+    }
+  },
+  "result": {
+    "item": "garnished:stripped_nut_wood",
+    "count": 3
+  }
+}
