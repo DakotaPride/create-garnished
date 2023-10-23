@@ -7,12 +7,12 @@ import com.tterrag.registrate.util.entry.BlockEntry;
 import net.dakotapride.garnished.CreateGarnished;
 import net.dakotapride.garnished.block.EnderJellyBlock;
 import net.dakotapride.garnished.block.NutSackBlock;
-import net.dakotapride.garnished.block.SepiaDoorBlock;
-import net.dakotapride.garnished.block.SepiaStairsBlock;
-import net.dakotapride.garnished.block.SepiaStemBlock;
-import net.dakotapride.garnished.block.SepiaTrapdoorBlock;
 import net.dakotapride.garnished.block.SolidifiedGarnishBlock;
 import net.dakotapride.garnished.block.SoulPlantBlock;
+import net.dakotapride.garnished.block.nut.NutDoorBlock;
+import net.dakotapride.garnished.block.nut.NutLogBlock;
+import net.dakotapride.garnished.block.nut.NutStairsBlock;
+import net.dakotapride.garnished.block.nut.NutTrapdoorBlock;
 import net.dakotapride.garnished.block.sapling.AlmondSaplingBlock;
 import net.dakotapride.garnished.block.sapling.BuhgSaplingBlock;
 import net.dakotapride.garnished.block.sapling.CashewSaplingBlock;
@@ -23,6 +23,10 @@ import net.dakotapride.garnished.block.sapling.PecanSaplingBlock;
 import net.dakotapride.garnished.block.sapling.PistachioSaplingBlock;
 import net.dakotapride.garnished.block.sapling.SepiaFungusBlock;
 import net.dakotapride.garnished.block.sapling.WalnutSaplingBlock;
+import net.dakotapride.garnished.block.sepia.SepiaDoorBlock;
+import net.dakotapride.garnished.block.sepia.SepiaStairsBlock;
+import net.dakotapride.garnished.block.sepia.SepiaStemBlock;
+import net.dakotapride.garnished.block.sepia.SepiaTrapdoorBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.LeavesBlock;
@@ -324,6 +328,34 @@ public class GarnishedBlocks {
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.OAK_WOOD).register();
+
+	public static final BlockEntry<Block> NUT_PLANKS =
+			REGISTRATE.block("nut_planks", Block::new)
+					.initialProperties(() -> Blocks.OAK_PLANKS).simpleItem().register();
+	public static final BlockEntry<NutLogBlock> NUT_LOG =
+			REGISTRATE.block("nut_log", NutLogBlock::new)
+					.initialProperties(() -> Blocks.OAK_LOG).simpleItem().register();
+	public static final BlockEntry<NutLogBlock> STRIPPED_NUT_LOG =
+			REGISTRATE.block("stripped_nut_log", NutLogBlock::new)
+					.initialProperties(() -> Blocks.STRIPPED_OAK_LOG).simpleItem().register();
+	public static final BlockEntry<NutLogBlock> NUT_WOOD =
+			REGISTRATE.block("nut_wood", NutLogBlock::new)
+					.initialProperties(() -> Blocks.OAK_WOOD).simpleItem().register();
+	public static final BlockEntry<NutLogBlock> STRIPPED_NUT_WOOD =
+			REGISTRATE.block("stripped_nut_wood", NutLogBlock::new)
+					.initialProperties(() -> Blocks.STRIPPED_OAK_WOOD).simpleItem().register();
+	public static final BlockEntry<SlabBlock> NUT_SLAB =
+			REGISTRATE.block("nut_slab", SlabBlock::new)
+					.initialProperties(() -> Blocks.OAK_SLAB).simpleItem().register();
+	public static final BlockEntry<NutStairsBlock> NUT_STAIRS =
+			REGISTRATE.block("nut_stairs", NutStairsBlock::new)
+					.initialProperties(() -> Blocks.OAK_STAIRS).simpleItem().register();
+	public static final BlockEntry<NutDoorBlock> NUT_DOOR =
+			REGISTRATE.block("nut_door", NutDoorBlock::new)
+					.initialProperties(() -> Blocks.OAK_DOOR).simpleItem().register();
+	public static final BlockEntry<NutTrapdoorBlock> NUT_TRAPDOOR =
+			REGISTRATE.block("nut_trapdoor", NutTrapdoorBlock::new)
+					.initialProperties(() -> Blocks.OAK_TRAPDOOR).simpleItem().register();
 
 	public static void setRegister() {}
 }

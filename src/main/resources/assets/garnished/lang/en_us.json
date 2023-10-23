@@ -255,6 +255,16 @@
   "item.garnished.molten_remnant": "Molten Remnant",
   "item.garnished.molten_stew": "Molten Stew",
 
+  "block.garnished.nut_log": "Nut Log",
+  "block.garnished.stripped_nut_log": "Stripped Nut Log",
+  "block.garnished.nut_wood": "Nut Wood",
+  "block.garnished.stripped_nut_wood": "Stripped Nut Wood",
+  "block.garnished.nut_planks": "Nut Planks",
+  "block.garnished.nut_slab": "Nut Slab",
+  "block.garnished.nut_stairs": "Nut Stairs",
+  "block.garnished.nut_door": "Nut Door",
+  "block.garnished.nut_trapdoor": "Nut Trapdoor",
+
   "block.garnished.peanut_sack": "Compacted Nut Sack",
   "block.garnished.cashew_sack": "Compacted Nut Sack",
   "block.garnished.almond_sack": "Compacted Nut Sack",
@@ -333,5 +343,7 @@
   "advancement.garnished.aversion_effect.title": "Could've Been Worse",
   "advancement.garnished.aversion_effect.description": "Suffer from your new nut allergy",
   "advancement.garnished.senile_sweet.title": "Stoned Desserts",
-  "advancement.garnished.senile_sweet.description": "Consume a Senile Sweet"
+  "advancement.garnished.senile_sweet.description": "Consume a Senile Sweet",
+  "advancement.garnished.hatchets.title": "Cut it Out!",
+  "advancement.garnished.hatchets.description": "Obtain any Hatchet tool"
 }

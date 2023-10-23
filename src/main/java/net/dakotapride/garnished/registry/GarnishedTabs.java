@@ -220,6 +220,16 @@ public class GarnishedTabs {
 			output.accept(GarnishedBlocks.SEPIA_TRAPDOOR.asStack());
 			output.accept(GarnishedBlocks.SEPIA_DOOR.asStack());
 
+			output.accept(GarnishedBlocks.NUT_LOG.asStack());
+			output.accept(GarnishedBlocks.STRIPPED_NUT_LOG.asStack());
+			output.accept(GarnishedBlocks.NUT_WOOD.asStack());
+			output.accept(GarnishedBlocks.STRIPPED_NUT_WOOD.asStack());
+			output.accept(GarnishedBlocks.NUT_PLANKS.asStack());
+			output.accept(GarnishedBlocks.NUT_SLAB.asStack());
+			output.accept(GarnishedBlocks.NUT_STAIRS.asStack());
+			output.accept(GarnishedBlocks.NUT_TRAPDOOR.asStack());
+			output.accept(GarnishedBlocks.NUT_DOOR.asStack());
+
 			output.accept(GarnishedFluids.GARNISH.getBucket().get().getDefaultInstance());
 			output.accept(GarnishedFluids.APPLE_CIDER.getBucket().get().getDefaultInstance());
 			output.accept(GarnishedFluids.PEANUT_OIL.getBucket().get().getDefaultInstance());
