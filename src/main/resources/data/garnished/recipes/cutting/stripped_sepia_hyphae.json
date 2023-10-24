@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "item": "garnished:sepia_hyphae"
+    }
+  ],
+  "processingTime": 50,
+  "results": [
+    {
+      "item": "garnished:stripped_sepia_hyphae"
+    }
+  ]
+}
