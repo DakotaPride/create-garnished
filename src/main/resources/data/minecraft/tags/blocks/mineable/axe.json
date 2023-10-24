@@ -2,12 +2,17 @@
   "replace": false,
   "values": [
     "#garnished:sepia_stems",
-    "#garnished:nut_logs",
     "garnished:sepia_planks",
     "garnished:sepia_slab",
     "garnished:sepia_stairs",
     "garnished:sepia_door",
     "garnished:sepia_trapdoor",
+    "#garnished:nut_logs",
+    "garnished:nut_planks",
+    "garnished:nut_slab",
+    "garnished:nut_stairs",
+    "garnished:nut_door",
+    "garnished:nut_trapdoor",
     "garnished:garnished_nut_block",
     "garnished:ungarnished_nut_block"
   ]
