@@ -5,6 +5,6 @@ import net.minecraft.world.item.Item;
 
 public class MudPieFoodItem extends Item implements IGarnishedItem {
 	public MudPieFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.MUD_PIE));
+		super(properties.food(GarnishedFoods.MUD_PIE).stacksTo(1));
 	}
 }
