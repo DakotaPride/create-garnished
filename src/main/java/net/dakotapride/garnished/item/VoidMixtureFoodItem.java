@@ -1,5 +1,8 @@
 package net.dakotapride.garnished.item;
 
+import net.dakotapride.garnished.registry.GarnishedEffects;
+import net.minecraft.world.effect.MobEffectInstance;
+
 import org.jetbrains.annotations.NotNull;
 
 import net.dakotapride.garnished.registry.GarnishedFoods;
@@ -27,6 +30,13 @@ public class VoidMixtureFoodItem extends Item implements IGarnishedItem {
 		if (livingEntity instanceof ServerPlayer serverPlayer) {
 			CriteriaTriggers.CONSUME_ITEM.trigger(serverPlayer, stack);
 			serverPlayer.awardStat(Stats.ITEM_USED.get(this));
+		}
+
+		if (livingEntity instanceof ServerPlayer serverPlayer && getWrappedTangleEffectChance()) {
+			CriteriaTriggers.CONSUME_ITEM.trigger(serverPlayer, stack);
+			serverPlayer.awardStat(Stats.ITEM_USED.get(this));
+
+			livingEntity.addEffect(new MobEffectInstance(GarnishedEffects.COGNATE, getCognateEffectBaseTick, 1));
 		}
 
 		if (stack.isEmpty()) {
