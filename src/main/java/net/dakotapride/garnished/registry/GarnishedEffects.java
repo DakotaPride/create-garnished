@@ -10,6 +10,7 @@ import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.Items;
@@ -39,8 +40,8 @@ public class GarnishedEffects {
 	public static final Potion FLAGRANT_POTION = potion("flagrant",
 			new Potion("flagrant", new MobEffectInstance(FLAGRANT, 2400)));
 
-	public static Potion BLINDNESS_POTION = vanillaPotion("blindness", new Potion(
-			new MobEffectInstance(AVERSION, 2400)));
+	public static Potion BLINDNESS_POTION = vanillaPotion("blindness",
+			new Potion(new MobEffectInstance(MobEffects.BLINDNESS, 2400)));
 
 
 	private static MobEffect effect(String key, MobEffect effect) {
