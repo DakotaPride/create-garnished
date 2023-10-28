@@ -36,7 +36,7 @@ public class GarnishedEffects {
 	public static final Potion FLAGRANT_POTION = potion("flagrant",
 			new Potion(new MobEffectInstance(FLAGRANT, 2400)));
 
-	public static Potion BLINDNESS_POTION = vanillaPotion("blindness",
+	public static final Potion BLINDNESS_POTION = vanillaPotion("blindness",
 			new Potion(new MobEffectInstance(MobEffects.BLINDNESS, 2400)));
 
 
