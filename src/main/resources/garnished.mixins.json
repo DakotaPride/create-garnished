@@ -6,7 +6,8 @@
   "mixins": [
     "EnderManMixin",
     "ItemStackMixin",
-    "LivingEntityMixin"
+    "LivingEntityMixin",
+    "PotionBrewingMixin"
   ],
   "client": [
     "BlockColoursMixin",
