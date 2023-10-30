@@ -1,0 +1,20 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "c:crops/peanuts"
+    }
+  ],
+  "processingTime": 150,
+  "results": [
+    {
+      "count": 1,
+      "item": "garnished:cracked_peanut"
+    },
+    {
+      "chance": 0.15,
+      "item": "garnished:cracked_peanut",
+      "count": 2
+    }
+  ]
+}
