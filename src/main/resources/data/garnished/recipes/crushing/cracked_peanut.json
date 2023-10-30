@@ -1,5 +1,5 @@
 {
-  "type": "create:milling",
+  "type": "create:crushing",
   "ingredients": [
     {
       "tag": "c:crops/peanuts"
@@ -12,9 +12,9 @@
       "item": "garnished:cracked_peanut"
     },
     {
-      "chance": 0.15,
+      "chance": 0.25,
       "item": "garnished:cracked_peanut",
-      "count": 2
+      "count": 1
     }
   ]
 }
