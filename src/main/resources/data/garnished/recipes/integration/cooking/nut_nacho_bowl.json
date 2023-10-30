@@ -27,7 +27,7 @@
       "item": "garnished:nut_nacho"
     },
     {
-      "item": "garnished:almond_cheese"
+      "tag": "c:cheese"
     }
   ],
   "recipe_book_tab": "meals",

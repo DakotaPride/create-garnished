@@ -1,7 +1,7 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "garnished:almond_cheese"
+    "item": "c:cheese"
   },
   "loops": 1,
   "results": [
