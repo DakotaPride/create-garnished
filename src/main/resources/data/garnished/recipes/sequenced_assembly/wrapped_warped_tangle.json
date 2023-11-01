@@ -33,7 +33,7 @@
           "item": "garnished:incomplete_tangle"
         },
         {
-          "item": "c:cheese"
+          "tag": "c:cheese"
         }
       ],
       "results": [
