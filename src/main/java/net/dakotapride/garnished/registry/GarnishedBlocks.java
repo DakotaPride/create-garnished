@@ -27,8 +27,11 @@ import net.dakotapride.garnished.block.sapling.PecanSaplingBlock;
 import net.dakotapride.garnished.block.sapling.PistachioSaplingBlock;
 import net.dakotapride.garnished.block.sapling.SepiaFungusBlock;
 import net.dakotapride.garnished.block.sapling.WalnutSaplingBlock;
+import net.dakotapride.garnished.block.sepia.SepiaButtonBlock;
 import net.dakotapride.garnished.block.sepia.SepiaDoorBlock;
+import net.dakotapride.garnished.block.sepia.SepiaFenceGateBlock;
 import net.dakotapride.garnished.block.sepia.SepiaHangingSignBlock;
+import net.dakotapride.garnished.block.sepia.SepiaPressurePlateBlock;
 import net.dakotapride.garnished.block.sepia.SepiaSignBlock;
 import net.dakotapride.garnished.block.sepia.SepiaStairsBlock;
 import net.dakotapride.garnished.block.sepia.SepiaStemBlock;
@@ -37,6 +40,7 @@ import net.dakotapride.garnished.block.sepia.SepiaWallHangingSignBlock;
 import net.dakotapride.garnished.block.sepia.SepiaWallSignBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
@@ -316,6 +320,30 @@ public class GarnishedBlocks {
 			REGISTRATE.block("sepia_wall_hanging_sign", SepiaWallHangingSignBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(() -> Blocks.CRIMSON_WALL_HANGING_SIGN)
+					.properties(p -> p.mapColor(MapColor.TERRACOTTA_BROWN)).register();
+	public static final BlockEntry<FenceBlock> SEPIA_FENCE =
+			REGISTRATE.block("sepia_fence", FenceBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.CRIMSON_FENCE)
+					.properties(p -> p.mapColor(MapColor.TERRACOTTA_BROWN)).register();
+	public static final BlockEntry<SepiaFenceGateBlock> SEPIA_FENCE_GATE =
+			REGISTRATE.block("sepia_fence_gate", SepiaFenceGateBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.CRIMSON_FENCE_GATE)
+					.properties(p -> p.mapColor(MapColor.TERRACOTTA_BROWN)).register();
+	public static final BlockEntry<SepiaButtonBlock> SEPIA_BUTTON =
+			REGISTRATE.block("sepia_button", SepiaButtonBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.CRIMSON_BUTTON)
+					.properties(p -> p.mapColor(MapColor.TERRACOTTA_BROWN)).register();
+	public static final BlockEntry<SepiaPressurePlateBlock> SEPIA_PRESSURE_PLATE =
+			REGISTRATE.block("sepia_pressure_plate", SepiaPressurePlateBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.CRIMSON_PRESSURE_PLATE)
 					.properties(p -> p.mapColor(MapColor.TERRACOTTA_BROWN)).register();
 
 	public static final BlockEntry<SoulPlantBlock> SOUL_ROOTS =
