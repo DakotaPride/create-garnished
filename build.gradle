@@ -25,7 +25,7 @@ repositories {
 	maven { url = "https://maven.parchmentmc.org" } // Parchment mappings
 	maven { url = "https://maven.quiltmc.org/repository/release" } // Quilt Mappings
 	maven { url = "https://api.modrinth.com/maven" } // LazyDFU
-	maven { url = "https://maven.terraformersmc.com/releases/" } // Mod Menu
+	maven { url = "https://maven.terraformersmc.com/releases/" } // Mod Menu, Wood API
 	maven { url = "https://mvn.devos.one/snapshots/" } // Create, Porting Lib, Forge Tags, Milk Lib, Registrate
 	maven { url = "https://cursemaven.com" } // Forge Config API Port
 	maven { url = "https://maven.jamieswhiteshirt.com/libs-release" } // Reach Entity Attributes
@@ -48,6 +48,9 @@ dependencies {
 
 	// Create - dependencies are added transitively
 	modImplementation("com.simibubi.create:create-fabric-${minecraft_version}:${create_version}")
+
+	modImplementation "com.terraformersmc.terraform-api:terraform-wood-api-v1:7.0.1"
+	include "com.terraformersmc.terraform-api:terraform-wood-api-v1:7.0.1"
 
 	// Development QOL
 	modLocalRuntime("maven.modrinth:lazydfu:${lazydfu_version}")
