@@ -4,6 +4,9 @@
   "package": "net.dakotapride.garnished.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "BoatMixin",
+    "BoatTypeMixin",
+    "ChestBoatMixin",
     "EnderManMixin",
     "ItemStackMixin",
     "LivingEntityMixin"

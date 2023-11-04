@@ -52,8 +52,6 @@ public class GarnishedEffects {
 		return Registry.register(BuiltInRegistries.POTION, new ResourceLocation(key), potion);
 	}
 
-	public static void setRegister() {
-
-	}
+	public static void setRegister() {}
 
 }
