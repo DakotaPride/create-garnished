@@ -17,7 +17,7 @@ public class BoatMixin {
 	//CREDIT TO nyuppo/fabric-boat-example ON GITHUB
 
 	@Inject(method = "getDropItem", at = @At("RETURN"), cancellable = true)
-	public void wilderWild$getModdedBoats(CallbackInfoReturnable<Item> info) {
+	public void getDropItem(CallbackInfoReturnable<Item> info) {
 		var boat = Boat.class.cast(this);
 		if (boat.getVariant() == GarnishedBoatTypes.NUT) {
 			info.setReturnValue(GarnishedItems.NUT_BOAT.get());

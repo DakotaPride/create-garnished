@@ -40,7 +40,7 @@ public class BoatTypeMixin {
 			opcode = Opcodes.PUTSTATIC,
 			target = "Lnet/minecraft/world/entity/vehicle/Boat$Type;$VALUES:[Lnet/minecraft/world/entity/vehicle/Boat$Type;",
 			shift = At.Shift.AFTER))
-	private static void wilderWild$addCustomBoatType(CallbackInfo info) {
+	private static void addType(CallbackInfo info) {
 		var types = new ArrayList<>(Arrays.asList($VALUES));
 		var last = types.get(types.size() - 1);
 
