@@ -1,6 +1,7 @@
 package net.dakotapride.garnished.registry;
 
 import com.simibubi.create.foundation.data.CreateRegistrate;
+import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
 import com.tterrag.registrate.util.entry.ItemEntry;
 
 import net.dakotapride.garnished.CreateGarnished;
@@ -425,6 +426,8 @@ public class GarnishedItems {
 			REGISTRATE.item("nut_sign", NutSignItem::new).register();
 	public static final ItemEntry<NutSignItem.Hanging> NUT_HANGING_SIGN =
 			REGISTRATE.item("nut_hanging_sign", NutSignItem.Hanging::new).register();
+
+	// v1.3
 
 	// Farmer's Delight Items
 	public static final ItemEntry<PecanPieSliceFoodItem> PECAN_PIE_SLICE =

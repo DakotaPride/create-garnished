@@ -9,9 +9,12 @@ import net.dakotapride.garnished.block.EnderJellyBlock;
 import net.dakotapride.garnished.block.NutSackBlock;
 import net.dakotapride.garnished.block.SolidifiedGarnishBlock;
 import net.dakotapride.garnished.block.SoulPlantBlock;
+import net.dakotapride.garnished.block.nut.NutButtonBlock;
 import net.dakotapride.garnished.block.nut.NutDoorBlock;
+import net.dakotapride.garnished.block.nut.NutFenceGateBlock;
 import net.dakotapride.garnished.block.nut.NutHangingSignBlock;
 import net.dakotapride.garnished.block.nut.NutLogBlock;
+import net.dakotapride.garnished.block.nut.NutPressurePlateBlock;
 import net.dakotapride.garnished.block.nut.NutSignBlock;
 import net.dakotapride.garnished.block.nut.NutStairsBlock;
 import net.dakotapride.garnished.block.nut.NutTrapdoorBlock;
@@ -418,22 +421,46 @@ public class GarnishedBlocks {
 			REGISTRATE.block("nut_sign", NutSignBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(() -> Blocks.OAK_SIGN)
-					.properties(p -> p.mapColor(MapColor.TERRACOTTA_BROWN)).register();
+					.properties(p -> p.mapColor(MapColor.COLOR_LIGHT_GREEN)).register();
 	public static final BlockEntry<NutWallSignBlock> NUT_WALL_SIGN =
 			REGISTRATE.block("nut_wall_sign", NutWallSignBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(() -> Blocks.OAK_WALL_SIGN)
-					.properties(p -> p.mapColor(MapColor.TERRACOTTA_BROWN)).register();
+					.properties(p -> p.mapColor(MapColor.COLOR_LIGHT_GREEN)).register();
 	public static final BlockEntry<NutHangingSignBlock> NUT_HANGING_SIGN =
 			REGISTRATE.block("nut_hanging_sign", NutHangingSignBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(() -> Blocks.OAK_HANGING_SIGN)
-					.properties(p -> p.mapColor(MapColor.TERRACOTTA_BROWN)).register();
+					.properties(p -> p.mapColor(MapColor.COLOR_LIGHT_GREEN)).register();
 	public static final BlockEntry<NutWallHangingSignBlock> NUT_WALL_HANGING_SIGN =
 			REGISTRATE.block("nut_wall_hanging_sign", NutWallHangingSignBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(() -> Blocks.OAK_WALL_HANGING_SIGN)
-					.properties(p -> p.mapColor(MapColor.TERRACOTTA_BROWN)).register();
+					.properties(p -> p.mapColor(MapColor.COLOR_LIGHT_GREEN)).register();
+	public static final BlockEntry<FenceBlock> NUT_FENCE =
+			REGISTRATE.block("nut_fence", FenceBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.OAK_FENCE)
+					.properties(p -> p.mapColor(MapColor.COLOR_LIGHT_GREEN)).register();
+	public static final BlockEntry<NutFenceGateBlock> NUT_FENCE_GATE =
+			REGISTRATE.block("nut_fence_gate", NutFenceGateBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.OAK_FENCE_GATE)
+					.properties(p -> p.mapColor(MapColor.COLOR_LIGHT_GREEN)).register();
+	public static final BlockEntry<NutButtonBlock> NUT_BUTTON =
+			REGISTRATE.block("nut_button", NutButtonBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.OAK_BUTTON)
+					.properties(p -> p.mapColor(MapColor.COLOR_LIGHT_GREEN)).register();
+	public static final BlockEntry<NutPressurePlateBlock> NUT_PRESSURE_PLATE =
+			REGISTRATE.block("nut_pressure_plate", NutPressurePlateBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.OAK_PRESSURE_PLATE)
+					.properties(p -> p.mapColor(MapColor.COLOR_LIGHT_GREEN)).register();
 
 	public static void setRegister() {}
 }
