@@ -1,5 +1,7 @@
 package net.dakotapride.garnished;
 
+import com.terraformersmc.terraform.sign.SpriteIdentifierRegistry;
+
 import net.dakotapride.garnished.registry.GarnishedBlocks;
 import net.dakotapride.garnished.registry.GarnishedFluids;
 import net.fabricmc.api.ClientModInitializer;
@@ -9,15 +11,31 @@ import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.color.item.ItemColor;
 import net.minecraft.client.color.item.ItemColors;
 import net.minecraft.client.renderer.BiomeColors;
+import net.minecraft.client.resources.model.Material;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.Sheets;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.FoliageColor;
 import net.minecraft.world.level.block.state.BlockState;
 
 public class CreateGarnishedClient implements ClientModInitializer {
+
+	public static String sepia = "sepia";
+	public static String nut = "nut";
+
+	public static ResourceLocation signResourceLocation(String type) {
+		return new ResourceLocation(CreateGarnished.ID, "entity/signs/" + type);
+	}
+
 	@Override
 	public void onInitializeClient() {
+		SpriteIdentifierRegistry.INSTANCE.addIdentifier(new Material(
+				Sheets.SIGN_SHEET, signResourceLocation(sepia)));
+
+		SpriteIdentifierRegistry.INSTANCE.addIdentifier(new Material(
+				Sheets.SIGN_SHEET, signResourceLocation(nut)));
 
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.NUT_PLANT.get(), RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.NUT_LEAVES.get(), RenderType.cutout());
