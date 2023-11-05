@@ -9,8 +9,11 @@ import net.dakotapride.garnished.block.EnderJellyBlock;
 import net.dakotapride.garnished.block.NutSackBlock;
 import net.dakotapride.garnished.block.SolidifiedGarnishBlock;
 import net.dakotapride.garnished.block.SoulPlantBlock;
+import net.dakotapride.garnished.block.nut.NutButtonBlock;
 import net.dakotapride.garnished.block.nut.NutDoorBlock;
+import net.dakotapride.garnished.block.nut.NutFenceGateBlock;
 import net.dakotapride.garnished.block.nut.NutLogBlock;
+import net.dakotapride.garnished.block.nut.NutPressurePlateBlock;
 import net.dakotapride.garnished.block.nut.NutSignBlock;
 import net.dakotapride.garnished.block.nut.NutStairsBlock;
 import net.dakotapride.garnished.block.nut.NutTrapdoorBlock;
@@ -431,20 +434,20 @@ public class GarnishedBlocks {
 					.simpleItem()
 					.initialProperties(() -> Blocks.OAK_FENCE)
 					.properties(p -> p.color(MaterialColor.COLOR_LIGHT_GREEN)).register();
-	public static final BlockEntry<SepiaFenceGateBlock> NUT_FENCE_GATE =
-			REGISTRATE.block("nut_fence_gate", SepiaFenceGateBlock::new)
+	public static final BlockEntry<NutFenceGateBlock> NUT_FENCE_GATE =
+			REGISTRATE.block("nut_fence_gate", NutFenceGateBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.OAK_FENCE_GATE)
 					.properties(p -> p.color(MaterialColor.COLOR_LIGHT_GREEN)).register();
-	public static final BlockEntry<SepiaButtonBlock> NUT_BUTTON =
-			REGISTRATE.block("nut_button", SepiaButtonBlock::new)
+	public static final BlockEntry<NutButtonBlock> NUT_BUTTON =
+			REGISTRATE.block("nut_button", NutButtonBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.OAK_BUTTON)
 					.properties(p -> p.color(MaterialColor.COLOR_LIGHT_GREEN)).register();
-	public static final BlockEntry<SepiaPressurePlateBlock> NUT_PRESSURE_PLATE =
-			REGISTRATE.block("nut_pressure_plate", SepiaPressurePlateBlock::new)
+	public static final BlockEntry<NutPressurePlateBlock> NUT_PRESSURE_PLATE =
+			REGISTRATE.block("nut_pressure_plate", NutPressurePlateBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.OAK_PRESSURE_PLATE)
