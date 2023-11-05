@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "boat",
+  "pattern": [
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:nut_planks"
+    }
+  },
+  "result": {
+    "item": "garnished:nut_boat"
+  }
+}
