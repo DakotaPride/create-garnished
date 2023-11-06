@@ -1,7 +1,6 @@
 package net.dakotapride.garnished.registry;
 
 import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
 import com.tterrag.registrate.util.entry.ItemEntry;
 
 import net.dakotapride.garnished.CreateGarnished;
@@ -13,6 +12,15 @@ import net.dakotapride.garnished.item.hatchet.tier.IronHatchetToolItem;
 import net.dakotapride.garnished.item.hatchet.tier.NetheriteHatchetToolItem;
 import net.dakotapride.garnished.item.hatchet.tier.StoneHatchetToolItem;
 import net.dakotapride.garnished.item.hatchet.tier.WoodenHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.GildedNetheriteHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.RoseGoldHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.WardenHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.mythicupgrades.AmetrineHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.mythicupgrades.AquamarineHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.mythicupgrades.JadeHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.mythicupgrades.RubyHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.mythicupgrades.SapphireHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.mythicupgrades.TopazHatchetToolItem;
 import net.dakotapride.garnished.item.wood.NutBoatItem;
 import net.dakotapride.garnished.item.wood.NutChestBoatItem;
 import net.dakotapride.garnished.item.wood.NutSignItem;
@@ -446,6 +454,28 @@ public class GarnishedItems {
 			REGISTRATE.item("glow_ink_roll", GlowInkRollFoodItem::new).register();
 	public static final ItemEntry<GlowInkRollSliceFoodItem> GLOW_INK_ROLL_SLICE =
 			REGISTRATE.item("glow_ink_roll_slice", GlowInkRollSliceFoodItem::new).register();
+
+	// Integrated Hatchets
+	public static final ItemEntry<JadeHatchetToolItem> JADE_HATCHET =
+			REGISTRATE.item("jade_hatchet", JadeHatchetToolItem::new).register();
+	public static final ItemEntry<TopazHatchetToolItem> TOPAZ_HATCHET =
+			REGISTRATE.item("topaz_hatchet", TopazHatchetToolItem::new).register();
+	public static final ItemEntry<SapphireHatchetToolItem> SAPPHIRE_HATCHET =
+			REGISTRATE.item("sapphire_hatchet", SapphireHatchetToolItem::new).register();
+	public static final ItemEntry<RubyHatchetToolItem> RUBY_HATCHET =
+			REGISTRATE.item("ruby_hatchet", RubyHatchetToolItem::new).register();
+	public static final ItemEntry<AmetrineHatchetToolItem> AMETRINE_HATCHET =
+			REGISTRATE.item("ametrine_hatchet", AmetrineHatchetToolItem::new).register();
+	public static final ItemEntry<AquamarineHatchetToolItem> AQUAMARINE_HATCHET =
+			REGISTRATE.item("aquamarine_hatchet", AquamarineHatchetToolItem::new).register();
+
+	public static final ItemEntry<WardenHatchetToolItem> WARDEN_HATCHET =
+			REGISTRATE.item("warden_hatchet", WardenHatchetToolItem::new).register();
+
+	public static final ItemEntry<RoseGoldHatchetToolItem> ROSE_GOLD_HATCHET =
+			REGISTRATE.item("rose_gold_hatchet", RoseGoldHatchetToolItem::new).register();
+	public static final ItemEntry<GildedNetheriteHatchetToolItem> GILDED_NETHERITE_HATCHET =
+			REGISTRATE.item("gilded_netherite_hatchet", GildedNetheriteHatchetToolItem::new).register();
 
 
 	public static void setRegister() {}

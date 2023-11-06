@@ -252,6 +252,18 @@
   "enchantment.garnished.salvaging": "回收",
   "enchantment.garnished.ravaging": "破裂",
 
+  "item.garnished.jade_hatchet": "Jade Hatchet",//
+  "item.garnished.topaz_hatchet": "Topaz Hatchet", //
+  "item.garnished.ametrine_hatchet": "Ametrine Hatchet", //
+  "item.garnished.aquamarine_hatchet": "Aquamarine Hatchet", //
+  "item.garnished.sapphire_hatchet": "Sapphire Hatchet", //
+  "item.garnished.warden_hatchet": "Warden Hatchet", //
+  "item.garnished.rose_gold_hatchet": "Rose Gold Hatchet", //
+  "item.garnished.gilded_netherite_hatchet": "Gilded Netherite Hatchet", //
+  "text.garnished.integration.deeperdarker.missing": "Please install Deeper & Darker!", //
+  "text.garnished.integration.additionaladditions.missing": "Please install Additional Additions!", //
+  "text.garnished.integration.mythicupgrades.missing": "Please install Mythic Upgrades!", //
+
   "item.garnished.molten_remnant": "熔火遗物",
   "item.garnished.molten_stew": "熔火炖",
 

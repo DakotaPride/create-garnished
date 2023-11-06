@@ -18,6 +18,23 @@ public class GarnishedTags {
 	public static final TagKey<EntityType<?>> IS_AFFECTED_BY_SALVAGING = commonEntityTypeTag("affected_by/salvaging");
 	public static final TagKey<EntityType<?>> IS_AFFECTED_BY_RAVAGING = commonEntityTypeTag("affected_by/ravaging");
 
+	// Integrated Tags
+	// public static TagKey<Item> ZINC_INGOTS = commonItemTag("ingots/zinc");
+	//	public static TagKey<Item> BRASS_INGOTS = commonItemTag("ingots/brass");
+	public static TagKey<Item> COPPER_INGOTS = commonItemTag("ingots/copper");
+	//	public static TagKey<Item> ROSE_QUARTZ = commonItemTag("rose_quartz");
+	//	public static TagKey<Item> EXPERIENCE_REPAIRABLE_ITEMS = commonItemTag("experience_heaps");
+	//	public static TagKey<Item> BLAZING_REPAIRABLE_ITEMS = commonItemTag("blazing_repairable_items");
+
+	public static TagKey<Item> WARDEN_REPAIRABLE_ITEMS = commonItemTag("shards/warden");
+
+	 public static TagKey<Item> JADE_GEMS = commonItemTag("gems/jade");
+	 public static TagKey<Item> TOPAZ_GEMS = commonItemTag("gems/topaz");
+	 public static TagKey<Item> AQUAMARINE_GEMS = commonItemTag("gems/aquamarine");
+	 public static TagKey<Item> SAPPHIRE_GEMS = commonItemTag("gems/sapphire");
+	 public static TagKey<Item> RUBY_GEMS = commonItemTag("gems/ruby");
+	 public static TagKey<Item> AMETRINE_GEMS = commonItemTag("gems/ametrine");
+
 	private static TagKey<Item> itemTag(String name) {
 		return TagKey.create(BuiltInRegistries.ITEM.key(), new ResourceLocation(CreateGarnished.ID, name));
 	}
