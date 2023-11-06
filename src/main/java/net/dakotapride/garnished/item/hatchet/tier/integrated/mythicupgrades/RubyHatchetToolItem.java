@@ -18,6 +18,6 @@ import java.util.List;
 
 public class RubyHatchetToolItem extends MythicUpgradesHatchetToolItem {
 	public RubyHatchetToolItem(Properties properties) {
-		super(IntegratedMaterials.RUBY, properties);
+		super(-2.3F, IntegratedMaterials.RUBY, properties);
 	}
 }

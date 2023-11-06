@@ -17,6 +17,6 @@ import java.util.List;
 
 public class SapphireHatchetToolItem extends MythicUpgradesHatchetToolItem {
 	public SapphireHatchetToolItem(Properties properties) {
-		super(IntegratedMaterials.SAPPHIRE, properties);
+		super(IntegratedMaterials.SAPPHIRE, properties, 6);
 	}
 }

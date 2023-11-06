@@ -264,6 +264,12 @@
   "text.garnished.integration.deeperdarker.missing": "Please install Deeper & Darker!",
   "text.garnished.integration.additionaladditions.missing": "Please install Additional Additions!",
   "text.garnished.integration.mythicupgrades.missing": "Please install Mythic Upgrades!",
+  "garnished.aquamarine_hatchet.description": "Freezes enemy on hit.",
+  "garnished.ametrine_hatchet.description": "Levitates enemy on hit.",
+  "garnished.topaz_hatchet.description": "Has 3x durability as netherite axe.",
+  "garnished.ruby_hatchet.description": "Freezes enemy on hit.",
+  "garnished.jade_hatchet.description": "Freezes enemy on hit.",
+  "garnished.sapphire_hatchet.description": "Deals percentage-based damage depending on enemy's health.",
 
   "item.garnished.molten_remnant": "Molten Remnant",
   "item.garnished.molten_stew": "Molten Stew",

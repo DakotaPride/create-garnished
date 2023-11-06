@@ -9,7 +9,8 @@
     "ChestBoatMixin",
     "EnderManMixin",
     "ItemStackMixin",
-    "LivingEntityMixin"
+    "LivingEntityMixin",
+    "MobMixin"
   ],
   "client": [
     "BlockColoursMixin",
