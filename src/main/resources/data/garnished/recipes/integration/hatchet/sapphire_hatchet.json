@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "mythicupgrades"
+      ]
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "mythicupgrades:sapphire_ingot"
+  },
+  "base": {
+    "item": "garnished:netherite_hatchet"
+  },
+  "result": {
+    "item": "garnished:sapphire_hatchet"
+  },
+  "template": {
+    "item": "mythicupgrades:sapphire_upgrade_smithing_template"
+  }
+}

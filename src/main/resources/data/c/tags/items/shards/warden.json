@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "deeperdarker:reinforced_echo_shard",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "mythicupgrades:ametrine_ingot",
+      "required": false
+    }
+  ]
+}

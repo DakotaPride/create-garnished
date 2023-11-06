@@ -6,6 +6,6 @@ import net.dakotapride.garnished.item.hatchet.IntegratedMaterials;
 
 public class RoseGoldHatchetToolItem extends IntegratedHatchetToolItem {
     public RoseGoldHatchetToolItem(Properties properties) {
-        super(GarnishedUtils.additionalAdditions(), IntegratedMaterials.ROSE_GOLD, 5, -2.7F, properties);
+        super(GarnishedUtils.additionalAdditions(), IntegratedMaterials.ROSE_GOLD, 6, -2.7F, properties);
     }
 }

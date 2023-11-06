@@ -6,6 +6,6 @@ import net.dakotapride.garnished.item.hatchet.IntegratedMaterials;
 
 public class GildedNetheriteHatchetToolItem extends IntegratedHatchetToolItem {
     public GildedNetheriteHatchetToolItem(Properties properties) {
-        super(GarnishedUtils.additionalAdditions(), IntegratedMaterials.GILDED_NETHERITE, 6, -2.6F, properties);
+        super(GarnishedUtils.additionalAdditions(), IntegratedMaterials.GILDED_NETHERITE, 7, -2.6F, properties);
     }
 }

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "mythicupgrades:aquamarine_ingot",
+      "required": false
+    }
+  ]
+}

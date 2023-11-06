@@ -28,12 +28,12 @@ public class GarnishedTags {
 
 	public static TagKey<Item> WARDEN_REPAIRABLE_ITEMS = commonItemTag("shards/warden");
 
-	 public static TagKey<Item> JADE_GEMS = commonItemTag("gems/jade");
-	 public static TagKey<Item> TOPAZ_GEMS = commonItemTag("gems/topaz");
-	 public static TagKey<Item> AQUAMARINE_GEMS = commonItemTag("gems/aquamarine");
-	 public static TagKey<Item> SAPPHIRE_GEMS = commonItemTag("gems/sapphire");
-	 public static TagKey<Item> RUBY_GEMS = commonItemTag("gems/ruby");
-	 public static TagKey<Item> AMETRINE_GEMS = commonItemTag("gems/ametrine");
+	 public static TagKey<Item> JADE_GEMS = commonItemTag("ingots/jade");
+	 public static TagKey<Item> TOPAZ_GEMS = commonItemTag("ingots/topaz");
+	 public static TagKey<Item> AQUAMARINE_GEMS = commonItemTag("ingots/aquamarine");
+	 public static TagKey<Item> SAPPHIRE_GEMS = commonItemTag("ingots/sapphire");
+	 public static TagKey<Item> RUBY_GEMS = commonItemTag("ingots/ruby");
+	 public static TagKey<Item> AMETRINE_GEMS = commonItemTag("ingots/ametrine");
 
 	private static TagKey<Item> itemTag(String name) {
 		return TagKey.create(BuiltInRegistries.ITEM.key(), new ResourceLocation(CreateGarnished.ID, name));
