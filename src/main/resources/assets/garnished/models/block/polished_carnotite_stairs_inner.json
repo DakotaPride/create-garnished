@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "garnished:block/polished_carnotite",
+    "side": "garnished:block/polished_carnotite",
+    "top": "garnished:block/polished_carnotite"
+  }
+}

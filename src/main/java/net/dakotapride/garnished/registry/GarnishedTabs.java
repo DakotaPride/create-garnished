@@ -183,6 +183,43 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.MUD_PIE.asStack());
 			output.accept(GarnishedItems.MULCH.asStack());
 
+			output.accept(GarnishedItems.VENERABLE_DOUGH);
+			output.accept(GarnishedItems.VENERABLE_DELICACY_RED);
+			output.accept(GarnishedItems.VENERABLE_DELICACY_ORANGE);
+			output.accept(GarnishedItems.VENERABLE_DELICACY_YELLOW);
+			output.accept(GarnishedItems.VENERABLE_DELICACY_GREEN);
+			output.accept(GarnishedItems.VENERABLE_DELICACY_BLUE);
+			output.accept(GarnishedItems.VENERABLE_DELICACY_PURPLE);
+			output.accept(GarnishedItems.SLIME_DROP);
+			output.accept(GarnishedItems.MASTIC_COVERED_SLIME_DROP_RED);
+			output.accept(GarnishedItems.MASTIC_COVERED_SLIME_DROP_ORANGE);
+			output.accept(GarnishedItems.MASTIC_COVERED_SLIME_DROP_YELLOW);
+			output.accept(GarnishedItems.MASTIC_COVERED_SLIME_DROP_GREEN);
+			output.accept(GarnishedItems.MASTIC_COVERED_SLIME_DROP_BLUE);
+			output.accept(GarnishedItems.MASTIC_COVERED_SLIME_DROP_PURPLE);
+			output.accept(GarnishedItems.MASTIC_RESIN);
+			output.accept(GarnishedItems.MASTIC_RESIN_RED);
+			output.accept(GarnishedItems.MASTIC_RESIN_ORANGE);
+			output.accept(GarnishedItems.MASTIC_RESIN_YELLOW);
+			output.accept(GarnishedItems.MASTIC_RESIN_GREEN);
+			output.accept(GarnishedItems.MASTIC_RESIN_BLUE);
+			output.accept(GarnishedItems.MASTIC_RESIN_PURPLE);
+			output.accept(GarnishedItems.MASTIC_PASTE);
+			output.accept(GarnishedItems.MASTIC_PASTE_RED);
+			output.accept(GarnishedItems.MASTIC_PASTE_ORANGE);
+			output.accept(GarnishedItems.MASTIC_PASTE_YELLOW);
+			output.accept(GarnishedItems.MASTIC_PASTE_GREEN);
+			output.accept(GarnishedItems.MASTIC_PASTE_BLUE);
+			output.accept(GarnishedItems.MASTIC_PASTE_PURPLE);
+
+			output.accept(GarnishedItems.BAKLAVA);
+			output.accept(GarnishedItems.MERRY_TREAT);
+			output.accept(GarnishedItems.COAL_TRUFFLE);
+			output.accept(GarnishedItems.GALACTIC_CANE);
+			output.accept(GarnishedItems.ICY_MASTIC_CHUNK);
+
+			output.accept(GarnishedItems.VOLATILE_DUST);
+
 			output.accept(GarnishedBlocks.SEPIA_FUNGUS.asStack());
 			output.accept(GarnishedBlocks.SOUL_ROOTS.asStack());
 
@@ -219,6 +256,8 @@ public class GarnishedTabs {
 			output.accept(GarnishedBlocks.SEPIA_STAIRS.asStack());
 			output.accept(GarnishedBlocks.SEPIA_TRAPDOOR.asStack());
 			output.accept(GarnishedBlocks.SEPIA_DOOR.asStack());
+			output.accept(GarnishedItems.SEPIA_SIGN.asStack());
+			output.accept(GarnishedItems.SEPIA_HANGING_SIGN.asStack());
 
 			output.accept(GarnishedBlocks.NUT_LOG.asStack());
 			output.accept(GarnishedBlocks.STRIPPED_NUT_LOG.asStack());
@@ -229,11 +268,64 @@ public class GarnishedTabs {
 			output.accept(GarnishedBlocks.NUT_STAIRS.asStack());
 			output.accept(GarnishedBlocks.NUT_TRAPDOOR.asStack());
 			output.accept(GarnishedBlocks.NUT_DOOR.asStack());
+			output.accept(GarnishedItems.NUT_SIGN.asStack());
+			output.accept(GarnishedItems.NUT_HANGING_SIGN.asStack());
+			output.accept(GarnishedItems.NUT_BOAT.asStack());
+			output.accept(GarnishedItems.NUT_CHEST_BOAT.asStack());
+
+			output.accept(GarnishedBlocks.ABYSSAL_STONE.asStack());
+			output.accept(GarnishedBlocks.ABYSSAL_STONE_SLAB.asStack());
+			output.accept(GarnishedBlocks.ABYSSAL_STONE_STAIRS.asStack());
+			output.accept(GarnishedBlocks.ABYSSAL_STONE_WALL.asStack());
+			output.accept(GarnishedBlocks.ABYSSAL_STONE_BRICKS.asStack());
+			output.accept(GarnishedBlocks.ABYSSAL_STONE_BRICKS_SLAB.asStack());
+			output.accept(GarnishedBlocks.ABYSSAL_STONE_BRICKS_STAIRS.asStack());
+			output.accept(GarnishedBlocks.ABYSSAL_STONE_BRICKS_WALL.asStack());
+			output.accept(GarnishedBlocks.POLISHED_ABYSSAL_STONE.asStack());
+			output.accept(GarnishedBlocks.POLISHED_ABYSSAL_STONE_SLAB.asStack());
+			output.accept(GarnishedBlocks.POLISHED_ABYSSAL_STONE_STAIRS.asStack());
+			output.accept(GarnishedBlocks.POLISHED_ABYSSAL_STONE_WALL.asStack());
+			output.accept(GarnishedBlocks.CHISELED_ABYSSAL_STONE_BRICKS.asStack());
+
+			output.accept(GarnishedBlocks.CARNOTITE.asStack());
+			output.accept(GarnishedBlocks.CARNOTITE_SLAB.asStack());
+			output.accept(GarnishedBlocks.CARNOTITE_STAIRS.asStack());
+			output.accept(GarnishedBlocks.CARNOTITE_WALL.asStack());
+			output.accept(GarnishedBlocks.CARNOTITE_BRICKS.asStack());
+			output.accept(GarnishedBlocks.CARNOTITE_BRICKS_SLAB.asStack());
+			output.accept(GarnishedBlocks.CARNOTITE_BRICKS_STAIRS.asStack());
+			output.accept(GarnishedBlocks.CARNOTITE_BRICKS_WALL.asStack());
+			output.accept(GarnishedBlocks.POLISHED_CARNOTITE.asStack());
+			output.accept(GarnishedBlocks.POLISHED_CARNOTITE_SLAB.asStack());
+			output.accept(GarnishedBlocks.POLISHED_CARNOTITE_STAIRS.asStack());
+			output.accept(GarnishedBlocks.POLISHED_CARNOTITE_WALL.asStack());
+			output.accept(GarnishedBlocks.CHISELED_CARNOTITE_BRICKS.asStack());
+
+			output.accept(GarnishedBlocks.UNSTABLE_STONE.asStack());
+			output.accept(GarnishedBlocks.UNSTABLE_STONE_SLAB.asStack());
+			output.accept(GarnishedBlocks.UNSTABLE_STONE_STAIRS.asStack());
+			output.accept(GarnishedBlocks.UNSTABLE_STONE_WALL.asStack());
+			output.accept(GarnishedBlocks.UNSTABLE_STONE_BRICKS.asStack());
+			output.accept(GarnishedBlocks.UNSTABLE_STONE_BRICKS_SLAB.asStack());
+			output.accept(GarnishedBlocks.UNSTABLE_STONE_BRICKS_STAIRS.asStack());
+			output.accept(GarnishedBlocks.UNSTABLE_STONE_BRICKS_WALL.asStack());
+			output.accept(GarnishedBlocks.POLISHED_UNSTABLE_STONE.asStack());
+			output.accept(GarnishedBlocks.POLISHED_UNSTABLE_STONE_SLAB.asStack());
+			output.accept(GarnishedBlocks.POLISHED_UNSTABLE_STONE_STAIRS.asStack());
+			output.accept(GarnishedBlocks.POLISHED_UNSTABLE_STONE_WALL.asStack());
+			output.accept(GarnishedBlocks.CHISELED_UNSTABLE_STONE_BRICKS.asStack());
 
 			output.accept(GarnishedFluids.GARNISH.getBucket().get().getDefaultInstance());
 			output.accept(GarnishedFluids.APPLE_CIDER.getBucket().get().getDefaultInstance());
 			output.accept(GarnishedFluids.PEANUT_OIL.getBucket().get().getDefaultInstance());
 			output.accept(GarnishedFluids.CASHEW_MIXTURE.getBucket().get().getDefaultInstance());
+			output.accept(GarnishedFluids.MASTIC_RESIN.getBucket().get().getDefaultInstance());
+			output.accept(GarnishedFluids.RED_MASTIC_RESIN.getBucket().get().getDefaultInstance());
+			output.accept(GarnishedFluids.ORANGE_MASTIC_RESIN.getBucket().get().getDefaultInstance());
+			output.accept(GarnishedFluids.YELLOW_MASTIC_RESIN.getBucket().get().getDefaultInstance());
+			output.accept(GarnishedFluids.GREEN_MASTIC_RESIN.getBucket().get().getDefaultInstance());
+			output.accept(GarnishedFluids.BLUE_MASTIC_RESIN.getBucket().get().getDefaultInstance());
+			output.accept(GarnishedFluids.PURPLE_MASTIC_RESIN.getBucket().get().getDefaultInstance());
 
 			output.accept(GarnishedItems.WOODEN_HATCHET.asStack());
 			output.accept(GarnishedItems.STONE_HATCHET.asStack());

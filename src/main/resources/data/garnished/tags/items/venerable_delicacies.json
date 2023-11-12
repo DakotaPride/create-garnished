@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "garnished:venerable_delicacy_red",
+    "garnished:venerable_delicacy_orange",
+    "garnished:venerable_delicacy_yellow",
+    "garnished:venerable_delicacy_green",
+    "garnished:venerable_delicacy_blue",
+    "garnished:venerable_delicacy_purple"
+  ]
+}

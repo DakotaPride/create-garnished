@@ -87,7 +87,22 @@ public class CreateGarnishedClient implements ClientModInitializer {
 				GarnishedFluids.APPLE_CIDER.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.APPLE_CIDER.get()));
 		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.PEANUT_OIL.get().getSource(),
 				GarnishedFluids.PEANUT_OIL.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.PEANUT_OIL.get()));
-
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.CASHEW_MIXTURE.get().getSource(),
+				GarnishedFluids.CASHEW_MIXTURE.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.CASHEW_MIXTURE.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.MASTIC_RESIN.get().getSource(),
+				GarnishedFluids.MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.MASTIC_RESIN.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.RED_MASTIC_RESIN.get().getSource(),
+				GarnishedFluids.RED_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.RED_MASTIC_RESIN.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.ORANGE_MASTIC_RESIN.get().getSource(),
+				GarnishedFluids.ORANGE_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.ORANGE_MASTIC_RESIN.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.YELLOW_MASTIC_RESIN.get().getSource(),
+				GarnishedFluids.YELLOW_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.YELLOW_MASTIC_RESIN.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.GREEN_MASTIC_RESIN.get().getSource(),
+				GarnishedFluids.GREEN_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.GREEN_MASTIC_RESIN.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.BLUE_MASTIC_RESIN.get().getSource(),
+				GarnishedFluids.BLUE_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.BLUE_MASTIC_RESIN.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.PURPLE_MASTIC_RESIN.get().getSource(),
+				GarnishedFluids.PURPLE_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.PURPLE_MASTIC_RESIN.get()));
 	}
 
 	public static synchronized void blockColourProvider(BlockColors colors) {

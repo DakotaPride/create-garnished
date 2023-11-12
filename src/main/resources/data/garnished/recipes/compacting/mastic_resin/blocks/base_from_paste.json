@@ -1,0 +1,37 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "garnished:mastic_paste"
+    },
+    {
+      "item": "garnished:mastic_paste"
+    },
+    {
+      "item": "garnished:mastic_paste"
+    },
+    {
+      "item": "garnished:mastic_paste"
+    },
+    {
+      "item": "garnished:mastic_paste"
+    },
+    {
+      "item": "garnished:mastic_paste"
+    },
+    {
+      "item": "garnished:mastic_paste"
+    },
+    {
+      "item": "garnished:mastic_paste"
+    },
+    {
+      "item": "garnished:mastic_paste"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:mastic_block"
+    }
+  ]
+}

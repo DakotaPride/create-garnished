@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "garnished:chiseled_carnotite_bricks"
+    },
+    {
+      "item": "garnished:volatile_dust"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:chiseled_unstable_stone_bricks"
+    }
+  ]
+}

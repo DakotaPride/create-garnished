@@ -1,0 +1,35 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "garnished:stone_types/unstable_stone"
+    }
+  ],
+  "processingTime": 150,
+  "results": [
+    {
+      "count": 2,
+      "item": "garnished:volatile_dust"
+    },
+    {
+      "chance": 0.15,
+      "count": 2,
+      "item": "create:crushed_raw_gold"
+    },
+    {
+      "chance": 0.05,
+      "count": 1,
+      "item": "create:crushed_raw_gold"
+    },
+    {
+      "chance": 0.15,
+      "count": 2,
+      "item": "garnished:crushed_raw_zinc"
+    },
+    {
+      "chance": 0.05,
+      "count": 1,
+      "item": "garnished:crushed_raw_zinc"
+    }
+  ]
+}

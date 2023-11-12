@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "unstable_stone_variants",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:unstable_stone_bricks"
+    }
+  },
+  "result": {
+    "item": "garnished:unstable_stone_bricks_slab",
+    "count": 6
+  }
+}

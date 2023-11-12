@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "tag": "garnished:stone_types/abyssal_stone"
+  },
+  "result": "garnished:chiseled_abyssal_stone_bricks"
+}
