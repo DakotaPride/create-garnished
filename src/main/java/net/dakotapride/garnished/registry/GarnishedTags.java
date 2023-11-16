@@ -22,6 +22,7 @@ public class GarnishedTags {
 	public static final TagKey<EntityType<?>> IS_AFFECTED_BY_SALVAGING = commonTag("affected_by/salvaging", BuiltInRegistries.ENTITY_TYPE);
 	public static final TagKey<EntityType<?>> IS_AFFECTED_BY_RAVAGING = commonTag("affected_by/ravaging", BuiltInRegistries.ENTITY_TYPE);
 	public static final TagKey<Block> CARNOTITE_BLOCKS = garnishedTag("carnotite", BuiltInRegistries.BLOCK);
+	public static final TagKey<Item> ENDER_DUSTS_TAG = commonTag("ender_dusts", BuiltInRegistries.ITEM);
 
 	// Integrated Tags
 	// public static TagKey<Item> ZINC_INGOTS = commonItemTag("ingots/zinc");
