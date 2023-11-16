@@ -6,7 +6,7 @@
       "item": "garnished:enflamed_mandible"
     },
     "B": {
-      "item": "garnished:crushed_ender_pearl"
+      "tag": "c:ender_dusts"
     },
     "C": {
       "item": "garnished:crushed_shroomlight"

@@ -46,7 +46,7 @@
           "item": "garnished:incomplete_cinder_roll"
         },
         {
-          "item": "garnished:crushed_ender_pearl"
+          "tag": "c:ender_dusts"
         }
       ],
       "results": [
