@@ -30,6 +30,8 @@
     "garnished:mud_pie",
     "garnished:molten_stew",
     "garnished:pecan_pie",
+    "#garnished:venerable_delicacies",
+    "#garnished:slime_drops",
     "#c:tools/hatchets"
   ]
 }
