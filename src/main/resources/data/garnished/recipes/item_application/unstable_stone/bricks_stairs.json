@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "garnished:carnotite_bricks_stairs"
+    },
+    {
+      "item": "garnished:volatile_dust"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:unstable_stone_bricks_stairs"
+    }
+  ]
+}

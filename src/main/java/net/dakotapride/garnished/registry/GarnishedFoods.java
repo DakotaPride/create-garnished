@@ -95,6 +95,17 @@ public class GarnishedFoods implements IGarnishedItem {
 	// Snare & Tear
 	public static final FoodProperties MOLTEN_STEW = new FoodProperties.Builder().nutrition(12).saturationMod(0.6F).build();
 
+	// Sugarcoated
+	public static final FoodProperties BAKLAVA = new FoodProperties.Builder().nutrition(14).saturationMod(0.7F).build();
+	public static final FoodProperties MASTIC_PASTE = new FoodProperties.Builder().nutrition(3).saturationMod(0.1F).fast().build();
+	public static final FoodProperties SLIME_DROP = new FoodProperties.Builder().nutrition(5).saturationMod(0.3F).fast().build();
+	public static final FoodProperties MASTIC_COVERED_SLIME_DROP = new FoodProperties.Builder().nutrition(10).saturationMod(0.4F).fast().build();
+	public static final FoodProperties VENERABLE_DELICACY = new FoodProperties.Builder().nutrition(10).saturationMod(0.2F).fast().build();
+	public static final FoodProperties GALACTIC_CANE = new FoodProperties.Builder().nutrition(8).saturationMod(0.6F).build();
+	public static final FoodProperties MERRY_TREAT = new FoodProperties.Builder().nutrition(10).saturationMod(0.4F).build();
+	public static final FoodProperties ICY_MASTIC_CHUNK = new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).fast().build();
+	public static final FoodProperties COAL_TRUFFLE = new FoodProperties.Builder().nutrition(6).saturationMod(0.2F).fast().build();
+
 	// Farmer's Delight Foods
 	public static final FoodProperties PECAN_PIE_SLICE = new FoodProperties.Builder().nutrition(3).saturationMod(0.4F).build();
 	public static final FoodProperties PHANTOM_BURGER = new FoodProperties.Builder().nutrition(14).saturationMod(0.9F).build();

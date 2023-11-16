@@ -1,0 +1,19 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "A": {
+      "item": "garnished:garnish_powder"
+    },
+    "#": {
+      "item": "garnished:cosmic_powder"
+    }
+  },
+  "pattern": [
+    "#A#"
+  ],
+  "result": {
+    "item": "garnished:galactic_cane",
+    "count": 3
+  }
+}

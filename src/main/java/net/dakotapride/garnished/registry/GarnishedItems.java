@@ -417,7 +417,82 @@ public class GarnishedItems {
 	public static final ItemEntry<NetheriteHatchetToolItem> NETHERITE_HATCHET =
 			REGISTRATE.item("netherite_hatchet", NetheriteHatchetToolItem::new).register();
 
-	// v1.3
+	// Garnished v1.3: Sugarcoated
+	public static final ItemEntry<Item> VENERABLE_DOUGH =
+			REGISTRATE.item("venerable_dough", Item::new).register();
+
+	public static final ItemEntry<Item> UNFINISHED_VENERABLE_DELICACY =
+			REGISTRATE.item("unfinished_venerable_delicacy", Item::new).register();
+	public static final ItemEntry<VenerableDelicacyFoodItem> VENERABLE_DELICACY_RED =
+			REGISTRATE.item("venerable_delicacy_red", VenerableDelicacyFoodItem::new).register();
+	public static final ItemEntry<VenerableDelicacyFoodItem> VENERABLE_DELICACY_ORANGE =
+			REGISTRATE.item("venerable_delicacy_orange", VenerableDelicacyFoodItem::new).register();
+	public static final ItemEntry<VenerableDelicacyFoodItem> VENERABLE_DELICACY_YELLOW =
+			REGISTRATE.item("venerable_delicacy_yellow", VenerableDelicacyFoodItem::new).register();
+	public static final ItemEntry<VenerableDelicacyFoodItem> VENERABLE_DELICACY_GREEN =
+			REGISTRATE.item("venerable_delicacy_green", VenerableDelicacyFoodItem::new).register();
+	public static final ItemEntry<VenerableDelicacyFoodItem> VENERABLE_DELICACY_BLUE =
+			REGISTRATE.item("venerable_delicacy_blue", VenerableDelicacyFoodItem::new).register();
+	public static final ItemEntry<VenerableDelicacyFoodItem> VENERABLE_DELICACY_PURPLE =
+			REGISTRATE.item("venerable_delicacy_purple", VenerableDelicacyFoodItem::new).register();
+
+	public static final ItemEntry<SlimeDropFoodItem> SLIME_DROP =
+			REGISTRATE.item("slime_drop", SlimeDropFoodItem::new).register();
+	public static final ItemEntry<MasticCoveredSlimeDropFoodItem> MASTIC_COVERED_SLIME_DROP_RED =
+			REGISTRATE.item("slime_drop_red", MasticCoveredSlimeDropFoodItem::new).register();
+	public static final ItemEntry<MasticCoveredSlimeDropFoodItem> MASTIC_COVERED_SLIME_DROP_ORANGE =
+			REGISTRATE.item("slime_drop_orange", MasticCoveredSlimeDropFoodItem::new).register();
+	public static final ItemEntry<MasticCoveredSlimeDropFoodItem> MASTIC_COVERED_SLIME_DROP_YELLOW =
+			REGISTRATE.item("slime_drop_yellow", MasticCoveredSlimeDropFoodItem::new).register();
+	public static final ItemEntry<MasticCoveredSlimeDropFoodItem> MASTIC_COVERED_SLIME_DROP_GREEN =
+			REGISTRATE.item("slime_drop_green", MasticCoveredSlimeDropFoodItem::new).register();
+	public static final ItemEntry<MasticCoveredSlimeDropFoodItem> MASTIC_COVERED_SLIME_DROP_BLUE =
+			REGISTRATE.item("slime_drop_blue", MasticCoveredSlimeDropFoodItem::new).register();
+	public static final ItemEntry<MasticCoveredSlimeDropFoodItem> MASTIC_COVERED_SLIME_DROP_PURPLE =
+			REGISTRATE.item("slime_drop_purple", MasticCoveredSlimeDropFoodItem::new).register();
+
+	public static final ItemEntry<Item> MASTIC_RESIN =
+			REGISTRATE.item("mastic_resin", Item::new).register();
+	public static final ItemEntry<Item> MASTIC_RESIN_RED =
+			REGISTRATE.item("mastic_resin_red", Item::new).register();
+	public static final ItemEntry<Item> MASTIC_RESIN_ORANGE =
+			REGISTRATE.item("mastic_resin_orange", Item::new).register();
+	public static final ItemEntry<Item> MASTIC_RESIN_YELLOW =
+			REGISTRATE.item("mastic_resin_yellow", Item::new).register();
+	public static final ItemEntry<Item> MASTIC_RESIN_GREEN =
+			REGISTRATE.item("mastic_resin_green", Item::new).register();
+	public static final ItemEntry<Item> MASTIC_RESIN_BLUE =
+			REGISTRATE.item("mastic_resin_blue", Item::new).register();
+	public static final ItemEntry<Item> MASTIC_RESIN_PURPLE =
+			REGISTRATE.item("mastic_resin_purple", Item::new).register();
+	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE =
+			REGISTRATE.item("mastic_paste", MasticPasteFoodItem::new).register();
+	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_RED =
+			REGISTRATE.item("mastic_paste_red", MasticPasteFoodItem::new).register();
+	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_ORANGE =
+			REGISTRATE.item("mastic_paste_orange", MasticPasteFoodItem::new).register();
+	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_YELLOW =
+			REGISTRATE.item("mastic_paste_yellow", MasticPasteFoodItem::new).register();
+	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_GREEN =
+			REGISTRATE.item("mastic_paste_green", MasticPasteFoodItem::new).register();
+	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_BLUE =
+			REGISTRATE.item("mastic_paste_blue", MasticPasteFoodItem::new).register();
+	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_PURPLE =
+			REGISTRATE.item("mastic_paste_purple", MasticPasteFoodItem::new).register();
+
+	public static final ItemEntry<Item> VOLATILE_DUST =
+			REGISTRATE.item("volatile_dust", Item::new).register();
+
+	public static final ItemEntry<GalacticCaneFoodItem> GALACTIC_CANE =
+			REGISTRATE.item("galactic_cane", GalacticCaneFoodItem::new).register();
+	public static final ItemEntry<MerryTreatFoodItem> MERRY_TREAT =
+			REGISTRATE.item("merry_treat", MerryTreatFoodItem::new).register();
+	public static final ItemEntry<IcyMasticChunkFoodItem> ICY_MASTIC_CHUNK =
+			REGISTRATE.item("icy_mastic_chunk", IcyMasticChunkFoodItem::new).register();
+	public static final ItemEntry<CoalTruffleFoodItem> COAL_TRUFFLE =
+			REGISTRATE.item("coal_truffle", CoalTruffleFoodItem::new).register();
+	public static final ItemEntry<BaklavaFoodItem> BAKLAVA =
+			REGISTRATE.item("baklava", BaklavaFoodItem::new).register();
 	public static final ItemEntry<SepiaSignItem> SEPIA_SIGN =
 			REGISTRATE.item("sepia_sign", SepiaSignItem::new).register();
 

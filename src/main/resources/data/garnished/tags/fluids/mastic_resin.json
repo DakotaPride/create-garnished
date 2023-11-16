@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "garnished:flowing_mastic_resin",
+    "garnished:mastic_resin",
+    "garnished:flowing_red_mastic_resin",
+    "garnished:red_mastic_resin",
+    "garnished:flowing_orange_mastic_resin",
+    "garnished:orange_mastic_resin",
+    "garnished:flowing_yellow_mastic_resin",
+    "garnished:yellow_mastic_resin",
+    "garnished:flowing_green_mastic_resin",
+    "garnished:green_mastic_resin",
+    "garnished:flowing_blue_mastic_resin",
+    "garnished:blue_mastic_resin",
+    "garnished:flowing_purple_mastic_resin",
+    "garnished:purple_mastic_resin"
+  ]
+}

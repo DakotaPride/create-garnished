@@ -1,0 +1,34 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "garnished:venerable_dough"
+    },
+    {
+      "item": "garnished:walnut"
+    },
+    {
+      "item": "garnished:walnut"
+    },
+    {
+      "item": "garnished:walnut"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "amount": 20250,
+      "fluidTag": "c:honey",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:baklava"
+    }
+  ]
+}

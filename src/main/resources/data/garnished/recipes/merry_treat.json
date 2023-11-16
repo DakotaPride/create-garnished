@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:venerable_dough"
+    },
+    {
+      "item": "garnished:mastic_paste_blue"
+    },
+    {
+      "item": "garnished:mastic_paste_red"
+    },
+    {
+      "item": "garnished:mastic_paste_green"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "garnished:merry_treat",
+    "count": 2
+  }
+}

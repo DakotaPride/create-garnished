@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "garnished:block/carnotite_slab"
+    },
+    "type=double": {
+      "model": "garnished:block/carnotite"
+    },
+    "type=top": {
+      "model": "garnished:block/carnotite_slab_top"
+    }
+  }
+}

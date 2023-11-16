@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "garnished:polished_carnotite_wall"
+    },
+    {
+      "item": "garnished:volatile_dust"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:polished_unstable_stone_wall"
+    }
+  ]
+}

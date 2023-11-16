@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat_seeds"
+    },
+    {
+      "item": "minecraft:wheat_seeds"
+    },
+    {
+      "item": "minecraft:wheat_seeds"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:mastic_resin"
+    }
+  ]
+}
