@@ -21,8 +21,8 @@
       "item": "minecraft:sugar"
     },
     {
-      "amount": 20250,
-      "fluidTag": "c:honey",
+      "amount": 250,
+      "fluidTag": "forge:honey",
       "nbt": {}
     }
   ],
