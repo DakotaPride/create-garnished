@@ -10,7 +10,7 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "minecraft:sepia_fungus"
+      "item": "garnished:sepia_fungus"
     }
   ],
   "result": [

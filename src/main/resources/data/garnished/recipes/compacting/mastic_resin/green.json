@@ -1,0 +1,31 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:wheat_seeds"
+    },
+    {
+      "item": "minecraft:wheat_seeds"
+    },
+    {
+      "item": "minecraft:wheat_seeds"
+    },
+    {
+      "item": "minecraft:slime_ball"
+    },
+    [
+      {
+        "item": "minecraft:green_dye"
+      },
+      {
+        "item": "minecraft:lime_dye"
+      }
+    ]
+  ],
+  "results": [
+    {
+      "item": "garnished:mastic_resin_green"
+    }
+  ]
+}

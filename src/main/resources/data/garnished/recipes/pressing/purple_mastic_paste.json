@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "garnished:mastic_resin_purple"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:mastic_paste_purple"
+    }
+  ]
+}

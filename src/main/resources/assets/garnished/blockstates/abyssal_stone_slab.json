@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "garnished:block/abyssal_stone_slab"
+    },
+    "type=double": {
+      "model": "garnished:block/abyssal_stone"
+    },
+    "type=top": {
+      "model": "garnished:block/abyssal_stone_slab_top"
+    }
+  }
+}

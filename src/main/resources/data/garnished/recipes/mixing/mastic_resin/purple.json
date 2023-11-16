@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "garnished:purple_mastic_block"
+    }
+  ],
+  "results": [
+    {
+      "amount": 20250,
+      "fluid": "garnished:purple_mastic_resin"
+    }
+  ]
+}
