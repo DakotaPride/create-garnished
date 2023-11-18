@@ -313,6 +313,8 @@ public class GarnishedFluids {
 			return AllPaletteStoneTypes.DRIPSTONE.getBaseBlock()
 					.get()
 					.defaultBlockState();
+		if (fluid.isSame(CASHEW_MIXTURE.get()))
+			return Blocks.END_STONE.defaultBlockState();
 
 		if (fluid.isSame(MASTIC_RESIN.get()))
 			return AllPaletteStoneTypes.TUFF.getBaseBlock().get().defaultBlockState();
