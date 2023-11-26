@@ -26,6 +26,7 @@ import net.dakotapride.garnished.item.wood.NutChestBoatItem;
 import net.dakotapride.garnished.item.wood.NutSignItem;
 import net.dakotapride.garnished.item.wood.SepiaSignItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Rarity;
 
 @SuppressWarnings({"unused"})
 public class GarnishedItems {
@@ -545,7 +546,7 @@ public class GarnishedItems {
 			REGISTRATE.item("aquamarine_hatchet", AquamarineHatchetToolItem::new).register();
 
 	public static final ItemEntry<WardenHatchetToolItem> WARDEN_HATCHET =
-			REGISTRATE.item("warden_hatchet", WardenHatchetToolItem::new).register();
+			REGISTRATE.item("warden_hatchet", WardenHatchetToolItem::new).properties((p) -> p.rarity(Rarity.RARE).fireResistant()).register();
 
 	public static final ItemEntry<RoseGoldHatchetToolItem> ROSE_GOLD_HATCHET =
 			REGISTRATE.item("rose_gold_hatchet", RoseGoldHatchetToolItem::new).register();
