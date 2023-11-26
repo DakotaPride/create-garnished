@@ -23,6 +23,7 @@ import net.dakotapride.garnished.block.nut.NutButtonBlock;
 import net.dakotapride.garnished.block.nut.NutDoorBlock;
 import net.dakotapride.garnished.block.nut.NutFenceGateBlock;
 import net.dakotapride.garnished.block.nut.NutHangingSignBlock;
+import net.dakotapride.garnished.block.nut.NutLeavesBlock;
 import net.dakotapride.garnished.block.nut.NutLogBlock;
 import net.dakotapride.garnished.block.nut.NutPressurePlateBlock;
 import net.dakotapride.garnished.block.nut.NutSignBlock;
@@ -178,65 +179,65 @@ public class GarnishedBlocks {
 					.properties(p -> p.mapColor(MapColor.GRASS).noCollission().instabreak().sound(SoundType.GRASS))
 					.register();
 
-	public static final BlockEntry<LeavesBlock> NUT_LEAVES =
-			REGISTRATE.block("nut_leaves", LeavesBlock::new)
+	public static final BlockEntry<NutLeavesBlock> NUT_LEAVES =
+			REGISTRATE.block("nut_leaves", NutLeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(() -> Blocks.OAK_LEAVES)
 					.simpleItem()
 					.properties(p -> p.mapColor(MapColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
 					.register();
 
-	public static final BlockEntry<LeavesBlock> BUHG_LEAVES =
-			REGISTRATE.block("peanut_leaves", LeavesBlock::new)
+	public static final BlockEntry<NutLeavesBlock> BUHG_LEAVES =
+			REGISTRATE.block("peanut_leaves", NutLeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(() -> Blocks.OAK_LEAVES)
 					.simpleItem()
 					.properties(p -> p.mapColor(MapColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
 					.register();
-	public static final BlockEntry<LeavesBlock> WALNUT_LEAVES =
-			REGISTRATE.block("walnut_leaves", LeavesBlock::new)
+	public static final BlockEntry<NutLeavesBlock> WALNUT_LEAVES =
+			REGISTRATE.block("walnut_leaves", NutLeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(() -> Blocks.OAK_LEAVES)
 					.simpleItem()
 					.properties(p -> p.mapColor(MapColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
 					.register();
-	public static final BlockEntry<LeavesBlock> CASHEW_LEAVES =
-			REGISTRATE.block("cashew_leaves", LeavesBlock::new)
+	public static final BlockEntry<NutLeavesBlock> CASHEW_LEAVES =
+			REGISTRATE.block("cashew_leaves", NutLeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(() -> Blocks.OAK_LEAVES)
 					.simpleItem()
 					.properties(p -> p.mapColor(MapColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
 					.register();
-	public static final BlockEntry<LeavesBlock> MACADAMIA_LEAVES =
-			REGISTRATE.block("macadamia_leaves", LeavesBlock::new)
+	public static final BlockEntry<NutLeavesBlock> MACADAMIA_LEAVES =
+			REGISTRATE.block("macadamia_leaves", NutLeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(() -> Blocks.OAK_LEAVES)
 					.simpleItem()
 					.properties(p -> p.mapColor(MapColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
 					.register();
-	public static final BlockEntry<LeavesBlock> PISTACHIO_LEAVES =
-			REGISTRATE.block("pistachio_leaves", LeavesBlock::new)
+	public static final BlockEntry<NutLeavesBlock> PISTACHIO_LEAVES =
+			REGISTRATE.block("pistachio_leaves", NutLeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(() -> Blocks.OAK_LEAVES)
 					.simpleItem()
 					.properties(p -> p.mapColor(MapColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
 					.register();
-	public static final BlockEntry<LeavesBlock> ALMOND_LEAVES =
-			REGISTRATE.block("almond_leaves", LeavesBlock::new)
+	public static final BlockEntry<NutLeavesBlock> ALMOND_LEAVES =
+			REGISTRATE.block("almond_leaves", NutLeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(() -> Blocks.OAK_LEAVES)
 					.simpleItem()
 					.properties(p -> p.mapColor(MapColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
 					.register();
-	public static final BlockEntry<LeavesBlock> PECAN_LEAVES =
-			REGISTRATE.block("pecan_leaves", LeavesBlock::new)
+	public static final BlockEntry<NutLeavesBlock> PECAN_LEAVES =
+			REGISTRATE.block("pecan_leaves", NutLeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(() -> Blocks.OAK_LEAVES)
 					.simpleItem()
 					.properties(p -> p.mapColor(MapColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
 					.register();
-	public static final BlockEntry<LeavesBlock> HAZELNUT_LEAVES =
-			REGISTRATE.block("hazelnut_leaves", LeavesBlock::new)
+	public static final BlockEntry<NutLeavesBlock> HAZELNUT_LEAVES =
+			REGISTRATE.block("hazelnut_leaves", NutLeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(() -> Blocks.OAK_LEAVES)
 					.simpleItem()
