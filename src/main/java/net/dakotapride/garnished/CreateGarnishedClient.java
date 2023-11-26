@@ -40,14 +40,14 @@ public class CreateGarnishedClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.NUT_PLANT.get(), RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.NUT_LEAVES.get(), RenderType.cutout());
 
-		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.ALMOND_LEAVES.get(), RenderType.cutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.CASHEW_LEAVES.get(), RenderType.cutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.WALNUT_LEAVES.get(), RenderType.cutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.PECAN_LEAVES.get(), RenderType.cutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.BUHG_LEAVES.get(), RenderType.cutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.PISTACHIO_LEAVES.get(), RenderType.cutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.MACADAMIA_LEAVES.get(), RenderType.cutout());
-		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.HAZELNUT_LEAVES.get(), RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.ALMOND_LEAVES.get(), RenderType.cutoutMipped());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.CASHEW_LEAVES.get(), RenderType.cutoutMipped());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.WALNUT_LEAVES.get(), RenderType.cutoutMipped());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.PECAN_LEAVES.get(), RenderType.cutoutMipped());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.BUHG_LEAVES.get(), RenderType.cutoutMipped());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.PISTACHIO_LEAVES.get(), RenderType.cutoutMipped());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.MACADAMIA_LEAVES.get(), RenderType.cutoutMipped());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.HAZELNUT_LEAVES.get(), RenderType.cutoutMipped());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.ALMOND_SAPLING.get(), RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.CASHEW_SAPLING.get(), RenderType.cutout());
