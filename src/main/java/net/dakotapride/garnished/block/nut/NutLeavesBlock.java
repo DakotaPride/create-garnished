@@ -2,7 +2,7 @@ package net.dakotapride.garnished.block.nut;
 
 import java.util.OptionalInt;
 
-import io.github.fabricators_of_create.porting_lib.extensions.extensions.IShearable;
+import io.github.fabricators_of_create.porting_lib.extensions.IShearable;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.particles.ParticleTypes;
@@ -126,15 +126,18 @@ public class NutLeavesBlock extends Block implements SimpleWaterloggedBlock, ISh
      * Called periodically clientside on blocks near the player to show effects (like furnace fire particles).
      */
     public void animateTick(BlockState pState, Level pLevel, BlockPos pPos, RandomSource pRandom) {
-        if (pLevel.isRainingAt(pPos.above())) {
-            if (pRandom.nextInt(15) == 1) {
-                BlockPos blockpos = pPos.below();
-                BlockState blockstate = pLevel.getBlockState(blockpos);
-                if (!blockstate.canOcclude() || !blockstate.isFaceSturdy(pLevel, blockpos, Direction.UP)) {
-                    ParticleUtils.spawnParticleBelow(pLevel, pPos, pRandom, ParticleTypes.DRIPPING_WATER);
-                }
-            }
-        }
+		if (pLevel.isRainingAt(pPos.above())) {
+			if (pRandom.nextInt(15) == 1) {
+				BlockPos blockPos = pPos.below();
+				BlockState blockState = pLevel.getBlockState(blockPos);
+				if (!blockState.canOcclude() || !blockState.isFaceSturdy(pLevel, blockPos, Direction.UP)) {
+					double d = (double)pPos.getX() + pRandom.nextDouble();
+					double e = (double)pPos.getY() - 0.05;
+					double f = (double)pPos.getZ() + pRandom.nextDouble();
+					pLevel.addParticle(ParticleTypes.DRIPPING_WATER, d, e, f, 0.0, 0.0, 0.0);
+				}
+			}
+		}
     }
 
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> pBuilder) {
