@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:baklava"
+    },
+    "title": {
+      "translate": "advancement.garnished.baklava.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.baklava.description",
+      "color": "#DBA213"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "garnished:cracked_nuts",
+  "criteria": {
+    "obtain_baklava": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "garnished:baklava"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_baklava"
+    ]
+  ]
+}
