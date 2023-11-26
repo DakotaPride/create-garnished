@@ -1,0 +1,113 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:slime_drop_red"
+    },
+    "title": {
+      "translate": "advancement.garnished.all_slime_drops.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.all_slime_drops.description",
+      "color": "#DBA213"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "garnished:orange_mastic",
+  "criteria": {
+    "red_slime_drop": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "garnished:slime_drop_red"
+            ]
+          }
+        ]
+      }
+    },
+    "orange_slime_drop": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "garnished:slime_drop_orange"
+            ]
+          }
+        ]
+      }
+    },
+    "yellow_slime_drop": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "garnished:slime_drop_yellow"
+            ]
+          }
+        ]
+      }
+    },
+    "green_slime_drop": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "garnished:slime_drop_green"
+            ]
+          }
+        ]
+      }
+    },
+    "blue_slime_drop": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "garnished:slime_drop_blue"
+            ]
+          }
+        ]
+      }
+    },
+    "purple_slime_drop": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "garnished:slime_drop_purple"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "red_slime_drop"
+    ],
+    [
+      "orange_slime_drop"
+    ],
+    [
+      "yellow_slime_drop"
+    ],
+    [
+      "green_slime_drop"
+    ],
+    [
+      "blue_slime_drop"
+    ],
+    [
+      "purple_slime_drop"
+    ]
+  ]
+}
