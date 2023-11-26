@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:carnotite"
+    },
+    "title": {
+      "translate": "advancement.garnished.carnotite.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.carnotite.description",
+      "color": "#DBA213"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "garnished:liquid_mastic_resin",
+  "criteria": {
+    "obtain_carnotite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "garnished:stone_types/carnotite"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_carnotite"
+    ]
+  ]
+}

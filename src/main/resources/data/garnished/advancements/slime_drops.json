@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:slime_drop"
+    },
+    "title": {
+      "translate": "advancement.garnished.slime_drops.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.slime_drops.description",
+      "color": "#DBA213"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "garnished:orange_mastic",
+  "criteria": {
+    "obtain_slime_drops": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "garnished:slime_drops"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_slime_drops"
+    ]
+  ]
+}
