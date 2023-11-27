@@ -251,7 +251,7 @@
   "item.garnished.netherite_hatchet": "Незеритовый топорик",
   "enchantment.garnished.salvaging": "Спасение",
   "enchantment.garnished.ravaging": "Опустошение",
-  
+
   "enchantment.garnished.ravaging.desc": "Добавляет дополнительную награду с некоторых мобов",
   "enchantment.garnished.salvaging.desc": "Добавляет дополнительную награду с некоторых мобов",
 
@@ -276,13 +276,13 @@
   "item.garnished.nut_chest_boat": "Ореховая грузовая лодка",
   "entity.garnished.nut_boat": "Лодка",
   "entity.garnished.nut_chest_boat": "Грузовая лодка",
-  
+
   "block.garnished.sepia_fence": "Сепиевый забор",
   "block.garnished.sepia_fence_gate": "Сепиевая калитка",
   "block.garnished.sepia_button": "Сепиевая кнопка",
   "block.garnished.sepia_pressure_plate": "Сепиевая нажимная плита",
   "block.garnished.sepia_sign": "Сепиевая табличка",
-  
+
   "item.garnished.baklava": "Пахлава",
   "item.garnished.slime_drop": "Капля слизи",
   "item.garnished.slime_drop_red": "Капля слизи в мастике",
@@ -394,7 +394,7 @@
   "item.garnished.apple_cider_bucket": "Ведро яблочного сидра",
   "item.garnished.peanut_oil_bucket": "Ведро арахисового масла",
   "item.garnished.cashew_mixture_bucket": "Ведро смеси кешью",
-  "fluid.garnished.garnish": "Жидкая приправа",
+  "fluid.garnished.liquid_garnish": "Жидкая приправа",
   "block.garnished.liquid_garnish": "Жидкая приправа",
   "fluid.garnished.apple_cider": "Яблочный сидр",
   "block.garnished.apple_cider": "Яблочный сидр",
