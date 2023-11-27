@@ -269,6 +269,8 @@
   "garnished.ruby_hatchet.description": "Freezes enemy on hit.", //
   "garnished.jade_hatchet.description": "Freezes enemy on hit.", //
   "garnished.sapphire_hatchet.description": "Deals percentage-based damage depending on enemy's health.", //
+  "enchantment.garnished.ravaging.desc": "Provides additional drops from certain mobs", //
+  "enchantment.garnished.salvaging.desc": "Provides additional drops from certain mobs", //
 
   "item.garnished.molten_remnant": "熔火遗物",
   "item.garnished.molten_stew": "熔火炖",
