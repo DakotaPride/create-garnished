@@ -401,8 +401,8 @@
   "item.garnished.green_mastic_resin_bucket": "Bucket of Coloured Mastic Resin", //
   "item.garnished.blue_mastic_resin_bucket": "Bucket of Coloured Mastic Resin", //
   "item.garnished.purple_mastic_resin_bucket": "Bucket of Coloured Mastic Resin", //
-  "fluid.garnished.liquid_garnish": "Жидкая приправа",
-  "block.garnished.liquid_garnish": "Жидкая приправа",
+  "fluid.garnished.garnish": "Жидкая приправа",
+  "block.garnished.garnish": "Жидкая приправа",
   "fluid.garnished.apple_cider": "Яблочный сидр",
   "block.garnished.apple_cider": "Яблочный сидр",
   "fluid.garnished.peanut_oil": "Арахисовое масло",
