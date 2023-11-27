@@ -252,6 +252,9 @@
   "enchantment.garnished.salvaging": "回收",
   "enchantment.garnished.ravaging": "破裂",
 
+  "enchantment.garnished.ravaging.desc": "Provides additional drops from certain mobs", //
+  "enchantment.garnished.salvaging.desc": "Provides additional drops from certain mobs", //
+
   "item.garnished.molten_remnant": "熔火遗物",
   "item.garnished.molten_stew": "熔火炖",
 

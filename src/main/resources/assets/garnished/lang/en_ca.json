@@ -252,6 +252,9 @@
   "enchantment.garnished.salvaging": "Salvaging",
   "enchantment.garnished.ravaging": "Ravaging",
 
+  "enchantment.garnished.ravaging.desc": "Provides additional drops from certain mobs",
+  "enchantment.garnished.salvaging.desc": "Provides additional drops from certain mobs",
+
   "item.garnished.molten_remnant": "Molten Remnant",
   "item.garnished.molten_stew": "Molten Stew",
 
