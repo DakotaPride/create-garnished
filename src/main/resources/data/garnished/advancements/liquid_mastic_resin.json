@@ -17,7 +17,7 @@
   },
   "parent": "garnished:orange_mastic",
   "criteria": {
-    "obtain_slime_drops": {
+    "obtain_mastic_resin_bucket": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -30,7 +30,7 @@
   },
   "requirements": [
     [
-      "obtain_slime_drops"
+      "obtain_mastic_resin_bucket"
     ]
   ]
 }
