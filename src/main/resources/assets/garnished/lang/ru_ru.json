@@ -273,9 +273,7 @@
   "block.garnished.nut_pressure_plate": "Ореховая нажимная плита",
   "block.garnished.nut_sign": "Ореховая табличка",
   "item.garnished.nut_boat": "Ореховая лодка",
-  "item.garnished.nut_chest_boat": "Ореховая грузовая лодка",
   "entity.garnished.nut_boat": "Лодка",
-  "entity.garnished.nut_chest_boat": "Грузовая лодка",
 
   "block.garnished.sepia_fence": "Сепиевый забор",
   "block.garnished.sepia_fence_gate": "Сепиевая калитка",
@@ -394,13 +392,13 @@
   "item.garnished.apple_cider_bucket": "Ведро яблочного сидра",
   "item.garnished.peanut_oil_bucket": "Ведро арахисового масла",
   "item.garnished.cashew_mixture_bucket": "Ведро смеси кешью",
-  "item.garnished.mastic_resin_bucket": "Bucket of Mastic Resin", //
-  "item.garnished.red_mastic_resin_bucket": "Bucket of Coloured Mastic Resin", //
-  "item.garnished.orange_mastic_resin_bucket": "Bucket of Coloured Mastic Resin", //
-  "item.garnished.yellow_mastic_resin_bucket": "Bucket of Coloured Mastic Resin", //
-  "item.garnished.green_mastic_resin_bucket": "Bucket of Coloured Mastic Resin", //
-  "item.garnished.blue_mastic_resin_bucket": "Bucket of Coloured Mastic Resin", //
-  "item.garnished.purple_mastic_resin_bucket": "Bucket of Coloured Mastic Resin", //
+  "item.garnished.mastic_resin_bucket": "Ведро мастической смолы",
+  "item.garnished.red_mastic_resin_bucket": "Ведро цветной мастической смолы",
+  "item.garnished.orange_mastic_resin_bucket": "Ведро цветной мастической смолы",
+  "item.garnished.yellow_mastic_resin_bucket": "Ведро цветной мастической смолы",
+  "item.garnished.green_mastic_resin_bucket": "Ведро цветной мастической смолы",
+  "item.garnished.blue_mastic_resin_bucket": "Ведро цветной мастической смолы",
+  "item.garnished.purple_mastic_resin_bucket": "Ведро цветной мастической смолы",
   "fluid.garnish": "Жидкая приправа",
   "block.garnished.garnish": "Жидкая приправа",
   "fluid.apple_cider": "Яблочный сидр",
@@ -409,13 +407,13 @@
   "block.garnished.peanut_oil": "Арахисовое масло",
   "fluid.cashew_mixture": "Смесь кешью",
   "block.garnished.cashew_mixture": "Смесь кешью",
-  "fluid.garnished.mastic_resin": "Liquefied Mastic Resin", //
-  "fluid.garnished.red_mastic_resin": "Liquefied Coloured Mastic Resin", //
-  "fluid.garnished.orange_mastic_resin": "Liquefied Coloured Mastic Resin", //
-  "fluid.garnished.yellow_mastic_resin": "Liquefied Coloured Mastic Resin", //
-  "fluid.garnished.green_mastic_resin": "Liquefied Coloured Mastic Resin", //
-  "fluid.garnished.blue_mastic_resin": "Liquefied Coloured Mastic Resin", //
-  "fluid.garnished.purple_mastic_resin": "Liquefied Coloured Mastic Resin", //
+  "fluid.garnished.mastic_resin": "Жидкая мастическая смола",
+  "fluid.garnished.red_mastic_resin": "Жидкая цветная мастическая смола",
+  "fluid.garnished.orange_mastic_resin": "Жидкая цветная мастическая смола",
+  "fluid.garnished.yellow_mastic_resin": "Жидкая цветная мастическая смола",
+  "fluid.garnished.green_mastic_resin": "Жидкая цветная мастическая смола",
+  "fluid.garnished.blue_mastic_resin": "Жидкая цветная мастическая смола",
+  "fluid.garnished.purple_mastic_resin": "Жидкая цветная мастическая смола",
 
   "block.garnished.nut_plant": "Ореховый росток",
   "block.garnished.nut_sapling": "Саженец орехового дерева",
