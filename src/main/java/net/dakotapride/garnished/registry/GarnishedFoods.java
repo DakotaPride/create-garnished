@@ -105,6 +105,8 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties MERRY_TREAT = new FoodProperties.Builder().nutrition(8).saturationMod(0.4F).build();
 	public static final FoodProperties ICY_MASTIC_CHUNK = new FoodProperties.Builder().nutrition(3).saturationMod(0.1F).fast().build();
 	public static final FoodProperties COAL_TRUFFLE = new FoodProperties.Builder().nutrition(5).saturationMod(0.2F).fast().build();
+	public static final FoodProperties STURDY_WAFFLE = new FoodProperties.Builder().nutrition(6).saturationMod(0.4F)
+			.effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 400), 1.0F).build();
 
 	// Farmer's Delight Foods
 	public static final FoodProperties PECAN_PIE_SLICE = new FoodProperties.Builder().nutrition(3).saturationMod(0.2F).build();

@@ -493,6 +493,9 @@ public class GarnishedItems {
 			REGISTRATE.item("coal_truffle", CoalTruffleFoodItem::new).register();
 	public static final ItemEntry<BaklavaFoodItem> BAKLAVA =
 			REGISTRATE.item("baklava", BaklavaFoodItem::new).register();
+	public static final ItemEntry<SturdyWaffleFoodItem> STURDY_WAFFLE =
+			REGISTRATE.item("sturdy_waffle", SturdyWaffleFoodItem::new).register();
+
 	public static final ItemEntry<SepiaSignItem> SEPIA_SIGN =
 			REGISTRATE.item("sepia_sign", SepiaSignItem::new).register();
 
