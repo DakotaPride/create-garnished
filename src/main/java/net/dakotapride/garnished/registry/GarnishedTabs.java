@@ -217,6 +217,7 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.COAL_TRUFFLE);
 			output.accept(GarnishedItems.GALACTIC_CANE);
 			output.accept(GarnishedItems.ICY_MASTIC_CHUNK);
+			output.accept(GarnishedItems.STURDY_WAFFLE);
 
 			output.accept(GarnishedItems.VOLATILE_DUST);
 
