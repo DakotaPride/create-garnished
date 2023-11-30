@@ -197,6 +197,7 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 		items.add(GarnishedItems.COAL_TRUFFLE.asStack());
 		items.add(GarnishedItems.GALACTIC_CANE.asStack());
 		items.add(GarnishedItems.ICY_MASTIC_CHUNK.asStack());
+		items.add(GarnishedItems.STURDY_WAFFLE.asStack());
 
 		items.add(GarnishedItems.VOLATILE_DUST.asStack());
 
