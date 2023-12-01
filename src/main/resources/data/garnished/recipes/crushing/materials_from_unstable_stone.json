@@ -24,12 +24,12 @@
     {
       "chance": 0.15,
       "count": 2,
-      "item": "garnished:crushed_raw_zinc"
+      "item": "create:crushed_raw_zinc"
     },
     {
       "chance": 0.05,
       "count": 1,
-      "item": "garnished:crushed_raw_zinc"
+      "item": "create:crushed_raw_zinc"
     }
   ]
 }
