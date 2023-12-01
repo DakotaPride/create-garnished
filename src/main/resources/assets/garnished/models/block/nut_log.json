@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "garnished:block/nut_log_top",
-    "side": "garnished:block/nut_log"
-  }
-}

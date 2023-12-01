@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column_horizontal",
-  "textures": {
-    "end": "garnished:block/stripped_nut_log_top",
-    "side": "garnished:block/stripped_nut_log"
-  }
-}

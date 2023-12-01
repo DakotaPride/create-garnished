@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/outer_stairs",
-  "textures": {
-    "bottom": "garnished:block/sepia_planks",
-    "side": "garnished:block/sepia_planks",
-    "top": "garnished:block/sepia_planks"
-  }
-}

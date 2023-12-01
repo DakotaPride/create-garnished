@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "garnished:block/abyssal_stone_bricks",
-    "side": "garnished:block/abyssal_stone_bricks",
-    "top": "garnished:block/abyssal_stone_bricks"
-  }
-}

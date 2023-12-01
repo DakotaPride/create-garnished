@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/door_bottom_left_open",
-  "textures": {
-    "bottom": "garnished:block/sepia_door_bottom",
-    "top": "garnished:block/sepia_door_top"
-  }
-}

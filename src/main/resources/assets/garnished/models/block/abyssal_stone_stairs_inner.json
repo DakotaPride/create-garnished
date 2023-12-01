@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/inner_stairs",
-  "textures": {
-    "bottom": "garnished:block/abyssal_stone",
-    "side": "garnished:block/abyssal_stone",
-    "top": "garnished:block/abyssal_stone"
-  }
-}
