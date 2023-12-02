@@ -87,7 +87,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:stick",
+          "name": "garnished:cashew_fruit",
           "functions": [
             {
               "function": "minecraft:set_count",
