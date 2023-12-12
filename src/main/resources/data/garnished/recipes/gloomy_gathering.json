@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "garnished:cooked_tenebrous_meat"
+    },
+    {
+      "item": "garnished:cooked_tenebrous_meat"
+    },
+    {
+      "item": "garnished:crushed_shroomlight"
+    },
+    {
+      "item": "garnished:crushed_shroomlight"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
+    }
+  ],
+  "result": {
+    "item": "garnished:gloomy_gathering"
+  }
+}

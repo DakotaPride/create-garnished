@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "from_nut_sack",
+  "ingredients": [
+    {
+      "item": "garnished:chestnut_sack"
+    }
+  ],
+  "result": {
+    "item": "garnished:chestnut",
+    "count": 4
+  }
+}

@@ -118,6 +118,16 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.CHOCOLATE_GLAZED_HAZELNUT.asStack());
 			output.accept(GarnishedItems.HONEYED_HAZELNUT.asStack());
 
+			output.accept(GarnishedItems.CRACKED_CHESTNUT.asStack());
+			output.accept(GarnishedItems.UNGARNISHED_CHESTNUT.asStack());
+			output.accept(GarnishedItems.CHESTNUT.asStack());
+			output.accept(GarnishedItems.CINDER_FLOUR_CHESTNUT.asStack());
+			output.accept(GarnishedItems.MELTED_CINDER_FLOUR_CHESTNUT.asStack());
+			output.accept(GarnishedItems.SLOW_FALLING_CINDER_CHESTNUT.asStack());
+			output.accept(GarnishedItems.SWEETENED_CHESTNUT.asStack());
+			output.accept(GarnishedItems.CHOCOLATE_GLAZED_CHESTNUT.asStack());
+			output.accept(GarnishedItems.HONEYED_CHESTNUT.asStack());
+
 			output.accept(GarnishedItems.NUT_MIX.asStack());
 			output.accept(GarnishedItems.SWEETENED_NUT_MIX.asStack());
 			output.accept(GarnishedItems.CHOCHOLATE_GLAZED_NUT_MIX.asStack());
@@ -218,6 +228,20 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.GALACTIC_CANE);
 			output.accept(GarnishedItems.ICY_MASTIC_CHUNK);
 			output.accept(GarnishedItems.STURDY_WAFFLE);
+
+			output.accept(GarnishedItems.RAW_TENEBROUS_MEAT);
+			output.accept(GarnishedItems.COOKED_TENEBROUS_MEAT);
+			output.accept(GarnishedItems.CASHEW_SORBET_SCOOP);
+			output.accept(GarnishedItems.CASHEW_SORBET_DELIGHT);
+			output.accept(GarnishedItems.ACHING_TENEBROUS_CLUMP);
+			output.accept(GarnishedItems.GLOOMY_GATHERING);
+			output.accept(GarnishedItems.FISHY_SURPRISE);
+			output.accept(GarnishedItems.WALNUT_GORGE_CREAM);
+			output.accept(GarnishedItems.GHANDERCKEN);
+			output.accept(GarnishedItems.WHEAT_GRAZE);
+			output.accept(GarnishedItems.PORKCHOP_AND_GRAZE);
+
+			output.accept(GarnishedItems.GHAST_TENDRIL);
 
 			output.accept(GarnishedItems.VOLATILE_DUST);
 

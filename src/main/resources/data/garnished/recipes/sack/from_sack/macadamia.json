@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "nut_sack",
+  "group": "from_nut_sack",
   "ingredients": [
     {
       "item": "garnished:macadamia_sack"

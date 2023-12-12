@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "garnished:chestnut"
+    },
+    {
+      "amount": 20250,
+      "fluidTag": "c:honey"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:honeyed_chestnut"
+    }
+  ]
+}

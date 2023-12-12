@@ -10,6 +10,7 @@
     "minecraft:spider",
     "minecraft:cave_spider",
     "minecraft:wither_skeleton",
-    "minecraft:phantom"
+    "minecraft:phantom",
+    "minecraft:warden"
   ]
 }
