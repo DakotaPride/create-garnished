@@ -108,7 +108,6 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties STURDY_WAFFLE = new FoodProperties.Builder().nutrition(6).saturationMod(0.4F)
 			.effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 400), 1.0F).build();
 
-
 	// Gloomy Meats
 	public static final FoodProperties RAW_TENEBROUS_MEAT = new FoodProperties.Builder().nutrition(7).saturationMod(0.1F)
 			.effect(new MobEffectInstance(MobEffects.DARKNESS, 200), 1.0F).meat().build();
