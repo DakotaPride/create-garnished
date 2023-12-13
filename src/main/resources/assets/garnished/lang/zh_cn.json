@@ -372,6 +372,28 @@
   "block.garnished.polished_unstable_stone_wall": "Polished Unstable Stone Wall", //
   "block.garnished.chiseled_unstable_stone_bricks": "Chiseled Unstable Stone Bricks", //
 
+  "item.garnished.ghast_tendril": "Ghast Tendril", //
+  "item.garnished.chestnut": "Chestnut", //
+  "item.garnished.ungarnished_chestnut": "Chestnut", //
+  "item.garnished.cinder_chestnut": "Chestnut", //
+  "item.garnished.melted_cinder_chestnut": "Chestnut", //
+  "item.garnished.sweetened_chestnut": "Chestnut", //
+  "block.garnished.chestnut_sapling": "Chestnut", //
+  "item.garnished.cinder_chestnut_slow_falling": "Chestnut", //
+  "item.garnished.honeyed_chestnut": "Chestnut", //
+  "item.garnished.chocolate_glazed_chestnut": "Chestnut", //
+  "item.garnished.raw_tenebrous_meat": "Raw Tenebrous Meat", //
+  "item.garnished.cooked_tenebrous_meat": "Cooked Tenebrous Meat", //
+  "item.garnished.aching_tenebrous_clump": "Aching Tenebrous Clump", //
+  "item.garnished.gloomy_gathering": "Gloomy Gathering", //
+  "item.garnished.fishy_surprise": "Fishy Surprise", //
+  "item.garnished.ghandercken": "Ghandercken", //
+  "item.garnished.walnut_gorge_cream": "Walnut Gorge Cream Bowl", //
+  "item.garnished.cashew_sorbet_scoop": "Cashew Sorbet Scoop", //
+  "item.garnished.cashew_sorbet_delight": "Cashew Sorbet Delight", //
+  "item.garnished.wheat_graze": "Wheat Graze", //
+  "item.garnished.porkchop_and_graze": "Porkchop & Graze", //
+
   "block.garnished.peanut_sack": "压实坚果袋",
   "block.garnished.cashew_sack": "压实坚果袋",
   "block.garnished.almond_sack": "压实坚果袋",
@@ -380,6 +402,7 @@
   "block.garnished.pecan_sack": "压实坚果袋",
   "block.garnished.pistachio_sack": "压实坚果袋",
   "block.garnished.hazelnut_sack": "压实坚果袋",
+  "block.garnished.chestnut_sack": "压实坚果袋",
 
   "block.garnished.nut_leaves": "坚果树叶",
   "block.garnished.peanut_leaves": "坚果树叶",
@@ -390,6 +413,7 @@
   "block.garnished.pistachio_leaves": "坚果树叶",
   "block.garnished.hazelnut_leaves": "坚果树叶",
   "block.garnished.pecan_leaves": "坚果树叶",
+  "block.garnished.chestnut_leaves": "坚果树叶",
 
   "item.garnished.garnish_bucket": "装食桶",
   "item.garnished.apple_cider_bucket": "苹果西打桶",

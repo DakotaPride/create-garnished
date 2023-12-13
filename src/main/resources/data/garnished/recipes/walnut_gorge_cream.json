@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:walnut"
+    },
+    {
+      "item": "garnished:walnut"
+    },
+    {
+      "tag": "forge:pumpkins"
+    },
+    {
+      "tag": "forge:pumpkins"
+    },
+    {
+      "tag": "forge:flour"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "garnished:walnut_gorge_cream"
+  }
+}

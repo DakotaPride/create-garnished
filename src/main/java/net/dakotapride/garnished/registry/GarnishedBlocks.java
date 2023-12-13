@@ -32,6 +32,7 @@ import net.dakotapride.garnished.block.nut.NutWallSignBlock;
 import net.dakotapride.garnished.block.sapling.AlmondSaplingBlock;
 import net.dakotapride.garnished.block.sapling.BuhgSaplingBlock;
 import net.dakotapride.garnished.block.sapling.CashewSaplingBlock;
+import net.dakotapride.garnished.block.sapling.ChestnutSaplingBlock;
 import net.dakotapride.garnished.block.sapling.EndPlantBlock;
 import net.dakotapride.garnished.block.sapling.HazelnutSaplingBlock;
 import net.dakotapride.garnished.block.sapling.MacadamiaSaplingBlock;
@@ -123,6 +124,13 @@ public class GarnishedBlocks {
 					.properties(p -> p.color(MaterialColor.TERRACOTTA_BROWN))
 					.simpleItem()
 					.register();
+	public static final BlockEntry<NutSackBlock> CHESTNUT_SACK =
+			REGISTRATE.block("chestnut_sack", NutSackBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.initialProperties(() -> Blocks.WHITE_WOOL)
+					.properties(p -> p.color(MaterialColor.TERRACOTTA_BROWN))
+					.simpleItem()
+					.register();
 
 	public static final BlockEntry<BuhgSaplingBlock> BUHG_SAPLING =
 			REGISTRATE.block("peanut_sapling", BuhgSaplingBlock::new)
@@ -168,6 +176,12 @@ public class GarnishedBlocks {
 					.register();
 	public static final BlockEntry<HazelnutSaplingBlock> HAZELNUT_SAPLING =
 			REGISTRATE.block("hazelnut_sapling", HazelnutSaplingBlock::new)
+					.initialProperties(() -> Blocks.OAK_SAPLING)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.properties(p -> p.color(MaterialColor.GRASS).noCollission().instabreak().sound(SoundType.GRASS))
+					.register();
+	public static final BlockEntry<ChestnutSaplingBlock> CHESTNUT_SAPLING =
+			REGISTRATE.block("chestnut_sapling", ChestnutSaplingBlock::new)
 					.initialProperties(() -> Blocks.OAK_SAPLING)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.properties(p -> p.color(MaterialColor.GRASS).noCollission().instabreak().sound(SoundType.GRASS))
@@ -232,6 +246,13 @@ public class GarnishedBlocks {
 					.register();
 	public static final BlockEntry<NutLeavesBlock> HAZELNUT_LEAVES =
 			REGISTRATE.block("hazelnut_leaves", NutLeavesBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.initialProperties(() -> Blocks.OAK_LEAVES)
+					.simpleItem()
+					.properties(p -> p.color(MaterialColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
+					.register();
+	public static final BlockEntry<NutLeavesBlock> CHESTNUT_LEAVES =
+			REGISTRATE.block("chestnut_leaves", NutLeavesBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.initialProperties(() -> Blocks.OAK_LEAVES)
 					.simpleItem()

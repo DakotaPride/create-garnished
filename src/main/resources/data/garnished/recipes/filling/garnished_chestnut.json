@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "garnished:ungarnished_chestnut"
+    },
+    {
+      "amount": 250,
+      "fluid": "garnished:garnish"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:chestnut"
+    }
+  ]
+}

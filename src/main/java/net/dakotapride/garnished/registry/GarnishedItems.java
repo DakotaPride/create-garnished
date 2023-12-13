@@ -193,6 +193,27 @@ public class GarnishedItems {
 	public static final ItemEntry<HoneyedNutFoodItem> HONEYED_BUHG =
 			REGISTRATE.item("honeyed_peanut", HoneyedNutFoodItem::new).register();
 
+	// Chestnuts
+	public static final ItemEntry<CrackedChestnutItem> CRACKED_CHESTNUT =
+			REGISTRATE.item("cracked_chestnut", CrackedChestnutItem::new).register();
+
+	public static final ItemEntry<UngarnishedNutFoodItem> UNGARNISHED_CHESTNUT =
+			REGISTRATE.item("ungarnished_chestnut", UngarnishedNutFoodItem::new).register();
+	public static final ItemEntry<GarnishedNutFoodItem> CHESTNUT =
+			REGISTRATE.item("chestnut", GarnishedNutFoodItem::new).register();
+	public static final ItemEntry<CinderFlourNutFoodItem> CINDER_FLOUR_CHESTNUT =
+			REGISTRATE.item("cinder_chestnut", CinderFlourNutFoodItem::new).register();
+	public static final ItemEntry<MeltedCinderFlourNutFoodItem> MELTED_CINDER_FLOUR_CHESTNUT =
+			REGISTRATE.item("melted_cinder_chestnut", MeltedCinderFlourNutFoodItem::new).register();
+	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem> SLOW_FALLING_CINDER_CHESTNUT =
+			REGISTRATE.item("cinder_chestnut_slow_falling", MeltedCinderFlourNutWithEffectFoodItem::new).register();
+	public static final ItemEntry<SweetenedNutFoodItem> SWEETENED_CHESTNUT =
+			REGISTRATE.item("sweetened_chestnut", SweetenedNutFoodItem::new).register();
+	public static final ItemEntry<ChocholateGlazedNutFoodItem> CHOCOLATE_GLAZED_CHESTNUT =
+			REGISTRATE.item("chocolate_glazed_chestnut", ChocholateGlazedNutFoodItem::new).register();
+	public static final ItemEntry<HoneyedNutFoodItem> HONEYED_CHESTNUT =
+			REGISTRATE.item("honeyed_chestnut", HoneyedNutFoodItem::new).register();
+
 	// Nut mix
 	public static final ItemEntry<NutMixFoodItem> NUT_MIX =
 			REGISTRATE.item("nut_mix", NutMixFoodItem::new).register();
@@ -506,6 +527,33 @@ public class GarnishedItems {
 			REGISTRATE.item("nut_boat", NutBoatItem::new).register();
 	public static final ItemEntry<NutChestBoatItem> NUT_CHEST_BOAT =
 			REGISTRATE.item("nut_chest_boat", NutChestBoatItem::new).register();
+
+	// Garnished v1.4: Gloomy Meats
+	public static final ItemEntry<Item> GHAST_TENDRIL =
+			REGISTRATE.item("ghast_tendril", Item::new).register();
+
+	public static final ItemEntry<RawTenebrousMeatFoodItem> RAW_TENEBROUS_MEAT =
+			REGISTRATE.item("raw_tenebrous_meat", RawTenebrousMeatFoodItem::new).register();
+	public static final ItemEntry<CookedTenebrousMeatFoodItem> COOKED_TENEBROUS_MEAT =
+			REGISTRATE.item("cooked_tenebrous_meat", CookedTenebrousMeatFoodItem::new).register();
+	public static final ItemEntry<AchingTenebrousClumpFoodItem> ACHING_TENEBROUS_CLUMP =
+			REGISTRATE.item("aching_tenebrous_clump", AchingTenebrousClumpFoodItem::new).register();
+	public static final ItemEntry<GloomyGatheringFoodItem> GLOOMY_GATHERING =
+			REGISTRATE.item("gloomy_gathering", GloomyGatheringFoodItem::new).register();
+	public static final ItemEntry<FishySurpriseFoodItem> FISHY_SURPRISE =
+			REGISTRATE.item("fishy_surprise", FishySurpriseFoodItem::new).register();
+	public static final ItemEntry<GhanderckenFoodItem> GHANDERCKEN =
+			REGISTRATE.item("ghandercken", GhanderckenFoodItem::new).register();
+	public static final ItemEntry<WheatGrazeFoodItem> WHEAT_GRAZE =
+			REGISTRATE.item("wheat_graze", WheatGrazeFoodItem::new).register();
+	public static final ItemEntry<PorkchopAndGrazeFoodItem> PORKCHOP_AND_GRAZE =
+			REGISTRATE.item("porkchop_and_graze", PorkchopAndGrazeFoodItem::new).register();
+	public static final ItemEntry<CashewSorbetScoopFoodItem> CASHEW_SORBET_SCOOP =
+			REGISTRATE.item("cashew_sorbet_scoop", CashewSorbetScoopFoodItem::new).register();
+	public static final ItemEntry<CashewSorbetDelightFoodItem> CASHEW_SORBET_DELIGHT =
+			REGISTRATE.item("cashew_sorbet_delight", CashewSorbetDelightFoodItem::new).register();
+	public static final ItemEntry<WalnutGorgeCreamFoodItem> WALNUT_GORGE_CREAM =
+			REGISTRATE.item("walnut_gorge_cream", WalnutGorgeCreamFoodItem::new).register();
 
 	// Farmer's Delight Items
 	public static final ItemEntry<PecanPieSliceFoodItem> PECAN_PIE_SLICE =

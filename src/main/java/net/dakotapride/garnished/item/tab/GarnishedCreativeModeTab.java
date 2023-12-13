@@ -98,6 +98,16 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 		items.add(GarnishedItems.CHOCOLATE_GLAZED_HAZELNUT.asStack());
 		items.add(GarnishedItems.HONEYED_HAZELNUT.asStack());
 
+		items.add(GarnishedItems.CRACKED_CHESTNUT.asStack());
+		items.add(GarnishedItems.UNGARNISHED_CHESTNUT.asStack());
+		items.add(GarnishedItems.CHESTNUT.asStack());
+		items.add(GarnishedItems.CINDER_FLOUR_CHESTNUT.asStack());
+		items.add(GarnishedItems.MELTED_CINDER_FLOUR_CHESTNUT.asStack());
+		items.add(GarnishedItems.SLOW_FALLING_CINDER_CHESTNUT.asStack());
+		items.add(GarnishedItems.SWEETENED_CHESTNUT.asStack());
+		items.add(GarnishedItems.CHOCOLATE_GLAZED_CHESTNUT.asStack());
+		items.add(GarnishedItems.HONEYED_CHESTNUT.asStack());
+
 		items.add(GarnishedItems.NUT_MIX.asStack());
 		items.add(GarnishedItems.SWEETENED_NUT_MIX.asStack());
 		items.add(GarnishedItems.CHOCHOLATE_GLAZED_NUT_MIX.asStack());
@@ -198,6 +208,20 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 		items.add(GarnishedItems.GALACTIC_CANE.asStack());
 		items.add(GarnishedItems.ICY_MASTIC_CHUNK.asStack());
 		items.add(GarnishedItems.STURDY_WAFFLE.asStack());
+
+		items.add(GarnishedItems.RAW_TENEBROUS_MEAT.asStack());
+		items.add(GarnishedItems.COOKED_TENEBROUS_MEAT.asStack());
+		items.add(GarnishedItems.CASHEW_SORBET_SCOOP.asStack());
+		items.add(GarnishedItems.CASHEW_SORBET_DELIGHT.asStack());
+		items.add(GarnishedItems.ACHING_TENEBROUS_CLUMP.asStack());
+		items.add(GarnishedItems.GLOOMY_GATHERING.asStack());
+		items.add(GarnishedItems.FISHY_SURPRISE.asStack());
+		items.add(GarnishedItems.WALNUT_GORGE_CREAM.asStack());
+		items.add(GarnishedItems.GHANDERCKEN.asStack());
+		items.add(GarnishedItems.WHEAT_GRAZE.asStack());
+		items.add(GarnishedItems.PORKCHOP_AND_GRAZE.asStack());
+
+		items.add(GarnishedItems.GHAST_TENDRIL.asStack());
 
 		items.add(GarnishedItems.VOLATILE_DUST.asStack());
 
