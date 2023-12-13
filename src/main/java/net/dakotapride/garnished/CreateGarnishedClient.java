@@ -47,6 +47,7 @@ public class CreateGarnishedClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.PISTACHIO_LEAVES.get(), RenderType.cutoutMipped());
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.MACADAMIA_LEAVES.get(), RenderType.cutoutMipped());
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.HAZELNUT_LEAVES.get(), RenderType.cutoutMipped());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.CHESTNUT_LEAVES.get(), RenderType.cutoutMipped());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.ALMOND_SAPLING.get(), RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.CASHEW_SAPLING.get(), RenderType.cutout());
@@ -56,6 +57,7 @@ public class CreateGarnishedClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.PISTACHIO_SAPLING.get(), RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.MACADAMIA_SAPLING.get(), RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.HAZELNUT_SAPLING.get(), RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.CHESTNUT_SAPLING.get(), RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.SEPIA_FUNGUS.get(), RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.SOUL_ROOTS.get(), RenderType.cutout());
@@ -80,7 +82,7 @@ public class CreateGarnishedClient implements ClientModInitializer {
 				GarnishedBlocks.NUT_LEAVES.get(),
 				GarnishedBlocks.ALMOND_LEAVES.get(), GarnishedBlocks.CASHEW_LEAVES.get(), GarnishedBlocks.WALNUT_LEAVES.get(),
 				GarnishedBlocks.PECAN_LEAVES.get(), GarnishedBlocks.BUHG_LEAVES.get(), GarnishedBlocks.PISTACHIO_LEAVES.get(),
-				GarnishedBlocks.MACADAMIA_LEAVES.get(), GarnishedBlocks.HAZELNUT_LEAVES.get());
+				GarnishedBlocks.MACADAMIA_LEAVES.get(), GarnishedBlocks.HAZELNUT_LEAVES.get(), GarnishedBlocks.CHESTNUT_LEAVES.get());
 	}
 
 	public static synchronized void itemColourProvider(BlockColors colors, ItemColors itemColors) {
@@ -92,6 +94,6 @@ public class CreateGarnishedClient implements ClientModInitializer {
 		itemColors.register(itemBlockColourHandler, GarnishedBlocks.NUT_LEAVES.get(),
 				GarnishedBlocks.ALMOND_LEAVES.get(), GarnishedBlocks.CASHEW_LEAVES.get(), GarnishedBlocks.WALNUT_LEAVES.get(),
 				GarnishedBlocks.PECAN_LEAVES.get(), GarnishedBlocks.BUHG_LEAVES.get(), GarnishedBlocks.PISTACHIO_LEAVES.get(),
-				GarnishedBlocks.MACADAMIA_LEAVES.get(), GarnishedBlocks.HAZELNUT_LEAVES.get());
+				GarnishedBlocks.MACADAMIA_LEAVES.get(), GarnishedBlocks.HAZELNUT_LEAVES.get(), GarnishedBlocks.CHESTNUT_LEAVES.get());
 	}
 }
