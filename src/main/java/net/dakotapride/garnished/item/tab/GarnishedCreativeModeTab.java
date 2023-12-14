@@ -121,6 +121,7 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 		items.add(GarnishedItems.SALAD.asStack());
 		items.add(GarnishedItems.PHANTOM_STEAK.asStack());
 		items.add(GarnishedItems.BITTER_ALMOND.asStack());
+		items.add(GarnishedItems.ALMOND_CHEESE.asStack());
 		items.add(GarnishedItems.CASHEW_APPLE.asStack());
 		items.add(GarnishedItems.WALNUT_BROWNIE.asStack());
 		items.add(GarnishedItems.PECAN_PIE.asStack());
