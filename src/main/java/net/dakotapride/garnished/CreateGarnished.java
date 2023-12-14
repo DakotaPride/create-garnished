@@ -1,5 +1,7 @@
 package net.dakotapride.garnished;
 
+import net.dakotapride.garnished.modifier.LootTableModifiers;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -46,6 +48,7 @@ public class CreateGarnished implements ModInitializer {
 		GarnishedEffects.setRegister();
 		GarnishedEnchantments.setRegister();
 		GarnishedTags.setRegister();
+		LootTableModifiers.modifyLootTables();
 		REGISTRATE.get().register();
 
 		// Generation
