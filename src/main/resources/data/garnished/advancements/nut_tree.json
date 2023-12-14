@@ -10,12 +10,12 @@
       "translate": "advancement.garnished.nut_tree.description",
       "color": "#DBA213"
     },
+    "background": "garnished:textures/gui/advancements/backgrounds/nut_planks.png",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
   },
-  "parent": "create:steam_engine_maxed",
   "criteria": {
     "obtain_ungarnished_nut": {
       "trigger": "minecraft:inventory_changed",

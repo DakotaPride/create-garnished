@@ -489,5 +489,7 @@
   "advancement.garnished.abyssal_stone.title": "The Void! Or Is It?", //
   "advancement.garnished.abyssal_stone.description": "Obtain Abyssal Stone", //
   "advancement.garnished.unstable_stone.title": "Abstracted In The Mortal Plane", //
-  "advancement.garnished.unstable_stone.description": "Obtain Unstable Stone" //
+  "advancement.garnished.unstable_stone.description": "Obtain Unstable Stone", //
+  "advancements.garnished.consume_all_foods.title": "Welcome to Hell's Kitchen!", //
+  "advancements.garnished.consume_all_foods.description": "Consume All Foods From The Create: Garnished mod" //
 }

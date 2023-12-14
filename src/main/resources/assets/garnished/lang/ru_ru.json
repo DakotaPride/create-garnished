@@ -489,5 +489,7 @@
   "advancement.garnished.abyssal_stone.title": "Пустота! Или что это?",
   "advancement.garnished.abyssal_stone.description": "Получите Камень бездны",
   "advancement.garnished.unstable_stone.title": "Абстракция, в смертном плане",
-  "advancement.garnished.unstable_stone.description": "Получите Нестабильный камень"
+  "advancement.garnished.unstable_stone.description": "Получите Нестабильный камень",
+  "advancements.garnished.consume_all_foods.title": "Welcome to Hell's Kitchen!", //
+  "advancements.garnished.consume_all_foods.description": "Consume All Foods From The Create: Garnished mod" //
 }

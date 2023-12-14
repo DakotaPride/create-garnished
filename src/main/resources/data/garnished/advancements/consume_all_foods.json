@@ -1,0 +1,2071 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:wrapped_sepia_tangle"
+    },
+    "title": {
+      "translate": "advancements.garnished.consume_all_foods.title"
+    },
+    "description": {
+      "translate": "advancements.garnished.consume_all_foods.description"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "garnished:garnished_meal",
+  "criteria": {
+    "ungarnished_almond": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:ungarnished_almond"
+          ]
+        }
+      }
+    },
+    "garnished_almond": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:almond"
+          ]
+        }
+      }
+    },
+    "sweetened_almond": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:sweetened_almond"
+          ]
+        }
+      }
+    },
+    "honeyed_almond": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:honeyed_almond"
+          ]
+        }
+      }
+    },
+    "chocolate_glazed_almond": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:chocolate_glazed_almond"
+          ]
+        }
+      }
+    },
+    "cinder_flour_almond": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_almond"
+          ]
+        }
+      }
+    },
+    "melted_cinder_flour_almond": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:melted_cinder_almond"
+          ]
+        }
+      }
+    },
+    "effect_melted_cinder_flour_almond": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_almond_haste"
+          ]
+        }
+      }
+    },
+
+    "ungarnished_cashew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:ungarnished_cashew"
+          ]
+        }
+      }
+    },
+    "garnished_cashew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cashew"
+          ]
+        }
+      }
+    },
+    "sweetened_cashew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:sweetened_cashew"
+          ]
+        }
+      }
+    },
+    "honeyed_cashew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:honeyed_cashew"
+          ]
+        }
+      }
+    },
+    "chocolate_glazed_cashew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:chocolate_glazed_cashew"
+          ]
+        }
+      }
+    },
+    "cinder_flour_cashew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_cashew"
+          ]
+        }
+      }
+    },
+    "melted_cinder_flour_cashew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:melted_cinder_cashew"
+          ]
+        }
+      }
+    },
+    "effect_melted_cinder_flour_cashew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_cashew_speed"
+          ]
+        }
+      }
+    },
+
+    "ungarnished_hazelnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:ungarnished_hazelnut"
+          ]
+        }
+      }
+    },
+    "garnished_hazelnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:hazelnut"
+          ]
+        }
+      }
+    },
+    "sweetened_hazelnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:sweetened_hazelnut"
+          ]
+        }
+      }
+    },
+    "honeyed_hazelnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:honeyed_hazelnut"
+          ]
+        }
+      }
+    },
+    "chocolate_glazed_hazelnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:chocolate_glazed_hazelnut"
+          ]
+        }
+      }
+    },
+    "cinder_flour_hazelnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_hazelnut"
+          ]
+        }
+      }
+    },
+    "melted_cinder_flour_hazelnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:melted_cinder_hazelnut"
+          ]
+        }
+      }
+    },
+    "effect_melted_cinder_flour_hazelnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_hazelnut_speed_potent"
+          ]
+        }
+      }
+    },
+
+    "ungarnished_peanut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:ungarnished_peanut"
+          ]
+        }
+      }
+    },
+    "garnished_peanut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:peanut"
+          ]
+        }
+      }
+    },
+    "sweetened_peanut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:sweetened_peanut"
+          ]
+        }
+      }
+    },
+    "honeyed_peanut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:honeyed_peanut"
+          ]
+        }
+      }
+    },
+    "chocolate_glazed_peanut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:chocolate_glazed_peanut"
+          ]
+        }
+      }
+    },
+    "cinder_flour_peanut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_peanut"
+          ]
+        }
+      }
+    },
+    "melted_cinder_flour_peanut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:melted_cinder_peanut"
+          ]
+        }
+      }
+    },
+    "effect_melted_cinder_flour_peanut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_peanut_effect"
+          ]
+        }
+      }
+    },
+
+    "ungarnished_macadamia": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:ungarnished_macadamia"
+          ]
+        }
+      }
+    },
+    "garnished_macadamia": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:macadamia"
+          ]
+        }
+      }
+    },
+    "sweetened_macadamia": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:sweetened_macadamia"
+          ]
+        }
+      }
+    },
+    "honeyed_macadamia": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:honeyed_macadamia"
+          ]
+        }
+      }
+    },
+    "chocolate_glazed_macadamia": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:chocolate_glazed_macadamia"
+          ]
+        }
+      }
+    },
+    "cinder_flour_macadamia": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_macadamia"
+          ]
+        }
+      }
+    },
+    "melted_cinder_flour_macadamia": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:melted_cinder_macadamia"
+          ]
+        }
+      }
+    },
+    "effect_melted_cinder_flour_macadamia": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_macadamia_fire_resistance"
+          ]
+        }
+      }
+    },
+
+    "ungarnished_pistachio": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:ungarnished_pistachio"
+          ]
+        }
+      }
+    },
+    "garnished_pistachio": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:pistachio"
+          ]
+        }
+      }
+    },
+    "sweetened_pistachio": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:sweetened_pistachio"
+          ]
+        }
+      }
+    },
+    "honeyed_pistachio": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:honeyed_pistachio"
+          ]
+        }
+      }
+    },
+    "chocolate_glazed_pistachio": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:chocolate_glazed_pistachio"
+          ]
+        }
+      }
+    },
+    "cinder_flour_pistachio": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_pistachio"
+          ]
+        }
+      }
+    },
+    "melted_cinder_flour_pistachio": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:melted_cinder_pistachio"
+          ]
+        }
+      }
+    },
+    "effect_melted_cinder_flour_pistachio": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_pistachio_night_vision"
+          ]
+        }
+      }
+    },
+
+    "ungarnished_pecan": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:ungarnished_pecan"
+          ]
+        }
+      }
+    },
+    "garnished_pecan": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:pecan"
+          ]
+        }
+      }
+    },
+    "sweetened_pecan": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:sweetened_pecan"
+          ]
+        }
+      }
+    },
+    "honeyed_pecan": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:honeyed_pecan"
+          ]
+        }
+      }
+    },
+    "chocolate_glazed_pecan": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:chocolate_glazed_pecan"
+          ]
+        }
+      }
+    },
+    "cinder_flour_pecan": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_pecan"
+          ]
+        }
+      }
+    },
+    "melted_cinder_flour_pecan": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:melted_cinder_pecan"
+          ]
+        }
+      }
+    },
+    "effect_melted_cinder_flour_pecan": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_pecan_resistance"
+          ]
+        }
+      }
+    },
+
+    "ungarnished_walnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:ungarnished_walnut"
+          ]
+        }
+      }
+    },
+    "garnished_walnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:walnut"
+          ]
+        }
+      }
+    },
+    "sweetened_walnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:sweetened_walnut"
+          ]
+        }
+      }
+    },
+    "honeyed_walnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:honeyed_walnut"
+          ]
+        }
+      }
+    },
+    "chocolate_glazed_walnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:chocolate_glazed_walnut"
+          ]
+        }
+      }
+    },
+    "cinder_flour_walnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_walnut"
+          ]
+        }
+      }
+    },
+    "melted_cinder_flour_walnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:melted_cinder_walnut"
+          ]
+        }
+      }
+    },
+    "effect_melted_cinder_flour_walnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_walnut_strength"
+          ]
+        }
+      }
+    },
+
+    "ungarnished_chestnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:ungarnished_chestnut"
+          ]
+        }
+      }
+    },
+    "garnished_chestnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:chestnut"
+          ]
+        }
+      }
+    },
+    "sweetened_chestnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:sweetened_chestnut"
+          ]
+        }
+      }
+    },
+    "honeyed_chestnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:honeyed_chestnut"
+          ]
+        }
+      }
+    },
+    "chocolate_glazed_chestnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:chocolate_glazed_chestnut"
+          ]
+        }
+      }
+    },
+    "cinder_flour_chestnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_chestnut"
+          ]
+        }
+      }
+    },
+    "melted_cinder_flour_chestnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:melted_cinder_chestnut"
+          ]
+        }
+      }
+    },
+    "effect_melted_cinder_flour_chestnut": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_chestnut_slow_falling"
+          ]
+        }
+      }
+    },
+
+    "garnished_sweet_berries": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:garnished_sweet_berries"
+          ]
+        }
+      }
+    },
+    "honeyed_sweet_berries": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:honeyed_sweet_berries"
+          ]
+        }
+      }
+    },
+    "nut_mix": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:nut_mix"
+          ]
+        }
+      }
+    },
+    "sweetened_nut_mix": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:sweetened_nut_mix"
+          ]
+        }
+      }
+    },
+    "honeyed_nut_mix": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:honeyed_nut_mix"
+          ]
+        }
+      }
+    },
+    "chocolate_glazed_nut_mix": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:chocolate_glazed_nut_mix"
+          ]
+        }
+      }
+    },
+    "garnished_meal": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:garnished_meal"
+          ]
+        }
+      }
+    },
+    "salad": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:salad"
+          ]
+        }
+      }
+    },
+
+    "bottled_peanut_oil": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:peanut_oil"
+          ]
+        }
+      }
+    },
+    "apple_cider": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:apple_cider"
+          ]
+        }
+      }
+    },
+    "cryptic_apple_cider": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cryptic_apple_cider"
+          ]
+        }
+      }
+    },
+    "bitter_apple_cider": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:bitter_apple_cider"
+          ]
+        }
+      }
+    },
+    "cashew_mixture": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cashew_mixture"
+          ]
+        }
+      }
+    },
+
+    "phantom_steak": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:phantom_steak"
+          ]
+        }
+      }
+    },
+    "cashew_cookie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cashew_cookie"
+          ]
+        }
+      }
+    },
+    "cashew_fruit": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cashew_fruit"
+          ]
+        }
+      }
+    },
+    "pecan_pie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:pecan_pie"
+          ]
+        }
+      }
+    },
+    "brownie_walnuts": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:brownie_walnuts"
+          ]
+        }
+      }
+    },
+    "almond_cheese": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:almond_cheese"
+          ]
+        }
+      }
+    },
+    "bitter_almond": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:bitter_almond"
+          ]
+        }
+      }
+    },
+
+    "senile_sweet_blackstone": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:senile_sweet_blackstone"
+          ]
+        }
+      }
+    },
+    "senile_sweet_basalt": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:senile_sweet_basalt"
+          ]
+        }
+      }
+    },
+    "senile_sweet_scoria": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:senile_sweet_scoria"
+          ]
+        }
+      }
+    },
+    "senile_sweet_scorchia": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:senile_sweet_scorchia"
+          ]
+        }
+      }
+    },
+    "wrapped_sepia_tangle": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:wrapped_sepia_tangle"
+          ]
+        }
+      }
+    },
+    "wrapped_warped_tangle": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:wrapped_warped_tangle"
+          ]
+        }
+      }
+    },
+    "wrapped_crimson_tangle": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:wrapped_crimson_tangle"
+          ]
+        }
+      }
+    },
+    "weeping_tangle": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:weeping_tangle"
+          ]
+        }
+      }
+    },
+    "nut_nacho": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:nut_nacho"
+          ]
+        }
+      }
+    },
+    "nut_nacho_bowl": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:nut_nacho_bowl"
+          ]
+        }
+      }
+    },
+    "grim_stew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:grim_stew"
+          ]
+        }
+      }
+    },
+    "spirited_concoction": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:spirited_concoction"
+          ]
+        }
+      }
+    },
+    "tophet_brew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:tophet_brew"
+          ]
+        }
+      }
+    },
+    "soul_khana": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:soul_khana"
+          ]
+        }
+      }
+    },
+    "putrid_stew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:putrid_stew"
+          ]
+        }
+      }
+    },
+    "cinder_roll": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cinder_roll"
+          ]
+        }
+      }
+    },
+    "blazing_delight": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:blazing_delight"
+          ]
+        }
+      }
+    },
+    "peanut_cinder_sandwich": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:peanut_cinder_sandwich"
+          ]
+        }
+      }
+    },
+
+    "ender_jelly": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:ender_jelly"
+          ]
+        }
+      }
+    },
+    "chorus_cookie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:chorus_cookie"
+          ]
+        }
+      }
+    },
+    "chorus_bowl": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:chorus_bowl"
+          ]
+        }
+      }
+    },
+    "void_mixture": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:void_mixture"
+          ]
+        }
+      }
+    },
+    "desolate_stew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:desolate_stew"
+          ]
+        }
+      }
+    },
+    "ethereal_concoction": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:ethereal_concoction"
+          ]
+        }
+      }
+    },
+    "cosmic_brew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cosmic_brew"
+          ]
+        }
+      }
+    },
+    "illuminating_cocktail": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:illuminating_cocktail"
+          ]
+        }
+      }
+    },
+    "chorus_cocktail": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:chorus_cocktail"
+          ]
+        }
+      }
+    },
+    "ender_jelly_bottle": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:ender_jelly_bottle"
+          ]
+        }
+      }
+    },
+    "mulch": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mulch"
+          ]
+        }
+      }
+    },
+    "mud_pie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mud_pie"
+          ]
+        }
+      }
+    },
+
+    "baklava": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:baklava"
+          ]
+        }
+      }
+    },
+    "sturdy_waffle": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:sturdy_waffle"
+          ]
+        }
+      }
+    },
+    "coal_truffle": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:coal_truffle"
+          ]
+        }
+      }
+    },
+    "galactic_cane": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:galactic_cane"
+          ]
+        }
+      }
+    },
+    "merry_treat": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:merry_treat"
+          ]
+        }
+      }
+    },
+    "icy_mastic_chunk": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:icy_mastic_chunk"
+          ]
+        }
+      }
+    },
+    "slime_drop": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:slime_drop"
+          ]
+        }
+      }
+    },
+    "slime_drop_red": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:slime_drop_red"
+          ]
+        }
+      }
+    },
+    "slime_drop_orange": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:slime_drop_orange"
+          ]
+        }
+      }
+    },
+    "slime_drop_yellow": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:slime_drop_yellow"
+          ]
+        }
+      }
+    },
+    "slime_drop_green": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:slime_drop_green"
+          ]
+        }
+      }
+    },
+    "slime_drop_blue": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:slime_drop_blue"
+          ]
+        }
+      }
+    },
+    "slime_drop_purple": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:slime_drop_purple"
+          ]
+        }
+      }
+    },
+    "mastic_paste": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mastic_paste"
+          ]
+        }
+      }
+    },
+    "mastic_paste_red": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mastic_paste_red"
+          ]
+        }
+      }
+    },
+    "mastic_paste_orange": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mastic_paste_orange"
+          ]
+        }
+      }
+    },
+    "mastic_paste_yellow": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mastic_paste_yellow"
+          ]
+        }
+      }
+    },
+    "mastic_paste_green": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mastic_paste_green"
+          ]
+        }
+      }
+    },
+    "mastic_paste_blue": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mastic_paste_blue"
+          ]
+        }
+      }
+    },
+    "mastic_paste_purple": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mastic_paste_purple"
+          ]
+        }
+      }
+    },
+    "venerable_delicacy_red": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:venerable_delicacy_red"
+          ]
+        }
+      }
+    },
+    "venerable_delicacy_orange": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:venerable_delicacy_orange"
+          ]
+        }
+      }
+    },
+    "venerable_delicacy_yellow": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:venerable_delicacy_yellow"
+          ]
+        }
+      }
+    },
+    "venerable_delicacy_green": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:venerable_delicacy_green"
+          ]
+        }
+      }
+    },
+    "venerable_delicacy_blue": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:venerable_delicacy_blue"
+          ]
+        }
+      }
+    },
+    "venerable_delicacy_purple": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:venerable_delicacy_purple"
+          ]
+        }
+      }
+    },
+
+    "ghandercken": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:ghandercken"
+          ]
+        }
+      }
+    },
+    "fishy_surprise": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:fishy_surprise"
+          ]
+        }
+      }
+    },
+    "cashew_sorbet_scoop": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cashew_sorbet_scoop"
+          ]
+        }
+      }
+    },
+    "cashew_sorbet_delight": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cashew_sorbet_delight"
+          ]
+        }
+      }
+    },
+    "wheat_graze": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:wheat_graze"
+          ]
+        }
+      }
+    },
+    "porkchop_and_graze": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:porkchop_and_graze"
+          ]
+        }
+      }
+    },
+    "walnut_gorge_cream": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:walnut_gorge_cream"
+          ]
+        }
+      }
+    }
+  },
+
+  "requirements": [
+    [
+      "ungarnished_almond"
+    ],
+    [
+      "garnished_almond"
+    ],
+    [
+      "sweetened_almond"
+    ],
+    [
+      "honeyed_almond"
+    ],
+    [
+      "chocolate_glazed_almond"
+    ],
+    [
+      "cinder_flour_almond"
+    ],
+    [
+      "melted_cinder_flour_almond"
+    ],
+    [
+      "effect_melted_cinder_flour_almond"
+    ],
+
+    [
+      "ungarnished_cashew"
+    ],
+    [
+      "garnished_cashew"
+    ],
+    [
+      "sweetened_cashew"
+    ],
+    [
+      "honeyed_cashew"
+    ],
+    [
+      "chocolate_glazed_cashew"
+    ],
+    [
+      "cinder_flour_cashew"
+    ],
+    [
+      "melted_cinder_flour_cashew"
+    ],
+    [
+      "effect_melted_cinder_flour_cashew"
+    ],
+
+    [
+      "ungarnished_hazelnut"
+    ],
+    [
+      "garnished_hazelnut"
+    ],
+    [
+      "sweetened_hazelnut"
+    ],
+    [
+      "honeyed_hazelnut"
+    ],
+    [
+      "chocolate_glazed_hazelnut"
+    ],
+    [
+      "cinder_flour_hazelnut"
+    ],
+    [
+      "melted_cinder_flour_hazelnut"
+    ],
+    [
+      "effect_melted_cinder_flour_hazelnut"
+    ],
+
+    [
+      "ungarnished_peanut"
+    ],
+    [
+      "garnished_peanut"
+    ],
+    [
+      "sweetened_peanut"
+    ],
+    [
+      "honeyed_peanut"
+    ],
+    [
+      "chocolate_glazed_peanut"
+    ],
+    [
+      "cinder_flour_peanut"
+    ],
+    [
+      "melted_cinder_flour_peanut"
+    ],
+    [
+      "effect_melted_cinder_flour_peanut"
+    ],
+
+    [
+      "ungarnished_macadamia"
+    ],
+    [
+      "garnished_macadamia"
+    ],
+    [
+      "sweetened_macadamia"
+    ],
+    [
+      "honeyed_macadamia"
+    ],
+    [
+      "chocolate_glazed_macadamia"
+    ],
+    [
+      "cinder_flour_macadamia"
+    ],
+    [
+      "melted_cinder_flour_macadamia"
+    ],
+    [
+      "effect_melted_cinder_flour_macadamia"
+    ],
+
+    [
+      "ungarnished_pecan"
+    ],
+    [
+      "garnished_pecan"
+    ],
+    [
+      "sweetened_pecan"
+    ],
+    [
+      "honeyed_pecan"
+    ],
+    [
+      "chocolate_glazed_pecan"
+    ],
+    [
+      "cinder_flour_pecan"
+    ],
+    [
+      "melted_cinder_flour_pecan"
+    ],
+    [
+      "effect_melted_cinder_flour_pecan"
+    ],
+
+    [
+      "ungarnished_walnut"
+    ],
+    [
+      "garnished_walnut"
+    ],
+    [
+      "sweetened_walnut"
+    ],
+    [
+      "honeyed_walnut"
+    ],
+    [
+      "chocolate_glazed_walnut"
+    ],
+    [
+      "cinder_flour_walnut"
+    ],
+    [
+      "melted_cinder_flour_walnut"
+    ],
+    [
+      "effect_melted_cinder_flour_walnut"
+    ],
+
+    [
+      "ungarnished_pistachio"
+    ],
+    [
+      "garnished_pistachio"
+    ],
+    [
+      "sweetened_pistachio"
+    ],
+    [
+      "honeyed_pistachio"
+    ],
+    [
+      "chocolate_glazed_pistachio"
+    ],
+    [
+      "cinder_flour_pistachio"
+    ],
+    [
+      "melted_cinder_flour_pistachio"
+    ],
+    [
+      "effect_melted_cinder_flour_pistachio"
+    ],
+
+    [
+      "ungarnished_chestnut"
+    ],
+    [
+      "garnished_chestnut"
+    ],
+    [
+      "sweetened_chestnut"
+    ],
+    [
+      "honeyed_chestnut"
+    ],
+    [
+      "chocolate_glazed_chestnut"
+    ],
+    [
+      "cinder_flour_chestnut"
+    ],
+    [
+      "melted_cinder_flour_chestnut"
+    ],
+    [
+      "effect_melted_cinder_flour_chestnut"
+    ],
+
+    [
+      "nut_mix"
+    ],
+    [
+      "sweetened_nut_mix"
+    ],
+    [
+      "honeyed_nut_mix"
+    ],
+    [
+      "chocolate_glazed_nut_mix"
+    ],
+    [
+      "garnished_meal"
+    ],
+    [
+      "salad"
+    ],
+    [
+      "garnished_sweet_berries"
+    ],
+    [
+      "honeyed_sweet_berries"
+    ],
+
+    [
+      "bottled_peanut_oil"
+    ],
+    [
+      "apple_cider"
+    ],
+    [
+      "cryptic_apple_cider"
+    ],
+    [
+      "bitter_apple_cider"
+    ],
+    [
+      "cashew_mixture"
+    ],
+
+    [
+      "phantom_steak"
+    ],
+    [
+      "cashew_cookie"
+    ],
+    [
+      "pecan_pie"
+    ],
+    [
+      "brownie_walnuts"
+    ],
+    [
+      "almond_cheese"
+    ],
+    [
+      "bitter_almond"
+    ],
+    [
+      "cashew_fruit"
+    ],
+
+    [
+      "senile_sweet_blackstone"
+    ],
+    [
+      "senile_sweet_basalt"
+    ],
+    [
+      "senile_sweet_scoria"
+    ],
+    [
+      "senile_sweet_scorchia"
+    ],
+    [
+      "wrapped_sepia_tangle"
+    ],
+    [
+      "wrapped_warped_tangle"
+    ],
+    [
+      "wrapped_crimson_tangle"
+    ],
+    [
+      "weeping_tangle"
+    ],
+    [
+      "nut_nacho"
+    ],
+    [
+      "nut_nacho_bowl"
+    ],
+    [
+      "grim_stew"
+    ],
+    [
+      "spirited_concoction"
+    ],
+    [
+      "tophet_brew"
+    ],
+    [
+      "soul_khana"
+    ],
+    [
+      "putrid_stew"
+    ],
+    [
+      "blazing_delight"
+    ],
+    [
+      "cinder_roll"
+    ],
+    [
+      "peanut_cinder_sandwich"
+    ],
+
+    [
+      "ender_jelly"
+    ],
+    [
+      "chorus_cookie"
+    ],
+    [
+      "chorus_bowl"
+    ],
+    [
+      "void_mixture"
+    ],
+    [
+      "ethereal_concoction"
+    ],
+    [
+      "desolate_stew"
+    ],
+    [
+      "cosmic_brew"
+    ],
+    [
+      "illuminating_cocktail"
+    ],
+    [
+      "chorus_cocktail"
+    ],
+    [
+      "ender_jelly_bottle"
+    ],
+    [
+      "mulch"
+    ],
+    [
+      "mud_pie"
+    ],
+
+    [
+      "baklava"
+    ],
+    [
+      "sturdy_waffle"
+    ],
+    [
+      "coal_truffle"
+    ],
+    [
+      "galactic_cane"
+    ],
+    [
+      "merry_treat"
+    ],
+    [
+      "icy_mastic_chunk"
+    ],
+    [
+      "slime_drop"
+    ],
+    [
+      "slime_drop_red"
+    ],
+    [
+      "slime_drop_orange"
+    ],
+    [
+      "slime_drop_yellow"
+    ],
+    [
+      "slime_drop_green"
+    ],
+    [
+      "slime_drop_blue"
+    ],
+    [
+      "slime_drop_purple"
+    ],
+    [
+      "mastic_paste"
+    ],
+    [
+      "mastic_paste_red"
+    ],
+    [
+      "mastic_paste_orange"
+    ],
+    [
+      "mastic_paste_yellow"
+    ],
+    [
+      "mastic_paste_green"
+    ],
+    [
+      "mastic_paste_blue"
+    ],
+    [
+      "mastic_paste_purple"
+    ],
+    [
+      "venerable_delicacy_red"
+    ],
+    [
+      "venerable_delicacy_orange"
+    ],
+    [
+      "venerable_delicacy_yellow"
+    ],
+    [
+      "venerable_delicacy_green"
+    ],
+    [
+      "venerable_delicacy_blue"
+    ],
+    [
+      "venerable_delicacy_purple"
+    ],
+
+    [
+      "ghandercken"
+    ],
+    [
+      "fishy_surprise"
+    ],
+    [
+      "cashew_sorbet_scoop"
+    ],
+    [
+      "cashew_sorbet_delight"
+    ],
+    [
+      "wheat_graze"
+    ],
+    [
+      "porkchop_and_graze"
+    ],
+    [
+      "walnut_gorge_cream"
+    ]
+  ],
+  "rewards": {
+    "experience": 200
+  }
+}
