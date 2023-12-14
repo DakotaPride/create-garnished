@@ -189,12 +189,18 @@ public class HatchetUtils {
                 int additionalDropCount = singleCount + random.nextInt(3);
                 int ghastTearDropChance = random.nextInt(12);
                 int ghastTearDropCount = singleCount + random.nextInt(2);
+				int ghastTendrilDropChance = random.nextInt(8);
+				int ghastTendrilDropCount = singleCount + random.nextInt(2);
 
-                if (additionalDropChance == 1) {
-                    entity.spawnAtLocation(new ItemStack(Items.GUNPOWDER, additionalDropCount));
-                } else if (ghastTearDropChance == 1) {
-                    entity.spawnAtLocation(new ItemStack(Items.GHAST_TEAR, ghastTearDropCount));
-                }
+				if (additionalDropChance == 1) {
+					entity.spawnAtLocation(new ItemStack(Items.GUNPOWDER, additionalDropCount));
+				} else if (ghastTearDropChance == 1) {
+					entity.spawnAtLocation(new ItemStack(Items.GHAST_TEAR, ghastTearDropCount));
+				}
+
+				if (ghastTendrilDropChance == 1) {
+					entity.spawnAtLocation(new ItemStack(GarnishedItems.GHAST_TENDRIL.get(), ghastTendrilDropCount));
+				}
             }
         }
 
