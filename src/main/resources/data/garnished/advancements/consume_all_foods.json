@@ -1511,36 +1511,6 @@
       }
     },
 
-    "raw_tenebrous_meat": {
-      "trigger": "minecraft:consume_item",
-      "conditions": {
-        "item": {
-          "items": [
-            "garnished:raw_tenebrous_meat"
-          ]
-        }
-      }
-    },
-    "cooked_tenebrous_meat": {
-      "trigger": "minecraft:consume_item",
-      "conditions": {
-        "item": {
-          "items": [
-            "garnished:cooked_tenebrous_meat"
-          ]
-        }
-      }
-    },
-    "aching_tenebrous_clump": {
-      "trigger": "minecraft:consume_item",
-      "conditions": {
-        "item": {
-          "items": [
-            "garnished:aching_tenebrous_clump"
-          ]
-        }
-      }
-    },
     "ghandercken": {
       "trigger": "minecraft:consume_item",
       "conditions": {
@@ -1557,16 +1527,6 @@
         "item": {
           "items": [
             "garnished:fishy_surprise"
-          ]
-        }
-      }
-    },
-    "gloomy_gathering": {
-      "trigger": "minecraft:consume_item",
-      "conditions": {
-        "item": {
-          "items": [
-            "garnished:gloomy_gathering"
           ]
         }
       }
@@ -2084,22 +2044,10 @@
     ],
 
     [
-      "raw_tenebrous_meat"
-    ],
-    [
-      "cooked_tenebrous_meat"
-    ],
-    [
-      "aching_tenebrous_clump"
-    ],
-    [
       "ghandercken"
     ],
     [
       "fishy_surprise"
-    ],
-    [
-      "gloomy_gathering"
     ],
     [
       "cashew_sorbet_scoop"
