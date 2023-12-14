@@ -1,16 +1,8 @@
 {
   "replace": false,
   "values": [
-    "minecraft:zombie",
-    "minecraft:skeleton",
-    "minecraft:creeper",
-    "minecraft:piglin",
-    "minecraft:hoglin",
-    "minecraft:zoglin",
-    "minecraft:spider",
-    "minecraft:cave_spider",
-    "minecraft:wither_skeleton",
-    "minecraft:phantom",
-    "minecraft:warden"
+    "minecraft:magma_cube",
+    "minecraft:blaze",
+    "minecraft:ghast"
   ]
 }
