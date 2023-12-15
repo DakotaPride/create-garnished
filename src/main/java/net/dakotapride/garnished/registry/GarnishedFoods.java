@@ -100,7 +100,7 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties MASTIC_PASTE = new FoodProperties.Builder().nutrition(3).saturationMod(0.1F).fast().build();
 	public static final FoodProperties SLIME_DROP = new FoodProperties.Builder().nutrition(5).saturationMod(0.3F).fast().build();
 	public static final FoodProperties MASTIC_COVERED_SLIME_DROP = new FoodProperties.Builder().nutrition(7).saturationMod(0.4F).fast().build();
-	public static final FoodProperties VENERABLE_DELICACY = new FoodProperties.Builder().nutrition(8).saturationMod(0.4F).fast().build();
+	public static final FoodProperties VENERABLE_DELICACY = new FoodProperties.Builder().nutrition(8).saturationMod(0.4F).build();
 	public static final FoodProperties GALACTIC_CANE = new FoodProperties.Builder().nutrition(7).saturationMod(0.3F).build();
 	public static final FoodProperties MERRY_TREAT = new FoodProperties.Builder().nutrition(8).saturationMod(0.4F).build();
 	public static final FoodProperties ICY_MASTIC_CHUNK = new FoodProperties.Builder().nutrition(3).saturationMod(0.1F).fast().build();
