@@ -96,6 +96,8 @@ public interface IGarnishedItem {
 			effect = MobEffects.NIGHT_VISION;
 		} else if (item == GarnishedItems.FIRE_RESISTANCE_CINDER_MACADAMIA.get()) {
 			effect = MobEffects.FIRE_RESISTANCE;
+		} else if (item == GarnishedItems.SLOW_FALLING_CINDER_CHESTNUT.get()) {
+			effect = MobEffects.SLOW_FALLING;
 		} else if (item != GarnishedItems.EFFECT_CINDER_BUHG.get() && item != GarnishedItems.POTENT_SPEED_CINDER_HAZELNUT.get()) {
 			return MobEffects.BLINDNESS;
 		}
