@@ -204,6 +204,14 @@ public class HatchetUtils {
             }
         }
 
+		if (MobHelper.isWarden(entity)) {
+			mob = "Warden";
+
+			int rawTenebrousMeatDropCount = singleCount + random.nextInt(6);
+
+			entity.spawnAtLocation(new ItemStack(GarnishedItems.RAW_TENEBROUS_MEAT.get(), rawTenebrousMeatDropCount));
+		}
+
         DevAssistance.printLootTableToConsole(enchant, mob);
     }
 
@@ -243,6 +251,10 @@ public class HatchetUtils {
 
     public static class MobHelper {
         public MobHelper() {}
+
+		public static boolean isWarden(Entity entity) {
+			return entity.getType() == EntityType.WARDEN;
+		}
 
         public static boolean isPhantom(Entity entity) {
             return entity.getType() == EntityType.PHANTOM;

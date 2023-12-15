@@ -1,5 +1,6 @@
 package net.dakotapride.garnished;
 
+import net.dakotapride.garnished.modifier.LootTableModifiers;
 import net.dakotapride.garnished.registry.GarnishedEnchantments;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 
@@ -50,6 +51,7 @@ public class CreateGarnished implements ModInitializer {
 		GarnishedFeatures.setRegister();
 		GarnishedTags.setRegister();
 		GarnishedEnchantments.setRegister();
+		LootTableModifiers.modifyLootTables();
 		REGISTRATE.get().register();
 
 		// Generation
