@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "garnished:raw_tenebrous_meat"
+  },
+  "result": "garnished:cooked_tenebrous_meat",
+  "experience": 0.35,
+  "cookingtime": 100
+}
