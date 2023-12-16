@@ -27,11 +27,11 @@ public class ItemStackMixin {
 		}
 
 		if (activeItem.is(GarnishedItems.MULCH.get())) {
-			entity.hurt(GarnishedDamageSource.MULCH_MUNCHING, 2.0F);
+			entity.hurt(level.damageSources().source(GarnishedDamageSource.MULCH_MUNCHING), 2.0F);
 		}
 
 		if (activeItem.is(GarnishedItems.MUD_PIE.get())) {
-			entity.hurt(GarnishedDamageSource.MULCH_MUNCHING, 1.0F);
+			entity.hurt(level.damageSources().source(GarnishedDamageSource.MULCH_MUNCHING), 1.0F);
 		}
 
 	}
