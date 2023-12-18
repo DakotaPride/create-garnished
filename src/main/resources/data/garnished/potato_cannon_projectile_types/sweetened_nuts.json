@@ -7,7 +7,8 @@
     "garnished:sweetened_pistachio",
     "garnished:sweetened_macadamia",
     "garnished:sweetened_peanut",
-    "garnished:sweetened_hazelnut"
+    "garnished:sweetened_hazelnut",
+    "garnished:sweetened_chestnut"
   ],
   "damage": 6,
   "reload_ticks": 8,

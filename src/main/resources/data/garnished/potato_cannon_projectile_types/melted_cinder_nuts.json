@@ -8,6 +8,7 @@
     "garnished:cinder_macadamia_fire_resistance",
     "garnished:cinder_peanut_effect",
     "garnished:cinder_hazelnut_speed_potent",
+    "garnished:cinder_chestnut_slow_falling",
 
     "garnished:melted_cinder_almond",
     "garnished:melted_cinder_pecan",
@@ -16,7 +17,8 @@
     "garnished:melted_cinder_pistachio",
     "garnished:melted_cinder_macadamia",
     "garnished:melted_cinder_peanut",
-    "garnished:melted_cinder_hazelnut"
+    "garnished:melted_cinder_hazelnut",
+    "garnished:melted_cinder_chestnut"
   ],
   "damage": 6,
   "reload_ticks": 10,
