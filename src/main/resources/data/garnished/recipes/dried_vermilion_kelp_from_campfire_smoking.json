@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "garnished:vermilion_kelp"
+  },
+  "result": "garnished:dried_vermilion_kelp",
+  "experience": 0.35,
+  "cookingtime": 600
+}

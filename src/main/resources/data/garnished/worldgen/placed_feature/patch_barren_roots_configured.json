@@ -1,0 +1,20 @@
+{
+  "feature": "garnished:patch_barren_roots_configured",
+  "placement": [
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "above_bottom": 0
+        },
+        "max_inclusive": {
+          "below_top": 0
+        }
+      }
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

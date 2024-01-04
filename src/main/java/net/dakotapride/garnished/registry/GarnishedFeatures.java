@@ -2,10 +2,17 @@ package net.dakotapride.garnished.registry;
 
 
 import net.dakotapride.garnished.CreateGarnished;
+import net.dakotapride.garnished.gen.feature.DulseKelpFeature;
+import net.dakotapride.garnished.gen.feature.VermilionKelpFeature;
+import net.dakotapride.garnished.gen.feature.VoltaicSeagrassFeature;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
+import net.minecraft.world.level.levelgen.feature.Feature;
+import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.NoneFeatureConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.ProbabilityFeatureConfiguration;
 import net.minecraft.world.level.levelgen.placement.PlacedFeature;
 
 public class GarnishedFeatures {
@@ -38,6 +45,18 @@ public class GarnishedFeatures {
 
 	public static final ResourceKey<ConfiguredFeature<?, ?>> END_STONE_VEGETATION_BONEMEAL_CONFIGURED = registerConfiguredKey("end_stone_vegetation_bonemeal");
 
+	public static final VermilionKelpFeature VERMILION_KELP_FEATURE = register("vermilion_kelp", new VermilionKelpFeature(NoneFeatureConfiguration.CODEC));
+	public static final DulseKelpFeature DULSE_KELP_FEATURE = register("dulse_kelp", new DulseKelpFeature(NoneFeatureConfiguration.CODEC));
+	public static final VoltaicSeagrassFeature VOLTAIC_SEAGRASS_FEATURE = register("voltaic_seagrass", new VoltaicSeagrassFeature(ProbabilityFeatureConfiguration.CODEC));
+
+	public static final ResourceKey<PlacedFeature> VERMILION_KELP_PLACED = registerPlacedKey("vermilion_kelp_placed");
+	public static final ResourceKey<PlacedFeature> DULSE_KELP_PLACED = registerPlacedKey("dulse_kelp_placed");
+	public static final ResourceKey<PlacedFeature> VOLTAIC_SEAGRASS_PLACED = registerPlacedKey("voltaic_seagrass_placed");
+
+	public static final ResourceKey<ConfiguredFeature<?, ?>> VERMILION_KELP_CONFIGURED = registerConfiguredKey("vermilion_kelp_configured");
+	public static final ResourceKey<ConfiguredFeature<?, ?>> DULSE_KELP_CONFIGURED = registerConfiguredKey("dulse_kelp_configured");
+	public static final ResourceKey<ConfiguredFeature<?, ?>> VOLTAIC_SEAGRASS_CONFIGURED = registerConfiguredKey("voltaic_seagrass_configured");
+
 	public static ResourceLocation set(String id) {
 		return new ResourceLocation(CreateGarnished.ID, id);
 	}
@@ -48,6 +67,10 @@ public class GarnishedFeatures {
 
 	public static ResourceKey<PlacedFeature> registerPlacedKey(String name) {
 		return ResourceKey.create(Registry.PLACED_FEATURE_REGISTRY, new ResourceLocation(CreateGarnished.ID, name));
+	}
+
+	private static <C extends FeatureConfiguration, F extends Feature<C>> F register(String key, F value) {
+		return Registry.register(Registry.FEATURE, new ResourceLocation(CreateGarnished.ID, key), value);
 	}
 
 	public static void setRegister() {}

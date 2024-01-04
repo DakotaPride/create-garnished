@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:voltaic_sea_grass"
+    },
+    "title": {
+      "translate": "advancement.garnished.voltaic_sea_grass.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.voltaic_sea_grass.description",
+      "color": "#DBA213"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "garnished:lustrous_pearl",
+  "criteria": {
+    "obtain_voltaic_sea_grass": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "garnished:voltaic_sea_grass"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_voltaic_sea_grass"
+    ]
+  ]
+}

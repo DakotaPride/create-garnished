@@ -1,0 +1,40 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:dulse_kelp"
+    },
+    "title": {
+      "translate": "advancement.garnished.dulse_kelp.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.dulse_kelp.description",
+      "color": "#DBA213"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "garnished:lustrous_pearl",
+  "criteria": {
+    "obtain_dulse_kelp": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "garnished:dulse_kelp",
+              "garnished:dried_dulse_kelp",
+              "garnished:dried_dulse_kelp_block"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_dulse_kelp"
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "garnished:slime_drop"
+    },
+    {
+      "item": "garnished:mastic_paste_orange"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:slime_drop_orange"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:murky_jelly"
+    },
+    {
+      "item": "garnished:murky_jelly"
+    },
+    {
+      "item": "garnished:dulse_kelp"
+    }
+  ],
+  "result": {
+    "item": "garnished:bewildered_pastry"
+  }
+}

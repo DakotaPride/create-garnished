@@ -19,6 +19,11 @@ import net.dakotapride.garnished.block.UnstableStoneBlock;
 import net.dakotapride.garnished.block.UnstableStoneSlabBlock;
 import net.dakotapride.garnished.block.UnstableStoneStairsBlock;
 import net.dakotapride.garnished.block.UnstableStoneWallBlock;
+import net.dakotapride.garnished.block.VoltaicSeagrassBlock;
+import net.dakotapride.garnished.block.kelp.DulseKelpBlock;
+import net.dakotapride.garnished.block.kelp.DulseKelpPlantBlock;
+import net.dakotapride.garnished.block.kelp.VermilionKelpBlock;
+import net.dakotapride.garnished.block.kelp.VermilionKelpPlantBlock;
 import net.dakotapride.garnished.block.nut.NutButtonBlock;
 import net.dakotapride.garnished.block.nut.NutDoorBlock;
 import net.dakotapride.garnished.block.nut.NutFenceGateBlock;
@@ -765,6 +770,43 @@ public class GarnishedBlocks {
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
 					.properties(p -> p.explosionResistance(12.0F)).register();
+
+	// v1.5
+	public static final BlockEntry<VermilionKelpBlock> VERMILION_KELP =
+			REGISTRATE.block("vermilion_kelp", VermilionKelpBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.KELP).register();
+	public static final BlockEntry<VermilionKelpPlantBlock> VERMILION_KELP_PLANT =
+			REGISTRATE.block("vermilion_kelp_plant", VermilionKelpPlantBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.initialProperties(() -> Blocks.KELP_PLANT).register();
+	public static final BlockEntry<Block> DRIED_VERMILION_KELP_BLOCK =
+			REGISTRATE.block("dried_vermilion_kelp_block", Block::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.DRIED_KELP_BLOCK).register();
+
+	public static final BlockEntry<DulseKelpBlock> DULSE_KELP =
+			REGISTRATE.block("dulse_kelp", DulseKelpBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.KELP).register();
+	public static final BlockEntry<DulseKelpPlantBlock> DULSE_KELP_PLANT =
+			REGISTRATE.block("dulse_kelp_plant", DulseKelpPlantBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.initialProperties(() -> Blocks.KELP_PLANT).register();
+	public static final BlockEntry<Block> DRIED_DULSE_KELP_BLOCK =
+			REGISTRATE.block("dried_dulse_kelp_block", Block::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.DRIED_KELP_BLOCK).register();
+
+	public static final BlockEntry<VoltaicSeagrassBlock> VOLTAIC_SEA_GRASS =
+			REGISTRATE.block("voltaic_sea_grass", VoltaicSeagrassBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.SEAGRASS).register();
 
 	public static void setRegister() {}
 }

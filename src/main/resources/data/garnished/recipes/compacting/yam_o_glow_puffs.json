@@ -1,0 +1,35 @@
+{
+  "type": "create:compacting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:glow_berries"
+    },
+    {
+      "item": "minecraft:glow_berries"
+    },
+    {
+      "item": "minecraft:glow_berries"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "item": "minecraft:hanging_roots"
+    },
+    {
+      "item": "minecraft:hanging_roots"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:yam_o_glow_puffs"
+    }
+  ]
+}

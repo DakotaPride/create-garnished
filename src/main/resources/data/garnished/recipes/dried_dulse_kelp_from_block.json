@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:dried_dulse_kelp_block"
+    }
+  ],
+  "result": {
+    "item": "garnished:dried_dulse_kelp",
+    "count": 9
+  }
+}

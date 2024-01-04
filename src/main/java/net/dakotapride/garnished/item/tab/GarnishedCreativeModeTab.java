@@ -221,10 +221,31 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 		items.add(GarnishedItems.GHANDERCKEN.asStack());
 		items.add(GarnishedItems.WHEAT_GRAZE.asStack());
 		items.add(GarnishedItems.PORKCHOP_AND_GRAZE.asStack());
+		items.add(GarnishedItems.MURKY_JELLY.asStack());
+		items.add(GarnishedItems.CACKLING_PIE.asStack());
+		items.add(GarnishedItems.YAM_O_GLOW_PUFFS.asStack());
+		items.add(GarnishedItems.SHINING_DISH.asStack());
+		items.add(GarnishedItems.MURKY_MACADAMIA_MALICE.asStack());
+		items.add(GarnishedItems.NUTTY_MELODY.asStack());
+		items.add(GarnishedItems.MUESLI.asStack());
+		items.add(GarnishedItems.DUSTY_REGALE.asStack());
+		items.add(GarnishedItems.INCENDIARY_STEW.asStack());
+
+		items.add(GarnishedItems.DRIED_VERMILION_KELP.asStack());
+		items.add(GarnishedItems.DRIED_DULSE_KELP.asStack());
+		items.add(GarnishedItems.BEWILDERED_PASTRY.asStack());
+		items.add(GarnishedItems.VERMILION_STEW.asStack());
+		items.add(GarnishedItems.VAST_BREW.asStack());
+		items.add(GarnishedItems.GALVANIC_HAUNTING.asStack());
 
 		items.add(GarnishedItems.GHAST_TENDRIL.asStack());
 
 		items.add(GarnishedItems.VOLATILE_DUST.asStack());
+
+		items.add(GarnishedBlocks.VERMILION_KELP.asStack());
+		items.add(GarnishedBlocks.DULSE_KELP.asStack());
+		items.add(GarnishedItems.CORAL_WRAPPING.asStack());
+		items.add(GarnishedItems.LUSTROUS_PEARL.asStack());
 
 		items.add(GarnishedBlocks.SEPIA_FUNGUS.asStack());
 		items.add(GarnishedBlocks.SOUL_ROOTS.asStack());

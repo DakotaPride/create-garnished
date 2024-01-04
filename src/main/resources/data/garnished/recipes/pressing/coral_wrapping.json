@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "minecraft:bubble_coral_fan"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:coral_wrapping"
+    }
+  ]
+}

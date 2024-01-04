@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:lustrous_pearl"
+    },
+    "title": {
+      "translate": "advancement.garnished.lustrous_pearl.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.lustrous_pearl.description",
+      "color": "#DBA213"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "garnished:garnished_meal",
+  "criteria": {
+    "obtain_lustrous_pearl": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "garnished:lustrous_pearl"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_lustrous_pearl"
+    ]
+  ]
+}

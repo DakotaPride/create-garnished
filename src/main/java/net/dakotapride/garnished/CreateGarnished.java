@@ -5,6 +5,7 @@ import net.dakotapride.garnished.registry.GarnishedEnchantments;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.GenerationStep;
@@ -39,6 +40,10 @@ public class CreateGarnished implements ModInitializer {
 	private static final NonNullSupplier<CreateRegistrate> REGISTRATE =
 			NonNullSupplier.lazy(() -> CreateRegistrate.create(ID));
 
+	public static ResourceLocation asResource(String path) {
+		return new ResourceLocation(ID, path);
+	}
+
 	@Override
 	public void onInitialize() {
 
@@ -65,6 +70,13 @@ public class CreateGarnished implements ModInitializer {
 				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.BARREN_ROOTS_PLACED);
 		BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_END),
 				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.CHORUS_PLANT_PLACED);
+
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.COLD_OCEAN),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.VERMILION_KELP_PLACED);
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.COLD_OCEAN),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.VOLTAIC_SEAGRASS_PLACED);
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.FROZEN_OCEAN),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.DULSE_KELP_PLACED);
 
 		LOGGER.info("Create addon mod [{}] is loading alongside Create [{}]!", NAME, Create.VERSION);
 		LOGGER.info(EnvExecutor.unsafeRunForDist(

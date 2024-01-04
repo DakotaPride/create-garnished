@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "V": {
+      "item": "garnished:voltaic_sea_grass"
+    },
+    "T": {
+      "item": "minecraft:tube_coral_fan"
+    },
+    "L": {
+      "item": "garnished:lustrous_pearl"
+    },
+    "B": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "pattern": [
+    "VVV",
+    "TLT",
+    " B "
+  ],
+  "result": {
+    "item": "garnished:galvanic_haunting"
+  }
+}

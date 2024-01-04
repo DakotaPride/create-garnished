@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "garnished:peanut_oil_bucket"
+    "garnished:peanut_oil_bucket",
+    "garnished:dried_dulse_kelp",
+    "garnished:dried_dulse_kelp_block"
   ]
 }
