@@ -569,6 +569,50 @@ public class GarnishedItems {
 	public static final ItemEntry<WalnutGorgeCreamFoodItem> WALNUT_GORGE_CREAM =
 			REGISTRATE.item("walnut_gorge_cream", WalnutGorgeCreamFoodItem::new).register();
 
+	// Garnished v1.5: Boundless Sea
+	public static final ItemEntry<MurkyJellyFoodItem> MURKY_JELLY =
+			REGISTRATE.item("murky_jelly", MurkyJellyFoodItem::new).register();
+	public static final ItemEntry<MurkyMacadamiaMaliceFoodItem> MURKY_MACADAMIA_MALICE =
+			REGISTRATE.item("murky_macadamia_malice", MurkyMacadamiaMaliceFoodItem::new).register();
+	public static final ItemEntry<NuttyMelodyFoodItem> NUTTY_MELODY =
+			REGISTRATE.item("nutty_melody", NuttyMelodyFoodItem::new).register();
+	public static final ItemEntry<CacklingPieFoodItem> CACKLING_PIE =
+			REGISTRATE.item("cackling_pie", CacklingPieFoodItem::new).register();
+	public static final ItemEntry<YamOGlowPuffsFoodItem> YAM_O_GLOW_PUFFS =
+			REGISTRATE.item("yam_o_glow_puffs", YamOGlowPuffsFoodItem::new).register();
+	public static final ItemEntry<ShiningDishFoodItem> SHINING_DISH =
+			REGISTRATE.item("shining_dish", ShiningDishFoodItem::new).register();
+	public static final ItemEntry<MuesliFoodItem> MUESLI =
+			REGISTRATE.item("muesli", MuesliFoodItem::new).register();
+	public static final ItemEntry<Item> INCOMPLETE_NUTTY_MELODY =
+			REGISTRATE.item("incomplete_nutty_melody", Item::new).register();
+	public static final ItemEntry<Item> INCOMPLETE_MUESLI =
+			REGISTRATE.item("incomplete_muesli", Item::new).register();
+
+	public static final ItemEntry<DustyRegaleFoodItem> DUSTY_REGALE =
+			REGISTRATE.item("dusty_regale", DustyRegaleFoodItem::new).register();
+	public static final ItemEntry<IncendiaryStewFoodItem> INCENDIARY_STEW =
+			REGISTRATE.item("incendiary_stew", IncendiaryStewFoodItem::new).register();
+
+	public static final ItemEntry<DriedVermilionKelpFoodItem> DRIED_VERMILION_KELP =
+			REGISTRATE.item("dried_vermilion_kelp", DriedVermilionKelpFoodItem::new).register();
+	public static final ItemEntry<DriedDulseKelpFoodItem> DRIED_DULSE_KELP =
+			REGISTRATE.item("dried_dulse_kelp", DriedDulseKelpFoodItem::new).register();
+	public static final ItemEntry<BewilderedPastryFoodItem> BEWILDERED_PASTRY =
+			REGISTRATE.item("bewildered_pastry", BewilderedPastryFoodItem::new).register();
+	public static final ItemEntry<VermilionStewFoodItem> VERMILION_STEW =
+			REGISTRATE.item("vermilion_stew", VermilionStewFoodItem::new).register();
+	public static final ItemEntry<VastBrewFoodItem> VAST_BREW =
+			REGISTRATE.item("vast_brew", VastBrewFoodItem::new).register();
+	public static final ItemEntry<GalvanicHauntingFoodItem> GALVANIC_HAUNTING =
+			REGISTRATE.item("galvanic_haunting", GalvanicHauntingFoodItem::new).register();
+
+	public static final ItemEntry<Item> CORAL_WRAPPING =
+			REGISTRATE.item("coral_wrapping", Item::new).register();
+	public static final ItemEntry<Item> LUSTROUS_PEARL =
+			REGISTRATE.item("lustrous_pearl", Item::new)
+					.properties((p) -> p.rarity(Rarity.UNCOMMON)).register();
+
 	// Farmer's Delight Items
 	public static final ItemEntry<PecanPieSliceFoodItem> PECAN_PIE_SLICE =
 			REGISTRATE.item("pecan_pie_slice", PecanPieSliceFoodItem::new).register();

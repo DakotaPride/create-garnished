@@ -1,10 +1,16 @@
 package net.dakotapride.garnished.item;
 
+import java.util.List;
+
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 import net.dakotapride.garnished.registry.GarnishedFoods;
 import net.minecraft.ChatFormatting;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.Style;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
@@ -22,11 +28,6 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
 
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-
-import java.util.List;
-
 public class BottledPeanutOilItem extends Item {
 	private static final int DRINK_DURATION = 40;
 
@@ -37,12 +38,14 @@ public class BottledPeanutOilItem extends Item {
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level pLevel, @NotNull List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
 		if (!Screen.hasShiftDown()) {
-			tooltip.add(Component.translatable("text.garnished.hold_shift").withStyle(ChatFormatting.GRAY));
+			tooltip.add(Component.translatable("text.garnished.hold_shift").withStyle(ChatFormatting.DARK_GRAY));
+		} else {
+			tooltip.add(Component.translatable("text.garnished.holding_shift").withStyle(ChatFormatting.DARK_GRAY));
 		}
 
 		if (Screen.hasShiftDown()) {
 			tooltip.add(Component.literal(""));
-			tooltip.add(Component.translatable("text.garnished.peanut_oil.desc.poison").withStyle(ChatFormatting.DARK_PURPLE));
+			tooltip.add(Component.translatable("text.garnished.effect.clears_poison").withStyle(Style.EMPTY.withColor(0xc7954b)));
 		}
 	}
 

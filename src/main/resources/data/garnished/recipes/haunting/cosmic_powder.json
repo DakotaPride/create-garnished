@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "garnished:ender_jelly"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:cosmic_powder"
+    }
+  ]
+}

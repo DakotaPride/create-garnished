@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:dried_vermilion_kelp_block"
+    }
+  ],
+  "result": {
+    "item": "garnished:dried_vermilion_kelp",
+    "count": 9
+  }
+}

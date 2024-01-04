@@ -1,0 +1,48 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "garnished:chestnut"
+    },
+    {
+      "item": "garnished:chestnut"
+    },
+    {
+      "item": "garnished:hazelnut"
+    },
+    {
+      "item": "garnished:hazelnut"
+    },
+    {
+      "item": "garnished:hazelnut"
+    },
+    {
+      "item": "garnished:garnish_compound"
+    },
+    {
+      "item": "garnished:garnish_compound"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "amount": 20250,
+      "fluidTag": "forge:chocolate",
+      "nbt": {}
+    },
+    {
+      "amount": 20250,
+      "fluidTag": "forge:honey",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:cackling_pie"
+    }
+  ]
+}

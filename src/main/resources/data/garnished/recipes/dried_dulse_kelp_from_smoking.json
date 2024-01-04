@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "garnished:dulse_kelp"
+  },
+  "result": "garnished:dried_dulse_kelp",
+  "experience": 0.35,
+  "cookingtime": 100
+}

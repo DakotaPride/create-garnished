@@ -4,6 +4,7 @@ import com.terraformersmc.terraform.sign.SpriteIdentifierRegistry;
 
 import net.dakotapride.garnished.registry.GarnishedBlocks;
 import net.dakotapride.garnished.registry.GarnishedFluids;
+import net.dakotapride.garnished.registry.GarnishedPonderIndex;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
@@ -11,6 +12,7 @@ import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.color.item.ItemColor;
 import net.minecraft.client.color.item.ItemColors;
 import net.minecraft.client.renderer.BiomeColors;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
 import net.minecraft.client.resources.model.Material;
@@ -39,6 +41,9 @@ public class CreateGarnishedClient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
+		GarnishedPonderIndex.index();
+		GarnishedPonderIndex.Tags.fillPonderTags();
+
 		SpriteIdentifierRegistry.INSTANCE.addIdentifier(new Material(
 				Sheets.SIGN_SHEET, signResourceLocation(sepia)));
 		SpriteIdentifierRegistry.INSTANCE.addIdentifier(new Material(
@@ -82,6 +87,12 @@ public class CreateGarnishedClient implements ClientModInitializer {
 
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.NUT_DOOR.get(), RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.NUT_TRAPDOOR.get(), RenderType.cutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.VERMILION_KELP.get(), RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.VERMILION_KELP_PLANT.get(), RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.DULSE_KELP.get(), RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.DULSE_KELP_PLANT.get(), RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.VOLTAIC_SEA_GRASS.get(), RenderType.cutout());
 
 		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.GARNISH.get().getSource(),
 				GarnishedFluids.GARNISH.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.GARNISH.get()));

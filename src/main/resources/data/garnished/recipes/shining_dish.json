@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "garnished:yam_o_glow_puffs"
+    },
+    {
+      "item": "garnished:yam_o_glow_puffs"
+    },
+    {
+      "item": "garnished:yam_o_glow_puffs"
+    },
+    {
+      "item": "garnished:yam_o_glow_puffs"
+    },
+    {
+      "item": "garnished:ungarnished_peanut"
+    },
+    {
+      "item": "garnished:ungarnished_peanut"
+    },
+    {
+      "item": "minecraft:hanging_roots"
+    }
+  ],
+  "result": {
+    "item": "garnished:shining_dish"
+  }
+}

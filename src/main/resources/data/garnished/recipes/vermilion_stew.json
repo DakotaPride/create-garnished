@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "garnished:dried_vermilion_kelp"
+    },
+    {
+      "item": "garnished:dried_vermilion_kelp"
+    },
+    {
+      "item": "garnished:dried_vermilion_kelp"
+    },
+    {
+      "item": "minecraft:fire_coral_fan"
+    },
+    {
+      "item": "minecraft:fire_coral_fan"
+    },
+    {
+      "item": "garnished:brittle_dust"
+    }
+  ],
+  "result": {
+    "item": "garnished:vermilion_stew"
+  }
+}

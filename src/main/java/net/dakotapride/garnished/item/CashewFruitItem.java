@@ -7,9 +7,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import net.dakotapride.garnished.registry.GarnishedFoods;
-import net.minecraft.ChatFormatting;
 import net.minecraft.advancements.CriteriaTriggers;
-import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
@@ -28,16 +26,16 @@ public class CashewFruitItem extends Item implements IGarnishedItem {
 
 	@Override
 	public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag isAdvanced) {
-		if (!Screen.hasShiftDown()) {
-			tooltip.add(Component.translatable("text.garnished.hold_shift").withStyle(ChatFormatting.GRAY));
-		}
-
-		if (Screen.hasShiftDown()) {
-			tooltip.add(Component.literal(""));
-			tooltip.add(Component.translatable("text.garnished.cashew_fruit.poisoning").withStyle(ChatFormatting.DARK_PURPLE));
-			tooltip.add(Component.literal(""));
-			tooltip.add(Component.translatable("text.garnished.cashew_fruit.poisoning.chance").withStyle(ChatFormatting.DARK_PURPLE));
-		}
+		// if (!Screen.hasShiftDown()) {
+		//			tooltip.add(Component.translatable("text.garnished.hold_shift").withStyle(ChatFormatting.GRAY));
+		//		}
+		//
+		//		if (Screen.hasShiftDown()) {
+		//			tooltip.add(Component.literal(""));
+		//			tooltip.add(Component.translatable("text.garnished.cashew_fruit.poisoning").withStyle(ChatFormatting.DARK_PURPLE));
+		//			tooltip.add(Component.literal(""));
+		//			tooltip.add(Component.translatable("text.garnished.cashew_fruit.poisoning.chance").withStyle(ChatFormatting.DARK_PURPLE));
+		//		}
 	}
 
 	@Override

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "garnished:lustrous_pearl"
+    },
+    {
+      "item": "garnished:vermilion_kelp"
+    },
+    {
+      "item": "garnished:vermilion_kelp"
+    },
+    {
+      "tag": "forge:coral_fans"
+    },
+    {
+      "item": "minecraft:sea_pickle"
+    },
+    {
+      "item": "minecraft:sea_pickle"
+    }
+  ],
+  "result": {
+    "item": "garnished:vast_brew"
+  }
+}

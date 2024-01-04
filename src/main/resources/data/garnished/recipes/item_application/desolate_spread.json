@@ -1,0 +1,16 @@
+{
+  "type": "create:item_application",
+  "ingredients": [
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "garnished:cosmic_powder"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:desolate_spread"
+    }
+  ]
+}

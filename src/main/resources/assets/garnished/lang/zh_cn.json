@@ -2,30 +2,38 @@
   "itemGroup.create.garnished": "机械动力：装食",
   "text.garnished.nut.ungarnished": "未装食",
   "text.garnished.nut.garnished": "已装食",
-  "text.garnished.nut.cracked": "已破裂[按住SHIFT]",
-  "text.garnished.nut.cracked.desc": "破裂的坚果是用来种植的！",
-  "text.garnished.nut.cracked.desc.secondary": "将它种在任意泥土上",
-  "text.garnished.nut.cracked.desc.third": "就能长出一颗独一无二的树！",
-  "text.garnished.hold_shift": "[按住SHIFT]",
+  "text.garnished.nut.cracked": "已破裂",
+  "text.garnished.hold_shift": "Hold [§7Shift§8] for Summary",
+  "text.garnished.holding_shift": "Hold [§fShift§8] for Summary",
   "text.garnished.nut.cinder_flour": "余烬面粉",
   "text.garnished.nut.cinder_flour.melted": "融化的余烬面粉",
-  "text.garnished.nut.cinder_flour.effect": "可用效果：[%d]",
-  "text.garnished.nut.cinder_flour.effect.multiple": "可用效果：[多种效果]",
-  "text.garnished.nut.cinder_flour.effect.hazelnut": "可用效果：[强效速度]",
   "text.garnished.nut.sweetened": "加糖",
   "text.garnished.nut.honeyed": "涂蜜",
   "text.garnished.nut.chocolate_glazed": "涂有巧克力",
-  "text.garnished.cider.cryptic": "神秘属性[按住SHIFT]",
-  "text.garnished.cider.bitter": "苦涩[按住SHIFT]",
-  "text.garnished.cider.cryptic.desc": "这款苹果西打酒会提供给客户",
-  "text.garnished.cider.cryptic.desc.secondary": "力量或者缓慢效果之一",
-  "text.garnished.cider.cryptic.desc.third": "五五开的概率，你会喝它吗？",
-  "text.garnished.cider.cryptic.desc.wither": "在被喝掉时消除饮用者的凋零效果",
-  "text.garnished.peanut_oil.desc.poison": "在被喝掉时消除饮用者的中毒效果",
-  "text.garnished.cashew_fruit.poisoning": "你会吃它吗？",
-  "text.garnished.cashew_fruit.poisoning.chance": "吃掉它后会有1/4的概率中毒",
-  "text.garnished.cider.bitter.desc.secondary": "获得缓慢和抗性提升",
+  "text.garnished.cider.cryptic": "神秘属性",
+  "text.garnished.cider.bitter": "苦涩",
   "text.garnished.salted_food": "盐渍",
+  // new tooltips
+  "text.garnished.nut.cinder_flour.effect_list": "Available Effects:",
+  "text.garnished.nut.cinder_flour.effect_list.strength": "  [Strength]",
+  "text.garnished.nut.cinder_flour.effect_list.strength.desc": "   - Increases user's damage",
+  "text.garnished.nut.cinder_flour.effect_list.slow_falling": "  [Slow Falling]",
+  "text.garnished.nut.cinder_flour.effect_list.slow_falling.desc": "   - Slows user's fall and prevents fall damage",
+  "text.garnished.nut.cinder_flour.effect_list.night_vision": "  [Night Vision]",
+  "text.garnished.nut.cinder_flour.effect_list.night_vision.desc": "   - Grants vision in dark areas",
+  "text.garnished.nut.cinder_flour.effect_list.haste": "  [Haste]",
+  "text.garnished.nut.cinder_flour.effect_list.haste.desc": "   - Increases user's mining speed",
+  "text.garnished.nut.cinder_flour.effect_list.speed": "  [Speed]",
+  "text.garnished.nut.cinder_flour.effect_list.speed.desc": "   - Increases user's movement speed",
+  "text.garnished.nut.cinder_flour.effect_list.potent_speed": "  [Potent Speed]",
+  "text.garnished.nut.cinder_flour.effect_list.potent_speed.desc": "   - Increases user's movement speed x2",
+  "text.garnished.nut.cinder_flour.effect_list.fire_resistance": "  [Fire Resistance]",
+  "text.garnished.nut.cinder_flour.effect_list.fire_resistance.desc": "   - Grants user immunity to fire damage",
+  "text.garnished.nut.cinder_flour.effect_list.resistance": "  [Resistance]",
+  "text.garnished.nut.cinder_flour.effect_list.resistance.desc": "   - Decreases damage taken",
+  "text.garnished.nut.cinder_flour.effect_list.buhg_effects": "  [Slowness, Invisibility]",
+  "text.garnished.nut.cinder_flour.effect_list.buhg_effects.desc.1": "   - Decreases user's movement speed",
+  "text.garnished.nut.cinder_flour.effect_list.buhg_effects.desc.2": "   - Makes user invisible",
 
   "item.garnished.pecan_pie_slice": "美国山核桃派切片",
   "item.garnished.phantom_beef_patty": "魂影肉饼",
@@ -412,6 +420,31 @@
   "item.garnished.cashew_sorbet_delight": "Cashew Sorbet Delight", //
   "item.garnished.wheat_graze": "Wheat Graze", //
   "item.garnished.porkchop_and_graze": "Porkchop & Graze", //
+  "item.garnished.murky_jelly": "Murky Jelly", //
+  "item.garnished.nutty_melody": "Nutty Melody", //
+  "item.garnished.incomplete_nutty_melody": "Incomplete Nutty Melody", //
+  "item.garnished.murky_macadamia_malice": "Murky Macadamia Malice", //
+  "item.garnished.cackling_pie": "Cackling Pie", //
+  "item.garnished.yam_o_glow_puffs": "Yam-O-Glow Puffs", //
+  "item.garnished.shining_dish": "Shining Dish", //
+  "item.garnished.muesli": "Muesli", //
+  "item.garnished.incomplete_muesli": "Incomplete Muesli", //
+
+  "item.garnished.lustrous_pearl": "Lustrous Pearl", //
+  "item.garnished.vast_brew": "Vast Brew", //
+  "item.garnished.vermilion_stew": "Vermilion Stew", //
+  "item.garnished.galvanic_haunting": "Galvanic Haunting", //
+  "item.garnished.coral_wrapping": "Coral Wrapping", //
+  "item.garnished.bewildered_pastry": "Bewildered Pastry", //
+  "item.garnished.dusty_regale": "Dusty Regale", //
+  "item.garnished.incendiary_stew": "Incendiary Stew", //
+  "block.garnished.vermilion_kelp": "Vermilion Kelp", //
+  "item.garnished.dried_vermilion_kelp": "Dried Vermilion Kelp", //
+  "block.garnished.dried_vermilion_kelp_block": "Dried Vermilion Kelp Block", //
+  "block.garnished.dulse_kelp": "Dulse Kelp", //
+  "item.garnished.dried_dulse_kelp": "Dried Dulse Kelp", //
+  "block.garnished.dried_dulse_kelp_block": "Dried Dulse Kelp Block", //
+  "block.garnished.voltaic_sea_grass": "Voltaic Sea Grass", //
 
   "block.garnished.peanut_sack": "压实坚果袋",
   "block.garnished.cashew_sack": "压实坚果袋",
@@ -535,6 +568,114 @@
   "advancement.garnished.abyssal_stone.description": "Obtain Abyssal Stone", //
   "advancement.garnished.unstable_stone.title": "Abstracted In The Mortal Plane", //
   "advancement.garnished.unstable_stone.description": "Obtain Unstable Stone", //
-  "advancements.garnished.consume_all_foods.title": "Welcome to Hell's Kitchen!", //
-  "advancements.garnished.consume_all_foods.description": "Consume All Foods From The Create: Garnished mod" //
+  "advancement.garnished.consume_all_foods.title": "Welcome to Hell's Kitchen!", //
+  "advancement.garnished.consume_all_foods.description": "Consume All Foods From The Create: Garnished mod",  //
+  "advancement.garnished.incendiary_stew.title": "Bombs away!",  //
+  "advancement.garnished.incendiary_stew.description": "Obtain Incendiary Stew",  //
+  "advancement.garnished.lustrous_pearl.title": "Shapes and Colours",  //
+  "advancement.garnished.lustrous_pearl.description": "Obtain a Lustrous Pearl",  //
+  "advancement.garnished.voltaic_sea_grass.title": "It May Come as a Shock,  // But...",  //
+  "advancement.garnished.voltaic_sea_grass.description": "Discover Voltaic Sea Grass (no Spirit,  // you can't chew on them)",  //
+  "advancement.garnished.dulse_kelp.title": "Pseudo-Bacon",  //
+  "advancement.garnished.dulse_kelp.description": "Obtain Dulse Kelp",  //
+
+  "garnished.ponder.kelp_garnished.header": "Kelp From Frigid Environments",  //
+  "garnished.ponder.dulse_kelp.header": "Dulse Kelp",  //
+  "garnished.ponder.vermilion_kelp.header": "Vermilion Kelp",  //
+  "garnished.ponder.mastic_resin_recipe.header": "Mastic Resin",  //
+  "garnished.ponder.coloured_mastic_resin.header": "Coloured Mastic Resin",  //
+  "garnished.ponder.mastic_paste.header": "Mastic Resin Paste",  //
+  "garnished.ponder.mastic_fluid.header": "Liquefied Mastic Fluid",  //
+  "garnished.ponder.mastic_resin_create_stone.header": "Liquefied Mastic Fluid Interactions [1]",  //
+  "garnished.ponder.mastic_resin_vanilla_stone.header": "Liquefied Mastic Fluid Interactions [2]",  //
+  "garnished.ponder.mastic_resin_garnished_stone.header": "Liquefied Mastic Fluid Interactions [3]",  //
+  "garnished.ponder.cracked_nuts.header": "Cracked Nuts",  //
+  "garnished.ponder.nut_tree.header": "Nut Trees",  //
+  "garnished.ponder.milling_nuts.header": "Milling Your Nuts",  //
+  "garnished.ponder.hatchets.header": "Hatchets",  //
+  "garnished.ponder.hatchet_attacking.header": "Attacking With Hatchets",  //
+  "garnished.ponder.integrated_hatchets.header": "Integrated Hatchets",  //
+  "garnished.ponder.brittle_dust.header": "Brittle Dust",  //
+  "garnished.ponder.senile_dust.header": "Senile Dust",  //
+  "garnished.ponder.senile_spread.header": "Senile Spread",  //
+  "garnished.ponder.peanut_oil_item.header": "Bottled Peanut Oil",  //
+  "garnished.ponder.apple_cider_item.header": "Bottled Apple Cider",  //
+  "garnished.ponder.heat_sources.header": "Additional Heat Sources",  //
+  "garnished.ponder.basic_fluid_interactions.header": "Standard Fluid Interactions",  //
+  "garnished.ponder.crushing_fungus.header": "Crushing Fungi",  //
+  "garnished.ponder.apple_cider_creation.header": "Creating Apple Cider",  //
+  "garnished.ponder.apple_cider_misc.header": "Apple Cider Variants",  //
+  "garnished.ponder.kelp_garnished.text_1": "You will find different types of kelp generating in certain biomes",  //
+  "garnished.ponder.dulse_kelp.text_1": "Dulse Kelp can be found in Frozen Oceans",  //
+  "garnished.ponder.dulse_kelp.text_2": "You can cook Dulse Kelp to make a dried variant of which to eat",  //
+  "garnished.ponder.dulse_kelp.text_3": "This can also be compacted into a Dried Dulse Kelp Block",  //
+  "garnished.ponder.vermilion_kelp.text_1": "Vermilion Kelp can be found in Cold Oceans",  //
+  "garnished.ponder.vermilion_kelp.text_2": "You can cook Vermilion Kelp to make a dried variant of which to eat",  //
+  "garnished.ponder.vermilion_kelp.text_3": "This can also be compacted into a Dried Vermilion Kelp Block",  //
+  "garnished.ponder.mastic_resin_recipe.text_1": "Drop 3 Wheat Seeds and 1 Slime Ball into a Heated Basin with a Mechanical Press above",  //
+  "garnished.ponder.mastic_resin_recipe.text_2": "This will produce a singular piece of Mastic Resin that is uncoloured",  //
+  "garnished.ponder.coloured_mastic_resin.text_1": "You can make coloured variations either manually or by utilizing Mechanical Crafters",  //
+  "garnished.ponder.coloured_mastic_resin.text_2": "This will produce 8 of the Coloured Mastic Resin dependant of the dye used",  //
+  "garnished.ponder.coloured_mastic_resin.text_3": "You can also recolour any piece of Mastic Resin to be one of the other core colours",  //
+  "garnished.ponder.coloured_mastic_resin.text_4": "Red, Orange, Yellow, Green, Blue, Purple",  //
+  "garnished.ponder.mastic_paste.text_1": "You can press Mastic Resin into Mastic Paste, which can be used in other recipes",  //
+  "garnished.ponder.mastic_paste.text_2": "This paste can also be compacted into a block by using 9 of any kind of Mastic Paste",  //
+  "garnished.ponder.mastic_paste.text_3": "This can either be used as decoration or to further enhance your factories",  //
+  "garnished.ponder.mastic_fluid.text_1": "You can put a block of any Mastic Resin inside of a heated basin in order to mix it into its respective fluid",  //
+  "garnished.ponder.mastic_fluid.text_2": "This liquid has several fluid interactions and some even have use in your kitchen",  //
+  "garnished.ponder.mastic_fluid.text_3": "The red variant, for example, generates Crimsite upon colliding with lava",  //
+  "garnished.ponder.mastic_resin_create_stone.text_1": "Red Liquefied Mastic Resin can generate Crimsite when touching lava",  //
+  "garnished.ponder.mastic_resin_create_stone.text_2": "Blue Liquefied Mastic Resin can generate Asurine when touching lava",  //
+  "garnished.ponder.mastic_resin_create_stone.text_3": "Green Liquefied Mastic Resin can generate Veridium when touching lava",  //
+  "garnished.ponder.mastic_resin_vanilla_stone.text_1": "Regular Liquefied Mastic Resin can generate Tuff when touching lava",  //
+  "garnished.ponder.mastic_resin_vanilla_stone.text_2": "Orange Liquefied Mastic Resin can generate Terracotta when touching lava",  //
+  "garnished.ponder.mastic_resin_garnished_stone.text_1": "Yellow Liquefied Mastic Resin can generate Carnotite when touching lava",  //
+  "garnished.ponder.mastic_resin_garnished_stone.text_2": "Purple Liquefied Mastic Resin can generate Abyssal Stone when touching lava",  //
+  "garnished.ponder.cracked_nuts.text_1": "You can plant these cracked nuts onto the ground, of which they will act like saplings for their respective nut type",  //
+  "garnished.ponder.nut_tree.text_1": "You can find Nut Trees generating in the Plains biome",  //
+  "garnished.ponder.nut_tree.text_2": "Breaking leaves present on these trees will provide you with different kinds of nuts, which can be grown into their own unique tree later",  //
+  "garnished.ponder.nut_tree.text_3": "These trees also have their own unique wood type, having a green inner colouring while somewhat resembling oak on the outside",  //
+  "garnished.ponder.milling_nuts.text_1": "You may find that you have a slight chance to gain additional profits, allowing these foods and blocks to be replenished more efficiently",  //
+  "garnished.ponder.hatchets.text_1": "Hatchets are a tool that can be used similarly to an axe and has the combined stats of swords and axes alike",  //
+  "garnished.ponder.hatchet_attacking.text_1": "Hatchets have 2 enchantments, the first being Ravaging",  //
+  "garnished.ponder.hatchet_attacking.text_2": "Ravaging allows for certain hostile mob drops to either become more lucrative or to become available to the player",  //
+  "garnished.ponder.hatchet_attacking.text_3": "The second enchantment, which has 2 levels, is Salvaging",  //
+  "garnished.ponder.hatchet_attacking.text_4": "Salvaging acts similarly to Ravaging, except with certain passive mobs",  //
+  "garnished.ponder.integrated_hatchets.text_1": "Certain mods have integration available for these Hatchets",  //
+  "garnished.ponder.integrated_hatchets.text_2": "These mods include (Fabric/Forge):",  //
+  "garnished.ponder.integrated_hatchets.text_3": "Additional Additions",  //
+  "garnished.ponder.integrated_hatchets.text_4": "Deeper & Darker",  //
+  "garnished.ponder.integrated_hatchets.text_5": "Create: Stuff & Additions",  //
+  "garnished.ponder.integrated_hatchets.text_6": "Mythic Upgrades",  //
+  "garnished.ponder.integrated_hatchets.text_7": "Depending on the Hatchet you're using, it will share the abilities that are provided in its respective mod",  //
+  "garnished.ponder.brittle_dust.text_1": "Scorchia can be turned into Brittle Dust by using either a set of Crushing Wheels or a Millstone",  //
+  "garnished.ponder.brittle_dust.text_2": "Brittle Dust can be used to make certain potions or to make other ingredients",  //
+  "garnished.ponder.senile_dust.text_1": "You can haunt Brittle Dust to turn it into Senile Dust, which can be used to make other foods and helpful resources",  //
+  "garnished.ponder.senile_spread.text_1": "Applying Senile Dust onto bone meal will provide you with Senile Spread",  //
+  "garnished.ponder.senile_spread.text_2": "Senile Spread can be used on soul sand or soul soil to produce Soul Roots and Sepia Fungus plants",  //
+  "garnished.ponder.peanut_oil_item.text_1": "Using Ungarnished Peanuts and Powdered Garnish, you can make Peanut Oil, of which can be bottled up to provide nutrition and cleanse you of Poisoning",  //
+  "garnished.ponder.heat_sources.text_1": "You can use Buckets of Peanut Oil to superheat your blaze burners with a renewable source",  //
+  "garnished.ponder.heat_sources.text_2": "You can also use regular nuts (of mostly any kind) to heat your blaze burners normally",  //
+  "garnished.ponder.basic_fluid_interactions.text_1": "Liquefied Garnish produces Calcite when exposed to lava",  //
+  "garnished.ponder.basic_fluid_interactions.text_2": "Apple Cider produces Ochrum when exposed to lava",  //
+  "garnished.ponder.basic_fluid_interactions.text_3": "Peanut Oil produces Dripstone when exposed to lava",  //
+  "garnished.ponder.basic_fluid_interactions.text_4": "Cashew Mixture produces End Stone when exposed to lava",  //
+  "garnished.ponder.crushing_fungus.text_1": "You can either use a pair of crushing wheels or a millstone in order to obtain crushed variants for a select few nether fungi-related blocks/items",  //
+  "garnished.ponder.apple_cider_item.text_1": "Apple Cider can be used to cleanse the user of Withering, no matter the type of Apple Cider being consumed",  //
+  "garnished.ponder.apple_cider_creation.text_1": "Apple Cider can be created by putting any Cracked Nuts, 2 Apples, 1 Garnish Compound, and 250mb inside of a heated basin for mixing",  //
+  "garnished.ponder.apple_cider_creation.text_2": "This fluid can be made into Bottled Apple Cider and other variations of the drink",  //
+  "garnished.ponder.apple_cider_misc.text_1": "Cryptic Apple Cider can be obtained by applying any flower to Bottled Apple Cider, and will provide a 50% to either harm the user or to enhance the user's abilities",  //
+  "garnished.ponder.apple_cider_misc.text_2": "Bitter Apple Cider can be obtained by applying Cashew Apple to Bottled Apple Cider, and will provide the user with enhanced damage reduction but also slowing the user down",  //
+  "garnished.ponder.tag.recent_changes": "Recent Changes",  //
+  "garnished.ponder.tag.cracked_nuts": "Cracked Nut Entries",  //
+  "garnished.ponder.tag.hatchets": "Hatchet-related Entries",  //
+  "garnished.ponder.tag.kelp_related": "Kelp-related Entries",  //
+  "garnished.ponder.tag.mastic_resin": "Mastic Resin Entries",  //
+  "garnished.ponder.tag.crushed_nether_ingredients": "Crushed Nether Ingredients",  //
+  "garnished.ponder.tag.recent_changes.description": "Recent additions and adjustments that are included in the most recent version of Create: Garnished",  //
+  "garnished.ponder.tag.cracked_nuts.description": "Entries that relate to the Cracked Nut additions of Create: Garnished",  //
+  "garnished.ponder.tag.kelp_related.description": "Entries that relate to the kelp variants introduced by Create: Garnished",  //
+  "garnished.ponder.tag.mastic_resin.description": "Entries that relate to the Mastic Resin additions of Create: Garnished",  //
+  "garnished.ponder.tag.hatchets.description": "Entries that relate to the Hatchets of Create: Garnished",  //
+  "garnished.ponder.tag.crushed_nether_ingredients.description": "Entries that relate to the crushed nether-ingredients of Create: Garnished" //
 }
