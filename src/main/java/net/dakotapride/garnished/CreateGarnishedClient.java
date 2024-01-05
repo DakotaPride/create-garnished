@@ -4,6 +4,7 @@ import com.terraformersmc.terraform.sign.SpriteIdentifierRegistry;
 
 import net.dakotapride.garnished.registry.GarnishedBlocks;
 import net.dakotapride.garnished.registry.GarnishedFluids;
+import net.dakotapride.garnished.registry.GarnishedPonderIndex;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
@@ -30,6 +31,9 @@ public class CreateGarnishedClient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
+		GarnishedPonderIndex.index();
+		GarnishedPonderIndex.Tags.fillPonderTags();
+
 		SpriteIdentifierRegistry.INSTANCE.addIdentifier(new Material(
 				Sheets.SIGN_SHEET, signResourceLocation(sepia)));
 
@@ -66,6 +70,12 @@ public class CreateGarnishedClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.BLOCK_OF_ENDER_JELLY.get(), RenderType.translucent());
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.BARREN_ROOTS.get(), RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.SMALL_CHORUS_PLANT.get(), RenderType.cutout());
+
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.VERMILION_KELP.get(), RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.VERMILION_KELP_PLANT.get(), RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.DULSE_KELP.get(), RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.DULSE_KELP_PLANT.get(), RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.VOLTAIC_SEA_GRASS.get(), RenderType.cutout());
 
 		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.GARNISH.get().getSource(),
 				GarnishedFluids.GARNISH.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.GARNISH.get()));

@@ -127,6 +127,24 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties CASHEW_SORBET_DELIGHT = new FoodProperties.Builder().nutrition(10).saturationMod(0.6F).build();
 	public static final FoodProperties WALNUT_GORGE_CREAM = new FoodProperties.Builder().nutrition(8).saturationMod(0.4F).build();
 
+	// Boundless Sea
+	public static final FoodProperties MURKY_JELLY = new FoodProperties.Builder().nutrition(4).saturationMod(0.3F).build();
+	public static final FoodProperties MURKY_MACADAMIA_MALICE = new FoodProperties.Builder().nutrition(6).saturationMod(0.4F).build();
+	public static final FoodProperties NUTTY_MELODY = new FoodProperties.Builder().nutrition(12).saturationMod(0.5F).build();
+	public static final FoodProperties YAM_O_GLOW_PUFFS = new FoodProperties.Builder().nutrition(3).saturationMod(0.2F).build();
+	public static final FoodProperties CACKLING_PIE = new FoodProperties.Builder().nutrition(8).saturationMod(0.4F).build();
+	public static final FoodProperties SHINING_DISH = new FoodProperties.Builder().nutrition(7).saturationMod(0.3F).build();
+	public static final FoodProperties MUESLI = new FoodProperties.Builder().nutrition(6).saturationMod(0.2F).build();
+
+	public static final FoodProperties DRIED_VERMILION_KELP = new FoodProperties.Builder().nutrition(2).saturationMod(0.3F).fast().build();
+	public static final FoodProperties DRIED_DULSE_KELP = new FoodProperties.Builder().nutrition(4).saturationMod(0.3F).build();
+	public static final FoodProperties VAST_BREW = new FoodProperties.Builder().nutrition(8).saturationMod(0.4F).build();
+	public static final FoodProperties VERMILION_STEW = new FoodProperties.Builder().nutrition(6).saturationMod(0.4F).build();
+	public static final FoodProperties GALVANIC_HAUNTING = new FoodProperties.Builder().nutrition(8).saturationMod(0.4F).build();
+	public static final FoodProperties BEWILDERED_PASTRY = new FoodProperties.Builder().nutrition(6).saturationMod(0.4F).build();
+	public static final FoodProperties DUSTY_REGALE = new FoodProperties.Builder().nutrition(4).saturationMod(0.2F).build();
+	public static final FoodProperties INDENDCIARY_STEW = new FoodProperties.Builder().nutrition(10).saturationMod(0.8F).build();
+
 	// Farmer's Delight Foods
 	public static final FoodProperties PECAN_PIE_SLICE = new FoodProperties.Builder().nutrition(3).saturationMod(0.2F).build();
 	public static final FoodProperties PHANTOM_BURGER = new FoodProperties.Builder().nutrition(8).saturationMod(0.6F).build();

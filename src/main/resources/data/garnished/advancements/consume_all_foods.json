@@ -4,10 +4,10 @@
       "item": "garnished:wrapped_sepia_tangle"
     },
     "title": {
-      "translate": "advancements.garnished.consume_all_foods.title"
+      "translate": "advancement.garnished.consume_all_foods.title"
     },
     "description": {
-      "translate": "advancements.garnished.consume_all_foods.description"
+      "translate": "advancement.garnished.consume_all_foods.description"
     },
     "frame": "challenge",
     "show_toast": true,
@@ -1511,6 +1511,36 @@
       }
     },
 
+    "raw_tenebrous_meat": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:raw_tenebrous_meat"
+          ]
+        }
+      }
+    },
+    "cooked_tenebrous_meat": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cooked_tenebrous_meat"
+          ]
+        }
+      }
+    },
+    "aching_tenebrous_clump": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:aching_tenebrous_clump"
+          ]
+        }
+      }
+    },
     "ghandercken": {
       "trigger": "minecraft:consume_item",
       "conditions": {
@@ -1527,6 +1557,16 @@
         "item": {
           "items": [
             "garnished:fishy_surprise"
+          ]
+        }
+      }
+    },
+    "gloomy_gathering": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:gloomy_gathering"
           ]
         }
       }
@@ -1577,6 +1617,148 @@
         "item": {
           "items": [
             "garnished:walnut_gorge_cream"
+          ]
+        }
+      }
+    },
+
+    "murky_macadamia_malice": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:murky_macadamia_malice"
+          ]
+        }
+      }
+    },
+    "murky_jelly": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:murky_jelly"
+          ]
+        }
+      }
+    },
+    "dusty_regale": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:dusty_regale"
+          ]
+        }
+      }
+    },
+    "shining_dish": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:shining_dish"
+          ]
+        }
+      }
+    },
+    "muesli": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:muesli"
+          ]
+        }
+      }
+    },
+    "cackling_pie": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cackling_pie"
+          ]
+        }
+      }
+    },
+    "yam_o_glow_puffs": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:yam_o_glow_puffs"
+          ]
+        }
+      }
+    },
+    "nutty_melody": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:nutty_melody"
+          ]
+        }
+      }
+    },
+
+    "dried_vermilion_kelp": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:dried_vermilion_kelp"
+          ]
+        }
+      }
+    },
+    "dried_dulse_kelp": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:dried_dulse_kelp"
+          ]
+        }
+      }
+    },
+    "vermilion_stew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:vermilion_stew"
+          ]
+        }
+      }
+    },
+    "vast_brew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:vast_brew"
+          ]
+        }
+      }
+    },
+    "bewildered_pastry": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:bewildered_pastry"
+          ]
+        }
+      }
+    },
+    "galvanic_haunting": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:galvanic_haunting"
           ]
         }
       }
@@ -2044,10 +2226,22 @@
     ],
 
     [
+      "raw_tenebrous_meat"
+    ],
+    [
+      "cooked_tenebrous_meat"
+    ],
+    [
+      "aching_tenebrous_clump"
+    ],
+    [
       "ghandercken"
     ],
     [
       "fishy_surprise"
+    ],
+    [
+      "gloomy_gathering"
     ],
     [
       "cashew_sorbet_scoop"
@@ -2063,6 +2257,50 @@
     ],
     [
       "walnut_gorge_cream"
+    ],
+
+    [
+      "dusty_regale"
+    ],
+    [
+      "shining_dish"
+    ],
+    [
+      "yam_o_glow_puffs"
+    ],
+    [
+      "murky_macadamia_malice"
+    ],
+    [
+      "murky_jelly"
+    ],
+    [
+      "cackling_pie"
+    ],
+    [
+      "muesli"
+    ],
+    [
+      "nutty_melody"
+    ],
+
+    [
+      "dried_vermilion_kelp"
+    ],
+    [
+      "dried_dulse_kelp"
+    ],
+    [
+      "vermilion_stew"
+    ],
+    [
+      "vast_brew"
+    ],
+    [
+      "bewildered_pastry"
+    ],
+    [
+      "galvanic_haunting"
     ]
   ],
   "rewards": {

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "garnished:cashew_sorbet_scoop"
+    },
+    {
+      "item": "garnished:cashew_sorbet_scoop"
+    },
+    {
+      "item": "garnished:cashew_sorbet_scoop"
+    },
+    {
+      "item": "garnished:cashew_sorbet_scoop"
+    },
+    {
+      "item": "garnished:chestnut"
+    },
+    {
+      "item": "garnished:chestnut"
+    }
+  ],
+  "result": {
+    "item": "garnished:cashew_sorbet_delight"
+  }
+}

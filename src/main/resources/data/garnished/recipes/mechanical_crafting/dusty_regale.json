@@ -1,0 +1,31 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "T": {
+      "item": "minecraft:terracotta"
+    },
+    "S": [
+      {
+        "item": "minecraft:sand"
+      },
+      {
+        "item": "minecraft:red_sand"
+      }
+    ],
+    "N": {
+      "item": "garnished:nut_flour"
+    },
+    "B": {
+      "item": "minecraft:bowl"
+    }
+  },
+  "pattern": [
+    "TTTTT",
+    "SNNNS",
+    "  B  "
+  ],
+  "result": {
+    "item": "garnished:dusty_regale"
+  }
+}

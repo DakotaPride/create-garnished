@@ -1,0 +1,112 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "garnished:mulch"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "garnished:nutty_melody"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_nutty_melody"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_nutty_melody"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_nutty_melody"
+        },
+        {
+          "tag": "garnished:unsweetened_nuts"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_nutty_melody"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_nutty_melody"
+        },
+        {
+          "tag": "garnished:honeyed_nuts"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_nutty_melody"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_nutty_melody"
+        },
+        {
+          "tag": "garnished:chocolate_glazed_nuts"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_nutty_melody"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_nutty_melody"
+        },
+        {
+          "tag": "garnished:sweetened_nuts"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_nutty_melody"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_nutty_melody"
+        },
+        {
+          "amount": 40500,
+          "fluid": "garnished:purple_mastic_resin",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_nutty_melody"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "garnished:incomplete_nutty_melody"
+  }
+}

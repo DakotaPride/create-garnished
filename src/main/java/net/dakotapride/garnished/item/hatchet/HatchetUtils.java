@@ -2,6 +2,8 @@ package net.dakotapride.garnished.item.hatchet;
 
 import java.util.Random;
 
+import net.dakotapride.garnished.registry.GarnishedBlocks;
+
 import org.spongepowered.asm.mixin.Unique;
 
 import net.dakotapride.garnished.registry.GarnishedEnchantments;
@@ -105,6 +107,18 @@ public class HatchetUtils {
                     entity.spawnAtLocation(new ItemStack(Items.GLOW_LICHEN, lichenDropCount));
                 }
             }
+
+			if (MobHelper.isTurtle(entity)) {
+				mob = "Turtle";
+
+				int voltaicSeaGrassDropChance = random.nextInt(12);
+
+				if (voltaicSeaGrassDropChance == 1) {
+					int volaticSeaGrassDropCount = singleCount + random.nextInt(2);
+
+					entity.spawnAtLocation(new ItemStack(GarnishedBlocks.VOLTAIC_SEA_GRASS.get(), volaticSeaGrassDropCount));
+				}
+			}
         }
 
         // Ravaging Loot Drops
@@ -285,6 +299,10 @@ public class HatchetUtils {
         public static boolean isFish(Entity entity) {
             return isSalmon(entity) || isCod(entity) || isPufferfish(entity) || isTropicalFish(entity);
         }
+
+		public static boolean isTurtle(Entity entity) {
+			return entity.getType() == EntityType.TURTLE;
+		}
 
         public static boolean isSquid(Entity entity) {
             return entity.getType() == EntityType.SQUID;

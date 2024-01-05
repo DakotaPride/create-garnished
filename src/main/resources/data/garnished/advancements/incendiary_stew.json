@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:incendiary_stew"
+    },
+    "title": {
+      "translate": "advancement.garnished.incendiary_stew.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.incendiary_stew.description",
+      "color": "#DBA213"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "garnished:lustrous_pearl",
+  "criteria": {
+    "obtain_incendiary_stew": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "garnished:incendiary_stew"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_incendiary_stew"
+    ]
+  ]
+}

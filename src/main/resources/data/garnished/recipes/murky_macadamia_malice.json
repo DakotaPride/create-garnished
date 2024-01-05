@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "garnished:murky_jelly"
+    },
+    {
+      "item": "garnished:murky_jelly"
+    },
+    {
+      "item": "garnished:macadamia"
+    },
+    {
+      "item": "garnished:macadamia"
+    },
+    {
+      "item": "garnished:macadamia"
+    },
+    {
+      "item": "garnished:volatile_dust"
+    },
+    {
+      "item": "garnished:volatile_dust"
+    }
+  ],
+  "result": {
+    "item": "garnished:murky_macadamia_malice"
+  }
+}

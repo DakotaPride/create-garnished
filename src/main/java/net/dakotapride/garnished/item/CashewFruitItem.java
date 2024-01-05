@@ -3,25 +3,17 @@ package net.dakotapride.garnished.item;
 import java.util.List;
 import java.util.Random;
 
-import net.minecraft.ChatFormatting;
-import net.minecraft.advancements.CriteriaTriggers;
-import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.network.chat.TextComponent;
-import net.minecraft.network.chat.TranslatableComponent;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.stats.Stats;
-import net.minecraft.world.effect.MobEffect;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Items;
-
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.stats.Stats;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
@@ -34,16 +26,16 @@ public class CashewFruitItem extends Item implements IGarnishedItem {
 
 	@Override
 	public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag isAdvanced) {
-		if (!Screen.hasShiftDown()) {
-			tooltip.add(new TranslatableComponent("text.garnished.hold_shift").withStyle(ChatFormatting.GRAY));
-		}
-
-		if (Screen.hasShiftDown()) {
-			tooltip.add(new TextComponent(""));
-			tooltip.add(new TranslatableComponent("text.garnished.cashew_fruit.poisoning").withStyle(ChatFormatting.DARK_PURPLE));
-			tooltip.add(new TextComponent(""));
-			tooltip.add(new TranslatableComponent("text.garnished.cashew_fruit.poisoning.chance").withStyle(ChatFormatting.DARK_PURPLE));
-		}
+		// if (!Screen.hasShiftDown()) {
+		//			tooltip.add(new TranslatableComponent("text.garnished.hold_shift").withStyle(ChatFormatting.GRAY));
+		//		}
+		//
+		//		if (Screen.hasShiftDown()) {
+		//			tooltip.add(new TextComponent(""));
+		//			tooltip.add(new TranslatableComponent("text.garnished.cashew_fruit.poisoning").withStyle(ChatFormatting.DARK_PURPLE));
+		//			tooltip.add(new TextComponent(""));
+		//			tooltip.add(new TranslatableComponent("text.garnished.cashew_fruit.poisoning.chance").withStyle(ChatFormatting.DARK_PURPLE));
+		//		}
 	}
 
 	@Override
