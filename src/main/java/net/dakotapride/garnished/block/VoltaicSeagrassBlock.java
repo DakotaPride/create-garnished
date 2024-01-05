@@ -2,6 +2,12 @@ package net.dakotapride.garnished.block;
 
 import java.util.Random;
 
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.phys.Vec3;
+
 import org.jetbrains.annotations.NotNull;
 
 import net.dakotapride.garnished.registry.GarnishedBlocks;
@@ -22,6 +28,21 @@ public class VoltaicSeagrassBlock extends SeagrassBlock {
     public @NotNull ItemStack getCloneItemStack(@NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull BlockState state) {
         return GarnishedBlocks.VOLTAIC_SEA_GRASS.asStack();
     }
+
+	@Override
+	public void entityInside(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Entity entity) {
+		if (entity instanceof LivingEntity) {
+			entity.makeStuckInBlock(state, new Vec3(0.800000011920929, 0.75, 0.800000011920929));
+			if (!level.isClientSide && (entity.xOld != entity.getX() || entity.zOld != entity.getZ())) {
+				double d = Math.abs(entity.getX() - entity.xOld);
+				double e = Math.abs(entity.getZ() - entity.zOld);
+				if (d >= 0.003000000026077032 || e >= 0.003000000026077032) {
+					entity.hurt(DamageSource.LIGHTNING_BOLT, 1.0F);
+				}
+			}
+
+		}
+	}
 
     @Override
     public boolean isValidBonemealTarget(@NotNull BlockGetter pLevel, @NotNull BlockPos pPos, @NotNull BlockState pState, boolean pIsClient) {
