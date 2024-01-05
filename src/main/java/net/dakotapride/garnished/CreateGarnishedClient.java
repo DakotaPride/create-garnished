@@ -4,6 +4,7 @@ import com.terraformersmc.terraform.sign.SpriteIdentifierRegistry;
 
 import net.dakotapride.garnished.registry.GarnishedBlocks;
 import net.dakotapride.garnished.registry.GarnishedFluids;
+import net.dakotapride.garnished.registry.GarnishedPonderIndex;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
@@ -31,6 +32,9 @@ public class CreateGarnishedClient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
+		GarnishedPonderIndex.index();
+		GarnishedPonderIndex.Tags.fillPonderTags();
+
 		SpriteIdentifierRegistry.INSTANCE.addIdentifier(new Material(
 				Sheets.SIGN_SHEET, signResourceLocation(sepia)));
 
