@@ -91,8 +91,9 @@ public class GarnishedPonderIndex {
 				.addStoryBoard("general/apple_cider_creation", ScenesAndInteractions::appleCiderCreation)
 				.addStoryBoard("general/apple_cider_fluid", ScenesAndInteractions::bottledAppleCider)
 				.addStoryBoard("general/other_apple_cider_items", ScenesAndInteractions::appleCiderMisc);
-		HELPER.forComponents(GarnishedItems.FERMENTED_CASHEW_MIXTURE, GarnishedItems.CASHEW_SORBET_SCOOP);
-		//.addStoryBoard("general/cashew_mixture_fluid", ScenesAndInteractions::cashewMixtureFluid);
+		HELPER.forComponents(GarnishedItems.FERMENTED_CASHEW_MIXTURE, GarnishedItems.CASHEW_SORBET_SCOOP)
+				.addStoryBoard("general/cashew_mixture_fluid", ScenesAndInteractions::cashewMixtureFluid)
+				.addStoryBoard("general/cashew_sorbet_scoop_creation", ScenesAndInteractions::cashewSorbetScoopCreation);
 		HELPER.forComponents(GarnishedItems.BRITTLE_DUST, GarnishedItems.SENILE_DUST, GarnishedItems.SENILE_SPREAD)
 				.addStoryBoard("incineration/brittle_dust", ScenesAndInteractions::brittleDust)
 				.addStoryBoard("incineration/senile_dust", ScenesAndInteractions::senileDust)
@@ -130,6 +131,9 @@ public class GarnishedPonderIndex {
 						.addToIndex(),
 				CRUSHED_NETHER_INGREDIENTS = create("crushed_nether_ingredients").item(GarnishedItems.BRITTLE_DUST.get(), true, true)
 						.defaultLang("crushed_nether_ingredients", "crushed_nether_ingredients_description")
+						.addToIndex(),
+				FLUIDS = create("fluids").item(GarnishedItems.BOTTLED_PEANUT_OIL.get(), true, false)
+						.defaultLang("fluids", "fluids_description")
 						.addToIndex();
 
 		private static PonderTag create(String id) {
@@ -190,6 +194,23 @@ public class GarnishedPonderIndex {
 					.add(GarnishedItems.CRUSHED_SHROOMLIGHT)
 					.add(GarnishedItems.BRITTLE_DUST)
 					.add(GarnishedItems.SENILE_DUST);
+			PonderRegistry.TAGS.forTag(FLUIDS)
+					.add(GarnishedItems.BOTTLED_PEANUT_OIL)
+					.add(GarnishedItems.APPLE_CIDER)
+					.add(GarnishedItems.BITTER_APPLE_CIDER)
+					.add(GarnishedItems.CRYPTIC_APPLE_CIDER)
+					.add(GarnishedItems.FERMENTED_CASHEW_MIXTURE)
+					.add(GarnishedFluids.GARNISH.get().getBucket())
+					.add(GarnishedFluids.APPLE_CIDER.get().getBucket())
+					.add(GarnishedFluids.PEANUT_OIL.get().getBucket())
+					.add(GarnishedFluids.CASHEW_MIXTURE.get().getBucket())
+					.add(GarnishedFluids.MASTIC_RESIN.get().getBucket())
+					.add(GarnishedFluids.RED_MASTIC_RESIN.get().getBucket())
+					.add(GarnishedFluids.ORANGE_MASTIC_RESIN.get().getBucket())
+					.add(GarnishedFluids.YELLOW_MASTIC_RESIN.get().getBucket())
+					.add(GarnishedFluids.GREEN_MASTIC_RESIN.get().getBucket())
+					.add(GarnishedFluids.BLUE_MASTIC_RESIN.get().getBucket())
+					.add(GarnishedFluids.PURPLE_MASTIC_RESIN.get().getBucket());
 		}
 	}
 
@@ -1336,6 +1357,62 @@ public class GarnishedPonderIndex {
 			scene.world.modifyEntity(crushedShroomlightEntity, Entity::discard);
 			scene.world.createItemOnBelt(util.grid.at(2, 1, 2), Direction.SOUTH, shroomlight1);
 			scene.idle(50);
+
+			scene.markAsFinished();
+		}
+
+		public static void cashewMixtureFluid(SceneBuilder scene, SceneBuildingUtil util) {
+			scene.title("cashew_mixture", "cashew_mixture");
+			scene.showBasePlate();
+			scene.idle(10);
+			scene.world.showSection(util.select.layersFrom(1), Direction.DOWN);
+			scene.idle(10);
+
+			ItemStack fermentedCashewMixture = new ItemStack(GarnishedItems.FERMENTED_CASHEW_MIXTURE.get());
+			ElementLink<EntityElement> entity = scene.world.createItemEntity(util.vector.centerOf(util.grid.at(3, 2, 2).above(2)), util.vector.of(0, 0.2, 0), fermentedCashewMixture);
+			scene.idle(5);
+			scene.overlay.showText(80)
+					.attachKeyFrame()
+					.placeNearTarget()
+					.text("fermented_cashew_mixture")
+					.pointAt(util.vector.centerOf(util.grid.at(3, 2, 2)));
+			scene.idle(90);
+
+			scene.markAsFinished();
+		}
+
+		public static void cashewSorbetScoopCreation(SceneBuilder scene, SceneBuildingUtil util) {
+			scene.title("cashew_sorbet", "cashew_sorbet");
+			scene.configureBasePlate(0, 0, 5);
+			scene.showBasePlate();
+			scene.idle(5);
+			scene.world.showSection(util.select.position(2, 0, 5), Direction.DOWN);
+			scene.idle(10);
+			scene.world.showSection(util.select.layersFrom(1), Direction.DOWN);
+			scene.idle(10);
+
+			ItemStack snowball = new ItemStack(Items.SNOWBALL);
+			ItemStack nut = new ItemStack(GarnishedItems.CASHEW.get());
+
+			scene.overlay.showControls(new InputWindowElement(util.vector.centerOf(2, 2, 3), Pointing.RIGHT).withItem(snowball), 30);
+			scene.idle(35);
+			scene.overlay.showControls(new InputWindowElement(util.vector.centerOf(2, 2, 3), Pointing.RIGHT).withItem(nut), 30);
+			scene.idle(35);
+			scene.overlay.showControls(new InputWindowElement(util.vector.centerOf(2, 2, 3), Pointing.RIGHT).withItem(nut), 30);
+			scene.idle(35);
+			scene.overlay.showText(80)
+					.attachKeyFrame()
+					.placeNearTarget()
+					.text("cashew_sorbet_ingredients")
+					.pointAt(util.vector.centerOf(util.grid.at(2, 2, 3)));
+			scene.idle(90);
+
+			ItemStack cashewSorbetScoop = new ItemStack(GarnishedItems.CASHEW_SORBET_SCOOP.get(), 2);
+			Class<MechanicalMixerBlockEntity> type = MechanicalMixerBlockEntity.class;
+			scene.world.modifyBlockEntity(util.grid.at(2, 4, 3), type, MechanicalMixerBlockEntity::startProcessingBasin);
+			scene.idle(78);
+			ElementLink<BeltItemElement> beltItem = scene.world.createItemOnBelt(util.grid.at(2, 1, 2), Direction.SOUTH, cashewSorbetScoop);
+			scene.idle(30);
 
 			scene.markAsFinished();
 		}
