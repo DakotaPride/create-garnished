@@ -2,11 +2,15 @@ package net.dakotapride.garnished.block;
 
 import java.util.Random;
 
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.phys.Vec3;
+
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.VoxelShape;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -28,6 +32,21 @@ public class VoltaicSeagrassBlock extends SeagrassBlock {
     public @NotNull ItemStack getCloneItemStack(@NotNull BlockGetter level, @NotNull BlockPos pos, @NotNull BlockState state) {
         return GarnishedBlocks.VOLTAIC_SEA_GRASS.asStack();
     }
+
+	@Override
+	public void animateTick(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Random random) {
+		VoxelShape voxelshape = this.getShape(state, level, pos, CollisionContext.empty());
+		Vec3 vec3 = voxelshape.bounds().getCenter();
+		double d0 = (double)pos.getX() + vec3.x;
+		double d1 = (double)pos.getZ() + vec3.z;
+
+		for(int i = 0; i < 3; ++i) {
+			if (random.nextBoolean()) {
+				level.addParticle(ParticleTypes.GLOW, d0 + random.nextDouble() / 5.0D, (double)pos.getY() + (0.5D - random.nextDouble()), d1 + random.nextDouble() / 5.0D, 0.0D, 0.0D, 0.0D);
+			}
+		}
+
+	}
 
 	@Override
 	public void entityInside(@NotNull BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Entity entity) {
