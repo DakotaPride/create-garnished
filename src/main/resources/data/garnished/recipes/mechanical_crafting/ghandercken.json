@@ -3,7 +3,7 @@
   "acceptMirrored": false,
   "key": {
     "A": {
-      "tag": "forge:ender_dusts"
+      "tag": "c:ender_dusts"
     },
     "B": {
       "item": "garnished:ghast_tendril"
