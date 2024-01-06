@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "garnished:vermilion_kelp_plant"
+          "name": "garnished:vermilion_kelp"
         }
       ],
       "conditions": [
