@@ -31,12 +31,12 @@
     },
     {
       "amount": 20250,
-      "fluidTag": "forge:chocolate",
+      "fluidTag": "c:chocolate",
       "nbt": {}
     },
     {
       "amount": 20250,
-      "fluidTag": "forge:honey",
+      "fluidTag": "c:honey",
       "nbt": {}
     }
   ],
