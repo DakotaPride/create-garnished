@@ -2,6 +2,7 @@ package net.dakotapride.garnished.mixin;
 
 import net.dakotapride.garnished.entity.GarnishedBoatTypes;
 import net.dakotapride.garnished.registry.GarnishedBlocks;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.world.entity.vehicle.Boat;
 
 import net.minecraft.world.level.block.Block;
@@ -41,14 +42,16 @@ public class BoatTypeMixin {
 			target = "Lnet/minecraft/world/entity/vehicle/Boat$Type;$VALUES:[Lnet/minecraft/world/entity/vehicle/Boat$Type;",
 			shift = At.Shift.AFTER))
 	private static void addType(CallbackInfo info) {
-		var types = new ArrayList<>(Arrays.asList($VALUES));
-		var last = types.get(types.size() - 1);
+		if (!FabricLoader.getInstance().isModLoaded("redirector")) {
+			var types = new ArrayList<>(Arrays.asList($VALUES));
+			var last = types.get(types.size() - 1);
 
-		var nut = newType("NUT", last.ordinal() + 1, GarnishedBlocks.NUT_PLANKS.get(), "nut");
-		GarnishedBoatTypes.NUT = nut;
-		types.add(nut);
+			var nut = newType("NUT", last.ordinal() + 1, GarnishedBlocks.NUT_PLANKS.get(), "nut");
+			GarnishedBoatTypes.NUT = nut;
+			types.add(nut);
 
-		$VALUES = types.toArray(new Boat.Type[0]);
+			$VALUES = types.toArray(new Boat.Type[0]);
+		}
 	}
 
 }
