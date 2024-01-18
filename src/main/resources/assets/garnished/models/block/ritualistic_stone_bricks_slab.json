@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "garnished:block/ritualistic_stone_bricks",
+    "side": "garnished:block/ritualistic_stone_bricks",
+    "top": "garnished:block/ritualistic_stone_bricks"
+  }
+}

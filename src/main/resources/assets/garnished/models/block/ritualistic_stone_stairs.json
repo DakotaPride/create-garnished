@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "garnished:block/ritualistic_stone",
+    "side": "garnished:block/ritualistic_stone",
+    "top": "garnished:block/ritualistic_stone"
+  }
+}

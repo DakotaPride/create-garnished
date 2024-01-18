@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "garnished:block/polished_ritualistic_stone"
+  }
+}
