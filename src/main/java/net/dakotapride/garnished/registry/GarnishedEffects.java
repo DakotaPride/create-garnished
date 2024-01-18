@@ -7,6 +7,7 @@ import net.dakotapride.garnished.effect.FlagrantMobEffect;
 import net.dakotapride.garnished.effect.SanctityMobEffect;
 import net.dakotapride.garnished.effect.SpiritedResistanceMobEffect;
 import net.dakotapride.garnished.effect.SugarHighMobEffect;
+import net.dakotapride.garnished.effect.ThornsMobEffect;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistry;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
@@ -41,6 +42,8 @@ public class GarnishedEffects {
 	public static MobEffect SANCTITY = effect("sanctity", new SanctityMobEffect()
 			.addAttributeModifier(Attributes.ARMOR, "3a7cbac5-6234-49c8-93d0-fdacad4af501",
 					4.0, AttributeModifier.Operation.ADDITION));
+
+	public static MobEffect THORNS = effect("thorns", new ThornsMobEffect());
 
 	public static Potion AVERSION_POTION = potion("aversion", new Potion(
 			new MobEffectInstance(AVERSION, 2400)));

@@ -30,5 +30,8 @@
     "fabric-api": ">=${fabric_api_version}",
     "create": "*",
     "minecraft": ">=${minecraft_version}"
+  },
+  "breaks": {
+    "redirector": "*"
   }
 }

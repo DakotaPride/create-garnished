@@ -436,6 +436,21 @@
   "block.garnished.dried_dulse_kelp_block": "Dried Dulse Kelp Block", //
   "block.garnished.voltaic_sea_grass": "Voltaic Sea Grass", //
 
+  "block.garnished.ritualistic_stone": "Ritualistic Stone", //
+  "block.garnished.ritualistic_stone_slab": "Ritualistic Stone Slab", //
+  "block.garnished.ritualistic_stone_stairs": "Ritualistic Stone Stairs", //
+  "block.garnished.ritualistic_stone_wall": "Ritualistic Stone Wall", //
+  "block.garnished.ritualistic_stone_bricks": "Ritualistic Stone Bricks", //
+  "block.garnished.ritualistic_stone_bricks_slab": "Ritualistic Stone Brick Slab", //
+  "block.garnished.ritualistic_stone_bricks_stairs": "Ritualistic Stone Brick Stairs", //
+  "block.garnished.ritualistic_stone_bricks_wall": "Ritualistic Stone Brick Wall", //
+  "block.garnished.polished_ritualistic_stone": "Polished Ritualistic Stone", //
+  "block.garnished.polished_ritualistic_stone_slab": "Polished Ritualistic Stone Slab", //
+  "block.garnished.polished_ritualistic_stone_stairs": "Polished Ritualistic Stone Stairs", //
+  "block.garnished.polished_ritualistic_stone_wall": "Polished Ritualistic Stone Wall", //
+  "block.garnished.chiseled_ritualistic_stone_bricks": "Chiseled Ritualistic Stone Bricks", //
+  "effect.garnished.thorns": "Prickly", //
+
   "block.garnished.peanut_sack": "Мешочек орехов",
   "block.garnished.cashew_sack": "Мешочек орехов",
   "block.garnished.almond_sack": "Мешочек орехов",

@@ -32,8 +32,8 @@ public class CreateGarnishedClient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-		GarnishedPonderIndex.index();
-		GarnishedPonderIndex.Tags.fillPonderTags();
+		// GarnishedPonderIndex.index();
+		// GarnishedPonderIndex.Tags.fillPonderTags();
 
 		SpriteIdentifierRegistry.INSTANCE.addIdentifier(new Material(
 				Sheets.SIGN_SHEET, signResourceLocation(sepia)));
