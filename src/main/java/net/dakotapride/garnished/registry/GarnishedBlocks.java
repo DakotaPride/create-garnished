@@ -882,8 +882,107 @@ public class GarnishedBlocks {
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
 					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<Block> SMOOTH_RITUALISTIC_STONE =
+			REGISTRATE.block("smooth_ritualistic_stone", Block::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<SlabBlock> SMOOTH_RITUALISTIC_STONE_SLAB =
+			REGISTRATE.block("smooth_ritualistic_stone_slab", SlabBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<RitualisticStoneStairsBlock> SMOOTH_RITUALISTIC_STONE_STAIRS =
+			REGISTRATE.block("smooth_ritualistic_stone_stairs", RitualisticStoneStairsBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<WallBlock> SMOOTH_RITUALISTIC_STONE_WALL =
+			REGISTRATE.block("smooth_ritualistic_stone_wall", WallBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
 	public static final BlockEntry<Block> CHISELED_RITUALISTIC_STONE_BRICKS =
 			REGISTRATE.block("chiseled_ritualistic_stone_bricks", Block::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+
+	public static final BlockEntry<UnstableStoneBlock> SMOOTH_UNSTABLE_STONE =
+			REGISTRATE.block("smooth_unstable_stone", UnstableStoneBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<UnstableStoneSlabBlock> SMOOTH_UNSTABLE_STONE_SLAB =
+			REGISTRATE.block("smooth_unstable_stone_slab", UnstableStoneSlabBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<UnstableStoneStairsBlock> SMOOTH_UNSTABLE_STONE_STAIRS =
+			REGISTRATE.block("smooth_unstable_stone_stairs", UnstableStoneStairsBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<UnstableStoneWallBlock> SMOOTH_UNSTABLE_STONE_WALL =
+			REGISTRATE.block("smooth_unstable_stone_wall", UnstableStoneWallBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+
+	public static final BlockEntry<Block> SMOOTH_CARNOTITE =
+			REGISTRATE.block("smooth_carnotite", Block::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<SlabBlock> SMOOTH_CARNOTITE_SLAB =
+			REGISTRATE.block("smooth_carnotite_slab", SlabBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<CarnotiteStairsBlock> SMOOTH_CARNOTITE_STAIRS =
+			REGISTRATE.block("smooth_carnotite_stairs", CarnotiteStairsBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<WallBlock> SMOOTH_CARNOTITE_WALL =
+			REGISTRATE.block("smooth_carnotite_wall", WallBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+
+	public static final BlockEntry<AbyssalStoneBlock> SMOOTH_ABYSSAL_STONE =
+			REGISTRATE.block("smooth_abyssal_stone", AbyssalStoneBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<AbyssalStoneSlabBlock> SMOOTH_ABYSSAL_STONE_SLAB =
+			REGISTRATE.block("smooth_abyssal_stone_slab", AbyssalStoneSlabBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<AbyssalStoneStairsBlock> SMOOTH_ABYSSAL_STONE_STAIRS =
+			REGISTRATE.block("smooth_abyssal_stone_stairs", AbyssalStoneStairsBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<AbyssalStoneWallBlock> SMOOTH_ABYSSAL_STONE_WALL =
+			REGISTRATE.block("smooth_abyssal_stone_wall", AbyssalStoneWallBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
