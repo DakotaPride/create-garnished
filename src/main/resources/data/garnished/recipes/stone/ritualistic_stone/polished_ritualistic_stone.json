@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "ritualistic_stone_variants",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:ritualistic_stone"
+    }
+  },
+  "result": {
+    "item": "garnished:polished_ritualistic_stone",
+    "count": 4
+  }
+}

@@ -1,18 +1,22 @@
 {
   "replace": false,
   "values": [
-    "garnished:carnotite",
-    "garnished:carnotite_slab",
-    "garnished:carnotite_stairs",
-    "garnished:carnotite_wall",
-    "garnished:carnotite_bricks",
-    "garnished:polished_carnotite",
-    "garnished:chiseled_carnotite_bricks",
-    "garnished:polished_carnotite_stairs",
-    "garnished:carnotite_bricks_stairs",
-    "garnished:polished_carnotite_slab",
-    "garnished:carnotite_bricks_slab",
-    "garnished:polished_carnotite_wall",
-    "garnished:carnotite_bricks_wall"
+    "garnished:carnotite_stone",
+    "garnished:carnotite_stone_slab",
+    "garnished:carnotite_stone_stairs",
+    "garnished:carnotite_stone_wall",
+    "garnished:carnotite_stone_bricks",
+    "garnished:polished_carnotite_stone",
+    "garnished:chiseled_carnotite_stone_bricks",
+    "garnished:smooth_carnotite_stone",
+    "garnished:polished_carnotite_stone_stairs",
+    "garnished:carnotite_stone_bricks_stairs",
+    "garnished:smooth_carnotite_stone_stairs",
+    "garnished:polished_carnotite_stone_slab",
+    "garnished:carnotite_stone_bricks_slab",
+    "garnished:smooth_carnotite_stone_slab",
+    "garnished:polished_carnotite_stone_wall",
+    "garnished:carnotite_stone_bricks_wall",
+    "garnished:smooth_carnotite_stone_wall"
   ]
 }
