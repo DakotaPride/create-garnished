@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "garnished:ritualistic_stone",
+    "garnished:ritualistic_stone_slab",
+    "garnished:ritualistic_stone_stairs",
+    "garnished:ritualistic_stone_wall",
+    "garnished:ritualistic_stone_bricks",
+    "garnished:polished_ritualistic_stone",
+    "garnished:chiseled_ritualistic_stone_bricks",
+    "garnished:polished_ritualistic_stone_stairs",
+    "garnished:ritualistic_stone_bricks_stairs",
+    "garnished:polished_ritualistic_stone_slab",
+    "garnished:ritualistic_stone_bricks_slab",
+    "garnished:polished_ritualistic_stone_wall",
+    "garnished:ritualistic_stone_bricks_wall"
+  ]
+}

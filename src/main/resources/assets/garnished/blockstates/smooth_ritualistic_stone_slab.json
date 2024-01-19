@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "garnished:block/smooth_ritualistic_stone_slab"
+    },
+    "type=double": {
+      "model": "garnished:block/smooth_ritualistic_stone"
+    },
+    "type=top": {
+      "model": "garnished:block/smooth_ritualistic_stone_slab_top"
+    }
+  }
+}

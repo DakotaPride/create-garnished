@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "garnished:block/smooth_abyssal_stone",
+    "side": "garnished:block/smooth_abyssal_stone",
+    "top": "garnished:block/smooth_abyssal_stone"
+  }
+}
