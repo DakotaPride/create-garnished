@@ -3,8 +3,8 @@
   "text.garnished.nut.ungarnished": "Сырой",
   "text.garnished.nut.garnished": "Приготовленный",
   "text.garnished.nut.cracked": "Расколот",
-  "text.garnished.hold_shift": "Hold [§7Shift§8] for Summary",
-  "text.garnished.holding_shift": "Hold [§fShift§8] for Summary",
+  "text.garnished.hold_shift": "Удерживайте [§7Shift§8] для подробностей",
+  "text.garnished.holding_shift": "Удерживайте [§7Shift§8] для подробностей",
   "text.garnished.nut.cinder_flour": "Незераковая мука",
   "text.garnished.nut.cinder_flour.melted": "Незераковая глазурь",
   "text.garnished.nut.sweetened": "Подсахаренный",
@@ -13,36 +13,35 @@
   "text.garnished.cider.cryptic": "Загадочный",
   "text.garnished.cider.bitter": "Горький",
   "text.garnished.salted_food": "Солёный",
-  // new tooltips
-  "text.garnished.nut.cinder_flour.effect_list": "Available Effects:",
-  "text.garnished.nut.cinder_flour.effect_list.strength": "  [Strength]",
-  "text.garnished.nut.cinder_flour.effect_list.strength.desc": "   - Increases user's damage",
-  "text.garnished.nut.cinder_flour.effect_list.slow_falling": "  [Slow Falling]",
-  "text.garnished.nut.cinder_flour.effect_list.slow_falling.desc": "   - Slows user's fall and prevents fall damage",
-  "text.garnished.nut.cinder_flour.effect_list.night_vision": "  [Night Vision]",
-  "text.garnished.nut.cinder_flour.effect_list.night_vision.desc": "   - Grants vision in dark areas",
-  "text.garnished.nut.cinder_flour.effect_list.haste": "  [Haste]",
-  "text.garnished.nut.cinder_flour.effect_list.haste.desc": "   - Increases user's mining speed",
-  "text.garnished.nut.cinder_flour.effect_list.speed": "  [Speed]",
-  "text.garnished.nut.cinder_flour.effect_list.speed.desc": "   - Increases user's movement speed",
-  "text.garnished.nut.cinder_flour.effect_list.potent_speed": "  [Potent Speed]",
-  "text.garnished.nut.cinder_flour.effect_list.potent_speed.desc": "   - Increases user's movement speed x2",
-  "text.garnished.nut.cinder_flour.effect_list.fire_resistance": "  [Fire Resistance]",
-  "text.garnished.nut.cinder_flour.effect_list.fire_resistance.desc": "   - Grants user immunity to fire damage",
-  "text.garnished.nut.cinder_flour.effect_list.resistance": "  [Resistance]",
-  "text.garnished.nut.cinder_flour.effect_list.resistance.desc": "   - Decreases damage taken",
-  "text.garnished.nut.cinder_flour.effect_list.buhg_effects": "  [Slowness, Invisibility]",
-  "text.garnished.nut.cinder_flour.effect_list.buhg_effects.desc.1": "   - Decreases user's movement speed",
-  "text.garnished.nut.cinder_flour.effect_list.buhg_effects.desc.2": "   - Makes user invisible",
-  "text.garnished.effect.clears_poison": "Clears the user of the Poison status effect",
-  "text.garnished.effect.clears_wither": "Clears the user of the Wither status effect",
-  "text.garnished.apple_cider.bitter.desc.1": "Decreases user's movement speed,",
-  "text.garnished.apple_cider.bitter.desc.2": "but decreases damage taken",
-  "text.garnished.apple_cider.cryptic.desc.1": "Has a 50% chance to harm the",
-  "text.garnished.apple_cider.cryptic.desc.2": "user over a small duration of",
-  "text.garnished.apple_cider.cryptic.desc.3": "time, but also has a 50% chance",
-  "text.garnished.apple_cider.cryptic.desc.4": "to increase the user's damage output",
-  "text.garnished.incendiary_stew.desc": "Hope the meal is worth it!",
+  "text.garnished.nut.cinder_flour.effect_list": "Доступные эффекты:",
+  "text.garnished.nut.cinder_flour.effect_list.strength": "  [Сила]",
+  "text.garnished.nut.cinder_flour.effect_list.strength.desc": "   - Увеличивает наносимый игроком урон",
+  "text.garnished.nut.cinder_flour.effect_list.slow_falling": "  [Плавное падение]",
+  "text.garnished.nut.cinder_flour.effect_list.slow_falling.desc": "   - Замедляет падение игрока и предотвращает урон от падения",
+  "text.garnished.nut.cinder_flour.effect_list.night_vision": "  [Ночное зрение]",
+  "text.garnished.nut.cinder_flour.effect_list.night_vision.desc": "   - Позволяет видеть в тёмных местах",
+  "text.garnished.nut.cinder_flour.effect_list.haste": "  [Спешка]",
+  "text.garnished.nut.cinder_flour.effect_list.haste.desc": "   - Увеличивает скорость копания игрока",
+  "text.garnished.nut.cinder_flour.effect_list.speed": "  [Скорость]",
+  "text.garnished.nut.cinder_flour.effect_list.speed.desc": "   - Увеличивает скорость передвижения игрока",
+  "text.garnished.nut.cinder_flour.effect_list.potent_speed": "  [Высокая скорость]",
+  "text.garnished.nut.cinder_flour.effect_list.potent_speed.desc": "   - Увеличивает скорость передвижения игрока в два раза",
+  "text.garnished.nut.cinder_flour.effect_list.fire_resistance": "  [Огнестойкость]",
+  "text.garnished.nut.cinder_flour.effect_list.fire_resistance.desc": "   - Защищает игрока от урона от огня",
+  "text.garnished.nut.cinder_flour.effect_list.resistance": "  [Сопротивление]",
+  "text.garnished.nut.cinder_flour.effect_list.resistance.desc": "   - Снижает получаемый урон",
+  "text.garnished.nut.cinder_flour.effect_list.buhg_effects": "  [Замедление, Невидимость]",
+  "text.garnished.nut.cinder_flour.effect_list.buhg_effects.desc.1": "   - Снижает скорость передвижения игрока",
+  "text.garnished.nut.cinder_flour.effect_list.buhg_effects.desc.2": "   - Делает игрока невидимым",
+  "text.garnished.effect.clears_poison": "Снимает с игрока эффект Отравления",
+  "text.garnished.effect.clears_wither": "Снимает с игрока эффект Иссушения",
+  "text.garnished.apple_cider.bitter.desc.1": "Снижает скорость передвижения игрока,",
+  "text.garnished.apple_cider.bitter.desc.2": "но снижает получаемый урон",
+  "text.garnished.apple_cider.cryptic.desc.1": "Имеет 50% шанс навредить игроку",
+  "text.garnished.apple_cider.cryptic.desc.2": "после небольшой паузы, но",
+  "text.garnished.apple_cider.cryptic.desc.3": "также имеет 50% шанс",
+  "text.garnished.apple_cider.cryptic.desc.4": "повысить наносимый игроком урон",
+  "text.garnished.incendiary_stew.desc": "Надеюсь еда стоила того!",
 
   "item.garnished.pecan_pie_slice": "Кусок пеканового пирога",
   "item.garnished.phantom_beef_patty": "Фантомная котлета",
@@ -332,7 +331,7 @@
   "item.garnished.galactic_cane": "Галактическая трость",
   "item.garnished.icy_mastic_chunk": "Замороженный кусочек мастики",
   "item.garnished.coal_truffle": "Угольный трюфель",
-  "item.garnished.sturdy_waffle": "Sturdy Waffle", //
+  "item.garnished.sturdy_waffle": "Прочная вафля",
   "item.garnished.volatile_dust": "Нестабильная пыль",
   "effect.garnished.sugar_high": "Высокий уровень сахара",
   "effect.garnished.sanctity": "Святость",
@@ -387,66 +386,66 @@
   "block.garnished.polished_unstable_stone_wall": "Полированная ограда из нестабильного камня",
   "block.garnished.chiseled_unstable_stone_bricks": "Резные кирпичи из нестабильного камня",
 
-  "item.garnished.ghast_tendril": "Ghast Tendril", //
-  "item.garnished.chestnut": "Chestnut", //
-  "item.garnished.ungarnished_chestnut": "Chestnut", //
-  "item.garnished.cinder_chestnut": "Chestnut", //
-  "item.garnished.melted_cinder_chestnut": "Chestnut", //
-  "item.garnished.sweetened_chestnut": "Chestnut", //
-  "block.garnished.chestnut_sapling": "Chestnut", //
-  "item.garnished.cinder_chestnut_slow_falling": "Chestnut", //
-  "item.garnished.honeyed_chestnut": "Chestnut", //
-  "item.garnished.chocolate_glazed_chestnut": "Chestnut", //
-  "item.garnished.raw_tenebrous_meat": "Raw Tenebrous Meat", //
-  "item.garnished.cooked_tenebrous_meat": "Cooked Tenebrous Meat", //
-  "item.garnished.aching_tenebrous_clump": "Aching Tenebrous Clump", //
-  "item.garnished.gloomy_gathering": "Gloomy Gathering", //
-  "item.garnished.fishy_surprise": "Fishy Surprise", //
-  "item.garnished.ghandercken": "Ghandercken", //
-  "item.garnished.walnut_gorge_cream": "Walnut Gorge Cream Bowl", //
-  "item.garnished.cashew_sorbet_scoop": "Cashew Sorbet Scoop", //
-  "item.garnished.cashew_sorbet_delight": "Cashew Sorbet Delight", //
-  "item.garnished.wheat_graze": "Wheat Graze", //
-  "item.garnished.porkchop_and_graze": "Porkchop & Graze", //
-  "item.garnished.murky_jelly": "Murky Jelly", //
-  "item.garnished.nutty_melody": "Nutty Melody", //
-  "item.garnished.incomplete_nutty_melody": "Incomplete Nutty Melody", //
-  "item.garnished.murky_macadamia_malice": "Murky Macadamia Malice", //
-  "item.garnished.cackling_pie": "Cackling Pie", //
-  "item.garnished.yam_o_glow_puffs": "Yam-O-Glow Puffs", //
-  "item.garnished.shining_dish": "Shining Dish", //
-  "item.garnished.muesli": "Muesli", //
-  "item.garnished.incomplete_muesli": "Incomplete Muesli", //
+  "item.garnished.ghast_tendril": "Щупальце гаста",
+  "item.garnished.chestnut": "Грецкий орех",
+  "item.garnished.ungarnished_chestnut": "Грецкий орех",
+  "item.garnished.cinder_chestnut": "Грецкий орех",
+  "item.garnished.melted_cinder_chestnut": "Грецкий орех",
+  "item.garnished.sweetened_chestnut": "Грецкий орех",
+  "block.garnished.chestnut_sapling": "Грецкий орех",
+  "item.garnished.cinder_chestnut_slow_falling": "Грецкий орех",
+  "item.garnished.honeyed_chestnut": "Грецкий орех",
+  "item.garnished.chocolate_glazed_chestnut": "Грецкий орех",
+  "item.garnished.raw_tenebrous_meat": "Сырое мрачное мясо",
+  "item.garnished.cooked_tenebrous_meat": "Жареное мрачное мясо",
+  "item.garnished.aching_tenebrous_clump": "Болезненый мрачный комок",
+  "item.garnished.gloomy_gathering": "Угрюмый сбор",
+  "item.garnished.fishy_surprise": "Рыбный сюрприз",
+  "item.garnished.ghandercken": "Гастендкурица",
+  "item.garnished.walnut_gorge_cream": "Мороженое ореховое ущелье",
+  "item.garnished.cashew_sorbet_scoop": "Шарик сорбета из кешью",
+  "item.garnished.cashew_sorbet_delight": "Восхитительный сорбет из кешью",
+  "item.garnished.wheat_graze": "Пшеничная жвачка",
+  "item.garnished.porkchop_and_graze": "Свинина и жвачка",
+  "item.garnished.murky_jelly": "Мрачное желе",
+  "item.garnished.nutty_melody": "Ореховая мелодия",
+  "item.garnished.incomplete_nutty_melody": "Незавершённая ореховая мелодия",
+  "item.garnished.murky_macadamia_malice": "Мрачная макадамиевая злоба",
+  "item.garnished.cackling_pie": "Кудахтающий пирог",
+  "item.garnished.yam_o_glow_puffs": "Вксносветовые слойки",
+  "item.garnished.shining_dish": "Сияющее блюдо",
+  "item.garnished.muesli": "Мюсли",
+  "item.garnished.incomplete_muesli": "Незавершённые мюсли",
 
-  "item.garnished.lustrous_pearl": "Lustrous Pearl", //
-  "item.garnished.vast_brew": "Vast Brew", //
-  "item.garnished.vermilion_stew": "Vermilion Stew", //
-  "item.garnished.galvanic_haunting": "Galvanic Haunting", //
-  "item.garnished.coral_wrapping": "Coral Wrapping", //
-  "item.garnished.bewildered_pastry": "Bewildered Pastry", //
-  "item.garnished.dusty_regale": "Dusty Regale", //
-  "item.garnished.incendiary_stew": "Incendiary Stew", //
-  "block.garnished.vermilion_kelp": "Vermilion Kelp", //
-  "item.garnished.dried_vermilion_kelp": "Dried Vermilion Kelp", //
-  "block.garnished.dried_vermilion_kelp_block": "Dried Vermilion Kelp Block", //
-  "block.garnished.dulse_kelp": "Dulse Kelp", //
-  "item.garnished.dried_dulse_kelp": "Dried Dulse Kelp", //
-  "block.garnished.dried_dulse_kelp_block": "Dried Dulse Kelp Block", //
-  "block.garnished.voltaic_sea_grass": "Voltaic Sea Grass", //
+  "item.garnished.lustrous_pearl": "Глянцевая жемчужина",
+  "item.garnished.vast_brew": "Огромное рагу",
+  "item.garnished.vermilion_stew": "Бурое рагу",
+  "item.garnished.galvanic_haunting": "Гальваническое преследование",
+  "item.garnished.coral_wrapping": "Кораловая обёртка",
+  "item.garnished.bewildered_pastry": "Озадаченная сладость",
+  "item.garnished.dusty_regale": "Пыльное угощение",
+  "item.garnished.incendiary_stew": "Зажигательное рагу",
+  "block.garnished.vermilion_kelp": "Бурая водоросль",
+  "item.garnished.dried_vermilion_kelp": "Сушёная бурая водоросль",
+  "block.garnished.dried_vermilion_kelp_block": "Блок сушёной бурой водоросли",
+  "block.garnished.dulse_kelp": "Красная водоросль",
+  "item.garnished.dried_dulse_kelp": "Сушёная красная водоросль",
+  "block.garnished.dried_dulse_kelp_block": "Блок сушёной красной водоросли",
+  "block.garnished.voltaic_sea_grass": "Вольтовская морская трава",
 
-  "block.garnished.ritualistic_stone": "Ritualistic Stone", //
-  "block.garnished.ritualistic_stone_slab": "Ritualistic Stone Slab", //
-  "block.garnished.ritualistic_stone_stairs": "Ritualistic Stone Stairs", //
-  "block.garnished.ritualistic_stone_wall": "Ritualistic Stone Wall", //
-  "block.garnished.ritualistic_stone_bricks": "Ritualistic Stone Bricks", //
-  "block.garnished.ritualistic_stone_bricks_slab": "Ritualistic Stone Brick Slab", //
-  "block.garnished.ritualistic_stone_bricks_stairs": "Ritualistic Stone Brick Stairs", //
-  "block.garnished.ritualistic_stone_bricks_wall": "Ritualistic Stone Brick Wall", //
-  "block.garnished.polished_ritualistic_stone": "Polished Ritualistic Stone", //
-  "block.garnished.polished_ritualistic_stone_slab": "Polished Ritualistic Stone Slab", //
-  "block.garnished.polished_ritualistic_stone_stairs": "Polished Ritualistic Stone Stairs", //
-  "block.garnished.polished_ritualistic_stone_wall": "Polished Ritualistic Stone Wall", //
-  "block.garnished.chiseled_ritualistic_stone_bricks": "Chiseled Ritualistic Stone Bricks", //
+  "block.garnished.ritualistic_stone": "Ритуальный камень",
+  "block.garnished.ritualistic_stone_slab": "Плита из ритуального камня",
+  "block.garnished.ritualistic_stone_stairs": "Ступеньки из ритуального камня",
+  "block.garnished.ritualistic_stone_wall": "Ограда из ритуального камня",
+  "block.garnished.ritualistic_stone_bricks": "Кирпичи из ритуального камня",
+  "block.garnished.ritualistic_stone_bricks_slab": "Плита из кирпичей из ритуального камня",
+  "block.garnished.ritualistic_stone_bricks_stairs": "Ступеньки из кирпичей из ритуального камня",
+  "block.garnished.ritualistic_stone_bricks_wall": "Ограда из кирпичей из ритуального камня",
+  "block.garnished.polished_ritualistic_stone": "Полированный ритуальный камень",
+  "block.garnished.polished_ritualistic_stone_slab": "Плита из полированного ритуального камня",
+  "block.garnished.polished_ritualistic_stone_stairs": "Ступеньки из полированного ритуального камня",
+  "block.garnished.polished_ritualistic_stone_wall": "Ограда из полированного ритуального камня",
+  "block.garnished.chiseled_ritualistic_stone_bricks": "Резные кирпичи из ритуального камня",
   "block.garnished.smooth_ritualistic_stone": "Smooth Ritualistic Stone", //
   "block.garnished.smooth_ritualistic_stone_stairs": "Smooth Ritualistic Stone Stairs", //
   "block.garnished.smooth_ritualistic_stone_slab": "Smooth Ritualistic Stone Slab", //
@@ -463,7 +462,7 @@
   "block.garnished.smooth_carnotite_stairs": "Smooth Carnotite Stairs", //
   "block.garnished.smooth_carnotite_slab": "Smooth Carnotite Slab", //
   "block.garnished.smooth_carnotite_wall": "Smooth Carnotite Wall", //
-  "effect.garnished.thorns": "Prickly", //
+  "effect.garnished.thorns": "Колючий",
 
   "block.garnished.peanut_sack": "Мешочек орехов",
   "block.garnished.cashew_sack": "Мешочек орехов",
@@ -585,120 +584,120 @@
   "advancement.garnished.abyssal_stone.description": "Получите Камень бездны",
   "advancement.garnished.unstable_stone.title": "Абстракция, в смертном плане",
   "advancement.garnished.unstable_stone.description": "Получите Нестабильный камень",
-  "advancement.garnished.consume_all_foods.title": "Welcome to Hell's Kitchen!", //
-  "advancement.garnished.consume_all_foods.description": "Consume All Foods From The Create: Garnished mod", //
-  "advancement.garnished.incendiary_stew.title": "Bombs away!",  //
-  "advancement.garnished.incendiary_stew.description": "Obtain Incendiary Stew",  //
-  "advancement.garnished.lustrous_pearl.title": "Shapes and Colours",  //
-  "advancement.garnished.lustrous_pearl.description": "Obtain a Lustrous Pearl",  //
-  "advancement.garnished.voltaic_sea_grass.title": "It May Come as a Shock,  // But...",  //
-  "advancement.garnished.voltaic_sea_grass.description": "Discover Voltaic Sea Grass (no Spirit,  // you can't chew on them)",  //
-  "advancement.garnished.dulse_kelp.title": "Pseudo-Bacon",  //
-  "advancement.garnished.dulse_kelp.description": "Obtain Dulse Kelp",  //
+  "advancement.garnished.consume_all_foods.title": "Добро пожаловать на Адскую кухню!",
+  "advancement.garnished.consume_all_foods.description": "Попробуйте всю еду из мода Create: Garnished",
+  "advancement.garnished.incendiary_stew.title": "Бомбы прочь!",
+  "advancement.garnished.incendiary_stew.description": "Получите Зажигательное рагу",
+  "advancement.garnished.lustrous_pearl.title": "Формы и цвета",
+  "advancement.garnished.lustrous_pearl.description": "Получите Глянцевую жемчужину",
+  "advancement.garnished.voltaic_sea_grass.title": "Мозможно вы будете шокированы,  // Но...",
+  "advancement.garnished.voltaic_sea_grass.description": "Обнаружьте Вольтовскую морскую траву (нет Спирит,  // ты не можешь пожевать её)",
+  "advancement.garnished.dulse_kelp.title": "Псевдобекон",
+  "advancement.garnished.dulse_kelp.description": "Получите красную водоросль",
 
-  "garnished.ponder.kelp_garnished.header": "Kelp From Frigid Environments",  //
-  "garnished.ponder.dulse_kelp.header": "Dulse Kelp",  //
-  "garnished.ponder.vermilion_kelp.header": "Vermilion Kelp",  //
-  "garnished.ponder.mastic_resin_recipe.header": "Mastic Resin",  //
-  "garnished.ponder.coloured_mastic_resin.header": "Coloured Mastic Resin",  //
-  "garnished.ponder.mastic_paste.header": "Mastic Resin Paste",  //
-  "garnished.ponder.mastic_fluid.header": "Liquefied Mastic Fluid",  //
-  "garnished.ponder.mastic_resin_create_stone.header": "Liquefied Mastic Fluid Interactions [1]",  //
-  "garnished.ponder.mastic_resin_vanilla_stone.header": "Liquefied Mastic Fluid Interactions [2]",  //
-  "garnished.ponder.mastic_resin_garnished_stone.header": "Liquefied Mastic Fluid Interactions [3]",  //
-  "garnished.ponder.cracked_nuts.header": "Cracked Nuts",  //
-  "garnished.ponder.nut_tree.header": "Nut Trees",  //
-  "garnished.ponder.milling_nuts.header": "Milling Your Nuts",  //
-  "garnished.ponder.hatchets.header": "Hatchets",  //
-  "garnished.ponder.hatchet_attacking.header": "Attacking With Hatchets",  //
-  "garnished.ponder.integrated_hatchets.header": "Integrated Hatchets",  //
-  "garnished.ponder.brittle_dust.header": "Brittle Dust",  //
-  "garnished.ponder.senile_dust.header": "Senile Dust",  //
-  "garnished.ponder.senile_spread.header": "Senile Spread",  //
-  "garnished.ponder.peanut_oil_item.header": "Bottled Peanut Oil",  //
-  "garnished.ponder.apple_cider_item.header": "Bottled Apple Cider",  //
-  "garnished.ponder.heat_sources.header": "Additional Heat Sources",  //
-  "garnished.ponder.basic_fluid_interactions.header": "Standard Fluid Interactions",  //
-  "garnished.ponder.crushing_fungus.header": "Crushing Fungi",  //
-  "garnished.ponder.apple_cider_creation.header": "Creating Apple Cider",  //
-  "garnished.ponder.apple_cider_misc.header": "Apple Cider Variants",  //
-  "garnished.ponder.cashew_mixture.header": "Cashew Mixture", //
-  "garnished.ponder.cashew_sorbet.header": "Cashew Sorbet Scoops", //
-  "garnished.ponder.kelp_garnished.text_1": "You will find different types of kelp generating in certain biomes",  //
-  "garnished.ponder.dulse_kelp.text_1": "Dulse Kelp can be found in Frozen Oceans",  //
-  "garnished.ponder.dulse_kelp.text_2": "You can cook Dulse Kelp to make a dried variant of which to eat",  //
-  "garnished.ponder.dulse_kelp.text_3": "This can also be compacted into a Dried Dulse Kelp Block",  //
-  "garnished.ponder.vermilion_kelp.text_1": "Vermilion Kelp can be found in Cold Oceans",  //
-  "garnished.ponder.vermilion_kelp.text_2": "You can cook Vermilion Kelp to make a dried variant of which to eat",  //
-  "garnished.ponder.vermilion_kelp.text_3": "This can also be compacted into a Dried Vermilion Kelp Block",  //
-  "garnished.ponder.mastic_resin_recipe.text_1": "Drop 3 Wheat Seeds and 1 Slime Ball into a Heated Basin with a Mechanical Press above",  //
-  "garnished.ponder.mastic_resin_recipe.text_2": "This will produce a singular piece of Mastic Resin that is uncoloured",  //
-  "garnished.ponder.coloured_mastic_resin.text_1": "You can make coloured variations either manually or by utilizing Mechanical Crafters",  //
-  "garnished.ponder.coloured_mastic_resin.text_2": "This will produce 8 of the Coloured Mastic Resin dependant of the dye used",  //
-  "garnished.ponder.coloured_mastic_resin.text_3": "You can also recolour any piece of Mastic Resin to be one of the other core colours",  //
-  "garnished.ponder.coloured_mastic_resin.text_4": "Red, Orange, Yellow, Green, Blue, Purple",  //
-  "garnished.ponder.mastic_paste.text_1": "You can press Mastic Resin into Mastic Paste, which can be used in other recipes",  //
-  "garnished.ponder.mastic_paste.text_2": "This paste can also be compacted into a block by using 9 of any kind of Mastic Paste",  //
-  "garnished.ponder.mastic_paste.text_3": "This can either be used as decoration or to further enhance your factories",  //
-  "garnished.ponder.mastic_fluid.text_1": "You can put a block of any Mastic Resin inside of a heated basin in order to mix it into its respective fluid",  //
-  "garnished.ponder.mastic_fluid.text_2": "This liquid has several fluid interactions and some even have use in your kitchen",  //
-  "garnished.ponder.mastic_fluid.text_3": "The red variant, for example, generates Crimsite upon colliding with lava",  //
-  "garnished.ponder.mastic_resin_create_stone.text_1": "Red Liquefied Mastic Resin can generate Crimsite when touching lava",  //
-  "garnished.ponder.mastic_resin_create_stone.text_2": "Blue Liquefied Mastic Resin can generate Asurine when touching lava",  //
-  "garnished.ponder.mastic_resin_create_stone.text_3": "Green Liquefied Mastic Resin can generate Veridium when touching lava",  //
-  "garnished.ponder.mastic_resin_vanilla_stone.text_1": "Regular Liquefied Mastic Resin can generate Tuff when touching lava",  //
-  "garnished.ponder.mastic_resin_vanilla_stone.text_2": "Orange Liquefied Mastic Resin can generate Terracotta when touching lava",  //
-  "garnished.ponder.mastic_resin_garnished_stone.text_1": "Yellow Liquefied Mastic Resin can generate Carnotite when touching lava",  //
-  "garnished.ponder.mastic_resin_garnished_stone.text_2": "Purple Liquefied Mastic Resin can generate Abyssal Stone when touching lava",  //
-  "garnished.ponder.cracked_nuts.text_1": "You can plant these cracked nuts onto the ground, of which they will act like saplings for their respective nut type",  //
-  "garnished.ponder.nut_tree.text_1": "You can find Nut Trees generating in the Plains biome",  //
-  "garnished.ponder.nut_tree.text_2": "Breaking leaves present on these trees will provide you with different kinds of nuts, which can be grown into their own unique tree later",  //
-  "garnished.ponder.nut_tree.text_3": "These trees also have their own unique wood type, having a green inner colouring while somewhat resembling oak on the outside",  //
-  "garnished.ponder.milling_nuts.text_1": "You may find that you have a slight chance to gain additional profits, allowing these foods and blocks to be replenished more efficiently",  //
-  "garnished.ponder.hatchets.text_1": "Hatchets are a tool that can be used similarly to an axe and has the combined stats of swords and axes alike",  //
-  "garnished.ponder.hatchet_attacking.text_1": "Hatchets have 2 enchantments, the first being Ravaging",  //
-  "garnished.ponder.hatchet_attacking.text_2": "Ravaging allows for certain hostile mob drops to either become more lucrative or to become available to the player",  //
-  "garnished.ponder.hatchet_attacking.text_3": "The second enchantment, which has 2 levels, is Salvaging",  //
-  "garnished.ponder.hatchet_attacking.text_4": "Salvaging acts similarly to Ravaging, except with certain passive mobs",  //
-  "garnished.ponder.integrated_hatchets.text_1": "Certain mods have integration available for these Hatchets",  //
-  "garnished.ponder.integrated_hatchets.text_2": "These mods include (Fabric/Forge):",  //
-  "garnished.ponder.integrated_hatchets.text_3": "Additional Additions",  //
-  "garnished.ponder.integrated_hatchets.text_4": "Deeper & Darker",  //
-  "garnished.ponder.integrated_hatchets.text_5": "Create: Stuff & Additions",  //
-  "garnished.ponder.integrated_hatchets.text_6": "Mythic Upgrades",  //
-  "garnished.ponder.integrated_hatchets.text_7": "Depending on the Hatchet you're using, it will share the abilities that are provided in its respective mod",  //
-  "garnished.ponder.brittle_dust.text_1": "Scorchia can be turned into Brittle Dust by using either a set of Crushing Wheels or a Millstone",  //
-  "garnished.ponder.brittle_dust.text_2": "Brittle Dust can be used to make certain potions or to make other ingredients",  //
-  "garnished.ponder.senile_dust.text_1": "You can haunt Brittle Dust to turn it into Senile Dust, which can be used to make other foods and helpful resources",  //
-  "garnished.ponder.senile_spread.text_1": "Applying Senile Dust onto bone meal will provide you with Senile Spread",  //
-  "garnished.ponder.senile_spread.text_2": "Senile Spread can be used on soul sand or soul soil to produce Soul Roots and Sepia Fungus plants",  //
-  "garnished.ponder.peanut_oil_item.text_1": "Using Ungarnished Peanuts and Powdered Garnish, you can make Peanut Oil, of which can be bottled up to provide nutrition and cleanse you of Poisoning",  //
-  "garnished.ponder.heat_sources.text_1": "You can use Buckets of Peanut Oil to superheat your blaze burners with a renewable source",  //
-  "garnished.ponder.heat_sources.text_2": "You can also use regular nuts (of mostly any kind) to heat your blaze burners normally",  //
-  "garnished.ponder.basic_fluid_interactions.text_1": "Liquefied Garnish produces Calcite when exposed to lava",  //
-  "garnished.ponder.basic_fluid_interactions.text_2": "Apple Cider produces Ochrum when exposed to lava",  //
-  "garnished.ponder.basic_fluid_interactions.text_3": "Peanut Oil produces Dripstone when exposed to lava",  //
-  "garnished.ponder.basic_fluid_interactions.text_4": "Cashew Mixture produces End Stone when exposed to lava",  //
-  "garnished.ponder.crushing_fungus.text_1": "You can either use a pair of crushing wheels or a millstone in order to obtain crushed variants for a select few nether fungi-related blocks/items",  //
-  "garnished.ponder.apple_cider_item.text_1": "Apple Cider can be used to cleanse the user of Withering, no matter the type of Apple Cider being consumed",  //
-  "garnished.ponder.apple_cider_creation.text_1": "Apple Cider can be created by putting any Cracked Nuts, 2 Apples, 1 Garnish Compound, and 250mb inside of a heated basin for mixing",  //
-  "garnished.ponder.apple_cider_creation.text_2": "This fluid can be made into Bottled Apple Cider and other variations of the drink",  //
-  "garnished.ponder.apple_cider_misc.text_1": "Cryptic Apple Cider can be obtained by applying any flower to Bottled Apple Cider, and will provide a 50% to either harm the user or to enhance the user's abilities",  //
-  "garnished.ponder.apple_cider_misc.text_2": "Bitter Apple Cider can be obtained by applying Cashew Apple to Bottled Apple Cider, and will provide the user with enhanced damage reduction but also slowing the user down",  //
-  "garnished.ponder.cashew_mixture.text_1": "Regular Cashew Mixture can be made by compacting 2 Cashew Fruit and 2 Ungarnished (or Garnished) Cashews inside of a heated basin",
-  "garnished.ponder.cashew_sorbet.text_1": "You can use Cashew Mixture to make a few different foods, one of them being Cashew Sorbet Scoops, which can be made by putting a snowball, 2 of any nut, and 250mb of Cashew Mixture inside of a basin for mixing",
-  "garnished.ponder.tag.recent_changes": "Recent Changes",  //
-  "garnished.ponder.tag.cracked_nuts": "Cracked Nut Entries",  //
-  "garnished.ponder.tag.hatchets": "Hatchet-related Entries",  //
-  "garnished.ponder.tag.kelp_related": "Kelp-related Entries",  //
-  "garnished.ponder.tag.mastic_resin": "Mastic Resin Entries",  //
-  "garnished.ponder.tag.crushed_nether_ingredients": "Crushed Nether Ingredients",  //
-  "garnished.ponder.tag.fluids": "Garnished Fluids", //
-  "garnished.ponder.tag.recent_changes.description": "Recent additions and adjustments that are included in the most recent version of Create: Garnished",  //
-  "garnished.ponder.tag.cracked_nuts.description": "Entries that relate to the Cracked Nut additions of Create: Garnished",  //
-  "garnished.ponder.tag.kelp_related.description": "Entries that relate to the kelp variants introduced by Create: Garnished",  //
-  "garnished.ponder.tag.mastic_resin.description": "Entries that relate to the Mastic Resin additions of Create: Garnished",  //
-  "garnished.ponder.tag.hatchets.description": "Entries that relate to the Hatchets of Create: Garnished",  //
-  "garnished.ponder.tag.crushed_nether_ingredients.description": "Entries that relate to the crushed nether-ingredients of Create: Garnished", //
-  "garnished.ponder.tag.fluids.description": "Entries that relate to fluids added by Create: Garnished" //
+  "garnished.ponder.kelp_garnished.header": "Водорослях из холодной среды",
+  "garnished.ponder.dulse_kelp.header": "Красной водоросли",
+  "garnished.ponder.vermilion_kelp.header": "Бурой водоросли",
+  "garnished.ponder.mastic_resin_recipe.header": "Мастической смоле",
+  "garnished.ponder.coloured_mastic_resin.header": "Цветной мастической смоле",
+  "garnished.ponder.mastic_paste.header": "Мастичной пасте",
+  "garnished.ponder.mastic_fluid.header": "Жидкой мастической смоле",
+  "garnished.ponder.mastic_resin_create_stone.header": "Взаимодействии жидкой мастической смолы с жидкостями [1]",
+  "garnished.ponder.mastic_resin_vanilla_stone.header": "Взаимодействии жидкой мастической смолы с жидкостями [2]",
+  "garnished.ponder.mastic_resin_garnished_stone.header": "Взаимодействии жидкой мастической смолы с жидкостями [3]",
+  "garnished.ponder.cracked_nuts.header": "Расколотых орехах",
+  "garnished.ponder.nut_tree.header": "Ореховых деревьях",
+  "garnished.ponder.milling_nuts.header": "Дроблении орехов",
+  "garnished.ponder.hatchets.header": "Топориках",
+  "garnished.ponder.hatchet_attacking.header": "Атаке с использованием топориков",
+  "garnished.ponder.integrated_hatchets.header": "Поддерживаемых топориках",
+  "garnished.ponder.brittle_dust.header": "Хрупокй пили",
+  "garnished.ponder.senile_dust.header": "Сенильной пыли",
+  "garnished.ponder.senile_spread.header": "Сенильной посыпке",
+  "garnished.ponder.peanut_oil_item.header": "Бутылке арахисового масла",
+  "garnished.ponder.apple_cider_item.header": "Бутылке яблочного сидра",
+  "garnished.ponder.basic_fluid_interactions.header": "Взаимодействии обычных жидкостей",
+  "garnished.ponder.crushing_fungus.header": "Дроблении грибов",
+  "garnished.ponder.apple_cider_creation.header": "Варке яблочного сидра",
+  "garnished.ponder.apple_cider_misc.header": "Разновидностях яблочного сидра",
+  "garnished.ponder.cashew_mixture.header": "Смеси кешью",
+  "garnished.ponder.cashew_sorbet.header": "Шарике сорбета из кешью",
+  "garnished.ponder.heat_sources.header": "Additional Heat Sources", //
+  "garnished.ponder.kelp_garnished.text_1": "Вы можете найти различные виды водорослей в определённых биомах",
+  "garnished.ponder.dulse_kelp.text_1": "Красная водоросль может быть найдена в Замёрзшем океане",
+  "garnished.ponder.dulse_kelp.text_2": "Вы можете приготовить Красную водоросль для получения сухого варианта, который можно съесть",
+  "garnished.ponder.dulse_kelp.text_3": "Также его можно объединить в Блок сушёной красной водоросли",
+  "garnished.ponder.vermilion_kelp.text_1": "Бурая водоросль может быть найдена в Холодном океане",
+  "garnished.ponder.vermilion_kelp.text_2": "Вы можете приготовить Бурую водоросль для получения сухого варианта, который можно съесть",
+  "garnished.ponder.vermilion_kelp.text_3": "Также его можно объединить в Блок сушёной бурой водоросли",
+  "garnished.ponder.mastic_resin_recipe.text_1": "Поместите 3 Семена пшеницы и 1 Слизь в нагретую Чашу с Механическим прессом сверху",
+  "garnished.ponder.mastic_resin_recipe.text_2": "В результате получите один кусочек безцветной Мастической смолы",
+  "garnished.ponder.coloured_mastic_resin.text_1": "Вы можете окрасить Мастическую смолу, вручную или при помощи Механических сборщиков",
+  "garnished.ponder.coloured_mastic_resin.text_2": "В результате получите 8 кусочков Цветной мастической смолы цвета изпользованного красителя",
+  "garnished.ponder.coloured_mastic_resin.text_3": "Вы также можете перекрасить любой кусочек Мастической смолы в другой основной цвет",
+  "garnished.ponder.coloured_mastic_resin.text_4": "Красный, Оранжевый, Жёлтый, Зелёный, Синий, Фиолетовый",
+  "garnished.ponder.mastic_paste.text_1": "Вы можете спресовать Мастическую пасту в Мастичную пасту, которая используется в других рецептах",
+  "garnished.ponder.mastic_paste.text_2": "Эту пасту можно объединить в блок, если использовать 9 штук любой Мастичной пасты",
+  "garnished.ponder.mastic_paste.text_3": "Их можно использовать в качестве декорации или для дальнейшего развития фабрики",
+  "garnished.ponder.mastic_fluid.text_1": "Вы можете поместить любой Блок мастичной смолы в нагретую Чашу с Миксером, чтобы получить соответствующую жидкость",
+  "garnished.ponder.mastic_fluid.text_2": "Эти жидкости имеют определённые взаимодействия с жидкостями и некоторые могут даже пригодится на вашей кухне",
+  "garnished.ponder.mastic_fluid.text_3": "Красный вариант, например, образует Кримзит при контакте с лавой",
+  "garnished.ponder.mastic_resin_create_stone.text_1": "Красная жидкая мастическая смола образует Кримзит при контакте с лавой",
+  "garnished.ponder.mastic_resin_create_stone.text_2": "Синяя жидкая мастическая смола образует Азурин при контакте с лавой",
+  "garnished.ponder.mastic_resin_create_stone.text_3": "Зелёная жидкая мастическая смола образует Веридий при контакте с лавой",
+  "garnished.ponder.mastic_resin_vanilla_stone.text_1": "Обычная жидкая мастическая смола образует Туф при контакте с лавой",
+  "garnished.ponder.mastic_resin_vanilla_stone.text_2": "Оранжевая жидкая мастическая смола образует Терракоту при контакте с лавой",
+  "garnished.ponder.mastic_resin_garnished_stone.text_1": "Жёлтая жидкая мастическая смола образует Карнотит при контакте с лавой",
+  "garnished.ponder.mastic_resin_garnished_stone.text_2": "Фиолетовая жидкая мастическая смола образует Камень бездны при контакте с лавой",
+  "garnished.ponder.cracked_nuts.text_1": "Вы можете посадить эти колотые орехи в землю, где они будут работать как саженцы соответствующего орехового дерева",
+  "garnished.ponder.nut_tree.text_1": "Вы можете найти Ореховые деревья в биоме Равнин",
+  "garnished.ponder.nut_tree.text_2": "Ломание листьев этих деревьев повзоляет добыть различные виды орехов, которые позже могут быть выращены в свои уникальные деревья",
+  "garnished.ponder.nut_tree.text_3": "Эти деревья также состоят из уникальной древесины, зелёная внутри и выглядящая как дуб снаружи",
+  "garnished.ponder.milling_nuts.text_1": "У вас есть небольшой шанс получения дополнительной выгоды, позволяющий использовать эту еду и блоки с большей эффективностью",
+  "garnished.ponder.hatchets.text_1": "Топорик - это инструмент который можно использовать как обычный топор, а его характеристики промежуточные между топором и мечём",
+  "garnished.ponder.hatchet_attacking.text_1": "Топорики имеют 2 зачарования, первое из них - Опустошение",
+  "garnished.ponder.hatchet_attacking.text_2": "Опустошение увеличивает количество или открывает игроку доступ к уникальной добыче с некоторых враждебных существ",
+  "garnished.ponder.hatchet_attacking.text_3": "Второе зачарование, которое имеет два уровня - это Спасение",
+  "garnished.ponder.hatchet_attacking.text_4": "Спасение работает схожим с Опустошением образом, но с другими мобами",
+  "garnished.ponder.integrated_hatchets.text_1": "Для некоторых модов предусмотрена поддержка Топориков",
+  "garnished.ponder.integrated_hatchets.text_2": "Список модов (Fabric/Forge):",
+  "garnished.ponder.integrated_hatchets.text_3": "Additional Additions",
+  "garnished.ponder.integrated_hatchets.text_4": "Deeper & Darker",
+  "garnished.ponder.integrated_hatchets.text_5": "Create: Stuff & Additions",
+  "garnished.ponder.integrated_hatchets.text_6": "Mythic Upgrades",
+  "garnished.ponder.integrated_hatchets.text_7": "В зависимости от используемого Топорика, он будет иметь способности из соответствующего мода",
+  "garnished.ponder.brittle_dust.text_1": "Тёмный пепел может быть передроблен при помощи Дробильных колёс или Жёрнова в Хрупкую пыль",
+  "garnished.ponder.brittle_dust.text_2": "Хрупкая пыль может быть использована для создания зелий или других ингредиентов",
+  "garnished.ponder.senile_dust.text_1": "Вы можете наполнить Хрупкую пыль призраками для получения Сенильной пыли, которую можно использовать для создания еды и полезных ресурсов",
+  "garnished.ponder.senile_spread.text_1": "Смешивание Сенильной пыли с Костной мукой в результате даст вам Сенильную посыпку",
+  "garnished.ponder.senile_spread.text_2": "Сенильная посыпка может быть использована на песке или почве душ для получения Корней душ и Грибов сепия",
+  "garnished.ponder.peanut_oil_item.text_1": "Используя сырой Арахис и Дроблёную приправу, вы получите Арахисовое масло, которое можно налить в бутылку и употребить для насыщения и снятия эффекта отравления",
+  "garnished.ponder.heat_sources.text_1": "Вы можете использовать Ведро арахисового масла чтобы перегреть Горелку всполоха, возобновляемый источник топлива. ",
+  "garnished.ponder.heat_sources.text_2": "Вы также можете использовать обычные орехи (или большую их часть) чтобы просто разогреть Горелку всполоха",
+  "garnished.ponder.basic_fluid_interactions.text_1": "Жидкая приправа образует Кальцит при контакте с лавой",
+  "garnished.ponder.basic_fluid_interactions.text_2": "Яблочный сидр образует Охрум при контакте с лавой",
+  "garnished.ponder.basic_fluid_interactions.text_3": "Арахисовое масло образует Натёчный камень при контакте с лавой",
+  "garnished.ponder.basic_fluid_interactions.text_4": "Смесь кешью образует Эндерняк при контакте с лавой",
+  "garnished.ponder.crushing_fungus.text_1": "Вы можете использовать пару дробильных колёс или жёрнов для получения дроблёных вариантов незерских грибных блоков/предметов",
+  "garnished.ponder.apple_cider_item.text_1": "Яблочный сидр может быть использован для снятия с себя эффекта Иссушения, не имеет значения какой тип Яблочного сидра был употреблён",
+  "garnished.ponder.apple_cider_creation.text_1": "Яблочный сидр может быть создан путём смешивания любого Колотого ореха, 2 Яблок, 1 Смеси приправ и 250mb воды внутри нагретой Чаши",
+  "garnished.ponder.apple_cider_creation.text_2": "Эта жидкость может быть налита бутылку для получения Бутылки яблочного сидра или других вариаций напитков",
+  "garnished.ponder.apple_cider_misc.text_1": "Загадочный Яблочный сидр может быть получен путём добавления любого цветка в бутылку Яблочного сидра, это предоставляет 50% шанс навредить игроку или усилить его способности",
+  "garnished.ponder.apple_cider_misc.text_2": "Горький Яблочный сидр может быть получен путём добавления Яблока кешью в бутылку Яблочного сидра, это предоставляет игроку усиление урона, но снижает его скорость передвижения",
+  "garnished.ponder.tag.recent_changes": "Недавние изменения",
+  "garnished.ponder.tag.cracked_nuts": "Колотые орехи",
+  "garnished.ponder.tag.hatchets": "Топорики",
+  "garnished.ponder.tag.kelp_related": "Водоросли",
+  "garnished.ponder.tag.mastic_resin": "Мастические смолы",
+  "garnished.ponder.tag.crushed_nether_ingredients": "Дроблёные ингредиенты из незера",
+  "garnished.ponder.tag.fluids": "Приправленные жидкости",
+  "garnished.ponder.tag.recent_changes.description": "Последние добавления и улучшения, которые были включены в последнюю версию Create: Garnished",
+  "garnished.ponder.tag.cracked_nuts.description": "Записи посвящённые Колотым орехам, из мода Create: Garnished",
+  "garnished.ponder.tag.kelp_related.description": "Записи посвящённые разновидностям водорослей из мода Create: Garnished",
+  "garnished.ponder.tag.mastic_resin.description": "Записи посвящённые Мастической смоле из мода Create: Garnished",
+  "garnished.ponder.tag.hatchets.description": "Записи посвящённые Топорикам из мода Create: Garnished",
+  "garnished.ponder.tag.crushed_nether_ingredients.description": "Записи посвящённые Дроблёным ингредиентам из незера из мода Create: Garnished",
+  "garnished.ponder.cashew_mixture.text_1": "Обычная Смесь кешью получается путём спресовывания 2 Яблок кешью и 2 Сырых (или Приготовленных) Кешью внутри нагретой Чаши",
+  "garnished.ponder.cashew_sorbet.text_1": "Вы можете использовать Смесь кешью для создания различной еды, например Сорбет из кешью, который создаётся путём смешивания в Чаше Снежка, 2 любых Орехов и 250mb Смеси кешью",
+  "garnished.ponder.tag.fluids.description": "Записи посвящённые жидкостям из мода Create: Garnished"
 }
