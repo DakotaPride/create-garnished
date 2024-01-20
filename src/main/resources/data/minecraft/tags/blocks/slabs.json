@@ -4,11 +4,14 @@
     "garnished:abyssal_stone_slab",
     "garnished:polished_abyssal_stone_slab",
     "garnished:abyssal_stone_bricks_slab",
+    "garnished:smooth_abyssal_stone_slab",
     "garnished:carnotite_slab",
     "garnished:polished_carnotite_slab",
     "garnished:carnotite_bricks_slab",
+    "garnished:smooth_carnotite_slab",
     "garnished:unstable_stone_slab",
     "garnished:polished_unstable_stone_slab",
-    "garnished:unstable_stone_bricks_slab"
+    "garnished:unstable_stone_bricks_slab",
+    "garnished:smooth_unstable_stone_slab"
   ]
 }
