@@ -466,22 +466,22 @@
   "block.garnished.polished_ritualistic_stone_stairs": "Ступеньки из полированного ритуального камня",
   "block.garnished.polished_ritualistic_stone_wall": "Ограда из полированного ритуального камня",
   "block.garnished.chiseled_ritualistic_stone_bricks": "Резные кирпичи из ритуального камня",
-  "block.garnished.smooth_ritualistic_stone": "Smooth Ritualistic Stone", //
-  "block.garnished.smooth_ritualistic_stone_stairs": "Smooth Ritualistic Stone Stairs", //
-  "block.garnished.smooth_ritualistic_stone_slab": "Smooth Ritualistic Stone Slab", //
-  "block.garnished.smooth_ritualistic_stone_wall": "Smooth Ritualistic Stone Wall", //
-  "block.garnished.smooth_unstable_stone": "Smooth Unstable Stone", //
-  "block.garnished.smooth_unstable_stone_stairs": "Smooth Unstable Stone Stairs", //
-  "block.garnished.smooth_unstable_stone_slab": "Smooth Unstable Stone Slab", //
-  "block.garnished.smooth_unstable_stone_wall": "Smooth Unstable Stone Wall", //
-  "block.garnished.smooth_abyssal_stone": "Smooth Abyssal Stone", //
-  "block.garnished.smooth_abyssal_stone_stairs": "Smooth Abyssal Stone Stairs", //
-  "block.garnished.smooth_abyssal_stone_slab": "Smooth Abyssal Stone Slab", //
-  "block.garnished.smooth_abyssal_stone_wall": "Smooth Abyssal Stone Wall", //
-  "block.garnished.smooth_carnotite": "Smooth Carnotite", //
-  "block.garnished.smooth_carnotite_stairs": "Smooth Carnotite Stairs", //
-  "block.garnished.smooth_carnotite_slab": "Smooth Carnotite Slab", //
-  "block.garnished.smooth_carnotite_wall": "Smooth Carnotite Wall", //
+  "block.garnished.smooth_ritualistic_stone": "Гладкий ритуальный камень",
+  "block.garnished.smooth_ritualistic_stone_stairs": "Ступеньки из гладкого ритуального камня",
+  "block.garnished.smooth_ritualistic_stone_slab": "Плита из гладкого ритуального камня",
+  "block.garnished.smooth_ritualistic_stone_wall": "Ограда из гладкого ритуального камня",
+  "block.garnished.smooth_unstable_stone": "Гладкий нестабильный камень",
+  "block.garnished.smooth_unstable_stone_stairs": "Ступеньки из гладкого нестабильного камня",
+  "block.garnished.smooth_unstable_stone_slab": "Плита из гладкого нестабильного камня",
+  "block.garnished.smooth_unstable_stone_wall": "Ограда из гладкого нестабильного камня",
+  "block.garnished.smooth_abyssal_stone": "Гладкий камень бездны",
+  "block.garnished.smooth_abyssal_stone_stairs": "Ступеньки из гладкого камня бездны",
+  "block.garnished.smooth_abyssal_stone_slab": "Плита из гладкого камня бездны",
+  "block.garnished.smooth_abyssal_stone_wall": "Ограда из гладкого камня бездны",
+  "block.garnished.smooth_carnotite": "Гладкий карнотит",
+  "block.garnished.smooth_carnotite_stairs": "Ступеньки из гладкого карнотита",
+  "block.garnished.smooth_carnotite_slab": "Плита из гладкого карнотита",
+  "block.garnished.smooth_carnotite_wall": "Ограда из гладкого карнотита",
   "effect.garnished.thorns": "Колючий",
 
   "block.garnished.peanut_sack": "Мешочек орехов",
@@ -612,8 +612,8 @@
   "advancement.garnished.incendiary_stew.description": "Получите Зажигательное рагу",
   "advancement.garnished.lustrous_pearl.title": "Формы и цвета",
   "advancement.garnished.lustrous_pearl.description": "Получите Глянцевую жемчужину",
-  "advancement.garnished.voltaic_sea_grass.title": "Мозможно вы будете шокированы,  // Но...",
-  "advancement.garnished.voltaic_sea_grass.description": "Обнаружьте Вольтовскую морскую траву (нет Спирит,  // ты не можешь пожевать её)",
+  "advancement.garnished.voltaic_sea_grass.title": "Мозможно вы будете шокированы, Но...",
+  "advancement.garnished.voltaic_sea_grass.description": "Обнаружьте Вольтовскую морскую траву (нет Спирит, ты не можешь пожевать её)",
   "advancement.garnished.dulse_kelp.title": "Псевдобекон",
   "advancement.garnished.dulse_kelp.description": "Получите красную водоросль",
 
@@ -644,7 +644,7 @@
   "garnished.ponder.apple_cider_misc.header": "Разновидностях яблочного сидра",
   "garnished.ponder.cashew_mixture.header": "Смеси кешью",
   "garnished.ponder.cashew_sorbet.header": "Шарике сорбета из кешью",
-  "garnished.ponder.heat_sources.header": "Additional Heat Sources", //
+  "garnished.ponder.heat_sources.header": "Дополнительных источниках нагрева",
   "garnished.ponder.kelp_garnished.text_1": "Вы можете найти различные виды водорослей в определённых биомах",
   "garnished.ponder.dulse_kelp.text_1": "Красная водоросль может быть найдена в Замёрзшем океане",
   "garnished.ponder.dulse_kelp.text_2": "Вы можете приготовить Красную водоросль для получения сухого варианта, который можно съесть",
