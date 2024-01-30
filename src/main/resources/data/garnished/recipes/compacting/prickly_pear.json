@@ -1,0 +1,35 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "minecraft:cactus"
+    }
+  ],
+  "results": [
+    {
+      "chance": 0.1,
+      "item": "minecraft:green_dye",
+      "count": 2
+    },
+    {
+      "chance": 0.25,
+      "item": "garnished:prickly_pear",
+      "count": 1
+    },
+    {
+      "chance": 0.1,
+      "item": "garnished:prickly_pear",
+      "count": 1
+    },
+    {
+      "chance": 0.05,
+      "item": "minecraft:lime_dye",
+      "count": 1
+    },
+    {
+      "chance": 0.85,
+      "fluid": "minecraft:water",
+      "amount": 100
+    }
+  ]
+}

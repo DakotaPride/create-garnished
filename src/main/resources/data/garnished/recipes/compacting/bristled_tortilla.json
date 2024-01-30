@@ -1,0 +1,21 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "garnished:bristled_flour"
+    },
+    {
+      "item": "garnished:solemn_dust"
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 100
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:bristled_tortilla",
+      "count": 1
+    }
+  ]
+}
