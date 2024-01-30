@@ -321,7 +321,7 @@ public class GarnishedFluids {
 		if (fluid.isSame(RED_MASTIC_RESIN.get()))
 			return AllPaletteStoneTypes.CRIMSITE.getBaseBlock().get().defaultBlockState();
 		if (fluid.isSame(ORANGE_MASTIC_RESIN.get()))
-			return Blocks.TERRACOTTA.defaultBlockState();
+			return GarnishedBlocks.RITUALISTIC_STONE.get().defaultBlockState();
 		if (fluid.isSame(YELLOW_MASTIC_RESIN.get()))
 			return GarnishedBlocks.CARNOTITE.get().defaultBlockState();
 		if (fluid.isSame(GREEN_MASTIC_RESIN.get()))

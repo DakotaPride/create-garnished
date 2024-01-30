@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "garnished:prickly_pear"
+    },
+    {
+      "item": "garnished:prickly_pear"
+    },
+    {
+      "item": "garnished:prickly_pear"
+    },
+    {
+      "item": "garnished:solemn_dust"
+    },
+    {
+      "item": "garnished:solemn_dust"
+    }
+  ],
+  "result": {
+    "item": "garnished:prickly_pear_stew",
+    "count": 1
+  }
+}

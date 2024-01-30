@@ -145,6 +145,20 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties DUSTY_REGALE = new FoodProperties.Builder().nutrition(4).saturationMod(0.2F).build();
 	public static final FoodProperties INDENDCIARY_STEW = new FoodProperties.Builder().nutrition(10).saturationMod(0.8F).build();
 
+	// Befouled
+	public static final FoodProperties STEW_OF_THE_DAMNED = new FoodProperties.Builder().nutrition(8).saturationMod(0.4F)
+			.effect(new MobEffectInstance(GarnishedEffects.THORNS, 700, 4), 1.0F).build();
+	public static final FoodProperties PRICKLY_PEAR = new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build();
+	public static final FoodProperties BAMBOO_CLOD = new FoodProperties.Builder().nutrition(4).saturationMod(0.3F).build();
+	public static final FoodProperties NOPALITO_WRAP = new FoodProperties.Builder().nutrition(8).saturationMod(0.6F).build();
+	public static final FoodProperties NOPALITO_WRAP_SUPREME = new FoodProperties.Builder().nutrition(10).saturationMod(0.8F).build();
+	public static final FoodProperties PRICKLY_PEAR_STEW = new FoodProperties.Builder().nutrition(7).saturationMod(0.4F).build();
+	public static final FoodProperties SINOPIA_ROCK_SWEET = new FoodProperties.Builder().nutrition(6).saturationMod(0.2F).build();
+	public static final FoodProperties THORN_ON_A_STICK = new FoodProperties.Builder().nutrition(10).saturationMod(0.4F).build();
+	public static final FoodProperties OVERGROWN_BREW = new FoodProperties.Builder().nutrition(8).saturationMod(0.6F).build();
+	public static final FoodProperties ROSY_COCKTAIL = new FoodProperties.Builder().nutrition(8).saturationMod(0.4F)
+			.effect(new MobEffectInstance(MobEffects.REGENERATION, 100, 4), 1.0F).build();
+
 	// Farmer's Delight Foods
 	public static final FoodProperties PECAN_PIE_SLICE = new FoodProperties.Builder().nutrition(3).saturationMod(0.2F).build();
 	public static final FoodProperties PHANTOM_BURGER = new FoodProperties.Builder().nutrition(8).saturationMod(0.6F).meat().build();

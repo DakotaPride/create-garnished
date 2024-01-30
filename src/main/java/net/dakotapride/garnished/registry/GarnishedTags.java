@@ -3,10 +3,13 @@ package net.dakotapride.garnished.registry;
 import net.dakotapride.garnished.CreateGarnished;
 import net.minecraft.core.DefaultedRegistry;
 import net.minecraft.core.Registry;
+import net.minecraft.data.BuiltinRegistries;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.material.Fluid;
 
@@ -19,6 +22,7 @@ public class GarnishedTags {
 	public static final TagKey<EntityType<?>> IS_AFFECTED_BY_SALVAGING = commonTag("affected_by/salvaging", Registry.ENTITY_TYPE);
 	public static final TagKey<EntityType<?>> IS_AFFECTED_BY_RAVAGING = commonTag("affected_by/ravaging", Registry.ENTITY_TYPE);
 	public static final TagKey<Block> CARNOTITE_BLOCKS = garnishedTag("carnotite", Registry.BLOCK);
+	public static final TagKey<Biome> HAS_REMNANT_TAG = garnishedTag("has_remnant", Registry.BIOME_REGISTRY);
 
 	// Integrated Tags
 	// public static TagKey<Item> ZINC_INGOTS = commonItemTag("ingots/zinc");
@@ -39,6 +43,10 @@ public class GarnishedTags {
 
 	private static <T> TagKey<T> garnishedTag(String name, DefaultedRegistry<T> registry) {
 		return TagKey.create(registry.key(), new ResourceLocation(CreateGarnished.ID, name));
+	}
+
+	private static <T> TagKey<T> garnishedTag(String name, ResourceKey<Registry<T>> key) {
+		return TagKey.create(key, new ResourceLocation(CreateGarnished.ID, name));
 	}
 
 	private static <T> TagKey<T> commonTag(String name, DefaultedRegistry<T> registry) {

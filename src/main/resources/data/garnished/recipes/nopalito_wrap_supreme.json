@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:bristled_tortilla"
+    },
+    {
+      "item": "garnished:cooked_tenebrous_meat"
+    },
+    {
+      "item": "garnished:almond_cheese"
+    },
+    {
+      "item": "garnished:prickly_pear"
+    },
+    {
+      "item": "garnished:prickly_pear"
+    },
+    {
+      "item": "garnished:prickly_pear"
+    },
+    {
+      "item": "garnished:prickly_pear"
+    },
+    {
+      "item": "garnished:solemn_dust"
+    },
+    {
+      "item": "garnished:solemn_dust"
+    }
+  ],
+  "result": {
+    "item": "garnished:nopalito_wrap_supreme",
+    "count": 1
+  }
+}

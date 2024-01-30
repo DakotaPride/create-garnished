@@ -238,6 +238,16 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 		items.add(GarnishedItems.VAST_BREW.asStack());
 		items.add(GarnishedItems.GALVANIC_HAUNTING.asStack());
 
+		items.add(GarnishedItems.PRICKLY_PEAR.asStack());
+		items.add(GarnishedItems.BAMBOO_CLOD.asStack());
+		items.add(GarnishedItems.NOPALITO_WRAP.asStack());
+		items.add(GarnishedItems.NOPALITO_WRAP_SUPREME.asStack());
+		items.add(GarnishedItems.SINOPIA_ROCK_SWEET.asStack());
+		items.add(GarnishedItems.THORN_ON_A_STICK.asStack());
+		items.add(GarnishedItems.OVERGROWN_BREW.asStack());
+		items.add(GarnishedItems.PRICKLY_PEAR_STEW.asStack());
+		items.add(GarnishedItems.STEW_OF_THE_DAMNED.asStack());
+
 		items.add(GarnishedItems.GHAST_TENDRIL.asStack());
 
 		items.add(GarnishedItems.VOLATILE_DUST.asStack());
@@ -246,6 +256,12 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 		items.add(GarnishedBlocks.DULSE_KELP.asStack());
 		items.add(GarnishedItems.CORAL_WRAPPING.asStack());
 		items.add(GarnishedItems.LUSTROUS_PEARL.asStack());
+
+		items.add(GarnishedItems.ANTIQUE_SWATHE.asStack());
+		items.add(GarnishedItems.BRISTLED_FLOUR.asStack());
+		items.add(GarnishedItems.BRISTLED_TORTILLA.asStack());
+		items.add(GarnishedItems.AMBER_REMNANT.asStack());
+		items.add(GarnishedItems.SHATTERED_AMBER_REMNANT.asStack());
 
 		items.add(GarnishedBlocks.SEPIA_FUNGUS.asStack());
 		items.add(GarnishedBlocks.SOUL_ROOTS.asStack());
@@ -267,90 +283,6 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 
 		items.add(GarnishedItems.GARNISH_COMPOUND.asStack());
 		items.add(GarnishedItems.GARNISH_POWDER.asStack());
-		items.add(GarnishedBlocks.SOLIDIFIED_GARNISH_BLOCK.asStack());
-
-		items.add(GarnishedBlocks.BLOCK_OF_ENDER_JELLY.asStack());
-		items.add(GarnishedBlocks.UNGARNISHED_NUT_BLOCK.asStack());
-		items.add(GarnishedBlocks.GARNISHED_NUT_BLOCK.asStack());
-
-		items.add(GarnishedBlocks.SEPIA_WART_BLOCK.asStack());
-		items.add(GarnishedBlocks.SEPIA_STEM.asStack());
-		items.add(GarnishedBlocks.STRIPPED_SEPIA_STEM.asStack());
-		items.add(GarnishedBlocks.SEPIA_HYPHAE.asStack());
-		items.add(GarnishedBlocks.STRIPPED_SEPIA_HYPHAE.asStack());
-		items.add(GarnishedBlocks.SEPIA_PLANKS.asStack());
-		items.add(GarnishedBlocks.SEPIA_SLAB.asStack());
-		items.add(GarnishedBlocks.SEPIA_STAIRS.asStack());
-		items.add(GarnishedBlocks.SEPIA_TRAPDOOR.asStack());
-		items.add(GarnishedBlocks.SEPIA_DOOR.asStack());
-		items.add(GarnishedItems.SEPIA_SIGN.asStack());
-
-		items.add(GarnishedBlocks.NUT_LOG.asStack());
-		items.add(GarnishedBlocks.STRIPPED_NUT_LOG.asStack());
-		items.add(GarnishedBlocks.NUT_WOOD.asStack());
-		items.add(GarnishedBlocks.STRIPPED_NUT_WOOD.asStack());
-		items.add(GarnishedBlocks.NUT_PLANKS.asStack());
-		items.add(GarnishedBlocks.NUT_SLAB.asStack());
-		items.add(GarnishedBlocks.NUT_STAIRS.asStack());
-		items.add(GarnishedBlocks.NUT_TRAPDOOR.asStack());
-		items.add(GarnishedBlocks.NUT_DOOR.asStack());
-		items.add(GarnishedItems.NUT_SIGN.asStack());
-		items.add(GarnishedItems.NUT_BOAT.asStack());
-		items.add(GarnishedItems.NUT_CHEST_BOAT.asStack());
-
-		items.add(GarnishedBlocks.ABYSSAL_STONE.asStack());
-		items.add(GarnishedBlocks.ABYSSAL_STONE_SLAB.asStack());
-		items.add(GarnishedBlocks.ABYSSAL_STONE_STAIRS.asStack());
-		items.add(GarnishedBlocks.ABYSSAL_STONE_WALL.asStack());
-		items.add(GarnishedBlocks.ABYSSAL_STONE_BRICKS.asStack());
-		items.add(GarnishedBlocks.ABYSSAL_STONE_BRICKS_SLAB.asStack());
-		items.add(GarnishedBlocks.ABYSSAL_STONE_BRICKS_STAIRS.asStack());
-		items.add(GarnishedBlocks.ABYSSAL_STONE_BRICKS_WALL.asStack());
-		items.add(GarnishedBlocks.POLISHED_ABYSSAL_STONE.asStack());
-		items.add(GarnishedBlocks.POLISHED_ABYSSAL_STONE_SLAB.asStack());
-		items.add(GarnishedBlocks.POLISHED_ABYSSAL_STONE_STAIRS.asStack());
-		items.add(GarnishedBlocks.POLISHED_ABYSSAL_STONE_WALL.asStack());
-		items.add(GarnishedBlocks.SMOOTH_ABYSSAL_STONE.asStack());
-		items.add(GarnishedBlocks.SMOOTH_ABYSSAL_STONE_SLAB.asStack());
-		items.add(GarnishedBlocks.SMOOTH_ABYSSAL_STONE_STAIRS.asStack());
-		items.add(GarnishedBlocks.SMOOTH_ABYSSAL_STONE_WALL.asStack());
-		items.add(GarnishedBlocks.CHISELED_ABYSSAL_STONE_BRICKS.asStack());
-
-		items.add(GarnishedBlocks.CARNOTITE.asStack());
-		items.add(GarnishedBlocks.CARNOTITE_SLAB.asStack());
-		items.add(GarnishedBlocks.CARNOTITE_STAIRS.asStack());
-		items.add(GarnishedBlocks.CARNOTITE_WALL.asStack());
-		items.add(GarnishedBlocks.CARNOTITE_BRICKS.asStack());
-		items.add(GarnishedBlocks.CARNOTITE_BRICKS_SLAB.asStack());
-		items.add(GarnishedBlocks.CARNOTITE_BRICKS_STAIRS.asStack());
-		items.add(GarnishedBlocks.CARNOTITE_BRICKS_WALL.asStack());
-		items.add(GarnishedBlocks.POLISHED_CARNOTITE.asStack());
-		items.add(GarnishedBlocks.POLISHED_CARNOTITE_SLAB.asStack());
-		items.add(GarnishedBlocks.POLISHED_CARNOTITE_STAIRS.asStack());
-		items.add(GarnishedBlocks.POLISHED_CARNOTITE_WALL.asStack());
-		items.add(GarnishedBlocks.SMOOTH_CARNOTITE.asStack());
-		items.add(GarnishedBlocks.SMOOTH_CARNOTITE_SLAB.asStack());
-		items.add(GarnishedBlocks.SMOOTH_CARNOTITE_STAIRS.asStack());
-		items.add(GarnishedBlocks.SMOOTH_CARNOTITE_WALL.asStack());
-		items.add(GarnishedBlocks.CHISELED_CARNOTITE_BRICKS.asStack());
-
-		items.add(GarnishedBlocks.UNSTABLE_STONE.asStack());
-		items.add(GarnishedBlocks.UNSTABLE_STONE_SLAB.asStack());
-		items.add(GarnishedBlocks.UNSTABLE_STONE_STAIRS.asStack());
-		items.add(GarnishedBlocks.UNSTABLE_STONE_WALL.asStack());
-		items.add(GarnishedBlocks.UNSTABLE_STONE_BRICKS.asStack());
-		items.add(GarnishedBlocks.UNSTABLE_STONE_BRICKS_SLAB.asStack());
-		items.add(GarnishedBlocks.UNSTABLE_STONE_BRICKS_STAIRS.asStack());
-		items.add(GarnishedBlocks.UNSTABLE_STONE_BRICKS_WALL.asStack());
-		items.add(GarnishedBlocks.POLISHED_UNSTABLE_STONE.asStack());
-		items.add(GarnishedBlocks.POLISHED_UNSTABLE_STONE_SLAB.asStack());
-		items.add(GarnishedBlocks.POLISHED_UNSTABLE_STONE_STAIRS.asStack());
-		items.add(GarnishedBlocks.POLISHED_UNSTABLE_STONE_WALL.asStack());
-		items.add(GarnishedBlocks.SMOOTH_UNSTABLE_STONE.asStack());
-		items.add(GarnishedBlocks.SMOOTH_UNSTABLE_STONE_SLAB.asStack());
-		items.add(GarnishedBlocks.SMOOTH_UNSTABLE_STONE_STAIRS.asStack());
-		items.add(GarnishedBlocks.SMOOTH_UNSTABLE_STONE_WALL.asStack());
-		items.add(GarnishedBlocks.CHISELED_UNSTABLE_STONE_BRICKS.asStack());
 
 		items.add(GarnishedFluids.GARNISH.getBucket().get().getDefaultInstance());
 		items.add(GarnishedFluids.APPLE_CIDER.getBucket().get().getDefaultInstance());
@@ -375,5 +307,130 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 	@Override
 	public @NotNull ItemStack makeIcon() {
 		return GarnishedItems.NUT_MIX.asStack();
+	}
+
+	public static class Blocks extends CreativeModeTab {
+		public Blocks() {
+			super(ItemGroupUtil.expandArrayAndGetId(), "create.garnished.blocks");
+		}
+
+		@Override
+		public void fillItemList(NonNullList<ItemStack> items) {
+			items.add(GarnishedBlocks.SOLIDIFIED_GARNISH_BLOCK.asStack());
+
+			items.add(GarnishedBlocks.BLOCK_OF_ENDER_JELLY.asStack());
+			items.add(GarnishedBlocks.UNGARNISHED_NUT_BLOCK.asStack());
+			items.add(GarnishedBlocks.GARNISHED_NUT_BLOCK.asStack());
+			items.add(GarnishedBlocks.GARNISH_COMPOUND_BLOCK.asStack());
+			items.add(GarnishedBlocks.SALT_COMPOUND_BLOCK.asStack());
+			items.add(GarnishedBlocks.ETHEREAL_COMPOUND_BLOCK.asStack());
+			items.add(GarnishedBlocks.MULCH_BLOCK.asStack());
+
+			items.add(GarnishedBlocks.SEPIA_WART_BLOCK.asStack());
+			items.add(GarnishedBlocks.SEPIA_STEM.asStack());
+			items.add(GarnishedBlocks.STRIPPED_SEPIA_STEM.asStack());
+			items.add(GarnishedBlocks.SEPIA_HYPHAE.asStack());
+			items.add(GarnishedBlocks.STRIPPED_SEPIA_HYPHAE.asStack());
+			items.add(GarnishedBlocks.SEPIA_PLANKS.asStack());
+			items.add(GarnishedBlocks.SEPIA_SLAB.asStack());
+			items.add(GarnishedBlocks.SEPIA_STAIRS.asStack());
+			items.add(GarnishedBlocks.SEPIA_TRAPDOOR.asStack());
+			items.add(GarnishedBlocks.SEPIA_DOOR.asStack());
+			items.add(GarnishedItems.SEPIA_SIGN.asStack());
+
+			items.add(GarnishedBlocks.NUT_LOG.asStack());
+			items.add(GarnishedBlocks.STRIPPED_NUT_LOG.asStack());
+			items.add(GarnishedBlocks.NUT_WOOD.asStack());
+			items.add(GarnishedBlocks.STRIPPED_NUT_WOOD.asStack());
+			items.add(GarnishedBlocks.NUT_PLANKS.asStack());
+			items.add(GarnishedBlocks.NUT_SLAB.asStack());
+			items.add(GarnishedBlocks.NUT_STAIRS.asStack());
+			items.add(GarnishedBlocks.NUT_TRAPDOOR.asStack());
+			items.add(GarnishedBlocks.NUT_DOOR.asStack());
+			items.add(GarnishedItems.NUT_SIGN.asStack());
+			items.add(GarnishedItems.NUT_BOAT.asStack());
+			items.add(GarnishedItems.NUT_CHEST_BOAT.asStack());
+
+			items.add(GarnishedBlocks.ABYSSAL_STONE.asStack());
+			items.add(GarnishedBlocks.ABYSSAL_STONE_SLAB.asStack());
+			items.add(GarnishedBlocks.ABYSSAL_STONE_STAIRS.asStack());
+			items.add(GarnishedBlocks.ABYSSAL_STONE_WALL.asStack());
+			items.add(GarnishedBlocks.ABYSSAL_STONE_BRICKS.asStack());
+			items.add(GarnishedBlocks.ABYSSAL_STONE_BRICKS_SLAB.asStack());
+			items.add(GarnishedBlocks.ABYSSAL_STONE_BRICKS_STAIRS.asStack());
+			items.add(GarnishedBlocks.ABYSSAL_STONE_BRICKS_WALL.asStack());
+			items.add(GarnishedBlocks.POLISHED_ABYSSAL_STONE.asStack());
+			items.add(GarnishedBlocks.POLISHED_ABYSSAL_STONE_SLAB.asStack());
+			items.add(GarnishedBlocks.POLISHED_ABYSSAL_STONE_STAIRS.asStack());
+			items.add(GarnishedBlocks.POLISHED_ABYSSAL_STONE_WALL.asStack());
+			items.add(GarnishedBlocks.SMOOTH_ABYSSAL_STONE.asStack());
+			items.add(GarnishedBlocks.SMOOTH_ABYSSAL_STONE_SLAB.asStack());
+			items.add(GarnishedBlocks.SMOOTH_ABYSSAL_STONE_STAIRS.asStack());
+			items.add(GarnishedBlocks.SMOOTH_ABYSSAL_STONE_WALL.asStack());
+			items.add(GarnishedBlocks.CHISELED_ABYSSAL_STONE_BRICKS.asStack());
+
+			items.add(GarnishedBlocks.CARNOTITE.asStack());
+			items.add(GarnishedBlocks.CARNOTITE_SLAB.asStack());
+			items.add(GarnishedBlocks.CARNOTITE_STAIRS.asStack());
+			items.add(GarnishedBlocks.CARNOTITE_WALL.asStack());
+			items.add(GarnishedBlocks.CARNOTITE_BRICKS.asStack());
+			items.add(GarnishedBlocks.CARNOTITE_BRICKS_SLAB.asStack());
+			items.add(GarnishedBlocks.CARNOTITE_BRICKS_STAIRS.asStack());
+			items.add(GarnishedBlocks.CARNOTITE_BRICKS_WALL.asStack());
+			items.add(GarnishedBlocks.POLISHED_CARNOTITE.asStack());
+			items.add(GarnishedBlocks.POLISHED_CARNOTITE_SLAB.asStack());
+			items.add(GarnishedBlocks.POLISHED_CARNOTITE_STAIRS.asStack());
+			items.add(GarnishedBlocks.POLISHED_CARNOTITE_WALL.asStack());
+			items.add(GarnishedBlocks.SMOOTH_CARNOTITE.asStack());
+			items.add(GarnishedBlocks.SMOOTH_CARNOTITE_SLAB.asStack());
+			items.add(GarnishedBlocks.SMOOTH_CARNOTITE_STAIRS.asStack());
+			items.add(GarnishedBlocks.SMOOTH_CARNOTITE_WALL.asStack());
+			items.add(GarnishedBlocks.CHISELED_CARNOTITE_BRICKS.asStack());
+
+			items.add(GarnishedBlocks.UNSTABLE_STONE.asStack());
+			items.add(GarnishedBlocks.UNSTABLE_STONE_SLAB.asStack());
+			items.add(GarnishedBlocks.UNSTABLE_STONE_STAIRS.asStack());
+			items.add(GarnishedBlocks.UNSTABLE_STONE_WALL.asStack());
+			items.add(GarnishedBlocks.UNSTABLE_STONE_BRICKS.asStack());
+			items.add(GarnishedBlocks.UNSTABLE_STONE_BRICKS_SLAB.asStack());
+			items.add(GarnishedBlocks.UNSTABLE_STONE_BRICKS_STAIRS.asStack());
+			items.add(GarnishedBlocks.UNSTABLE_STONE_BRICKS_WALL.asStack());
+			items.add(GarnishedBlocks.POLISHED_UNSTABLE_STONE.asStack());
+			items.add(GarnishedBlocks.POLISHED_UNSTABLE_STONE_SLAB.asStack());
+			items.add(GarnishedBlocks.POLISHED_UNSTABLE_STONE_STAIRS.asStack());
+			items.add(GarnishedBlocks.POLISHED_UNSTABLE_STONE_WALL.asStack());
+			items.add(GarnishedBlocks.SMOOTH_UNSTABLE_STONE.asStack());
+			items.add(GarnishedBlocks.SMOOTH_UNSTABLE_STONE_SLAB.asStack());
+			items.add(GarnishedBlocks.SMOOTH_UNSTABLE_STONE_STAIRS.asStack());
+			items.add(GarnishedBlocks.SMOOTH_UNSTABLE_STONE_WALL.asStack());
+			items.add(GarnishedBlocks.CHISELED_UNSTABLE_STONE_BRICKS.asStack());
+
+			items.add(GarnishedBlocks.RITUALISTIC_STONE.asStack());
+			items.add(GarnishedBlocks.RITUALISTIC_STONE_SLAB.asStack());
+			items.add(GarnishedBlocks.RITUALISTIC_STONE_STAIRS.asStack());
+			items.add(GarnishedBlocks.RITUALISTIC_STONE_WALL.asStack());
+			items.add(GarnishedBlocks.RITUALISTIC_STONE_BRICKS.asStack());
+			items.add(GarnishedBlocks.RITUALISTIC_STONE_BRICKS_SLAB.asStack());
+			items.add(GarnishedBlocks.RITUALISTIC_STONE_BRICKS_STAIRS.asStack());
+			items.add(GarnishedBlocks.RITUALISTIC_STONE_BRICKS_WALL.asStack());
+			items.add(GarnishedBlocks.POLISHED_RITUALISTIC_STONE.asStack());
+			items.add(GarnishedBlocks.POLISHED_RITUALISTIC_STONE_SLAB.asStack());
+			items.add(GarnishedBlocks.POLISHED_RITUALISTIC_STONE_STAIRS.asStack());
+			items.add(GarnishedBlocks.POLISHED_RITUALISTIC_STONE_WALL.asStack());
+			items.add(GarnishedBlocks.SMOOTH_RITUALISTIC_STONE.asStack());
+			items.add(GarnishedBlocks.SMOOTH_RITUALISTIC_STONE_SLAB.asStack());
+			items.add(GarnishedBlocks.SMOOTH_RITUALISTIC_STONE_STAIRS.asStack());
+			items.add(GarnishedBlocks.SMOOTH_RITUALISTIC_STONE_WALL.asStack());
+			items.add(GarnishedBlocks.CHISELED_RITUALISTIC_STONE_BRICKS.asStack());
+
+			items.add(GarnishedBlocks.DRIED_VERMILION_KELP_BLOCK.asStack());
+			items.add(GarnishedBlocks.DRIED_DULSE_KELP_BLOCK.asStack());
+			items.add(GarnishedBlocks.VOLTAIC_SEA_GRASS.asStack());
+		}
+
+		@Override
+		public @NotNull ItemStack makeIcon() {
+			return GarnishedBlocks.GARNISHED_NUT_BLOCK.asStack();
+		}
 	}
 }

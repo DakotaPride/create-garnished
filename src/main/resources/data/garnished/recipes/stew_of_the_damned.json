@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:bone"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "garnished:antique_swathe"
+    },
+    {
+      "item": "garnished:antique_swathe"
+    },
+    {
+      "item": "garnished:shattered_amber_remnant"
+    }
+  ],
+  "result": {
+    "item": "garnished:stew_of_the_damned",
+    "count": 1
+  }
+}

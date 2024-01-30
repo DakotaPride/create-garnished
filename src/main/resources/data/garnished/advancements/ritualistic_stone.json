@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:ritualistic_stone"
+    },
+    "title": {
+      "translate": "advancement.garnished.ritualistic_stone.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.ritualistic_stone.description",
+      "color": "#DBA213"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "garnished:carnotite",
+  "criteria": {
+    "obtain_ritualistic_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "garnished:stone_types/ritualistic_stone"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_ritualistic_stone"
+    ]
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "A": {
+      "item": "garnished:antique_swathe"
+    },
+    "P": {
+      "item": "garnished:prickly_pear"
+    },
+    "B": {
+      "item": "minecraft:beetroot"
+    }
+  },
+  "pattern": [
+    " BP",
+    "PAB",
+    "#P "
+  ],
+  "result": {
+    "item": "garnished:thorn_on_a_stick"
+  }
+}
