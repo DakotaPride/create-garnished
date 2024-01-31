@@ -3,7 +3,7 @@
   "placement": [
     {
       "type": "minecraft:rarity_filter",
-      "chance": 18
+      "chance": 6
     },
     {
       "type": "minecraft:in_square"
@@ -12,16 +12,16 @@
       "type": "minecraft:height_range",
       "height": {
         "type": "minecraft:uniform",
-        "max_inclusive": {
-          "absolute": 120
-        },
         "min_inclusive": {
-          "absolute": 40
+          "absolute": 64
+        },
+        "max_inclusive": {
+          "absolute": 128
         }
       }
     },
     {
-      "type": "create:config_filter"
+      "type": "minecraft:biome"
     }
   ]
 }
