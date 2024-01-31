@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:bristled_tortilla"
+    },
+    {
+      "tag": "garnished:acceptable_nopalito_meat_ingredients"
+    },
+    {
+      "item": "garnished:almond_cheese"
+    },
+    {
+      "item": "garnished:prickly_pear"
+    }
+  ],
+  "result": {
+    "item": "garnished:nopalito_wrap",
+    "count": 1
+  }
+}

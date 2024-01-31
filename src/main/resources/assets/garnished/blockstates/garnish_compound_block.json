@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "garnished:block/garnish_compound_block"
+    }
+  }
+}

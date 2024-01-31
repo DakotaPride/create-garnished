@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:mulch_block"
+    }
+  ],
+  "result": {
+    "item": "garnished:mulch",
+    "count": 4
+  }
+}

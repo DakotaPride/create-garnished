@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:rosy_cocktail"
+    },
+    "title": {
+      "translate": "advancement.garnished.rosy_cocktail.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.rosy_cocktail.description",
+      "color": "#DBA213"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "garnished:nut_tree",
+  "criteria": {
+    "obtain_rosy_cocktail": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "garnished:rosy_cocktail"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_rosy_cocktail"
+    ]
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:ethereal_compound_block"
+    }
+  ],
+  "result": {
+    "item": "garnished:ethereal_compound",
+    "count": 4
+  }
+}

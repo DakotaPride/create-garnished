@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:garnish_compound_block"
+    }
+  ],
+  "result": {
+    "item": "garnished:garnish_compound",
+    "count": 4
+  }
+}

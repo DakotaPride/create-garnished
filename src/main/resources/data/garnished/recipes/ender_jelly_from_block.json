@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:ender_jelly_block"
+    }
+  ],
+  "result": {
+    "item": "garnished:ender_jelly",
+    "count": 4
+  }
+}

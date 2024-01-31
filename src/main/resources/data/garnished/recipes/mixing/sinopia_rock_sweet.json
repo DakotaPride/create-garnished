@@ -1,0 +1,25 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:slime_ball"
+    },
+    {
+      "item": "garnished:shattered_amber_remnant"
+    },
+    {
+      "item": "garnished:shattered_amber_remnant"
+    },
+    {
+      "item": "garnished:prickly_pear"
+    },
+    {
+      "item": "garnished:prickly_pear"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:sinopia_rock_sweet"
+    }
+  ]
+}

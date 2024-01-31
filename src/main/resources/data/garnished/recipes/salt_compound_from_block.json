@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:salt_compound_block"
+    }
+  ],
+  "result": {
+    "item": "garnished:salt_compound",
+    "count": 4
+  }
+}

@@ -597,6 +597,41 @@ public class GarnishedItems {
 			REGISTRATE.item("lustrous_pearl", Item::new)
 					.properties((p) -> p.rarity(Rarity.UNCOMMON)).register();
 
+	// Garnished v1.6: Befouled
+	public static final ItemEntry<StewOfTheDamnedFoodItem> STEW_OF_THE_DAMNED =
+			REGISTRATE.item("stew_of_the_damned", StewOfTheDamnedFoodItem::new).register();
+	public static final ItemEntry<PricklyPearFoodItem> PRICKLY_PEAR =
+			REGISTRATE.item("prickly_pear", PricklyPearFoodItem::new).register();
+	public static final ItemEntry<BambooClodFoodItem> BAMBOO_CLOD =
+			REGISTRATE.item("bamboo_clod", BambooClodFoodItem::new).register();
+	public static final ItemEntry<NopalitoWrapFoodItem> NOPALITO_WRAP =
+			REGISTRATE.item("nopalito_wrap", NopalitoWrapFoodItem::new).register();
+	public static final ItemEntry<NopalitoWrapSupremeFoodItem> NOPALITO_WRAP_SUPREME =
+			REGISTRATE.item("nopalito_wrap_supreme", NopalitoWrapSupremeFoodItem::new).register();
+	public static final ItemEntry<PricklyPearStewFoodItem> PRICKLY_PEAR_STEW =
+			REGISTRATE.item("prickly_pear_stew", PricklyPearStewFoodItem::new).register();
+	public static final ItemEntry<SinopiaRockSweetFoodItem> SINOPIA_ROCK_SWEET =
+			REGISTRATE.item("sinopia_rock_sweet", SinopiaRockSweetFoodItem::new).register();
+	public static final ItemEntry<ThornOnAStickFoodItem> THORN_ON_A_STICK =
+			REGISTRATE.item("thorn_on_a_stick", ThornOnAStickFoodItem::new).register();
+	public static final ItemEntry<OvergrownBrewFoodItem> OVERGROWN_BREW =
+			REGISTRATE.item("overgrown_brew", OvergrownBrewFoodItem::new).register();
+	public static final ItemEntry<RosyCocktailItem> ROSY_COCKTAIL =
+			REGISTRATE.item("rosy_cocktail", RosyCocktailItem::new).register();
+
+	public static final ItemEntry<Item> ANTIQUE_SWATHE =
+			REGISTRATE.item("antique_swathe", Item::new).register();
+	public static final ItemEntry<Item> AMBER_REMNANT =
+			REGISTRATE.item("amber_remnant", Item::new).register();
+	public static final ItemEntry<Item> SHATTERED_AMBER_REMNANT =
+			REGISTRATE.item("shattered_amber_remnant", Item::new).register();
+	public static final ItemEntry<Item> SOLEMN_DUST =
+			REGISTRATE.item("solemn_dust", Item::new).register();
+	public static final ItemEntry<Item> BRISTLED_FLOUR =
+			REGISTRATE.item("bristled_flour", Item::new).register();
+	public static final ItemEntry<Item> BRISTLED_TORTILLA =
+			REGISTRATE.item("bristled_tortilla", Item::new).register();
+
 	// Farmer's Delight Items
 	public static final ItemEntry<PecanPieSliceFoodItem> PECAN_PIE_SLICE =
 			REGISTRATE.item("pecan_pie_slice", PecanPieSliceFoodItem::new).register();

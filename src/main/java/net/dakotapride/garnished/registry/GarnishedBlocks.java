@@ -987,5 +987,26 @@ public class GarnishedBlocks {
 					.initialProperties(() -> Blocks.STONE)
 					.properties(p -> p.explosionResistance(12.0F)).register();
 
+	public static final BlockEntry<Block> GARNISH_COMPOUND_BLOCK =
+			REGISTRATE.block("garnish_compound_block", Block::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.BONE_BLOCK).register();
+	public static final BlockEntry<Block> SALT_COMPOUND_BLOCK =
+			REGISTRATE.block("salt_compound_block", Block::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.BONE_BLOCK).register();
+	public static final BlockEntry<Block> ETHEREAL_COMPOUND_BLOCK =
+			REGISTRATE.block("ethereal_compound_block", Block::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.BONE_BLOCK).register();
+	public static final BlockEntry<Block> MULCH_BLOCK =
+			REGISTRATE.block("mulch_block", Block::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.OAK_WOOD).register();
+
 	public static void setRegister() {}
 }

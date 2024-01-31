@@ -77,6 +77,8 @@ public class CreateGarnished implements ModInitializer {
 				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.VOLTAIC_SEAGRASS_PLACED);
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.FROZEN_OCEAN),
 				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.DULSE_KELP_PLACED);
+		BiomeModifications.addFeature(BiomeSelectors.tag(GarnishedTags.HAS_REMNANT_TAG),
+				GenerationStep.Decoration.UNDERGROUND_ORES, GarnishedFeatures.REMNANT_PLACED);
 
 		LOGGER.info("Create addon mod [{}] is loading alongside Create [{}]!", NAME, Create.VERSION);
 		LOGGER.info(EnvExecutor.unsafeRunForDist(
