@@ -104,7 +104,9 @@ public class CreateGarnished implements ModInitializer {
 		PotionBrewingMixin.addMixToInvoker(Potions.AWKWARD, GarnishedItems.SENILE_SWEET_SCORIA.get(), Potions.POISON);
 		PotionBrewingMixin.addMixToInvoker(Potions.AWKWARD, GarnishedItems.SENILE_SWEET_SCORCHIA.get(), Potions.SLOWNESS);
 
-		PotionBrewing.addMix(Potions.MUNDANE, GarnishedItems.VOLATILE_DUST.get(), GarnishedEffects.SANCTITY_POTION);
+		PotionBrewing.addMix(Potions.AWKWARD, GarnishedItems.VOLATILE_DUST.get(), GarnishedEffects.SANCTITY_POTION);
+
+		PotionBrewing.addMix(Potions.MUNDANE, GarnishedItems.SOLEMN_DUST.get(), GarnishedEffects.MUMMIFICATION_POTION);
 
 		StrippableBlockRegistry.register(GarnishedBlocks.SEPIA_STEM.get(), GarnishedBlocks.STRIPPED_SEPIA_STEM.get());
 		StrippableBlockRegistry.register(GarnishedBlocks.SEPIA_HYPHAE.get(), GarnishedBlocks.STRIPPED_SEPIA_HYPHAE.get());
