@@ -4,6 +4,7 @@ import net.dakotapride.garnished.CreateGarnished;
 import net.dakotapride.garnished.effect.AversionMobEffect;
 import net.dakotapride.garnished.effect.CognateMobEffect;
 import net.dakotapride.garnished.effect.FlagrantMobEffect;
+import net.dakotapride.garnished.effect.MummificationMobEffect;
 import net.dakotapride.garnished.effect.SanctityMobEffect;
 import net.dakotapride.garnished.effect.SpiritedResistanceMobEffect;
 import net.dakotapride.garnished.effect.SugarHighMobEffect;
