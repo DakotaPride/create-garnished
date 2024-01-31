@@ -1,0 +1,15 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "createaddition"
+    }
+  ],
+  "type":"createaddition:liquid_burning",
+  "input": {
+    "fluid": "garnished:peanut_oil",
+    "amount": 1000
+  },
+  "burnTime": 3200,
+  "superheated": true
+}
