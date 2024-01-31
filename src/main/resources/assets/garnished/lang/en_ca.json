@@ -1,5 +1,6 @@
 {
   "itemGroup.create.garnished": "Create: Garnished",
+  "itemGroup.create.garnished.blocks": "Create: Garnished - Building Blocks",
   "text.garnished.nut.ungarnished": "Ungarnished",
   "text.garnished.nut.garnished": "Garnished",
   "text.garnished.nut.cracked": "Cracked",
@@ -615,6 +616,10 @@
   "advancement.garnished.voltaic_sea_grass.description": "Discover Voltaic Sea Grass (no Spirit, you can't chew on them)",
   "advancement.garnished.dulse_kelp.title": "Pseudo-Bacon",
   "advancement.garnished.dulse_kelp.description": "Obtain Dulse Kelp",
+  "advancement.garnished.ritualistic_stone.title": "New Ancient Debris",
+  "advancement.garnished.ritualistic_stone.description": "Obtain Ritualistic Stone",
+  "advancement.garnished.rosy_cocktail.title": "Pink Lemonade Served Stone Cold",
+  "advancement.garnished.rosy_cocktail.description": "Obtain a Rosy Cocktail",
 
   "garnished.ponder.kelp_garnished.header": "Kelp From Frigid Environments",
   "garnished.ponder.dulse_kelp.header": "Dulse Kelp",
