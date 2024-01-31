@@ -89,7 +89,7 @@ public abstract class LivingEntityMixin extends Entity {
 
 		if (source.getDirectEntity() instanceof LivingEntity attacker) {
 			if (entity.hasEffect(GarnishedEffects.THORNS)) {
-				attacker.hurt(DamageSource.thorns(entity), 6.0F);
+				attacker.hurt(DamageSource.thorns(entity), 3.0F * entity.getEffect(GarnishedEffects.THORNS).getAmplifier());
 			}
 		}
 
