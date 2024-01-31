@@ -1,139 +1,18 @@
 {
-  "type": "create:layered_ore",
+  "type": "minecraft:ore",
   "config": {
+    "size": 32,
     "discard_chance_on_air_exposure": 0.0,
-    "layer_patterns": [
-      [
-        {
-          "max_size": 5,
-          "min_size": 2,
-          "targets": [
-            [
-              {
-                "state": {
-                  "Name": "garnished:ritualistic_stone"
-                },
-                "target": {
-                  "predicate_type": "minecraft:tag_match",
-                  "tag": "garnished:generation_replaceables"
-                }
-              },
-              {
-                "state": {
-                  "Name": "garnished:ritualistic_stone"
-                },
-                "target": {
-                  "predicate_type": "minecraft:tag_match",
-                  "tag": "garnished:generation_replaceables"
-                }
-              }
-            ]
-          ],
-          "weight": 2
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "minecraft:tag_match",
+          "tag": "garnished:generation_replaceables"
         },
-        {
-          "max_size": 3,
-          "min_size": 2,
-          "targets": [
-            [
-              {
-                "state": {
-                  "Name": "minecraft:tuff"
-                },
-                "target": {
-                  "predicate_type": "minecraft:tag_match",
-                  "tag": "garnished:generation_replaceables"
-                }
-              },
-              {
-                "state": {
-                  "Name": "minecraft:tuff"
-                },
-                "target": {
-                  "predicate_type": "minecraft:tag_match",
-                  "tag": "garnished:generation_replaceables"
-                }
-              }
-            ],
-            [
-              {
-                "state": {
-                  "Name": "minecraft:tuff"
-                },
-                "target": {
-                  "predicate_type": "minecraft:tag_match",
-                  "tag": "garnished:generation_replaceables"
-                }
-              },
-              {
-                "state": {
-                  "Name": "minecraft:andesite"
-                },
-                "target": {
-                  "predicate_type": "minecraft:tag_match",
-                  "tag": "garnished:generation_replaceables"
-                }
-              }
-            ]
-          ],
-          "weight": 2
-        },
-        {
-          "max_size": 2,
-          "min_size": 2,
-          "targets": [
-            [
-              {
-                "state": {
-                  "Name": "create:scoria"
-                },
-                "target": {
-                  "predicate_type": "minecraft:tag_match",
-                  "tag": "garnished:generation_replaceables"
-                }
-              },
-              {
-                "state": {
-                  "Name": "create:scorchia"
-                },
-                "target": {
-                  "predicate_type": "minecraft:tag_match",
-                  "tag": "garnished:generation_replaceables"
-                }
-              }
-            ]
-          ],
-          "weight": 1
-        },
-        {
-          "max_size": 2,
-          "min_size": 1,
-          "targets": [
-            [
-              {
-                "state": {
-                  "Name": "minecraft:tuff"
-                },
-                "target": {
-                  "predicate_type": "minecraft:tag_match",
-                  "tag": "garnished:generation_replaceables"
-                }
-              },
-              {
-                "state": {
-                  "Name": "minecraft:tuff"
-                },
-                "target": {
-                  "predicate_type": "minecraft:tag_match",
-                  "tag": "garnished:generation_replaceables"
-                }
-              }
-            ]
-          ],
-          "weight": 1
+        "state": {
+          "Name": "garnished:ritualistic_stone"
         }
-      ]
-    ],
-    "size": 32
+      }
+    ]
   }
 }
