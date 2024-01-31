@@ -47,7 +47,7 @@ public class GarnishedEffects {
 	public static MobEffect THORNS = effect("thorns", new ThornsMobEffect());
 	public static MobEffect MUMMIFICATION = effect("mummification", new MummificationMobEffect()
 			.addAttributeModifier(Attributes.MOVEMENT_SPEED, "9bfdc80b-2f5a-4e9f-9ffd-a5880ccf2a09",
-					0.015, AttributeModifier.Operation.MULTIPLY_TOTAL));
+					-0.015, AttributeModifier.Operation.MULTIPLY_TOTAL));
 
 	public static Potion AVERSION_POTION = potion("aversion", new Potion(
 			new MobEffectInstance(AVERSION, 2400)));
