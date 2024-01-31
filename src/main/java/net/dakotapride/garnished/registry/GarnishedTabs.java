@@ -6,7 +6,7 @@ import net.minecraft.world.item.CreativeModeTab;
 @SuppressWarnings({"unused"})
 public class GarnishedTabs {
 	public static final CreativeModeTab GARNISHED = new GarnishedCreativeModeTab();
-	public static final CreativeModeTab GARNISHED_BLOCKS = new GarnishedCreativeModeTab();
+	public static final CreativeModeTab GARNISHED_BLOCKS = new GarnishedCreativeModeTab.Blocks();
 
 	public static void setRegister() {}
 }
