@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:honey_bottle"
+    },
+    {
+      "item": "create:polished_rose_quartz"
+    },
+    {
+      "item": "garnished:shattered_amber_remnant"
+    },
+    {
+      "item": "garnished:shattered_amber_remnant"
+    }
+  ],
+  "result": {
+    "item": "garnished:rosy_cocktail",
+    "count": 1
+  }
+}

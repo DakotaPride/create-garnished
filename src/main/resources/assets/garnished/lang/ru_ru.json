@@ -1,5 +1,6 @@
 {
   "itemGroup.create.garnished": "Create: Приправлен",
+  "itemGroup.create.garnished.blocks": "Create: Garnished - Building Blocks", //
   "text.garnished.nut.ungarnished": "Сырой",
   "text.garnished.nut.garnished": "Приготовленный",
   "text.garnished.nut.cracked": "Расколот",
@@ -618,6 +619,10 @@
   "advancement.garnished.voltaic_sea_grass.description": "Обнаружьте Вольтовскую морскую траву (нет Спирит, ты не можешь пожевать её)",
   "advancement.garnished.dulse_kelp.title": "Псевдобекон",
   "advancement.garnished.dulse_kelp.description": "Получите красную водоросль",
+  "advancement.garnished.ritualistic_stone.title": "New Ancient Debris", //
+  "advancement.garnished.ritualistic_stone.description": "Obtain Ritualistic Stone", //
+  "advancement.garnished.rosy_cocktail.title": "Pink Lemonade Served Stone Cold", //
+  "advancement.garnished.rosy_cocktail.description": "Obtain a Rosy Cocktail", //
 
   "garnished.ponder.kelp_garnished.header": "Водорослях из холодной среды",
   "garnished.ponder.dulse_kelp.header": "Красной водоросли",
