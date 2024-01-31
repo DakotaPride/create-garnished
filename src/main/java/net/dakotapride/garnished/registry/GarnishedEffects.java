@@ -4,6 +4,7 @@ import net.dakotapride.garnished.CreateGarnished;
 import net.dakotapride.garnished.effect.AversionMobEffect;
 import net.dakotapride.garnished.effect.CognateMobEffect;
 import net.dakotapride.garnished.effect.FlagrantMobEffect;
+import net.dakotapride.garnished.effect.MummificationMobEffect;
 import net.dakotapride.garnished.effect.SanctityMobEffect;
 import net.dakotapride.garnished.effect.SpiritedResistanceMobEffect;
 import net.dakotapride.garnished.effect.SugarHighMobEffect;
@@ -40,6 +41,9 @@ public class GarnishedEffects {
 					4.0, AttributeModifier.Operation.ADDITION));
 
 	public static MobEffect THORNS = effect("thorns", new ThornsMobEffect());
+	public static MobEffect MUMMIFICATION = effect("mummification", new MummificationMobEffect()
+			.addAttributeModifier(Attributes.MOVEMENT_SPEED, "9bfdc80b-2f5a-4e9f-9ffd-a5880ccf2a09",
+					0.015, AttributeModifier.Operation.MULTIPLY_TOTAL));
 
 	public static Potion AVERSION_POTION = potion("aversion", new Potion(
 			new MobEffectInstance(AVERSION, 2400)));
@@ -54,6 +58,9 @@ public class GarnishedEffects {
 
 	public static final Potion SANCTITY_POTION = potion("sanctity",
 			new Potion(new MobEffectInstance(SANCTITY, 2800)));
+
+	public static final Potion MUMMIFICATION_POTION = potion("mummification",
+			new Potion(new MobEffectInstance(MUMMIFICATION, 1200)));
 
 
 	private static MobEffect effect(String key, MobEffect effect) {
