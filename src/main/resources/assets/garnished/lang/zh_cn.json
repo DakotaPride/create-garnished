@@ -508,6 +508,10 @@
   "item.garnished.solemn_dust": "Solemn Dust", //
   "effect.garnished.thorns": "Prickly", //
   "effect.garnished.mummification": "Mummification", //
+  "item.minecraft.potion.effect.mummification": "Potion of Mummification", //
+  "item.minecraft.splash_potion.effect.mummification": "Splash Potion of Mummification", //
+  "item.minecraft.lingering_potion.effect.mummification": "Lingering Potion of Mummification", //
+  "item.minecraft.tipped_arrow.effect.mummification": "Tipped Arrow of Mummification", //
 
   "block.garnished.peanut_sack": "压实坚果袋",
   "block.garnished.cashew_sack": "压实坚果袋",

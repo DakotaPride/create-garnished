@@ -1,0 +1,17 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "createaddition"
+      ]
+    }
+  ],
+  "type":"createaddition:liquid_burning",
+  "input": {
+    "fluid": "garnished:peanut_oil",
+    "amount": 1000
+  },
+  "burnTime": 3200,
+  "superheated": true
+}
