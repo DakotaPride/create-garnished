@@ -1,8 +1,10 @@
 {
-  "conditions": [
+  "fabric:load_conditions": [
     {
-      "type": "forge:mod_loaded",
-      "modid": "createaddition"
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "createaddition"
+      ]
     }
   ],
   "type":"createaddition:liquid_burning",
