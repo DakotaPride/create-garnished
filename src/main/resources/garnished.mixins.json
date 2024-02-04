@@ -8,6 +8,7 @@
     "BoatTypeMixin",
     "ChestBoatMixin",
     "EnderManMixin",
+    "FluidReactionsMixin",
     "ItemStackMixin",
     "LivingEntityMixin",
     "MobMixin"
