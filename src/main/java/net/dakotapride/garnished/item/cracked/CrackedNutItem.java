@@ -23,15 +23,6 @@ public class CrackedNutItem extends BlockItem {
 
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
-		if (!Screen.hasShiftDown()) {
-			tooltip.add(new TranslatableComponent("text.garnished.nut.cracked").withStyle(ChatFormatting.GRAY));
-		}
-
-		if (Screen.hasShiftDown()) {
-			tooltip.add(new TextComponent(""));
-			tooltip.add(new TranslatableComponent("text.garnished.nut.cracked.desc").withStyle(ChatFormatting.DARK_PURPLE));
-			tooltip.add(new TranslatableComponent("text.garnished.nut.cracked.desc.secondary").withStyle(ChatFormatting.DARK_PURPLE));
-			tooltip.add(new TranslatableComponent("text.garnished.nut.cracked.desc.third").withStyle(ChatFormatting.DARK_PURPLE));
-		}
+		tooltip.add(new TranslatableComponent("text.garnished.nut.cracked").withStyle(ChatFormatting.GRAY));
 	}
 }
