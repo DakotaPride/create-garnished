@@ -1,6 +1,6 @@
 {
   "itemGroup.create.garnished": "Create: Приправлен",
-  "itemGroup.create.garnished.blocks": "Create: Garnished - Building Blocks", //
+  "itemGroup.create.garnished.blocks": "Create: Приправлен - Строительные Блоки",
   "text.garnished.nut.ungarnished": "Сырой",
   "text.garnished.nut.garnished": "Приготовленный",
   "text.garnished.nut.cracked": "Расколот",
@@ -234,7 +234,7 @@
   "item.garnished.chorus_cocktail": "Хорусовый коктейль",
   "item.garnished.cosmic_brew": "Космическое рагу",
   "item.garnished.desolate_stew": "Опустошённое рагу",
-  "item.garnished.ethereal_concoction": "Эфирная варево",
+  "item.garnished.ethereal_concoction": "Эфирное варево",
   "item.garnished.void_mixture": "Пустотная микстура",
   "item.garnished.chorus_bowl": "Хорусовая тарелка",
   "item.garnished.chorus_cookie": "Хорусовое печенье",
@@ -465,32 +465,32 @@
   "block.garnished.smooth_carnotite_stairs": "Ступеньки из гладкого карнотита",
   "block.garnished.smooth_carnotite_slab": "Плита из гладкого карнотита",
   "block.garnished.smooth_carnotite_wall": "Ограда из гладкого карнотита",
-  "block.garnished.garnish_compound_block": "Garnish Compound Block", //
-  "block.garnished.salt_compound_block": "Salt Compound Block", //
-  "block.garnished.ethereal_compound_block": "Ethereal Compound Block", //
-  "block.garnished.mulch_block": "Mulch Block", //
-  "item.garnished.prickly_pear": "Prickly Pear", //
-  "item.garnished.bamboo_clod": "Bamboo Clod", //
-  "item.garnished.nopalito_wrap": "Nopalito Wrap", //
-  "item.garnished.nopalito_wrap_supreme": "Nopalito Wrap Supreme", //
-  "item.garnished.prickly_pear_stew": "Prickly Pear Stew", //
-  "item.garnished.sinopia_rock_sweet": "Sinopia Rock Sweet", //
-  "item.garnished.thorn_on_a_stick": "Thorn on a Stick", //
-  "item.garnished.overgrown_brew": "Overgrown Brew", //
-  "item.garnished.stew_of_the_damned": "Stew of the Damned", //
-  "item.garnished.rosy_cocktail": "Rosy Cocktail", //
-  "item.garnished.antique_swathe": "Antique Swathe", //
-  "item.garnished.amber_remnant": "Amber Remnant", //
-  "item.garnished.shattered_amber_remnant": "Shattered Amber Remnant", //
-  "item.garnished.bristled_flour": "Bristled Flour", //
-  "item.garnished.bristled_tortilla": "Bristled Tortilla", //
-  "item.garnished.solemn_dust": "Solemn Dust", //
+  "block.garnished.garnish_compound_block": "Блок из смеси приправ",
+  "block.garnished.salt_compound_block": "Блок из солёной смеси",
+  "block.garnished.ethereal_compound_block": "Блок из эфирной смеси",
+  "block.garnished.mulch_block": "Блок мульчи",
+  "item.garnished.prickly_pear": "Опунция",
+  "item.garnished.bamboo_clod": "Бамбуковы ростки",
+  "item.garnished.nopalito_wrap": "Нопаловый ролл",
+  "item.garnished.nopalito_wrap_supreme": "Божественный нопаловый ролл",
+  "item.garnished.prickly_pear_stew": "Опунциевое рагу",
+  "item.garnished.sinopia_rock_sweet": "Синопиевый леденец",
+  "item.garnished.thorn_on_a_stick": "Колючка на палке",
+  "item.garnished.overgrown_brew": "Рагу чрезмерного роста",
+  "item.garnished.stew_of_the_damned": "Рагу проклятых",
+  "item.garnished.rosy_cocktail": "Розовый коктейль",
+  "item.garnished.antique_swathe": "Античная повязка",
+  "item.garnished.amber_remnant": "Янтарный остаток",
+  "item.garnished.shattered_amber_remnant": "Осколки янтарного остатка",
+  "item.garnished.bristled_flour": "Шипастая мука",
+  "item.garnished.bristled_tortilla": "Шипастая тортилья",
+  "item.garnished.solemn_dust": "Тёмная пыль",
   "effect.garnished.thorns": "Колючий",
-  "effect.garnished.mummification": "Mummification", //
-  "item.minecraft.potion.effect.mummification": "Potion of Mummification", //
-  "item.minecraft.splash_potion.effect.mummification": "Splash Potion of Mummification", //
-  "item.minecraft.lingering_potion.effect.mummification": "Lingering Potion of Mummification", //
-  "item.minecraft.tipped_arrow.effect.mummification": "Tipped Arrow of Mummification", //
+  "effect.garnished.mummification": "Мумификация",
+  "item.minecraft.potion.effect.mummification": "Зелье мумификации",
+  "item.minecraft.splash_potion.effect.mummification": "Взрывное зелье мумификации",
+  "item.minecraft.lingering_potion.effect.mummification": "Туманное зелье мумификации",
+  "item.minecraft.tipped_arrow.effect.mummification": "Стрела мумификации",
 
   "block.garnished.peanut_sack": "Мешочек орехов",
   "block.garnished.cashew_sack": "Мешочек орехов",
@@ -623,11 +623,11 @@
   "advancement.garnished.voltaic_sea_grass.title": "Мозможно вы будете шокированы, Но...",
   "advancement.garnished.voltaic_sea_grass.description": "Обнаружьте Вольтовскую морскую траву (нет Спирит, ты не можешь пожевать её)",
   "advancement.garnished.dulse_kelp.title": "Псевдобекон",
-  "advancement.garnished.dulse_kelp.description": "Получите красную водоросль",
-  "advancement.garnished.ritualistic_stone.title": "New Ancient Debris", //
-  "advancement.garnished.ritualistic_stone.description": "Obtain Ritualistic Stone", //
-  "advancement.garnished.rosy_cocktail.title": "Pink Lemonade Served Stone Cold", //
-  "advancement.garnished.rosy_cocktail.description": "Obtain a Rosy Cocktail", //
+  "advancement.garnished.dulse_kelp.description": "Получите Красную водоросль",
+  "advancement.garnished.ritualistic_stone.title": "Новые древние обломки",
+  "advancement.garnished.ritualistic_stone.description": "Получите Ритуальный камень",
+  "advancement.garnished.rosy_cocktail.title": "Розовый лимонад, холодный как камень",
+  "advancement.garnished.rosy_cocktail.description": "Получите Розовый коктейль",
 
   "garnished.ponder.kelp_garnished.header": "Водорослях из холодной среды",
   "garnished.ponder.dulse_kelp.header": "Красной водоросли",
