@@ -42,7 +42,7 @@ public class GarnishedFluids {
 		FluidPlaceBlockCallback.EVENT.register(GarnishedFluids::whenFluidsMeet);
 	}
 	private static final CreateRegistrate REGISTRATE = CreateGarnished.registrate()
-			.useCreativeTab(GarnishedTabs.GARNISHED.key());
+			.setCreativeTab(GarnishedTabs.GARNISHED.key());
 
 	private static ResourceLocation createLocation(String fluid, boolean isFlowing) {
 		String getMotion;

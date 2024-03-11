@@ -72,7 +72,7 @@ import net.minecraft.world.level.material.PushReaction;
 @SuppressWarnings({"unused"})
 public class GarnishedBlocks {
 	private static final CreateRegistrate REGISTRATE = CreateGarnished.registrate()
-		.useCreativeTab(GarnishedTabs.GARNISHED.key());
+		.setCreativeTab(GarnishedTabs.GARNISHED.key());
 
 	public static final BlockEntry<Block> NUT_PLANT =
 			REGISTRATE.block("nut_plant", Block::new)

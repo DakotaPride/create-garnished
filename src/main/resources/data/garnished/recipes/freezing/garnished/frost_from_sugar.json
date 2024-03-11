@@ -1,0 +1,14 @@
+{
+  "type": "garnished:freezing",
+  "ingredients": [
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:frost",
+      "count": 1
+    }
+  ]
+}

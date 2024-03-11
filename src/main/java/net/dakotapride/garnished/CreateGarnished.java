@@ -2,7 +2,9 @@ package net.dakotapride.garnished;
 
 import net.dakotapride.garnished.modifier.LootTableModifiers;
 
+import net.dakotapride.garnished.recipe.GarnishedFanProcessing;
 import net.dakotapride.garnished.registry.GarnishedPonderIndex;
+import net.dakotapride.garnished.registry.GarnishedRecipeTypes;
 import net.minecraft.resources.ResourceLocation;
 
 import org.slf4j.Logger;
@@ -31,12 +33,14 @@ import net.minecraft.world.item.alchemy.PotionBrewing;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.GenerationStep;
+import plus.dragons.createdragonlib.lang.Lang;
 
 public class CreateGarnished implements ModInitializer {
 
 	public static final String ID = "garnished";
 	public static final String NAME = "Create: Garnished";
 	public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
+	public static final Lang LANG = new Lang(ID);
 	private static final NonNullSupplier<CreateRegistrate> REGISTRATE =
 			NonNullSupplier.lazy(() -> CreateRegistrate.create(ID));
 
@@ -55,6 +59,8 @@ public class CreateGarnished implements ModInitializer {
 		GarnishedEffects.setRegister();
 		GarnishedEnchantments.setRegister();
 		GarnishedTags.setRegister();
+		GarnishedRecipeTypes.register();
+		GarnishedFanProcessing.register();
 		LootTableModifiers.modifyLootTables();
 		REGISTRATE.get().register();
 

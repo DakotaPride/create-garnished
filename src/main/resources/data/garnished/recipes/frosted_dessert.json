@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:frost"
+    },
+    {
+      "item": "garnished:solemn_dust"
+    },
+    {
+      "item": "garnished:crushed_shroomlight"
+    },
+    {
+      "item": "garnished:cashew_sorbet_scoop"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "garnished:frosted_dessert"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "garnished:freezing",
+  "ingredients": [
+    {
+      "item": "minecraft:apple"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:chilled_apple",
+      "count": 1
+    }
+  ]
+}

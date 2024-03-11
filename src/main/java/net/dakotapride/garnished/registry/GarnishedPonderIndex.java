@@ -26,8 +26,8 @@ import com.simibubi.create.foundation.utility.IntAttached;
 import com.simibubi.create.foundation.utility.NBTHelper;
 import com.simibubi.create.foundation.utility.Pointing;
 
+import io.github.fabricators_of_create.porting_lib.fluids.FluidStack;
 import io.github.fabricators_of_create.porting_lib.transfer.TransferUtil;
-import io.github.fabricators_of_create.porting_lib.util.FluidStack;
 import net.dakotapride.garnished.CreateGarnished;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

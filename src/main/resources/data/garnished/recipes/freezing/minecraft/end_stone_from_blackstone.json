@@ -1,0 +1,14 @@
+{
+  "type": "garnished:freezing",
+  "ingredients": [
+    {
+      "item": "minecraft:blackstone"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:end_stone",
+      "count": 1
+    }
+  ]
+}

@@ -8,8 +8,11 @@
     "DakotaPride"
   ],
   "contributors": [
-    "Seaseii",
-    "NegoDya"
+    "DejojoTheAwsome (Creator)",
+    "Seaseii (Translations)",
+    "NegoDya (Translations)",
+    "JohnDoeKnownJury (Concepts)",
+    "WitherMonarch (Reporter)"
   ],
   "contact": {
     "sources": "https://github.com/DakotaPride/create-garnished",
@@ -24,6 +27,9 @@
     ],
     "client": [
       "net.dakotapride.garnished.CreateGarnishedClient"
+    ],
+    "jei_mod_plugin": [
+      "net.dakotapride.garnished.registry.JEI.GarnishedJEI"
     ]
   },
   "mixins": [

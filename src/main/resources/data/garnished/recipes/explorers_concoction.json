@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "garnished:cosmic_powder"
+    },
+    {
+      "item": "garnished:ender_jelly"
+    },
+    {
+      "item": "garnished:mastic_paste_green"
+    }
+  ],
+  "result": {
+    "item": "garnished:explorers_concoction"
+  }
+}

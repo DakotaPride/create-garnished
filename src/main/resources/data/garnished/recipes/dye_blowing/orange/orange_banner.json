@@ -1,0 +1,14 @@
+{
+  "type": "garnished:orange_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:banners"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:orange_banner",
+      "count": 1
+    }
+  ]
+}

@@ -1,7 +1,5 @@
 package net.dakotapride.garnished.item;
 
-import org.jetbrains.annotations.NotNull;
-
 import net.dakotapride.garnished.registry.GarnishedFoods;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;
@@ -12,6 +10,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 public class IcyMasticChunkFoodItem extends Item implements IGarnishedItem {
     public IcyMasticChunkFoodItem(Properties properties) {
@@ -25,8 +24,8 @@ public class IcyMasticChunkFoodItem extends Item implements IGarnishedItem {
             CriteriaTriggers.CONSUME_ITEM.trigger(serverPlayer, stack);
             serverPlayer.awardStat(Stats.ITEM_USED.get(this));
 
-            livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, baseTick * 5, 2));
-            livingEntity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, baseTick * 8, 1));
+            livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 2));
+            livingEntity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 160, 1));
         }
 
         return super.finishUsingItem(stack, level, livingEntity);

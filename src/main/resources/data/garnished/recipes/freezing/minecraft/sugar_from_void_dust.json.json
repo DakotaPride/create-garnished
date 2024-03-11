@@ -1,0 +1,19 @@
+{
+  "type": "garnished:freezing",
+  "ingredients": [
+    {
+      "item": "garnished:garnish_powder"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:sugar",
+      "count": 1
+    },
+    {
+      "chance": 0.25,
+      "item": "minecraft:sugar",
+      "count": 1
+    }
+  ]
+}

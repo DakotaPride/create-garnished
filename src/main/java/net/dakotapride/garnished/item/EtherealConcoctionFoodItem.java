@@ -1,15 +1,11 @@
 package net.dakotapride.garnished.item;
 
-import org.jetbrains.annotations.NotNull;
-
-import net.dakotapride.garnished.registry.GarnishedEffects;
 import net.dakotapride.garnished.registry.GarnishedFoods;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -17,6 +13,7 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 
 public class EtherealConcoctionFoodItem extends Item implements IGarnishedItem {
 	public EtherealConcoctionFoodItem(Properties properties) {
@@ -31,11 +28,9 @@ public class EtherealConcoctionFoodItem extends Item implements IGarnishedItem {
 			serverPlayer.awardStat(Stats.ITEM_USED.get(this));
 		}
 
-		if (livingEntity instanceof ServerPlayer serverPlayer && getWrappedTangleEffectChance()) {
+		if (livingEntity instanceof ServerPlayer serverPlayer) {
 			CriteriaTriggers.CONSUME_ITEM.trigger(serverPlayer, stack);
 			serverPlayer.awardStat(Stats.ITEM_USED.get(this));
-
-			livingEntity.addEffect(new MobEffectInstance(GarnishedEffects.COGNATE, getCognateEffectBaseTick, 1));
 		}
 
 		if (stack.isEmpty()) {

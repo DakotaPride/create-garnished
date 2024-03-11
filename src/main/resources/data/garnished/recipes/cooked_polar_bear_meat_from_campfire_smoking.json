@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "ingredient": {
+    "item": "garnished:raw_polar_bear_meat"
+  },
+  "result": "garnished:cooked_polar_bear_meat",
+  "experience": 0.35,
+  "cookingtime": 600
+}

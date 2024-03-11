@@ -1,0 +1,19 @@
+{
+  "type": "garnished:red_dye_blowing",
+  "ingredients": [
+    [
+      {
+        "tag": "forge:stained_glass"
+      },
+      {
+        "item": "minecraft:glass"
+      }
+    ]
+  ],
+  "results": [
+    {
+      "item": "minecraft:red_stained_glass",
+      "count": 1
+    }
+  ]
+}

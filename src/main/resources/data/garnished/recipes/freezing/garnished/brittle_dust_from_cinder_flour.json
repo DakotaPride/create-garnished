@@ -1,0 +1,14 @@
+{
+  "type": "garnished:freezing",
+  "ingredients": [
+    {
+      "item": "create:cinder_flour"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:brittle_dust",
+      "count": 1
+    }
+  ]
+}

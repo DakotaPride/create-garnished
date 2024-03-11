@@ -1,0 +1,14 @@
+{
+  "type": "garnished:yellow_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:candles"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:yellow_candle",
+      "count": 1
+    }
+  ]
+}

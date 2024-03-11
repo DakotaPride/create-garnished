@@ -1762,6 +1762,179 @@
           ]
         }
       }
+    },
+
+    "overgrown_brew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:overgrown_brew"
+          ]
+        }
+      }
+    },
+    "prickly_pear_stew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:prickly_pear_stew"
+          ]
+        }
+      }
+    },
+    "stew_of_the_damned": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:stew_of_the_damned"
+          ]
+        }
+      }
+    },
+    "sinopia_rock_sweet": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:sinopia_rock_sweet"
+          ]
+        }
+      }
+    },
+    "nopalito_wrap": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:nopalito_wrap"
+          ]
+        }
+      }
+    },
+    "nopalito_wrap_supreme": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:nopalito_wrap_supreme"
+          ]
+        }
+      }
+    },
+    "bamboo_clod": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:bamboo_clod"
+          ]
+        }
+      }
+    },
+    "prickly_pear": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:prickly_pear"
+          ]
+        }
+      }
+    },
+    "thorn_on_a_stick": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:thorn_on_a_stick"
+          ]
+        }
+      }
+    },
+    "rosy_cocktail": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:rosy_cocktail"
+          ]
+        }
+      }
+    },
+
+    "explorers_concoction": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:explorers_concoction"
+          ]
+        }
+      }
+    },
+    "void_stroganoff": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:void_stroganoff"
+          ]
+        }
+      }
+    },
+    "frosted_dessert": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:frosted_dessert"
+          ]
+        }
+      }
+    },
+    "chilled_apple": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:chilled_apple"
+          ]
+        }
+      }
+    },
+    "cooked_polar_bear_meat": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:cooked_polar_bear_meat"
+          ]
+        }
+      }
+    },
+    "raw_polar_bear_meat": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:raw_polar_bear_meat"
+          ]
+        }
+      }
+    },
+
+    "molten_stew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:molten_stew"
+          ]
+        }
+      }
     }
   },
 
@@ -2301,6 +2474,60 @@
     ],
     [
       "galvanic_haunting"
+    ],
+
+    [
+      "overgrown_brew"
+    ],
+    [
+      "prickly_pear_stew"
+    ],
+    [
+      "stew_of_the_damned"
+    ],
+    [
+      "sinopia_rock_sweet"
+    ],
+    [
+      "nopalito_wrap"
+    ],
+    [
+      "nopalito_wrap_supreme"
+    ],
+    [
+      "bamboo_clod"
+    ],
+    [
+      "prickly_pear"
+    ],
+    [
+      "thorn_on_a_stick"
+    ],
+    [
+      "rosy_cocktail"
+    ],
+
+    [
+      "explorers_concoction"
+    ],
+    [
+      "void_stroganoff"
+    ],
+    [
+      "frosted_dessert"
+    ],
+    [
+      "chilled_apple"
+    ],
+    [
+      "cooked_polar_bear_meat"
+    ],
+    [
+      "raw_polar_bear_meat"
+    ],
+
+    [
+      "molten_stew"
     ]
   ],
   "rewards": {

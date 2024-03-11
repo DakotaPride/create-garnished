@@ -1,0 +1,14 @@
+{
+  "type": "garnished:orange_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:glazed_terracotta"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:orange_glazed_terracotta",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "garnished:freezing",
+  "ingredients": [
+    {
+      "item": "minecraft:seagrass"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:voltaic_sea_grass",
+      "count": 1
+    }
+  ]
+}

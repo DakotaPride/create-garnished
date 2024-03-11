@@ -1,5 +1,7 @@
 package net.dakotapride.garnished.mixin;
 
+import io.github.fabricators_of_create.porting_lib.fluids.FluidStack;
+
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -8,7 +10,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import com.simibubi.create.content.fluids.FluidReactions;
 import com.simibubi.create.foundation.fluid.FluidHelper;
 
-import io.github.fabricators_of_create.porting_lib.util.FluidStack;
 import net.dakotapride.garnished.registry.GarnishedFluids;
 import net.minecraft.core.BlockPos;
 import net.minecraft.tags.FluidTags;

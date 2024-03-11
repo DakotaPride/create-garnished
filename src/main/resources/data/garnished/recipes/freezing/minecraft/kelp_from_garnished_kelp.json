@@ -1,0 +1,14 @@
+{
+  "type": "garnished:freezing",
+  "ingredients": [
+    {
+      "tag": "garnished:kelp"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:kelp",
+      "count": 1
+    }
+  ]
+}

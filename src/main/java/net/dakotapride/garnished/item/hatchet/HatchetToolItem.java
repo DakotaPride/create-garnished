@@ -152,10 +152,10 @@ public class HatchetToolItem extends DiggerItem implements Vanishable, CustomEnc
         });
     }
 
-    @Override
-    public boolean canPerformAction(ItemStack stack, ToolAction toolAction) {
-        return ToolActions.DEFAULT_AXE_ACTIONS.contains(toolAction);
-    }
+    // @Override
+	//    public boolean canPerformAction(ItemStack stack, ToolAction toolAction) {
+	//        return ToolActions.DEFAULT_AXE_ACTIONS.contains(toolAction);
+	//    }
 
     @Override
     public float getDestroySpeed(@NotNull ItemStack stack, BlockState state) {

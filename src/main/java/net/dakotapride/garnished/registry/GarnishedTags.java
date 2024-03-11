@@ -25,6 +25,8 @@ public class GarnishedTags {
 	public static final TagKey<Block> CARNOTITE_BLOCKS = garnishedTag("carnotite", BuiltInRegistries.BLOCK);
 	public static final TagKey<Item> ENDER_DUSTS_TAG = commonTag("ender_dusts", BuiltInRegistries.ITEM);
 	public static final TagKey<Biome> HAS_REMNANT_TAG = garnishedTag("has_remnant", Registries.BIOME);
+	public static final TagKey<Block> FAN_FREEZING_PROCESSING_TAG = garnishedTag("fan_processing_catalysts/freezing", Registries.BLOCK);
+	public static final TagKey<Fluid> FAN_FREEZING_PROCESSING_FLUID_TAG = garnishedTag("fan_processing_catalysts/freezing", Registries.FLUID);
 
 	// Integrated Tags
 	// public static TagKey<Item> ZINC_INGOTS = commonItemTag("ingots/zinc");
