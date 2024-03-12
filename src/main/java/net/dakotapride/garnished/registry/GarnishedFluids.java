@@ -78,7 +78,7 @@ public class GarnishedFluids {
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.liquid_garnish", 1500, 1400))
+				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.liquid_garnish", 1500, 1400))
 				.onRegisterAfter(Registries.ITEM, fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
@@ -95,7 +95,7 @@ public class GarnishedFluids {
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.apple_cider", 1500, 1400))
+				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.apple_cider", 1500, 1400))
 				.onRegisterAfter(Registries.ITEM, fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
@@ -112,7 +112,7 @@ public class GarnishedFluids {
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.peanut_oil", 1500, 1400))
+				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.peanut_oil", 1500, 1400))
 				.onRegisterAfter(Registries.ITEM, fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
@@ -129,7 +129,7 @@ public class GarnishedFluids {
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.cashew_mixture", 1500, 1400))
+				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.cashew_mixture", 1500, 1400))
 				.onRegisterAfter(Registries.ITEM, fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
@@ -146,7 +146,7 @@ public class GarnishedFluids {
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.mastic_resin", 1500, 1400))
+				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.mastic_resin", 1500, 1400))
 				.onRegisterAfter(Registries.ITEM, fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
@@ -163,7 +163,7 @@ public class GarnishedFluids {
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.red_mastic_resin", 1500, 1400))
+				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.red_mastic_resin", 1500, 1400))
 				.onRegisterAfter(Registries.ITEM, fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
@@ -180,7 +180,7 @@ public class GarnishedFluids {
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.orange_mastic_resin", 1500, 1400))
+				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.orange_mastic_resin", 1500, 1400))
 				.onRegisterAfter(Registries.ITEM, fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
@@ -197,7 +197,7 @@ public class GarnishedFluids {
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.yellow_mastic_resin", 1500, 1400))
+				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.yellow_mastic_resin", 1500, 1400))
 				.onRegisterAfter(Registries.ITEM, fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
@@ -214,7 +214,7 @@ public class GarnishedFluids {
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.green_mastic_resin", 1500, 1400))
+				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.green_mastic_resin", 1500, 1400))
 				.onRegisterAfter(Registries.ITEM, fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
@@ -231,7 +231,7 @@ public class GarnishedFluids {
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.blue_mastic_resin", 1500, 1400))
+				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.blue_mastic_resin", 1500, 1400))
 				.onRegisterAfter(Registries.ITEM, fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
@@ -248,7 +248,7 @@ public class GarnishedFluids {
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.purple_mastic_resin", 1500, 1400))
+				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.purple_mastic_resin", 1500, 1400))
 				.onRegisterAfter(Registries.ITEM, fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->

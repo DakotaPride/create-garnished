@@ -579,27 +579,27 @@
   "item.garnished.green_mastic_resin_bucket": "Bucket of Coloured Mastic Resin", //
   "item.garnished.blue_mastic_resin_bucket": "Bucket of Coloured Mastic Resin", //
   "item.garnished.purple_mastic_resin_bucket": "Bucket of Coloured Mastic Resin", //
-  "fluid.liquid_garnish": "液态装食",
+  "fluid.garnished.liquid_garnish": "液态装食",
   "block.garnished.garnish": "液态装食",
-  "fluid.apple_cider": "苹果西打",
+  "fluid.garnished.apple_cider": "苹果西打",
   "block.garnished.apple_cider": "苹果西打",
-  "fluid.peanut_oil": "花生油",
+  "fluid.garnished.peanut_oil": "花生油",
   "block.garnished.peanut_oil": "花生油",
-  "fluid.cashew_mixture": "腰果混合物",
+  "fluid.garnished.cashew_mixture": "腰果混合物",
   "block.garnished.cashew_mixture": "腰果混合物",
-  "fluid.mastic_resin": "Liquefied Mastic Resin", //
+  "fluid.garnished.mastic_resin": "Liquefied Mastic Resin", //
   "block.garnished.mastic_resin": "Liquefied Mastic Resin", //
-  "fluid.red_mastic_resin": "Liquefied Coloured Mastic Resin", //
+  "fluid.garnished.red_mastic_resin": "Liquefied Coloured Mastic Resin", //
   "block.garnished.red_mastic_resin": "Liquefied Coloured Mastic Resin", //
-  "fluid.orange_mastic_resin": "Liquefied Coloured Mastic Resin", //
+  "fluid.garnished.orange_mastic_resin": "Liquefied Coloured Mastic Resin", //
   "block.garnished.orange_mastic_resin": "Liquefied Coloured Mastic Resin", //
-  "fluid.yellow_mastic_resin": "Liquefied Coloured Mastic Resin", //
+  "fluid.garnished.yellow_mastic_resin": "Liquefied Coloured Mastic Resin", //
   "block.garnished.yellow_mastic_resin": "Liquefied Coloured Mastic Resin", //
-  "fluid.green_mastic_resin": "Liquefied Coloured Mastic Resin", //
+  "fluid.garnished.green_mastic_resin": "Liquefied Coloured Mastic Resin", //
   "block.garnished.green_mastic_resin": "Liquefied Coloured Mastic Resin", //
-  "fluid.blue_mastic_resin": "Liquefied Coloured Mastic Resin", //
+  "fluid.garnished.blue_mastic_resin": "Liquefied Coloured Mastic Resin", //
   "block.garnished.blue_mastic_resin": "Liquefied Coloured Mastic Resin", //
-  "fluid.purple_mastic_resin": "Liquefied Coloured Mastic Resin", //
+  "fluid.garnished.purple_mastic_resin": "Liquefied Coloured Mastic Resin", //
   "block.garnished.purple_mastic_resin": "Liquefied Coloured Mastic Resin", //
 
   "block.garnished.nut_plant": "坚果植株",
