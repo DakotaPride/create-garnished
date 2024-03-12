@@ -159,6 +159,14 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties ROSY_COCKTAIL = new FoodProperties.Builder().nutrition(8).saturationMod(0.4F)
 			.effect(new MobEffectInstance(MobEffects.REGENERATION, 100, 4), 1.0F).build();
 
+	// Glacial Edge
+	public static final FoodProperties RAW_POLAR_BEAR_MEAT = new FoodProperties.Builder().nutrition(5).saturationMod(0.3F).meat().build();
+	public static final FoodProperties COOKED_POLAR_BEAR_MEAT = new FoodProperties.Builder().nutrition(10).saturationMod(0.8F).meat().build();
+	public static final FoodProperties FROSTED_DESSERT = new FoodProperties.Builder().nutrition(6).saturationMod(0.2F).build();
+	public static final FoodProperties VOID_STROGANOFF = new FoodProperties.Builder().nutrition(14).saturationMod(0.8F).build();
+	public static final FoodProperties EXPLORERS_CONCOCTION = new FoodProperties.Builder().nutrition(10).saturationMod(0.6F).build();
+	public static final FoodProperties CHILLED_APPLE = new FoodProperties.Builder().nutrition(4).saturationMod(0.2F).build();
+
 	// Farmer's Delight Foods
 	public static final FoodProperties PECAN_PIE_SLICE = new FoodProperties.Builder().nutrition(3).saturationMod(0.2F).build();
 	public static final FoodProperties PHANTOM_BURGER = new FoodProperties.Builder().nutrition(8).saturationMod(0.6F).meat().build();

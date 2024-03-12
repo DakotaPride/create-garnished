@@ -1,0 +1,10 @@
+{
+  "values": [
+    "minecraft:powder_snow",
+
+    {
+      "id": "create_dd:freezing_sail",
+      "required": false
+    }
+  ]
+}

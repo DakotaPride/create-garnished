@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:garnish_powder"
+    },
+    {
+      "item": "garnished:void_dust"
+    },
+    {
+      "item": "garnished:cooked_polar_bear_meat"
+    },
+    {
+      "item": "garnished:numbing_parchment"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "item": "garnished:void_stroganoff"
+  }
+}

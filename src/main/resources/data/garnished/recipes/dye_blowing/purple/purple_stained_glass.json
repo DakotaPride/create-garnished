@@ -1,0 +1,19 @@
+{
+  "type": "garnished:purple_dye_blowing",
+  "ingredients": [
+    [
+      {
+        "tag": "c:stained_glass"
+      },
+      {
+        "item": "minecraft:glass"
+      }
+    ]
+  ],
+  "results": [
+    {
+      "item": "minecraft:purple_stained_glass",
+      "count": 1
+    }
+  ]
+}

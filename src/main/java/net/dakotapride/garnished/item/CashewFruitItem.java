@@ -1,7 +1,6 @@
 package net.dakotapride.garnished.item;
 
 import java.util.List;
-import java.util.Random;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -11,8 +10,6 @@ import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -40,15 +37,9 @@ public class CashewFruitItem extends Item implements IGarnishedItem {
 
 	@Override
 	public @NotNull ItemStack finishUsingItem(@NotNull ItemStack stack, @NotNull Level level, @NotNull LivingEntity livingEntity) {
-		int random = new Random().nextInt(4);
-
 		if (livingEntity instanceof ServerPlayer serverPlayer) {
 			CriteriaTriggers.CONSUME_ITEM.trigger(serverPlayer, stack);
 			serverPlayer.awardStat(Stats.ITEM_USED.get(this));
-
-			if (random == 1) {
-				livingEntity.addEffect(new MobEffectInstance(MobEffects.POISON, getCashewFruitEffectDuration));
-			}
 		}
 
 		return super.finishUsingItem(stack, level, livingEntity);

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:frost"
+    },
+    {
+      "item": "garnished:frost"
+    },
+    {
+      "item": "garnished:frost"
+    },
+    {
+      "item": "garnished:frost"
+    },
+    {
+      "item": "minecraft:bucket"
+    }
+  ],
+  "result": {
+    "item": "minecraft:powder_snow_bucket",
+    "count": 1
+  }
+}

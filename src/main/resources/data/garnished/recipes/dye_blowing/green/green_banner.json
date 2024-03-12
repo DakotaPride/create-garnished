@@ -1,0 +1,14 @@
+{
+  "type": "garnished:green_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:banners"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:green_banner",
+      "count": 1
+    }
+  ]
+}

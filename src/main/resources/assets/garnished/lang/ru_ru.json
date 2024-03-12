@@ -492,6 +492,40 @@
   "item.minecraft.lingering_potion.effect.mummification": "Lingering Potion of Mummification", //
   "item.minecraft.tipped_arrow.effect.mummification": "Tipped Arrow of Mummification", //
 
+  "item.garnished.frost": "Frost", //
+  "item.garnished.numbing_parchment": "Numbing Parchment", //
+  "item.garnished.polar_bear_hide": "Polar Bear Hide", //
+  "item.garnished.chilled_apple": "Chilled Apple", //
+  "item.garnished.raw_polar_bear_meat": "Raw Polar Bear Meat", //
+  "item.garnished.cooked_polar_bear_meat": "Cooked Polar Bear Meat", //
+  "item.garnished.frosted_dessert": "Frosted Dessert", //
+  "item.garnished.void_stroganoff": "Void Stroganoff", //
+  "item.garnished.explorers_concoction": "Explorer's Concoction", //
+  "item.garnished.polar_hide_scratch_paper": "Polar Hide Scratch Paper", //
+  "effect.garnished.freezing": "Freezing", //
+  "item.minecraft.potion.effect.freezing": "Potion of Freezing", //
+  "item.minecraft.splash_potion.effect.freezing": "Splash Potion of Freezing", //
+  "item.minecraft.lingering_potion.effect.freezing": "Lingering Potion of Freezing", //
+  "item.minecraft.tipped_arrow.effect.freezing": "Tipped Arrow of Freezing", //
+  "item.minecraft.potion.effect.long_freezing": "Potion of Freezing", //
+  "item.minecraft.splash_potion.effect.long_freezing": "Splash Potion of Freezing", //
+  "item.minecraft.lingering_potion.effect.long_freezing": "Lingering Potion of Freezing", //
+  "item.minecraft.tipped_arrow.effect.long_freezing": "Tipped Arrow of Freezing", //
+  "create.recipe.garnished.fan_freezing.fan": "Fan behind Powder Snow", //
+  "recipe.garnished.fan_freezing": "Bulk Freezing", //
+  "create.recipe.garnished.red_dye_blowing.fan": "Fan behind Red Liquefied Mastic Resin", //
+  "recipe.garnished.red_dye_blowing": "Bulk Dyeing", //
+  "create.recipe.garnished.orange_dye_blowing.fan": "Fan behind Orange Liquefied Mastic Resin", //
+  "recipe.garnished.orange_dye_blowing": "Bulk Dyeing", //
+  "create.recipe.garnished.yellow_dye_blowing.fan": "Fan behind Yellow Liquefied Mastic Resin", //
+  "recipe.garnished.yellow_dye_blowing": "Bulk Dyeing", //
+  "create.recipe.garnished.green_dye_blowing.fan": "Fan behind Green Liquefied Mastic Resin", //
+  "recipe.garnished.green_dye_blowing": "Bulk Dyeing", //
+  "create.recipe.garnished.blue_dye_blowing.fan": "Fan behind Blue Liquefied Mastic Resin", //
+  "recipe.garnished.blue_dye_blowing": "Bulk Dyeing", //
+  "create.recipe.garnished.purple_dye_blowing.fan": "Fan behind Purple Liquefied Mastic Resin", //
+  "recipe.garnished.purple_dye_blowing": "Bulk Dyeing", //
+
   "block.garnished.peanut_sack": "Мешочек орехов",
   "block.garnished.cashew_sack": "Мешочек орехов",
   "block.garnished.almond_sack": "Мешочек орехов",
@@ -524,27 +558,27 @@
   "item.garnished.green_mastic_resin_bucket": "Ведро цветной мастической смолы",
   "item.garnished.blue_mastic_resin_bucket": "Ведро цветной мастической смолы",
   "item.garnished.purple_mastic_resin_bucket": "Ведро цветной мастической смолы",
-  "fluid.garnished.garnish": "Жидкая приправа",
+  "fluid.liquid_garnish": "Жидкая приправа",
   "block.garnished.garnish": "Жидкая приправа",
-  "fluid.garnished.apple_cider": "Яблочный сидр",
+  "fluid.apple_cider": "Яблочный сидр",
   "block.garnished.apple_cider": "Яблочный сидр",
-  "fluid.garnished.peanut_oil": "Арахисовое масло",
+  "fluid.peanut_oil": "Арахисовое масло",
   "block.garnished.peanut_oil": "Арахисовое масло",
-  "fluid.garnished.cashew_mixture": "Смесь кешью",
+  "fluid.cashew_mixture": "Смесь кешью",
   "block.garnished.cashew_mixture": "Смесь кешью",
-  "fluid.garnished.mastic_resin": "Жидкая мастическая смола",
+  "fluid.mastic_resin": "Жидкая мастическая смола",
   "block.garnished.mastic_resin": "Жидкая мастическая смола",
-  "fluid.garnished.red_mastic_resin": "Жидкая цветная мастическая смола",
+  "fluid.red_mastic_resin": "Жидкая цветная мастическая смола",
   "block.garnished.red_mastic_resin": "Жидкая цветная мастическая смола",
-  "fluid.garnished.orange_mastic_resin": "Жидкая цветная мастическая смола",
+  "fluid.orange_mastic_resin": "Жидкая цветная мастическая смола",
   "block.garnished.orange_mastic_resin": "Жидкая цветная мастическая смола",
-  "fluid.garnished.yellow_mastic_resin": "Жидкая цветная мастическая смола",
+  "fluid.yellow_mastic_resin": "Жидкая цветная мастическая смола",
   "block.garnished.yellow_mastic_resin": "Жидкая цветная мастическая смола",
-  "fluid.garnished.green_mastic_resin": "Жидкая цветная мастическая смола",
+  "fluid.green_mastic_resin": "Жидкая цветная мастическая смола",
   "block.garnished.green_mastic_resin": "Жидкая цветная мастическая смола",
-  "fluid.garnished.blue_mastic_resin": "Жидкая цветная мастическая смола",
+  "fluid.blue_mastic_resin": "Жидкая цветная мастическая смола",
   "block.garnished.blue_mastic_resin": "Жидкая цветная мастическая смола",
-  "fluid.garnished.purple_mastic_resin": "Жидкая цветная мастическая смола",
+  "fluid.purple_mastic_resin": "Жидкая цветная мастическая смола",
   "block.garnished.purple_mastic_resin": "Жидкая цветная мастическая смола",
 
   "block.garnished.nut_plant": "Ореховый росток",

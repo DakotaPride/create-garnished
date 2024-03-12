@@ -23,6 +23,8 @@ public class GarnishedTags {
 	public static final TagKey<EntityType<?>> IS_AFFECTED_BY_RAVAGING = commonTag("affected_by/ravaging", Registry.ENTITY_TYPE);
 	public static final TagKey<Block> CARNOTITE_BLOCKS = garnishedTag("carnotite", Registry.BLOCK);
 	public static final TagKey<Biome> HAS_REMNANT_TAG = garnishedTag("has_remnant", Registry.BIOME_REGISTRY);
+	public static final TagKey<Block> FAN_FREEZING_PROCESSING_TAG = garnishedTag("fan_processing_catalysts/freezing", Registry.BLOCK);
+	public static final TagKey<Fluid> FAN_FREEZING_PROCESSING_FLUID_TAG = garnishedTag("fan_processing_catalysts/freezing", Registry.FLUID);
 
 	// Integrated Tags
 	// public static TagKey<Item> ZINC_INGOTS = commonItemTag("ingots/zinc");

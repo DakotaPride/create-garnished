@@ -1,7 +1,9 @@
 package net.dakotapride.garnished;
 
 import net.dakotapride.garnished.modifier.LootTableModifiers;
+import net.dakotapride.garnished.recipe.GarnishedFanProcessing;
 import net.dakotapride.garnished.registry.GarnishedEnchantments;
+import net.dakotapride.garnished.registry.GarnishedRecipeTypes;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
@@ -31,12 +33,14 @@ import net.fabricmc.fabric.api.registry.StrippableBlockRegistry;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.PotionBrewing;
 import net.minecraft.world.item.alchemy.Potions;
+import plus.dragons.createdragonlib.lang.Lang;
 
 public class CreateGarnished implements ModInitializer {
 
 	public static final String ID = "garnished";
 	public static final String NAME = "Create: Garnished";
 	public static final Logger LOGGER = LoggerFactory.getLogger(NAME);
+	public static final Lang LANG = new Lang(ID);
 	private static final NonNullSupplier<CreateRegistrate> REGISTRATE =
 			NonNullSupplier.lazy(() -> CreateRegistrate.create(ID));
 
@@ -57,6 +61,8 @@ public class CreateGarnished implements ModInitializer {
 		GarnishedTags.setRegister();
 		GarnishedEnchantments.setRegister();
 		LootTableModifiers.modifyLootTables();
+		GarnishedRecipeTypes.register();
+		GarnishedFanProcessing.register();
 		REGISTRATE.get().register();
 
 		// Generation
@@ -98,6 +104,9 @@ public class CreateGarnished implements ModInitializer {
 		PotionBrewing.addMix(Potions.AWKWARD, GarnishedItems.VOLATILE_DUST.get(), GarnishedEffects.SANCTITY_POTION);
 
 		PotionBrewing.addMix(Potions.MUNDANE, GarnishedItems.SOLEMN_DUST.get(), GarnishedEffects.MUMMIFICATION_POTION);
+
+		PotionBrewing.addMix(Potions.THICK, GarnishedItems.FROST.get(), GarnishedEffects.FREEZING_POTION);
+		PotionBrewing.addMix(GarnishedEffects.FREEZING_POTION, Items.REDSTONE, GarnishedEffects.LONG_FREEZING_POTION);
 
 		StrippableBlockRegistry.register(GarnishedBlocks.SEPIA_STEM.get(), GarnishedBlocks.STRIPPED_SEPIA_STEM.get());
 		StrippableBlockRegistry.register(GarnishedBlocks.SEPIA_HYPHAE.get(), GarnishedBlocks.STRIPPED_SEPIA_HYPHAE.get());

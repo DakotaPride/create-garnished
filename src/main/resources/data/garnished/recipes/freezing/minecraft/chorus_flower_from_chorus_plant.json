@@ -1,0 +1,14 @@
+{
+  "type": "garnished:freezing",
+  "ingredients": [
+    {
+      "item": "minecraft:chorus_plant"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:chorus_flower",
+      "count": 1
+    }
+  ]
+}
