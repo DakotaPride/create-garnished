@@ -1,0 +1,14 @@
+{
+  "type": "garnished:green_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:wool"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:green_wool",
+      "count": 1
+    }
+  ]
+}

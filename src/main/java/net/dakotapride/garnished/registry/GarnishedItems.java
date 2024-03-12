@@ -12,6 +12,7 @@ import net.dakotapride.garnished.item.hatchet.tier.IronHatchetToolItem;
 import net.dakotapride.garnished.item.hatchet.tier.NetheriteHatchetToolItem;
 import net.dakotapride.garnished.item.hatchet.tier.StoneHatchetToolItem;
 import net.dakotapride.garnished.item.hatchet.tier.WoodenHatchetToolItem;
+import net.dakotapride.garnished.item.scratch_paper.PolarHideScratchPaperItem;
 import net.dakotapride.garnished.item.wood.NutBoatItem;
 import net.dakotapride.garnished.item.wood.NutSignItem;
 import net.dakotapride.garnished.item.wood.SepiaSignItem;
@@ -631,6 +632,31 @@ public class GarnishedItems {
 			REGISTRATE.item("bristled_flour", Item::new).register();
 	public static final ItemEntry<Item> BRISTLED_TORTILLA =
 			REGISTRATE.item("bristled_tortilla", Item::new).register();
+
+	// Garnished v1.7: Glacial Edge
+	public static final ItemEntry<RawPolarBearMeatItem> RAW_POLAR_BEAR_MEAT =
+			REGISTRATE.item("raw_polar_bear_meat", RawPolarBearMeatItem::new).register();
+	public static final ItemEntry<CookedPolarBearMeatItem> COOKED_POLAR_BEAR_MEAT =
+			REGISTRATE.item("cooked_polar_bear_meat", CookedPolarBearMeatItem::new).register();
+	public static final ItemEntry<FrostedDessertFoodItem> FROSTED_DESSERT =
+			REGISTRATE.item("frosted_dessert", FrostedDessertFoodItem::new).register();
+	public static final ItemEntry<VoidStroganoffFoodItem> VOID_STROGANOFF =
+			REGISTRATE.item("void_stroganoff", VoidStroganoffFoodItem::new).register();
+	public static final ItemEntry<ExplorersConcoctionFoodItem> EXPLORERS_CONCOCTION =
+			REGISTRATE.item("explorers_concoction", ExplorersConcoctionFoodItem::new).register();
+	public static final ItemEntry<ChilledAppleFoodItem> CHILLED_APPLE =
+			REGISTRATE.item("chilled_apple", ChilledAppleFoodItem::new).register();
+
+	public static final ItemEntry<PolarHideScratchPaperItem> POLAR_HIDE_SCRATCH_PAPER =
+			REGISTRATE.item("polar_hide_scratch_paper", PolarHideScratchPaperItem::new).register();
+
+	public static final ItemEntry<Item> FROST =
+			REGISTRATE.item("frost", Item::new).register();
+	public static final ItemEntry<Item> NUMBING_PARCHMENT =
+			REGISTRATE.item("numbing_parchment", Item::new).register();
+	public static final ItemEntry<Item> POLAR_BEAR_HIDE =
+			REGISTRATE.item("polar_bear_hide", Item::new).register();
+
 
 	// Farmer's Delight Items
 	public static final ItemEntry<PecanPieSliceFoodItem> PECAN_PIE_SLICE =

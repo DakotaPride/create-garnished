@@ -1,0 +1,19 @@
+{
+  "type": "garnished:freezing",
+  "ingredients": [
+    {
+      "item": "garnished:mastic_paste_purple"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:purple_dye",
+      "count": 2
+    },
+    {
+      "chance": 0.25,
+      "item": "minecraft:purple_dye",
+      "count": 1
+    }
+  ]
+}

@@ -25,8 +25,8 @@ public class IcyMasticChunkFoodItem extends Item implements IGarnishedItem {
             CriteriaTriggers.CONSUME_ITEM.trigger(serverPlayer, stack);
             serverPlayer.awardStat(Stats.ITEM_USED.get(this));
 
-            livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, baseTick * 5, 2));
-            livingEntity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, baseTick * 8, 1));
+            livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 2));
+            livingEntity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 160, 1));
         }
 
         return super.finishUsingItem(stack, level, livingEntity);

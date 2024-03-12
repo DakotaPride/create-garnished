@@ -31,6 +31,8 @@ repositories {
 	maven { url = "https://maven.jamieswhiteshirt.com/libs-release" } // Reach Entity Attributes
 	maven { url = "https://jitpack.io/" } // Mixin Extras, Fabric ASM
 	maven { url = "https://maven.tterrag.com/" } // Flywheel
+	maven { url = "https://mvn.devos.one/releases" } // Porting Lib Releases
+	maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" } // Forge config api port
 }
 
 dependencies {
@@ -42,6 +44,11 @@ dependencies {
 		it.officialMojangMappings { nameSyntheticMembers = false }
 	})
 	modImplementation("net.fabricmc:fabric-loader:${fabric_loader_version}")
+
+	// Create Dragon Lib
+	// include(modImplementation("plus.dragons.createdragonlib:create_dragon_lib-fabric-${minecraft_version}:${dragonlib_version}"){
+	//		transitive = false
+	//	})
 
 	// dependencies
 	modImplementation("net.fabricmc.fabric-api:fabric-api:${fabric_api_version}")
@@ -68,11 +75,17 @@ dependencies {
 		default: println("Unknown recipe viewer specified: ${recipe_viewer}. Must be JEI, REI, EMI, or disabled.")
 	}
 	// if you would like to add integration with them, uncomment them here.
-//    modCompileOnly("mezz.jei:jei-${minecraft_version}-fabric:${jei_fabric_version}")
-//    modCompileOnly("mezz.jei:jei-${minecraft_version}-common:${jei_fabric_version}")
+//    modCompileOnly("mezz.jei:jei-${minecraft_version}-fabric:${jei_version}")
+//    modCompileOnly("mezz.jei:jei-${minecraft_version}-common:${jei_version}")
 //    modCompileOnly("me.shedaniel:RoughlyEnoughItems-api-fabric:${rei_version}")
 //    modCompileOnly("me.shedaniel:RoughlyEnoughItems-default-plugin-fabric:${rei_version}")
 //    modCompileOnly("dev.emi:emi:${emi_version}")
+
+	// compile against the JEI API but do not include it at runtime
+	modCompileOnlyApi("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
+	modCompileOnlyApi("mezz.jei:jei-${minecraft_version}-fabric-api:${jei_version}")
+	// at runtime, use the full JEI jar for Fabric
+	modRuntimeOnly("mezz.jei:jei-${minecraft_version}-fabric:${jei_version}")
 }
 
 loom {

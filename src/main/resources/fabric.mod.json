@@ -20,6 +20,9 @@
     ],
     "client": [
       "net.dakotapride.garnished.CreateGarnishedClient"
+    ],
+    "jei_mod_plugin": [
+      "net.dakotapride.garnished.registry.JEI.GarnishedJEI"
     ]
   },
   "mixins": [

@@ -1,0 +1,14 @@
+{
+  "type": "garnished:freezing",
+  "ingredients": [
+    {
+      "item": "garnished:mastic_resin_blue"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:icy_mastic_chunk",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "garnished:red_mastic_block",
+    "garnished:orange_mastic_block",
+    "garnished:yellow_mastic_block",
+    "garnished:green_mastic_block",
+    "garnished:blue_mastic_block",
+    "garnished:purple_mastic_block"
+  ]
+}

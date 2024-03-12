@@ -8,5 +8,6 @@ public class GarnishedDamageSource extends DamageSource {
 	}
 
 	public static final GarnishedDamageSource MULCH_MUNCHING = (new GarnishedDamageSource("garnished.mulch_munching"));
+	public static final GarnishedDamageSource FAN_FREEZING = (new GarnishedDamageSource("garnished.fan_freezing"));
 
 }

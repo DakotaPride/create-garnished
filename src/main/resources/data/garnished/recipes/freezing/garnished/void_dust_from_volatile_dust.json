@@ -1,0 +1,14 @@
+{
+  "type": "garnished:freezing",
+  "ingredients": [
+    {
+      "item": "garnished:volatile_dust"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:void_dust",
+      "count": 1
+    }
+  ]
+}

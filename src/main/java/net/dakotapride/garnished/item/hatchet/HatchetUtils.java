@@ -2,10 +2,9 @@ package net.dakotapride.garnished.item.hatchet;
 
 import java.util.Random;
 
-import net.dakotapride.garnished.registry.GarnishedBlocks;
-
 import org.spongepowered.asm.mixin.Unique;
 
+import net.dakotapride.garnished.registry.GarnishedBlocks;
 import net.dakotapride.garnished.registry.GarnishedEnchantments;
 import net.dakotapride.garnished.registry.GarnishedItems;
 import net.dakotapride.garnished.registry.GarnishedTags;
@@ -13,6 +12,7 @@ import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.AxeItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
@@ -43,7 +43,7 @@ public class HatchetUtils {
         String mob = "Unavailable";
         String enchant = "Unavailable";
 
-        // Salvaging Loot Drops
+        // Salvaging Loot Drops - Passive/Neutral mobs
         if (hasSalvaging(attacker)) {
             enchant = "Salvaging";
 
@@ -108,20 +108,62 @@ public class HatchetUtils {
                 }
             }
 
-			if (MobHelper.isTurtle(entity)) {
-				mob = "Turtle";
+            // if (MobHelper.isFrog(entity)) {
+			//                mob = "Frog";
+			//
+			//                int magmaCreamDropChance = random.nextInt(28);
+			//                int moltenRemnantDropChance = 0;
+			//
+			//                if (isCorrectEnchantmentLevel(salvaging, attacker, 1)) {
+			//                    moltenRemnantDropChance = random.nextInt(60);
+			//                } else if (isCorrectEnchantmentLevel(salvaging, attacker, 2)) {
+			//                    moltenRemnantDropChance = random.nextInt(40);
+			//                }
+			//
+			//                if (magmaCreamDropChance == 1) {
+			//                    int magmaCreamCount = singleCount + random.nextInt(2);
+			//
+			//                    entity.spawnAtLocation(new ItemStack(Items.MAGMA_CREAM, magmaCreamCount));
+			//                }
+			//
+			//                if (moltenRemnantDropChance == 1) {
+			//                    int moltenRemnantCount = singleCount + random.nextInt(1);
+			//
+			//                    entity.spawnAtLocation(new ItemStack(GarnishedItems.MOLTEN_REMNANT.get(), moltenRemnantCount));
+			//                }
+			//            }
 
-				int voltaicSeaGrassDropChance = random.nextInt(12);
+            if (MobHelper.isTurtle(entity)) {
+                mob = "Turtle";
 
-				if (voltaicSeaGrassDropChance == 1) {
-					int volaticSeaGrassDropCount = singleCount + random.nextInt(2);
+                int voltaicSeaGrassDropChance = random.nextInt(12);
 
-					entity.spawnAtLocation(new ItemStack(GarnishedBlocks.VOLTAIC_SEA_GRASS.get(), volaticSeaGrassDropCount));
-				}
-			}
+                if (voltaicSeaGrassDropChance == 1) {
+                    int volaticSeaGrassDropCount = singleCount + random.nextInt(2);
+
+                    entity.spawnAtLocation(new ItemStack(GarnishedBlocks.VOLTAIC_SEA_GRASS.get(), volaticSeaGrassDropCount));
+                }
+            }
+
+            if (MobHelper.isPolarBear(entity) && !entity.isBaby()) {
+                mob = "PolarBear";
+
+                int polarBearHideDropChance = random.nextInt(4);
+                int polarBearHideDropCount = singleCount + random.nextInt(3);
+                int rawPolarBearMeatDropChance = random.nextInt(2);
+                int rawPolarBearMeatDropCount = singleCount + random.nextInt(2);
+
+                if (polarBearHideDropChance == 1) {
+                    entity.spawnAtLocation(new ItemStack(GarnishedItems.POLAR_BEAR_HIDE.get(), polarBearHideDropCount));
+                }
+
+                if (rawPolarBearMeatDropChance == 1) {
+                    entity.spawnAtLocation(new ItemStack(GarnishedItems.RAW_POLAR_BEAR_MEAT.get(), rawPolarBearMeatDropCount));
+                }
+            }
         }
 
-        // Ravaging Loot Drops
+        // Ravaging Loot Drops - Hostile mobs
         if (hasRavaging(attacker)) {
             enchant = "Ravaging";
 
@@ -140,6 +182,16 @@ public class HatchetUtils {
                 } else if (moltenRemnantDropChance == 1) {
                     entity.spawnAtLocation(new ItemStack(GarnishedItems.MOLTEN_REMNANT.get(), moltenRemnantDropCount));
                 }
+
+                // if (froglightDropChance == 1) {
+				//                    if (froglightVariant == 0) {
+				//                        entity.spawnAtLocation(new ItemStack(Items.OCHRE_FROGLIGHT, singleCount));
+				//                    } else if (froglightVariant == 1) {
+				//                        entity.spawnAtLocation(new ItemStack(Items.VERDANT_FROGLIGHT, singleCount));
+				//                    } else if (froglightVariant == 2) {
+				//                        entity.spawnAtLocation(new ItemStack(Items.PEARLESCENT_FROGLIGHT, singleCount));
+				//                    }
+				//                }
             }
 
             if (MobHelper.isBlaze(entity)) {
@@ -169,18 +221,37 @@ public class HatchetUtils {
                 int additionalDropCount = singleCount + random.nextInt(3);
                 int ghastTearDropChance = random.nextInt(12);
                 int ghastTearDropCount = singleCount + random.nextInt(2);
-				int ghastTendrilDropChance = random.nextInt(8);
-				int ghastTendrilDropCount = singleCount + random.nextInt(2);
+                int ghastTendrilDropChance = random.nextInt(8);
+                int ghastTendrilDropCount = singleCount + random.nextInt(2);
 
-				if (additionalDropChance == 1) {
-					entity.spawnAtLocation(new ItemStack(Items.GUNPOWDER, additionalDropCount));
-				} else if (ghastTearDropChance == 1) {
-					entity.spawnAtLocation(new ItemStack(Items.GHAST_TEAR, ghastTearDropCount));
-				}
+                if (additionalDropChance == 1) {
+                    entity.spawnAtLocation(new ItemStack(Items.GUNPOWDER, additionalDropCount));
+                } else if (ghastTearDropChance == 1) {
+                    entity.spawnAtLocation(new ItemStack(Items.GHAST_TEAR, ghastTearDropCount));
+                }
 
-				if (ghastTendrilDropChance == 1) {
-					entity.spawnAtLocation(new ItemStack(GarnishedItems.GHAST_TENDRIL.get(), ghastTendrilDropCount));
-				}
+                if (ghastTendrilDropChance == 1) {
+                    entity.spawnAtLocation(new ItemStack(GarnishedItems.GHAST_TENDRIL.get(), ghastTendrilDropCount));
+                }
+            }
+
+            // if (MobHelper.isWarden(entity)) {
+			//                mob = "Warden";
+			//
+			//                int rawTenebrousMeatDropCount = singleCount + random.nextInt(6);
+			//
+			//                entity.spawnAtLocation(new ItemStack(GarnishedItems.RAW_TENEBROUS_MEAT.get(), rawTenebrousMeatDropCount));
+			//            }
+
+            if (MobHelper.isStray(entity)) {
+                mob = "Stray";
+
+                int numbingParchmentDropChance = random.nextInt(6);
+                int numbingParchmentDropCount = singleCount + random.nextInt(3);
+
+                if (numbingParchmentDropChance == 1) {
+                    entity.spawnAtLocation(new ItemStack(GarnishedItems.NUMBING_PARCHMENT.get(), numbingParchmentDropCount));
+                }
             }
         }
 
@@ -208,6 +279,10 @@ public class HatchetUtils {
         return entity.getMainHandItem().is(GarnishedTags.HATCHETS_TAG) && hasEnchantment(ravaging, entity) && entity.getHealth() <= 10;
     }
 
+    public static boolean canBeUsedToStripLogs(ItemStack stack) {
+        return stack.getItem() instanceof AxeItem || stack.getItem() instanceof HatchetToolItem;
+    }
+
 
 
     @Unique
@@ -223,6 +298,18 @@ public class HatchetUtils {
 
     public static class MobHelper {
         public MobHelper() {}
+
+        public static boolean isStray(Entity entity) {
+            return entity.getType() == EntityType.STRAY;
+        }
+
+        public static boolean isPolarBear(Entity entity) {
+            return entity.getType() == EntityType.POLAR_BEAR;
+        }
+
+        // public static boolean isWarden(Entity entity) {
+		//            return entity.getType() == EntityType.WARDEN;
+		//        }
 
         public static boolean isPhantom(Entity entity) {
             return entity.getType() == EntityType.PHANTOM;
@@ -245,7 +332,7 @@ public class HatchetUtils {
         }
 
         public static boolean isSkeletonOrSimilar(Entity entity) {
-            return isWitherBoss(entity) || isWitherSkeleton(entity) || isSkeleton(entity) || isSkeletonHorse(entity) || isPhantom(entity);
+            return isWitherBoss(entity) || isWitherSkeleton(entity) || isSkeleton(entity) || isSkeletonHorse(entity) || isPhantom(entity) || isStray(entity);
         }
 
         public static boolean isHusk(Entity entity) {
@@ -300,10 +387,6 @@ public class HatchetUtils {
             return isSalmon(entity) || isCod(entity) || isPufferfish(entity) || isTropicalFish(entity);
         }
 
-		public static boolean isTurtle(Entity entity) {
-			return entity.getType() == EntityType.TURTLE;
-		}
-
         public static boolean isSquid(Entity entity) {
             return entity.getType() == EntityType.SQUID;
         }
@@ -315,12 +398,32 @@ public class HatchetUtils {
         public static boolean isSquidOrSimilar(Entity entity) {
             return isSquid(entity) || isGlowSquid(entity);
         }
+
+        // public static boolean isFrog(Entity entity) {
+		//            return entity.getType() == EntityType.FROG;
+		//        }
+
+        public static boolean isTurtle(Entity entity) {
+            return entity.getType() == EntityType.TURTLE;
+        }
+
+        // public static boolean isTadpole(Entity entity) {
+		//            return entity.getType() == EntityType.TADPOLE;
+		//        }
+		//
+        // public static boolean isFrogOrSimilar(Entity entity) {
+		//            return isFrog(entity) || isTadpole(entity);
+		//        }
+		//
+		//        public static boolean isAllay(Entity entity) {
+		//            return entity.getType() == EntityType.ALLAY;
+		//        }
     }
 
     public static class DevAssistance {
 
         public static void printLootTableToConsole(String enchant, String mob) {
-            if (FabricLoader.getInstance().isDevelopmentEnvironment()) {
+            if (!FabricLoader.getInstance().isDevelopmentEnvironment()) {
                 System.out.println("[Create: Garnished] " + enchant + " Loot Tables Loaded (MobHelper.is" + mob + "(entity))");
             }
         }

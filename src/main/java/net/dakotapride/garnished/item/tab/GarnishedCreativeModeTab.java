@@ -18,7 +18,6 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 
 	@Override
 	public void fillItemList(@NotNull NonNullList<ItemStack> items) {
-
 		items.add(GarnishedItems.CRACKED_CASHEW.asStack());
 		items.add(GarnishedItems.UNGARNISHED_CASHEW.asStack());
 		items.add(GarnishedItems.CASHEW.asStack());
@@ -150,6 +149,7 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 		items.add(GarnishedItems.NUT_NACHO.asStack());
 		items.add(GarnishedItems.BRITTLE_DUST.asStack());
 		items.add(GarnishedItems.SENILE_DUST.asStack());
+		items.add(GarnishedItems.SENILE_SPREAD.asStack());
 		items.add(GarnishedItems.CRIMSON_TUSK.asStack());
 		items.add(GarnishedItems.SILICA_HARDENED_WRAP.asStack());
 		items.add(GarnishedItems.ENFLAMED_MANDIBLE.asStack());
@@ -174,6 +174,8 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 
 		items.add(GarnishedItems.MUD_PIE.asStack());
 		items.add(GarnishedItems.MULCH.asStack());
+
+		items.add(GarnishedItems.MOLTEN_STEW.asStack());
 
 		items.add(GarnishedItems.VENERABLE_DOUGH.asStack());
 		items.add(GarnishedItems.VENERABLE_DELICACY_RED.asStack());
@@ -249,9 +251,20 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 		items.add(GarnishedItems.PRICKLY_PEAR_STEW.asStack());
 		items.add(GarnishedItems.STEW_OF_THE_DAMNED.asStack());
 
+		items.add(GarnishedItems.RAW_POLAR_BEAR_MEAT.asStack());
+		items.add(GarnishedItems.COOKED_POLAR_BEAR_MEAT.asStack());
+		items.add(GarnishedItems.VOID_STROGANOFF.asStack());
+		items.add(GarnishedItems.EXPLORERS_CONCOCTION.asStack());
+		items.add(GarnishedItems.FROSTED_DESSERT.asStack());
+		items.add(GarnishedItems.CHILLED_APPLE.asStack());
+
+		items.add(GarnishedItems.MOLTEN_REMNANT.asStack());
+
 		items.add(GarnishedItems.GHAST_TENDRIL.asStack());
 
 		items.add(GarnishedItems.VOLATILE_DUST.asStack());
+
+		items.add(GarnishedItems.SOLEMN_DUST.asStack());
 
 		items.add(GarnishedBlocks.VERMILION_KELP.asStack());
 		items.add(GarnishedBlocks.DULSE_KELP.asStack());
@@ -263,6 +276,11 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 		items.add(GarnishedItems.BRISTLED_TORTILLA.asStack());
 		items.add(GarnishedItems.AMBER_REMNANT.asStack());
 		items.add(GarnishedItems.SHATTERED_AMBER_REMNANT.asStack());
+
+		items.add(GarnishedItems.FROST.asStack());
+		items.add(GarnishedItems.NUMBING_PARCHMENT.asStack());
+		items.add(GarnishedItems.POLAR_BEAR_HIDE.asStack());
+		items.add(GarnishedItems.POLAR_HIDE_SCRATCH_PAPER.asStack());
 
 		items.add(GarnishedBlocks.SEPIA_FUNGUS.asStack());
 		items.add(GarnishedBlocks.SOUL_ROOTS.asStack());
@@ -281,7 +299,6 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 		items.add(GarnishedItems.BOTTLED_ENDER_JELLY.asStack());
 		items.add(GarnishedItems.CHORUS_COCKTAIL.asStack());
 		items.add(GarnishedItems.ILLUMINATING_COCKTAIL.asStack());
-		items.add(GarnishedItems.ROSY_COCKTAIL.asStack());
 
 		items.add(GarnishedItems.GARNISH_COMPOUND.asStack());
 		items.add(GarnishedItems.GARNISH_POWDER.asStack());

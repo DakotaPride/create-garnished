@@ -1,0 +1,19 @@
+{
+  "type": "garnished:freezing",
+  "ingredients": [
+    {
+      "item": "garnished:mastic_paste_green"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:green_dye",
+      "count": 2
+    },
+    {
+      "chance": 0.25,
+      "item": "minecraft:green_dye",
+      "count": 1
+    }
+  ]
+}
