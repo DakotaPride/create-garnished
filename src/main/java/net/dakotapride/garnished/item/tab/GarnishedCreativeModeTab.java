@@ -370,6 +370,14 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 			items.add(GarnishedItems.NUT_BOAT.asStack());
 			items.add(GarnishedItems.NUT_CHEST_BOAT.asStack());
 
+			items.add(GarnishedBlocks.MASTIC_BLOCK.asStack());
+			items.add(GarnishedBlocks.RED_MASTIC_BLOCK.asStack());
+			items.add(GarnishedBlocks.ORANGE_MASTIC_BLOCK.asStack());
+			items.add(GarnishedBlocks.YELLOW_MASTIC_BLOCK.asStack());
+			items.add(GarnishedBlocks.GREEN_MASTIC_BLOCK.asStack());
+			items.add(GarnishedBlocks.BLUE_MASTIC_BLOCK.asStack());
+			items.add(GarnishedBlocks.PURPLE_MASTIC_BLOCK.asStack());
+
 			items.add(GarnishedBlocks.ABYSSAL_STONE.asStack());
 			items.add(GarnishedBlocks.ABYSSAL_STONE_SLAB.asStack());
 			items.add(GarnishedBlocks.ABYSSAL_STONE_STAIRS.asStack());
