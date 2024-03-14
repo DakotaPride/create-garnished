@@ -370,6 +370,14 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.NUT_BOAT.asStack());
 			output.accept(GarnishedItems.NUT_CHEST_BOAT.asStack());
 
+			output.accept(GarnishedBlocks.MASTIC_BLOCK.asStack());
+			output.accept(GarnishedBlocks.RED_MASTIC_BLOCK.asStack());
+			output.accept(GarnishedBlocks.ORANGE_MASTIC_BLOCK.asStack());
+			output.accept(GarnishedBlocks.YELLOW_MASTIC_BLOCK.asStack());
+			output.accept(GarnishedBlocks.GREEN_MASTIC_BLOCK.asStack());
+			output.accept(GarnishedBlocks.BLUE_MASTIC_BLOCK.asStack());
+			output.accept(GarnishedBlocks.PURPLE_MASTIC_BLOCK.asStack());
+
 			output.accept(GarnishedBlocks.ABYSSAL_STONE.asStack());
 			output.accept(GarnishedBlocks.ABYSSAL_STONE_SLAB.asStack());
 			output.accept(GarnishedBlocks.ABYSSAL_STONE_STAIRS.asStack());
