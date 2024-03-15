@@ -1,0 +1,23 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "garnished:voltaic_sea_grass",
+          "conditions": [
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "garnished:salvaging",
+              "chances": [
+                0.083,
+                0.125
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

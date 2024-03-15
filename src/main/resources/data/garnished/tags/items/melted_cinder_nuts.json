@@ -1,14 +1,15 @@
 {
   "replace": false,
   "values": [
-    "#garnished:melted_cinder_nuts_with_effects",
+    "garnished:melted_cinder_cashew",
+    "garnished:melted_cinder_walnut",
     "garnished:melted_cinder_almond",
     "garnished:melted_cinder_pecan",
-    "garnished:melted_cinder_walnut",
-    "garnished:melted_cinder_cashew",
     "garnished:melted_cinder_pistachio",
     "garnished:melted_cinder_macadamia",
     "garnished:melted_cinder_peanut",
-    "garnished:melted_cinder_hazelnut"
+    "garnished:melted_cinder_hazelnut",
+    "garnished:melted_cinder_chestnut",
+    "#garnished:melted_cinder_nuts_with_effects"
   ]
 }

@@ -1,13 +1,14 @@
 {
   "replace": false,
   "values": [
+    "garnished:cinder_cashew_speed",
+    "garnished:cinder_walnut_strength",
     "garnished:cinder_almond_haste",
     "garnished:cinder_pecan_resistance",
-    "garnished:cinder_walnut_strength",
-    "garnished:cinder_cashew_speed",
     "garnished:cinder_pistachio_night_vision",
     "garnished:cinder_macadamia_fire_resistance",
     "garnished:cinder_peanut_effect",
-    "garnished:cinder_hazelnut_speed_potent"
+    "garnished:cinder_hazelnut_speed_potent",
+    "garnished:cinder_chestnut_slow_falling"
   ]
 }

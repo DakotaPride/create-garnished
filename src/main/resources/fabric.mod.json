@@ -23,6 +23,9 @@
     ],
     "jei_mod_plugin": [
       "net.dakotapride.garnished.registry.JEI.GarnishedJEI"
+    ],
+    "emi": [
+      "net.dakotapride.garnished.registry.EMI.GarnishedEMI"
     ]
   },
   "mixins": [

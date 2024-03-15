@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "garnished:ungarnished_peanut"
+    },
+    {
+      "item": "garnished:garnish_compound"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:peanut"
+    }
+  ]
+}

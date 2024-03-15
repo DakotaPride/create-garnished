@@ -1,13 +1,14 @@
 {
   "replace": false,
   "values": [
+    "garnished:cracked_cashew",
+    "garnished:cracked_walnut",
     "garnished:cracked_almond",
     "garnished:cracked_pecan",
-    "garnished:cracked_walnut",
-    "garnished:cracked_cashew",
     "garnished:cracked_pistachio",
     "garnished:cracked_macadamia",
     "garnished:cracked_peanut",
-    "garnished:cracked_hazelnut"
+    "garnished:cracked_hazelnut",
+    "garnished:cracked_chestnut"
   ]
 }

@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "item": "garnished:garnish_compound"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:garnished_sweet_berries"
+    }
+  ]
+}

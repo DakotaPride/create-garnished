@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "garnished:polar_bear_hide"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:polar_hide_scratch_paper"
+    }
+  ]
+}
