@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "garnished:slime_drop"
+    },
+    {
+      "item": "garnished:mastic_paste_blue"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:slime_drop_blue"
+    }
+  ]
+}

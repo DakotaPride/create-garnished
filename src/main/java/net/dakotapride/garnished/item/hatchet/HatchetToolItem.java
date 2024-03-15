@@ -1,25 +1,30 @@
 package net.dakotapride.garnished.item.hatchet;
 
 import java.util.Map;
+import java.util.Objects;
 import java.util.Optional;
-
-import io.github.fabricators_of_create.porting_lib.enchant.CustomEnchantingBehaviorItem;
-import io.github.fabricators_of_create.porting_lib.tool.ToolAction;
-import io.github.fabricators_of_create.porting_lib.tool.ToolActions;
 
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import com.google.common.collect.ImmutableMap;
 
+import io.github.fabricators_of_create.porting_lib.enchant.CustomEnchantingBehaviorItem;
+import io.github.fabricators_of_create.porting_lib.tool.ToolActions;
+import it.unimi.dsi.fastutil.objects.ObjectArrayList;
 import net.dakotapride.garnished.registry.GarnishedEnchantments;
 import net.dakotapride.garnished.registry.GarnishedTags;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -30,12 +35,18 @@ import net.minecraft.world.item.Vanishable;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
+import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.gameevent.GameEvent;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.storage.loot.LootTable;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParam;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
+import net.minecraft.world.level.storage.loot.parameters.LootContextParams;
 
 public class HatchetToolItem extends DiggerItem implements Vanishable, CustomEnchantingBehaviorItem {
     protected static final Map<Block, Block> STRIPPABLES =
@@ -183,4 +194,66 @@ public class HatchetToolItem extends DiggerItem implements Vanishable, CustomEnc
 
         return block.is(GarnishedTags.MINEABLE_WITH_HATCHET);
     }
+
+
+
+	public void dropsUponDeath(LivingEntity user, LivingEntity victim) {
+		if (!victim.level().isClientSide() && victim.getServer().getGameRules().getBoolean(GameRules.RULE_DOMOBLOOT)) {
+			// ResourceLocation id = null;
+			// ResourceLocation resourceLocation = BuiltInRegistries.ENTITY_TYPE.getKey(victim.getType());
+			//			id = resourceLocation.withPrefix("ravaging/");
+			EntityType<?> type = victim.getType();
+
+			LootTable lootTable;
+			LootParams lootContextParameterSet;
+			Player player;
+			ObjectArrayList<ItemStack> list;
+			LootParams.Builder builder;
+			LootContextParam<DamageSource> ctxParameters;
+			DamageSource source;
+			if (victim.getServer() != null) {
+
+				if (HatchetUtils.hasRavaging(user) && HatchetUtils.isAffectedByRavaging(victim)) {
+					lootTable = victim.getServer().getLootData().getLootTable(new ResourceLocation(BuiltInRegistries.ENTITY_TYPE.getKey(type).getNamespace(), "entities/ravaging/" + type.toShortString()));
+
+					builder = (new LootParams.Builder((ServerLevel) user.level())).withParameter(LootContextParams.ORIGIN, user.position()).withParameter(LootContextParams.THIS_ENTITY, user);
+					ctxParameters = LootContextParams.DAMAGE_SOURCE;
+					if (user instanceof Player) {
+						player = (Player) user;
+						source = user.damageSources().playerAttack(player);
+					} else {
+						source = user.damageSources().mobAttack(user);
+					}
+
+					lootContextParameterSet = builder.withParameter(ctxParameters, source).create(LootContextParamSets.ENTITY);
+					list = lootTable.getRandomItems(lootContextParameterSet);
+					Objects.requireNonNull(victim);
+					list.forEach(victim::spawnAtLocation);
+
+					System.out.println(new ResourceLocation(BuiltInRegistries.ENTITY_TYPE.getKey(type).getNamespace(), "entities/ravaging/" + type.toShortString()));
+				} else if (HatchetUtils.hasSalvaging(user) && HatchetUtils.isAffectedBySalvaging(victim)) {
+					lootTable = victim.getServer().getLootData().getLootTable(new ResourceLocation(BuiltInRegistries.ENTITY_TYPE.getKey(type).getNamespace(), "entities/salvaging/" + type.toShortString()));
+
+					builder = (new LootParams.Builder((ServerLevel) user.level())).withParameter(LootContextParams.ORIGIN, user.position()).withParameter(LootContextParams.THIS_ENTITY, user);
+					ctxParameters = LootContextParams.DAMAGE_SOURCE;
+					if (user instanceof Player) {
+						player = (Player) user;
+						source = user.damageSources().playerAttack(player);
+					} else {
+						source = user.damageSources().mobAttack(user);
+					}
+
+					lootContextParameterSet = builder.withParameter(ctxParameters, source).create(LootContextParamSets.ENTITY);
+					list = lootTable.getRandomItems(lootContextParameterSet);
+					Objects.requireNonNull(victim);
+					list.forEach(victim::spawnAtLocation);
+
+					System.out.println(new ResourceLocation(BuiltInRegistries.ENTITY_TYPE.getKey(type).getNamespace(), "entities/salvaging/" + type.toShortString()));
+				}
+
+				// System.out.println(new ResourceLocation(BuiltInRegistries.ENTITY_TYPE.getKey(type).getNamespace(), "entities/" + modifier + type.toShortString()));
+			}
+		}
+
+	}
 }

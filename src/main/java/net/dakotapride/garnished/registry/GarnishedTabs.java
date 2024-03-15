@@ -271,6 +271,13 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.PRICKLY_PEAR_STEW);
 			output.accept(GarnishedItems.STEW_OF_THE_DAMNED);
 
+			output.accept(GarnishedItems.RAW_POLAR_BEAR_MEAT);
+			output.accept(GarnishedItems.COOKED_POLAR_BEAR_MEAT);
+			output.accept(GarnishedItems.VOID_STROGANOFF);
+			output.accept(GarnishedItems.EXPLORERS_CONCOCTION);
+			output.accept(GarnishedItems.FROSTED_DESSERT);
+			output.accept(GarnishedItems.CHILLED_APPLE);
+
 			output.accept(GarnishedItems.GHAST_TENDRIL);
 
 			output.accept(GarnishedItems.VOLATILE_DUST);
@@ -285,6 +292,11 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.BRISTLED_TORTILLA);
 			output.accept(GarnishedItems.AMBER_REMNANT);
 			output.accept(GarnishedItems.SHATTERED_AMBER_REMNANT);
+
+			output.accept(GarnishedItems.FROST);
+			output.accept(GarnishedItems.NUMBING_PARCHMENT);
+			output.accept(GarnishedItems.POLAR_BEAR_HIDE);
+			output.accept(GarnishedItems.POLAR_HIDE_SCRATCH_PAPER);
 
 			output.accept(GarnishedBlocks.SEPIA_FUNGUS.asStack());
 			output.accept(GarnishedBlocks.SOUL_ROOTS.asStack());

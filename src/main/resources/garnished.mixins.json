@@ -11,7 +11,8 @@
     "FluidReactionsMixin",
     "ItemStackMixin",
     "LivingEntityMixin",
-    "MobMixin"
+    "MobMixin",
+    "PlayerMixin"
   ],
   "client": [
     "BlockColoursMixin",

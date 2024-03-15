@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "minecraft:apple"
+    },
+    {
+      "item": "garnished:frost"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:chilled_apple"
+    }
+  ]
+}
