@@ -10,7 +10,8 @@
     "EnderManMixin",
     "FluidReactionsMixin",
     "ItemStackMixin",
-    "LivingEntityMixin"
+    "LivingEntityMixin",
+    "PlayerMixin"
   ],
   "client": [
     "BlockColoursMixin",

@@ -1,8 +1,11 @@
 {
   "replace": false,
   "values": [
-    "minecraft:magma_cube",
     "minecraft:blaze",
-    "minecraft:ghast"
+    "minecraft:magma_cube",
+    "minecraft:ghast",
+    "minecraft:warden",
+    "minecraft:polar_bear",
+    "minecraft:stray"
   ]
 }

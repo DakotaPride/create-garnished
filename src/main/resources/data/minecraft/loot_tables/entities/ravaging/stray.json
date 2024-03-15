@@ -1,0 +1,22 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "garnished:numbing_parchment",
+          "conditions": [
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "garnished:ravaging",
+              "chances": [
+                0.1666
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

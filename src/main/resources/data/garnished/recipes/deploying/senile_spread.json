@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "garnished:senile_dust"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:senile_spread"
+    }
+  ]
+}
