@@ -1,7 +1,7 @@
 {
   "replace": false,
   "values": [
-    "garnished:almond",
-    "garnished:ungarnished_almond"
+    "garnished:ungarnished_almond",
+    "garnished:almond"
   ]
 }
