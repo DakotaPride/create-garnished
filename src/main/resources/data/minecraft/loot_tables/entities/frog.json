@@ -1,0 +1,48 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "chances": [
+            0.0,
+            0.0358,
+            0.0358
+          ],
+          "condition": "minecraft:table_bonus",
+          "enchantment": "garnished:salvaging"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:magma_cream"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "chances": [
+            0.0,
+            0.017,
+            0.025
+          ],
+          "condition": "minecraft:table_bonus",
+          "enchantment": "garnished:salvaging"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "garnished:molten_remnant"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:entities/frog"
+}
