@@ -1,5 +1,5 @@
 {
-  "type": "create:item_application",
+  "type": "deploying",
   "ingredients": [
     {
       "item": "garnished:ungarnished_cashew"
