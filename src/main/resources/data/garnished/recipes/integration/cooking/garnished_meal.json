@@ -12,10 +12,10 @@
   "experience": 1.0,
   "ingredients": [
     {
-      "tag": "garnished:unsweetened_nuts"
+      "tag": "garnished:garnished_nuts"
     },
     {
-      "tag": "garnished:unsweetened_nuts"
+      "tag": "garnished:garnished_nuts"
     },
     {
       "tag": "garnished:honeyed_nuts"
