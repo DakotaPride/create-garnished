@@ -10,6 +10,7 @@
     "FluidReactionsMixin",
     "ItemStackMixin",
     "LivingEntityMixin",
+    "PlayerMixin",
     "PotionBrewingMixin"
   ],
   "client": [

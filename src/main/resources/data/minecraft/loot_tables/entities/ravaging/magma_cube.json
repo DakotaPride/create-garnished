@@ -6,59 +6,6 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:ochre_froglight",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.0625
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:verdant_froglight",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.0625
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:pearlescent_froglight",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 1
-            }
-          ],
-          "conditions": [
-            {
-              "condition": "minecraft:random_chance",
-              "chance": 0.0625
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
           "name": "minecraft:magma_cream",
           "functions": [
             {
