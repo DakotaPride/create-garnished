@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "#garnished:crushable/cashew",
+    "#garnished:crushable/walnut",
+    "#garnished:crushable/almond",
+    "#garnished:crushable/pecan",
+    "#garnished:crushable/pistachio",
+    "#garnished:crushable/macadamia",
+    "#garnished:crushable/peanut",
+    "#garnished:crushable/hazelnut",
+    "#garnished:crushable/chestnut"
+  ]
+}
