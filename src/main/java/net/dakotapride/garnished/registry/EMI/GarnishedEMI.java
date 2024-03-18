@@ -147,8 +147,8 @@ public class GarnishedEMI implements EmiPlugin {
 		// fabric: 81000 droplets = 1000 mb
 		registry.addRecipe(EmiWorldInteractionRecipe.builder()
 				.id(CreateGarnished.asResource("/world/fluid_interaction/" + outputId))
-				.leftInput(EmiStack.of(left, 81000))
-				.rightInput(EmiStack.of(right, 81000), false)
+				.leftInput(EmiStack.of(left, 81000).copy().setRemainder(EmiStack.of(left)))
+				.rightInput(EmiStack.of(right, 81000).copy().setRemainder(EmiStack.of((right))), false)
 				.output(EmiStack.of(output))
 				.build()
 		);
