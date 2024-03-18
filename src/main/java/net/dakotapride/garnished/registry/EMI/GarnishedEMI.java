@@ -4,7 +4,9 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
+import java.util.function.Supplier;
 
+import com.simibubi.create.Create;
 import com.simibubi.create.compat.emi.GhostIngredientHandler;
 import com.simibubi.create.content.equipment.blueprint.BlueprintScreen;
 import com.simibubi.create.content.logistics.filter.AttributeFilterScreen;
@@ -12,6 +14,7 @@ import com.simibubi.create.content.logistics.filter.FilterScreen;
 import com.simibubi.create.content.redstone.link.controller.LinkedControllerScreen;
 import com.simibubi.create.content.trains.schedule.ScheduleScreen;
 
+import io.github.fabricators_of_create.porting_lib.util.FluidUnit;
 import net.dakotapride.garnished.registry.GarnishedBlocks;
 
 import org.jetbrains.annotations.NotNull;
@@ -109,49 +112,139 @@ public class GarnishedEMI implements EmiPlugin {
 		addAll(registry, GarnishedRecipeTypes.PURPLE_DYE_BLOWING, FanPurpleDyeingEmiRecipe::new);
 
 		// In World Interaction recipes
-		addFluidInteractionRecipe(registry, "garnished/calcite", GarnishedFluids.GARNISH.get(),
-				Fluids.LAVA, AllPaletteStoneTypes.CALCITE.getBaseBlock().get());
-		addFluidInteractionRecipe(registry, "garnished/ochrum", GarnishedFluids.APPLE_CIDER.get(),
-				Fluids.LAVA, AllPaletteStoneTypes.OCHRUM.getBaseBlock().get());
-		addFluidInteractionRecipe(registry, "garnished/dripstone", GarnishedFluids.PEANUT_OIL.get(),
-				Fluids.LAVA, AllPaletteStoneTypes.DRIPSTONE.getBaseBlock().get());
-		addFluidInteractionRecipe(registry, "garnished/end_stone", GarnishedFluids.CASHEW_MIXTURE.get(),
-				Fluids.LAVA, Blocks.END_STONE);
-		addFluidInteractionRecipe(registry, "garnished/tuff", GarnishedFluids.MASTIC_RESIN.get(),
-				Fluids.LAVA, AllPaletteStoneTypes.TUFF.getBaseBlock().get());
-		addFluidInteractionRecipe(registry, "garnished/crimsite", GarnishedFluids.RED_MASTIC_RESIN.get(),
-				Fluids.LAVA, AllPaletteStoneTypes.CRIMSITE.getBaseBlock().get());
-		addFluidInteractionRecipe(registry, "garnished/ritualistic_stone", GarnishedFluids.ORANGE_MASTIC_RESIN.get(),
-				Fluids.LAVA, GarnishedBlocks.RITUALISTIC_STONE.get());
-		addFluidInteractionRecipe(registry, "garnished/carnotite", GarnishedFluids.YELLOW_MASTIC_RESIN.get(),
-				Fluids.LAVA, GarnishedBlocks.CARNOTITE.get());
-		addFluidInteractionRecipe(registry, "garnished/veridium", GarnishedFluids.GREEN_MASTIC_RESIN.get(),
-				Fluids.LAVA, AllPaletteStoneTypes.VERIDIUM.getBaseBlock().get());
-		addFluidInteractionRecipe(registry, "garnished/asurine", GarnishedFluids.BLUE_MASTIC_RESIN.get(),
-				Fluids.LAVA, AllPaletteStoneTypes.ASURINE.getBaseBlock().get());
-		addFluidInteractionRecipe(registry, "garnished/abyssal_stone", GarnishedFluids.PURPLE_MASTIC_RESIN.get(),
-				Fluids.LAVA, GarnishedBlocks.ABYSSAL_STONE.get());
+
+		EmiStack garnish = EmiStack.of(GarnishedFluids.GARNISH.get(), 81000);
+		EmiStack peanutOil = EmiStack.of(GarnishedFluids.PEANUT_OIL.get(), 81000);
+		EmiStack appleCider = EmiStack.of(GarnishedFluids.APPLE_CIDER.get(), 81000);
+		EmiStack cashewMixture = EmiStack.of(GarnishedFluids.CASHEW_MIXTURE.get(), 81000);
+		EmiStack masticResin = EmiStack.of(GarnishedFluids.MASTIC_RESIN.get(), 81000);
+		EmiStack redMasticResin = EmiStack.of(GarnishedFluids.RED_MASTIC_RESIN.get(), 81000);
+		EmiStack orangeMasticResin = EmiStack.of(GarnishedFluids.ORANGE_MASTIC_RESIN.get(), 81000);
+		EmiStack yellowMasticResin = EmiStack.of(GarnishedFluids.YELLOW_MASTIC_RESIN.get(), 81000);
+		EmiStack greenMasticResin = EmiStack.of(GarnishedFluids.GREEN_MASTIC_RESIN.get(), 81000);
+		EmiStack blueMasticResin = EmiStack.of(GarnishedFluids.BLUE_MASTIC_RESIN.get(), 81000);
+		EmiStack purpleMasticResin = EmiStack.of(GarnishedFluids.PURPLE_MASTIC_RESIN.get(), 81000);
+		EmiStack lava = EmiStack.of(Fluids.LAVA, 81000);
+		EmiStack garnishCatalyst = garnish.copy().setRemainder(garnish);
+		EmiStack peanutOilCatalyst = peanutOil.copy().setRemainder(peanutOil);
+		EmiStack appleCiderCatalyst = appleCider.copy().setRemainder(appleCider);
+		EmiStack cashewMixtureCatalyst = cashewMixture.copy().setRemainder(cashewMixture);
+		EmiStack masticResinCatalyst = masticResin.copy().setRemainder(masticResin);
+		EmiStack redMasticResinCatalyst = redMasticResin.copy().setRemainder(redMasticResin);
+		EmiStack orangeMasticResinCatalyst = orangeMasticResin.copy().setRemainder(orangeMasticResin);
+		EmiStack yellowMasticResinCatalyst = yellowMasticResin.copy().setRemainder(yellowMasticResin);
+		EmiStack greenMasticResinCatalyst = greenMasticResin.copy().setRemainder(greenMasticResin);
+		EmiStack blueMasticResinCatalyst = blueMasticResin.copy().setRemainder(blueMasticResin);
+		EmiStack purpleMasticResinCatalyst = purpleMasticResin.copy().setRemainder(purpleMasticResin);
+		EmiStack lavaCatalyst = lava.copy().setRemainder(lava);
+
+		// addFluidInteractionRecipe(registry, "garnished/calcite", GarnishedFluids.GARNISH.get(),
+		//				Fluids.LAVA, AllPaletteStoneTypes.CALCITE.getBaseBlock().get());
+		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
+				.id(synthetic("world/fluid_interaction", "garnished/calcite"))
+				.leftInput(garnishCatalyst)
+				.rightInput(lavaCatalyst, false)
+				.output(EmiStack.of(AllPaletteStoneTypes.CALCITE.getBaseBlock().get()))
+				.build());
+		// addFluidInteractionRecipe(registry, "garnished/ochrum", GarnishedFluids.APPLE_CIDER.get(),
+		//				Fluids.LAVA, AllPaletteStoneTypes.OCHRUM.getBaseBlock().get());
+		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
+				.id(synthetic("world/fluid_interaction", "garnished/ochrum"))
+				.leftInput(appleCiderCatalyst)
+				.rightInput(lavaCatalyst, false)
+				.output(EmiStack.of(AllPaletteStoneTypes.OCHRUM.getBaseBlock().get()))
+				.build());
+		//		addFluidInteractionRecipe(registry, "garnished/dripstone", GarnishedFluids.PEANUT_OIL.get(),
+		//				Fluids.LAVA, AllPaletteStoneTypes.DRIPSTONE.getBaseBlock().get());
+		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
+				.id(synthetic("world/fluid_interaction", "garnished/dripstone"))
+				.leftInput(peanutOilCatalyst)
+				.rightInput(lavaCatalyst, false)
+				.output(EmiStack.of(AllPaletteStoneTypes.DRIPSTONE.getBaseBlock().get()))
+				.build());
+		//		addFluidInteractionRecipe(registry, "garnished/end_stone", GarnishedFluids.CASHEW_MIXTURE.get(),
+		//				Fluids.LAVA, Blocks.END_STONE);
+		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
+				.id(synthetic("world/fluid_interaction", "garnished/end_stone"))
+				.leftInput(cashewMixtureCatalyst)
+				.rightInput(lavaCatalyst, false)
+				.output(EmiStack.of(Blocks.END_STONE))
+				.build());
+		//		addFluidInteractionRecipe(registry, "garnished/tuff", GarnishedFluids.MASTIC_RESIN.get(),
+		//				Fluids.LAVA, AllPaletteStoneTypes.TUFF.getBaseBlock().get());
+		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
+				.id(synthetic("world/fluid_interaction", "garnished/tuff"))
+				.leftInput(masticResinCatalyst)
+				.rightInput(lavaCatalyst, false)
+				.output(EmiStack.of(AllPaletteStoneTypes.TUFF.getBaseBlock().get()))
+				.build());
+		//		addFluidInteractionRecipe(registry, "garnished/crimsite", GarnishedFluids.RED_MASTIC_RESIN.get(),
+		//				Fluids.LAVA, AllPaletteStoneTypes.CRIMSITE.getBaseBlock().get());
+		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
+				.id(synthetic("world/fluid_interaction", "garnished/crimsite"))
+				.leftInput(redMasticResinCatalyst)
+				.rightInput(lavaCatalyst, false)
+				.output(EmiStack.of(AllPaletteStoneTypes.CRIMSITE.getBaseBlock().get()))
+				.build());
+		//		addFluidInteractionRecipe(registry, "garnished/ritualistic_stone", GarnishedFluids.ORANGE_MASTIC_RESIN.get(),
+		//				Fluids.LAVA, GarnishedBlocks.RITUALISTIC_STONE.get());
+		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
+				.id(synthetic("world/fluid_interaction", "garnished/ritualistic_stone"))
+				.leftInput(orangeMasticResinCatalyst)
+				.rightInput(lavaCatalyst, false)
+				.output(EmiStack.of(GarnishedBlocks.RITUALISTIC_STONE.get()))
+				.build());
+		//		addFluidInteractionRecipe(registry, "garnished/carnotite", GarnishedFluids.YELLOW_MASTIC_RESIN.get(),
+		//				Fluids.LAVA, GarnishedBlocks.CARNOTITE.get());
+		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
+				.id(synthetic("world/fluid_interaction", "garnished/carnotite"))
+				.leftInput(yellowMasticResinCatalyst)
+				.rightInput(lavaCatalyst, false)
+				.output(EmiStack.of(GarnishedBlocks.CARNOTITE.get()))
+				.build());
+		//		addFluidInteractionRecipe(registry, "garnished/veridium", GarnishedFluids.GREEN_MASTIC_RESIN.get(),
+		//				Fluids.LAVA, AllPaletteStoneTypes.VERIDIUM.getBaseBlock().get());
+		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
+				.id(synthetic("world/fluid_interaction", "garnished/veridium"))
+				.leftInput(greenMasticResinCatalyst)
+				.rightInput(lavaCatalyst, false)
+				.output(EmiStack.of(AllPaletteStoneTypes.VERIDIUM.getBaseBlock().get()))
+				.build());
+		//		addFluidInteractionRecipe(registry, "garnished/asurine", GarnishedFluids.BLUE_MASTIC_RESIN.get(),
+		//				Fluids.LAVA, AllPaletteStoneTypes.ASURINE.getBaseBlock().get());
+		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
+				.id(synthetic("world/fluid_interaction", "garnished/asurine"))
+				.leftInput(blueMasticResinCatalyst)
+				.rightInput(lavaCatalyst, false)
+				.output(EmiStack.of(AllPaletteStoneTypes.ASURINE.getBaseBlock().get()))
+				.build());
+		//		addFluidInteractionRecipe(registry, "garnished/abyssal_stone", GarnishedFluids.PURPLE_MASTIC_RESIN.get(),
+		//				Fluids.LAVA, GarnishedBlocks.ABYSSAL_STONE.get());
+		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
+				.id(synthetic("world/fluid_interaction", "garnished/abyssal_stone"))
+				.leftInput(purpleMasticResinCatalyst)
+				.rightInput(lavaCatalyst, false)
+				.output(EmiStack.of(GarnishedBlocks.ABYSSAL_STONE.get()))
+				.build());
 
 		// Introspective recipes based on present stacks need to make sure
 		// all stacks are populated by other plugins
 		// registry.addDeferredRecipes(this::addDeferredRecipes);
 	}
 
-	private void addFluidInteractionRecipe(@NotNull EmiRegistry registry, String outputId, Fluid left, Fluid right, Block output) {
-		// EmiStack doesnt accept flowing fluids, must always be a source
-		if (left instanceof SimpleFlowableFluid.Flowing flowing)
-			left = flowing.getSource();
-		if (right instanceof SimpleFlowableFluid.Flowing flowing)
-			right = flowing.getSource();
+	private static void addRecipeSafe(EmiRegistry registry, Supplier<EmiRecipe> supplier) {
+		try {
+			registry.addRecipe(supplier.get());
+		} catch (Throwable e) {
+			CreateGarnished.LOGGER.warn("[Create: Garnished] Exception thrown when parsing EMI recipe (no ID available)");
+			CreateGarnished.LOGGER.error(String.valueOf(e));
+			// EmiReloadLog.warn("Exception thrown when parsing EMI recipe (no ID available)");
+			// EmiReloadLog.error(e);
+		}
+	}
 
-		// fabric: 81000 droplets = 1000 mb
-		registry.addRecipe(EmiWorldInteractionRecipe.builder()
-				.id(CreateGarnished.asResource("/world/fluid_interaction/" + outputId))
-				.leftInput(EmiStack.of(left, 81000))
-				.rightInput(EmiStack.of(right, 81000), false)
-				.output(EmiStack.of(output))
-				.build()
-		);
+	private static ResourceLocation synthetic(String type, String name) {
+		return new ResourceLocation("emi", "/" + type + "/" + name);
 	}
 
 	@SuppressWarnings("unchecked")
