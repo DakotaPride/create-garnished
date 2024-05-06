@@ -2,6 +2,8 @@ package net.dakotapride.garnished;
 
 import net.dakotapride.garnished.modifier.LootTableModifiers;
 import net.dakotapride.garnished.recipe.GarnishedFanProcessing;
+import net.dakotapride.garnished.registry.GarnishedAdvancementUtils;
+import net.dakotapride.garnished.registry.GarnishedBlockEntities;
 import net.dakotapride.garnished.registry.GarnishedEnchantments;
 import net.dakotapride.garnished.registry.GarnishedRecipeTypes;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
@@ -51,6 +53,7 @@ public class CreateGarnished implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		GarnishedBlockEntities.setRegister();
 		GarnishedItems.setRegister();
 		GarnishedBlocks.setRegister();
 		GarnishedTabs.setRegister();
@@ -63,6 +66,9 @@ public class CreateGarnished implements ModInitializer {
 		LootTableModifiers.modifyLootTables();
 		GarnishedRecipeTypes.register();
 		GarnishedFanProcessing.register();
+
+		GarnishedAdvancementUtils.register();
+
 		REGISTRATE.get().register();
 
 		// Generation

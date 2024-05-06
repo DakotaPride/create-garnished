@@ -76,34 +76,43 @@ public class HatchetToolItem extends DiggerItem implements Vanishable, CustomEnc
 
     @Override
     public boolean canApplyAtEnchantingTable(ItemStack stack, Enchantment enchantment) {
-        if (enchantment == Enchantments.SHARPNESS)
-            return true;
-        if (enchantment == Enchantments.SMITE)
-            return true;
-        if (enchantment == Enchantments.UNBREAKING)
-            return true;
-        if (enchantment == Enchantments.MOB_LOOTING)
-            return true;
-        if (enchantment == Enchantments.BANE_OF_ARTHROPODS)
-            return true;
-        if (enchantment == Enchantments.VANISHING_CURSE)
-            return true;
-        if (enchantment == Enchantments.MENDING)
-            return true;
-        if (enchantment == Enchantments.BLOCK_EFFICIENCY)
-            return true;
-        if (enchantment == Enchantments.BLOCK_FORTUNE)
-            return true;
-        if (enchantment == Enchantments.FIRE_ASPECT)
-            return true;
-        if (enchantment == Enchantments.KNOCKBACK)
-            return true;
-        if (enchantment == Enchantments.SILK_TOUCH)
-            return true;
-        if (enchantment == GarnishedEnchantments.SALVAGING.get())
-            return true;
-        if (enchantment == GarnishedEnchantments.RAVAGING.get())
-            return true;
+		if (enchantment == Enchantments.UNBREAKING)
+			return true;
+		if (enchantment == Enchantments.VANISHING_CURSE)
+			return true;
+		if (enchantment == Enchantments.MENDING)
+			return true;
+		if (enchantment == Enchantments.BLOCK_EFFICIENCY)
+			return true;
+		if (enchantment == Enchantments.BLOCK_FORTUNE)
+			return true;
+		if (enchantment == Enchantments.FIRE_ASPECT)
+			return true;
+		if (enchantment == Enchantments.KNOCKBACK)
+			return true;
+		if (enchantment == Enchantments.SILK_TOUCH)
+			return true;
+		if (enchantment == GarnishedEnchantments.SALVAGING.get())
+			return true;
+		if (enchantment == GarnishedEnchantments.RAVAGING.get())
+			return true;
+		if (enchantment == GarnishedEnchantments.STRIKING.get())
+			return true;
+		if (enchantment == GarnishedEnchantments.QUICK_STEP.get())
+			return true;
+		if (enchantment == GarnishedEnchantments.REJUVENATE.get())
+			return true;
+		if (enchantment == GarnishedEnchantments.LEECHING_CURSE.get())
+			return true;
+
+		if (enchantment == Enchantments.MOB_LOOTING)
+			return false;
+		if (enchantment == Enchantments.SHARPNESS)
+			return false;
+		if (enchantment == Enchantments.SMITE)
+			return false;
+		if (enchantment == Enchantments.BANE_OF_ARTHROPODS)
+			return false;
 
         return CustomEnchantingBehaviorItem.super.canApplyAtEnchantingTable(stack, enchantment);
     }

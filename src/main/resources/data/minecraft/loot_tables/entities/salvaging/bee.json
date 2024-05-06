@@ -1,0 +1,23 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:honeycomb",
+          "conditions": [
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "garnished:salvaging",
+              "chances": [
+                0.1666,
+                0.25
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

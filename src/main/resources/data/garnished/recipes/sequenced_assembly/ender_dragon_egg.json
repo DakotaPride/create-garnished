@@ -1,0 +1,51 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "garnished:frail_ender_egg_shell"
+  },
+  "loops": 10,
+  "results": [
+    {
+      "item": "minecraft:dragon_egg"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_ender_dragon_egg"
+        },
+        {
+          "item": "garnished:crushed_ender_pearl"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_ender_dragon_egg"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_ender_dragon_egg"
+        },
+        {
+          "amount": 20250,
+          "fluid": "garnished:dragon_breath",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_ender_dragon_egg"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "garnished:incomplete_ender_dragon_egg"
+  }
+}

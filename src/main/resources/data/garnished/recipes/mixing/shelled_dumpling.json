@@ -1,0 +1,29 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:shulker_shell"
+    },
+    {
+      "item": "garnished:void_dust"
+    },
+    {
+      "item": "garnished:void_dust"
+    },
+    {
+      "item": "garnished:ender_jelly"
+    },
+    {
+      "item": "garnished:ender_jelly"
+    },
+    {
+      "item": "garnished:preliminary_nucleus"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:shelled_dumpling"
+    }
+  ]
+}

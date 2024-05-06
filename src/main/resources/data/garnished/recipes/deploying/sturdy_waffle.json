@@ -2,7 +2,7 @@
   "type": "create:deploying",
   "ingredients": [
     {
-      "tag": "forge:dough"
+      "tag": "c:dough"
     },
     {
       "item": "create:sturdy_sheet"

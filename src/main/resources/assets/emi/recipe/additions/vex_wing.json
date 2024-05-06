@@ -1,0 +1,7 @@
+{
+  "type": "emi:info",
+  "stacks": [
+    "item:garnished:vex_wing"
+  ],
+  "text": "emi.garnished.vex_wing.information"
+}

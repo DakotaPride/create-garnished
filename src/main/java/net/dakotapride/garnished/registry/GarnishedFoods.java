@@ -17,6 +17,26 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties GARNISHED_BERRIES = new FoodProperties.Builder().nutrition(5).saturationMod(0.3F).build();
 
 	// Cinder Flour (Melted)
+	public static final FoodProperties MELTED_CINDER_FLOUR_PEANUT = new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
+			.effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, getCinderEffectDuration), 1.0F)
+			.effect(new MobEffectInstance(MobEffects.INVISIBILITY, getCinderEffectDuration), 1.0F).build();
+	public static final FoodProperties MELTED_CINDER_FLOUR_WALNUT = new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
+			.effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, getCinderEffectDuration), 1.0F).build();
+	public static final FoodProperties MELTED_CINDER_FLOUR_ALMOND = new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
+			.effect(new MobEffectInstance(MobEffects.DIG_SPEED, getCinderEffectDuration), 1.0F).build();
+	public static final FoodProperties MELTED_CINDER_FLOUR_HAZELNUT = new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
+			.effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, getCinderEffectDuration, 1), 1.0F).build();
+	public static final FoodProperties MELTED_CINDER_FLOUR_CHESTNUT = new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
+			.effect(new MobEffectInstance(MobEffects.SLOW_FALLING, getCinderEffectDuration), 1.0F).build();
+	public static final FoodProperties MELTED_CINDER_FLOUR_PISTACHIO = new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
+			.effect(new MobEffectInstance(MobEffects.NIGHT_VISION, getCinderEffectDuration), 1.0F).build();
+	public static final FoodProperties MELTED_CINDER_FLOUR_MACADAMIA = new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
+			.effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, getCinderEffectDuration), 1.0F).build();
+	public static final FoodProperties MELTED_CINDER_FLOUR_PECAN = new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
+			.effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, getCinderEffectDuration), 1.0F).build();
+	public static final FoodProperties MELTED_CINDER_FLOUR_CASHEW = new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
+			.effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, getCinderEffectDuration), 1.0F).build();
+
 	public static final FoodProperties MELTED_CINDER_FLOUR_NUT = new FoodProperties.Builder().nutrition(7).saturationMod(0.4F).build();
 
 	// Sweetened
@@ -24,7 +44,7 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties SWEETENED_NUT_MIX = new FoodProperties.Builder().nutrition(9).saturationMod(0.4F).build();
 
 	// Chocolate Glazed
-	public static final FoodProperties CHOCHOLATE_GLAZED_NUT = new FoodProperties.Builder().nutrition(4).saturationMod(0.4F).build();
+	public static final FoodProperties CHOCOLATE_GLAZED_NUT = new FoodProperties.Builder().nutrition(4).saturationMod(0.4F).build();
 	public static final FoodProperties CHOCOLATE_GLAZED_NUT_MIX = new FoodProperties.Builder().nutrition(7).saturationMod(0.6F).build();
 
 	// Honeyed
@@ -105,7 +125,8 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties MASTIC_COVERED_SLIME_DROP = new FoodProperties.Builder().nutrition(7).saturationMod(0.4F).fast().build();
 	public static final FoodProperties VENERABLE_DELICACY = new FoodProperties.Builder().nutrition(8).saturationMod(0.4F).build();
 	public static final FoodProperties GALACTIC_CANE = new FoodProperties.Builder().nutrition(7).saturationMod(0.3F).build();
-	public static final FoodProperties MERRY_TREAT = new FoodProperties.Builder().nutrition(8).saturationMod(0.4F).build();
+	public static final FoodProperties MERRY_TREAT = new FoodProperties.Builder().nutrition(8).saturationMod(0.4F)
+			.effect(new MobEffectInstance(GarnishedEffects.SUGAR_HIGH, getSugarHighEffectBaseTick, 1), 1.0F).build();
 	public static final FoodProperties ICY_MASTIC_CHUNK = new FoodProperties.Builder().nutrition(3).saturationMod(0.1F)
 			.effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 2), 1.0F)
 			.effect(new MobEffectInstance(MobEffects.REGENERATION, 160, 1), 1.0F).fast().build();
@@ -172,12 +193,28 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties EXPLORERS_CONCOCTION = new FoodProperties.Builder().nutrition(10).saturationMod(0.6F).build();
 	public static final FoodProperties CHILLED_APPLE = new FoodProperties.Builder().nutrition(4).saturationMod(0.2F).build();
 
+	// Refurbished
+	public static final FoodProperties OMNISCIENT_STEW = new FoodProperties.Builder().nutrition(10).saturationMod(0.6F).build();
+	public static final FoodProperties WARPED_BREW = new FoodProperties.Builder().nutrition(8).saturationMod(0.4F).build();
+	public static final FoodProperties INIQUITOUS_BREW = new FoodProperties.Builder().nutrition(8).saturationMod(0.4F).build();
+	public static final FoodProperties BOTTLE_OF_CRESTFALLEN_FLORA = new FoodProperties.Builder().nutrition(8).saturationMod(0.8F).build();
+	public static final FoodProperties BOTTLED_MALODOROUS_MIXTURE = new FoodProperties.Builder().nutrition(6).saturationMod(0.4F).build();
+	public static final FoodProperties PIQUANT_PRETZEL = new FoodProperties.Builder().nutrition(4).saturationMod(0.2F).build();
+	public static final FoodProperties CHAMPIONS_OMELETTE = new FoodProperties.Builder().nutrition(14).saturationMod(1.0F).build();
+	public static final FoodProperties FARSEER_BREW = new FoodProperties.Builder().nutrition(8).saturationMod(0.4F).build();
+	public static final FoodProperties SHELLED_DUMPLING = new FoodProperties.Builder().nutrition(6).saturationMod(0.3F).build();
+	public static final FoodProperties MEAT_SCRAPS = new FoodProperties.Builder().nutrition(6).saturationMod(0.4F).build();
+	public static final FoodProperties BOK_CHOY = new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build();
+	public static final FoodProperties SWEET_TEA = new FoodProperties.Builder().nutrition(4).saturationMod(0.2F).build();
+
+
 	// Farmer's Delight Foods
 	public static final FoodProperties PECAN_PIE_SLICE = new FoodProperties.Builder().nutrition(3).saturationMod(0.2F).build();
 	public static final FoodProperties PHANTOM_BURGER = new FoodProperties.Builder().nutrition(8).saturationMod(0.6F).meat().build();
 	public static final FoodProperties PHANTOM_BEEF_PATTY = new FoodProperties.Builder().nutrition(3).saturationMod(0.2F).meat().build();
 	public static final FoodProperties GLOW_INK_ROLL = new FoodProperties.Builder().nutrition(7).saturationMod(0.3F).build();
 	public static final FoodProperties GLOW_INK_ROLL_SLICE = new FoodProperties.Builder().nutrition(3).saturationMod(0.1F).build();
+	public static final FoodProperties ANNIVERSARY_CAKE_SLICE = new FoodProperties.Builder().nutrition(4).saturationMod(0.2F).build();
 
 
 

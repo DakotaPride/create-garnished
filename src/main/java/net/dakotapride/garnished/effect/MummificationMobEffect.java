@@ -13,6 +13,7 @@ public class MummificationMobEffect extends MobEffect {
 
     @Override
     public void removeAttributeModifiers(LivingEntity entity, AttributeMap pAttributeMap, int amplifier) {
-        entity.hurt(DamageSource.MAGIC, (float)(6 << amplifier));
+		entity.hurt(DamageSource.MAGIC, (float)(6 << amplifier));
+        super.removeAttributeModifiers(entity, pAttributeMap, amplifier);
     }
 }

@@ -74,7 +74,7 @@ public class DesolateSpreadItem extends Item {
         BlockState blockstate = level.getBlockState(pos);
         BlockPos blockpos = pos.above();
         ChunkGenerator chunkgenerator = level.getChunkSource().getGenerator();
-        Registry<ConfiguredFeature<?, ?>> registry = level.registryAccess().registryOrThrow(Registry.CONFIGURED_FEATURE_REGISTRY);
+		Registry<ConfiguredFeature<?, ?>> registry = level.registryAccess().registryOrThrow(Registry.CONFIGURED_FEATURE_REGISTRY);
         if (blockstate.is(Blocks.END_STONE)) {
             this.place(registry, level, chunkgenerator, random, blockpos);
         }
@@ -82,7 +82,7 @@ public class DesolateSpreadItem extends Item {
     }
 
     private void place(Registry<ConfiguredFeature<?, ?>> registry, ServerLevel level, ChunkGenerator generator, RandomSource random, BlockPos pos) {
-        registry.getHolder(GarnishedFeatures.END_STONE_VEGETATION_BONEMEAL_CONFIGURED).ifPresent((p_255920_) -> {
+        registry.getHolder(GarnishedFeatures.END_STONE_VEGETATION_SPREAD_CONFIGURED).ifPresent((p_255920_) -> {
             p_255920_.value().place(level, generator, random, pos);
         });
     }
@@ -116,7 +116,7 @@ public class DesolateSpreadItem extends Item {
                 double d6 = (double)pos.getX() + d5 + randomsource.nextDouble() * d0 * 2.0D;
                 double d7 = (double)pos.getY() + randomsource.nextDouble() * d1;
                 double d8 = (double)pos.getZ() + d5 + randomsource.nextDouble() * d0 * 2.0D;
-                if (!level.getBlockState(new BlockPos(d6, d7, d8).below()).isAir()) {
+				if (!level.getBlockState(new BlockPos(d6, d7, d8).below()).isAir()) {
                     level.addParticle(ParticleTypes.PORTAL, d6, d7, d8, d2, d3, d4);
                 }
             }

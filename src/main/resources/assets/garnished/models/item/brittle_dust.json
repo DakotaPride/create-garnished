@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "garnished:item/brittle_dust"
+    "layer0": "garnished:item/brittle_dust_alternative"
   }
 }

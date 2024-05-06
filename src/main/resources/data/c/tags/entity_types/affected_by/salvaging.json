@@ -8,6 +8,16 @@
     "minecraft:salmon",
     "minecraft:squid",
     "minecraft:tropical_fish",
-    "minecraft:turtle"
+    "minecraft:turtle",
+    "minecraft:horse",
+    "minecraft:mule",
+    "minecraft:donkey",
+    "minecraft:cow",
+    "minecraft:bee",
+    "minecraft:cat",
+    "minecraft:ocelot",
+    "minecraft:rabbit",
+    "minecraft:dolphin",
+    "minecraft:pig"
   ]
 }

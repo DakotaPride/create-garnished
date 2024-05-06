@@ -1,0 +1,20 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "garnished:bok_choy"
+    }
+  ],
+  "processingTime": 50,
+  "results": [
+    {
+      "count": 2,
+      "item": "garnished:bok_choy_seeds"
+    },
+    {
+      "chance": 0.25,
+      "item": "garnished:bok_choy_seeds",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:multiface_growth",
+  "config": {
+    "block": "garnished:sorrowful_lichen",
+    "search_range": 25,
+    "chance_of_spreading": 0.35,
+    "can_place_on_floor": true,
+    "can_place_on_ceiling": true,
+    "can_place_on_wall": true,
+    "can_be_placed_on": [
+      "minecraft:netherrack",
+      "minecraft:crimson_nylium",
+      "minecraft:warped_nylium",
+      "minecraft:basalt",
+      "minecraft:blackstone",
+      "minecraft:nether_bricks",
+      "minecraft:nether_wart_block",
+      "minecraft:warped_wart_block",
+      "minecraft:soul_sand",
+      "minecraft:soul_soil"
+    ]
+  }
+}

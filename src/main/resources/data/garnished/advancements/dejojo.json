@@ -1,0 +1,30 @@
+{
+  "display": {
+    "icon": {
+      "item": "minecraft:player_head",
+      "nbt": "{SkullOwner: {Id: [I; 461939504,-1870183790,-1233034973,-129415260], Properties: {textures: [{Value: \"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2I3NDQ3NmRiM2EyZTllZDhmNjc1YjFhYTgwOTY4N2M3Nzc3Mzc3NTdiZWIzMGVhYjRjMmUxNjhjZmRiMGJjYSJ9fX0=\"}]}, Name: \"DejojoTheAwsome\"}}"
+    },
+    "title": {
+      "translate": "advancement.garnished.dejojotheawsome.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.dejojotheawsome.description",
+      "color": "#DBA213"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "garnished:nut_tree",
+  "criteria": {
+    "dejojotheawsome": {
+      "trigger": "garnished:the_one_who_started_it_all"
+    }
+  },
+  "requirements": [
+    [
+      "dejojotheawsome"
+    ]
+  ]
+}

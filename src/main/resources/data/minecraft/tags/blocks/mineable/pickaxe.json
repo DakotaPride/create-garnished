@@ -5,8 +5,10 @@
     "#garnished:stone_types/abyssal_stone",
     "#garnished:stone_types/unstable_stone",
     "#garnished:stone_types/ritualistic_stone",
+    "#garnished:stone_types/dragon_stone",
     "garnished:garnish_compound_block",
     "garnished:salt_compound_block",
-    "garnished:ethereal_compound_block"
+    "garnished:ethereal_compound_block",
+    "garnished:senile_bone_block"
   ]
 }

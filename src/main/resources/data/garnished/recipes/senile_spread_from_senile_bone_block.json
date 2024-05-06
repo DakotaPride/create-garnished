@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:senile_bone_block"
+    }
+  ],
+  "result": {
+    "item": "garnished:senile_spread",
+    "count": 9
+  }
+}

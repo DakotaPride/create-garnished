@@ -1,0 +1,7 @@
+{
+  "type": "emi:info",
+  "stacks": [
+    "item:garnished:enflamed_mandible"
+  ],
+  "text": "emi.garnished.enflamed_mandible.information"
+}

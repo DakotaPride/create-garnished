@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "garnished:brittle_dust"
+    },
+    {
+      "item": "garnished:senile_dust"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:torrid_blend"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "garnished:torrid_blend"
+    },
+    {
+      "item": "garnished:torrid_blend"
+    },
+    {
+      "item": "garnished:malodorous_mixture"
+    },
+    {
+      "item": "garnished:malodorous_mixture"
+    },
+    {
+      "item": "garnished:salt_compound"
+    },
+    {
+      "item": "garnished:garnish_powder"
+    },
+    {
+      "item": "garnished:incandescent_petal"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:piquant_pretzel"
+    }
+  ]
+}

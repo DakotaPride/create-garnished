@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "garnished:block/dragon_stone_bricks",
+    "side": "garnished:block/dragon_stone_bricks",
+    "top": "garnished:block/dragon_stone_bricks"
+  }
+}

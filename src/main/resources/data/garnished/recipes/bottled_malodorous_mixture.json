@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "garnished:malodorous_mixture"
+    },
+    {
+      "item": "garnished:malodorous_mixture"
+    }
+  ],
+  "result": {
+    "item": "garnished:bottled_malodorous_mixture"
+  }
+}

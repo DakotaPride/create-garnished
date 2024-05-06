@@ -31,13 +31,6 @@ public class WrappedSepiaTangleFoodItem extends Item implements IGarnishedItem {
 			serverPlayer.awardStat(Stats.ITEM_USED.get(this));
 		}
 
-		if (livingEntity instanceof ServerPlayer serverPlayer && getWrappedTangleEffectChance()) {
-			CriteriaTriggers.CONSUME_ITEM.trigger(serverPlayer, stack);
-			serverPlayer.awardStat(Stats.ITEM_USED.get(this));
-
-			livingEntity.addEffect(new MobEffectInstance(GarnishedEffects.SPIRITED_RESISTANCE, getWrappedTangleEffectDuration, 1));
-		}
-
 		if (stack.isEmpty()) {
 			return new ItemStack(GarnishedItems.SILICA_HARDENED_WRAP.get());
 		} else {

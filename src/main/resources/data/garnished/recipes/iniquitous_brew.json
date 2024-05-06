@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "garnished:incandescent_petal"
+    },
+    {
+      "item": "garnished:incandescent_lily"
+    },
+    {
+      "item": "garnished:incandescent_lily"
+    },
+    {
+      "item": "minecraft:crimson_roots"
+    },
+    {
+      "item": "minecraft:crimson_roots"
+    }
+  ],
+  "result": {
+    "item": "garnished:iniquitous_brew"
+  }
+}

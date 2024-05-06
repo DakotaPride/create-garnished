@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "anniversary_bites=0": {
+      "model": "garnished:block/anniversary_cake"
+    },
+    "anniversary_bites=1": {
+      "model": "garnished:block/anniversary_cake_slice1"
+    },
+    "anniversary_bites=2": {
+      "model": "garnished:block/anniversary_cake_slice2"
+    },
+    "anniversary_bites=3": {
+      "model": "garnished:block/anniversary_cake_slice3"
+    },
+    "anniversary_bites=4": {
+      "model": "garnished:block/anniversary_cake_slice4"
+    },
+    "anniversary_bites=5": {
+      "model": "garnished:block/anniversary_cake_slice5"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "garnished:crestfallen_flora"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:dragon_breath"
+    }
+  ]
+}

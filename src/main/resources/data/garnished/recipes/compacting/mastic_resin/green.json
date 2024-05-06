@@ -14,14 +14,12 @@
     {
       "item": "minecraft:slime_ball"
     },
-    [
-      {
-        "item": "minecraft:green_dye"
-      },
-      {
-        "item": "minecraft:lime_dye"
-      }
-    ]
+    {
+      "item": "minecraft:green_dye"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
   ],
   "results": [
     {

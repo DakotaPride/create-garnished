@@ -1,6 +1,7 @@
 package net.dakotapride.garnished.registry;
 
 import net.dakotapride.garnished.CreateGarnished;
+import net.dakotapride.garnished.effect.AustralMobEffect;
 import net.dakotapride.garnished.effect.AversionMobEffect;
 import net.dakotapride.garnished.effect.CognateMobEffect;
 import net.dakotapride.garnished.effect.FlagrantMobEffect;
@@ -10,6 +11,7 @@ import net.dakotapride.garnished.effect.SanctityMobEffect;
 import net.dakotapride.garnished.effect.SpiritedResistanceMobEffect;
 import net.dakotapride.garnished.effect.SugarHighMobEffect;
 import net.dakotapride.garnished.effect.ThornsMobEffect;
+import net.dakotapride.garnished.effect.TruthSeekerMobEffect;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistry;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
@@ -51,6 +53,14 @@ public class GarnishedEffects {
 					-0.015, AttributeModifier.Operation.MULTIPLY_TOTAL));
 
 	public static MobEffect FREEZING = effect("freezing", new FreezingMobEffect());
+
+	public static MobEffect TRUTH_SEEKER = effect("truth_seeker", new TruthSeekerMobEffect());
+
+	public static MobEffect AUSTRAL = effect("austral", new AustralMobEffect()
+			.addAttributeModifier(Attributes.MOVEMENT_SPEED, "8e5b13bb-d71e-4e28-a4e2-b0e98eb4b9d3",
+					0.045, AttributeModifier.Operation.MULTIPLY_TOTAL)
+			.addAttributeModifier(Attributes.ATTACK_DAMAGE, "b9d7efff-0199-457d-bcfb-190ef862d2b0",
+					-0.20, AttributeModifier.Operation.MULTIPLY_TOTAL));
 
 	public static Potion AVERSION_POTION = potion("aversion", new Potion(
 			new MobEffectInstance(AVERSION, 2400)));

@@ -32,13 +32,6 @@ public class VoidMixtureFoodItem extends Item implements IGarnishedItem {
 			serverPlayer.awardStat(Stats.ITEM_USED.get(this));
 		}
 
-		if (livingEntity instanceof ServerPlayer serverPlayer && getWrappedTangleEffectChance()) {
-			CriteriaTriggers.CONSUME_ITEM.trigger(serverPlayer, stack);
-			serverPlayer.awardStat(Stats.ITEM_USED.get(this));
-
-			livingEntity.addEffect(new MobEffectInstance(GarnishedEffects.COGNATE, getCognateEffectBaseTick, 1));
-		}
-
 		if (stack.isEmpty()) {
 			return new ItemStack(Items.BOWL);
 		} else {

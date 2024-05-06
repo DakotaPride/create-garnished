@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "garnished:block/potted_incandescent_lily_0"
+      },
+      {
+        "model": "garnished:block/potted_incandescent_lily_1"
+      },
+      {
+        "model": "garnished:block/potted_incandescent_lily_2"
+      }
+    ]
+  }
+}

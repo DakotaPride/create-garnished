@@ -1,6 +1,10 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:mineable/axe"
+    "#minecraft:mineable/axe",
+    "minecraft:bamboo",
+    "minecraft:dried_kelp_block",
+    "garnished:dried_dulse_kelp_block",
+    "garnished:dried_vermilion_kelp_block"
   ]
 }

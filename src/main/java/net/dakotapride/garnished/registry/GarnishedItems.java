@@ -38,12 +38,12 @@ public class GarnishedItems {
 			REGISTRATE.item("cinder_cashew", CinderFlourNutFoodItem::new).register();
 	public static final ItemEntry<MeltedCinderFlourNutFoodItem> MELTED_CINDER_FLOUR_CASHEW =
 			REGISTRATE.item("melted_cinder_cashew", MeltedCinderFlourNutFoodItem::new).register();
-	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem> SPEED_CINDER_CASHEW =
-			REGISTRATE.item("cinder_cashew_speed", MeltedCinderFlourNutWithEffectFoodItem::new).register();
+	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem.Cashew> SPEED_CINDER_CASHEW =
+			REGISTRATE.item("cinder_cashew_speed", MeltedCinderFlourNutWithEffectFoodItem.Cashew::new).register();
 	public static final ItemEntry<SweetenedNutFoodItem> SWEETENED_CASHEW =
 			REGISTRATE.item("sweetened_cashew", SweetenedNutFoodItem::new).register();
-	public static final ItemEntry<ChocholateGlazedNutFoodItem> CHOCOLATE_GLAZED_CASHEW =
-			REGISTRATE.item("chocolate_glazed_cashew", ChocholateGlazedNutFoodItem::new).register();
+	public static final ItemEntry<ChocolateGlazedNutFoodItem> CHOCOLATE_GLAZED_CASHEW =
+			REGISTRATE.item("chocolate_glazed_cashew", ChocolateGlazedNutFoodItem::new).register();
 	public static final ItemEntry<HoneyedNutFoodItem> HONEYED_CASHEW =
 			REGISTRATE.item("honeyed_cashew", HoneyedNutFoodItem::new).register();
 
@@ -59,12 +59,12 @@ public class GarnishedItems {
 			REGISTRATE.item("cinder_walnut", CinderFlourNutFoodItem::new).register();
 	public static final ItemEntry<MeltedCinderFlourNutFoodItem> MELTED_CINDER_FLOUR_WALNUT =
 			REGISTRATE.item("melted_cinder_walnut", MeltedCinderFlourNutFoodItem::new).register();
-	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem> STRENGTH_CINDER_WALNUT =
-			REGISTRATE.item("cinder_walnut_strength", MeltedCinderFlourNutWithEffectFoodItem::new).register();
+	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem.Walnut> STRENGTH_CINDER_WALNUT =
+			REGISTRATE.item("cinder_walnut_strength", MeltedCinderFlourNutWithEffectFoodItem.Walnut::new).register();
 	public static final ItemEntry<SweetenedNutFoodItem> SWEETENED_WALNUT =
 			REGISTRATE.item("sweetened_walnut", SweetenedNutFoodItem::new).register();
-	public static final ItemEntry<ChocholateGlazedNutFoodItem> CHOCOLATE_GLAZED_WALNUT =
-			REGISTRATE.item("chocolate_glazed_walnut", ChocholateGlazedNutFoodItem::new).register();
+	public static final ItemEntry<ChocolateGlazedNutFoodItem> CHOCOLATE_GLAZED_WALNUT =
+			REGISTRATE.item("chocolate_glazed_walnut", ChocolateGlazedNutFoodItem::new).register();
 	public static final ItemEntry<HoneyedNutFoodItem> HONEYED_WALNUT =
 			REGISTRATE.item("honeyed_walnut", HoneyedNutFoodItem::new).register();
 
@@ -80,12 +80,12 @@ public class GarnishedItems {
 			REGISTRATE.item("cinder_almond", CinderFlourNutFoodItem::new).register();
 	public static final ItemEntry<MeltedCinderFlourNutFoodItem> MELTED_CINDER_FLOUR_ALMOND =
 			REGISTRATE.item("melted_cinder_almond", MeltedCinderFlourNutFoodItem::new).register();
-	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem> HASTE_CINDER_ALMOND =
-			REGISTRATE.item("cinder_almond_haste", MeltedCinderFlourNutWithEffectFoodItem::new).register();
+	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem.Almond> HASTE_CINDER_ALMOND =
+			REGISTRATE.item("cinder_almond_haste", MeltedCinderFlourNutWithEffectFoodItem.Almond::new).register();
 	public static final ItemEntry<SweetenedNutFoodItem> SWEETENED_ALMOND =
 			REGISTRATE.item("sweetened_almond", SweetenedNutFoodItem::new).register();
-	public static final ItemEntry<ChocholateGlazedNutFoodItem> CHOCOLATE_GLAZED_ALMOND =
-			REGISTRATE.item("chocolate_glazed_almond", ChocholateGlazedNutFoodItem::new).register();
+	public static final ItemEntry<ChocolateGlazedNutFoodItem> CHOCOLATE_GLAZED_ALMOND =
+			REGISTRATE.item("chocolate_glazed_almond", ChocolateGlazedNutFoodItem::new).register();
 	public static final ItemEntry<HoneyedNutFoodItem> HONEYED_ALMOND =
 			REGISTRATE.item("honeyed_almond", HoneyedNutFoodItem::new).register();
 
@@ -101,12 +101,12 @@ public class GarnishedItems {
 			REGISTRATE.item("cinder_pecan", CinderFlourNutFoodItem::new).register();
 	public static final ItemEntry<MeltedCinderFlourNutFoodItem> MELTED_CINDER_FLOUR_PECAN =
 			REGISTRATE.item("melted_cinder_pecan", MeltedCinderFlourNutFoodItem::new).register();
-	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem> RESISTANCE_CINDER_PECAN =
-			REGISTRATE.item("cinder_pecan_resistance", MeltedCinderFlourNutWithEffectFoodItem::new).register();
+	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem.Pecan> RESISTANCE_CINDER_PECAN =
+			REGISTRATE.item("cinder_pecan_resistance", MeltedCinderFlourNutWithEffectFoodItem.Pecan::new).register();
 	public static final ItemEntry<SweetenedNutFoodItem> SWEETENED_PECAN =
 			REGISTRATE.item("sweetened_pecan", SweetenedNutFoodItem::new).register();
-	public static final ItemEntry<ChocholateGlazedNutFoodItem> CHOCOLATE_GLAZED_PECAN =
-			REGISTRATE.item("chocolate_glazed_pecan", ChocholateGlazedNutFoodItem::new).register();
+	public static final ItemEntry<ChocolateGlazedNutFoodItem> CHOCOLATE_GLAZED_PECAN =
+			REGISTRATE.item("chocolate_glazed_pecan", ChocolateGlazedNutFoodItem::new).register();
 	public static final ItemEntry<HoneyedNutFoodItem> HONEYED_PECAN =
 			REGISTRATE.item("honeyed_pecan", HoneyedNutFoodItem::new).register();
 
@@ -122,12 +122,12 @@ public class GarnishedItems {
 			REGISTRATE.item("cinder_pistachio", CinderFlourNutFoodItem::new).register();
 	public static final ItemEntry<MeltedCinderFlourNutFoodItem> MELTED_CINDER_FLOUR_PISTACHIO =
 			REGISTRATE.item("melted_cinder_pistachio", MeltedCinderFlourNutFoodItem::new).register();
-	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem> NIGHT_VISION_CINDER_PISTACHIO =
-			REGISTRATE.item("cinder_pistachio_night_vision", MeltedCinderFlourNutWithEffectFoodItem::new).register();
+	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem.Pistachio> NIGHT_VISION_CINDER_PISTACHIO =
+			REGISTRATE.item("cinder_pistachio_night_vision", MeltedCinderFlourNutWithEffectFoodItem.Pistachio::new).register();
 	public static final ItemEntry<SweetenedNutFoodItem> SWEETENED_PISTACHIO =
 			REGISTRATE.item("sweetened_pistachio", SweetenedNutFoodItem::new).register();
-	public static final ItemEntry<ChocholateGlazedNutFoodItem> CHOCOLATE_GLAZED_PISTACHIO =
-			REGISTRATE.item("chocolate_glazed_pistachio", ChocholateGlazedNutFoodItem::new).register();
+	public static final ItemEntry<ChocolateGlazedNutFoodItem> CHOCOLATE_GLAZED_PISTACHIO =
+			REGISTRATE.item("chocolate_glazed_pistachio", ChocolateGlazedNutFoodItem::new).register();
 	public static final ItemEntry<HoneyedNutFoodItem> HONEYED_PISTACHIO =
 			REGISTRATE.item("honeyed_pistachio", HoneyedNutFoodItem::new).register();
 
@@ -143,12 +143,12 @@ public class GarnishedItems {
 			REGISTRATE.item("cinder_macadamia", CinderFlourNutFoodItem::new).register();
 	public static final ItemEntry<MeltedCinderFlourNutFoodItem> MELTED_CINDER_FLOUR_MACADAMIA =
 			REGISTRATE.item("melted_cinder_macadamia", MeltedCinderFlourNutFoodItem::new).register();
-	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem> FIRE_RESISTANCE_CINDER_MACADAMIA =
-			REGISTRATE.item("cinder_macadamia_fire_resistance", MeltedCinderFlourNutWithEffectFoodItem::new).register();
+	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem.Macadamia> FIRE_RESISTANCE_CINDER_MACADAMIA =
+			REGISTRATE.item("cinder_macadamia_fire_resistance", MeltedCinderFlourNutWithEffectFoodItem.Macadamia::new).register();
 	public static final ItemEntry<SweetenedNutFoodItem> SWEETENED_MACADAMIA =
 			REGISTRATE.item("sweetened_macadamia", SweetenedNutFoodItem::new).register();
-	public static final ItemEntry<ChocholateGlazedNutFoodItem> CHOCOLATE_GLAZED_MACADAMIA =
-			REGISTRATE.item("chocolate_glazed_macadamia", ChocholateGlazedNutFoodItem::new).register();
+	public static final ItemEntry<ChocolateGlazedNutFoodItem> CHOCOLATE_GLAZED_MACADAMIA =
+			REGISTRATE.item("chocolate_glazed_macadamia", ChocolateGlazedNutFoodItem::new).register();
 	public static final ItemEntry<HoneyedNutFoodItem> HONEYED_MACADAMIA =
 			REGISTRATE.item("honeyed_macadamia", HoneyedNutFoodItem::new).register();
 
@@ -164,12 +164,12 @@ public class GarnishedItems {
 			REGISTRATE.item("cinder_hazelnut", CinderFlourNutFoodItem::new).register();
 	public static final ItemEntry<MeltedCinderFlourNutFoodItem> MELTED_CINDER_FLOUR_HAZELNUT =
 			REGISTRATE.item("melted_cinder_hazelnut", MeltedCinderFlourNutFoodItem::new).register();
-	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem> POTENT_SPEED_CINDER_HAZELNUT =
-			REGISTRATE.item("cinder_hazelnut_speed_potent", MeltedCinderFlourNutWithEffectFoodItem::new).register();
+	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem.Hazelnut> POTENT_SPEED_CINDER_HAZELNUT =
+			REGISTRATE.item("cinder_hazelnut_speed_potent", MeltedCinderFlourNutWithEffectFoodItem.Hazelnut::new).register();
 	public static final ItemEntry<SweetenedNutFoodItem> SWEETENED_HAZELNUT =
 			REGISTRATE.item("sweetened_hazelnut", SweetenedNutFoodItem::new).register();
-	public static final ItemEntry<ChocholateGlazedNutFoodItem> CHOCOLATE_GLAZED_HAZELNUT =
-			REGISTRATE.item("chocolate_glazed_hazelnut", ChocholateGlazedNutFoodItem::new).register();
+	public static final ItemEntry<ChocolateGlazedNutFoodItem> CHOCOLATE_GLAZED_HAZELNUT =
+			REGISTRATE.item("chocolate_glazed_hazelnut", ChocolateGlazedNutFoodItem::new).register();
 	public static final ItemEntry<HoneyedNutFoodItem> HONEYED_HAZELNUT =
 			REGISTRATE.item("honeyed_hazelnut", HoneyedNutFoodItem::new).register();
 
@@ -186,12 +186,12 @@ public class GarnishedItems {
 			REGISTRATE.item("cinder_peanut", CinderFlourNutFoodItem::new).register();
 	public static final ItemEntry<MeltedCinderFlourNutFoodItem> MELTED_CINDER_FLOUR_BUHG =
 			REGISTRATE.item("melted_cinder_peanut", MeltedCinderFlourNutFoodItem::new).register();
-	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem> EFFECT_CINDER_BUHG =
-			REGISTRATE.item("cinder_peanut_effect", MeltedCinderFlourNutWithEffectFoodItem::new).register();
+	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem.Peanut> EFFECT_CINDER_BUHG =
+			REGISTRATE.item("cinder_peanut_effect", MeltedCinderFlourNutWithEffectFoodItem.Peanut::new).register();
 	public static final ItemEntry<SweetenedNutFoodItem> SWEETENED_BUHG =
 			REGISTRATE.item("sweetened_peanut", SweetenedNutFoodItem::new).register();
-	public static final ItemEntry<ChocholateGlazedNutFoodItem> CHOCOLATE_GLAZED_BUHG =
-			REGISTRATE.item("chocolate_glazed_peanut", ChocholateGlazedNutFoodItem::new).register();
+	public static final ItemEntry<ChocolateGlazedNutFoodItem> CHOCOLATE_GLAZED_BUHG =
+			REGISTRATE.item("chocolate_glazed_peanut", ChocolateGlazedNutFoodItem::new).register();
 	public static final ItemEntry<HoneyedNutFoodItem> HONEYED_BUHG =
 			REGISTRATE.item("honeyed_peanut", HoneyedNutFoodItem::new).register();
 
@@ -207,12 +207,12 @@ public class GarnishedItems {
 			REGISTRATE.item("cinder_chestnut", CinderFlourNutFoodItem::new).register();
 	public static final ItemEntry<MeltedCinderFlourNutFoodItem> MELTED_CINDER_FLOUR_CHESTNUT =
 			REGISTRATE.item("melted_cinder_chestnut", MeltedCinderFlourNutFoodItem::new).register();
-	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem> SLOW_FALLING_CINDER_CHESTNUT =
-			REGISTRATE.item("cinder_chestnut_slow_falling", MeltedCinderFlourNutWithEffectFoodItem::new).register();
+	public static final ItemEntry<MeltedCinderFlourNutWithEffectFoodItem.Chestnut> SLOW_FALLING_CINDER_CHESTNUT =
+			REGISTRATE.item("cinder_chestnut_slow_falling", MeltedCinderFlourNutWithEffectFoodItem.Chestnut::new).register();
 	public static final ItemEntry<SweetenedNutFoodItem> SWEETENED_CHESTNUT =
 			REGISTRATE.item("sweetened_chestnut", SweetenedNutFoodItem::new).register();
-	public static final ItemEntry<ChocholateGlazedNutFoodItem> CHOCOLATE_GLAZED_CHESTNUT =
-			REGISTRATE.item("chocolate_glazed_chestnut", ChocholateGlazedNutFoodItem::new).register();
+	public static final ItemEntry<ChocolateGlazedNutFoodItem> CHOCOLATE_GLAZED_CHESTNUT =
+			REGISTRATE.item("chocolate_glazed_chestnut", ChocolateGlazedNutFoodItem::new).register();
 	public static final ItemEntry<HoneyedNutFoodItem> HONEYED_CHESTNUT =
 			REGISTRATE.item("honeyed_chestnut", HoneyedNutFoodItem::new).register();
 
@@ -221,7 +221,7 @@ public class GarnishedItems {
 			REGISTRATE.item("nut_mix", NutMixFoodItem::new).register();
 	public static final ItemEntry<SweetenedNutMixFoodItem> SWEETENED_NUT_MIX =
 			REGISTRATE.item("sweetened_nut_mix", SweetenedNutMixFoodItem::new).register();
-	public static final ItemEntry<ChocolateGlazedNutMixFoodItem> CHOCHOLATE_GLAZED_NUT_MIX =
+	public static final ItemEntry<ChocolateGlazedNutMixFoodItem> CHOCOLATE_GLAZED_NUT_MIX =
 			REGISTRATE.item("chocolate_glazed_nut_mix", ChocolateGlazedNutMixFoodItem::new).register();
 	public static final ItemEntry<HoneyedNutMixFoodItem> HONEYED_NUT_MIX =
 			REGISTRATE.item("honeyed_nut_mix", HoneyedNutMixFoodItem::new).register();
@@ -659,6 +659,74 @@ public class GarnishedItems {
 			REGISTRATE.item("numbing_parchment", Item::new).register();
 	public static final ItemEntry<Item> POLAR_BEAR_HIDE =
 			REGISTRATE.item("polar_bear_hide", Item::new).register();
+
+	// Garnished v1.8: Refurbished
+	public static final ItemEntry<OmniscientStewFoodItem> OMNISCIENT_STEW =
+			REGISTRATE.item("omniscient_stew", OmniscientStewFoodItem::new).register();
+	public static final ItemEntry<WarpedBrewFoodItem> WARPED_BREW =
+			REGISTRATE.item("warped_brew", WarpedBrewFoodItem::new).register();
+	public static final ItemEntry<IniquitousBrewFoodItem> INIQUITOUS_BREW =
+			REGISTRATE.item("iniquitous_brew", IniquitousBrewFoodItem::new).register();
+	public static final ItemEntry<BottleOfCrestfallenFloraFoodItem> BOTTLE_OF_CRESTFALLEN_FLORA =
+			REGISTRATE.item("crestfallen_flora", BottleOfCrestfallenFloraFoodItem::new).register();
+	public static final ItemEntry<BottledMalodorousMixtureFoodItem> BOTTLED_MALODOROUS_MIXTURE =
+			REGISTRATE.item("bottled_malodorous_mixture", BottledMalodorousMixtureFoodItem::new).register();
+	public static final ItemEntry<PiquantPretzelFoodItem> PIQUANT_PRETZEL =
+			REGISTRATE.item("piquant_pretzel", PiquantPretzelFoodItem::new).register();
+	public static final ItemEntry<MeatScrapsFoodItem> MEAT_SCRAPS =
+			REGISTRATE.item("meat_scraps", MeatScrapsFoodItem::new).register();
+	public static final ItemEntry<ChampionsOmeletteFoodItem> CHAMPIONS_OMELETTE =
+			REGISTRATE.item("champion_omelette", ChampionsOmeletteFoodItem::new)
+					.properties(p -> p.rarity(Rarity.EPIC)).register();
+	public static final ItemEntry<FarseerBrewFoodItem> FARSEER_BREW =
+			REGISTRATE.item("farseer_brew", FarseerBrewFoodItem::new).register();
+	public static final ItemEntry<ShelledDumplingFoodItem> SHELLED_DUMPLING =
+			REGISTRATE.item("shelled_dumpling", ShelledDumplingFoodItem::new)
+					.properties(p -> p.rarity(Rarity.UNCOMMON)).register();
+	public static final ItemEntry<BokChoyFoodItem> BOK_CHOY =
+			REGISTRATE.item("bok_choy", BokChoyFoodItem::new).register();
+	public static final ItemEntry<SweetTeaItem> SWEET_TEA =
+			REGISTRATE.item("sweet_tea", SweetTeaItem::new).register();
+
+	public static final ItemEntry<BokChoyLeafItem> BOK_CHOY_SEEDS =
+			REGISTRATE.item("bok_choy_seeds", BokChoyLeafItem::new).register();
+
+	public static final ItemEntry<Item> TUSK =
+			REGISTRATE.item("tusk", Item::new).register();
+	public static final ItemEntry<Item> IRATE_TUSK =
+			REGISTRATE.item("irate_tusk", Item::new).register();
+	public static final ItemEntry<Item> PANSOPHICAL_PETAL =
+			REGISTRATE.item("pansophical_petal", Item::new).register();
+	public static final ItemEntry<Item> INCANDESCENT_PETAL =
+			REGISTRATE.item("incandescent_petal", Item::new).register();
+	public static final ItemEntry<Item> SENILE_BONE =
+			REGISTRATE.item("senile_bone", Item::new).register();
+	public static final ItemEntry<Item> FIENDISH_SPORE =
+			REGISTRATE.item("fiendish_spore", Item::new).register();
+	public static final ItemEntry<Item> TORRID_BLEND =
+			REGISTRATE.item("torrid_blend", Item::new).register();
+	public static final ItemEntry<Item> MALODOROUS_MIXTURE =
+			REGISTRATE.item("malodorous_mixture", Item::new).register();
+	public static final ItemEntry<Item> DIMMED_SCALE =
+			REGISTRATE.item("dimmed_scale", Item::new).register();
+	public static final ItemEntry<Item> PRELIMINARY_NUCLEUS =
+			REGISTRATE.item("preliminary_nucleus", Item::new).register();
+	public static final ItemEntry<Item> VEX_WING =
+			REGISTRATE.item("vex_wing", Item::new).register();
+	public static final ItemEntry<Item> ENDER_DRAGON_EGG_SHELL =
+			REGISTRATE.item("ender_egg_shell", Item::new)
+					.properties(p -> p.rarity(Rarity.EPIC)).register();
+	public static final ItemEntry<Item> FRAIL_ENDER_DRAGON_EGG_SHELL =
+			REGISTRATE.item("frail_ender_egg_shell", Item::new).register();
+	public static final ItemEntry<Item> SUGAR_CUBE =
+			REGISTRATE.item("sugar_cube", Item::new).register();
+
+	public static final ItemEntry<Item> INCOMPLETE_ENDER_DRAGON_EGG =
+			REGISTRATE.item("incomplete_ender_dragon_egg", Item::new)
+					.properties(p -> p.rarity(Rarity.UNCOMMON)).register();
+	public static final ItemEntry<Item> INCOMPLETE_CHAMPION_OMELETTE =
+			REGISTRATE.item("incomplete_champion_omelette", Item::new)
+					.properties(p -> p.rarity(Rarity.UNCOMMON)).register();
 
 	// Farmer's Delight Items
 	public static final ItemEntry<PecanPieSliceFoodItem> PECAN_PIE_SLICE =

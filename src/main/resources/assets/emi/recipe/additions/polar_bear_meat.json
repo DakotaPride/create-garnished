@@ -1,0 +1,7 @@
+{
+  "type": "emi:info",
+  "stacks": [
+    "item:garnished:raw_polar_bear_meat"
+  ],
+  "text": "emi.garnished.polar_bear_meat.information"
+}

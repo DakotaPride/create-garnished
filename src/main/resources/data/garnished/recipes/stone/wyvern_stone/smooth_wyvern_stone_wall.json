@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dragon_stone_variants",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:smooth_dragon_stone"
+    }
+  },
+  "result": {
+    "item": "garnished:smooth_dragon_stone_wall",
+    "count": 6
+  }
+}

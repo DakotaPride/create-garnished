@@ -1,0 +1,96 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "garnished:ender_egg_shell"
+  },
+  "loops": 2,
+  "results": [
+    {
+      "item": "garnished:champion_omelette"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_champion_omelette"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_champion_omelette"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_champion_omelette"
+        },
+        {
+          "item": "garnished:crushed_ender_pearl"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_champion_omelette"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_champion_omelette"
+        },
+        {
+          "item": "garnished:dimmed_scale"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_champion_omelette"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_champion_omelette"
+        },
+        {
+          "item": "garnished:pansophical_petal"
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_champion_omelette"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "garnished:incomplete_champion_omelette"
+        },
+        {
+          "amount": 20250,
+          "fluid": "garnished:dragon_breath",
+          "nbt": {}
+        }
+      ],
+      "results": [
+        {
+          "item": "garnished:incomplete_champion_omelette"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "garnished:incomplete_champion_omelette"
+  }
+}

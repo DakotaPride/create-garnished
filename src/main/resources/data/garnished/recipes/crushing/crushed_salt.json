@@ -5,7 +5,7 @@
       "item": "create:limestone"
     }
   ],
-  "processingTime": 150,
+  "processingTime": 200,
   "results": [
     {
       "count": 1,
@@ -17,7 +17,7 @@
       "count": 2
     },
     {
-      "chance": 0.10,
+      "chance": 0.05,
       "item": "create:zinc_nugget",
       "count": 2
     }

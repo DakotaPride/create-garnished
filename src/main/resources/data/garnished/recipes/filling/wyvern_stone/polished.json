@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "garnished:polished_unstable_stone"
+    },
+    {
+      "amount": 20250,
+      "fluid": "garnished:dragon_breath",
+      "nbt": {}
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:polished_dragon_stone"
+    }
+  ]
+}

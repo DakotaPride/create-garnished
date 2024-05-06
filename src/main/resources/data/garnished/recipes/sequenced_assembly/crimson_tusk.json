@@ -1,7 +1,7 @@
 {
   "type": "create:sequenced_assembly",
   "ingredient": {
-    "item": "garnished:senile_dust"
+    "item": "garnished:tusk"
   },
   "loops": 1,
   "results": [
@@ -11,23 +11,13 @@
   ],
   "sequence": [
     {
-      "type": "create:pressing",
+      "type": "create:deploying",
       "ingredients": [
         {
           "item": "garnished:incomplete_crimson_tusk"
-        }
-      ],
-      "results": [
+        },
         {
-          "item": "garnished:incomplete_crimson_tusk"
-        }
-      ]
-    },
-    {
-      "type": "create:pressing",
-      "ingredients": [
-        {
-          "item": "garnished:incomplete_crimson_tusk"
+          "item": "garnished:crushed_crimson_fungus"
         }
       ],
       "results": [
@@ -59,7 +49,7 @@
           "item": "garnished:incomplete_crimson_tusk"
         },
         {
-          "item": "garnished:crushed_crimson_fungus"
+          "item": "garnished:incandescent_petal"
         }
       ],
       "results": [
