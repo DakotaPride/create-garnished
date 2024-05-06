@@ -1,7 +1,5 @@
 package net.dakotapride.garnished.modifier;
 
-import com.tterrag.registrate.util.entry.ItemEntry;
-
 import net.dakotapride.garnished.registry.GarnishedItems;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 
@@ -15,7 +13,7 @@ import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 
 public class LootTableModifiers {
 
-	private static final ResourceLocation ANCIENTY_CITY_CHEST_ID =
+	private static final ResourceLocation ANCIENT_CITY_CHEST_ID =
 			new ResourceLocation("minecraft", "chests/ancient_city");
 	private static final ResourceLocation TREASURE_CHEST_ID =
 			new ResourceLocation("minecraft", "chests/buried_treasure");
@@ -24,7 +22,7 @@ public class LootTableModifiers {
 
 	public static void modifyLootTables() {
 		LootTableEvents.MODIFY.register((resourceManager, lootManager, id, tableBuilder, source) -> {
-			if(ANCIENTY_CITY_CHEST_ID.equals(id)) {
+			if(ANCIENT_CITY_CHEST_ID.equals(id)) {
 				LootPool.Builder poolBuilder = LootPool.lootPool()
 						.setRolls(ConstantValue.exactly(1))
 						.conditionally(LootItemRandomChanceCondition.randomChance(0.35F).build()) // Drops 35% of the time

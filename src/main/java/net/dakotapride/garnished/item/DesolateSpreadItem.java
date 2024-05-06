@@ -1,7 +1,5 @@
 package net.dakotapride.garnished.item;
 
-import net.minecraft.core.registries.Registries;
-
 import org.jetbrains.annotations.NotNull;
 
 import net.dakotapride.garnished.registry.GarnishedFeatures;
@@ -9,6 +7,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionResult;
@@ -84,7 +83,7 @@ public class DesolateSpreadItem extends Item {
     }
 
     private void place(Registry<ConfiguredFeature<?, ?>> registry, ServerLevel level, ChunkGenerator generator, RandomSource random, BlockPos pos) {
-        registry.getHolder(GarnishedFeatures.END_STONE_VEGETATION_BONEMEAL_CONFIGURED).ifPresent((p_255920_) -> {
+        registry.getHolder(GarnishedFeatures.END_STONE_VEGETATION_SPREAD_CONFIGURED).ifPresent((p_255920_) -> {
             p_255920_.value().place(level, generator, random, pos);
         });
     }

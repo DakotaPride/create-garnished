@@ -3,6 +3,8 @@ package net.dakotapride.garnished;
 import net.dakotapride.garnished.modifier.LootTableModifiers;
 
 import net.dakotapride.garnished.recipe.GarnishedFanProcessing;
+import net.dakotapride.garnished.registry.GarnishedAdvancementUtils;
+import net.dakotapride.garnished.registry.GarnishedBlockEntities;
 import net.dakotapride.garnished.registry.GarnishedPonderIndex;
 import net.dakotapride.garnished.registry.GarnishedRecipeTypes;
 import net.minecraft.resources.ResourceLocation;
@@ -51,6 +53,7 @@ public class CreateGarnished implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		GarnishedBlockEntities.setRegister();
 		GarnishedItems.setRegister();
 		GarnishedBlocks.setRegister();
 		GarnishedTabs.setRegister();
@@ -86,6 +89,8 @@ public class CreateGarnished implements ModInitializer {
 				() -> () -> "{} is accessing Porting Lib from the server!"
 		), NAME);
 
+		GarnishedAdvancementUtils.register();
+
 		PotionBrewing.addMix(Potions.AWKWARD, GarnishedItems.BRITTLE_DUST.get(), GarnishedEffects.AVERSION_POTION);
 		PotionBrewing.addMix(GarnishedEffects.AVERSION_POTION, Items.REDSTONE, GarnishedEffects.LONG_AVERSION_POTION);
 		PotionBrewing.addMix(Potions.AWKWARD, GarnishedItems.ENDER_JELLY_BLOB.get(), GarnishedEffects.FLAGRANT_POTION);
@@ -98,6 +103,10 @@ public class CreateGarnished implements ModInitializer {
 		PotionBrewing.addMix(Potions.AWKWARD, GarnishedItems.VOLATILE_DUST.get(), GarnishedEffects.SANCTITY_POTION);
 
 		PotionBrewing.addMix(Potions.MUNDANE, GarnishedItems.SOLEMN_DUST.get(), GarnishedEffects.MUMMIFICATION_POTION);
+
+		PotionBrewing.addMix(Potions.THICK, GarnishedItems.FROST.get(), GarnishedEffects.FREEZING_POTION);
+		PotionBrewing.addMix(GarnishedEffects.FREEZING_POTION, Items.REDSTONE, GarnishedEffects.LONG_FREEZING_POTION);
+
 
 		StrippableBlockRegistry.register(GarnishedBlocks.SEPIA_STEM.get(), GarnishedBlocks.STRIPPED_SEPIA_STEM.get());
 		StrippableBlockRegistry.register(GarnishedBlocks.SEPIA_HYPHAE.get(), GarnishedBlocks.STRIPPED_SEPIA_HYPHAE.get());

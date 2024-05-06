@@ -1,0 +1,7 @@
+{
+  "type": "emi:info",
+  "stacks": [
+    "item:garnished:ghast_tendril"
+  ],
+  "text": "emi.garnished.ghast_tendril.information"
+}

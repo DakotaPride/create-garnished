@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "garnished:block/senile_bone_block_top",
+    "side": "garnished:block/senile_bone_block_side"
+  }
+}

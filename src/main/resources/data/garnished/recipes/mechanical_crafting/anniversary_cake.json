@@ -1,0 +1,35 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": true,
+  "key": {
+    "X": {
+      "item": "minecraft:sugar"
+    },
+    "A": {
+      "item": "garnished:venerable_dough"
+    },
+    "B": {
+      "tag": "garnished:mastic_paste"
+    },
+    "C": {
+      "item": "garnished:bok_choy"
+    },
+    "D": {
+      "item": "garnished:vex_wing"
+    },
+    "E": {
+      "item": "garnished:torrid_blend"
+    }
+  },
+  "pattern": [
+    "  X  ",
+    "  A  ",
+    " BXB ",
+    " ADA ",
+    "BXXXB",
+    "ACECA"
+  ],
+  "result": {
+    "item": "garnished:anniversary_cake"
+  }
+}

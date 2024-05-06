@@ -8,6 +8,15 @@
           "name": "garnished:voltaic_sea_grass",
           "conditions": [
             {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "flags": {
+                  "is_baby": false
+                }
+              }
+            },
+            {
               "condition": "minecraft:table_bonus",
               "enchantment": "garnished:salvaging",
               "chances": [

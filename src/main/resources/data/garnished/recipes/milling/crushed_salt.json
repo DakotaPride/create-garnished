@@ -5,7 +5,7 @@
       "item": "create:limestone"
     }
   ],
-  "processingTime": 150,
+  "processingTime": 200,
   "results": [
     {
       "count": 1,
@@ -14,12 +14,7 @@
     {
       "chance": 0.10,
       "item": "minecraft:iron_nugget",
-      "count": 2
-    },
-    {
-      "chance": 0.10,
-      "item": "create:zinc_nugget",
-      "count": 2
+      "count": 1
     }
   ]
 }

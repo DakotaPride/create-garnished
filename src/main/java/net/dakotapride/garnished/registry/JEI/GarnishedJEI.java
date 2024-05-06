@@ -11,6 +11,7 @@ import com.simibubi.create.compat.jei.category.ProcessingViaFanCategory;
 
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
+import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.recipe.category.IRecipeCategory;
 import mezz.jei.api.registration.IRecipeCatalystRegistration;
 import mezz.jei.api.registration.IRecipeCategoryRegistration;
@@ -25,10 +26,13 @@ import net.dakotapride.garnished.recipe.PurpleDyeBlowingFanRecipe;
 import net.dakotapride.garnished.recipe.RedDyeBlowingFanRecipe;
 import net.dakotapride.garnished.recipe.YellowDyeBlowingFanRecipe;
 import net.dakotapride.garnished.registry.GarnishedFluids;
+import net.dakotapride.garnished.registry.GarnishedItems;
 import net.dakotapride.garnished.registry.GarnishedRecipeTypes;
 import net.dakotapride.garnished.registry.JEI.add.RecipeCategoryBuilder;
 import net.minecraft.MethodsReturnNonnullByDefault;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Recipe;
 
@@ -75,6 +79,33 @@ public class GarnishedJEI implements IModPlugin {
 		//						new JeiFluidIngredient(GarnishedFluids.PURPLE_MASTIC_RESIN.get().getFlowing(), 1)
 		//				)
 		//		);
+
+		registration.addIngredientInfo(new ItemStack(GarnishedItems.ENFLAMED_MANDIBLE.get()), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.garnished.enflamed_mandible.information"));
+		registration.addIngredientInfo(new ItemStack(GarnishedItems.GHAST_TENDRIL.get()), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.garnished.ghast_tendril.information"));
+		registration.addIngredientInfo(new ItemStack(GarnishedItems.MOLTEN_REMNANT.get()), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.garnished.molten_remnant.information"));
+		registration.addIngredientInfo(new ItemStack(GarnishedItems.RAW_POLAR_BEAR_MEAT.get()), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.garnished.polar_bear_meat.information"));
+		registration.addIngredientInfo(new ItemStack(GarnishedItems.POLAR_BEAR_HIDE.get()), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.garnished.polar_bear_hide.information"));
+		registration.addIngredientInfo(new ItemStack(GarnishedItems.NUMBING_PARCHMENT.get()), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.garnished.stray_parchment.information"));
+		registration.addIngredientInfo(new ItemStack(GarnishedItems.RAW_TENEBROUS_MEAT.get()), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.garnished.tenebrous_meat.information"));
+		registration.addIngredientInfo(new ItemStack(GarnishedItems.TUSK.get()), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.garnished.tusk.information"));
+		registration.addIngredientInfo(new ItemStack(GarnishedItems.IRATE_TUSK.get()), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.garnished.irate_tusk.information"));
+		registration.addIngredientInfo(new ItemStack(GarnishedItems.DIMMED_SCALE.get()), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.garnished.ender_scale.information"));
+		registration.addIngredientInfo(new ItemStack(GarnishedItems.PRELIMINARY_NUCLEUS.get()), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.garnished.endermite_heart.information"));
+		registration.addIngredientInfo(new ItemStack(GarnishedItems.MEAT_SCRAPS.get()), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.garnished.ravager_meat.information"));
+		registration.addIngredientInfo(new ItemStack(GarnishedItems.VEX_WING.get()), VanillaTypes.ITEM_STACK,
+				Component.translatable("jei.garnished.vex_wing.information"));
 	}
 
 	@Override

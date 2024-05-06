@@ -1,0 +1,36 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:dragon_stone"
+    },
+    "title": {
+      "translate": "advancement.garnished.wyvern_stone.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.wyvern_stone.description",
+      "color": "#DBA213"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "garnished:rosy_cocktail",
+  "criteria": {
+    "obtain_wyvern_stone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "garnished:stone_types/dragon_stone"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_wyvern_stone"
+    ]
+  ]
+}

@@ -9,9 +9,13 @@ import net.dakotapride.garnished.block.AbyssalStoneBlock;
 import net.dakotapride.garnished.block.AbyssalStoneSlabBlock;
 import net.dakotapride.garnished.block.AbyssalStoneStairsBlock;
 import net.dakotapride.garnished.block.AbyssalStoneWallBlock;
+import net.dakotapride.garnished.block.BokChoyPlantBlock;
 import net.dakotapride.garnished.block.CarnotiteStairsBlock;
+import net.dakotapride.garnished.block.DragonStoneStairsBlock;
 import net.dakotapride.garnished.block.EnderJellyBlock;
 import net.dakotapride.garnished.block.MasticBlock;
+import net.dakotapride.garnished.block.NetherFlowerBlock;
+import net.dakotapride.garnished.block.NetherLichenBlock;
 import net.dakotapride.garnished.block.NutSackBlock;
 import net.dakotapride.garnished.block.RitualisticStoneStairsBlock;
 import net.dakotapride.garnished.block.SolidifiedGarnishBlock;
@@ -21,6 +25,7 @@ import net.dakotapride.garnished.block.UnstableStoneSlabBlock;
 import net.dakotapride.garnished.block.UnstableStoneStairsBlock;
 import net.dakotapride.garnished.block.UnstableStoneWallBlock;
 import net.dakotapride.garnished.block.VoltaicSeagrassBlock;
+import net.dakotapride.garnished.block.cake.AnniversaryCakeBlock;
 import net.dakotapride.garnished.block.kelp.DulseKelpBlock;
 import net.dakotapride.garnished.block.kelp.DulseKelpPlantBlock;
 import net.dakotapride.garnished.block.kelp.VermilionKelpBlock;
@@ -37,6 +42,13 @@ import net.dakotapride.garnished.block.nut.NutStairsBlock;
 import net.dakotapride.garnished.block.nut.NutTrapdoorBlock;
 import net.dakotapride.garnished.block.nut.NutWallHangingSignBlock;
 import net.dakotapride.garnished.block.nut.NutWallSignBlock;
+import net.dakotapride.garnished.block.potted_blocks.PottedAureateShrubBlock;
+import net.dakotapride.garnished.block.potted_blocks.PottedBarrenRootsBlock;
+import net.dakotapride.garnished.block.potted_blocks.PottedIncandescentLilyBlock;
+import net.dakotapride.garnished.block.potted_blocks.PottedPansophicalDaisyBlock;
+import net.dakotapride.garnished.block.potted_blocks.PottedSepiaFungusBlock;
+import net.dakotapride.garnished.block.potted_blocks.PottedSmallChorusPlantBlock;
+import net.dakotapride.garnished.block.potted_blocks.PottedSoulRootsBlock;
 import net.dakotapride.garnished.block.sapling.AlmondSaplingBlock;
 import net.dakotapride.garnished.block.sapling.BuhgSaplingBlock;
 import net.dakotapride.garnished.block.sapling.CashewSaplingBlock;
@@ -63,6 +75,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FenceBlock;
 import net.minecraft.world.level.block.LeavesBlock;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.WallBlock;
@@ -1018,6 +1031,175 @@ public class GarnishedBlocks {
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.OAK_WOOD).register();
+
+	public static final BlockEntry<NetherFlowerBlock> PANSOPHICAL_DAISY =
+			REGISTRATE.block("pansophical_daisy", NetherFlowerBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.WARPED_FUNGUS).register();
+	public static final BlockEntry<NetherFlowerBlock> INCANDESCENT_LILY =
+			REGISTRATE.block("incandescent_lily", NetherFlowerBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.CRIMSON_FUNGUS).register();
+	public static final BlockEntry<NetherLichenBlock> SORROWFUL_LICHEN =
+			REGISTRATE.block("sorrowful_lichen", NetherLichenBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.properties(p -> p.lightLevel(NetherLichenBlock.emission(4)).mapColor(MapColor.GLOW_LICHEN)
+							.replaceable().noCollission().strength(0.2F).sound(SoundType.GLOW_LICHEN)
+							.pushReaction(PushReaction.DESTROY)).register();
+	public static final BlockEntry<RotatedPillarBlock> SENILE_BONE_BLOCK =
+			REGISTRATE.block("senile_bone_block", RotatedPillarBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.BONE_BLOCK).register();
+
+	public static final BlockEntry<EndPlantBlock> AUREATE_SHRUB =
+			REGISTRATE.block("aureate_shrub", EndPlantBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.WARPED_ROOTS).register();
+
+	public static final BlockEntry<PottedSepiaFungusBlock> POTTED_SEPIA_FUNGUS =
+			REGISTRATE.block("potted_sepia_fungus", PottedSepiaFungusBlock::new)
+					.initialProperties(() -> Blocks.POTTED_CRIMSON_FUNGUS).register();
+	public static final BlockEntry<PottedSoulRootsBlock> POTTED_SOUL_ROOTS =
+			REGISTRATE.block("potted_soul_roots", PottedSoulRootsBlock::new)
+					.initialProperties(() -> Blocks.POTTED_CRIMSON_FUNGUS).register();
+	public static final BlockEntry<PottedBarrenRootsBlock> POTTED_BARREN_ROOTS =
+			REGISTRATE.block("potted_barren_roots", PottedBarrenRootsBlock::new)
+					.initialProperties(() -> Blocks.POTTED_CRIMSON_FUNGUS).register();
+	public static final BlockEntry<PottedSmallChorusPlantBlock> POTTED_SMALL_CHORUS_PLANT =
+			REGISTRATE.block("potted_small_chorus_plant", PottedSmallChorusPlantBlock::new)
+					.initialProperties(() -> Blocks.POTTED_CRIMSON_FUNGUS).register();
+	public static final BlockEntry<PottedPansophicalDaisyBlock> POTTED_PANSOPHICAL_DAISY =
+			REGISTRATE.block("potted_pansophical_daisy", PottedPansophicalDaisyBlock::new)
+					.initialProperties(() -> Blocks.POTTED_CRIMSON_FUNGUS).register();
+	public static final BlockEntry<PottedIncandescentLilyBlock> POTTED_INCANDESCENT_LILY =
+			REGISTRATE.block("potted_incandescent_lily", PottedIncandescentLilyBlock::new)
+					.initialProperties(() -> Blocks.POTTED_CRIMSON_FUNGUS).register();
+
+	public static final BlockEntry<PottedAureateShrubBlock> POTTED_AUREATE_SHRUB =
+			REGISTRATE.block("potted_aureate_shrub", PottedAureateShrubBlock::new)
+					.initialProperties(() -> Blocks.POTTED_CRIMSON_FUNGUS).register();
+
+
+	public static final BlockEntry<Block> DRAGON_STONE =
+			REGISTRATE.block("dragon_stone", Block::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<SlabBlock> DRAGON_STONE_SLAB =
+			REGISTRATE.block("dragon_stone_slab", SlabBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<DragonStoneStairsBlock> DRAGON_STONE_STAIRS =
+			REGISTRATE.block("dragon_stone_stairs", DragonStoneStairsBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<WallBlock> DRAGON_STONE_WALL =
+			REGISTRATE.block("dragon_stone_wall", WallBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<Block> POLISHED_DRAGON_STONE =
+			REGISTRATE.block("polished_dragon_stone", Block::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<SlabBlock> POLISHED_DRAGON_STONE_SLAB =
+			REGISTRATE.block("polished_dragon_stone_slab", SlabBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<DragonStoneStairsBlock> POLISHED_DRAGON_STONE_STAIRS =
+			REGISTRATE.block("polished_dragon_stone_stairs", DragonStoneStairsBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<WallBlock> POLISHED_DRAGON_STONE_WALL =
+			REGISTRATE.block("polished_dragon_stone_wall", WallBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<Block> DRAGON_STONE_BRICKS =
+			REGISTRATE.block("dragon_stone_bricks", Block::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<SlabBlock> DRAGON_STONE_BRICKS_SLAB =
+			REGISTRATE.block("dragon_stone_bricks_slab", SlabBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<DragonStoneStairsBlock> DRAGON_STONE_BRICKS_STAIRS =
+			REGISTRATE.block("dragon_stone_bricks_stairs", DragonStoneStairsBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<WallBlock> DRAGON_STONE_BRICKS_WALL =
+			REGISTRATE.block("dragon_stone_bricks_wall", WallBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<Block> CHISELED_DRAGON_STONE_BRICKS =
+			REGISTRATE.block("chiseled_dragon_stone_bricks", Block::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<Block> SMOOTH_DRAGON_STONE =
+			REGISTRATE.block("smooth_dragon_stone", Block::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<SlabBlock> SMOOTH_DRAGON_STONE_SLAB =
+			REGISTRATE.block("smooth_dragon_stone_slab", SlabBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<DragonStoneStairsBlock> SMOOTH_DRAGON_STONE_STAIRS =
+			REGISTRATE.block("smooth_dragon_stone_stairs", DragonStoneStairsBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<WallBlock> SMOOTH_DRAGON_STONE_WALL =
+			REGISTRATE.block("smooth_dragon_stone_wall", WallBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+
+	public static final BlockEntry<AnniversaryCakeBlock> ANNIVERSARY_CAKE =
+			REGISTRATE.block("anniversary_cake", AnniversaryCakeBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.CAKE).register();
+
+	public static final BlockEntry<BokChoyPlantBlock> BOK_CHOY_PLANT =
+			REGISTRATE.block("bok_choy_plant", BokChoyPlantBlock::new)
+					.initialProperties(() -> Blocks.WHEAT)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.properties(p -> p.mapColor(MapColor.GRASS).noCollission().instabreak().sound(SoundType.GRASS))
+					.register();
 
 	public static void setRegister() {}
 }

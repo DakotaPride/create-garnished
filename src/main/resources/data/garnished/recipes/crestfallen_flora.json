@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "item": "garnished:torrid_blend"
+    },
+    {
+      "item": "garnished:torrid_blend"
+    },
+    {
+      "item": "garnished:incandescent_petal"
+    },
+    {
+      "item": "garnished:incandescent_petal"
+    },
+    {
+      "item": "garnished:sorrowful_lichen"
+    }
+  ],
+  "result": {
+    "item": "garnished:crestfallen_flora"
+  }
+}

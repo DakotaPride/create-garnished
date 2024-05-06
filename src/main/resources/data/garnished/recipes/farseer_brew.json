@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "minecraft:dragon_breath"
+    },
+    {
+      "item": "garnished:preliminary_nucleus"
+    },
+    {
+      "item": "garnished:aureate_shrub"
+    },
+    {
+      "item": "garnished:vex_wing"
+    }
+  ],
+  "result": {
+    "item": "garnished:farseer_brew"
+  }
+}

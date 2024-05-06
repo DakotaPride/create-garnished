@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "garnished:vex_wing",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "garnished:salvaging",
+              "chances": [
+                0.00625,
+                0.0625
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

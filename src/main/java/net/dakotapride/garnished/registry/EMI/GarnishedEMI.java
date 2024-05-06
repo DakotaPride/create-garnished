@@ -14,6 +14,7 @@ import com.simibubi.create.content.logistics.filter.FilterScreen;
 import com.simibubi.create.content.redstone.link.controller.LinkedControllerScreen;
 import com.simibubi.create.content.trains.schedule.ScheduleScreen;
 
+import dev.emi.emi.api.recipe.EmiInfoRecipe;
 import io.github.fabricators_of_create.porting_lib.util.FluidUnit;
 import net.dakotapride.garnished.registry.GarnishedBlocks;
 

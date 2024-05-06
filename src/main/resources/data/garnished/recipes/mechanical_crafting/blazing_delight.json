@@ -11,13 +11,19 @@
     "C": {
       "item": "garnished:crushed_shroomlight"
     },
+    "D": {
+      "item": "garnished:malodorous_mixture"
+    },
+    "E": {
+      "item": "garnished:torrid_blend"
+    },
     "#": {
       "tag": "garnished:crimson_tusks"
     }
   },
   "pattern": [
     "BAC",
-    " # "
+    "D#E"
   ],
   "result": {
     "item": "garnished:blazing_delight"

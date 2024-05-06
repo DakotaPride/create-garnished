@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:bowl"
+    },
+    {
+      "item": "garnished:pansophical_daisy"
+    },
+    {
+      "item": "garnished:pansophical_petal"
+    },
+    {
+      "item": "garnished:crushed_warped_fungus"
+    },
+    {
+      "item": "garnished:crushed_warped_fungus"
+    },
+    {
+      "item": "minecraft:warped_fungus"
+    }
+  ],
+  "result": {
+    "item": "garnished:warped_brew"
+  }
+}

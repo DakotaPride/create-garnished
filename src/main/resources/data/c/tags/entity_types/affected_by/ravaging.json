@@ -6,6 +6,26 @@
     "minecraft:ghast",
     "minecraft:warden",
     "minecraft:polar_bear",
-    "minecraft:stray"
+    "minecraft:stray",
+    "minecraft:endermite",
+    "minecraft:enderman",
+    "minecraft:ender_dragon",
+    "minecraft:evoker",
+    "minecraft:vindicator",
+    "minecraft:pillager",
+    "minecraft:illusioner",
+    "minecraft:ravager",
+    "minecraft:piglin",
+    "minecraft:zombified_piglin",
+    "minecraft:hoglin",
+    "minecraft:zoglin",
+    "minecraft:slime",
+    "minecraft:spider",
+    "minecraft:cave_spider",
+    "minecraft:skeleton",
+    "minecraft:skeleton_horse",
+    "minecraft:vex",
+    "minecraft:dolphin",
+    "minecraft:sniffer"
   ]
 }

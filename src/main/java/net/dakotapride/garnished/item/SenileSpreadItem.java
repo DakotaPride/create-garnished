@@ -17,11 +17,12 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 
-public class SenileSpreadItem extends Item {
+public class SenileSpreadItem  extends Item {
     public static final int SPREAD_WIDTH = 3;
     public static final int SPREAD_HEIGHT = 1;
     public static final int COUNT_MULTIPLIER = 3;
@@ -52,7 +53,7 @@ public class SenileSpreadItem extends Item {
 
     public boolean applySpread(ItemStack stack, Level level, BlockPos pos) {
         BlockState blockstate = level.getBlockState(pos);
-        if (blockstate.getBlock().defaultBlockState().is(BlockTags.SOUL_FIRE_BASE_BLOCKS)) {
+        if (blockstate.getBlock().defaultBlockState().is(BlockTags.SOUL_FIRE_BASE_BLOCKS) || blockstate.getBlock().defaultBlockState().is(Blocks.WARPED_NYLIUM) || blockstate.getBlock().defaultBlockState().is(Blocks.CRIMSON_NYLIUM)) {
             if (level instanceof ServerLevel) {
                 if (this.isSuccessful()) {
                     this.performSpread((ServerLevel)level, level.random, pos);
@@ -76,16 +77,26 @@ public class SenileSpreadItem extends Item {
         BlockPos blockpos = pos.above();
         ChunkGenerator chunkgenerator = level.getChunkSource().getGenerator();
         Registry<ConfiguredFeature<?, ?>> registry = level.registryAccess().registryOrThrow(Registries.CONFIGURED_FEATURE);
-        if (blockstate.is(BlockTags.SOUL_FIRE_BASE_BLOCKS)) {
-            this.place(registry, level, chunkgenerator, random, blockpos);
+        if (blockstate.is(BlockTags.SOUL_FIRE_BASE_BLOCKS)  || blockstate.is(Blocks.WARPED_NYLIUM) || blockstate.is(Blocks.CRIMSON_NYLIUM)) {
+            this.place(blockstate, registry, level, chunkgenerator, random, blockpos);
         }
 
     }
 
-    private void place(Registry<ConfiguredFeature<?, ?>> registry, ServerLevel level, ChunkGenerator generator, RandomSource random, BlockPos pos) {
-        registry.getHolder(GarnishedFeatures.SOUL_SAND_VEGETATION_BONEMEAL_CONFIGURED).ifPresent((p_255920_) -> {
-            p_255920_.value().place(level, generator, random, pos);
-        });
+    private void place(BlockState blockstate, Registry<ConfiguredFeature<?, ?>> registry, ServerLevel level, ChunkGenerator generator, RandomSource random, BlockPos pos) {
+        if (blockstate.is(BlockTags.SOUL_FIRE_BASE_BLOCKS)) {
+            registry.getHolder(GarnishedFeatures.SOUL_SAND_VEGETATION_SPREAD_CONFIGURED).ifPresent((feature) -> {
+                feature.value().place(level, generator, random, pos);
+            });
+        } else if (blockstate.is(Blocks.WARPED_NYLIUM)) {
+            registry.getHolder(GarnishedFeatures.WARPED_VEGETATION_SPREAD_CONFIGURED).ifPresent((feature) -> {
+                feature.value().place(level, generator, random, pos);
+            });
+        } else if (blockstate.is(Blocks.CRIMSON_NYLIUM)) {
+            registry.getHolder(GarnishedFeatures.CRIMSON_VEGETATION_SPREAD_CONFIGURED).ifPresent((feature) -> {
+                feature.value().place(level, generator, random, pos);
+            });
+        }
     }
 
     public static void getParticles(LevelAccessor level, BlockPos pos, int data) {

@@ -1,0 +1,7 @@
+{
+  "type": "emi:info",
+  "stacks": [
+    "item:garnished:meat_scraps"
+  ],
+  "text": "emi.garnished.ravager_meat.information"
+}

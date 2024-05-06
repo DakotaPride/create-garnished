@@ -11,35 +11,61 @@ import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 
 public class MeltedCinderFlourNutWithEffectFoodItem extends Item implements IGarnishedItem {
-	public MeltedCinderFlourNutWithEffectFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.MELTED_CINDER_FLOUR_NUT));
+	public MeltedCinderFlourNutWithEffectFoodItem(FoodProperties foodProperties, Properties properties) {
+		super(properties.food(foodProperties));
 	}
 
-	@Override
-	public @NotNull ItemStack finishUsingItem(@NotNull ItemStack stack, @NotNull Level level, @NotNull LivingEntity livingEntity) {
-		if (!stack.is(GarnishedItems.EFFECT_CINDER_BUHG.get()) && !stack.is(GarnishedItems.POTENT_SPEED_CINDER_HAZELNUT.get())) {
-			livingEntity.addEffect(new MobEffectInstance(getCinderEffect(stack), getCinderEffectDuration));
+	public static class Peanut extends MeltedCinderFlourNutWithEffectFoodItem {
+		public Peanut(Properties properties) {
+			super(GarnishedFoods.MELTED_CINDER_FLOUR_PEANUT, properties);
 		}
-
-		if (stack.is(GarnishedItems.EFFECT_CINDER_BUHG.get())) {
-			livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, getCinderEffectDuration));
-			livingEntity.addEffect(new MobEffectInstance(MobEffects.INVISIBILITY, getCinderEffectDuration));
+	}
+	public static class Walnut extends MeltedCinderFlourNutWithEffectFoodItem {
+		public Walnut(Properties properties) {
+			super(GarnishedFoods.MELTED_CINDER_FLOUR_WALNUT, properties);
 		}
-
-		if (stack.is(GarnishedItems.POTENT_SPEED_CINDER_HAZELNUT.get())) {
-			livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, getCinderEffectDuration, 1));
+	}
+	public static class Chestnut extends MeltedCinderFlourNutWithEffectFoodItem {
+		public Chestnut(Properties properties) {
+			super(GarnishedFoods.MELTED_CINDER_FLOUR_CHESTNUT, properties);
 		}
-
-		return super.finishUsingItem(stack, level, livingEntity);
+	}
+	public static class Hazelnut extends MeltedCinderFlourNutWithEffectFoodItem {
+		public Hazelnut(Properties properties) {
+			super(GarnishedFoods.MELTED_CINDER_FLOUR_HAZELNUT, properties);
+		}
+	}
+	public static class Macadamia extends MeltedCinderFlourNutWithEffectFoodItem {
+		public Macadamia(Properties properties) {
+			super(GarnishedFoods.MELTED_CINDER_FLOUR_MACADAMIA, properties);
+		}
+	}
+	public static class Cashew extends MeltedCinderFlourNutWithEffectFoodItem {
+		public Cashew(Properties properties) {
+			super(GarnishedFoods.MELTED_CINDER_FLOUR_CASHEW, properties);
+		}
+	}
+	public static class Pistachio extends MeltedCinderFlourNutWithEffectFoodItem {
+		public Pistachio(Properties properties) {
+			super(GarnishedFoods.MELTED_CINDER_FLOUR_PISTACHIO, properties);
+		}
+	}
+	public static class Almond extends MeltedCinderFlourNutWithEffectFoodItem {
+		public Almond(Properties properties) {
+			super(GarnishedFoods.MELTED_CINDER_FLOUR_ALMOND, properties);
+		}
+	}
+	public static class Pecan extends MeltedCinderFlourNutWithEffectFoodItem {
+		public Pecan(Properties properties) {
+			super(GarnishedFoods.MELTED_CINDER_FLOUR_PECAN, properties);
+		}
 	}
 
 	@Override

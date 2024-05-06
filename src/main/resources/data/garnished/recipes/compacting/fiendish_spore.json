@@ -1,0 +1,19 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "garnished:brittle_dust"
+    },
+    {
+      "item": "garnished:sorrowful_lichen"
+    },
+    {
+      "item": "garnished:incandescent_petal"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:fiendish_spore"
+    }
+  ]
+}

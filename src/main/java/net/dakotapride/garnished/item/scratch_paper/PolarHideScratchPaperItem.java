@@ -1,15 +1,16 @@
 package net.dakotapride.garnished.item.scratch_paper;
 
-import java.util.function.Consumer;
-
-import org.jetbrains.annotations.NotNull;
+import javax.annotation.ParametersAreNonnullByDefault;
 
 import com.simibubi.create.AllSoundEvents;
 import com.simibubi.create.foundation.item.CustomUseEffectsItem;
 import com.simibubi.create.foundation.mixin.accessor.LivingEntityAccessor;
 import com.simibubi.create.foundation.utility.VecHelper;
 
+import io.github.fabricators_of_create.porting_lib.util.NBTSerializer;
+import net.dakotapride.garnished.registry.GarnishedEffects;
 import net.dakotapride.garnished.registry.GarnishedItems;
+import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.particles.ItemParticleOption;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
@@ -18,166 +19,145 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.UseAnim;
-import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.phys.AABB;
-import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 
-public class PolarHideScratchPaperItem extends ScratchPaperItem implements CustomUseEffectsItem {
-    public PolarHideScratchPaperItem(Properties pProperties) {
-        super(MobEffects.MOVEMENT_SLOWDOWN, GarnishedItems.FROST, Items.BLUE_ICE.getDefaultInstance(), pProperties);
-    }
+@MethodsReturnNonnullByDefault
+@ParametersAreNonnullByDefault
+public class PolarHideScratchPaperItem extends Item implements CustomUseEffectsItem {
 
-    @Override
-    public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level level, Player player, @NotNull InteractionHand hand) {
-        ItemStack itemstack = player.getItemInHand(hand);
-        InteractionResultHolder<ItemStack> FAIL = new InteractionResultHolder<>(InteractionResult.FAIL, itemstack);
+	public PolarHideScratchPaperItem(Properties properties) {
+		super(properties.defaultDurability(16));
+	}
 
-        if (itemstack.getOrCreateTag()
-                .contains("ClearsEffect")) {
-            player.startUsingItem(hand);
-            return new InteractionResultHolder<>(InteractionResult.PASS, itemstack);
-        }
+	@Override
+	public InteractionResultHolder<ItemStack> use(Level worldIn, Player playerIn, InteractionHand handIn) {
+		ItemStack itemstack = playerIn.getItemInHand(handIn);
+		InteractionResultHolder<ItemStack> FAIL = new InteractionResultHolder<>(InteractionResult.FAIL, itemstack);
 
-        InteractionHand otherHand =
-                hand == InteractionHand.MAIN_HAND ? InteractionHand.OFF_HAND : InteractionHand.MAIN_HAND;
-        ItemStack itemInOtherHand = player.getItemInHand(otherHand);
-        if ((player.hasEffect(effect) || player.isFreezing() || player.getTicksFrozen() > 0) && itemInOtherHand.is(utility.get())) {
-            ItemStack item = itemInOtherHand.copy();
-            ItemStack toUtilize = item.split(1);
-            player.startUsingItem(hand);
-            itemstack.getOrCreateTag()
-                    .put("ClearsEffect", toUtilize.serializeNBT());
-            player.setItemInHand(otherHand, item);
-            return new InteractionResultHolder<>(InteractionResult.SUCCESS, itemstack);
-        }
+		if (itemstack.getOrCreateTag()
+				.contains("ClearsEffect")) {
+			playerIn.startUsingItem(handIn);
+			return new InteractionResultHolder<>(InteractionResult.PASS, itemstack);
+		}
 
-        BlockHitResult raytraceresult = getPlayerPOVHitResult(level, player, ClipContext.Fluid.NONE);
-        Vec3 hitVec = raytraceresult.getLocation();
+		InteractionHand otherHand =
+				handIn == InteractionHand.MAIN_HAND ? InteractionHand.OFF_HAND : InteractionHand.MAIN_HAND;
+		ItemStack itemInOtherHand = playerIn.getItemInHand(otherHand);
+		if ((playerIn.hasEffect(GarnishedEffects.FREEZING) || playerIn.isFreezing() || playerIn.getTicksFrozen() > 0) && itemInOtherHand.is(GarnishedItems.FROST.get())) {
+			ItemStack item = itemInOtherHand.copy();
+			ItemStack toUtilize = item.split(1);
+			playerIn.startUsingItem(handIn);
+			itemstack.getOrCreateTag()
+					.put("ClearsEffect", NBTSerializer.serializeNBT(toUtilize));
+			playerIn.setItemInHand(otherHand, item);
+			return new InteractionResultHolder<>(InteractionResult.SUCCESS, itemstack);
+		}
 
-        AABB bb = new AABB(hitVec, hitVec).inflate(1f);
-        ItemEntity pickUp = null;
-        for (ItemEntity itemEntity : level.getEntitiesOfClass(ItemEntity.class, bb)) {
-            if (!itemEntity.isAlive())
-                continue;
-            if (itemEntity.position()
-                    .distanceTo(player.position()) > 3)
-                continue;
-            if (!(player.hasEffect(effect) || player.isFreezing() || player.getTicksFrozen() > 0) && itemInOtherHand.is(utility.get()))
-                continue;
-            pickUp = itemEntity;
-            break;
-        }
+		return FAIL;
 
-        if (pickUp == null)
-            return FAIL;
+	}
 
-        ItemStack item = pickUp.getItem()
-                .copy();
-        ItemStack toUtilize = item.split(1);
+	@Override
+	public ItemStack finishUsingItem(ItemStack stack, Level worldIn, LivingEntity living) {
+		if (!(living instanceof Player player))
+			return stack;
+		CompoundTag tag = stack.getOrCreateTag();
+		if (tag.contains("ClearsEffect")) {
 
-        player.startUsingItem(hand);
+			if (worldIn.isClientSide) {
+				spawnParticles(living.getEyePosition(1).add(living.getLookAngle().scale(.5f)), Items.BLUE_ICE.getDefaultInstance(), worldIn);
+				return stack;
+			}
 
-        if (!level.isClientSide) {
-            itemstack.getOrCreateTag()
-                    .put("ClearsEffect", toUtilize.serializeNBT());
-            if (item.isEmpty())
-                pickUp.discard();
-            else
-                pickUp.setItem(item);
-        }
+			player.removeEffect(GarnishedEffects.FREEZING);
+			player.setTicksFrozen(0);
+			tag.remove("ClearsEffect");
+			stack.hurtAndBreak(1, living, p -> p.broadcastBreakEvent(p.getUsedItemHand()));
+		}
 
-        return new InteractionResultHolder<>(InteractionResult.SUCCESS, itemstack);
-    }
+		return stack;
+	}
 
-    @Override
-    public @NotNull ItemStack finishUsingItem(@NotNull ItemStack stack, @NotNull Level level, @NotNull LivingEntity living) {
-        if (!(living instanceof Player player))
-            return stack;
-        CompoundTag tag = stack.getOrCreateTag();
-        if (tag.contains("ClearsEffect")) {
+	public static void spawnParticles(Vec3 location, ItemStack particleStack, Level world) {
+		for (int i = 0; i < 20; i++) {
+			Vec3 motion = VecHelper.offsetRandomly(Vec3.ZERO, world.random, 1 / 8f);
+			world.addParticle(new ItemParticleOption(ParticleTypes.ITEM, particleStack), location.x, location.y,
+					location.z, motion.x, motion.y, motion.z);
+		}
+	}
 
-            if (level.isClientSide) {
-                spawnParticles(living.getEyePosition(1).add(living.getLookAngle().scale(.5f)), level, particleStack);
-                return stack;
-            }
+	@Override
+	public void releaseUsing(ItemStack stack, Level worldIn, LivingEntity entityLiving, int timeLeft) {
+		if (!(entityLiving instanceof Player))
+			return;
+		Player player = (Player) entityLiving;
+		CompoundTag tag = stack.getOrCreateTag();
+		if (tag.contains("ClearsEffect")) {
+			ItemStack toUtilize = ItemStack.of(tag.getCompound("ClearsEffect"));
+			player.getInventory()
+					.placeItemBackInInventory(toUtilize);
+			tag.remove("ClearsEffect");
+		}
+	}
 
-            player.removeEffect(effect);
-            player.setTicksFrozen(0);
-            tag.remove("ClearsEffect");
-            stack.hurtAndBreak(1, living, p -> p.broadcastBreakEvent(p.getUsedItemHand()));
-        }
+//	@Override
+//	public boolean canPerformAction(ItemStack stack, ToolAction toolAction) {
+//		return toolAction == ToolActions.AXE_SCRAPE || toolAction == ToolActions.AXE_WAX_OFF;
+//	}
 
-        return stack;
-    }
+	@Override
+	public Boolean shouldTriggerUseEffects(ItemStack stack, LivingEntity entity) {
+		// Trigger every tick so that we have more fine grain control over the animation
+		return true;
+	}
 
-    public static void spawnParticles(Vec3 location, Level world, ItemStack particleStack) {
-        for (int i = 0; i < 20; i++) {
-            Vec3 motion = VecHelper.offsetRandomly(Vec3.ZERO, world.random, 1 / 8f);
-            world.addParticle(new ItemParticleOption(ParticleTypes.ITEM, particleStack), location.x, location.y,
-                    location.z, motion.x, motion.y, motion.z);
-        }
-    }
+	@Override
+	public boolean triggerUseEffects(ItemStack stack, LivingEntity entity, int count, RandomSource random) {
+		CompoundTag tag = stack.getOrCreateTag();
+		if (tag.contains("ClearsEffect")) {
+			ItemStack clearingEffect = ItemStack.of(tag.getCompound("ClearsEffect"));
+			((LivingEntityAccessor) entity).create$callSpawnItemParticles(clearingEffect, 1);
+		}
 
-    @Override
-    public void releaseUsing(@NotNull ItemStack stack, @NotNull Level level, @NotNull LivingEntity living, int timeLeft) {
-        if (!(living instanceof Player player))
-            return;
-        CompoundTag tag = stack.getOrCreateTag();
-        if (tag.contains("ClearsEffect")) {
-            ItemStack toUtilize = ItemStack.of(tag.getCompound("ClearsEffect"));
-            player.getInventory().placeItemBackInInventory(toUtilize);
-            tag.remove("ClearsEffect");
-        }
-    }
+		// After 6 ticks play the sound every 7th
+		if ((entity.getTicksUsingItem() - 6) % 7 == 0)
+			entity.playSound(entity.getEatingSound(stack), 0.9F + 0.2F * random.nextFloat(),
+					random.nextFloat() * 0.2F + 0.9F);
 
-    @Override
-    public Boolean shouldTriggerUseEffects(ItemStack stack, LivingEntity entity) {
-        // Trigger every tick so that we have more fine grain control over the animation
-        return true;
-    }
+		return true;
+	}
 
-    @Override
-    public boolean triggerUseEffects(ItemStack stack, LivingEntity entity, int count, RandomSource random) {
-        CompoundTag tag = stack.getOrCreateTag();
-        if (tag.contains("ClearsEffect")) {
-            ItemStack utilityItem = ItemStack.of(tag.getCompound("ClearsEffect"));
-            ((LivingEntityAccessor) entity).create$callSpawnItemParticles(utilityItem, 1);
-        }
+	@Override
+	public SoundEvent getEatingSound() {
+		return AllSoundEvents.SANDING_SHORT.getMainEvent();
+	}
 
-        // After 6 ticks play the sound every 7th
-        if ((entity.getTicksUsingItem() - 6) % 7 == 0)
-            entity.playSound(entity.getEatingSound(stack), 0.9F + 0.2F * random.nextFloat(),
-                    random.nextFloat() * 0.2F + 0.9F);
+	@Override
+	public UseAnim getUseAnimation(ItemStack stack) {
+		return UseAnim.EAT;
+	}
 
-        return true;
-    }
+	@Override
+	public int getUseDuration(ItemStack stack) {
+		return 16;
+	}
 
-    @Override
-    public @NotNull SoundEvent getEatingSound() {
-        return AllSoundEvents.SANDING_SHORT.getMainEvent();
-    }
+	@Override
+	public int getEnchantmentValue() {
+		return 1;
+	}
 
-    @Override
-    public @NotNull UseAnim getUseAnimation(@NotNull ItemStack stack) {
-        return UseAnim.EAT;
-    }
+//	@Override
+//	@OnlyIn(Dist.CLIENT)
+//	public void initializeClient(Consumer<IClientItemExtensions> consumer) {
+//		consumer.accept(SimpleCustomRenderer.create(this, new FrostScratchPaperItemRenderer()));
+//	}
 
-    @Override
-    public int getUseDuration(@NotNull ItemStack stack) {
-        return 16;
-    }
-
-    @Override
-    public int getEnchantmentValue() {
-        return 1;
-    }
 }

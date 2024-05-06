@@ -1,25 +1,39 @@
 package net.dakotapride.garnished;
 
+import com.mojang.blaze3d.shaders.FogShape;
+import com.simibubi.create.infrastructure.config.AllConfigs;
 import com.terraformersmc.terraform.sign.SpriteIdentifierRegistry;
 
+import io.github.fabricators_of_create.porting_lib.event.client.FogEvents;
+import net.dakotapride.garnished.block.cake.AnniversaryCakeBlockRenderer;
+import net.dakotapride.garnished.registry.GarnishedBlockEntities;
 import net.dakotapride.garnished.registry.GarnishedBlocks;
 import net.dakotapride.garnished.registry.GarnishedFluids;
-import net.dakotapride.garnished.registry.GarnishedPonderIndex;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
+import net.fabricmc.fabric.mixin.client.rendering.BlockEntityRendererFactoriesMixin;
+import net.minecraft.client.Camera;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.color.item.ItemColor;
 import net.minecraft.client.color.item.ItemColors;
 import net.minecraft.client.renderer.BiomeColors;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.FogRenderer;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.Sheets;
+import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.resources.model.Material;
+import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.FoliageColor;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.material.Fluid;
+import net.minecraft.world.level.material.FluidState;
+import net.minecraft.world.level.material.FogType;
 
 public class CreateGarnishedClient implements ClientModInitializer {
 
@@ -116,6 +130,15 @@ public class CreateGarnishedClient implements ClientModInitializer {
 				GarnishedFluids.BLUE_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.BLUE_MASTIC_RESIN.get()));
 		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.PURPLE_MASTIC_RESIN.get().getSource(),
 				GarnishedFluids.PURPLE_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.PURPLE_MASTIC_RESIN.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.DRAGON_BREATH.get().getSource(),
+				GarnishedFluids.DRAGON_BREATH.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.DRAGON_BREATH.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.SWEET_TEA.get().getSource(),
+				GarnishedFluids.SWEET_TEA.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.SWEET_TEA.get()));
+
+		FogEvents.RENDER_FOG.register(CreateGarnishedClient::getGarnishedFogDensity);
+		FogEvents.SET_COLOR.register(CreateGarnishedClient::getGarnishedFogColour);
+
+		BlockEntityRenderers.register(GarnishedBlockEntities.CAKE.get(), AnniversaryCakeBlockRenderer::new);
 	}
 
 	public static synchronized void blockColourProvider(BlockColors colors) {
@@ -137,5 +160,163 @@ public class CreateGarnishedClient implements ClientModInitializer {
 				GarnishedBlocks.ALMOND_LEAVES.get(), GarnishedBlocks.CASHEW_LEAVES.get(), GarnishedBlocks.WALNUT_LEAVES.get(),
 				GarnishedBlocks.PECAN_LEAVES.get(), GarnishedBlocks.BUHG_LEAVES.get(), GarnishedBlocks.PISTACHIO_LEAVES.get(),
 				GarnishedBlocks.MACADAMIA_LEAVES.get(), GarnishedBlocks.HAZELNUT_LEAVES.get(), GarnishedBlocks.CHESTNUT_LEAVES.get());
+	}
+
+	public static boolean getGarnishedFogDensity(FogRenderer.FogMode mode, FogType type, Camera camera, float partialTick, float renderDistance, float nearDistance, float farDistance, FogShape shape, FogEvents.FogData fogData) {
+		Level level = Minecraft.getInstance().level;
+		BlockPos blockPos = camera.getBlockPosition();
+		FluidState fluidState = level.getFluidState(blockPos);
+		if (camera.getPosition().y >= blockPos.getY() + fluidState.getHeight(level, blockPos))
+			return false;
+		Fluid fluid = fluidState.getType();
+		Entity entity = camera.getEntity();
+
+		if (GarnishedFluids.GARNISH.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.APPLE_CIDER.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.PEANUT_OIL.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.CASHEW_MIXTURE.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.MASTIC_RESIN.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.RED_MASTIC_RESIN.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.ORANGE_MASTIC_RESIN.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.YELLOW_MASTIC_RESIN.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.GREEN_MASTIC_RESIN.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.BLUE_MASTIC_RESIN.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.PURPLE_MASTIC_RESIN.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.DRAGON_BREATH.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.SWEET_TEA.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+
+		if (entity.isSpectator())
+			return false;
+
+		return false;
+	}
+
+	public static void getGarnishedFogColour(FogEvents.ColorData event, float partialTicks) {
+		Camera info = event.getCamera();
+		Level level = Minecraft.getInstance().level;
+		BlockPos blockPos = info.getBlockPosition();
+		FluidState fluidState = level.getFluidState(blockPos);
+		if (info.getPosition().y > blockPos.getY() + fluidState.getHeight(level, blockPos))
+			return;
+
+		Fluid fluid = fluidState.getType();
+
+		if (GarnishedFluids.GARNISH.get().isSame(fluid)) {
+			event.setRed(239 / 255f);
+			event.setGreen(233 / 255f);
+			event.setBlue(227 / 255f);
+			return;
+		}
+		if (GarnishedFluids.APPLE_CIDER.get().isSame(fluid)) {
+			event.setRed(239 / 255f);
+			event.setGreen(179 / 255f);
+			event.setBlue(119 / 255f);
+			return;
+		}
+		if (GarnishedFluids.PEANUT_OIL.get().isSame(fluid)) {
+			event.setRed(202 / 255f);
+			event.setGreen(196 / 255f);
+			event.setBlue(159 / 255f);
+			return;
+		}
+		if (GarnishedFluids.CASHEW_MIXTURE.get().isSame(fluid)) {
+			event.setRed(252 / 255f);
+			event.setGreen(239 / 255f);
+			event.setBlue(207 / 255f);
+			return;
+		}
+		if (GarnishedFluids.MASTIC_RESIN.get().isSame(fluid)) {
+			event.setRed(82 / 255f);
+			event.setGreen(107 / 255f);
+			event.setBlue(76 / 255f);
+			return;
+		}
+		if (GarnishedFluids.RED_MASTIC_RESIN.get().isSame(fluid)) {
+			event.setRed(142 / 255f);
+			event.setGreen(25 / 255f);
+			event.setBlue(25 / 255f);
+			return;
+		}
+		if (GarnishedFluids.ORANGE_MASTIC_RESIN.get().isSame(fluid)) {
+			event.setRed(165 / 255f);
+			event.setGreen(86 / 255f);
+			event.setBlue(46 / 255f);
+			return;
+		}
+		if (GarnishedFluids.YELLOW_MASTIC_RESIN.get().isSame(fluid)) {
+			event.setRed(178 / 255f);
+			event.setGreen(136 / 255f);
+			event.setBlue(53 / 255f);
+			return;
+		}
+		if (GarnishedFluids.GREEN_MASTIC_RESIN.get().isSame(fluid)) {
+			event.setRed(67 / 255f);
+			event.setGreen(142 / 255f);
+			event.setBlue(41 / 255f);
+			return;
+		}
+		if (GarnishedFluids.BLUE_MASTIC_RESIN.get().isSame(fluid)) {
+			event.setRed(57 / 255f);
+			event.setGreen(122 / 255f);
+			event.setBlue(126 / 255f);
+			return;
+		}
+		if (GarnishedFluids.PURPLE_MASTIC_RESIN.get().isSame(fluid)) {
+			event.setRed(87 / 255f);
+			event.setGreen(36 / 255f);
+			event.setBlue(153 / 255f);
+			return;
+		}
+		if (GarnishedFluids.DRAGON_BREATH.get().isSame(fluid)) {
+			event.setRed(197 / 255f);
+			event.setGreen(72 / 255f);
+			event.setBlue(131 / 255f);
+			return;
+		}
+		if (GarnishedFluids.SWEET_TEA.get().isSame(fluid)) {
+			event.setRed(227 / 255f);
+			event.setGreen(141 / 255f);
+			event.setBlue(82 / 255f);
+			return;
+		}
 	}
 }

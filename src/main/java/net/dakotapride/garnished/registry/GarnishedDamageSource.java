@@ -9,6 +9,7 @@ import net.minecraft.world.damagesource.DamageType;
 public class GarnishedDamageSource {
 	public static final ResourceKey<DamageType> MULCH_MUNCHING = create("mulch_munching");
 	public static final ResourceKey<DamageType> FAN_FREEZING = create("fan_freezing");
+	public static final ResourceKey<DamageType> LEECHING = create("leeching");
 
 	private static ResourceKey<DamageType> create(String name) {
 		return ResourceKey.create(Registries.DAMAGE_TYPE, new ResourceLocation(CreateGarnished.ID, name));

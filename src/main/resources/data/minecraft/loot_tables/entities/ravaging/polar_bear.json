@@ -53,6 +53,15 @@
           ],
           "conditions": [
             {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "flags": {
+                  "is_baby": false
+                }
+              }
+            },
+            {
               "condition": "minecraft:table_bonus",
               "enchantment": "garnished:ravaging",
               "chances": [

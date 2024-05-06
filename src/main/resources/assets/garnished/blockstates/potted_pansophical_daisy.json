@@ -1,0 +1,15 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "garnished:block/potted_pansophical_daisy_0"
+      },
+      {
+        "model": "garnished:block/potted_pansophical_daisy_1"
+      },
+      {
+        "model": "garnished:block/potted_pansophical_daisy_2"
+      }
+    ]
+  }
+}

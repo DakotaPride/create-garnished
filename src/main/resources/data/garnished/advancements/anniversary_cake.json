@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:anniversary_cake"
+    },
+    "title": {
+      "translate": "advancement.garnished.anniversary_cake.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.anniversary_cake.description",
+      "color": "#DBA213"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "garnished:nut_tree",
+  "criteria": {
+    "consume_cake": {
+      "trigger": "garnished:consume_anniversary_cake_slice"
+    }
+  },
+  "requirements": [
+    [
+      "consume_cake"
+    ]
+  ]
+}

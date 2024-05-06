@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "dragon_stone_variants",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:polished_dragon_stone_slab"
+    }
+  },
+  "result": {
+    "item": "garnished:chiseled_dragon_stone_bricks"
+  }
+}

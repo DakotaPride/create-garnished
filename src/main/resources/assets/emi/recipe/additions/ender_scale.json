@@ -1,0 +1,7 @@
+{
+  "type": "emi:info",
+  "stacks": [
+    "item:garnished:dimmed_scale"
+  ],
+  "text": "emi.garnished.ender_scale.information"
+}

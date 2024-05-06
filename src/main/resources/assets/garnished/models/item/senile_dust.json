@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "garnished:item/senile_dust"
+    "layer0": "garnished:item/senile_dust_alternative"
   }
 }

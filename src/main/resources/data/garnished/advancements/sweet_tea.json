@@ -1,0 +1,38 @@
+{
+  "display": {
+    "icon": {
+      "item": "garnished:sweet_tea"
+    },
+    "title": {
+      "translate": "advancement.garnished.sweet_tea.title"
+    },
+    "description": {
+      "translate": "advancement.garnished.sweet_tea.description",
+      "color": "#DBA213"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "garnished:bok_choyo",
+  "criteria": {
+    "obtain_sweet_tea": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "garnished:sweet_tea"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "obtain_sweet_tea"
+    ]
+  ]
+}

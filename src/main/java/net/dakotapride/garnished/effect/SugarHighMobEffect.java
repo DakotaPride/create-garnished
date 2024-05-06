@@ -5,6 +5,6 @@ import net.minecraft.world.effect.MobEffectCategory;
 
 public class SugarHighMobEffect extends MobEffect {
 	public SugarHighMobEffect() {
-		super(MobEffectCategory.NEUTRAL, 0xEAEAEA);
+		super(MobEffectCategory.BENEFICIAL, 0xEAEAEA);
 	}
 }
