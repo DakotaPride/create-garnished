@@ -154,10 +154,14 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.TOPHET_BREW.asStack());
 			output.accept(GarnishedItems.GRIM_STEW.asStack());
 			output.accept(GarnishedItems.SOUL_KHANA.asStack());
+			output.accept(GarnishedItems.OMNISCIENT_STEW.asStack());
+			output.accept(GarnishedItems.WARPED_BREW.asStack());
+			output.accept(GarnishedItems.INIQUITOUS_BREW.asStack());
 			output.accept(GarnishedItems.SPIRITED_CONCOCTION.asStack());
 			output.accept(GarnishedItems.PUTRID_STEW.asStack());
 			output.accept(GarnishedItems.NUT_NACHO_BOWL.asStack());
 			output.accept(GarnishedItems.CINDER_ROLL.asStack());
+			output.accept(GarnishedItems.PIQUANT_PRETZEL.asStack());
 			output.accept(GarnishedItems.WRAPPED_CRIMSON_TANGLE.asStack());
 			output.accept(GarnishedItems.WRAPPED_WARPED_TANGLE.asStack());
 			output.accept(GarnishedItems.WRAPPED_SEPIA_TANGLE.asStack());
@@ -197,6 +201,9 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.ETHEREAL_CONCOCTION.asStack());
 			output.accept(GarnishedItems.DESOLATE_STEW.asStack());
 			output.accept(GarnishedItems.COSMIC_BREW.asStack());
+			output.accept(GarnishedItems.FARSEER_BREW.asStack());
+			output.accept(GarnishedItems.SHELLED_DUMPLING.asStack());
+			output.accept(GarnishedItems.CHAMPIONS_OMELETTE.asStack());
 			output.accept(GarnishedItems.CHORUS_BOWL.asStack());
 			output.accept(GarnishedItems.CHORUS_COOKIE.asStack());
 			output.accept(GarnishedItems.ENDER_JELLY_BLOB.asStack());
@@ -204,118 +211,128 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.CHORUS_TUFT.asStack());
 			output.accept(GarnishedItems.HOLLOWED_CHORUS_FRUIT.asStack());
 			output.accept(GarnishedItems.ETHEREAL_COMPOUND.asStack());
+			output.accept(GarnishedItems.PRELIMINARY_NUCLEUS.asStack());
+			output.accept(GarnishedItems.DIMMED_SCALE.asStack());
 			output.accept(GarnishedItems.COSMIC_POWDER.asStack());
 			output.accept(GarnishedItems.DESOLATE_SPREAD.asStack());
+			output.accept(GarnishedItems.ENDER_DRAGON_EGG_SHELL.asStack());
+			output.accept(GarnishedItems.FRAIL_ENDER_DRAGON_EGG_SHELL.asStack());
 
 			output.accept(GarnishedItems.MUD_PIE.asStack());
 			output.accept(GarnishedItems.MULCH.asStack());
 
-			output.accept(GarnishedItems.MOLTEN_STEW);
+			output.accept(GarnishedItems.MOLTEN_STEW.asStack());
 
-			output.accept(GarnishedItems.VENERABLE_DOUGH);
-			output.accept(GarnishedItems.VENERABLE_DELICACY_RED);
-			output.accept(GarnishedItems.VENERABLE_DELICACY_ORANGE);
-			output.accept(GarnishedItems.VENERABLE_DELICACY_YELLOW);
-			output.accept(GarnishedItems.VENERABLE_DELICACY_GREEN);
-			output.accept(GarnishedItems.VENERABLE_DELICACY_BLUE);
-			output.accept(GarnishedItems.VENERABLE_DELICACY_PURPLE);
-			output.accept(GarnishedItems.SLIME_DROP);
-			output.accept(GarnishedItems.MASTIC_COVERED_SLIME_DROP_RED);
-			output.accept(GarnishedItems.MASTIC_COVERED_SLIME_DROP_ORANGE);
-			output.accept(GarnishedItems.MASTIC_COVERED_SLIME_DROP_YELLOW);
-			output.accept(GarnishedItems.MASTIC_COVERED_SLIME_DROP_GREEN);
-			output.accept(GarnishedItems.MASTIC_COVERED_SLIME_DROP_BLUE);
-			output.accept(GarnishedItems.MASTIC_COVERED_SLIME_DROP_PURPLE);
-			output.accept(GarnishedItems.MASTIC_RESIN);
-			output.accept(GarnishedItems.MASTIC_RESIN_RED);
-			output.accept(GarnishedItems.MASTIC_RESIN_ORANGE);
-			output.accept(GarnishedItems.MASTIC_RESIN_YELLOW);
-			output.accept(GarnishedItems.MASTIC_RESIN_GREEN);
-			output.accept(GarnishedItems.MASTIC_RESIN_BLUE);
-			output.accept(GarnishedItems.MASTIC_RESIN_PURPLE);
-			output.accept(GarnishedItems.MASTIC_PASTE);
-			output.accept(GarnishedItems.MASTIC_PASTE_RED);
-			output.accept(GarnishedItems.MASTIC_PASTE_ORANGE);
-			output.accept(GarnishedItems.MASTIC_PASTE_YELLOW);
-			output.accept(GarnishedItems.MASTIC_PASTE_GREEN);
-			output.accept(GarnishedItems.MASTIC_PASTE_BLUE);
-			output.accept(GarnishedItems.MASTIC_PASTE_PURPLE);
+			output.accept(GarnishedItems.VENERABLE_DOUGH.asStack());
+			output.accept(GarnishedItems.VENERABLE_DELICACY_RED.asStack());
+			output.accept(GarnishedItems.VENERABLE_DELICACY_ORANGE.asStack());
+			output.accept(GarnishedItems.VENERABLE_DELICACY_YELLOW.asStack());
+			output.accept(GarnishedItems.VENERABLE_DELICACY_GREEN.asStack());
+			output.accept(GarnishedItems.VENERABLE_DELICACY_BLUE.asStack());
+			output.accept(GarnishedItems.VENERABLE_DELICACY_PURPLE.asStack());
+			output.accept(GarnishedItems.SLIME_DROP.asStack());
+			output.accept(GarnishedItems.MASTIC_COVERED_SLIME_DROP_RED.asStack());
+			output.accept(GarnishedItems.MASTIC_COVERED_SLIME_DROP_ORANGE.asStack());
+			output.accept(GarnishedItems.MASTIC_COVERED_SLIME_DROP_YELLOW.asStack());
+			output.accept(GarnishedItems.MASTIC_COVERED_SLIME_DROP_GREEN.asStack());
+			output.accept(GarnishedItems.MASTIC_COVERED_SLIME_DROP_BLUE.asStack());
+			output.accept(GarnishedItems.MASTIC_COVERED_SLIME_DROP_PURPLE.asStack());
+			output.accept(GarnishedItems.MASTIC_RESIN.asStack());
+			output.accept(GarnishedItems.MASTIC_RESIN_RED.asStack());
+			output.accept(GarnishedItems.MASTIC_RESIN_ORANGE.asStack());
+			output.accept(GarnishedItems.MASTIC_RESIN_YELLOW.asStack());
+			output.accept(GarnishedItems.MASTIC_RESIN_GREEN.asStack());
+			output.accept(GarnishedItems.MASTIC_RESIN_BLUE.asStack());
+			output.accept(GarnishedItems.MASTIC_RESIN_PURPLE.asStack());
+			output.accept(GarnishedItems.MASTIC_PASTE.asStack());
+			output.accept(GarnishedItems.MASTIC_PASTE_RED.asStack());
+			output.accept(GarnishedItems.MASTIC_PASTE_ORANGE.asStack());
+			output.accept(GarnishedItems.MASTIC_PASTE_YELLOW.asStack());
+			output.accept(GarnishedItems.MASTIC_PASTE_GREEN.asStack());
+			output.accept(GarnishedItems.MASTIC_PASTE_BLUE.asStack());
+			output.accept(GarnishedItems.MASTIC_PASTE_PURPLE.asStack());
 
-			output.accept(GarnishedItems.BAKLAVA);
-			output.accept(GarnishedItems.MERRY_TREAT);
-			output.accept(GarnishedItems.COAL_TRUFFLE);
-			output.accept(GarnishedItems.GALACTIC_CANE);
-			output.accept(GarnishedItems.ICY_MASTIC_CHUNK);
-			output.accept(GarnishedItems.STURDY_WAFFLE);
+			output.accept(GarnishedItems.SUGAR_CUBE.asStack());
+			output.accept(GarnishedItems.BOK_CHOY.asStack());
+			output.accept(GarnishedItems.BOK_CHOY_SEEDS.asStack());
 
-			output.accept(GarnishedItems.RAW_TENEBROUS_MEAT);
-			output.accept(GarnishedItems.COOKED_TENEBROUS_MEAT);
-			output.accept(GarnishedItems.CASHEW_SORBET_SCOOP);
-			output.accept(GarnishedItems.CASHEW_SORBET_DELIGHT);
-			output.accept(GarnishedItems.ACHING_TENEBROUS_CLUMP);
-			output.accept(GarnishedItems.GLOOMY_GATHERING);
-			output.accept(GarnishedItems.FISHY_SURPRISE);
-			output.accept(GarnishedItems.WALNUT_GORGE_CREAM);
-			output.accept(GarnishedItems.GHANDERCKEN);
-			output.accept(GarnishedItems.WHEAT_GRAZE);
-			output.accept(GarnishedItems.PORKCHOP_AND_GRAZE);
-			output.accept(GarnishedItems.MURKY_JELLY);
-			output.accept(GarnishedItems.CACKLING_PIE);
-			output.accept(GarnishedItems.YAM_O_GLOW_PUFFS);
-			output.accept(GarnishedItems.SHINING_DISH);
-			output.accept(GarnishedItems.MURKY_MACADAMIA_MALICE);
-			output.accept(GarnishedItems.NUTTY_MELODY);
-			output.accept(GarnishedItems.MUESLI);
-			output.accept(GarnishedItems.DUSTY_REGALE);
-			output.accept(GarnishedItems.INCENDIARY_STEW);
+			output.accept(GarnishedItems.BAKLAVA.asStack());
+			output.accept(GarnishedItems.MERRY_TREAT.asStack());
+			output.accept(GarnishedItems.COAL_TRUFFLE.asStack());
+			output.accept(GarnishedItems.GALACTIC_CANE.asStack());
+			output.accept(GarnishedItems.ICY_MASTIC_CHUNK.asStack());
+			output.accept(GarnishedItems.STURDY_WAFFLE.asStack());
 
-			output.accept(GarnishedItems.DRIED_VERMILION_KELP);
-			output.accept(GarnishedItems.DRIED_DULSE_KELP);
-			output.accept(GarnishedItems.BEWILDERED_PASTRY);
-			output.accept(GarnishedItems.VERMILION_STEW);
-			output.accept(GarnishedItems.VAST_BREW);
-			output.accept(GarnishedItems.GALVANIC_HAUNTING);
+			output.accept(GarnishedItems.RAW_TENEBROUS_MEAT.asStack());
+			output.accept(GarnishedItems.COOKED_TENEBROUS_MEAT.asStack());
+			output.accept(GarnishedItems.VEX_WING.asStack());
+			output.accept(GarnishedItems.MEAT_SCRAPS.asStack());
+			output.accept(GarnishedItems.CASHEW_SORBET_SCOOP.asStack());
+			output.accept(GarnishedItems.CASHEW_SORBET_DELIGHT.asStack());
+			output.accept(GarnishedItems.ACHING_TENEBROUS_CLUMP.asStack());
+			output.accept(GarnishedItems.GLOOMY_GATHERING.asStack());
+			output.accept(GarnishedItems.FISHY_SURPRISE.asStack());
+			output.accept(GarnishedItems.WALNUT_GORGE_CREAM.asStack());
+			output.accept(GarnishedItems.GHANDERCKEN.asStack());
+			output.accept(GarnishedItems.WHEAT_GRAZE.asStack());
+			output.accept(GarnishedItems.PORKCHOP_AND_GRAZE.asStack());
+			output.accept(GarnishedItems.MURKY_JELLY.asStack());
+			output.accept(GarnishedItems.CACKLING_PIE.asStack());
+			output.accept(GarnishedItems.YAM_O_GLOW_PUFFS.asStack());
+			output.accept(GarnishedItems.SHINING_DISH.asStack());
+			output.accept(GarnishedItems.MURKY_MACADAMIA_MALICE.asStack());
+			output.accept(GarnishedItems.NUTTY_MELODY.asStack());
+			output.accept(GarnishedItems.MUESLI.asStack());
+			output.accept(GarnishedItems.DUSTY_REGALE.asStack());
+			output.accept(GarnishedItems.INCENDIARY_STEW.asStack());
 
-			output.accept(GarnishedItems.PRICKLY_PEAR);
-			output.accept(GarnishedItems.BAMBOO_CLOD);
-			output.accept(GarnishedItems.NOPALITO_WRAP);
-			output.accept(GarnishedItems.NOPALITO_WRAP_SUPREME);
-			output.accept(GarnishedItems.SINOPIA_ROCK_SWEET);
-			output.accept(GarnishedItems.THORN_ON_A_STICK);
-			output.accept(GarnishedItems.OVERGROWN_BREW);
-			output.accept(GarnishedItems.PRICKLY_PEAR_STEW);
-			output.accept(GarnishedItems.STEW_OF_THE_DAMNED);
+			output.accept(GarnishedItems.DRIED_VERMILION_KELP.asStack());
+			output.accept(GarnishedItems.DRIED_DULSE_KELP.asStack());
+			output.accept(GarnishedItems.BEWILDERED_PASTRY.asStack());
+			output.accept(GarnishedItems.VERMILION_STEW.asStack());
+			output.accept(GarnishedItems.VAST_BREW.asStack());
+			output.accept(GarnishedItems.GALVANIC_HAUNTING.asStack());
 
-			output.accept(GarnishedItems.RAW_POLAR_BEAR_MEAT);
-			output.accept(GarnishedItems.COOKED_POLAR_BEAR_MEAT);
-			output.accept(GarnishedItems.VOID_STROGANOFF);
-			output.accept(GarnishedItems.EXPLORERS_CONCOCTION);
-			output.accept(GarnishedItems.FROSTED_DESSERT);
-			output.accept(GarnishedItems.CHILLED_APPLE);
+			output.accept(GarnishedItems.PRICKLY_PEAR.asStack());
+			output.accept(GarnishedItems.BAMBOO_CLOD.asStack());
+			output.accept(GarnishedItems.NOPALITO_WRAP.asStack());
+			output.accept(GarnishedItems.NOPALITO_WRAP_SUPREME.asStack());
+			output.accept(GarnishedItems.SINOPIA_ROCK_SWEET.asStack());
+			output.accept(GarnishedItems.THORN_ON_A_STICK.asStack());
+			output.accept(GarnishedItems.OVERGROWN_BREW.asStack());
+			output.accept(GarnishedItems.PRICKLY_PEAR_STEW.asStack());
+			output.accept(GarnishedItems.STEW_OF_THE_DAMNED.asStack());
 
-			output.accept(GarnishedItems.MOLTEN_REMNANT);
+			output.accept(GarnishedItems.RAW_POLAR_BEAR_MEAT.asStack());
+			output.accept(GarnishedItems.COOKED_POLAR_BEAR_MEAT.asStack());
+			output.accept(GarnishedItems.VOID_STROGANOFF.asStack());
+			output.accept(GarnishedItems.EXPLORERS_CONCOCTION.asStack());
+			output.accept(GarnishedItems.FROSTED_DESSERT.asStack());
+			output.accept(GarnishedItems.CHILLED_APPLE.asStack());
 
-			output.accept(GarnishedItems.GHAST_TENDRIL);
+			output.accept(GarnishedItems.MOLTEN_REMNANT.asStack());
 
-			output.accept(GarnishedItems.VOLATILE_DUST);
+			output.accept(GarnishedItems.GHAST_TENDRIL.asStack());
 
-			output.accept(GarnishedItems.SOLEMN_DUST);
+			output.accept(GarnishedItems.VOLATILE_DUST.asStack());
 
-			output.accept(GarnishedBlocks.VERMILION_KELP);
-			output.accept(GarnishedBlocks.DULSE_KELP);
-			output.accept(GarnishedItems.CORAL_WRAPPING);
-			output.accept(GarnishedItems.LUSTROUS_PEARL);
+			output.accept(GarnishedItems.SOLEMN_DUST.asStack());
 
-			output.accept(GarnishedItems.ANTIQUE_SWATHE);
-			output.accept(GarnishedItems.BRISTLED_FLOUR);
-			output.accept(GarnishedItems.BRISTLED_TORTILLA);
-			output.accept(GarnishedItems.AMBER_REMNANT);
-			output.accept(GarnishedItems.SHATTERED_AMBER_REMNANT);
+			output.accept(GarnishedBlocks.VERMILION_KELP.asStack());
+			output.accept(GarnishedBlocks.DULSE_KELP.asStack());
+			output.accept(GarnishedItems.CORAL_WRAPPING.asStack());
+			output.accept(GarnishedItems.LUSTROUS_PEARL.asStack());
 
-			output.accept(GarnishedItems.FROST);
-			output.accept(GarnishedItems.NUMBING_PARCHMENT);
-			output.accept(GarnishedItems.POLAR_BEAR_HIDE);
-			output.accept(GarnishedItems.POLAR_HIDE_SCRATCH_PAPER);
+			output.accept(GarnishedItems.ANTIQUE_SWATHE.asStack());
+			output.accept(GarnishedItems.BRISTLED_FLOUR.asStack());
+			output.accept(GarnishedItems.BRISTLED_TORTILLA.asStack());
+			output.accept(GarnishedItems.AMBER_REMNANT.asStack());
+			output.accept(GarnishedItems.SHATTERED_AMBER_REMNANT.asStack());
+
+			output.accept(GarnishedItems.FROST.asStack());
+			output.accept(GarnishedItems.NUMBING_PARCHMENT.asStack());
+			output.accept(GarnishedItems.POLAR_BEAR_HIDE.asStack());
+			output.accept(GarnishedItems.POLAR_HIDE_SCRATCH_PAPER.asStack());
 
 			output.accept(GarnishedBlocks.SEPIA_FUNGUS.asStack());
 			output.accept(GarnishedBlocks.SOUL_ROOTS.asStack());
@@ -337,9 +354,10 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.BOTTLED_ENDER_JELLY.asStack());
 			output.accept(GarnishedItems.CHORUS_COCKTAIL.asStack());
 			output.accept(GarnishedItems.ILLUMINATING_COCKTAIL.asStack());
-			output.accept(GarnishedItems.ROSY_COCKTAIL);
-			output.accept(GarnishedItems.BOTTLE_OF_CRESTFALLEN_FLORA);
-			output.accept(GarnishedItems.BOTTLED_MALODOROUS_MIXTURE);
+			output.accept(GarnishedItems.ROSY_COCKTAIL.asStack());
+			output.accept(GarnishedItems.SWEET_TEA.asStack());
+			output.accept(GarnishedItems.BOTTLE_OF_CRESTFALLEN_FLORA.asStack());
+			output.accept(GarnishedItems.BOTTLED_MALODOROUS_MIXTURE.asStack());
 
 			output.accept(GarnishedItems.GARNISH_COMPOUND.asStack());
 			output.accept(GarnishedItems.GARNISH_POWDER.asStack());
@@ -392,7 +410,7 @@ public class GarnishedTabs {
 			output.accept(GarnishedBlocks.SEPIA_TRAPDOOR.asStack());
 			output.accept(GarnishedBlocks.SEPIA_DOOR.asStack());
 			output.accept(GarnishedItems.SEPIA_SIGN.asStack());
-			output.accept(GarnishedItems.SEPIA_HANGING_SIGN.asStack());
+			// output.accept(GarnishedItems.SEPIA_HANGING_SIGN.asStack());
 
 			output.accept(GarnishedBlocks.NUT_LOG.asStack());
 			output.accept(GarnishedBlocks.STRIPPED_NUT_LOG.asStack());
@@ -404,7 +422,7 @@ public class GarnishedTabs {
 			output.accept(GarnishedBlocks.NUT_TRAPDOOR.asStack());
 			output.accept(GarnishedBlocks.NUT_DOOR.asStack());
 			output.accept(GarnishedItems.NUT_SIGN.asStack());
-			output.accept(GarnishedItems.NUT_HANGING_SIGN.asStack());
+			// output.accept(GarnishedItems.NUT_HANGING_SIGN.asStack());
 			output.accept(GarnishedItems.NUT_BOAT.asStack());
 			output.accept(GarnishedItems.NUT_CHEST_BOAT.asStack());
 
@@ -488,9 +506,29 @@ public class GarnishedTabs {
 			output.accept(GarnishedBlocks.SMOOTH_RITUALISTIC_STONE_WALL.asStack());
 			output.accept(GarnishedBlocks.CHISELED_RITUALISTIC_STONE_BRICKS.asStack());
 
+			output.accept(GarnishedBlocks.DRAGON_STONE.asStack());
+			output.accept(GarnishedBlocks.DRAGON_STONE_SLAB.asStack());
+			output.accept(GarnishedBlocks.DRAGON_STONE_STAIRS.asStack());
+			output.accept(GarnishedBlocks.DRAGON_STONE_WALL.asStack());
+			output.accept(GarnishedBlocks.DRAGON_STONE_BRICKS.asStack());
+			output.accept(GarnishedBlocks.DRAGON_STONE_BRICKS_SLAB.asStack());
+			output.accept(GarnishedBlocks.DRAGON_STONE_BRICKS_STAIRS.asStack());
+			output.accept(GarnishedBlocks.DRAGON_STONE_BRICKS_WALL.asStack());
+			output.accept(GarnishedBlocks.POLISHED_DRAGON_STONE.asStack());
+			output.accept(GarnishedBlocks.POLISHED_DRAGON_STONE_SLAB.asStack());
+			output.accept(GarnishedBlocks.POLISHED_DRAGON_STONE_STAIRS.asStack());
+			output.accept(GarnishedBlocks.POLISHED_DRAGON_STONE_WALL.asStack());
+			output.accept(GarnishedBlocks.SMOOTH_DRAGON_STONE.asStack());
+			output.accept(GarnishedBlocks.SMOOTH_DRAGON_STONE_SLAB.asStack());
+			output.accept(GarnishedBlocks.SMOOTH_DRAGON_STONE_STAIRS.asStack());
+			output.accept(GarnishedBlocks.SMOOTH_DRAGON_STONE_WALL.asStack());
+			output.accept(GarnishedBlocks.CHISELED_DRAGON_STONE_BRICKS.asStack());
+
 			output.accept(GarnishedBlocks.DRIED_VERMILION_KELP_BLOCK.asStack());
 			output.accept(GarnishedBlocks.DRIED_DULSE_KELP_BLOCK.asStack());
 			output.accept(GarnishedBlocks.VOLTAIC_SEA_GRASS.asStack());
+
+			output.accept(GarnishedBlocks.ANNIVERSARY_CAKE.asStack());
 		}
 
 	}
