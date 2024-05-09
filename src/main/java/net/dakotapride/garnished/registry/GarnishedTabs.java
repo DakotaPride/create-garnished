@@ -373,6 +373,8 @@ public class GarnishedTabs {
 			output.accept(GarnishedFluids.GREEN_MASTIC_RESIN.getBucket().get().getDefaultInstance());
 			output.accept(GarnishedFluids.BLUE_MASTIC_RESIN.getBucket().get().getDefaultInstance());
 			output.accept(GarnishedFluids.PURPLE_MASTIC_RESIN.getBucket().get().getDefaultInstance());
+			output.accept(GarnishedFluids.DRAGON_BREATH.getBucket().get().getDefaultInstance());
+			output.accept(GarnishedFluids.SWEET_TEA.getBucket().get().getDefaultInstance());
 
 			output.accept(GarnishedItems.WOODEN_HATCHET.asStack());
 			output.accept(GarnishedItems.STONE_HATCHET.asStack());
