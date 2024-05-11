@@ -1,4 +1,6 @@
 {
+  // Any issues regarding translations can be reported, but there is no guarentee that they will be fixed
+
   "itemGroup.create.garnished": "Create: Приправлен",
   "itemGroup.create.garnished.blocks": "Create: Garnished - Building Blocks", //
   "text.garnished.nut.ungarnished": "Сырой",
