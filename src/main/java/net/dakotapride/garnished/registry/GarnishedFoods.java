@@ -135,9 +135,9 @@ public class GarnishedFoods implements IGarnishedItem {
 			.effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 400), 1.0F).build();
 
 	// Gloomy Meats
-	public static final FoodProperties RAW_TENEBROUS_MEAT = new FoodProperties.Builder().nutrition(7).saturationMod(0.1F)
+	public static final FoodProperties RAW_TENEBROUS_MEAT = new FoodProperties.Builder().nutrition(7).saturationMod(0.2F)
 			.effect(new MobEffectInstance(MobEffects.DARKNESS, 200), 1.0F).meat().build();
-	public static final FoodProperties COOKED_TENEBROUS_MEAT = new FoodProperties.Builder().nutrition(12).saturationMod(0.9F)
+	public static final FoodProperties COOKED_TENEBROUS_MEAT = new FoodProperties.Builder().nutrition(10).saturationMod(0.7F)
 			.effect(new MobEffectInstance(MobEffects.REGENERATION, 200), 1.0F).meat().build();
 	public static final FoodProperties GLOOMY_GATHERING = new FoodProperties.Builder().nutrition(14).saturationMod(0.9F)
 			.effect(new MobEffectInstance(MobEffects.REGENERATION, 600), 1.0F)
@@ -177,7 +177,7 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties PRICKLY_PEAR = new FoodProperties.Builder().nutrition(2).saturationMod(0.1F).build();
 	public static final FoodProperties BAMBOO_CLOD = new FoodProperties.Builder().nutrition(4).saturationMod(0.3F).build();
 	public static final FoodProperties NOPALITO_WRAP = new FoodProperties.Builder().nutrition(8).saturationMod(0.6F).build();
-	public static final FoodProperties NOPALITO_WRAP_SUPREME = new FoodProperties.Builder().nutrition(10).saturationMod(0.8F).build();
+	public static final FoodProperties NOPALITO_WRAP_SUPREME = new FoodProperties.Builder().nutrition(12).saturationMod(0.9F).build();
 	public static final FoodProperties PRICKLY_PEAR_STEW = new FoodProperties.Builder().nutrition(7).saturationMod(0.4F).build();
 	public static final FoodProperties SINOPIA_ROCK_SWEET = new FoodProperties.Builder().nutrition(6).saturationMod(0.2F).build();
 	public static final FoodProperties THORN_ON_A_STICK = new FoodProperties.Builder().nutrition(10).saturationMod(0.4F).build();
