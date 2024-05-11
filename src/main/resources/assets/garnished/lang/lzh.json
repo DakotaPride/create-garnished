@@ -1,4 +1,6 @@
 {
+  // Any issues regarding translations can be reported, but there is no guarentee that they will be fixed
+
   "itemGroup.create.garnished": "机械动力：装食",
   "itemGroup.create.garnished.blocks": "Create: Garnished - Building Blocks",
   "text.garnished.nut.ungarnished": "未装食",
