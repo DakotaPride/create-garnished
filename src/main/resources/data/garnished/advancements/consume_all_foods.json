@@ -1935,6 +1935,117 @@
           ]
         }
       }
+    },
+
+    "omniscient_stew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:omniscient_stew"
+          ]
+        }
+      }
+    },
+    "warped_brew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:warped_brew"
+          ]
+        }
+      }
+    },
+    "iniquitous_brew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:iniquitous_brew"
+          ]
+        }
+      }
+    },
+    "piquant_pretzel": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:piquant_pretzel"
+          ]
+        }
+      }
+    },
+    "crestfallen_flora": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:crestfallen_flora"
+          ]
+        }
+      }
+    },
+    "bottled_malodorous_mixture": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:bottled_malodorous_mixture"
+          ]
+        }
+      }
+    },
+    "farseer_brew": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:farseer_brew"
+          ]
+        }
+      }
+    },
+    "shelled_dumpling": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:shelled_dumpling"
+          ]
+        }
+      }
+    },
+    "champion_omelette": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:champion_omelette"
+          ]
+        }
+      }
+    },
+    "bok_choy": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:bok_choy"
+          ]
+        }
+      }
+    },
+    "sweet_tea": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:sweet_tea"
+          ]
+        }
+      }
     }
   },
 
@@ -2528,6 +2639,40 @@
 
     [
       "molten_stew"
+    ],
+
+    [
+      "omniscient_stew"
+    ],
+    [
+      "warped_brew"
+    ],
+    [
+      "iniquitous_brew"
+    ],
+    [
+      "piquant_pretzel"
+    ],
+    [
+      "crestfallen_flora"
+    ],
+    [
+      "bottled_malodorous_mixture"
+    ],
+    [
+      "farseer_brew"
+    ],
+    [
+      "shelled_dumpling"
+    ],
+    [
+      "champion_omelette"
+    ],
+    [
+      "bok_choy"
+    ],
+    [
+      "sweet_tea"
     ]
   ],
   "rewards": {
