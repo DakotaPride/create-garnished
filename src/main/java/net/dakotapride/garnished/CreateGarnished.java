@@ -5,7 +5,6 @@ import net.dakotapride.garnished.modifier.LootTableModifiers;
 import net.dakotapride.garnished.recipe.GarnishedFanProcessing;
 import net.dakotapride.garnished.registry.GarnishedAdvancementUtils;
 import net.dakotapride.garnished.registry.GarnishedBlockEntities;
-import net.dakotapride.garnished.registry.GarnishedPonderIndex;
 import net.dakotapride.garnished.registry.GarnishedRecipeTypes;
 import net.minecraft.resources.ResourceLocation;
 
@@ -68,7 +67,7 @@ public class CreateGarnished implements ModInitializer {
 		REGISTRATE.get().register();
 
 		// Generation
-		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.PLAINS),
+		BiomeModifications.addFeature(BiomeSelectors.tag(GarnishedTags.HAS_NUT_TREES_TAG),
 				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.NUT_TREE_PLACED);
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.SOUL_SAND_VALLEY),
 				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SOUL_ROOTS_PLACED);

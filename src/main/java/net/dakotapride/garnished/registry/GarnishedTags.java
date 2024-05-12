@@ -16,6 +16,7 @@ import net.minecraft.world.level.material.Fluid;
 
 public class GarnishedTags {
 
+	public static final TagKey<Biome> HAS_NUT_TREES_TAG = garnishedTag("allows_for_nuts", Registries.BIOME);
 	public static final TagKey<Item> AVERSION_FOODS_TAG = garnishedTag("aversion_foods", BuiltInRegistries.ITEM);
 	public static final TagKey<Item> HATCHETS_TAG = commonTag("tools/hatchets", BuiltInRegistries.ITEM);
 	public static final TagKey<Fluid> GARNISHED_FLUIDS_TAG = garnishedTag("fluids", BuiltInRegistries.FLUID);
