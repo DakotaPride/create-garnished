@@ -1,0 +1,22 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "type": "garnished:yellow_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "farmersdelight:canvas_signs"
+    }
+  ],
+  "results": [
+    {
+      "item": "farmersdelight:yellow_canvas_sign",
+      "count": 1
+    }
+  ]
+}
