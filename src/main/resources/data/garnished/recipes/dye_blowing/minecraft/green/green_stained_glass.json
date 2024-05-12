@@ -1,0 +1,19 @@
+{
+  "type": "garnished:green_dye_blowing",
+  "ingredients": [
+    [
+      {
+        "tag": "forge:stained_glass"
+      },
+      {
+        "item": "minecraft:glass"
+      }
+    ]
+  ],
+  "results": [
+    {
+      "item": "minecraft:green_stained_glass",
+      "count": 1
+    }
+  ]
+}

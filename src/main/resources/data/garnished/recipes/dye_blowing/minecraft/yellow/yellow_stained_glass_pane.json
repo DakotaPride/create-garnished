@@ -1,0 +1,19 @@
+{
+  "type": "garnished:yellow_dye_blowing",
+  "ingredients": [
+    [
+      {
+        "tag": "forge:stained_glass_panes"
+      },
+      {
+        "item": "minecraft:glass_pane"
+      }
+    ]
+  ],
+  "results": [
+    {
+      "item": "minecraft:yellow_stained_glass_pane",
+      "count": 1
+    }
+  ]
+}

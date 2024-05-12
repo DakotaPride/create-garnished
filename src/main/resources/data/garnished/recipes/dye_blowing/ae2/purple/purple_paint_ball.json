@@ -1,0 +1,22 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "ae2"
+      ]
+    }
+  ],
+  "type": "garnished:purple_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "ae2:paint_balls"
+    }
+  ],
+  "results": [
+    {
+      "item": "ae2:purple_paint_ball",
+      "count": 1
+    }
+  ]
+}
