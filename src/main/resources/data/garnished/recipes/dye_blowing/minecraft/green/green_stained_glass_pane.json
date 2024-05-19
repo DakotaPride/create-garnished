@@ -3,7 +3,7 @@
   "ingredients": [
     [
       {
-        "tag": "forge:stained_glass_panes"
+        "tag": "c:stained_glass_panes"
       },
       {
         "item": "minecraft:glass_pane"
