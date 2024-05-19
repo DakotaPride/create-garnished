@@ -2,7 +2,7 @@
   "type": "garnished:green_dye_blowing",
   "ingredients": [
     {
-      "tag": "forge:dough"
+      "tag": "c:dough"
     }
   ],
   "results": [

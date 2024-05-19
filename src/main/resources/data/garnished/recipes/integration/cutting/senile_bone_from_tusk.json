@@ -20,6 +20,6 @@
     }
   ],
   "tool": {
-    "tag": "forge:tools/hatchets"
+    "tag": "c:tools/hatchets"
   }
 }
