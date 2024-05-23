@@ -11,6 +11,8 @@ import com.simibubi.create.foundation.utility.Iterate;
 import com.tterrag.registrate.fabric.SimpleFlowableFluid;
 import com.tterrag.registrate.util.entry.FluidEntry;
 
+import com.tterrag.registrate.util.nullness.NonNullSupplier;
+
 import io.github.fabricators_of_create.porting_lib.event.common.FluidPlaceBlockCallback;
 import net.dakotapride.garnished.CreateGarnished;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
@@ -29,6 +31,7 @@ import net.minecraft.tags.FluidTags;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.FluidState;
@@ -247,7 +250,8 @@ public class GarnishedFluids {
 				.fluidProperties(p -> p.levelDecreasePerBlock(2)
 						.tickRate(25)
 						.flowSpeed(3)
-						.blastResistance(100f))
+						.block(GarnishedBlocks.DRAGON_BREATH_FLUID))
+				.block((NonNullSupplier<? extends SimpleFlowableFluid.Flowing> pProperties, BlockBehaviour.Properties pProperties2) -> GarnishedBlocks.DRAGON_BREATH_FLUID.get()).build()
 				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.purple_mastic_resin", 1500, 1400))
 				.onRegisterAfter(Registry.ITEM.key(), fluid -> {
 					Fluid source = fluid.getSource();

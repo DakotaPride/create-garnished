@@ -11,6 +11,7 @@ import net.dakotapride.garnished.block.AbyssalStoneStairsBlock;
 import net.dakotapride.garnished.block.AbyssalStoneWallBlock;
 import net.dakotapride.garnished.block.BokChoyPlantBlock;
 import net.dakotapride.garnished.block.CarnotiteStairsBlock;
+import net.dakotapride.garnished.block.DragonBreathFluidBlock;
 import net.dakotapride.garnished.block.DragonStoneStairsBlock;
 import net.dakotapride.garnished.block.EnderJellyBlock;
 import net.dakotapride.garnished.block.MasticBlock;
@@ -1190,6 +1191,11 @@ public class GarnishedBlocks {
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.properties(p -> p.color(MaterialColor.GRASS).noCollission().instabreak().sound(SoundType.GRASS))
 					.register();
+
+	public static final BlockEntry<DragonBreathFluidBlock> DRAGON_BREATH_FLUID =
+			REGISTRATE.block("dragon_breath", DragonBreathFluidBlock::new)
+					.initialProperties(() -> Blocks.LAVA)
+					.properties(p -> p.color(MaterialColor.TERRACOTTA_PINK)).register();
 
 	public static void setRegister() {}
 }
