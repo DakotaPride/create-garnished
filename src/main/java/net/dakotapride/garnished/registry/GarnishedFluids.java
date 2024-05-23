@@ -266,7 +266,8 @@ public class GarnishedFluids {
 				.fluidProperties(p -> p.levelDecreasePerBlock(2)
 						.tickRate(25)
 						.flowSpeed(3)
-						.blastResistance(100f))
+						.blastResistance(100f)
+						.block(GarnishedBlocks.DRAGON_BREATH_FLUID))
 				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.dragon_breath", 1500, 1400))
 				.onRegisterAfter(Registries.ITEM, fluid -> {
 					Fluid source = fluid.getSource();
