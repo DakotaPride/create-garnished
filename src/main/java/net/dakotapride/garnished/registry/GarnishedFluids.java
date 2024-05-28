@@ -13,6 +13,7 @@ import com.tterrag.registrate.util.nullness.NonNullSupplier;
 
 import io.github.fabricators_of_create.porting_lib.event.common.FluidPlaceBlockCallback;
 import net.dakotapride.garnished.CreateGarnished;
+import net.dakotapride.garnished.block.DragonBreathFluidBlock;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidConstants;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidStorage;
 import net.fabricmc.fabric.api.transfer.v1.fluid.FluidVariant;
@@ -269,9 +270,8 @@ public class GarnishedFluids {
 				.fluidProperties(p -> p.levelDecreasePerBlock(2)
 						.tickRate(25)
 						.flowSpeed(3)
-						.blastResistance(100f)
-						.block(GarnishedBlocks.DRAGON_BREATH_FLUID))
-				.block((NonNullSupplier<? extends SimpleFlowableFluid.Flowing> pProperties, BlockBehaviour.Properties pProperties2) -> GarnishedBlocks.DRAGON_BREATH_FLUID.get()).build()
+						.blastResistance(100f))
+				.block((NonNullSupplier<? extends SimpleFlowableFluid.Flowing> pProperties, BlockBehaviour.Properties pProperties2) -> new DragonBreathFluidBlock(pProperties2)).build()
 				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.dragon_breath", 1500, 1400))
 				.onRegisterAfter(Registries.ITEM, fluid -> {
 					Fluid source = fluid.getSource();

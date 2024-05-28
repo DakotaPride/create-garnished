@@ -1202,10 +1202,5 @@ public class GarnishedBlocks {
 					.properties(p -> p.mapColor(MapColor.GRASS).noCollission().instabreak().sound(SoundType.GRASS))
 					.register();
 
-	public static final BlockEntry<DragonBreathFluidBlock> DRAGON_BREATH_FLUID =
-			REGISTRATE.block("dragon_breath", DragonBreathFluidBlock::new)
-					.initialProperties(() -> Blocks.LAVA)
-					.properties(p -> p.mapColor(MapColor.TERRACOTTA_PINK)).register();
-
 	public static void setRegister() {}
 }

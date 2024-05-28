@@ -190,9 +190,6 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.SENILE_SWEET_BASALT.asStack());
 			output.accept(GarnishedItems.SENILE_SWEET_SCORIA.asStack());
 			output.accept(GarnishedItems.SENILE_SWEET_SCORCHIA.asStack());
-			output.accept(GarnishedItems.OMNISCIENT_STEW.asStack());
-			output.accept(GarnishedItems.WARPED_BREW.asStack());
-			output.accept(GarnishedItems.INIQUITOUS_BREW.asStack());
 			output.accept(GarnishedItems.PIQUANT_PRETZEL.asStack());
 			output.accept(GarnishedItems.INCANDESCENT_PETAL.asStack());
 			output.accept(GarnishedItems.PANSOPHICAL_PETAL.asStack());
