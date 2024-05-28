@@ -43,6 +43,46 @@
     {
       "id": "garnished:warden_hatchet",
       "required": false
+    },
+    {
+      "id": "garnished:nether_quartz_hatchet",
+      "required": false
+    },
+    {
+      "id": "garnished:certus_quartz_hatchet",
+      "required": false
+    },
+    {
+      "id": "garnished:fluix_hatchet",
+      "required": false
+    },
+    {
+      "id": "garnished:nether_ruby_hatchet",
+      "required": false
+    },
+    {
+      "id": "garnished:flaming_ruby_hatchet",
+      "required": false
+    },
+    {
+      "id": "garnished:cincinnasite_hatchet",
+      "required": false
+    },
+    {
+      "id": "garnished:cincinnasite_diamond_hatchet",
+      "required": false
+    },
+    {
+      "id": "garnished:thallasium_hatchet",
+      "required": false
+    },
+    {
+      "id": "garnished:terminite_hatchet",
+      "required": false
+    },
+    {
+      "id": "garnished:aeternium_hatchet",
+      "required": false
     }
   ]
 }
