@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend"
+      ]
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "minecraft:stick"
+  },
+  "base": {
+    "item": "garnished:terminite_hatchet_head"
+  },
+  "result": {
+    "item": "garnished:terminite_hatchet"
+  },
+  "template": {
+    "item": "betterend:handle_attachment_smithing_template"
+  }
+}

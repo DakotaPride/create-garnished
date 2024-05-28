@@ -1,0 +1,24 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "ae2"
+      ]
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "ae2:fluix_block"
+  },
+  "base": {
+    "tag": "garnished:quartz_hatchet"
+  },
+  "result": {
+    "count": 1,
+    "item": "garnished:fluix_hatchet"
+  },
+  "template": {
+    "item": "ae2:fluix_upgrade_smithing_template"
+  }
+}

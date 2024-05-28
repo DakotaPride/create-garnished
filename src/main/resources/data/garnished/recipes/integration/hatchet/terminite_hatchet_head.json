@@ -1,0 +1,21 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend"
+      ]
+    }
+  ],
+  "type": "bclib:smithing",
+  "anvilLevel": 3,
+  "damage": 3,
+  "input": {
+    "item": "betterend:terminite_ingot"
+  },
+  "inputCount": 3,
+  "result": {
+    "item": "garnished:terminite_hatchet_head"
+  },
+  "toolLevel": 3
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "ae2:certus_quartz_crystal",
+      "required": false
+    },
+    {
+      "id": "ae2:charged_certus_quartz_crystal",
+      "required": false
+    }
+  ]
+}

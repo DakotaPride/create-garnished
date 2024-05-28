@@ -46,6 +46,16 @@ public class GarnishedTags {
 	 public static final TagKey<Item> RUBY_GEMS = commonTag("ingots/ruby", BuiltInRegistries.ITEM);
 	 public static final TagKey<Item> AMETRINE_GEMS = commonTag("ingots/ametrine", BuiltInRegistries.ITEM);
 
+	public static TagKey<Item> NETHER_RUBIES = commonTag("rubies/nether", BuiltInRegistries.ITEM);
+	public static TagKey<Item> CINCINNASITE_INGOTS = commonTag("ingots/cincinnasite", BuiltInRegistries.ITEM);
+
+	public static TagKey<Item> CERTUS_QUARTZ = commonTag("gems/certus_quartz", BuiltInRegistries.ITEM);
+	public static TagKey<Item> FLUIX_CRYSTALS = commonTag("gems/fluix", BuiltInRegistries.ITEM);
+
+	public static TagKey<Item> THALLASIUM_INGOTS = commonTag("ingots/thallasium", BuiltInRegistries.ITEM);
+	public static TagKey<Item> TERMINITE_INGOTS = commonTag("ingots/terminite", BuiltInRegistries.ITEM);
+	public static TagKey<Item> AETERNIUM_INGOTS = commonTag("ingots/aeternium", BuiltInRegistries.ITEM);
+
 	private static <T> TagKey<T> garnishedTag(String name, DefaultedRegistry<T> registry) {
 		return TagKey.create(registry.key(), new ResourceLocation(CreateGarnished.ID, name));
 	}

@@ -1,0 +1,23 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend"
+      ]
+    }
+  ],
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "betterend:leather_wrapped_stick"
+  },
+  "base": {
+    "item": "garnished:aeternium_hatchet_head"
+  },
+  "result": {
+    "item": "garnished:aeternium_hatchet"
+  },
+  "template": {
+    "item": "betterend:leather_handle_attachment_smithing_template"
+  }
+}

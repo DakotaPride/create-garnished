@@ -1,0 +1,21 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend"
+      ]
+    }
+  ],
+  "type": "bclib:smithing",
+  "anvilLevel": 2,
+  "damage": 2,
+  "input": {
+    "item": "betterend:thallasium_ingot"
+  },
+  "inputCount": 3,
+  "result": {
+    "item": "garnished:thallasium_hatchet_head"
+  },
+  "toolLevel": 2
+}

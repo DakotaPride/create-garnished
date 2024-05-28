@@ -2,6 +2,19 @@ package net.dakotapride.garnished.registry;
 
 import java.util.function.Supplier;
 
+import com.tterrag.registrate.util.entry.ItemEntry;
+
+import net.dakotapride.garnished.item.hatchet.tier.integrated.GildedNetheriteHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.RoseGoldHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.WardenHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.mythicupgrades.AmetrineHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.mythicupgrades.AquamarineHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.mythicupgrades.JadeHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.mythicupgrades.RubyHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.mythicupgrades.SapphireHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.mythicupgrades.TopazHatchetToolItem;
+import net.minecraft.world.item.Rarity;
+
 import org.jetbrains.annotations.NotNull;
 
 import com.simibubi.create.AllCreativeModeTabs;
@@ -378,6 +391,29 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.GOLDEN_HATCHET.asStack());
 			output.accept(GarnishedItems.DIAMOND_HATCHET.asStack());
 			output.accept(GarnishedItems.NETHERITE_HATCHET.asStack());
+
+			output.accept(GarnishedItems.JADE_HATCHET.asStack());
+			output.accept(GarnishedItems.TOPAZ_HATCHET.asStack());
+			output.accept(GarnishedItems.SAPPHIRE_HATCHET.asStack());
+			output.accept(GarnishedItems.RUBY_HATCHET.asStack());
+			output.accept(GarnishedItems.AMETRINE_HATCHET.asStack());
+			output.accept(GarnishedItems.AQUAMARINE_HATCHET.asStack());
+			output.accept(GarnishedItems.WARDEN_HATCHET.asStack());
+			output.accept(GarnishedItems.ROSE_GOLD_HATCHET.asStack());
+			output.accept(GarnishedItems.GILDED_NETHERITE_HATCHET.asStack());
+			output.accept(GarnishedItems.NETHER_RUBY_HATCHET.asStack());
+			output.accept(GarnishedItems.FLAMING_RUBY_HATCHET.asStack());
+			output.accept(GarnishedItems.CINCINNASITE_HATCHET.asStack());
+			output.accept(GarnishedItems.CINCINNASITE_DIAMOND_HATCHET.asStack());
+			output.accept(GarnishedItems.THALLASIUM_HATCHET.asStack());
+			output.accept(GarnishedItems.TERMINITE_HATCHET.asStack());
+			output.accept(GarnishedItems.AETERNIUM_HATCHET.asStack());
+			output.accept(GarnishedItems.THALLASIUM_HATCHET_HEAD.asStack());
+			output.accept(GarnishedItems.TERMINITE_HATCHET_HEAD.asStack());
+			output.accept(GarnishedItems.AETERNIUM_HATCHET_HEAD.asStack());
+			output.accept(GarnishedItems.NETHER_QUARTZ_HATCHET.asStack());
+			output.accept(GarnishedItems.CERTUS_QUARTZ_HATCHET.asStack());
+			output.accept(GarnishedItems.FLUIX_HATCHET.asStack());
 		}
 	}
 

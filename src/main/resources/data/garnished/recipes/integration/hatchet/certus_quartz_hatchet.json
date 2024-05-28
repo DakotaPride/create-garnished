@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "ae2"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "X": {
+      "tag": "c:gems/certus_quartz"
+    },
+    "A": {
+      "item": "minecraft:string"
+    },
+    "#": {
+      "tag": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "AX ",
+    "X# ",
+    " # "
+  ],
+  "result": {
+    "count": 1,
+    "item": "garnished:certus_quartz_hatchet"
+  }
+}

@@ -12,9 +12,19 @@ import net.dakotapride.garnished.item.hatchet.tier.IronHatchetToolItem;
 import net.dakotapride.garnished.item.hatchet.tier.NetheriteHatchetToolItem;
 import net.dakotapride.garnished.item.hatchet.tier.StoneHatchetToolItem;
 import net.dakotapride.garnished.item.hatchet.tier.WoodenHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.AeterniumHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.CincinnasiteDiamondHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.CincinnasiteHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.FlamingRubyHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.FluixHatchetToolItem;
 import net.dakotapride.garnished.item.hatchet.tier.integrated.GildedNetheriteHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.NetherRubyHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.QuartzHatchetToolItem;
 import net.dakotapride.garnished.item.hatchet.tier.integrated.RoseGoldHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.TerminiteHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.ThallasiumHatchetToolItem;
 import net.dakotapride.garnished.item.hatchet.tier.integrated.WardenHatchetToolItem;
+import net.dakotapride.garnished.item.hatchet.tier.integrated.head.IntegratedToolHeadItem;
 import net.dakotapride.garnished.item.hatchet.tier.integrated.mythicupgrades.AmetrineHatchetToolItem;
 import net.dakotapride.garnished.item.hatchet.tier.integrated.mythicupgrades.AquamarineHatchetToolItem;
 import net.dakotapride.garnished.item.hatchet.tier.integrated.mythicupgrades.JadeHatchetToolItem;
@@ -780,6 +790,36 @@ public class GarnishedItems {
 			REGISTRATE.item("rose_gold_hatchet", RoseGoldHatchetToolItem::new).register();
 	public static final ItemEntry<GildedNetheriteHatchetToolItem> GILDED_NETHERITE_HATCHET =
 			REGISTRATE.item("gilded_netherite_hatchet", GildedNetheriteHatchetToolItem::new).register();
+
+	public static final ItemEntry<NetherRubyHatchetToolItem> NETHER_RUBY_HATCHET =
+			REGISTRATE.item("nether_ruby_hatchet", NetherRubyHatchetToolItem::new).register();
+	public static final ItemEntry<FlamingRubyHatchetToolItem> FLAMING_RUBY_HATCHET =
+			REGISTRATE.item("flaming_ruby_hatchet", FlamingRubyHatchetToolItem::new).register();
+	public static final ItemEntry<CincinnasiteHatchetToolItem> CINCINNASITE_HATCHET =
+			REGISTRATE.item("cincinnasite_hatchet", CincinnasiteHatchetToolItem::new).register();
+	public static final ItemEntry<CincinnasiteDiamondHatchetToolItem> CINCINNASITE_DIAMOND_HATCHET =
+			REGISTRATE.item("cincinnasite_diamond_hatchet", CincinnasiteDiamondHatchetToolItem::new).register();
+
+	public static final ItemEntry<IntegratedToolHeadItem> THALLASIUM_HATCHET_HEAD =
+			REGISTRATE.item("thallasium_hatchet_head", IntegratedToolHeadItem::new).register();
+	public static final ItemEntry<IntegratedToolHeadItem> TERMINITE_HATCHET_HEAD =
+			REGISTRATE.item("terminite_hatchet_head", IntegratedToolHeadItem::new).register();
+	public static final ItemEntry<IntegratedToolHeadItem> AETERNIUM_HATCHET_HEAD =
+			REGISTRATE.item("aeternium_hatchet_head", IntegratedToolHeadItem::new).register();
+
+	public static final ItemEntry<ThallasiumHatchetToolItem> THALLASIUM_HATCHET =
+			REGISTRATE.item("thallasium_hatchet", ThallasiumHatchetToolItem::new).register();
+	public static final ItemEntry<TerminiteHatchetToolItem> TERMINITE_HATCHET =
+			REGISTRATE.item("terminite_hatchet", TerminiteHatchetToolItem::new).register();
+	public static final ItemEntry<AeterniumHatchetToolItem> AETERNIUM_HATCHET =
+			REGISTRATE.item("aeternium_hatchet", AeterniumHatchetToolItem::new).register();
+
+	public static final ItemEntry<QuartzHatchetToolItem> NETHER_QUARTZ_HATCHET =
+			REGISTRATE.item("nether_quartz_hatchet", QuartzHatchetToolItem::new).register();
+	public static final ItemEntry<QuartzHatchetToolItem.CertusQuartzHatchetToolItem> CERTUS_QUARTZ_HATCHET =
+			REGISTRATE.item("certus_quartz_hatchet", QuartzHatchetToolItem.CertusQuartzHatchetToolItem::new).register();
+	public static final ItemEntry<FluixHatchetToolItem> FLUIX_HATCHET =
+			REGISTRATE.item("fluix_hatchet", FluixHatchetToolItem::new).register();
 
 
 	public static void setRegister() {}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "betternether:cincinnasite",
+      "required": false
+    }
+  ]
+}

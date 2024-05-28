@@ -1,0 +1,32 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "group": "nether_ruby_hatchet",
+  "key": {
+    "X": {
+      "item": "betternether:nether_ruby"
+    },
+    "#": {
+      "item": "betternether:nether_reed_stem"
+    },
+    "A": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "AX ",
+    "X# ",
+    " # "
+  ],
+  "result": {
+    "item": "garnished:nether_ruby_hatchet"
+  }
+}

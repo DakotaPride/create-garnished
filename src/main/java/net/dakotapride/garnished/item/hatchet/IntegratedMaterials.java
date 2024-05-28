@@ -61,6 +61,36 @@ public enum IntegratedMaterials implements Tier {
 	}),
 	AQUAMARINE(Tiers.NETHERITE.getLevel(), 2106, 9.0f, 4.0f, 18, () -> {
 		return Ingredient.of(GarnishedTags.AQUAMARINE_GEMS);
+	}),
+	NETHER_RUBY(3, 2561, 7.1F, 3.1F, 18, () -> {
+		return Ingredient.of(GarnishedTags.NETHER_RUBIES);
+	}),
+	FLAMING_RUBY(4, 2861, 10.4F, 6.0F, 32, () -> {
+		return Ingredient.of(Items.SCULK_CATALYST);
+	}),
+	CINCINNASITE(2, 512, 6.2F, 2.5F, 16, () -> {
+		return Ingredient.of(GarnishedTags.CINCINNASITE_INGOTS);
+	}),
+	CINCINNASITE_DIAMOND(2061, 2031, 8.2F, 3.7F, 14, () -> {
+		return Ingredient.of(Items.DIAMOND);
+	}),
+	THALLASIUM(Tiers.IRON.getLevel(), 320, 7.0F, 1.5F, 12, () -> {
+		return Ingredient.of(GarnishedTags.THALLASIUM_INGOTS);
+	}),
+	TERMINITE(Tiers.DIAMOND.getLevel(), 1230, 8.5F, 2.0F, 14, () -> {
+		return Ingredient.of(GarnishedTags.TERMINITE_INGOTS);
+	}),
+	AETERNIUM(5, 2196, 10.0F, 4.5F, 18, () -> {
+		return Ingredient.of(GarnishedTags.AETERNIUM_INGOTS);
+	}),
+	NETHER_QUARTZ(Tiers.IRON.getLevel(), Tiers.IRON.getUses(), Tiers.IRON.getSpeed(), Tiers.IRON.getAttackDamageBonus(), Tiers.IRON.getEnchantmentValue(), () -> {
+		return Ingredient.of(Items.QUARTZ);
+	}),
+	CERTUS_QUARTZ(Tiers.IRON.getLevel(), Tiers.IRON.getUses(), Tiers.IRON.getSpeed(), Tiers.IRON.getAttackDamageBonus(), Tiers.IRON.getEnchantmentValue(), () -> {
+		return Ingredient.of(GarnishedTags.CERTUS_QUARTZ);
+	}),
+	FLUIX(4, Tiers.IRON.getUses() * 3, Tiers.IRON.getUses() * 1.2F, Tiers.IRON.getAttackDamageBonus() * 1.2F, Tiers.IRON.getEnchantmentValue(), () -> {
+		return Ingredient.of(GarnishedTags.FLUIX_CRYSTALS);
 	});
 
     private final int level;
