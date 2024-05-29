@@ -122,6 +122,8 @@ public class CreateGarnishedClient implements ClientModInitializer {
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.POTTED_SMALL_CHORUS_PLANT.get(), RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.POTTED_AUREATE_SHRUB.get(), RenderType.cutout());
 
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.BOK_CHOY_PLANT.get(), RenderType.cutout());
+
 		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.GARNISH.get().getSource(),
 				GarnishedFluids.GARNISH.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.GARNISH.get()));
 		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.APPLE_CIDER.get().getSource(),
