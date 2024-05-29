@@ -20,12 +20,12 @@ public class FluixHatchetToolItem extends IntegratedHatchetToolItem {
     }
 
     public int getIntrinsicEnchantLevel(ItemStack stack, Enchantment enchantment) {
-        return enchantment == GarnishedEnchantments.STRIKING.get() ? 1 : 0;
+        return enchantment == GarnishedEnchantments.RAVAGING.get() ? 1 : 0;
     }
 
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
-        components.add(Component.literal("Always has at least §7Striking 1"));
+        components.add(Component.literal("Always has at least §7Ravaging 1"));
         super.appendHoverText(stack, level, components, tooltipFlag);
 
         // components.add(GuiText.IntrinsicEnchant.text(Enchantments.BLOCK_FORTUNE.getFullname(1)));
