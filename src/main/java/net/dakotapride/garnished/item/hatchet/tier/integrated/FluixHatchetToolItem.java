@@ -16,7 +16,7 @@ import net.minecraft.world.level.Level;
 
 public class FluixHatchetToolItem extends IntegratedHatchetToolItem {
     public FluixHatchetToolItem(Properties properties) {
-        super(GarnishedUtils.ae2(), IntegratedMaterials.FLUIX, 6.0F, -3.1F, properties);
+        super(GarnishedUtils.ae2(), IntegratedMaterials.FLUIX, 4.5F, -2.6F, properties);
     }
 
     public int getIntrinsicEnchantLevel(ItemStack stack, Enchantment enchantment) {

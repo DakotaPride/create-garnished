@@ -6,6 +6,6 @@ import net.dakotapride.garnished.item.hatchet.IntegratedMaterials;
 
 public class CincinnasiteDiamondHatchetToolItem extends IntegratedHatchetToolItem {
     public CincinnasiteDiamondHatchetToolItem(Properties properties) {
-        super(GarnishedUtils.betterNether(), IntegratedMaterials.CINCINNASITE_DIAMOND, IntegratedMaterials.CINCINNASITE_DIAMOND.getAttackDamageBonus(), IntegratedMaterials.CINCINNASITE_DIAMOND.getSpeed(), properties);
+        super(GarnishedUtils.betterNether(), IntegratedMaterials.CINCINNASITE_DIAMOND, 4, -2.5F, properties);
     }
 }

@@ -6,7 +6,7 @@ import net.dakotapride.garnished.item.hatchet.IntegratedMaterials;
 
 public class AeterniumHatchetToolItem extends IntegratedHatchetToolItem {
     public AeterniumHatchetToolItem(Properties properties) {
-        super(GarnishedUtils.betterEnd(), IntegratedMaterials.AETERNIUM, IntegratedMaterials.AETERNIUM.getAttackDamageBonus(), IntegratedMaterials.AETERNIUM.getSpeed(), properties);
+        super(GarnishedUtils.betterEnd(), IntegratedMaterials.AETERNIUM, 4F, -2.6F, properties);
     }
 
 

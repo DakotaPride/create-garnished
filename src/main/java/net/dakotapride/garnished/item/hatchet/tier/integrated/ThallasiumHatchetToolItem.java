@@ -6,7 +6,7 @@ import net.dakotapride.garnished.item.hatchet.IntegratedMaterials;
 
 public class ThallasiumHatchetToolItem extends IntegratedHatchetToolItem {
     public ThallasiumHatchetToolItem(Properties properties) {
-        super(GarnishedUtils.betterEnd(), IntegratedMaterials.THALLASIUM, IntegratedMaterials.THALLASIUM.getAttackDamageBonus(), IntegratedMaterials.THALLASIUM.getSpeed(), properties);
+        super(GarnishedUtils.betterEnd(), IntegratedMaterials.THALLASIUM, 4.5F, -2.8F, properties);
     }
 
 

@@ -6,6 +6,6 @@ import net.dakotapride.garnished.item.hatchet.IntegratedMaterials;
 
 public class FlamingRubyHatchetToolItem extends IntegratedHatchetToolItem {
     public FlamingRubyHatchetToolItem(Properties properties) {
-        super(GarnishedUtils.betterNether(), IntegratedMaterials.FLAMING_RUBY, IntegratedMaterials.FLAMING_RUBY.getAttackDamageBonus(), IntegratedMaterials.FLAMING_RUBY.getSpeed(), properties);
+        super(GarnishedUtils.betterNether(), IntegratedMaterials.FLAMING_RUBY, 4.5F, -2.4F, properties);
     }
 }

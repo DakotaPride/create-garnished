@@ -71,7 +71,7 @@ public enum IntegratedMaterials implements Tier {
 	CINCINNASITE(2, 512, 6.2F, 2.5F, 16, () -> {
 		return Ingredient.of(GarnishedTags.CINCINNASITE_INGOTS);
 	}),
-	CINCINNASITE_DIAMOND(2061, 2031, 8.2F, 3.7F, 14, () -> {
+	CINCINNASITE_DIAMOND(3, 2061, 8.2F, 3.7F, 14, () -> {
 		return Ingredient.of(Items.DIAMOND);
 	}),
 	THALLASIUM(Tiers.IRON.getLevel(), 320, 7.0F, 1.5F, 12, () -> {
@@ -89,7 +89,7 @@ public enum IntegratedMaterials implements Tier {
 	CERTUS_QUARTZ(Tiers.IRON.getLevel(), Tiers.IRON.getUses(), Tiers.IRON.getSpeed(), Tiers.IRON.getAttackDamageBonus(), Tiers.IRON.getEnchantmentValue(), () -> {
 		return Ingredient.of(GarnishedTags.CERTUS_QUARTZ);
 	}),
-	FLUIX(4, Tiers.IRON.getUses() * 3, Tiers.IRON.getUses() * 1.2F, Tiers.IRON.getAttackDamageBonus() * 1.2F, Tiers.IRON.getEnchantmentValue(), () -> {
+	FLUIX(4, Tiers.IRON.getUses() * 3, Tiers.IRON.getSpeed() * 1.2F, Tiers.IRON.getAttackDamageBonus() * 1.2F, Tiers.IRON.getEnchantmentValue(), () -> {
 		return Ingredient.of(GarnishedTags.FLUIX_CRYSTALS);
 	});
 

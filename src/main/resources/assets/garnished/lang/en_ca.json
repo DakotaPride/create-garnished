@@ -50,6 +50,7 @@
   "item.garnished.phantom_burger": "Phantom Burger",
   "item.garnished.glow_ink_roll": "Glow Ink Roll",
   "item.garnished.glow_ink_roll_slice": "Glow Ink Roll Slice",
+  "item.garnished.anniversary_cake_slice": "Slice of Anniversary Cake",
   "text.garnished.integration.farmersdelight.missing": "Please install Farmer's Delight!",
 
   "item.garnished.cashew": "Cashew",
@@ -269,6 +270,10 @@
   "item.garnished.netherite_hatchet": "Netherite Hatchet",
   "enchantment.garnished.salvaging": "Salvaging",
   "enchantment.garnished.ravaging": "Ravaging",
+  "enchantment.garnished.striking": "Striking",
+  "enchantment.garnished.quick_step": "Quick Step",
+  "enchantment.garnished.rejuvenate": "Rejuvenate",
+  "enchantment.garnished.leeching_curse": "Curse of the Leech",
 
   "item.garnished.jade_hatchet": "Jade Hatchet",
   "item.garnished.topaz_hatchet": "Topaz Hatchet",
@@ -304,8 +309,12 @@
   "garnished.ruby_hatchet.description": "Freezes enemy on hit.",
   "garnished.jade_hatchet.description": "Freezes enemy on hit.",
   "garnished.sapphire_hatchet.description": "Deals percentage-based damage depending on enemy's health.",
-  "enchantment.garnished.ravaging.desc": "Provides additional drops from certain mobs",
-  "enchantment.garnished.salvaging.desc": "Provides additional drops from certain mobs",
+  "enchantment.garnished.ravaging.desc": "Provides additional drops from certain mobs. Also increases attack damage while under half health.",
+  "enchantment.garnished.salvaging.desc": "Provides additional drops from certain mobs.",
+  "enchantment.garnished.striking.desc": "Increases the damage of a given hatchet.",
+  "enchantment.garnished.quick_step.desc": "Increases the movement speed while under half health.",
+  "enchantment.garnished.rejuvenate.desc": "Regenerates health every time they attack another entity.",
+  "enchantment.garnished.leeching_curse.desc": "Damages the user every time they attack another entity.",
 
   "item.garnished.molten_remnant": "Molten Remnant",
   "item.garnished.molten_stew": "Molten Stew",

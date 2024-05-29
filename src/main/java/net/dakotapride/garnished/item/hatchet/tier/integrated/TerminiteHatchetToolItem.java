@@ -6,7 +6,7 @@ import net.dakotapride.garnished.item.hatchet.IntegratedMaterials;
 
 public class TerminiteHatchetToolItem extends IntegratedHatchetToolItem {
     public TerminiteHatchetToolItem(Properties properties) {
-        super(GarnishedUtils.betterEnd(), IntegratedMaterials.TERMINITE, IntegratedMaterials.TERMINITE.getAttackDamageBonus(), IntegratedMaterials.TERMINITE.getSpeed(), properties);
+        super(GarnishedUtils.betterEnd(), IntegratedMaterials.TERMINITE, 5, -2.7F, properties);
     }
 
 
