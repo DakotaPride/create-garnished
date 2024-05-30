@@ -42,12 +42,12 @@ public class GarnishedFeatures {
 	public static final ResourceKey<ConfiguredFeature<?, ?>> WARPED_VEGETATION_SPREAD_CONFIGURED = registerConfiguredKey("warped_vegetation_spread");
 	public static final ResourceKey<ConfiguredFeature<?, ?>> CRIMSON_VEGETATION_SPREAD_CONFIGURED = registerConfiguredKey("crimson_vegetation_spread");
 
-	public static final ResourceKey<ConfiguredFeature<?, ?>> SOUL_SAND_VEGETATION_BONEMEAL_CONFIGURED = registerConfiguredKey("soul_sand_vegetation_bonemeal");
+	// public static final ResourceKey<ConfiguredFeature<?, ?>> SOUL_SAND_VEGETATION_SPREAD_CONFIGURED = registerConfiguredKey("soul_sand_vegetation_spread");
 
 	public static final ResourceKey<ConfiguredFeature<?, ?>> BARREN_ROOTS_CONFIGURED = registerConfiguredKey("patch_barren_roots_configured");
 	public static final ResourceKey<ConfiguredFeature<?, ?>> CHORUS_PLANT_CONFIGURED = registerConfiguredKey("patch_chorus_plant_configured");
 
-	public static final ResourceKey<ConfiguredFeature<?, ?>> END_STONE_VEGETATION_SPREAD_CONFIGURED = registerConfiguredKey("end_stone_vegetation_bonemeal");
+	public static final ResourceKey<ConfiguredFeature<?, ?>> END_STONE_VEGETATION_SPREAD_CONFIGURED = registerConfiguredKey("end_stone_vegetation_spread");
 
 	public static final VermilionKelpFeature VERMILION_KELP_FEATURE = register("vermilion_kelp", new VermilionKelpFeature(NoneFeatureConfiguration.CODEC));
 	public static final DulseKelpFeature DULSE_KELP_FEATURE = register("dulse_kelp", new DulseKelpFeature(NoneFeatureConfiguration.CODEC));
