@@ -49,9 +49,9 @@ public class CreateGarnishedClient implements ClientModInitializer {
 		return new ResourceLocation(CreateGarnished.ID, "entity/signs/hanging/" + type);
 	}
 
-	public static ResourceLocation hangingSignGUIResourceLocation(String type) {
-		return new ResourceLocation(CreateGarnished.ID, "textures/gui/hanging_signs/" + type);
-	}
+	// public static ResourceLocation hangingSignGUIResourceLocation(String type) {
+	//		return new ResourceLocation(CreateGarnished.ID, "textures/gui/hanging_signs/" + type);
+	//	}
 
 
 	@Override
