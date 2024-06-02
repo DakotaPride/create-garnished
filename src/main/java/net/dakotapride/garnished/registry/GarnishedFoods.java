@@ -25,7 +25,7 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties MELTED_CINDER_FLOUR_ALMOND = new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
 			.effect(new MobEffectInstance(MobEffects.DIG_SPEED, getCinderEffectDuration), 1.0F).build();
 	public static final FoodProperties MELTED_CINDER_FLOUR_HAZELNUT = new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
-			.effect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, getCinderEffectDuration, 1), 1.0F).build();
+			.effect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, getCinderEffectDuration, 1), 1.0F).build();
 	public static final FoodProperties MELTED_CINDER_FLOUR_CHESTNUT = new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
 			.effect(new MobEffectInstance(MobEffects.SLOW_FALLING, getCinderEffectDuration), 1.0F).build();
 	public static final FoodProperties MELTED_CINDER_FLOUR_PISTACHIO = new FoodProperties.Builder().nutrition(7).saturationMod(0.4F)
