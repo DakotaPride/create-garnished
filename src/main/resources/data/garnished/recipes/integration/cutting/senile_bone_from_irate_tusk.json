@@ -10,7 +10,7 @@
   "type": "farmersdelight:cutting",
   "ingredients": [
     {
-      "item": "minecraft:irate_tusk"
+      "item": "garnished:irate_tusk"
     }
   ],
   "result": [
