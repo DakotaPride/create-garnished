@@ -311,15 +311,6 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 		output.add(GarnishedItems.POLAR_BEAR_HIDE.asStack());
 		output.add(GarnishedItems.POLAR_HIDE_SCRATCH_PAPER.asStack());
 
-		output.add(GarnishedBlocks.SEPIA_FUNGUS.asStack());
-		output.add(GarnishedBlocks.SOUL_ROOTS.asStack());
-		output.add(GarnishedBlocks.INCANDESCENT_LILY.asStack());
-		output.add(GarnishedBlocks.PANSOPHICAL_DAISY.asStack());
-
-		output.add(GarnishedBlocks.BARREN_ROOTS.asStack());
-		output.add(GarnishedBlocks.SMALL_CHORUS_PLANT.asStack());
-		output.add(GarnishedBlocks.AUREATE_SHRUB.asStack());
-
 		output.add(GarnishedItems.CRUSHED_SALT_COMPOUND.asStack());
 		output.add(GarnishedItems.SALT_COMPOUND.asStack());
 
@@ -511,6 +502,16 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 			output.add(GarnishedBlocks.DRIED_VERMILION_KELP_BLOCK.asStack());
 			output.add(GarnishedBlocks.DRIED_DULSE_KELP_BLOCK.asStack());
 			output.add(GarnishedBlocks.VOLTAIC_SEA_GRASS.asStack());
+
+			output.add(GarnishedBlocks.SEPIA_FUNGUS.asStack());
+			output.add(GarnishedBlocks.SOUL_ROOTS.asStack());
+			output.add(GarnishedBlocks.INCANDESCENT_LILY.asStack());
+			output.add(GarnishedBlocks.PANSOPHICAL_DAISY.asStack());
+			output.add(GarnishedBlocks.SORROWFUL_LICHEN.asStack());
+
+			output.add(GarnishedBlocks.BARREN_ROOTS.asStack());
+			output.add(GarnishedBlocks.SMALL_CHORUS_PLANT.asStack());
+			output.add(GarnishedBlocks.AUREATE_SHRUB.asStack());
 
 			output.add(GarnishedBlocks.ANNIVERSARY_CAKE.asStack());
 		}
