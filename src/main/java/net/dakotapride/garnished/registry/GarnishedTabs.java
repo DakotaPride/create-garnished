@@ -343,15 +343,6 @@ public class GarnishedTabs {
 			output.accept(GarnishedItems.POLAR_BEAR_HIDE.asStack());
 			output.accept(GarnishedItems.POLAR_HIDE_SCRATCH_PAPER.asStack());
 
-			output.accept(GarnishedBlocks.SEPIA_FUNGUS.asStack());
-			output.accept(GarnishedBlocks.SOUL_ROOTS.asStack());
-			output.accept(GarnishedBlocks.INCANDESCENT_LILY.asStack());
-			output.accept(GarnishedBlocks.PANSOPHICAL_DAISY.asStack());
-
-			output.accept(GarnishedBlocks.BARREN_ROOTS.asStack());
-			output.accept(GarnishedBlocks.SMALL_CHORUS_PLANT.asStack());
-			output.accept(GarnishedBlocks.AUREATE_SHRUB.asStack());
-
 			output.accept(GarnishedItems.CRUSHED_SALT_COMPOUND.asStack());
 			output.accept(GarnishedItems.SALT_COMPOUND.asStack());
 
@@ -561,6 +552,16 @@ public class GarnishedTabs {
 			output.accept(GarnishedBlocks.DRIED_VERMILION_KELP_BLOCK.asStack());
 			output.accept(GarnishedBlocks.DRIED_DULSE_KELP_BLOCK.asStack());
 			output.accept(GarnishedBlocks.VOLTAIC_SEA_GRASS.asStack());
+
+			output.accept(GarnishedBlocks.SEPIA_FUNGUS.asStack());
+			output.accept(GarnishedBlocks.SOUL_ROOTS.asStack());
+			output.accept(GarnishedBlocks.INCANDESCENT_LILY.asStack());
+			output.accept(GarnishedBlocks.PANSOPHICAL_DAISY.asStack());
+			output.accept(GarnishedBlocks.SORROWFUL_LICHEN.asStack());
+
+			output.accept(GarnishedBlocks.BARREN_ROOTS.asStack());
+			output.accept(GarnishedBlocks.SMALL_CHORUS_PLANT.asStack());
+			output.accept(GarnishedBlocks.AUREATE_SHRUB.asStack());
 
 			output.accept(GarnishedBlocks.ANNIVERSARY_CAKE.asStack());
 		}
