@@ -1,5 +1,6 @@
 package net.dakotapride.garnished.registry;
 
+import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.util.entry.ItemEntry;
 
@@ -248,8 +249,8 @@ public class GarnishedItems {
 			REGISTRATE.item("crushed_salt", Item::new).register();
 	public static final ItemEntry<Item> SALT_COMPOUND =
 			REGISTRATE.item("salt_compound", Item::new).register();
-	public static final ItemEntry<Item> UNPROCESSED_SALT_COMPOUND =
-			REGISTRATE.item("unprocessed_salt_compound", Item::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> UNPROCESSED_SALT_COMPOUND =
+			REGISTRATE.item("unprocessed_salt_compound", SequencedAssemblyItem::new).register();
 
 	// Unique Uses
 	public static final ItemEntry<BottledPeanutOilItem> BOTTLED_PEANUT_OIL =
@@ -276,26 +277,26 @@ public class GarnishedItems {
 	// Misc Foods
 	public static final ItemEntry<SaladFoodItem> SALAD =
 			REGISTRATE.item("salad", SaladFoodItem::new).register();
-	public static final ItemEntry<SaltedFoodItem> INCOMPLETE_PHANTOM_STEAK =
-			REGISTRATE.item("incomplete_phantom_steak", SaltedFoodItem::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_PHANTOM_STEAK =
+			REGISTRATE.item("incomplete_phantom_steak", SequencedAssemblyItem::new).register();
 	public static final ItemEntry<PhantomSteakFoodItem> PHANTOM_STEAK =
 			REGISTRATE.item("phantom_steak", PhantomSteakFoodItem::new).register();
-	public static final ItemEntry<Item> INCOMPLETE_WALNUT_BROWNIE =
-			REGISTRATE.item("incomplete_brownie_walnuts", Item::new).register();
-	public static final ItemEntry<Item> INCOMPLETE_COOKIE =
-			REGISTRATE.item("incomplete_cookie", Item::new).register();
-	public static final ItemEntry<Item> INCOMPLETE_CASHEW_COOKIE =
-			REGISTRATE.item("incomplete_cashew_cookie", Item::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_WALNUT_BROWNIE =
+			REGISTRATE.item("incomplete_brownie_walnuts", SequencedAssemblyItem::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_COOKIE =
+			REGISTRATE.item("incomplete_cookie", SequencedAssemblyItem::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_CASHEW_COOKIE =
+			REGISTRATE.item("incomplete_cashew_cookie", SequencedAssemblyItem::new).register();
 
 	// Garnished v0.9: Incineration
 	public static final ItemEntry<PeanutOilAndCinderSandwichFoodItem> PEANUT_OIL_AND_CINDER_SANDWICH =
 			REGISTRATE.item("peanut_cinder_sandwich", PeanutOilAndCinderSandwichFoodItem::new).register();
-	public static final ItemEntry<Item> INCOMPLETE_PEANUT_OIL_AND_CINDER_SANDWICH =
-			REGISTRATE.item("incomplete_peanut_cinder_sandwich", Item::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_PEANUT_OIL_AND_CINDER_SANDWICH =
+			REGISTRATE.item("incomplete_peanut_cinder_sandwich", SequencedAssemblyItem::new).register();
 	public static final ItemEntry<TophetBrewFoodItem> TOPHET_BREW =
 			REGISTRATE.item("tophet_brew", TophetBrewFoodItem::new).register();
-	public static final ItemEntry<Item> INCOMPLETE_TOPHET_BREW =
-			REGISTRATE.item("incomplete_tophet_brew", Item::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_TOPHET_BREW =
+			REGISTRATE.item("incomplete_tophet_brew", SequencedAssemblyItem::new).register();
 	public static final ItemEntry<GrimStewFoodItem> GRIM_STEW =
 			REGISTRATE.item("grim_stew", GrimStewFoodItem::new).register();
 	public static final ItemEntry<WrappedWarpedTangleFoodItem> WRAPPED_WARPED_TANGLE =
@@ -304,16 +305,18 @@ public class GarnishedItems {
 			REGISTRATE.item("wrapped_crimson_tangle", WrappedCrimsonTangleFoodItem::new).register();
 	public static final ItemEntry<WeepingTangleFoodItem> WEEPING_TANGLE =
 			REGISTRATE.item("weeping_tangle", WeepingTangleFoodItem::new).register();
-	public static final ItemEntry<Item> INCOMPLETE_TANGLE =
-			REGISTRATE.item("incomplete_tangle", Item::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_TANGLE =
+			REGISTRATE.item("incomplete_tangle", SequencedAssemblyItem::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_WEEPING_TANGLE =
+			REGISTRATE.item("incomplete_weeping_tangle", SequencedAssemblyItem::new).register();
 	public static final ItemEntry<CinderRollFoodItem> CINDER_ROLL =
 			REGISTRATE.item("cinder_roll", CinderRollFoodItem::new).register();
-	public static final ItemEntry<Item> INCOMPLETE_CINDER_ROLL =
-			REGISTRATE.item("incomplete_cinder_roll", Item::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_CINDER_ROLL =
+			REGISTRATE.item("incomplete_cinder_roll", SequencedAssemblyItem::new).register();
 	public static final ItemEntry<BlazingDelightFoodItem> BLAZING_DELIGHT =
 			REGISTRATE.item("blazing_delight", BlazingDelightFoodItem::new).register();
-	public static final ItemEntry<Item> INCOMPLETE_FERMENTED_CASHEW_MIXTURE =
-			REGISTRATE.item("incomplete_cashew_mixture", Item::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_FERMENTED_CASHEW_MIXTURE =
+			REGISTRATE.item("incomplete_cashew_mixture", SequencedAssemblyItem::new).register();
 	public static final ItemEntry<FermentedCashewMixtureItem> FERMENTED_CASHEW_MIXTURE =
 			REGISTRATE.item("cashew_mixture", FermentedCashewMixtureItem::new).register();
 	public static final ItemEntry<PutridStewFoodItem> PUTRID_STEW =
@@ -325,16 +328,16 @@ public class GarnishedItems {
 			REGISTRATE.item("enflamed_mandible", Item::new).register();
 	public static final ItemEntry<Item> CRIMSON_TUSK =
 			REGISTRATE.item("crimson_tusk", Item::new).register();
-	public static final ItemEntry<Item> INCOMPLETE_CRIMSON_TUSK =
-			REGISTRATE.item("incomplete_crimson_tusk", Item::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_CRIMSON_TUSK =
+			REGISTRATE.item("incomplete_crimson_tusk", SequencedAssemblyItem::new).register();
 	public static final ItemEntry<Item> EMPTY_CRIMSON_TUSK =
 			REGISTRATE.item("empty_crimson_tusk", Item::new).register();
 	public static final ItemEntry<Item> CRUSHED_ENDER_PEARL =
 			REGISTRATE.item("crushed_ender_pearl", Item::new).register();
 	public static final ItemEntry<Item> SILICA_HARDENED_WRAP =
 			REGISTRATE.item("hardened_wrap", Item::new).register();
-	public static final ItemEntry<Item> INCOMPLETE_SILICA_HARDENED_WRAP =
-			REGISTRATE.item("incomplete_hardened_wrap", Item::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_SILICA_HARDENED_WRAP =
+			REGISTRATE.item("incomplete_hardened_wrap", SequencedAssemblyItem::new).register();
 	public static final ItemEntry<Item> CRUSHED_WARPED_FUNGUS =
 			REGISTRATE.item("crushed_warped_fungus", Item::new).register();
 	public static final ItemEntry<Item> CRUSHED_CRIMSON_FUNGUS =
@@ -363,14 +366,14 @@ public class GarnishedItems {
 			REGISTRATE.item("senile_sweet_scoria", SenileSweetFoodItem::new).register();
 	public static final ItemEntry<SenileSweetFoodItem> SENILE_SWEET_SCORCHIA =
 			REGISTRATE.item("senile_sweet_scorchia", SenileSweetFoodItem::new).register();
-	public static final ItemEntry<Item> INCOMPLETE_SENILE_SWEET_BLACKSTONE =
-			REGISTRATE.item("incomplete_senile_sweet_blackstone", Item::new).register();
-	public static final ItemEntry<Item> INCOMPLETE_SENILE_SWEET_BASALT =
-			REGISTRATE.item("incomplete_senile_sweet_basalt", Item::new).register();
-	public static final ItemEntry<Item> INCOMPLETE_SENILE_SWEET_SCORIA =
-			REGISTRATE.item("incomplete_senile_sweet_scoria", Item::new).register();
-	public static final ItemEntry<Item> INCOMPLETE_SENILE_SWEET_SCORCHIA =
-			REGISTRATE.item("incomplete_senile_sweet_scorchia", Item::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_SENILE_SWEET_BLACKSTONE =
+			REGISTRATE.item("incomplete_senile_sweet_blackstone", SequencedAssemblyItem::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_SENILE_SWEET_BASALT =
+			REGISTRATE.item("incomplete_senile_sweet_basalt", SequencedAssemblyItem::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_SENILE_SWEET_SCORIA =
+			REGISTRATE.item("incomplete_senile_sweet_scoria", SequencedAssemblyItem::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_SENILE_SWEET_SCORCHIA =
+			REGISTRATE.item("incomplete_senile_sweet_scorchia", SequencedAssemblyItem::new).register();
 
 	public static final ItemEntry<Item> NUT_FLOUR =
 			REGISTRATE.item("nut_flour", Item::new).register();
@@ -572,10 +575,10 @@ public class GarnishedItems {
 			REGISTRATE.item("shining_dish", ShiningDishFoodItem::new).register();
 	public static final ItemEntry<MuesliFoodItem> MUESLI =
 			REGISTRATE.item("muesli", MuesliFoodItem::new).register();
-	public static final ItemEntry<Item> INCOMPLETE_NUTTY_MELODY =
-			REGISTRATE.item("incomplete_nutty_melody", Item::new).register();
-	public static final ItemEntry<Item> INCOMPLETE_MUESLI =
-			REGISTRATE.item("incomplete_muesli", Item::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_NUTTY_MELODY =
+			REGISTRATE.item("incomplete_nutty_melody", SequencedAssemblyItem::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_MUESLI =
+			REGISTRATE.item("incomplete_muesli", SequencedAssemblyItem::new).register();
 
 	public static final ItemEntry<DustyRegaleFoodItem> DUSTY_REGALE =
 			REGISTRATE.item("dusty_regale", DustyRegaleFoodItem::new).register();
@@ -721,11 +724,11 @@ public class GarnishedItems {
 	public static final ItemEntry<Item> SUGAR_CUBE =
 			REGISTRATE.item("sugar_cube", Item::new).register();
 
-	public static final ItemEntry<Item> INCOMPLETE_ENDER_DRAGON_EGG =
-			REGISTRATE.item("incomplete_ender_dragon_egg", Item::new)
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_ENDER_DRAGON_EGG =
+			REGISTRATE.item("incomplete_ender_dragon_egg", SequencedAssemblyItem::new)
 					.properties(p -> p.rarity(Rarity.UNCOMMON)).register();
-	public static final ItemEntry<Item> INCOMPLETE_CHAMPION_OMELETTE =
-			REGISTRATE.item("incomplete_champion_omelette", Item::new)
+	public static final ItemEntry<SequencedAssemblyItem> INCOMPLETE_CHAMPION_OMELETTE =
+			REGISTRATE.item("incomplete_champion_omelette", SequencedAssemblyItem::new)
 					.properties(p -> p.rarity(Rarity.UNCOMMON)).register();
 
 	// Farmer's Delight Items
