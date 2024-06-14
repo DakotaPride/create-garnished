@@ -2,6 +2,7 @@ package net.dakotapride.garnished.item;
 
 import org.jetbrains.annotations.NotNull;
 
+import net.dakotapride.garnished.block.IDesolateSpread;
 import net.dakotapride.garnished.registry.GarnishedFeatures;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -51,16 +52,32 @@ public class DesolateSpreadItem extends Item {
 
     public boolean applySpread(ItemStack stack, Level level, BlockPos pos) {
         BlockState blockstate = level.getBlockState(pos);
-        if (blockstate.getBlock().defaultBlockState().is(Blocks.END_STONE)) {
-            if (level instanceof ServerLevel) {
-                if (this.isSuccessful()) {
-                    this.performSpread((ServerLevel)level, level.random, pos);
+        if (level.getBlockState(pos.above()).is(Blocks.AIR)) {
+            if (blockstate.getBlock().defaultBlockState().is(Blocks.END_STONE)) {
+                if (level instanceof ServerLevel) {
+                    if (this.isSuccessful()) {
+                        this.performSpread((ServerLevel)level, level.random, pos);
+                    }
+
+                    stack.shrink(1);
                 }
 
-                stack.shrink(1);
+                return true;
             }
+        }
 
-            return true;
+        if (blockstate.getBlock() instanceof IDesolateSpread spreadableBlock) {
+            if (spreadableBlock.isValidTarget(level, pos, blockstate, level.isClientSide)) {
+                if (level instanceof ServerLevel) {
+                    if (spreadableBlock.isSuccess(level, level.random, pos, blockstate)) {
+                        spreadableBlock.performSpread((ServerLevel)level, level.random, pos, blockstate);
+                    }
+
+                    stack.shrink(1);
+                }
+
+                return true;
+            }
         }
 
         return false;
@@ -74,7 +91,7 @@ public class DesolateSpreadItem extends Item {
         BlockState blockstate = level.getBlockState(pos);
         BlockPos blockpos = pos.above();
         ChunkGenerator chunkgenerator = level.getChunkSource().getGenerator();
-		Registry<ConfiguredFeature<?, ?>> registry = level.registryAccess().registryOrThrow(Registry.CONFIGURED_FEATURE_REGISTRY);
+        Registry<ConfiguredFeature<?, ?>> registry = level.registryAccess().registryOrThrow(Registry.CONFIGURED_FEATURE_REGISTRY);
         if (blockstate.is(Blocks.END_STONE)) {
             this.place(registry, level, chunkgenerator, random, blockpos);
         }
@@ -105,19 +122,37 @@ public class DesolateSpreadItem extends Item {
                 d1 = blockstate.getShape(level, pos).max(Direction.Axis.Y);
             }
 
-            level.addParticle(ParticleTypes.PORTAL, (double)pos.getX() + 0.5D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.5D, 0.0D, 0.0D, 0.0D);
-            RandomSource randomsource = level.getRandom();
+            if (blockstate.getBlock() instanceof IDesolateSpread spreadableBlock) {
+                level.addParticle(spreadableBlock.getParticle(), (double)pos.getX() + 0.5D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.5D, 0.0D, 0.0D, 0.0D);
+                RandomSource randomsource = level.getRandom();
 
-            for(int i = 0; i < data; ++i) {
-                double d2 = randomsource.nextGaussian() * 0.02D;
-                double d3 = randomsource.nextGaussian() * 0.02D;
-                double d4 = randomsource.nextGaussian() * 0.02D;
-                double d5 = 0.5D - d0;
-                double d6 = (double)pos.getX() + d5 + randomsource.nextDouble() * d0 * 2.0D;
-                double d7 = (double)pos.getY() + randomsource.nextDouble() * d1;
-                double d8 = (double)pos.getZ() + d5 + randomsource.nextDouble() * d0 * 2.0D;
-				if (!level.getBlockState(new BlockPos(d6, d7, d8).below()).isAir()) {
-                    level.addParticle(ParticleTypes.PORTAL, d6, d7, d8, d2, d3, d4);
+                for(int i = 0; i < data; ++i) {
+                    double d2 = randomsource.nextGaussian() * 0.02D;
+                    double d3 = randomsource.nextGaussian() * 0.02D;
+                    double d4 = randomsource.nextGaussian() * 0.02D;
+                    double d5 = 0.5D - d0;
+                    double d6 = (double)pos.getX() + d5 + randomsource.nextDouble() * d0 * 2.0D;
+                    double d7 = (double)pos.getY() + randomsource.nextDouble() * d1;
+                    double d8 = (double)pos.getZ() + d5 + randomsource.nextDouble() * d0 * 2.0D;
+                    if (!level.getBlockState(new BlockPos(d6, d7, d8).below()).isAir()) {
+                        level.addParticle(spreadableBlock.getParticle(), d6, d7, d8, d2, d3, d4);
+                    }
+                }
+            } else {
+                level.addParticle(ParticleTypes.PORTAL, (double)pos.getX() + 0.5D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.5D, 0.0D, 0.0D, 0.0D);
+                RandomSource randomsource = level.getRandom();
+
+                for(int i = 0; i < data; ++i) {
+                    double d2 = randomsource.nextGaussian() * 0.02D;
+                    double d3 = randomsource.nextGaussian() * 0.02D;
+                    double d4 = randomsource.nextGaussian() * 0.02D;
+                    double d5 = 0.5D - d0;
+                    double d6 = (double)pos.getX() + d5 + randomsource.nextDouble() * d0 * 2.0D;
+                    double d7 = (double)pos.getY() + randomsource.nextDouble() * d1;
+                    double d8 = (double)pos.getZ() + d5 + randomsource.nextDouble() * d0 * 2.0D;
+                    if (!level.getBlockState(new BlockPos(d6, d7, d8).below()).isAir()) {
+                        level.addParticle(ParticleTypes.PORTAL, d6, d7, d8, d2, d3, d4);
+                    }
                 }
             }
 

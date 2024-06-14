@@ -1,27 +1,25 @@
 package net.dakotapride.garnished.block;
 
+import java.util.function.ToIntFunction;
+
 import net.dakotapride.garnished.registry.GarnishedBlocks;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.RandomSource;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.MultifaceBlock;
 import net.minecraft.world.level.block.MultifaceSpreader;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 
-import java.util.function.ToIntFunction;
-
-public class NetherLichenBlock extends MultifaceBlock implements BonemealableBlock {
+public class NetherLichenBlock extends MultifaceBlock implements ISenileSpread {
     private final MultifaceSpreader spreader = new MultifaceSpreader(this);
 
     public NetherLichenBlock(Properties pProperties) {
@@ -56,18 +54,23 @@ public class NetherLichenBlock extends MultifaceBlock implements BonemealableBlo
      * @return whether bonemeal can be used on this block
      */
 	@Override
-    public boolean isValidBonemealTarget(BlockGetter pLevel, BlockPos pPos, BlockState pState, boolean isClient) {
+    public boolean isValidTarget(BlockGetter pLevel, BlockPos pPos, BlockState pState, boolean isClient) {
         return Direction.stream().anyMatch((p_153316_) -> {
             return this.spreader.canSpreadInAnyDirection(pState, pLevel, pPos, p_153316_.getOpposite());
         });
     }
 
-	public boolean isBonemealSuccess(Level pLevel, RandomSource pRandom, BlockPos pPos, BlockState pState) {
+	public boolean isSuccess(Level pLevel, RandomSource pRandom, BlockPos pPos, BlockState pState) {
         return true;
     }
 
-    public void performBonemeal(ServerLevel pLevel, RandomSource pRandom, BlockPos pPos, BlockState pState) {
+    public void performSpread(ServerLevel pLevel, RandomSource pRandom, BlockPos pPos, BlockState pState) {
         this.spreader.spreadFromRandomFaceTowardRandomDirection(pState, pLevel, pPos, pRandom);
+    }
+
+    @Override
+    public SimpleParticleType getParticle() {
+        return ParticleTypes.SOUL;
     }
 
     public boolean propagatesSkylightDown(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
