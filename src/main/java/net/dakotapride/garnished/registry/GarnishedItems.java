@@ -544,9 +544,13 @@ public class GarnishedItems {
 
 	public static final ItemEntry<SepiaSignItem> SEPIA_SIGN =
 			REGISTRATE.item("sepia_sign", SepiaSignItem::new).register();
+	public static final ItemEntry<SepiaSignItem.Hanging> SEPIA_HANGING_SIGN =
+			REGISTRATE.item("sepia_hanging_sign", SepiaSignItem.Hanging::new).register();
 
 	public static final ItemEntry<NutSignItem> NUT_SIGN =
 			REGISTRATE.item("nut_sign", NutSignItem::new).register();
+	public static final ItemEntry<NutSignItem.Hanging> NUT_HANGING_SIGN =
+			REGISTRATE.item("nut_hanging_sign", NutSignItem.Hanging::new).register();
 
 	public static final ItemEntry<NutBoatItem> NUT_BOAT =
 			REGISTRATE.item("nut_boat", NutBoatItem::new).register();
