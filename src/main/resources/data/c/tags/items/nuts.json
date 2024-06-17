@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#garnished:cracked_nuts",
+    "#garnished:ungarnished_nuts",
+    "#garnished:garnished_nuts",
+    "#garnished:cinder_nuts",
+    "#garnished:sweetened_nuts",
+    "#garnished:chocolate_glazed_nuts",
+    "#garnished:honeyed_nuts"
+  ]
+}

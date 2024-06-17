@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#garnished:crushable/walnut",
+    "garnished:cinder_walnut",
+    "garnished:melted_cinder_walnut",
+    "garnished:cinder_walnut_strength",
+    "garnished:sweetened_walnut",
+    "garnished:chocolate_glazed_walnut",
+    "garnished:honeyed_walnut"
+  ]
+}

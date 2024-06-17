@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#garnished:crushable/pistachio",
+    "garnished:cinder_pistachio",
+    "garnished:melted_cinder_pistachio",
+    "garnished:cinder_pistachio_night_vision",
+    "garnished:sweetened_pistachio",
+    "garnished:chocolate_glazed_pistachio",
+    "garnished:honeyed_pistachio"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#garnished:crushable/macadamia",
+    "garnished:cinder_macadamia",
+    "garnished:melted_cinder_macadamia",
+    "garnished:cinder_macadamia_fire_resistance",
+    "garnished:sweetened_macadamia",
+    "garnished:chocolate_glazed_macadamia",
+    "garnished:honeyed_macadamia"
+  ]
+}

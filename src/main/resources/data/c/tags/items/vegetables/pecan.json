@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#garnished:crushable/pecan",
+    "garnished:cinder_pecan",
+    "garnished:melted_cinder_pecan",
+    "garnished:cinder_pecan_resistance",
+    "garnished:sweetened_pecan",
+    "garnished:chocolate_glazed_pecan",
+    "garnished:honeyed_pecan"
+  ]
+}
