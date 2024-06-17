@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "#garnished:crushable/chestnut",
+    "garnished:cinder_chestnut",
+    "garnished:melted_cinder_chestnut",
+    "garnished:cinder_chestnut_slow_falling",
+    "garnished:sweetened_chestnut",
+    "garnished:chocolate_glazed_chestnut",
+    "garnished:honeyed_chestnut"
+  ]
+}
