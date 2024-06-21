@@ -467,8 +467,8 @@ public class GarnishedItems {
 	public static final ItemEntry<Item> VENERABLE_DOUGH =
 			REGISTRATE.item("venerable_dough", Item::new).register();
 
-	public static final ItemEntry<Item> UNFINISHED_VENERABLE_DELICACY =
-			REGISTRATE.item("unfinished_venerable_delicacy", Item::new).register();
+	public static final ItemEntry<SequencedAssemblyItem> UNFINISHED_VENERABLE_DELICACY =
+			REGISTRATE.item("unfinished_venerable_delicacy", SequencedAssemblyItem::new).register();
 	public static final ItemEntry<VenerableDelicacyFoodItem> VENERABLE_DELICACY_RED =
 			REGISTRATE.item("venerable_delicacy_red", VenerableDelicacyFoodItem::new).register();
 	public static final ItemEntry<VenerableDelicacyFoodItem> VENERABLE_DELICACY_ORANGE =
