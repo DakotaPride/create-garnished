@@ -4,6 +4,8 @@ import com.simibubi.create.foundation.data.AssetLookup;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.util.entry.BlockEntry;
 
+import com.tterrag.registrate.util.nullness.NonNullFunction;
+
 import net.dakotapride.garnished.CreateGarnished;
 import net.dakotapride.garnished.block.AbyssalStoneBlock;
 import net.dakotapride.garnished.block.AbyssalStoneSlabBlock;
@@ -26,6 +28,7 @@ import net.dakotapride.garnished.block.UnstableStoneSlabBlock;
 import net.dakotapride.garnished.block.UnstableStoneStairsBlock;
 import net.dakotapride.garnished.block.UnstableStoneWallBlock;
 import net.dakotapride.garnished.block.VoltaicSeagrassBlock;
+import net.dakotapride.garnished.block.ZultaniteStairsBlock;
 import net.dakotapride.garnished.block.cake.AnniversaryCakeBlock;
 import net.dakotapride.garnished.block.kelp.DulseKelpBlock;
 import net.dakotapride.garnished.block.kelp.DulseKelpPlantBlock;
@@ -80,6 +83,7 @@ import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.WallBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 
@@ -515,48 +519,449 @@ public class GarnishedBlocks {
 					.initialProperties(() -> Blocks.OAK_PRESSURE_PLATE)
 					.properties(p -> p.mapColor(MapColor.COLOR_LIGHT_GREEN)).register();
 
-	public static final BlockEntry<MasticBlock> MASTIC_BLOCK =
-			REGISTRATE.block("mastic_block", MasticBlock::new)
-					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
-					.simpleItem()
-					.initialProperties(() -> Blocks.SLIME_BLOCK)
-					.properties(p -> p.noOcclusion().instabreak()).register();
-	public static final BlockEntry<MasticBlock> RED_MASTIC_BLOCK =
-			REGISTRATE.block("red_mastic_block", MasticBlock::new)
-					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
-					.simpleItem()
-					.initialProperties(() -> Blocks.SLIME_BLOCK)
-					.properties(p -> p.noOcclusion().instabreak()).register();
-	public static final BlockEntry<MasticBlock> ORANGE_MASTIC_BLOCK =
-			REGISTRATE.block("orange_mastic_block", MasticBlock::new)
-					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
-					.simpleItem()
-					.initialProperties(() -> Blocks.SLIME_BLOCK)
-					.properties(p -> p.noOcclusion().instabreak()).register();
-	public static final BlockEntry<MasticBlock> YELLOW_MASTIC_BLOCK =
-			REGISTRATE.block("yellow_mastic_block", MasticBlock::new)
-					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
-					.simpleItem()
-					.initialProperties(() -> Blocks.SLIME_BLOCK)
-					.properties(p -> p.noOcclusion().instabreak()).register();
-	public static final BlockEntry<MasticBlock> GREEN_MASTIC_BLOCK =
-			REGISTRATE.block("green_mastic_block", MasticBlock::new)
-					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
-					.simpleItem()
-					.initialProperties(() -> Blocks.SLIME_BLOCK)
-					.properties(p -> p.noOcclusion().instabreak()).register();
-	public static final BlockEntry<MasticBlock> BLUE_MASTIC_BLOCK =
-			REGISTRATE.block("blue_mastic_block", MasticBlock::new)
-					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
-					.simpleItem()
-					.initialProperties(() -> Blocks.SLIME_BLOCK)
-					.properties(p -> p.noOcclusion().instabreak()).register();
-	public static final BlockEntry<MasticBlock> PURPLE_MASTIC_BLOCK =
-			REGISTRATE.block("purple_mastic_block", MasticBlock::new)
-					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
-					.simpleItem()
-					.initialProperties(() -> Blocks.SLIME_BLOCK)
-					.properties(p -> p.noOcclusion().instabreak()).register();
+	public static <T extends Block> BlockEntry<T> masticResinRegistration(String colour0, String block0, NonNullFunction<BlockBehaviour.Properties, T> factory, Block block1) {
+		return REGISTRATE.block((colour0 == "" ? colour0 : colour0 + "_") + block0, factory)
+				.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+				.simpleItem()
+				.initialProperties(() -> block1)
+				.properties(p -> p.noOcclusion().instabreak()).register();
+	}
+
+	public static <T extends Block> BlockEntry<T> zultaniteRegistration(String type, String colour0, String block0, NonNullFunction<BlockBehaviour.Properties, T> factory, Block block1) {
+		return REGISTRATE.block((type == "" ? type : type + "_") + (colour0 == "" ? colour0 : colour0 + "_") + block0, factory)
+				.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+				.simpleItem()
+				.initialProperties(() -> block1)
+				.properties(p -> p).register();
+	}
+
+	public static <T extends Block> BlockEntry<T> chiseledZultaniteRegistration(String colour0, String block0, NonNullFunction<BlockBehaviour.Properties, T> factory, Block block1) {
+		return REGISTRATE.block("chiseled_" + (colour0 == "" ? colour0 : colour0 + "_") + block0 + "_bricks", factory)
+				.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+				.simpleItem()
+				.initialProperties(() -> block1)
+				.properties(p -> p).register();
+	}
+
+	public static <T extends SlabBlock> BlockEntry<T> zultaniteSlabRegistration(String type, String colour0, String block0, NonNullFunction<BlockBehaviour.Properties, T> factory, Block block1) {
+		return REGISTRATE.block((type == "" ? type : type + "_") + (colour0 == "" ? colour0 : colour0 + "_") + block0 + "_slab", factory)
+				.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+				.simpleItem()
+				.initialProperties(() -> block1)
+				.properties(p -> p).register();
+	}
+
+	public static <T extends ZultaniteStairsBlock> BlockEntry<T> zultaniteStairsRegistration(String type, String colour0, String block0, NonNullFunction<BlockBehaviour.Properties, T> factory, Block block1) {
+		return REGISTRATE.block((type == "" ? type : type + "_") + (colour0 == "" ? colour0 : colour0 + "_") + block0 + "_stairs", factory)
+				.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+				.simpleItem()
+				.initialProperties(() -> block1)
+				.properties(p -> p).register();
+	}
+
+	public static <T extends WallBlock> BlockEntry<T> zultaniteWallRegistration(String type, String colour0, String block0, NonNullFunction<BlockBehaviour.Properties, T> factory, Block block1) {
+		return REGISTRATE.block((type == "" ? type : type + "_") + (colour0 == "" ? colour0 : colour0 + "_") + block0 + "_wall", factory)
+				.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+				.simpleItem()
+				.initialProperties(() -> block1)
+				.properties(p -> p).register();
+	}
+
+	public static BlockEntry<MasticBlock> masticslimelike(String colour0) {
+		return masticResinRegistration(colour0, "mastic_block", MasticBlock::new, Blocks.SLIME_BLOCK);
+	}
+
+	public static BlockEntry<Block> masticchiseled(String colour0) {
+		return chiseledZultaniteRegistration(colour0, "zultanite", Block::new, Blocks.CHISELED_DEEPSLATE);
+	}
+
+	public static BlockEntry<Block> masticstone(String colour0) {
+		return zultaniteRegistration("", colour0, "zultanite", Block::new, Blocks.DEEPSLATE);
+	}
+
+	public static BlockEntry<SlabBlock> masticstoneslab(String colour0) {
+		return zultaniteSlabRegistration("", colour0, "zultanite", SlabBlock::new, Blocks.DEEPSLATE);
+	}
+
+	public static BlockEntry<ZultaniteStairsBlock> masticstonestairs(String colour0) {
+		return zultaniteStairsRegistration("", colour0, "zultanite", ZultaniteStairsBlock::new, Blocks.DEEPSLATE);
+	}
+
+	public static BlockEntry<WallBlock> masticstonewall(String colour0) {
+		return zultaniteWallRegistration("", colour0, "zultanite", WallBlock::new, Blocks.DEEPSLATE);
+	}
+
+	public static BlockEntry<Block> masticpolished(String colour0) {
+		return zultaniteRegistration("polished", colour0, "zultanite", Block::new, Blocks.POLISHED_DEEPSLATE);
+	}
+
+	public static BlockEntry<SlabBlock> masticpolishedslab(String colour0) {
+		return zultaniteSlabRegistration("polished", colour0, "zultanite", SlabBlock::new, Blocks.POLISHED_DEEPSLATE);
+	}
+
+	public static BlockEntry<ZultaniteStairsBlock> masticpolishedstairs(String colour0) {
+		return zultaniteStairsRegistration("polished", colour0, "zultanite", ZultaniteStairsBlock::new, Blocks.POLISHED_DEEPSLATE);
+	}
+
+	public static BlockEntry<WallBlock> masticpolishedwall(String colour0) {
+		return zultaniteWallRegistration("polished", colour0, "zultanite", WallBlock::new, Blocks.POLISHED_DEEPSLATE);
+	}
+
+	public static BlockEntry<Block> masticbricks(String colour0) {
+		return zultaniteRegistration("", colour0, "zultanite_bricks", Block::new, Blocks.DEEPSLATE_BRICKS);
+	}
+
+	public static BlockEntry<SlabBlock> masticbrickslab(String colour0) {
+		return zultaniteSlabRegistration("", colour0, "zultanite_brick", SlabBlock::new, Blocks.DEEPSLATE_BRICKS);
+	}
+
+	public static BlockEntry<ZultaniteStairsBlock> masticbrickstairs(String colour0) {
+		return zultaniteStairsRegistration("", colour0, "zultanite_brick", ZultaniteStairsBlock::new, Blocks.DEEPSLATE_BRICKS);
+	}
+
+	public static BlockEntry<WallBlock> masticbrickwall(String colour0) {
+		return zultaniteWallRegistration("", colour0, "zultanite_brick", WallBlock::new, Blocks.DEEPSLATE_BRICKS);
+	}
+
+	public static BlockEntry<Block> masticsmooth(String colour0) {
+		return zultaniteRegistration("smooth", colour0, "zultanite", Block::new, Blocks.SMOOTH_BASALT);
+	}
+
+	public static BlockEntry<SlabBlock> masticsmoothslab(String colour0) {
+		return zultaniteSlabRegistration("smooth", colour0, "zultanite", SlabBlock::new, Blocks.SMOOTH_BASALT);
+	}
+
+	public static BlockEntry<ZultaniteStairsBlock> masticsmoothstairs(String colour0) {
+		return zultaniteStairsRegistration("smooth", colour0, "zultanite", ZultaniteStairsBlock::new, Blocks.SMOOTH_BASALT);
+	}
+
+	public static BlockEntry<WallBlock> masticsmoothwall(String colour0) {
+		return zultaniteWallRegistration("smooth", colour0, "zultanite", WallBlock::new, Blocks.SMOOTH_BASALT);
+	}
+
+	public static final BlockEntry<MasticBlock> MASTIC_BLOCK = masticslimelike("");
+	public static final BlockEntry<MasticBlock> RED_MASTIC_BLOCK = masticslimelike("red");
+	public static final BlockEntry<MasticBlock> ORANGE_MASTIC_BLOCK = masticslimelike("orange");
+	public static final BlockEntry<MasticBlock> YELLOW_MASTIC_BLOCK = masticslimelike("yellow");
+	public static final BlockEntry<MasticBlock> GREEN_MASTIC_BLOCK = masticslimelike("green");
+	public static final BlockEntry<MasticBlock> LIME_MASTIC_BLOCK = masticslimelike("lime");
+	public static final BlockEntry<MasticBlock> BLUE_MASTIC_BLOCK = masticslimelike("blue");
+	public static final BlockEntry<MasticBlock> LIGHT_BLUE_MASTIC_BLOCK = masticslimelike("light_blue");
+	public static final BlockEntry<MasticBlock> CYAN_MASTIC_BLOCK = masticslimelike("cyan");
+	public static final BlockEntry<MasticBlock> PURPLE_MASTIC_BLOCK = masticslimelike("purple");
+	public static final BlockEntry<MasticBlock> MAGENTA_MASTIC_BLOCK = masticslimelike("magenta");
+	public static final BlockEntry<MasticBlock> PINK_MASTIC_BLOCK = masticslimelike("pink");
+	public static final BlockEntry<MasticBlock> BLACK_MASTIC_BLOCK = masticslimelike("black");
+	public static final BlockEntry<MasticBlock> GRAY_MASTIC_BLOCK = masticslimelike("gray");
+	public static final BlockEntry<MasticBlock> LIGHT_GRAY_MASTIC_BLOCK = masticslimelike("light_gray");
+	public static final BlockEntry<MasticBlock> WHITE_MASTIC_BLOCK = masticslimelike("white");
+	public static final BlockEntry<MasticBlock> BROWN_MASTIC_BLOCK = masticslimelike("brown");
+
+	public static final BlockEntry<Block> CHISELED_ZULTANITE = masticchiseled("");
+	public static final BlockEntry<Block> CHISELED_RED_ZULTANITE = masticchiseled("red");
+	public static final BlockEntry<Block> CHISELED_ORANGE_ZULTANITE = masticchiseled("orange");
+	public static final BlockEntry<Block> CHISELED_YELLOW_ZULTANITE = masticchiseled("yellow");
+	public static final BlockEntry<Block> CHISELED_GREEN_ZULTANITE = masticchiseled("green");
+	public static final BlockEntry<Block> CHISELED_LIME_ZULTANITE = masticchiseled("lime");
+	public static final BlockEntry<Block> CHISELED_BLUE_ZULTANITE = masticchiseled("blue");
+	public static final BlockEntry<Block> CHISELED_LIGHT_BLUE_ZULTANITE = masticchiseled("light_blue");
+	public static final BlockEntry<Block> CHISELED_CYAN_ZULTANITE = masticchiseled("cyan");
+	public static final BlockEntry<Block> CHISELED_PURPLE_ZULTANITE = masticchiseled("purple");
+	public static final BlockEntry<Block> CHISELED_MAGENTA_ZULTANITE = masticchiseled("magenta");
+	public static final BlockEntry<Block> CHISELED_PINK_ZULTANITE = masticchiseled("pink");
+	public static final BlockEntry<Block> CHISELED_BLACK_ZULTANITE = masticchiseled("black");
+	public static final BlockEntry<Block> CHISELED_GRAY_ZULTANITE = masticchiseled("gray");
+	public static final BlockEntry<Block> CHISELED_LIGHT_GRAY_ZULTANITE = masticchiseled("light_gray");
+	public static final BlockEntry<Block> CHISELED_WHITE_ZULTANITE = masticchiseled("white");
+	public static final BlockEntry<Block> CHISELED_BROWN_ZULTANITE = masticchiseled("brown");
+
+	public static final BlockEntry<Block> ZULTANITE = masticstone("");
+	public static final BlockEntry<Block> RED_ZULTANITE = masticstone("red");
+	public static final BlockEntry<Block> ORANGE_ZULTANITE = masticstone("orange");
+	public static final BlockEntry<Block> YELLOW_ZULTANITE = masticstone("yellow");
+	public static final BlockEntry<Block> GREEN_ZULTANITE = masticstone("green");
+	public static final BlockEntry<Block> LIME_ZULTANITE = masticstone("lime");
+	public static final BlockEntry<Block> BLUE_ZULTANITE = masticstone("blue");
+	public static final BlockEntry<Block> LIGHT_BLUE_ZULTANITE = masticstone("light_blue");
+	public static final BlockEntry<Block> CYAN_ZULTANITE = masticstone("cyan");
+	public static final BlockEntry<Block> PURPLE_ZULTANITE = masticstone("purple");
+	public static final BlockEntry<Block> MAGENTA_ZULTANITE = masticstone("magenta");
+	public static final BlockEntry<Block> PINK_ZULTANITE = masticstone("pink");
+	public static final BlockEntry<Block> BLACK_ZULTANITE = masticstone("black");
+	public static final BlockEntry<Block> GRAY_ZULTANITE = masticstone("gray");
+	public static final BlockEntry<Block> LIGHT_GRAY_ZULTANITE = masticstone("light_gray");
+	public static final BlockEntry<Block> WHITE_ZULTANITE = masticstone("white");
+	public static final BlockEntry<Block> BROWN_ZULTANITE = masticstone("brown");
+
+	public static final BlockEntry<SlabBlock> ZULTANITE_SLAB = masticstoneslab("");
+	public static final BlockEntry<SlabBlock> RED_ZULTANITE_SLAB = masticstoneslab("red");
+	public static final BlockEntry<SlabBlock> ORANGE_ZULTANITE_SLAB = masticstoneslab("orange");
+	public static final BlockEntry<SlabBlock> YELLOW_ZULTANITE_SLAB = masticstoneslab("yellow");
+	public static final BlockEntry<SlabBlock> GREEN_ZULTANITE_SLAB = masticstoneslab("green");
+	public static final BlockEntry<SlabBlock> LIME_ZULTANITE_SLAB = masticstoneslab("lime");
+	public static final BlockEntry<SlabBlock> BLUE_ZULTANITE_SLAB = masticstoneslab("blue");
+	public static final BlockEntry<SlabBlock> LIGHT_BLUE_ZULTANITE_SLAB = masticstoneslab("light_blue");
+	public static final BlockEntry<SlabBlock> CYAN_ZULTANITE_SLAB = masticstoneslab("cyan");
+	public static final BlockEntry<SlabBlock> PURPLE_ZULTANITE_SLAB = masticstoneslab("purple");
+	public static final BlockEntry<SlabBlock> MAGENTA_ZULTANITE_SLAB = masticstoneslab("magenta");
+	public static final BlockEntry<SlabBlock> PINK_ZULTANITE_SLAB = masticstoneslab("pink");
+	public static final BlockEntry<SlabBlock> BLACK_ZULTANITE_SLAB = masticstoneslab("black");
+	public static final BlockEntry<SlabBlock> GRAY_ZULTANITE_SLAB = masticstoneslab("gray");
+	public static final BlockEntry<SlabBlock> LIGHT_GRAY_ZULTANITE_SLAB = masticstoneslab("light_gray");
+	public static final BlockEntry<SlabBlock> WHITE_ZULTANITE_SLAB = masticstoneslab("white");
+	public static final BlockEntry<SlabBlock> BROWN_ZULTANITE_SLAB = masticstoneslab("brown");
+
+	public static final BlockEntry<ZultaniteStairsBlock> ZULTANITE_STAIRS = masticstonestairs("");
+	public static final BlockEntry<ZultaniteStairsBlock> RED_ZULTANITE_STAIRS = masticstonestairs("red");
+	public static final BlockEntry<ZultaniteStairsBlock> ORANGE_ZULTANITE_STAIRS = masticstonestairs("orange");
+	public static final BlockEntry<ZultaniteStairsBlock> YELLOW_ZULTANITE_STAIRS = masticstonestairs("yellow");
+	public static final BlockEntry<ZultaniteStairsBlock> GREEN_ZULTANITE_STAIRS = masticstonestairs("green");
+	public static final BlockEntry<ZultaniteStairsBlock> LIME_ZULTANITE_STAIRS = masticstonestairs("lime");
+	public static final BlockEntry<ZultaniteStairsBlock> BLUE_ZULTANITE_STAIRS = masticstonestairs("blue");
+	public static final BlockEntry<ZultaniteStairsBlock> LIGHT_BLUE_ZULTANITE_STAIRS = masticstonestairs("light_blue");
+	public static final BlockEntry<ZultaniteStairsBlock> CYAN_ZULTANITE_STAIRS = masticstonestairs("cyan");
+	public static final BlockEntry<ZultaniteStairsBlock> PURPLE_ZULTANITE_STAIRS = masticstonestairs("purple");
+	public static final BlockEntry<ZultaniteStairsBlock> MAGENTA_ZULTANITE_STAIRS = masticstonestairs("magenta");
+	public static final BlockEntry<ZultaniteStairsBlock> PINK_ZULTANITE_STAIRS = masticstonestairs("pink");
+	public static final BlockEntry<ZultaniteStairsBlock> BLACK_ZULTANITE_STAIRS = masticstonestairs("black");
+	public static final BlockEntry<ZultaniteStairsBlock> GRAY_ZULTANITE_STAIRS = masticstonestairs("gray");
+	public static final BlockEntry<ZultaniteStairsBlock> LIGHT_GRAY_ZULTANITE_STAIRS = masticstonestairs("light_gray");
+	public static final BlockEntry<ZultaniteStairsBlock> WHITE_ZULTANITE_STAIRS = masticstonestairs("white");
+	public static final BlockEntry<ZultaniteStairsBlock> BROWN_ZULTANITE_STAIRS = masticstonestairs("brown");
+
+	public static final BlockEntry<WallBlock> ZULTANITE_WALL = masticstonewall("");
+	public static final BlockEntry<WallBlock> RED_ZULTANITE_WALL = masticstonewall("red");
+	public static final BlockEntry<WallBlock> ORANGE_ZULTANITE_WALL = masticstonewall("orange");
+	public static final BlockEntry<WallBlock> YELLOW_ZULTANITE_WALL = masticstonewall("yellow");
+	public static final BlockEntry<WallBlock> GREEN_ZULTANITE_WALL = masticstonewall("green");
+	public static final BlockEntry<WallBlock> LIME_ZULTANITE_WALL = masticstonewall("lime");
+	public static final BlockEntry<WallBlock> BLUE_ZULTANITE_WALL = masticstonewall("blue");
+	public static final BlockEntry<WallBlock> LIGHT_BLUE_ZULTANITE_WALL = masticstonewall("light_blue");
+	public static final BlockEntry<WallBlock> CYAN_ZULTANITE_WALL = masticstonewall("cyan");
+	public static final BlockEntry<WallBlock> PURPLE_ZULTANITE_WALL = masticstonewall("purple");
+	public static final BlockEntry<WallBlock> MAGENTA_ZULTANITE_WALL = masticstonewall("magenta");
+	public static final BlockEntry<WallBlock> PINK_ZULTANITE_WALL = masticstonewall("pink");
+	public static final BlockEntry<WallBlock> BLACK_ZULTANITE_WALL = masticstonewall("black");
+	public static final BlockEntry<WallBlock> GRAY_ZULTANITE_WALL = masticstonewall("gray");
+	public static final BlockEntry<WallBlock> LIGHT_GRAY_ZULTANITE_WALL = masticstonewall("light_gray");
+	public static final BlockEntry<WallBlock> WHITE_ZULTANITE_WALL = masticstonewall("white");
+	public static final BlockEntry<WallBlock> BROWN_ZULTANITE_WALL = masticstonewall("brown");
+
+	public static final BlockEntry<Block> POLISHED_ZULTANITE = masticpolished("");
+	public static final BlockEntry<Block> POLISHED_RED_ZULTANITE = masticpolished("red");
+	public static final BlockEntry<Block> POLISHED_ORANGE_ZULTANITE = masticpolished("orange");
+	public static final BlockEntry<Block> POLISHED_YELLOW_ZULTANITE = masticpolished("yellow");
+	public static final BlockEntry<Block> POLISHED_GREEN_ZULTANITE = masticpolished("green");
+	public static final BlockEntry<Block> POLISHED_LIME_ZULTANITE = masticpolished("lime");
+	public static final BlockEntry<Block> POLISHED_BLUE_ZULTANITE = masticpolished("blue");
+	public static final BlockEntry<Block> POLISHED_LIGHT_BLUE_ZULTANITE = masticpolished("light_blue");
+	public static final BlockEntry<Block> POLISHED_CYAN_ZULTANITE = masticpolished("cyan");
+	public static final BlockEntry<Block> POLISHED_PURPLE_ZULTANITE = masticpolished("purple");
+	public static final BlockEntry<Block> POLISHED_MAGENTA_ZULTANITE = masticpolished("magenta");
+	public static final BlockEntry<Block> POLISHED_PINK_ZULTANITE = masticpolished("pink");
+	public static final BlockEntry<Block> POLISHED_BLACK_ZULTANITE = masticpolished("black");
+	public static final BlockEntry<Block> POLISHED_GRAY_ZULTANITE = masticpolished("gray");
+	public static final BlockEntry<Block> POLISHED_LIGHT_GRAY_ZULTANITE = masticpolished("light_gray");
+	public static final BlockEntry<Block> POLISHED_WHITE_ZULTANITE = masticpolished("white");
+	public static final BlockEntry<Block> POLISHED_BROWN_ZULTANITE = masticpolished("brown");
+
+	public static final BlockEntry<SlabBlock> POLISHED_ZULTANITE_SLAB = masticpolishedslab("");
+	public static final BlockEntry<SlabBlock> POLISHED_RED_ZULTANITE_SLAB = masticpolishedslab("red");
+	public static final BlockEntry<SlabBlock> POLISHED_ORANGE_ZULTANITE_SLAB = masticpolishedslab("orange");
+	public static final BlockEntry<SlabBlock> POLISHED_YELLOW_ZULTANITE_SLAB = masticpolishedslab("yellow");
+	public static final BlockEntry<SlabBlock> POLISHED_GREEN_ZULTANITE_SLAB = masticpolishedslab("green");
+	public static final BlockEntry<SlabBlock> POLISHED_LIME_ZULTANITE_SLAB = masticpolishedslab("lime");
+	public static final BlockEntry<SlabBlock> POLISHED_BLUE_ZULTANITE_SLAB = masticpolishedslab("blue");
+	public static final BlockEntry<SlabBlock> POLISHED_LIGHT_BLUE_ZULTANITE_SLAB = masticpolishedslab("light_blue");
+	public static final BlockEntry<SlabBlock> POLISHED_CYAN_ZULTANITE_SLAB = masticpolishedslab("cyan");
+	public static final BlockEntry<SlabBlock> POLISHED_PURPLE_ZULTANITE_SLAB = masticpolishedslab("purple");
+	public static final BlockEntry<SlabBlock> POLISHED_MAGENTA_ZULTANITE_SLAB = masticpolishedslab("magenta");
+	public static final BlockEntry<SlabBlock> POLISHED_PINK_ZULTANITE_SLAB = masticpolishedslab("pink");
+	public static final BlockEntry<SlabBlock> POLISHED_BLACK_ZULTANITE_SLAB = masticpolishedslab("black");
+	public static final BlockEntry<SlabBlock> POLISHED_GRAY_ZULTANITE_SLAB = masticpolishedslab("gray");
+	public static final BlockEntry<SlabBlock> POLISHED_LIGHT_GRAY_ZULTANITE_SLAB = masticpolishedslab("light_gray");
+	public static final BlockEntry<SlabBlock> POLISHED_WHITE_ZULTANITE_SLAB = masticpolishedslab("white");
+	public static final BlockEntry<SlabBlock> POLISHED_BROWN_ZULTANITE_SLAB = masticpolishedslab("brown");
+
+	public static final BlockEntry<ZultaniteStairsBlock> POLISHED_ZULTANITE_STAIRS = masticpolishedstairs("");
+	public static final BlockEntry<ZultaniteStairsBlock> POLISHED_RED_ZULTANITE_STAIRS = masticpolishedstairs("red");
+	public static final BlockEntry<ZultaniteStairsBlock> POLISHED_ORANGE_ZULTANITE_STAIRS = masticpolishedstairs("orange");
+	public static final BlockEntry<ZultaniteStairsBlock> POLISHED_YELLOW_ZULTANITE_STAIRS = masticpolishedstairs("yellow");
+	public static final BlockEntry<ZultaniteStairsBlock> POLISHED_GREEN_ZULTANITE_STAIRS = masticpolishedstairs("green");
+	public static final BlockEntry<ZultaniteStairsBlock> POLISHED_LIME_ZULTANITE_STAIRS = masticpolishedstairs("lime");
+	public static final BlockEntry<ZultaniteStairsBlock> POLISHED_BLUE_ZULTANITE_STAIRS = masticpolishedstairs("blue");
+	public static final BlockEntry<ZultaniteStairsBlock> POLISHED_LIGHT_BLUE_ZULTANITE_STAIRS = masticpolishedstairs("light_blue");
+	public static final BlockEntry<ZultaniteStairsBlock> POLISHED_CYAN_ZULTANITE_STAIRS = masticpolishedstairs("cyan");
+	public static final BlockEntry<ZultaniteStairsBlock> POLISHED_PURPLE_ZULTANITE_STAIRS = masticpolishedstairs("purple");
+	public static final BlockEntry<ZultaniteStairsBlock> POLISHED_MAGENTA_ZULTANITE_STAIRS = masticpolishedstairs("magenta");
+	public static final BlockEntry<ZultaniteStairsBlock> POLISHED_PINK_ZULTANITE_STAIRS = masticpolishedstairs("pink");
+	public static final BlockEntry<ZultaniteStairsBlock> POLISHED_BLACK_ZULTANITE_STAIRS = masticpolishedstairs("black");
+	public static final BlockEntry<ZultaniteStairsBlock> POLISHED_GRAY_ZULTANITE_STAIRS = masticpolishedstairs("gray");
+	public static final BlockEntry<ZultaniteStairsBlock> POLISHED_LIGHT_GRAY_ZULTANITE_STAIRS = masticpolishedstairs("light_gray");
+	public static final BlockEntry<ZultaniteStairsBlock> POLISHED_WHITE_ZULTANITE_STAIRS = masticpolishedstairs("white");
+	public static final BlockEntry<ZultaniteStairsBlock> POLISHED_BROWN_ZULTANITE_STAIRS = masticpolishedstairs("brown");
+
+	public static final BlockEntry<WallBlock> POLISHED_ZULTANITE_WALL = masticpolishedwall("");
+	public static final BlockEntry<WallBlock> POLISHED_RED_ZULTANITE_WALL = masticpolishedwall("red");
+	public static final BlockEntry<WallBlock> POLISHED_ORANGE_ZULTANITE_WALL = masticpolishedwall("orange");
+	public static final BlockEntry<WallBlock> POLISHED_YELLOW_ZULTANITE_WALL = masticpolishedwall("yellow");
+	public static final BlockEntry<WallBlock> POLISHED_GREEN_ZULTANITE_WALL = masticpolishedwall("green");
+	public static final BlockEntry<WallBlock> POLISHED_LIME_ZULTANITE_WALL = masticpolishedwall("lime");
+	public static final BlockEntry<WallBlock> POLISHED_BLUE_ZULTANITE_WALL = masticpolishedwall("blue");
+	public static final BlockEntry<WallBlock> POLISHED_LIGHT_BLUE_ZULTANITE_WALL = masticpolishedwall("light_blue");
+	public static final BlockEntry<WallBlock> POLISHED_CYAN_ZULTANITE_WALL = masticpolishedwall("cyan");
+	public static final BlockEntry<WallBlock> POLISHED_PURPLE_ZULTANITE_WALL = masticpolishedwall("purple");
+	public static final BlockEntry<WallBlock> POLISHED_MAGENTA_ZULTANITE_WALL = masticpolishedwall("magenta");
+	public static final BlockEntry<WallBlock> POLISHED_PINK_ZULTANITE_WALL = masticpolishedwall("pink");
+	public static final BlockEntry<WallBlock> POLISHED_BLACK_ZULTANITE_WALL = masticpolishedwall("black");
+	public static final BlockEntry<WallBlock> POLISHED_GRAY_ZULTANITE_WALL = masticpolishedwall("gray");
+	public static final BlockEntry<WallBlock> POLISHED_LIGHT_GRAY_ZULTANITE_WALL = masticpolishedwall("light_gray");
+	public static final BlockEntry<WallBlock> POLISHED_WHITE_ZULTANITE_WALL = masticpolishedwall("white");
+	public static final BlockEntry<WallBlock> POLISHED_BROWN_ZULTANITE_WALL = masticpolishedwall("brown");
+
+	public static final BlockEntry<Block> ZULTANITE_BRICKS = masticbricks("");
+	public static final BlockEntry<Block> RED_ZULTANITE_BRICKS = masticbricks("red");
+	public static final BlockEntry<Block> ORANGE_ZULTANITE_BRICKS = masticbricks("orange");
+	public static final BlockEntry<Block> YELLOW_ZULTANITE_BRICKS = masticbricks("yellow");
+	public static final BlockEntry<Block> GREEN_ZULTANITE_BRICKS = masticbricks("green");
+	public static final BlockEntry<Block> LIME_ZULTANITE_BRICKS = masticbricks("lime");
+	public static final BlockEntry<Block> BLUE_ZULTANITE_BRICKS = masticbricks("blue");
+	public static final BlockEntry<Block> LIGHT_BLUE_ZULTANITE_BRICKS = masticbricks("light_blue");
+	public static final BlockEntry<Block> CYAN_ZULTANITE_BRICKS = masticbricks("cyan");
+	public static final BlockEntry<Block> PURPLE_ZULTANITE_BRICKS = masticbricks("purple");
+	public static final BlockEntry<Block> MAGENTA_ZULTANITE_BRICKS = masticbricks("magenta");
+	public static final BlockEntry<Block> PINK_ZULTANITE_BRICKS = masticbricks("pink");
+	public static final BlockEntry<Block> BLACK_ZULTANITE_BRICKS = masticbricks("black");
+	public static final BlockEntry<Block> GRAY_ZULTANITE_BRICKS = masticbricks("gray");
+	public static final BlockEntry<Block> LIGHT_GRAY_ZULTANITE_BRICKS = masticbricks("light_gray");
+	public static final BlockEntry<Block> WHITE_ZULTANITE_BRICKS = masticbricks("white");
+	public static final BlockEntry<Block> BROWN_ZULTANITE_BRICKS = masticbricks("brown");
+
+	public static final BlockEntry<SlabBlock> ZULTANITE_BRICK_SLAB = masticbrickslab("");
+	public static final BlockEntry<SlabBlock> RED_ZULTANITE_BRICK_SLAB = masticbrickslab("red");
+	public static final BlockEntry<SlabBlock> ORANGE_ZULTANITE_BRICK_SLAB = masticbrickslab("orange");
+	public static final BlockEntry<SlabBlock> YELLOW_ZULTANITE_BRICK_SLAB = masticbrickslab("yellow");
+	public static final BlockEntry<SlabBlock> GREEN_ZULTANITE_BRICK_SLAB = masticbrickslab("green");
+	public static final BlockEntry<SlabBlock> LIME_ZULTANITE_BRICK_SLAB = masticbrickslab("lime");
+	public static final BlockEntry<SlabBlock> BLUE_ZULTANITE_BRICK_SLAB = masticbrickslab("blue");
+	public static final BlockEntry<SlabBlock> LIGHT_BLUE_ZULTANITE_BRICK_SLAB = masticbrickslab("light_blue");
+	public static final BlockEntry<SlabBlock> CYAN_ZULTANITE_BRICK_SLAB = masticbrickslab("cyan");
+	public static final BlockEntry<SlabBlock> PURPLE_ZULTANITE_BRICK_SLAB = masticbrickslab("purple");
+	public static final BlockEntry<SlabBlock> MAGENTA_ZULTANITE_BRICK_SLAB = masticbrickslab("magenta");
+	public static final BlockEntry<SlabBlock> PINK_ZULTANITE_BRICK_SLAB = masticbrickslab("pink");
+	public static final BlockEntry<SlabBlock> BLACK_ZULTANITE_BRICK_SLAB = masticbrickslab("black");
+	public static final BlockEntry<SlabBlock> GRAY_ZULTANITE_BRICK_SLAB = masticbrickslab("gray");
+	public static final BlockEntry<SlabBlock> LIGHT_GRAY_ZULTANITE_BRICK_SLAB = masticbrickslab("light_gray");
+	public static final BlockEntry<SlabBlock> WHITE_ZULTANITE_BRICK_SLAB = masticbrickslab("white");
+	public static final BlockEntry<SlabBlock> BROWN_ZULTANITE_BRICK_SLAB = masticbrickslab("brown");
+
+	public static final BlockEntry<ZultaniteStairsBlock> ZULTANITE_BRICK_STAIRS = masticbrickstairs("");
+	public static final BlockEntry<ZultaniteStairsBlock> RED_ZULTANITE_BRICK_STAIRS = masticbrickstairs("red");
+	public static final BlockEntry<ZultaniteStairsBlock> ORANGE_ZULTANITE_BRICK_STAIRS = masticbrickstairs("orange");
+	public static final BlockEntry<ZultaniteStairsBlock> YELLOW_ZULTANITE_BRICK_STAIRS = masticbrickstairs("yellow");
+	public static final BlockEntry<ZultaniteStairsBlock> GREEN_ZULTANITE_BRICK_STAIRS = masticbrickstairs("green");
+	public static final BlockEntry<ZultaniteStairsBlock> LIME_ZULTANITE_BRICK_STAIRS = masticbrickstairs("lime");
+	public static final BlockEntry<ZultaniteStairsBlock> BLUE_ZULTANITE_BRICK_STAIRS = masticbrickstairs("blue");
+	public static final BlockEntry<ZultaniteStairsBlock> LIGHT_BLUE_ZULTANITE_BRICK_STAIRS = masticbrickstairs("light_blue");
+	public static final BlockEntry<ZultaniteStairsBlock> CYAN_ZULTANITE_BRICK_STAIRS = masticbrickstairs("cyan");
+	public static final BlockEntry<ZultaniteStairsBlock> PURPLE_ZULTANITE_BRICK_STAIRS = masticbrickstairs("purple");
+	public static final BlockEntry<ZultaniteStairsBlock> MAGENTA_ZULTANITE_BRICK_STAIRS = masticbrickstairs("magenta");
+	public static final BlockEntry<ZultaniteStairsBlock> PINK_ZULTANITE_BRICK_STAIRS = masticbrickstairs("pink");
+	public static final BlockEntry<ZultaniteStairsBlock> BLACK_ZULTANITE_BRICK_STAIRS = masticbrickstairs("black");
+	public static final BlockEntry<ZultaniteStairsBlock> GRAY_ZULTANITE_BRICK_STAIRS = masticbrickstairs("gray");
+	public static final BlockEntry<ZultaniteStairsBlock> LIGHT_GRAY_ZULTANITE_BRICK_STAIRS = masticbrickstairs("light_gray");
+	public static final BlockEntry<ZultaniteStairsBlock> WHITE_ZULTANITE_BRICK_STAIRS = masticbrickstairs("white");
+	public static final BlockEntry<ZultaniteStairsBlock> BROWN_ZULTANITE_BRICK_STAIRS = masticbrickstairs("brown");
+
+	public static final BlockEntry<WallBlock> ZULTANITE_BRICK_WALL = masticbrickwall("");
+	public static final BlockEntry<WallBlock> RED_ZULTANITE_BRICK_WALL = masticbrickwall("red");
+	public static final BlockEntry<WallBlock> ORANGE_ZULTANITE_BRICK_WALL = masticbrickwall("orange");
+	public static final BlockEntry<WallBlock> YELLOW_ZULTANITE_BRICK_WALL = masticbrickwall("yellow");
+	public static final BlockEntry<WallBlock> GREEN_ZULTANITE_BRICK_WALL = masticbrickwall("green");
+	public static final BlockEntry<WallBlock> LIME_ZULTANITE_BRICK_WALL = masticbrickwall("lime");
+	public static final BlockEntry<WallBlock> BLUE_ZULTANITE_BRICK_WALL = masticbrickwall("blue");
+	public static final BlockEntry<WallBlock> LIGHT_BLUE_ZULTANITE_BRICK_WALL = masticbrickwall("light_blue");
+	public static final BlockEntry<WallBlock> CYAN_ZULTANITE_BRICK_WALL = masticbrickwall("cyan");
+	public static final BlockEntry<WallBlock> PURPLE_ZULTANITE_BRICK_WALL = masticbrickwall("purple");
+	public static final BlockEntry<WallBlock> MAGENTA_ZULTANITE_BRICK_WALL = masticbrickwall("magenta");
+	public static final BlockEntry<WallBlock> PINK_ZULTANITE_BRICK_WALL = masticbrickwall("pink");
+	public static final BlockEntry<WallBlock> BLACK_ZULTANITE_BRICK_WALL = masticbrickwall("black");
+	public static final BlockEntry<WallBlock> GRAY_ZULTANITE_BRICK_WALL = masticbrickwall("gray");
+	public static final BlockEntry<WallBlock> LIGHT_GRAY_ZULTANITE_BRICK_WALL = masticbrickwall("light_gray");
+	public static final BlockEntry<WallBlock> WHITE_ZULTANITE_BRICK_WALL = masticbrickwall("white");
+	public static final BlockEntry<WallBlock> BROWN_ZULTANITE_BRICK_WALL = masticbrickwall("brown");
+
+	public static final BlockEntry<Block> SMOOTH_ZULTANITE = masticsmooth("");
+	public static final BlockEntry<Block> SMOOTH_RED_ZULTANITE = masticsmooth("red");
+	public static final BlockEntry<Block> SMOOTH_ORANGE_ZULTANITE = masticsmooth("orange");
+	public static final BlockEntry<Block> SMOOTH_YELLOW_ZULTANITE = masticsmooth("yellow");
+	public static final BlockEntry<Block> SMOOTH_GREEN_ZULTANITE = masticsmooth("green");
+	public static final BlockEntry<Block> SMOOTH_LIME_ZULTANITE = masticsmooth("lime");
+	public static final BlockEntry<Block> SMOOTH_BLUE_ZULTANITE = masticsmooth("blue");
+	public static final BlockEntry<Block> SMOOTH_LIGHT_BLUE_ZULTANITE = masticsmooth("light_blue");
+	public static final BlockEntry<Block> SMOOTH_CYAN_ZULTANITE = masticsmooth("cyan");
+	public static final BlockEntry<Block> SMOOTH_PURPLE_ZULTANITE = masticsmooth("purple");
+	public static final BlockEntry<Block> SMOOTH_MAGENTA_ZULTANITE = masticsmooth("magenta");
+	public static final BlockEntry<Block> SMOOTH_PINK_ZULTANITE = masticsmooth("pink");
+	public static final BlockEntry<Block> SMOOTH_BLACK_ZULTANITE = masticsmooth("black");
+	public static final BlockEntry<Block> SMOOTH_GRAY_ZULTANITE = masticsmooth("gray");
+	public static final BlockEntry<Block> SMOOTH_LIGHT_GRAY_ZULTANITE = masticsmooth("light_gray");
+	public static final BlockEntry<Block> SMOOTH_WHITE_ZULTANITE = masticsmooth("white");
+	public static final BlockEntry<Block> SMOOTH_BROWN_ZULTANITE = masticsmooth("brown");
+
+	public static final BlockEntry<SlabBlock> SMOOTH_ZULTANITE_SLAB = masticsmoothslab("");
+	public static final BlockEntry<SlabBlock> SMOOTH_RED_ZULTANITE_SLAB = masticsmoothslab("red");
+	public static final BlockEntry<SlabBlock> SMOOTH_ORANGE_ZULTANITE_SLAB = masticsmoothslab("orange");
+	public static final BlockEntry<SlabBlock> SMOOTH_YELLOW_ZULTANITE_SLAB = masticsmoothslab("yellow");
+	public static final BlockEntry<SlabBlock> SMOOTH_GREEN_ZULTANITE_SLAB = masticsmoothslab("green");
+	public static final BlockEntry<SlabBlock> SMOOTH_LIME_ZULTANITE_SLAB = masticsmoothslab("lime");
+	public static final BlockEntry<SlabBlock> SMOOTH_BLUE_ZULTANITE_SLAB = masticsmoothslab("blue");
+	public static final BlockEntry<SlabBlock> SMOOTH_LIGHT_BLUE_ZULTANITE_SLAB = masticsmoothslab("light_blue");
+	public static final BlockEntry<SlabBlock> SMOOTH_CYAN_ZULTANITE_SLAB = masticsmoothslab("cyan");
+	public static final BlockEntry<SlabBlock> SMOOTH_PURPLE_ZULTANITE_SLAB = masticsmoothslab("purple");
+	public static final BlockEntry<SlabBlock> SMOOTH_MAGENTA_ZULTANITE_SLAB = masticsmoothslab("magenta");
+	public static final BlockEntry<SlabBlock> SMOOTH_PINK_ZULTANITE_SLAB = masticsmoothslab("pink");
+	public static final BlockEntry<SlabBlock> SMOOTH_BLACK_ZULTANITE_SLAB = masticsmoothslab("black");
+	public static final BlockEntry<SlabBlock> SMOOTH_GRAY_ZULTANITE_SLAB = masticsmoothslab("gray");
+	public static final BlockEntry<SlabBlock> SMOOTH_LIGHT_GRAY_ZULTANITE_SLAB = masticsmoothslab("light_gray");
+	public static final BlockEntry<SlabBlock> SMOOTH_WHITE_ZULTANITE_SLAB = masticsmoothslab("white");
+	public static final BlockEntry<SlabBlock> SMOOTH_BROWN_ZULTANITE_SLAB = masticsmoothslab("brown");
+
+	public static final BlockEntry<ZultaniteStairsBlock> SMOOTH_ZULTANITE_STAIRS = masticsmoothstairs("");
+	public static final BlockEntry<ZultaniteStairsBlock> SMOOTH_RED_ZULTANITE_STAIRS = masticsmoothstairs("red");
+	public static final BlockEntry<ZultaniteStairsBlock> SMOOTH_ORANGE_ZULTANITE_STAIRS = masticsmoothstairs("orange");
+	public static final BlockEntry<ZultaniteStairsBlock> SMOOTH_YELLOW_ZULTANITE_STAIRS = masticsmoothstairs("yellow");
+	public static final BlockEntry<ZultaniteStairsBlock> SMOOTH_GREEN_ZULTANITE_STAIRS = masticsmoothstairs("green");
+	public static final BlockEntry<ZultaniteStairsBlock> SMOOTH_LIME_ZULTANITE_STAIRS = masticsmoothstairs("lime");
+	public static final BlockEntry<ZultaniteStairsBlock> SMOOTH_BLUE_ZULTANITE_STAIRS = masticsmoothstairs("blue");
+	public static final BlockEntry<ZultaniteStairsBlock> SMOOTH_LIGHT_BLUE_ZULTANITE_STAIRS = masticsmoothstairs("light_blue");
+	public static final BlockEntry<ZultaniteStairsBlock> SMOOTH_CYAN_ZULTANITE_STAIRS = masticsmoothstairs("cyan");
+	public static final BlockEntry<ZultaniteStairsBlock> SMOOTH_PURPLE_ZULTANITE_STAIRS = masticsmoothstairs("purple");
+	public static final BlockEntry<ZultaniteStairsBlock> SMOOTH_MAGENTA_ZULTANITE_STAIRS = masticsmoothstairs("magenta");
+	public static final BlockEntry<ZultaniteStairsBlock> SMOOTH_PINK_ZULTANITE_STAIRS = masticsmoothstairs("pink");
+	public static final BlockEntry<ZultaniteStairsBlock> SMOOTH_BLACK_ZULTANITE_STAIRS = masticsmoothstairs("black");
+	public static final BlockEntry<ZultaniteStairsBlock> SMOOTH_GRAY_ZULTANITE_STAIRS = masticsmoothstairs("gray");
+	public static final BlockEntry<ZultaniteStairsBlock> SMOOTH_LIGHT_GRAY_ZULTANITE_STAIRS = masticsmoothstairs("light_gray");
+	public static final BlockEntry<ZultaniteStairsBlock> SMOOTH_WHITE_ZULTANITE_STAIRS = masticsmoothstairs("white");
+	public static final BlockEntry<ZultaniteStairsBlock> SMOOTH_BROWN_ZULTANITE_STAIRS = masticsmoothstairs("brown");
+
+	public static final BlockEntry<WallBlock> SMOOTH_ZULTANITE_WALL = masticsmoothwall("");
+	public static final BlockEntry<WallBlock> SMOOTH_RED_ZULTANITE_WALL = masticsmoothwall("red");
+	public static final BlockEntry<WallBlock> SMOOTH_ORANGE_ZULTANITE_WALL = masticsmoothwall("orange");
+	public static final BlockEntry<WallBlock> SMOOTH_YELLOW_ZULTANITE_WALL = masticsmoothwall("yellow");
+	public static final BlockEntry<WallBlock> SMOOTH_GREEN_ZULTANITE_WALL = masticsmoothwall("green");
+	public static final BlockEntry<WallBlock> SMOOTH_LIME_ZULTANITE_WALL = masticsmoothwall("lime");
+	public static final BlockEntry<WallBlock> SMOOTH_BLUE_ZULTANITE_WALL = masticsmoothwall("blue");
+	public static final BlockEntry<WallBlock> SMOOTH_LIGHT_BLUE_ZULTANITE_WALL = masticsmoothwall("light_blue");
+	public static final BlockEntry<WallBlock> SMOOTH_CYAN_ZULTANITE_WALL = masticsmoothwall("cyan");
+	public static final BlockEntry<WallBlock> SMOOTH_PURPLE_ZULTANITE_WALL = masticsmoothwall("purple");
+	public static final BlockEntry<WallBlock> SMOOTH_MAGENTA_ZULTANITE_WALL = masticsmoothwall("magenta");
+	public static final BlockEntry<WallBlock> SMOOTH_PINK_ZULTANITE_WALL = masticsmoothwall("pink");
+	public static final BlockEntry<WallBlock> SMOOTH_BLACK_ZULTANITE_WALL = masticsmoothwall("black");
+	public static final BlockEntry<WallBlock> SMOOTH_GRAY_ZULTANITE_WALL = masticsmoothwall("gray");
+	public static final BlockEntry<WallBlock> SMOOTH_LIGHT_GRAY_ZULTANITE_WALL = masticsmoothwall("light_gray");
+	public static final BlockEntry<WallBlock> SMOOTH_WHITE_ZULTANITE_WALL = masticsmoothwall("white");
+	public static final BlockEntry<WallBlock> SMOOTH_BROWN_ZULTANITE_WALL = masticsmoothwall("brown");
 
 	public static final BlockEntry<AbyssalStoneBlock> ABYSSAL_STONE =
 			REGISTRATE.block("abyssal_stone", AbyssalStoneBlock::new)
@@ -612,20 +1017,20 @@ public class GarnishedBlocks {
 					.simpleItem()
 					.initialProperties(() -> Blocks.OBSIDIAN)
 					.properties(p -> p.sound(SoundType.STONE).destroyTime(35.0F).explosionResistance(6.0F)).register();
-	public static final BlockEntry<AbyssalStoneSlabBlock> ABYSSAL_STONE_BRICKS_SLAB =
-			REGISTRATE.block("abyssal_stone_bricks_slab", AbyssalStoneSlabBlock::new)
+	public static final BlockEntry<AbyssalStoneSlabBlock> ABYSSAL_STONE_BRICK_SLAB =
+			REGISTRATE.block("abyssal_stone_brick_slab", AbyssalStoneSlabBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.OBSIDIAN)
 					.properties(p -> p.sound(SoundType.STONE).destroyTime(35.0F).explosionResistance(6.0F)).register();
-	public static final BlockEntry<AbyssalStoneStairsBlock> ABYSSAL_STONE_BRICKS_STAIRS =
-			REGISTRATE.block("abyssal_stone_bricks_stairs", AbyssalStoneStairsBlock::new)
+	public static final BlockEntry<AbyssalStoneStairsBlock> ABYSSAL_STONE_BRICK_STAIRS =
+			REGISTRATE.block("abyssal_stone_brick_stairs", AbyssalStoneStairsBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.OBSIDIAN)
 					.properties(p -> p.sound(SoundType.STONE).destroyTime(35.0F).explosionResistance(6.0F)).register();
-	public static final BlockEntry<AbyssalStoneWallBlock> ABYSSAL_STONE_BRICKS_WALL =
-			REGISTRATE.block("abyssal_stone_bricks_wall", AbyssalStoneWallBlock::new)
+	public static final BlockEntry<AbyssalStoneWallBlock> ABYSSAL_STONE_BRICK_WALL =
+			REGISTRATE.block("abyssal_stone_brick_wall", AbyssalStoneWallBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.OBSIDIAN)
@@ -692,20 +1097,20 @@ public class GarnishedBlocks {
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
 					.properties(p -> p.explosionResistance(12.0F)).register();
-	public static final BlockEntry<SlabBlock> CARNOTITE_BRICKS_SLAB =
-			REGISTRATE.block("carnotite_bricks_slab", SlabBlock::new)
+	public static final BlockEntry<SlabBlock> CARNOTITE_BRICK_SLAB =
+			REGISTRATE.block("carnotite_brick_slab", SlabBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
 					.properties(p -> p.explosionResistance(12.0F)).register();
-	public static final BlockEntry<CarnotiteStairsBlock> CARNOTITE_BRICKS_STAIRS =
-			REGISTRATE.block("carnotite_bricks_stairs", CarnotiteStairsBlock::new)
+	public static final BlockEntry<CarnotiteStairsBlock> CARNOTITE_BRICK_STAIRS =
+			REGISTRATE.block("carnotite_brick_stairs", CarnotiteStairsBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
 					.properties(p -> p.explosionResistance(12.0F)).register();
-	public static final BlockEntry<WallBlock> CARNOTITE_BRICKS_WALL =
-			REGISTRATE.block("carnotite_bricks_wall", WallBlock::new)
+	public static final BlockEntry<WallBlock> CARNOTITE_BRICK_WALL =
+			REGISTRATE.block("carnotite_brick_wall", WallBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
@@ -771,20 +1176,20 @@ public class GarnishedBlocks {
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
 					.properties(p -> p.explosionResistance(12.0F)).register();
-	public static final BlockEntry<UnstableStoneSlabBlock> UNSTABLE_STONE_BRICKS_SLAB =
-			REGISTRATE.block("unstable_stone_bricks_slab", UnstableStoneSlabBlock::new)
+	public static final BlockEntry<UnstableStoneSlabBlock> UNSTABLE_STONE_BRICK_SLAB =
+			REGISTRATE.block("unstable_stone_brick_slab", UnstableStoneSlabBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
 					.properties(p -> p.explosionResistance(12.0F)).register();
-	public static final BlockEntry<UnstableStoneStairsBlock> UNSTABLE_STONE_BRICKS_STAIRS =
-			REGISTRATE.block("unstable_stone_bricks_stairs", UnstableStoneStairsBlock::new)
+	public static final BlockEntry<UnstableStoneStairsBlock> UNSTABLE_STONE_BRICK_STAIRS =
+			REGISTRATE.block("unstable_stone_brick_stairs", UnstableStoneStairsBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
 					.properties(p -> p.explosionResistance(12.0F)).register();
-	public static final BlockEntry<UnstableStoneWallBlock> UNSTABLE_STONE_BRICKS_WALL =
-			REGISTRATE.block("unstable_stone_bricks_wall", UnstableStoneWallBlock::new)
+	public static final BlockEntry<UnstableStoneWallBlock> UNSTABLE_STONE_BRICK_WALL =
+			REGISTRATE.block("unstable_stone_brick_wall", UnstableStoneWallBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
@@ -888,20 +1293,20 @@ public class GarnishedBlocks {
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
 					.properties(p -> p.explosionResistance(12.0F)).register();
-	public static final BlockEntry<SlabBlock> RITUALISTIC_STONE_BRICKS_SLAB =
-			REGISTRATE.block("ritualistic_stone_bricks_slab", SlabBlock::new)
+	public static final BlockEntry<SlabBlock> RITUALISTIC_STONE_BRICK_SLAB =
+			REGISTRATE.block("ritualistic_stone_brick_slab", SlabBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
 					.properties(p -> p.explosionResistance(12.0F)).register();
-	public static final BlockEntry<RitualisticStoneStairsBlock> RITUALISTIC_STONE_BRICKS_STAIRS =
-			REGISTRATE.block("ritualistic_stone_bricks_stairs", RitualisticStoneStairsBlock::new)
+	public static final BlockEntry<RitualisticStoneStairsBlock> RITUALISTIC_STONE_BRICK_STAIRS =
+			REGISTRATE.block("ritualistic_stone_brick_stairs", RitualisticStoneStairsBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
 					.properties(p -> p.explosionResistance(12.0F)).register();
-	public static final BlockEntry<WallBlock> RITUALISTIC_STONE_BRICKS_WALL =
-			REGISTRATE.block("ritualistic_stone_bricks_wall", WallBlock::new)
+	public static final BlockEntry<WallBlock> RITUALISTIC_STONE_BRICK_WALL =
+			REGISTRATE.block("ritualistic_stone_brick_wall", WallBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
@@ -1140,20 +1545,20 @@ public class GarnishedBlocks {
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
 					.properties(p -> p.explosionResistance(12.0F)).register();
-	public static final BlockEntry<SlabBlock> DRAGON_STONE_BRICKS_SLAB =
-			REGISTRATE.block("dragon_stone_bricks_slab", SlabBlock::new)
+	public static final BlockEntry<SlabBlock> DRAGON_STONE_BRICK_SLAB =
+			REGISTRATE.block("dragon_stone_brick_slab", SlabBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
 					.properties(p -> p.explosionResistance(12.0F)).register();
-	public static final BlockEntry<DragonStoneStairsBlock> DRAGON_STONE_BRICKS_STAIRS =
-			REGISTRATE.block("dragon_stone_bricks_stairs", DragonStoneStairsBlock::new)
+	public static final BlockEntry<DragonStoneStairsBlock> DRAGON_STONE_BRICK_STAIRS =
+			REGISTRATE.block("dragon_stone_brick_stairs", DragonStoneStairsBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
 					.properties(p -> p.explosionResistance(12.0F)).register();
-	public static final BlockEntry<WallBlock> DRAGON_STONE_BRICKS_WALL =
-			REGISTRATE.block("dragon_stone_bricks_wall", WallBlock::new)
+	public static final BlockEntry<WallBlock> DRAGON_STONE_BRICK_WALL =
+			REGISTRATE.block("dragon_stone_brick_wall", WallBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)

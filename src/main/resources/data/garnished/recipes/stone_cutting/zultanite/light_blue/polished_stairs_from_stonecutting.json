@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "tag": "garnished:stone_types/zultanite/light_blue"
+  },
+  "result": "garnished:polished_light_blue_zultanite_stairs"
+}

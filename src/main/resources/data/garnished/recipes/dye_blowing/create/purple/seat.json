@@ -1,0 +1,14 @@
+{
+  "type": "garnished:purple_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "create:seats"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:purple_seat",
+      "count": 1
+    }
+  ]
+}

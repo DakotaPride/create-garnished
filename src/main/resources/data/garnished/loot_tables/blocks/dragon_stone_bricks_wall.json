@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "garnished:dragon_stone_bricks_wall"
+          "name": "garnished:dragon_stone_brick_wall"
         }
       ],
       "conditions": [

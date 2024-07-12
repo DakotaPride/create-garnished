@@ -1,0 +1,14 @@
+{
+  "type": "garnished:black_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:terracotta"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:black_terracotta",
+      "count": 1
+    }
+  ]
+}

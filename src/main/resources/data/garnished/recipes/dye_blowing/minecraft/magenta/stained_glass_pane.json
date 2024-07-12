@@ -1,0 +1,19 @@
+{
+  "type": "garnished:magenta_dye_blowing",
+  "ingredients": [
+    [
+      {
+        "tag": "c:stained_glass_panes"
+      },
+      {
+        "item": "minecraft:glass_pane"
+      }
+    ]
+  ],
+  "results": [
+    {
+      "item": "minecraft:magenta_stained_glass_pane",
+      "count": 1
+    }
+  ]
+}

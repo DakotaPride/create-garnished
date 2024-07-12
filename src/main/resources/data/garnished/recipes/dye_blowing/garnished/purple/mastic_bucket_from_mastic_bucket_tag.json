@@ -1,0 +1,14 @@
+{
+  "type": "garnished:purple_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "c:buckets/mastic_resin"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:purple_mastic_resin_bucket",
+      "count": 1
+    }
+  ]
+}

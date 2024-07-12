@@ -1,0 +1,14 @@
+{
+  "type": "garnished:magenta_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:wool_carpets"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:magenta_carpet",
+      "count": 1
+    }
+  ]
+}

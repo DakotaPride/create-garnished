@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "tag": "garnished:stone_types/zultanite/orange"
+  },
+  "result": "garnished:orange_zultanite_bricks"
+}

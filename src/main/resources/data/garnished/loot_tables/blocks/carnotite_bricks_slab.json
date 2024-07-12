@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "garnished:carnotite_bricks_slab"
+          "name": "garnished:carnotite_brick_slab"
         }
       ],
       "conditions": [

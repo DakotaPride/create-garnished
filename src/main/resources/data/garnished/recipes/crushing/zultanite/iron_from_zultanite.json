@@ -1,0 +1,31 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "garnished:stone_types/zultanite/red"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 1,
+      "item": "minecraft:iron_nugget",
+      "chance": 0.15
+    },
+    {
+      "count": 2,
+      "item": "minecraft:iron_nugget",
+      "chance": 0.10
+    },
+    {
+      "count": 1,
+      "item": "create:crushed_raw_iron",
+      "chance": 0.10
+    },
+    {
+      "count": 1,
+      "item": "minecraft:redstone",
+      "chance": 0.05
+    }
+  ]
+}

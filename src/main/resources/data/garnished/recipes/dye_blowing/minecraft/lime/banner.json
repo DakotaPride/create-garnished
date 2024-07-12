@@ -1,0 +1,14 @@
+{
+  "type": "garnished:lime_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:banners"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:lime_banner",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "garnished:block/magenta_zultanite_bricks_slab"
+    },
+    "type=double": {
+      "model": "garnished:block/magenta_zultanite_bricks"
+    },
+    "type=top": {
+      "model": "garnished:block/magenta_zultanite_bricks_slab_top"
+    }
+  }
+}

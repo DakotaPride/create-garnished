@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "garnished:carnotite_bricks_stairs"
+          "name": "garnished:carnotite_brick_stairs"
         }
       ],
       "conditions": [

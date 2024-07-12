@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "garnished:dragon_stone_bricks_stairs"
+          "name": "garnished:dragon_stone_brick_stairs"
         }
       ],
       "conditions": [

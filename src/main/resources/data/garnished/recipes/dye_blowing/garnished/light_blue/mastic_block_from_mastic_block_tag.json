@@ -1,0 +1,14 @@
+{
+  "type": "garnished:light_blue_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "garnished:mastic_blocks"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:light_blue_mastic_block",
+      "count": 1
+    }
+  ]
+}

@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "garnished:abyssal_stone_bricks_stairs"
+          "name": "garnished:abyssal_stone_brick_stairs"
         }
       ],
       "conditions": [

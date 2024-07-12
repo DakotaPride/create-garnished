@@ -10,17 +10,8 @@ import net.dakotapride.garnished.registry.GarnishedFluids;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.world.level.block.Blocks;
 
-public class FanRedDyeingEmiRecipe extends FanEmiRecipe.MultiOutput<RedDyeBlowingFanRecipe> {
+public class FanRedDyeingEmiRecipe extends FanDyeingEmiRecipe {
 	public FanRedDyeingEmiRecipe(RedDyeBlowingFanRecipe recipe) {
-		super(GarnishedEMI.FAN_RED_DYEING, recipe);
-	}
-
-	@Override
-	protected void renderAttachedBlock(GuiGraphics graphics) {
-		GuiGameElement.of(GarnishedFluids.RED_MASTIC_RESIN.get())
-				.scale(SCALE)
-				.atLocal(0, 0, 2)
-				.lighting(CreateEmiAnimations.DEFAULT_LIGHTING)
-				.render(graphics);
+		super(GarnishedEMI.FAN_RED_DYEING, recipe, GarnishedFluids.RED_MASTIC_RESIN.getSource());
 	}
 }

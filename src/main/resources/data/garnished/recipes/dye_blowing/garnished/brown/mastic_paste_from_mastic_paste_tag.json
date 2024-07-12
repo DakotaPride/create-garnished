@@ -1,0 +1,14 @@
+{
+  "type": "garnished:brown_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "garnished:mastic_paste"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:mastic_paste_brown",
+      "count": 1
+    }
+  ]
+}

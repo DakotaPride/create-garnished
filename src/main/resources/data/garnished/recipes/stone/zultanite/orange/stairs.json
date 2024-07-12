@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "orange_zultanite_variants",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:orange_zultanite"
+    }
+  },
+  "result": {
+    "item": "garnished:orange_zultanite_stairs",
+    "count": 4
+  }
+}

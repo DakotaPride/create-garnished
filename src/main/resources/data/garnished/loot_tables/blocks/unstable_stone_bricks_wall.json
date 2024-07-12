@@ -7,7 +7,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "garnished:unstable_stone_bricks_wall"
+          "name": "garnished:unstable_stone_brick_wall"
         }
       ],
       "conditions": [

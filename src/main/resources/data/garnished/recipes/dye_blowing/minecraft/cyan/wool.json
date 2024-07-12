@@ -1,0 +1,14 @@
+{
+  "type": "garnished:cyan_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:wool"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:cyan_wool",
+      "count": 1
+    }
+  ]
+}

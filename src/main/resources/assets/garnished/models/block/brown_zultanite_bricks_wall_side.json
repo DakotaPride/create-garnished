@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_wall_side",
+  "textures": {
+    "wall": "garnished:block/brown_zultanite_bricks"
+  }
+}

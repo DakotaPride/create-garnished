@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "white_zultanite_variants",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:white_zultanite_bricks"
+    }
+  },
+  "result": {
+    "item": "garnished:white_zultanite_brick_stairs",
+    "count": 4
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "garnished:lime_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:beds"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:lime_bed",
+      "count": 1
+    }
+  ]
+}

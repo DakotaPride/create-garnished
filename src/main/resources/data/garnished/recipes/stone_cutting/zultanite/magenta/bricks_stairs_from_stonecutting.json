@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "tag": "garnished:stone_types/zultanite/magenta"
+  },
+  "result": "garnished:magenta_zultanite_brick_stairs"
+}

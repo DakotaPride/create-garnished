@@ -1,0 +1,14 @@
+{
+  "type": "garnished:light_blue_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "garnished:mastic_paste"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:mastic_paste_light_blue",
+      "count": 1
+    }
+  ]
+}

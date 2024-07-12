@@ -1,0 +1,14 @@
+{
+  "type": "garnished:black_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:wool"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:black_wool",
+      "count": 1
+    }
+  ]
+}

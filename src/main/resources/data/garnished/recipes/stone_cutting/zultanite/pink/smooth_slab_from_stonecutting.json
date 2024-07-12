@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "tag": "garnished:stone_types/zultanite/pink"
+  },
+  "result": "garnished:smooth_pink_zultanite_slab"
+}

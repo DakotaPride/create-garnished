@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "garnished:block/brown_polished_zultanite"
+  }
+}

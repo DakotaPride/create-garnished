@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "garnished:item/lime_mastic_resin_bucket"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "garnished:white_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "c:buckets/mastic_resin"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:white_mastic_resin_bucket",
+      "count": 1
+    }
+  ]
+}

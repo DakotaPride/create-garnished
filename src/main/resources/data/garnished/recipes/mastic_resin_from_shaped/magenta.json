@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "coloured_mastic_resin",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "garnished:mastic_resin"
+    },
+    "X": {
+      "item": "minecraft:magenta_dye"
+    }
+  },
+  "result": {
+    "item": "garnished:mastic_resin_magenta",
+    "count": 8
+  }
+}

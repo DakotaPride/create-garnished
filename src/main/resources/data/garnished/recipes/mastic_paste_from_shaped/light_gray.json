@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "coloured_mastic_paste",
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "tag": "garnished:mastic_paste"
+    },
+    "X": {
+      "item": "minecraft:light_gray_dye"
+    }
+  },
+  "result": {
+    "item": "garnished:mastic_paste_light_gray",
+    "count": 8
+  }
+}

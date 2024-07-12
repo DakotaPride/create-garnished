@@ -1,0 +1,14 @@
+{
+  "type": "garnished:pink_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:candles"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:pink_candle",
+      "count": 1
+    }
+  ]
+}

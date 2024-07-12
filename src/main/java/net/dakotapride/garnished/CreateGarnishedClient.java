@@ -142,10 +142,30 @@ public class CreateGarnishedClient implements ClientModInitializer {
 				GarnishedFluids.YELLOW_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.YELLOW_MASTIC_RESIN.get()));
 		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.GREEN_MASTIC_RESIN.get().getSource(),
 				GarnishedFluids.GREEN_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.GREEN_MASTIC_RESIN.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.LIME_MASTIC_RESIN.get().getSource(),
+				GarnishedFluids.LIME_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.LIME_MASTIC_RESIN.get()));
 		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.BLUE_MASTIC_RESIN.get().getSource(),
 				GarnishedFluids.BLUE_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.BLUE_MASTIC_RESIN.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.LIGHT_BLUE_MASTIC_RESIN.get().getSource(),
+				GarnishedFluids.LIGHT_BLUE_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.LIGHT_BLUE_MASTIC_RESIN.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.CYAN_MASTIC_RESIN.get().getSource(),
+				GarnishedFluids.CYAN_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.CYAN_MASTIC_RESIN.get()));
 		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.PURPLE_MASTIC_RESIN.get().getSource(),
 				GarnishedFluids.PURPLE_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.PURPLE_MASTIC_RESIN.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.MAGENTA_MASTIC_RESIN.get().getSource(),
+				GarnishedFluids.MAGENTA_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.MAGENTA_MASTIC_RESIN.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.PINK_MASTIC_RESIN.get().getSource(),
+				GarnishedFluids.PINK_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.PINK_MASTIC_RESIN.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.BLACK_MASTIC_RESIN.get().getSource(),
+				GarnishedFluids.BLACK_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.BLACK_MASTIC_RESIN.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.GRAY_MASTIC_RESIN.get().getSource(),
+				GarnishedFluids.GRAY_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.GRAY_MASTIC_RESIN.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.LIGHT_GRAY_MASTIC_RESIN.get().getSource(),
+				GarnishedFluids.LIGHT_GRAY_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.LIGHT_GRAY_MASTIC_RESIN.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.WHITE_MASTIC_RESIN.get().getSource(),
+				GarnishedFluids.WHITE_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.WHITE_MASTIC_RESIN.get()));
+		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.BROWN_MASTIC_RESIN.get().getSource(),
+				GarnishedFluids.BROWN_MASTIC_RESIN.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.BROWN_MASTIC_RESIN.get()));
 		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.DRAGON_BREATH.get().getSource(),
 				GarnishedFluids.DRAGON_BREATH.get().getFlowing(), FluidRenderHandlerRegistry.INSTANCE.get(GarnishedFluids.DRAGON_BREATH.get()));
 		FluidRenderHandlerRegistry.INSTANCE.register(GarnishedFluids.SWEET_TEA.get().getSource(),
@@ -223,11 +243,51 @@ public class CreateGarnishedClient implements ClientModInitializer {
 			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
 			return true;
 		}
+		if (GarnishedFluids.LIME_MASTIC_RESIN.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
 		if (GarnishedFluids.BLUE_MASTIC_RESIN.get().isSame(fluid)) {
 			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
 			return true;
 		}
+		if (GarnishedFluids.LIGHT_BLUE_MASTIC_RESIN.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.CYAN_MASTIC_RESIN.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
 		if (GarnishedFluids.PURPLE_MASTIC_RESIN.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.MAGENTA_MASTIC_RESIN.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.PINK_MASTIC_RESIN.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.BLACK_MASTIC_RESIN.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.GRAY_MASTIC_RESIN.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.LIGHT_GRAY_MASTIC_RESIN.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.WHITE_MASTIC_RESIN.get().isSame(fluid)) {
+			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
+			return true;
+		}
+		if (GarnishedFluids.BROWN_MASTIC_RESIN.get().isSame(fluid)) {
 			fogData.scaleFarPlaneDistance(1f / 8f * AllConfigs.client().honeyTransparencyMultiplier.getF());
 			return true;
 		}
@@ -310,16 +370,76 @@ public class CreateGarnishedClient implements ClientModInitializer {
 			event.setBlue(41 / 255f);
 			return;
 		}
+		if (GarnishedFluids.LIME_MASTIC_RESIN.get().isSame(fluid)) {
+			event.setRed(55 / 255f);
+			event.setGreen(198 / 255f);
+			event.setBlue(70 / 255f);
+			return;
+		}
 		if (GarnishedFluids.BLUE_MASTIC_RESIN.get().isSame(fluid)) {
-			event.setRed(57 / 255f);
-			event.setGreen(122 / 255f);
-			event.setBlue(126 / 255f);
+			event.setRed(38 / 255f);
+			event.setGreen(91 / 255f);
+			event.setBlue(127 / 255f);
+			return;
+		}
+		if (GarnishedFluids.LIGHT_BLUE_MASTIC_RESIN.get().isSame(fluid)) {
+			event.setRed(60 / 255f);
+			event.setGreen(137 / 255f);
+			event.setBlue(174 / 255f);
+			return;
+		}
+		if (GarnishedFluids.CYAN_MASTIC_RESIN.get().isSame(fluid)) {
+			event.setRed(62 / 255f);
+			event.setGreen(138 / 255f);
+			event.setBlue(124 / 255f);
 			return;
 		}
 		if (GarnishedFluids.PURPLE_MASTIC_RESIN.get().isSame(fluid)) {
 			event.setRed(87 / 255f);
 			event.setGreen(36 / 255f);
 			event.setBlue(153 / 255f);
+			return;
+		}
+		if (GarnishedFluids.MAGENTA_MASTIC_RESIN.get().isSame(fluid)) {
+			event.setRed(161 / 255f);
+			event.setGreen(47 / 255f);
+			event.setBlue(198 / 255f);
+			return;
+		}
+		if (GarnishedFluids.PINK_MASTIC_RESIN.get().isSame(fluid)) {
+			event.setRed(201 / 255f);
+			event.setGreen(80 / 255f);
+			event.setBlue(141 / 255f);
+			return;
+		}
+		if (GarnishedFluids.BLACK_MASTIC_RESIN.get().isSame(fluid)) {
+			event.setRed(6 / 255f);
+			event.setGreen(22 / 255f);
+			event.setBlue(30 / 255f);
+			return;
+		}
+		if (GarnishedFluids.GRAY_MASTIC_RESIN.get().isSame(fluid)) {
+			event.setRed(45 / 255f);
+			event.setGreen(51 / 255f);
+			event.setBlue(61 / 255f);
+			return;
+		}
+		if (GarnishedFluids.LIGHT_GRAY_MASTIC_RESIN.get().isSame(fluid)) {
+			event.setRed(117 / 255f);
+			event.setGreen(135 / 255f);
+			event.setBlue(163 / 255f);
+			return;
+		}
+		if (GarnishedFluids.WHITE_MASTIC_RESIN.get().isSame(fluid)) {
+			event.setRed(192 / 255f);
+			event.setGreen(196 / 255f);
+			event.setBlue(224 / 255f);
+			return;
+		}
+		if (GarnishedFluids.BROWN_MASTIC_RESIN.get().isSame(fluid)) {
+			event.setRed(97 / 255f);
+			event.setGreen(67 / 255f);
+			event.setBlue(50 / 255f);
 			return;
 		}
 		if (GarnishedFluids.DRAGON_BREATH.get().isSame(fluid)) {
