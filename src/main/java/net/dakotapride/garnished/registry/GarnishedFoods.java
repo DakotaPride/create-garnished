@@ -111,7 +111,8 @@ public class GarnishedFoods implements IGarnishedItem {
 	public static final FoodProperties CHORUS_BOWL = new FoodProperties.Builder().nutrition(12).saturationMod(0.8F).build();
 	public static final FoodProperties CHORUS_COOKIE = new FoodProperties.Builder().nutrition(4).saturationMod(0.1F).build();
 	public static final FoodProperties ENDER_JELLY = new FoodProperties.Builder().nutrition(3).saturationMod(0.1F).build();
-	public static final FoodProperties ILLUMINATING_COCKTAIL = new FoodProperties.Builder().nutrition(10).saturationMod(0.4F).build();
+	public static final FoodProperties ILLUMINATING_COCKTAIL = new FoodProperties.Builder().nutrition(10).saturationMod(0.4F)
+			.effect(new MobEffectInstance(MobEffects.GLOWING, 600, 0), 1.0F).build();
 	public static final FoodProperties MULCH = new FoodProperties.Builder().nutrition(3).saturationMod(0.1F).build();
 	public static final FoodProperties MUD_PIE = new FoodProperties.Builder().nutrition(6).saturationMod(0.2F).build();
 
