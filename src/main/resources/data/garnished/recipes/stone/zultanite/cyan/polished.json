@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "cyan_zultanite_variants",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:cyan_zultanite"
+    }
+  },
+  "result": {
+    "item": "garnished:polished_cyan_zultanite",
+    "count": 4
+  }
+}

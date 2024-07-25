@@ -1,0 +1,14 @@
+{
+  "type": "garnished:cyan_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:beds"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:cyan_bed",
+      "count": 1
+    }
+  ]
+}

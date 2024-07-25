@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "garnished:block/orange_zultanite",
+    "side": "garnished:block/orange_zultanite",
+    "top": "garnished:block/orange_zultanite"
+  }
+}

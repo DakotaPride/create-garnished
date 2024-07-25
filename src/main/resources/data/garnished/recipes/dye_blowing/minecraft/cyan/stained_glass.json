@@ -1,0 +1,19 @@
+{
+  "type": "garnished:cyan_dye_blowing",
+  "ingredients": [
+    [
+      {
+        "tag": "forge:stained_glass"
+      },
+      {
+        "item": "minecraft:glass"
+      }
+    ]
+  ],
+  "results": [
+    {
+      "item": "minecraft:cyan_stained_glass",
+      "count": 1
+    }
+  ]
+}

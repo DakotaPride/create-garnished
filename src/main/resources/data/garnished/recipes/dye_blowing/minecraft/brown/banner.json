@@ -1,0 +1,14 @@
+{
+  "type": "garnished:brown_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:banners"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:brown_banner",
+      "count": 1
+    }
+  ]
+}

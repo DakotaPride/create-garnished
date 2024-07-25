@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "pink_zultanite_variants",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:polished_pink_zultanite"
+    }
+  },
+  "result": {
+    "item": "garnished:polished_pink_zultanite_slab",
+    "count": 6
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "createframed"
+      ]
+    }
+  ],
+  "type": "garnished:yellow_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "createframed:vertical_stained_framed_glass_panes"
+    }
+  ],
+  "results": [
+    {
+      "item": "createframed:vertical_yellow_stained_framed_glass_pane",
+      "count": 1
+    }
+  ]
+}

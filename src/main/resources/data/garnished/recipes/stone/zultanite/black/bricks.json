@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "black_zultanite_variants",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:polished_black_zultanite"
+    }
+  },
+  "result": {
+    "item": "garnished:black_zultanite_bricks",
+    "count": 4
+  }
+}

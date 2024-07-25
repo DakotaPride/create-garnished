@@ -1,0 +1,14 @@
+{
+  "type": "garnished:light_blue_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:beds"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:light_blue_bed",
+      "count": 1
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "garnished:gray_zultanite",
+    "garnished:gray_zultanite_slab",
+    "garnished:gray_zultanite_stairs",
+    "garnished:gray_zultanite_wall",
+    "garnished:gray_zultanite_bricks",
+    "garnished:polished_gray_zultanite",
+    "garnished:chiseled_gray_zultanite_bricks",
+    "garnished:smooth_gray_zultanite",
+    "garnished:polished_gray_zultanite_stairs",
+    "garnished:gray_zultanite_brick_stairs",
+    "garnished:smooth_gray_zultanite_stairs",
+    "garnished:polished_gray_zultanite_slab",
+    "garnished:gray_zultanite_brick_slab",
+    "garnished:smooth_gray_zultanite_slab",
+    "garnished:polished_gray_zultanite_wall",
+    "garnished:gray_zultanite_brick_wall",
+    "garnished:smooth_gray_zultanite_wall"
+  ]
+}

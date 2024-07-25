@@ -1,0 +1,14 @@
+{
+  "type": "garnished:brown_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "forge:buckets/mastic_resin"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:brown_mastic_resin_bucket",
+      "count": 1
+    }
+  ]
+}

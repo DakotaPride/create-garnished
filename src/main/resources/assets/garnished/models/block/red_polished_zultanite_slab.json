@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "garnished:block/red_polished_zultanite",
+    "side": "garnished:block/red_polished_zultanite",
+    "top": "garnished:block/red_polished_zultanite"
+  }
+}

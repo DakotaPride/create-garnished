@@ -1430,12 +1430,42 @@
         }
       }
     },
+    "mastic_paste_lime": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mastic_paste_lime"
+          ]
+        }
+      }
+    },
     "mastic_paste_blue": {
       "trigger": "minecraft:consume_item",
       "conditions": {
         "item": {
           "items": [
             "garnished:mastic_paste_blue"
+          ]
+        }
+      }
+    },
+    "mastic_paste_cyan": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mastic_paste_cyan"
+          ]
+        }
+      }
+    },
+    "mastic_paste_light_blue": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mastic_paste_light_blue"
           ]
         }
       }
@@ -1450,6 +1480,77 @@
         }
       }
     },
+    "mastic_paste_magenta": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mastic_paste_magenta"
+          ]
+        }
+      }
+    },
+    "mastic_paste_pink": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mastic_paste_pink"
+          ]
+        }
+      }
+    },
+    "mastic_paste_black": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mastic_paste_black"
+          ]
+        }
+      }
+    },
+    "mastic_paste_gray": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mastic_paste_gray"
+          ]
+        }
+      }
+    },
+    "mastic_paste_light_gray": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mastic_paste_light_gray"
+          ]
+        }
+      }
+    },
+    "mastic_paste_white": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mastic_paste_white"
+          ]
+        }
+      }
+    },
+    "mastic_paste_brown": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": [
+            "garnished:mastic_paste_brown"
+          ]
+        }
+      }
+    },
+
     "venerable_delicacy_red": {
       "trigger": "minecraft:consume_item",
       "conditions": {
@@ -2485,10 +2586,40 @@
       "mastic_paste_green"
     ],
     [
+      "mastic_paste_lime"
+    ],
+    [
       "mastic_paste_blue"
     ],
     [
+      "mastic_paste_cyan"
+    ],
+    [
+      "mastic_paste_light_blue"
+    ],
+    [
       "mastic_paste_purple"
+    ],
+    [
+      "mastic_paste_magenta"
+    ],
+    [
+      "mastic_paste_pink"
+    ],
+    [
+      "mastic_paste_black"
+    ],
+    [
+      "mastic_paste_gray"
+    ],
+    [
+      "mastic_paste_light_gray"
+    ],
+    [
+      "mastic_paste_white"
+    ],
+    [
+      "mastic_paste_brown"
     ],
     [
       "venerable_delicacy_red"

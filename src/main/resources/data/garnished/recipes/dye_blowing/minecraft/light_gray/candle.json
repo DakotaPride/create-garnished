@@ -1,0 +1,14 @@
+{
+  "type": "garnished:light_gray_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:candles"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:light_gray_candle",
+      "count": 1
+    }
+  ]
+}

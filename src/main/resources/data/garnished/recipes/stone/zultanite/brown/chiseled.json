@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "brown_zultanite_variants",
+  "pattern": [
+    "#",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:polished_brown_zultanite_slab"
+    }
+  },
+  "result": {
+    "item": "garnished:chiseled_brown_zultanite_bricks"
+  }
+}

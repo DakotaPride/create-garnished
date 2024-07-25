@@ -3,15 +3,15 @@
   "values": [
     "garnished:abyssal_stone_stairs",
     "garnished:polished_abyssal_stone_stairs",
-    "garnished:abyssal_stone_bricks_stairs",
+    "garnished:abyssal_stone_brick_stairs",
     "garnished:smooth_abyssal_stone_stairs",
     "garnished:carnotite_stairs",
     "garnished:polished_carnotite_stairs",
-    "garnished:carnotite_bricks_stairs",
+    "garnished:carnotite_brick_stairs",
     "garnished:smooth_carnotite_stairs",
     "garnished:unstable_stone_stairs",
     "garnished:polished_unstable_stone_stairs",
-    "garnished:unstable_stone_bricks_stairs",
+    "garnished:unstable_stone_brick_stairs",
     "garnished:smooth_unstable_stone_stairs"
   ]
 }

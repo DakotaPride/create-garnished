@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "garnished:block/zultanite_slab"
+    },
+    "type=double": {
+      "model": "garnished:block/zultanite"
+    },
+    "type=top": {
+      "model": "garnished:block/zultanite_slab_top"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "garnished:white_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:beds"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:white_bed",
+      "count": 1
+    }
+  ]
+}

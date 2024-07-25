@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "garnished:orange_zultanite"
+  },
+  "result": "garnished:smooth_orange_zultanite",
+  "experience": 0.1,
+  "cookingtime": 200
+}

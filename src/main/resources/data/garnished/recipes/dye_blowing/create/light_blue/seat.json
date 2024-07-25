@@ -1,0 +1,14 @@
+{
+  "type": "garnished:light_blue_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "create:seats"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:light_blue_seat",
+      "count": 1
+    }
+  ]
+}

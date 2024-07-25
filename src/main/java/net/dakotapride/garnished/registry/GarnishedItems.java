@@ -487,10 +487,30 @@ public class GarnishedItems {
 			REGISTRATE.item("mastic_resin_yellow", Item::new).register();
 	public static final ItemEntry<Item> MASTIC_RESIN_GREEN =
 			REGISTRATE.item("mastic_resin_green", Item::new).register();
+	public static final ItemEntry<Item> MASTIC_RESIN_LIME =
+			REGISTRATE.item("mastic_resin_lime", Item::new).register();
 	public static final ItemEntry<Item> MASTIC_RESIN_BLUE =
 			REGISTRATE.item("mastic_resin_blue", Item::new).register();
+	public static final ItemEntry<Item> MASTIC_RESIN_LIGHT_BLUE =
+			REGISTRATE.item("mastic_resin_light_blue", Item::new).register();
+	public static final ItemEntry<Item> MASTIC_RESIN_CYAN =
+			REGISTRATE.item("mastic_resin_cyan", Item::new).register();
 	public static final ItemEntry<Item> MASTIC_RESIN_PURPLE =
 			REGISTRATE.item("mastic_resin_purple", Item::new).register();
+	public static final ItemEntry<Item> MASTIC_RESIN_MAGENTA =
+			REGISTRATE.item("mastic_resin_magenta", Item::new).register();
+	public static final ItemEntry<Item> MASTIC_RESIN_PINK =
+			REGISTRATE.item("mastic_resin_pink", Item::new).register();
+	public static final ItemEntry<Item> MASTIC_RESIN_BLACK =
+			REGISTRATE.item("mastic_resin_black", Item::new).register();
+	public static final ItemEntry<Item> MASTIC_RESIN_GRAY =
+			REGISTRATE.item("mastic_resin_gray", Item::new).register();
+	public static final ItemEntry<Item> MASTIC_RESIN_LIGHT_GRAY =
+			REGISTRATE.item("mastic_resin_light_gray", Item::new).register();
+	public static final ItemEntry<Item> MASTIC_RESIN_WHITE =
+			REGISTRATE.item("mastic_resin_white", Item::new).register();
+	public static final ItemEntry<Item> MASTIC_RESIN_BROWN =
+			REGISTRATE.item("mastic_resin_brown", Item::new).register();
 	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE =
 			REGISTRATE.item("mastic_paste", MasticPasteFoodItem::new).register();
 	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_RED =
@@ -501,10 +521,30 @@ public class GarnishedItems {
 			REGISTRATE.item("mastic_paste_yellow", MasticPasteFoodItem::new).register();
 	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_GREEN =
 			REGISTRATE.item("mastic_paste_green", MasticPasteFoodItem::new).register();
+	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_LIME =
+			REGISTRATE.item("mastic_paste_lime", MasticPasteFoodItem::new).register();
 	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_BLUE =
 			REGISTRATE.item("mastic_paste_blue", MasticPasteFoodItem::new).register();
+	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_LIGHT_BLUE =
+			REGISTRATE.item("mastic_paste_light_blue", MasticPasteFoodItem::new).register();
+	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_CYAN =
+			REGISTRATE.item("mastic_paste_cyan", MasticPasteFoodItem::new).register();
 	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_PURPLE =
 			REGISTRATE.item("mastic_paste_purple", MasticPasteFoodItem::new).register();
+	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_MAGENTA =
+			REGISTRATE.item("mastic_paste_magenta", MasticPasteFoodItem::new).register();
+	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_PINK =
+			REGISTRATE.item("mastic_paste_pink", MasticPasteFoodItem::new).register();
+	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_BLACK =
+			REGISTRATE.item("mastic_paste_black", MasticPasteFoodItem::new).register();
+	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_GRAY =
+			REGISTRATE.item("mastic_paste_gray", MasticPasteFoodItem::new).register();
+	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_LIGHT_GRAY =
+			REGISTRATE.item("mastic_paste_light_gray", MasticPasteFoodItem::new).register();
+	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_WHITE =
+			REGISTRATE.item("mastic_paste_white", MasticPasteFoodItem::new).register();
+	public static final ItemEntry<MasticPasteFoodItem> MASTIC_PASTE_BROWN =
+			REGISTRATE.item("mastic_paste_brown", MasticPasteFoodItem::new).register();
 
 	public static final ItemEntry<Item> VOLATILE_DUST =
 			REGISTRATE.item("volatile_dust", Item::new).register();

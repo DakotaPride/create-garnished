@@ -1,0 +1,14 @@
+{
+  "type": "garnished:lime_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:candles"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:lime_candle",
+      "count": 1
+    }
+  ]
+}

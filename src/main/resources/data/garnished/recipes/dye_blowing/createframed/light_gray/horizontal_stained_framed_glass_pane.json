@@ -1,0 +1,22 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "createframed"
+      ]
+    }
+  ],
+  "type": "garnished:light_gray_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "createframed:horizontal_stained_framed_glass_panes"
+    }
+  ],
+  "results": [
+    {
+      "item": "createframed:horizontal_light_gray_stained_framed_glass_pane",
+      "count": 1
+    }
+  ]
+}

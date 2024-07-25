@@ -18,12 +18,22 @@ import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import mezz.jei.api.runtime.IIngredientManager;
 import net.dakotapride.garnished.CreateGarnished;
+import net.dakotapride.garnished.recipe.BlackDyeBlowingFanRecipe;
 import net.dakotapride.garnished.recipe.BlueDyeBlowingFanRecipe;
+import net.dakotapride.garnished.recipe.BrownDyeBlowingFanRecipe;
+import net.dakotapride.garnished.recipe.CyanDyeBlowingFanRecipe;
 import net.dakotapride.garnished.recipe.FreezingFanRecipe;
+import net.dakotapride.garnished.recipe.GrayDyeBlowingFanRecipe;
 import net.dakotapride.garnished.recipe.GreenDyeBlowingFanRecipe;
+import net.dakotapride.garnished.recipe.LightBlueDyeBlowingFanRecipe;
+import net.dakotapride.garnished.recipe.LightGrayDyeBlowingFanRecipe;
+import net.dakotapride.garnished.recipe.LimeDyeBlowingFanRecipe;
+import net.dakotapride.garnished.recipe.MagentaDyeBlowingFanRecipe;
 import net.dakotapride.garnished.recipe.OrangeDyeBlowingFanRecipe;
+import net.dakotapride.garnished.recipe.PinkDyeBlowingFanRecipe;
 import net.dakotapride.garnished.recipe.PurpleDyeBlowingFanRecipe;
 import net.dakotapride.garnished.recipe.RedDyeBlowingFanRecipe;
+import net.dakotapride.garnished.recipe.WhiteDyeBlowingFanRecipe;
 import net.dakotapride.garnished.recipe.YellowDyeBlowingFanRecipe;
 import net.dakotapride.garnished.registry.GarnishedFluids;
 import net.dakotapride.garnished.registry.GarnishedItems;
@@ -131,35 +141,110 @@ public class GarnishedJEI implements IModPlugin {
 						.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.RED_MASTIC_RESIN.getBucket().get())
 						.emptyBackground(178, 72)
 						.build("red_dye_blowing", RedDyeBlowingFanCategory::new));
-		allCategories.add(builder(OrangeDyeBlowingFanRecipe.class)
-				.addTypedRecipes(GarnishedRecipeTypes.ORANGE_DYE_BLOWING::getType)
-				.catalystStack(ProcessingViaFanCategory.getFan("garnished.orange_dye_blowing"))
-				.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.ORANGE_MASTIC_RESIN.getBucket().get())
-				.emptyBackground(178, 72)
-				.build("orange_dye_blowing", OrangeDyeBlowingFanCategory::new));
-		allCategories.add(builder(YellowDyeBlowingFanRecipe.class)
-				.addTypedRecipes(GarnishedRecipeTypes.YELLOW_DYE_BLOWING::getType)
-				.catalystStack(ProcessingViaFanCategory.getFan("garnished.yellow_dye_blowing"))
-				.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.YELLOW_MASTIC_RESIN.getBucket().get())
-				.emptyBackground(178, 72)
-				.build("yellow_dye_blowing", YellowDyeBlowingFanCategory::new));
-		allCategories.add(builder(GreenDyeBlowingFanRecipe.class)
-				.addTypedRecipes(GarnishedRecipeTypes.GREEN_DYE_BLOWING::getType)
-				.catalystStack(ProcessingViaFanCategory.getFan("garnished.green_dye_blowing"))
-				.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.GREEN_MASTIC_RESIN.getBucket().get())
-				.emptyBackground(178, 72)
-				.build("green_dye_blowing", GreenDyeBlowingFanCategory::new));
-		allCategories.add(builder(BlueDyeBlowingFanRecipe.class)
-				.addTypedRecipes(GarnishedRecipeTypes.BLUE_DYE_BLOWING::getType)
-				.catalystStack(ProcessingViaFanCategory.getFan("garnished.blue_dye_blowing"))
-				.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.BLUE_MASTIC_RESIN.getBucket().get())
-				.emptyBackground(178, 72)
-				.build("blue_dye_blowing", BlueDyeBlowingFanCategory::new));
-		allCategories.add(builder(PurpleDyeBlowingFanRecipe.class)
-				.addTypedRecipes(GarnishedRecipeTypes.PURPLE_DYE_BLOWING::getType)
-				.catalystStack(ProcessingViaFanCategory.getFan("garnished.purple_dye_blowing"))
-				.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.PURPLE_MASTIC_RESIN.getBucket().get())
-				.emptyBackground(178, 72)
-				.build("purple_dye_blowing", PurpleDyeBlowingFanCategory::new));
+		allCategories.add(
+				builder(OrangeDyeBlowingFanRecipe.class)
+						.addTypedRecipes(GarnishedRecipeTypes.ORANGE_DYE_BLOWING::getType)
+						.catalystStack(ProcessingViaFanCategory.getFan("garnished.orange_dye_blowing"))
+						.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.ORANGE_MASTIC_RESIN.getBucket().get())
+						.emptyBackground(178, 72)
+						.build("orange_dye_blowing", OrangeDyeBlowingFanCategory::new));
+		allCategories.add(
+				builder(YellowDyeBlowingFanRecipe.class)
+						.addTypedRecipes(GarnishedRecipeTypes.YELLOW_DYE_BLOWING::getType)
+						.catalystStack(ProcessingViaFanCategory.getFan("garnished.yellow_dye_blowing"))
+						.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.YELLOW_MASTIC_RESIN.getBucket().get())
+						.emptyBackground(178, 72)
+						.build("yellow_dye_blowing", YellowDyeBlowingFanCategory::new));
+		allCategories.add(
+				builder(GreenDyeBlowingFanRecipe.class)
+						.addTypedRecipes(GarnishedRecipeTypes.GREEN_DYE_BLOWING::getType)
+						.catalystStack(ProcessingViaFanCategory.getFan("garnished.green_dye_blowing"))
+						.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.GREEN_MASTIC_RESIN.getBucket().get())
+						.emptyBackground(178, 72)
+						.build("green_dye_blowing", GreenDyeBlowingFanCategory::new));
+		allCategories.add(
+				builder(LimeDyeBlowingFanRecipe.class)
+						.addTypedRecipes(GarnishedRecipeTypes.LIME_DYE_BLOWING::getType)
+						.catalystStack(ProcessingViaFanCategory.getFan("garnished.lime_dye_blowing"))
+						.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.LIME_MASTIC_RESIN.getBucket().get())
+						.emptyBackground(178, 72)
+						.build("lime_dye_blowing", LimeDyeBlowingFanCategory::new));
+		allCategories.add(
+				builder(BlueDyeBlowingFanRecipe.class)
+						.addTypedRecipes(GarnishedRecipeTypes.BLUE_DYE_BLOWING::getType)
+						.catalystStack(ProcessingViaFanCategory.getFan("garnished.blue_dye_blowing"))
+						.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.BLUE_MASTIC_RESIN.getBucket().get())
+						.emptyBackground(178, 72)
+						.build("blue_dye_blowing", BlueDyeBlowingFanCategory::new));
+		allCategories.add(
+				builder(LightBlueDyeBlowingFanRecipe.class)
+						.addTypedRecipes(GarnishedRecipeTypes.LIGHT_BLUE_DYE_BLOWING::getType)
+						.catalystStack(ProcessingViaFanCategory.getFan("garnished.light_blue_dye_blowing"))
+						.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.LIGHT_BLUE_MASTIC_RESIN.getBucket().get())
+						.emptyBackground(178, 72)
+						.build("light_blue_dye_blowing", LightBlueDyeBlowingFanCategory::new));
+		allCategories.add(
+				builder(CyanDyeBlowingFanRecipe.class)
+						.addTypedRecipes(GarnishedRecipeTypes.CYAN_DYE_BLOWING::getType)
+						.catalystStack(ProcessingViaFanCategory.getFan("garnished.cyan_dye_blowing"))
+						.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.CYAN_MASTIC_RESIN.getBucket().get())
+						.emptyBackground(178, 72)
+						.build("cyan_dye_blowing", CyanDyeBlowingFanCategory::new));
+		allCategories.add(
+				builder(PurpleDyeBlowingFanRecipe.class)
+						.addTypedRecipes(GarnishedRecipeTypes.PURPLE_DYE_BLOWING::getType)
+						.catalystStack(ProcessingViaFanCategory.getFan("garnished.purple_dye_blowing"))
+						.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.PURPLE_MASTIC_RESIN.getBucket().get())
+						.emptyBackground(178, 72)
+						.build("purple_dye_blowing", PurpleDyeBlowingFanCategory::new));
+		allCategories.add(
+				builder(MagentaDyeBlowingFanRecipe.class)
+						.addTypedRecipes(GarnishedRecipeTypes.MAGENTA_DYE_BLOWING::getType)
+						.catalystStack(ProcessingViaFanCategory.getFan("garnished.magenta_dye_blowing"))
+						.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.MAGENTA_MASTIC_RESIN.getBucket().get())
+						.emptyBackground(178, 72)
+						.build("magenta_dye_blowing", MagentaDyeBlowingFanCategory::new));
+		allCategories.add(
+				builder(PinkDyeBlowingFanRecipe.class)
+						.addTypedRecipes(GarnishedRecipeTypes.PINK_DYE_BLOWING::getType)
+						.catalystStack(ProcessingViaFanCategory.getFan("garnished.pink_dye_blowing"))
+						.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.PINK_MASTIC_RESIN.getBucket().get())
+						.emptyBackground(178, 72)
+						.build("pink_dye_blowing", PinkDyeBlowingFanCategory::new));
+		allCategories.add(
+				builder(BlackDyeBlowingFanRecipe.class)
+						.addTypedRecipes(GarnishedRecipeTypes.BLACK_DYE_BLOWING::getType)
+						.catalystStack(ProcessingViaFanCategory.getFan("garnished.black_dye_blowing"))
+						.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.BLACK_MASTIC_RESIN.getBucket().get())
+						.emptyBackground(178, 72)
+						.build("black_dye_blowing", BlackDyeBlowingFanCategory::new));
+		allCategories.add(
+				builder(GrayDyeBlowingFanRecipe.class)
+						.addTypedRecipes(GarnishedRecipeTypes.GRAY_DYE_BLOWING::getType)
+						.catalystStack(ProcessingViaFanCategory.getFan("garnished.gray_dye_blowing"))
+						.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.GRAY_MASTIC_RESIN.getBucket().get())
+						.emptyBackground(178, 72)
+						.build("gray_dye_blowing", GrayDyeBlowingFanCategory::new));
+		allCategories.add(
+				builder(LightGrayDyeBlowingFanRecipe.class)
+						.addTypedRecipes(GarnishedRecipeTypes.LIGHT_GRAY_DYE_BLOWING::getType)
+						.catalystStack(ProcessingViaFanCategory.getFan("garnished.light_gray_dye_blowing"))
+						.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.LIGHT_GRAY_MASTIC_RESIN.getBucket().get())
+						.emptyBackground(178, 72)
+						.build("light_gray_dye_blowing", LightGrayDyeBlowingFanCategory::new));
+		allCategories.add(
+				builder(WhiteDyeBlowingFanRecipe.class)
+						.addTypedRecipes(GarnishedRecipeTypes.WHITE_DYE_BLOWING::getType)
+						.catalystStack(ProcessingViaFanCategory.getFan("garnished.white_dye_blowing"))
+						.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.WHITE_MASTIC_RESIN.getBucket().get())
+						.emptyBackground(178, 72)
+						.build("white_dye_blowing", WhiteDyeBlowingFanCategory::new));
+		allCategories.add(
+				builder(BrownDyeBlowingFanRecipe.class)
+						.addTypedRecipes(GarnishedRecipeTypes.BROWN_DYE_BLOWING::getType)
+						.catalystStack(ProcessingViaFanCategory.getFan("garnished.brown_dye_blowing"))
+						.doubleItemIcon(AllItems.PROPELLER.get(), GarnishedFluids.BROWN_MASTIC_RESIN.getBucket().get())
+						.emptyBackground(178, 72)
+						.build("brown_dye_blowing", BrownDyeBlowingFanCategory::new));
 	}
 }

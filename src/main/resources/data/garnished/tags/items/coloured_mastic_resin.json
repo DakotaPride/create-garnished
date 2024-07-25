@@ -5,7 +5,17 @@
     "garnished:mastic_resin_orange",
     "garnished:mastic_resin_yellow",
     "garnished:mastic_resin_green",
+    "garnished:mastic_resin_lime",
     "garnished:mastic_resin_blue",
-    "garnished:mastic_resin_purple"
+    "garnished:mastic_resin_light_blue",
+    "garnished:mastic_resin_cyan",
+    "garnished:mastic_resin_purple",
+    "garnished:mastic_resin_magenta",
+    "garnished:mastic_resin_pink",
+    "garnished:mastic_resin_black",
+    "garnished:mastic_resin_gray",
+    "garnished:mastic_resin_light_gray",
+    "garnished:mastic_resin_white",
+    "garnished:mastic_resin_brown"
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "type": "garnished:magenta_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "create:seats"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:magenta_seat",
+      "count": 1
+    }
+  ]
+}

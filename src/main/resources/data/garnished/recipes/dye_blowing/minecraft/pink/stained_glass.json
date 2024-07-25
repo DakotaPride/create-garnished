@@ -1,0 +1,19 @@
+{
+  "type": "garnished:pink_dye_blowing",
+  "ingredients": [
+    [
+      {
+        "tag": "forge:stained_glass"
+      },
+      {
+        "item": "minecraft:glass"
+      }
+    ]
+  ],
+  "results": [
+    {
+      "item": "minecraft:pink_stained_glass",
+      "count": 1
+    }
+  ]
+}

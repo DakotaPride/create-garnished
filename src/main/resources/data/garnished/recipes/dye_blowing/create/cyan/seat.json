@@ -1,0 +1,14 @@
+{
+  "type": "garnished:cyan_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "create:seats"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:cyan_seat",
+      "count": 1
+    }
+  ]
+}

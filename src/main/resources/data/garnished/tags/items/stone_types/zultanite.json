@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "#garnished:stone_types/zultanite/basic",
+    "#garnished:stone_types/zultanite/red",
+    "#garnished:stone_types/zultanite/orange",
+    "#garnished:stone_types/zultanite/yellow",
+    "#garnished:stone_types/zultanite/green",
+    "#garnished:stone_types/zultanite/lime",
+    "#garnished:stone_types/zultanite/blue",
+    "#garnished:stone_types/zultanite/light_blue",
+    "#garnished:stone_types/zultanite/cyan",
+    "#garnished:stone_types/zultanite/purple",
+    "#garnished:stone_types/zultanite/magenta",
+    "#garnished:stone_types/zultanite/pink",
+    "#garnished:stone_types/zultanite/black",
+    "#garnished:stone_types/zultanite/gray",
+    "#garnished:stone_types/zultanite/light_gray",
+    "#garnished:stone_types/zultanite/white",
+    "#garnished:stone_types/zultanite/brown"
+  ]
+}

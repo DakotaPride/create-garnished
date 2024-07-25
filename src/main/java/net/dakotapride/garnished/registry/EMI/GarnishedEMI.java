@@ -6,8 +6,6 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-import org.jetbrains.annotations.NotNull;
-
 import com.simibubi.create.AllFluids;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.AllMenuTypes;
@@ -18,7 +16,6 @@ import com.simibubi.create.content.decoration.palettes.AllPaletteStoneTypes;
 import com.simibubi.create.content.fluids.VirtualFluid;
 import com.simibubi.create.foundation.gui.menu.AbstractSimiContainerScreen;
 import com.simibubi.create.foundation.item.TagDependentIngredientItem;
-import com.tterrag.registrate.fabric.SimpleFlowableFluid;
 
 import dev.emi.emi.api.EmiPlugin;
 import dev.emi.emi.api.EmiRegistry;
@@ -30,15 +27,15 @@ import dev.emi.emi.api.stack.Comparison;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.widget.Bounds;
 import net.dakotapride.garnished.CreateGarnished;
+import net.dakotapride.garnished.recipe.MagentaDyeBlowingFanRecipe;
 import net.dakotapride.garnished.registry.GarnishedBlocks;
 import net.dakotapride.garnished.registry.GarnishedFluids;
 import net.dakotapride.garnished.registry.GarnishedRecipeTypes;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Recipe;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.Fluids;
 
 public class GarnishedEMI implements EmiPlugin {
@@ -49,8 +46,18 @@ public class GarnishedEMI implements EmiPlugin {
 	public static final EmiRecipeCategory FAN_ORANGE_DYEING = register("fan_orange_dyeing", DoubleItemIcon.of(AllItems.PROPELLER.get(), GarnishedFluids.ORANGE_MASTIC_RESIN.get().getBucket()));
 	public static final EmiRecipeCategory FAN_YELLOW_DYEING = register("fan_yellow_dyeing", DoubleItemIcon.of(AllItems.PROPELLER.get(), GarnishedFluids.YELLOW_MASTIC_RESIN.get().getBucket()));
 	public static final EmiRecipeCategory FAN_GREEN_DYEING = register("fan_green_dyeing", DoubleItemIcon.of(AllItems.PROPELLER.get(), GarnishedFluids.GREEN_MASTIC_RESIN.get().getBucket()));
+	public static final EmiRecipeCategory FAN_LIME_DYEING = register("fan_lime_dyeing", DoubleItemIcon.of(AllItems.PROPELLER.get(), GarnishedFluids.LIME_MASTIC_RESIN.get().getBucket()));
 	public static final EmiRecipeCategory FAN_BLUE_DYEING = register("fan_blue_dyeing", DoubleItemIcon.of(AllItems.PROPELLER.get(), GarnishedFluids.BLUE_MASTIC_RESIN.get().getBucket()));
+	public static final EmiRecipeCategory FAN_LIGHT_BLUE_DYEING = register("fan_light_blue_dyeing", DoubleItemIcon.of(AllItems.PROPELLER.get(), GarnishedFluids.LIGHT_BLUE_MASTIC_RESIN.get().getBucket()));
+	public static final EmiRecipeCategory FAN_CYAN_DYEING = register("fan_cyan_dyeing", DoubleItemIcon.of(AllItems.PROPELLER.get(), GarnishedFluids.CYAN_MASTIC_RESIN.get().getBucket()));
 	public static final EmiRecipeCategory FAN_PURPLE_DYEING = register("fan_purple_dyeing", DoubleItemIcon.of(AllItems.PROPELLER.get(), GarnishedFluids.PURPLE_MASTIC_RESIN.get().getBucket()));
+	public static final EmiRecipeCategory FAN_MAGENTA_DYEING = register("fan_magenta_dyeing", DoubleItemIcon.of(AllItems.PROPELLER.get(), GarnishedFluids.MAGENTA_MASTIC_RESIN.get().getBucket()));
+	public static final EmiRecipeCategory FAN_PINK_DYEING = register("fan_pink_dyeing", DoubleItemIcon.of(AllItems.PROPELLER.get(), GarnishedFluids.PINK_MASTIC_RESIN.get().getBucket()));
+	public static final EmiRecipeCategory FAN_BLACK_DYEING = register("fan_black_dyeing", DoubleItemIcon.of(AllItems.PROPELLER.get(), GarnishedFluids.BLACK_MASTIC_RESIN.get().getBucket()));
+	public static final EmiRecipeCategory FAN_GRAY_DYEING = register("fan_gray_dyeing", DoubleItemIcon.of(AllItems.PROPELLER.get(), GarnishedFluids.GRAY_MASTIC_RESIN.get().getBucket()));
+	public static final EmiRecipeCategory FAN_LIGHT_GRAY_DYEING = register("fan_light_gray_dyeing", DoubleItemIcon.of(AllItems.PROPELLER.get(), GarnishedFluids.LIGHT_GRAY_MASTIC_RESIN.get().getBucket()));
+	public static final EmiRecipeCategory FAN_WHITE_DYEING = register("fan_white_dyeing", DoubleItemIcon.of(AllItems.PROPELLER.get(), GarnishedFluids.WHITE_MASTIC_RESIN.get().getBucket()));
+	public static final EmiRecipeCategory FAN_BROWN_DYEING = register("fan_brown_dyeing", DoubleItemIcon.of(AllItems.PROPELLER.get(), GarnishedFluids.BROWN_MASTIC_RESIN.get().getBucket()));
 
 	private static EmiRecipeCategory register(String name, EmiRenderable icon) {
 		ResourceLocation id = CreateGarnished.asResource(name);
@@ -88,8 +95,18 @@ public class GarnishedEMI implements EmiPlugin {
 		registry.addWorkstation(FAN_ORANGE_DYEING, FanEmiRecipe.getFan("fan_orange_dyeing"));
 		registry.addWorkstation(FAN_YELLOW_DYEING, FanEmiRecipe.getFan("fan_yellow_dyeing"));
 		registry.addWorkstation(FAN_GREEN_DYEING, FanEmiRecipe.getFan("fan_green_dyeing"));
+		registry.addWorkstation(FAN_LIME_DYEING, FanEmiRecipe.getFan("fan_lime_dyeing"));
 		registry.addWorkstation(FAN_BLUE_DYEING, FanEmiRecipe.getFan("fan_blue_dyeing"));
+		registry.addWorkstation(FAN_LIGHT_BLUE_DYEING, FanEmiRecipe.getFan("fan_light_blue_dyeing"));
+		registry.addWorkstation(FAN_CYAN_DYEING, FanEmiRecipe.getFan("fan_cyan_dyeing"));
 		registry.addWorkstation(FAN_PURPLE_DYEING, FanEmiRecipe.getFan("fan_purple_dyeing"));
+		registry.addWorkstation(FAN_MAGENTA_DYEING, FanEmiRecipe.getFan("fan_magenta_dyeing"));
+		registry.addWorkstation(FAN_PINK_DYEING, FanEmiRecipe.getFan("fan_pink_dyeing"));
+		registry.addWorkstation(FAN_BLACK_DYEING, FanEmiRecipe.getFan("fan_black_dyeing"));
+		registry.addWorkstation(FAN_GRAY_DYEING, FanEmiRecipe.getFan("fan_gray_dyeing"));
+		registry.addWorkstation(FAN_LIGHT_GRAY_DYEING, FanEmiRecipe.getFan("fan_light_gray_dyeing"));
+		registry.addWorkstation(FAN_WHITE_DYEING, FanEmiRecipe.getFan("fan_white_dyeing"));
+		registry.addWorkstation(FAN_BROWN_DYEING, FanEmiRecipe.getFan("fan_brown_dyeing"));
 
 		// RecipeManager manager = registry.getRecipeManager();
 
@@ -98,8 +115,18 @@ public class GarnishedEMI implements EmiPlugin {
 		addAll(registry, GarnishedRecipeTypes.ORANGE_DYE_BLOWING, FanOrangeDyeingEmiRecipe::new);
 		addAll(registry, GarnishedRecipeTypes.YELLOW_DYE_BLOWING, FanYellowDyeingEmiRecipe::new);
 		addAll(registry, GarnishedRecipeTypes.GREEN_DYE_BLOWING, FanGreenDyeingEmiRecipe::new);
+		addAll(registry, GarnishedRecipeTypes.LIME_DYE_BLOWING, FanLimeDyeingEmiRecipe::new);
 		addAll(registry, GarnishedRecipeTypes.BLUE_DYE_BLOWING, FanBlueDyeingEmiRecipe::new);
+		addAll(registry, GarnishedRecipeTypes.LIGHT_BLUE_DYE_BLOWING, FanLightBlueDyeingEmiRecipe::new);
+		addAll(registry, GarnishedRecipeTypes.CYAN_DYE_BLOWING, FanCyanDyeingEmiRecipe::new);
 		addAll(registry, GarnishedRecipeTypes.PURPLE_DYE_BLOWING, FanPurpleDyeingEmiRecipe::new);
+		addAll(registry, GarnishedRecipeTypes.MAGENTA_DYE_BLOWING, FanMagentaDyeingEmiRecipe::new);
+		addAll(registry, GarnishedRecipeTypes.PINK_DYE_BLOWING, FanPinkDyeingEmiRecipe::new);
+		addAll(registry, GarnishedRecipeTypes.BLACK_DYE_BLOWING, FanBlackDyeingEmiRecipe::new);
+		addAll(registry, GarnishedRecipeTypes.GRAY_DYE_BLOWING, FanGrayDyeingEmiRecipe::new);
+		addAll(registry, GarnishedRecipeTypes.LIGHT_GRAY_DYE_BLOWING, FanLightGrayDyeingEmiRecipe::new);
+		addAll(registry, GarnishedRecipeTypes.WHITE_DYE_BLOWING, FanWhiteDyeingEmiRecipe::new);
+		addAll(registry, GarnishedRecipeTypes.BROWN_DYE_BLOWING, FanBrownDyeingEmiRecipe::new);
 
 		// In World Interaction recipes
 
@@ -112,8 +139,18 @@ public class GarnishedEMI implements EmiPlugin {
 		EmiStack orangeMasticResin = EmiStack.of(GarnishedFluids.ORANGE_MASTIC_RESIN.get(), 81000);
 		EmiStack yellowMasticResin = EmiStack.of(GarnishedFluids.YELLOW_MASTIC_RESIN.get(), 81000);
 		EmiStack greenMasticResin = EmiStack.of(GarnishedFluids.GREEN_MASTIC_RESIN.get(), 81000);
+		EmiStack limeMasticResin = EmiStack.of(GarnishedFluids.LIME_MASTIC_RESIN.get(), 81000);
 		EmiStack blueMasticResin = EmiStack.of(GarnishedFluids.BLUE_MASTIC_RESIN.get(), 81000);
+		EmiStack lightBlueMasticResin = EmiStack.of(GarnishedFluids.LIGHT_BLUE_MASTIC_RESIN.get(), 81000);
+		EmiStack cyanMasticResin = EmiStack.of(GarnishedFluids.CYAN_MASTIC_RESIN.get(), 81000);
 		EmiStack purpleMasticResin = EmiStack.of(GarnishedFluids.PURPLE_MASTIC_RESIN.get(), 81000);
+		EmiStack magentaMasticResin = EmiStack.of(GarnishedFluids.MAGENTA_MASTIC_RESIN.get(), 81000);
+		EmiStack pinkMasticResin = EmiStack.of(GarnishedFluids.PINK_MASTIC_RESIN.get(), 81000);
+		EmiStack blackMasticResin = EmiStack.of(GarnishedFluids.BLACK_MASTIC_RESIN.get(), 81000);
+		EmiStack grayMasticResin = EmiStack.of(GarnishedFluids.GRAY_MASTIC_RESIN.get(), 81000);
+		EmiStack lightGrayMasticResin = EmiStack.of(GarnishedFluids.LIGHT_GRAY_MASTIC_RESIN.get(), 81000);
+		EmiStack whiteMasticResin = EmiStack.of(GarnishedFluids.WHITE_MASTIC_RESIN.get(), 81000);
+		EmiStack brownMasticResin = EmiStack.of(GarnishedFluids.BROWN_MASTIC_RESIN.get(), 81000);
 		EmiStack lava = EmiStack.of(Fluids.LAVA, 81000);
 		EmiStack garnishCatalyst = garnish.copy().setRemainder(garnish);
 		EmiStack peanutOilCatalyst = peanutOil.copy().setRemainder(peanutOil);
@@ -124,8 +161,18 @@ public class GarnishedEMI implements EmiPlugin {
 		EmiStack orangeMasticResinCatalyst = orangeMasticResin.copy().setRemainder(orangeMasticResin);
 		EmiStack yellowMasticResinCatalyst = yellowMasticResin.copy().setRemainder(yellowMasticResin);
 		EmiStack greenMasticResinCatalyst = greenMasticResin.copy().setRemainder(greenMasticResin);
+		EmiStack limeMasticResinCatalyst = limeMasticResin.copy().setRemainder(limeMasticResin);
 		EmiStack blueMasticResinCatalyst = blueMasticResin.copy().setRemainder(blueMasticResin);
+		EmiStack lightBlueMasticResinCatalyst = lightBlueMasticResin.copy().setRemainder(lightBlueMasticResin);
+		EmiStack cyanMasticResinCatalyst = cyanMasticResin.copy().setRemainder(cyanMasticResin);
 		EmiStack purpleMasticResinCatalyst = purpleMasticResin.copy().setRemainder(purpleMasticResin);
+		EmiStack magentaMasticResinCatalyst = magentaMasticResin.copy().setRemainder(magentaMasticResin);
+		EmiStack pinkMasticResinCatalyst = pinkMasticResin.copy().setRemainder(pinkMasticResin);
+		EmiStack blackMasticResinCatalyst = blackMasticResin.copy().setRemainder(blackMasticResin);
+		EmiStack grayMasticResinCatalyst = grayMasticResin.copy().setRemainder(grayMasticResin);
+		EmiStack lightGrayMasticResinCatalyst = lightGrayMasticResin.copy().setRemainder(lightGrayMasticResin);
+		EmiStack whiteMasticResinCatalyst = whiteMasticResin.copy().setRemainder(whiteMasticResin);
+		EmiStack brownMasticResinCatalyst = brownMasticResin.copy().setRemainder(brownMasticResin);
 		EmiStack lavaCatalyst = lava.copy().setRemainder(lava);
 
 		// addFluidInteractionRecipe(registry, "garnished/calcite", GarnishedFluids.GARNISH.get(),
@@ -139,10 +186,10 @@ public class GarnishedEMI implements EmiPlugin {
 		// addFluidInteractionRecipe(registry, "garnished/ochrum", GarnishedFluids.APPLE_CIDER.get(),
 		//				Fluids.LAVA, AllPaletteStoneTypes.OCHRUM.getBaseBlock().get());
 		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
-				.id(synthetic("world/fluid_interaction", "garnished/ochrum"))
+				.id(synthetic("world/fluid_interaction", "garnished/carnotite"))
 				.leftInput(appleCiderCatalyst)
 				.rightInput(lavaCatalyst, false)
-				.output(EmiStack.of(AllPaletteStoneTypes.OCHRUM.getBaseBlock().get()))
+				.output(EmiStack.of(GarnishedBlocks.CARNOTITE.get()))
 				.build());
 		//		addFluidInteractionRecipe(registry, "garnished/dripstone", GarnishedFluids.PEANUT_OIL.get(),
 		//				Fluids.LAVA, AllPaletteStoneTypes.DRIPSTONE.getBaseBlock().get());
@@ -162,64 +209,38 @@ public class GarnishedEMI implements EmiPlugin {
 				.build());
 		//		addFluidInteractionRecipe(registry, "garnished/tuff", GarnishedFluids.MASTIC_RESIN.get(),
 		//				Fluids.LAVA, AllPaletteStoneTypes.TUFF.getBaseBlock().get());
-		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
-				.id(synthetic("world/fluid_interaction", "garnished/tuff"))
-				.leftInput(masticResinCatalyst)
-				.rightInput(lavaCatalyst, false)
-				.output(EmiStack.of(AllPaletteStoneTypes.TUFF.getBaseBlock().get()))
-				.build());
+		addZultaniteInteraction("", registry, masticResinCatalyst, lavaCatalyst, GarnishedBlocks.ZULTANITE.get());
 		//		addFluidInteractionRecipe(registry, "garnished/crimsite", GarnishedFluids.RED_MASTIC_RESIN.get(),
 		//				Fluids.LAVA, AllPaletteStoneTypes.CRIMSITE.getBaseBlock().get());
-		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
-				.id(synthetic("world/fluid_interaction", "garnished/crimsite"))
-				.leftInput(redMasticResinCatalyst)
-				.rightInput(lavaCatalyst, false)
-				.output(EmiStack.of(AllPaletteStoneTypes.CRIMSITE.getBaseBlock().get()))
-				.build());
-		//		addFluidInteractionRecipe(registry, "garnished/ritualistic_stone", GarnishedFluids.ORANGE_MASTIC_RESIN.get(),
-		//				Fluids.LAVA, GarnishedBlocks.RITUALISTIC_STONE.get());
-		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
-				.id(synthetic("world/fluid_interaction", "garnished/ritualistic_stone"))
-				.leftInput(orangeMasticResinCatalyst)
-				.rightInput(lavaCatalyst, false)
-				.output(EmiStack.of(GarnishedBlocks.RITUALISTIC_STONE.get()))
-				.build());
-		//		addFluidInteractionRecipe(registry, "garnished/carnotite", GarnishedFluids.YELLOW_MASTIC_RESIN.get(),
-		//				Fluids.LAVA, GarnishedBlocks.CARNOTITE.get());
-		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
-				.id(synthetic("world/fluid_interaction", "garnished/carnotite"))
-				.leftInput(yellowMasticResinCatalyst)
-				.rightInput(lavaCatalyst, false)
-				.output(EmiStack.of(GarnishedBlocks.CARNOTITE.get()))
-				.build());
-		//		addFluidInteractionRecipe(registry, "garnished/veridium", GarnishedFluids.GREEN_MASTIC_RESIN.get(),
-		//				Fluids.LAVA, AllPaletteStoneTypes.VERIDIUM.getBaseBlock().get());
-		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
-				.id(synthetic("world/fluid_interaction", "garnished/veridium"))
-				.leftInput(greenMasticResinCatalyst)
-				.rightInput(lavaCatalyst, false)
-				.output(EmiStack.of(AllPaletteStoneTypes.VERIDIUM.getBaseBlock().get()))
-				.build());
-		//		addFluidInteractionRecipe(registry, "garnished/asurine", GarnishedFluids.BLUE_MASTIC_RESIN.get(),
-		//				Fluids.LAVA, AllPaletteStoneTypes.ASURINE.getBaseBlock().get());
-		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
-				.id(synthetic("world/fluid_interaction", "garnished/asurine"))
-				.leftInput(blueMasticResinCatalyst)
-				.rightInput(lavaCatalyst, false)
-				.output(EmiStack.of(AllPaletteStoneTypes.ASURINE.getBaseBlock().get()))
-				.build());
-		//		addFluidInteractionRecipe(registry, "garnished/abyssal_stone", GarnishedFluids.PURPLE_MASTIC_RESIN.get(),
-		//				Fluids.LAVA, GarnishedBlocks.ABYSSAL_STONE.get());
-		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
-				.id(synthetic("world/fluid_interaction", "garnished/abyssal_stone"))
-				.leftInput(purpleMasticResinCatalyst)
-				.rightInput(lavaCatalyst, false)
-				.output(EmiStack.of(GarnishedBlocks.ABYSSAL_STONE.get()))
-				.build());
+		addZultaniteInteraction("red", registry, redMasticResinCatalyst, lavaCatalyst, GarnishedBlocks.RED_ZULTANITE.get());
+		addZultaniteInteraction("orange", registry, orangeMasticResinCatalyst, lavaCatalyst, GarnishedBlocks.ORANGE_ZULTANITE.get());
+		addZultaniteInteraction("yellow", registry, yellowMasticResinCatalyst, lavaCatalyst, GarnishedBlocks.YELLOW_ZULTANITE.get());
+		addZultaniteInteraction("green", registry, greenMasticResinCatalyst, lavaCatalyst, GarnishedBlocks.GREEN_ZULTANITE.get());
+		addZultaniteInteraction("lime", registry, limeMasticResinCatalyst, lavaCatalyst, GarnishedBlocks.LIME_ZULTANITE.get());
+		addZultaniteInteraction("blue", registry, blueMasticResinCatalyst, lavaCatalyst, GarnishedBlocks.BLUE_ZULTANITE.get());
+		addZultaniteInteraction("light_blue", registry, lightBlueMasticResinCatalyst, lavaCatalyst, GarnishedBlocks.LIGHT_BLUE_ZULTANITE.get());
+		addZultaniteInteraction("cyan", registry, cyanMasticResinCatalyst, lavaCatalyst, GarnishedBlocks.CYAN_ZULTANITE.get());
+		addZultaniteInteraction("purple", registry, purpleMasticResinCatalyst, lavaCatalyst, GarnishedBlocks.PURPLE_ZULTANITE.get());
+		addZultaniteInteraction("magenta", registry, magentaMasticResinCatalyst, lavaCatalyst, GarnishedBlocks.MAGENTA_ZULTANITE.get());
+		addZultaniteInteraction("pink", registry, pinkMasticResinCatalyst, lavaCatalyst, GarnishedBlocks.PINK_ZULTANITE.get());
+		addZultaniteInteraction("black", registry, blackMasticResinCatalyst, lavaCatalyst, GarnishedBlocks.BLACK_ZULTANITE.get());
+		addZultaniteInteraction("gray", registry, grayMasticResinCatalyst, lavaCatalyst, GarnishedBlocks.GRAY_ZULTANITE.get());
+		addZultaniteInteraction("light_gray", registry, lightGrayMasticResinCatalyst, lavaCatalyst, GarnishedBlocks.LIGHT_GRAY_ZULTANITE.get());
+		addZultaniteInteraction("white", registry, whiteMasticResinCatalyst, lavaCatalyst, GarnishedBlocks.WHITE_ZULTANITE.get());
+		addZultaniteInteraction("brown", registry, brownMasticResinCatalyst, lavaCatalyst, GarnishedBlocks.BROWN_ZULTANITE.get());
 
 		// Introspective recipes based on present stacks need to make sure
 		// all stacks are populated by other plugins
 		// registry.addDeferredRecipes(this::addDeferredRecipes);
+	}
+
+	private static void addZultaniteInteraction(String colour, EmiRegistry registry, EmiStack catalyst, EmiStack catalyst1, ItemLike result) {
+		addRecipeSafe(registry, () -> EmiWorldInteractionRecipe.builder()
+				.id(synthetic("world/fluid_interaction", "garnished/" + (colour == "" ? colour : colour + "_") + "zultanite"))
+				.leftInput(catalyst)
+				.rightInput(catalyst1, false)
+				.output(EmiStack.of(result))
+				.build());
 	}
 
 	private static void addRecipeSafe(EmiRegistry registry, Supplier<EmiRecipe> supplier) {

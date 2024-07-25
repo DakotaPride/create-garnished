@@ -2,7 +2,7 @@
   "type": "create:item_application",
   "ingredients": [
     {
-      "item": "garnished:carnotite_bricks_wall"
+      "item": "garnished:carnotite_brick_wall"
     },
     {
       "item": "garnished:volatile_dust"
@@ -10,7 +10,7 @@
   ],
   "results": [
     {
-      "item": "garnished:unstable_stone_bricks_wall"
+      "item": "garnished:unstable_stone_brick_wall"
     }
   ]
 }

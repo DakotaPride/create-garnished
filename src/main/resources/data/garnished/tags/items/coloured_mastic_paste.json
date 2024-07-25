@@ -5,7 +5,17 @@
     "garnished:mastic_paste_orange",
     "garnished:mastic_paste_yellow",
     "garnished:mastic_paste_green",
+    "garnished:mastic_paste_lime",
     "garnished:mastic_paste_blue",
-    "garnished:mastic_paste_purple"
+    "garnished:mastic_paste_light_blue",
+    "garnished:mastic_paste_cyan",
+    "garnished:mastic_paste_purple",
+    "garnished:mastic_paste_magenta",
+    "garnished:mastic_paste_pink",
+    "garnished:mastic_paste_black",
+    "garnished:mastic_paste_gray",
+    "garnished:mastic_paste_light_gray",
+    "garnished:mastic_paste_white",
+    "garnished:mastic_paste_brown"
   ]
 }

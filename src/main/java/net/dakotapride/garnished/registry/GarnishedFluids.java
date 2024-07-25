@@ -66,10 +66,40 @@ public class GarnishedFluids {
 	public static final FluidEntry<SimpleFlowableFluid.Flowing> ORANGE_MASTIC_RESIN;
 	public static final FluidEntry<SimpleFlowableFluid.Flowing> YELLOW_MASTIC_RESIN;
 	public static final FluidEntry<SimpleFlowableFluid.Flowing> GREEN_MASTIC_RESIN;
+	public static final FluidEntry<SimpleFlowableFluid.Flowing> LIME_MASTIC_RESIN;
 	public static final FluidEntry<SimpleFlowableFluid.Flowing> BLUE_MASTIC_RESIN;
+	public static final FluidEntry<SimpleFlowableFluid.Flowing> LIGHT_BLUE_MASTIC_RESIN;
+	public static final FluidEntry<SimpleFlowableFluid.Flowing> CYAN_MASTIC_RESIN;
 	public static final FluidEntry<SimpleFlowableFluid.Flowing> PURPLE_MASTIC_RESIN;
+	public static final FluidEntry<SimpleFlowableFluid.Flowing> MAGENTA_MASTIC_RESIN;
+	public static final FluidEntry<SimpleFlowableFluid.Flowing> PINK_MASTIC_RESIN;
+	public static final FluidEntry<SimpleFlowableFluid.Flowing> BLACK_MASTIC_RESIN;
+	public static final FluidEntry<SimpleFlowableFluid.Flowing> GRAY_MASTIC_RESIN;
+	public static final FluidEntry<SimpleFlowableFluid.Flowing> LIGHT_GRAY_MASTIC_RESIN;
+	public static final FluidEntry<SimpleFlowableFluid.Flowing> WHITE_MASTIC_RESIN;
+	public static final FluidEntry<SimpleFlowableFluid.Flowing> BROWN_MASTIC_RESIN;
 	public static final FluidEntry<SimpleFlowableFluid.Flowing> DRAGON_BREATH;
 	public static final FluidEntry<SimpleFlowableFluid.Flowing> SWEET_TEA;
+
+	public static FluidEntry<SimpleFlowableFluid.Flowing> masticResinRegistration(String colour0) {
+		return REGISTRATE
+				.fluid((colour0 == "" ? colour0 : colour0 + "_") + "mastic_resin",
+						createLocation((colour0 == "" ? colour0 : colour0 + "_") + "mastic_resin", false),
+						createLocation((colour0 == "" ? colour0 : colour0 + "_") + "mastic_resin", true)
+				)
+				.fluidProperties(p -> p.levelDecreasePerBlock(2)
+						.tickRate(25)
+						.flowSpeed(3)
+						.blastResistance(100f))
+				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished." + (colour0 == "" ? colour0 : colour0 + "_") + "mastic_resin", 1500, 1400))
+				.onRegisterAfter(Registry.ITEM_REGISTRY, fluid -> {
+					Fluid source = fluid.getSource();
+					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
+							new FullItemFluidStorage(context, bucket -> ItemVariant.of(BUCKET), FluidVariant.of(source), FluidConstants.BUCKET));
+					FluidStorage.combinedItemApiProvider(BUCKET).register(context ->
+							new EmptyItemFluidStorage(context, bucket -> ItemVariant.of(source.getBucket()), source, FluidConstants.BUCKET));
+				}).register();
+	}
 
 	static  {
 		GARNISH = REGISTRATE
@@ -141,124 +171,24 @@ public class GarnishedFluids {
 							new EmptyItemFluidStorage(context, bucket -> ItemVariant.of(source.getBucket()), source, FluidConstants.BUCKET));
 				}).register();
 
-		MASTIC_RESIN = REGISTRATE
-				.fluid("mastic_resin",
-						createLocation("mastic_resin", false),
-						createLocation("mastic_resin", true)
-				)
-				.fluidProperties(p -> p.levelDecreasePerBlock(2)
-						.tickRate(25)
-						.flowSpeed(3)
-						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.mastic_resin", 1500, 1400))
-				.onRegisterAfter(Registry.ITEM.key(), fluid -> {
-					Fluid source = fluid.getSource();
-					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
-							new FullItemFluidStorage(context, bucket -> ItemVariant.of(BUCKET), FluidVariant.of(source), FluidConstants.BUCKET));
-					FluidStorage.combinedItemApiProvider(BUCKET).register(context ->
-							new EmptyItemFluidStorage(context, bucket -> ItemVariant.of(source.getBucket()), source, FluidConstants.BUCKET));
-				}).register();
-		RED_MASTIC_RESIN = REGISTRATE
-				.fluid("red_mastic_resin",
-						createLocation("red_mastic_resin", false),
-						createLocation("red_mastic_resin", true)
-				)
-				.fluidProperties(p -> p.levelDecreasePerBlock(2)
-						.tickRate(25)
-						.flowSpeed(3)
-						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.red_mastic_resin", 1500, 1400))
-				.onRegisterAfter(Registry.ITEM.key(), fluid -> {
-					Fluid source = fluid.getSource();
-					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
-							new FullItemFluidStorage(context, bucket -> ItemVariant.of(BUCKET), FluidVariant.of(source), FluidConstants.BUCKET));
-					FluidStorage.combinedItemApiProvider(BUCKET).register(context ->
-							new EmptyItemFluidStorage(context, bucket -> ItemVariant.of(source.getBucket()), source, FluidConstants.BUCKET));
-				}).register();
-		ORANGE_MASTIC_RESIN = REGISTRATE
-				.fluid("orange_mastic_resin",
-						createLocation("orange_mastic_resin", false),
-						createLocation("orange_mastic_resin", true)
-				)
-				.fluidProperties(p -> p.levelDecreasePerBlock(2)
-						.tickRate(25)
-						.flowSpeed(3)
-						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.orange_mastic_resin", 1500, 1400))
-				.onRegisterAfter(Registry.ITEM.key(), fluid -> {
-					Fluid source = fluid.getSource();
-					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
-							new FullItemFluidStorage(context, bucket -> ItemVariant.of(BUCKET), FluidVariant.of(source), FluidConstants.BUCKET));
-					FluidStorage.combinedItemApiProvider(BUCKET).register(context ->
-							new EmptyItemFluidStorage(context, bucket -> ItemVariant.of(source.getBucket()), source, FluidConstants.BUCKET));
-				}).register();
-		YELLOW_MASTIC_RESIN = REGISTRATE
-				.fluid("yellow_mastic_resin",
-						createLocation("yellow_mastic_resin", false),
-						createLocation("yellow_mastic_resin", true)
-				)
-				.fluidProperties(p -> p.levelDecreasePerBlock(2)
-						.tickRate(25)
-						.flowSpeed(3)
-						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.yellow_mastic_resin", 1500, 1400))
-				.onRegisterAfter(Registry.ITEM.key(), fluid -> {
-					Fluid source = fluid.getSource();
-					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
-							new FullItemFluidStorage(context, bucket -> ItemVariant.of(BUCKET), FluidVariant.of(source), FluidConstants.BUCKET));
-					FluidStorage.combinedItemApiProvider(BUCKET).register(context ->
-							new EmptyItemFluidStorage(context, bucket -> ItemVariant.of(source.getBucket()), source, FluidConstants.BUCKET));
-				}).register();
-		GREEN_MASTIC_RESIN = REGISTRATE
-				.fluid("green_mastic_resin",
-						createLocation("green_mastic_resin", false),
-						createLocation("green_mastic_resin", true)
-				)
-				.fluidProperties(p -> p.levelDecreasePerBlock(2)
-						.tickRate(25)
-						.flowSpeed(3)
-						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.green_mastic_resin", 1500, 1400))
-				.onRegisterAfter(Registry.ITEM.key(), fluid -> {
-					Fluid source = fluid.getSource();
-					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
-							new FullItemFluidStorage(context, bucket -> ItemVariant.of(BUCKET), FluidVariant.of(source), FluidConstants.BUCKET));
-					FluidStorage.combinedItemApiProvider(BUCKET).register(context ->
-							new EmptyItemFluidStorage(context, bucket -> ItemVariant.of(source.getBucket()), source, FluidConstants.BUCKET));
-				}).register();
-		BLUE_MASTIC_RESIN = REGISTRATE
-				.fluid("blue_mastic_resin",
-						createLocation("blue_mastic_resin", false),
-						createLocation("blue_mastic_resin", true)
-				)
-				.fluidProperties(p -> p.levelDecreasePerBlock(2)
-						.tickRate(25)
-						.flowSpeed(3)
-						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.blue_mastic_resin", 1500, 1400))
-				.onRegisterAfter(Registry.ITEM.key(), fluid -> {
-					Fluid source = fluid.getSource();
-					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
-							new FullItemFluidStorage(context, bucket -> ItemVariant.of(BUCKET), FluidVariant.of(source), FluidConstants.BUCKET));
-					FluidStorage.combinedItemApiProvider(BUCKET).register(context ->
-							new EmptyItemFluidStorage(context, bucket -> ItemVariant.of(source.getBucket()), source, FluidConstants.BUCKET));
-				}).register();
-		PURPLE_MASTIC_RESIN = REGISTRATE
-				.fluid("purple_mastic_resin",
-						createLocation("purple_mastic_resin", false),
-						createLocation("purple_mastic_resin", true)
-				)
-				.fluidProperties(p -> p.levelDecreasePerBlock(2)
-						.tickRate(25)
-						.flowSpeed(3))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.purple_mastic_resin", 1500, 1400))
-				.onRegisterAfter(Registry.ITEM.key(), fluid -> {
-					Fluid source = fluid.getSource();
-					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
-							new FullItemFluidStorage(context, bucket -> ItemVariant.of(BUCKET), FluidVariant.of(source), FluidConstants.BUCKET));
-					FluidStorage.combinedItemApiProvider(BUCKET).register(context ->
-							new EmptyItemFluidStorage(context, bucket -> ItemVariant.of(source.getBucket()), source, FluidConstants.BUCKET));
-				}).register();
+		MASTIC_RESIN = masticResinRegistration("");
+		RED_MASTIC_RESIN = masticResinRegistration("red");
+		ORANGE_MASTIC_RESIN = masticResinRegistration("orange");
+		YELLOW_MASTIC_RESIN = masticResinRegistration("yellow");
+		GREEN_MASTIC_RESIN = masticResinRegistration("green");
+		LIME_MASTIC_RESIN = masticResinRegistration("lime");
+		BLUE_MASTIC_RESIN = masticResinRegistration("blue");
+		LIGHT_BLUE_MASTIC_RESIN = masticResinRegistration("light_blue");
+		CYAN_MASTIC_RESIN = masticResinRegistration("cyan");
+		PURPLE_MASTIC_RESIN = masticResinRegistration("purple");
+		MAGENTA_MASTIC_RESIN = masticResinRegistration("magenta");
+		PINK_MASTIC_RESIN = masticResinRegistration("pink");
+		BLACK_MASTIC_RESIN = masticResinRegistration("black");
+		GRAY_MASTIC_RESIN = masticResinRegistration("gray");
+		LIGHT_GRAY_MASTIC_RESIN = masticResinRegistration("light_gray");
+		WHITE_MASTIC_RESIN = masticResinRegistration("white");
+		BROWN_MASTIC_RESIN = masticResinRegistration("brown");
+
 		DRAGON_BREATH = REGISTRATE
 				.fluid("dragon_breath",
 						createLocation("dragon_breath", false),

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "garnished:block/magenta_smooth_zultanite"
+  }
+}

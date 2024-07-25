@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "blue_zultanite_variants",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:blue_zultanite_bricks"
+    }
+  },
+  "result": {
+    "item": "garnished:blue_zultanite_brick_wall",
+    "count": 6
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "garnished:pink_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "create:seats"
+    }
+  ],
+  "results": [
+    {
+      "item": "create:pink_seat",
+      "count": 1
+    }
+  ]
+}

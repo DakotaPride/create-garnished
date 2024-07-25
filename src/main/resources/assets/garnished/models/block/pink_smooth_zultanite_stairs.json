@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "garnished:block/pink_smooth_zultanite",
+    "side": "garnished:block/pink_smooth_zultanite",
+    "top": "garnished:block/pink_smooth_zultanite"
+  }
+}

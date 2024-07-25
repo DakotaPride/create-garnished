@@ -1,0 +1,14 @@
+{
+  "type": "garnished:light_blue_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:wool"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:light_blue_wool",
+      "count": 1
+    }
+  ]
+}

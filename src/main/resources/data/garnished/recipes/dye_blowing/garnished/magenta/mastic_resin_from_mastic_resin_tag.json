@@ -1,0 +1,14 @@
+{
+  "type": "garnished:magenta_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "garnished:mastic_resin"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:mastic_resin_magenta",
+      "count": 1
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "type": "create:filling",
   "ingredients": [
     {
-      "item": "garnished:unstable_stone_bricks_wall"
+      "item": "garnished:unstable_stone_brick_wall"
     },
     {
       "amount": 20250,
@@ -12,7 +12,7 @@
   ],
   "results": [
     {
-      "item": "garnished:dragon_stone_bricks_wall"
+      "item": "garnished:dragon_stone_brick_wall"
     }
   ]
 }

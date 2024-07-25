@@ -1,0 +1,14 @@
+{
+  "type": "garnished:gray_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:glazed_terracotta"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:gray_glazed_terracotta",
+      "count": 1
+    }
+  ]
+}

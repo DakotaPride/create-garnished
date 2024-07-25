@@ -1,0 +1,19 @@
+{
+  "type": "garnished:orange_dye_blowing",
+  "ingredients": [
+    [
+      {
+        "tag": "forge:stained_glass"
+      },
+      {
+        "item": "minecraft:glass"
+      }
+    ]
+  ],
+  "results": [
+    {
+      "item": "minecraft:orange_stained_glass",
+      "count": 1
+    }
+  ]
+}

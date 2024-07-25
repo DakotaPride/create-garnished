@@ -1,0 +1,14 @@
+{
+  "type": "garnished:pink_dye_blowing",
+  "ingredients": [
+    {
+      "tag": "minecraft:banners"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:pink_banner",
+      "count": 1
+    }
+  ]
+}
