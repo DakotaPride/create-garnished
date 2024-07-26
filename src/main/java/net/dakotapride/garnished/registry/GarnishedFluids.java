@@ -1,16 +1,16 @@
 package net.dakotapride.garnished.registry;
 
-import com.simibubi.create.AllTags;
+import static net.minecraft.world.item.Items.BUCKET;
+
+import javax.annotation.Nullable;
+
+import com.simibubi.create.AllFluids;
 import com.simibubi.create.content.decoration.palettes.AllPaletteStoneTypes;
 import com.simibubi.create.foundation.data.CreateRegistrate;
-
 import com.simibubi.create.foundation.fluid.FluidHelper;
 import com.simibubi.create.foundation.utility.Iterate;
-import com.simibubi.create.infrastructure.config.AllConfigs;
 import com.tterrag.registrate.fabric.SimpleFlowableFluid;
-
 import com.tterrag.registrate.util.entry.FluidEntry;
-
 import com.tterrag.registrate.util.nullness.NonNullSupplier;
 
 import io.github.fabricators_of_create.porting_lib.event.common.FluidPlaceBlockCallback;
@@ -25,8 +25,8 @@ import net.fabricmc.fabric.api.transfer.v1.fluid.base.FullItemFluidStorage;
 import net.fabricmc.fabric.api.transfer.v1.item.ItemVariant;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
-import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.world.level.Level;
@@ -36,12 +36,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Fluid;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.level.material.FluidState;
-
-import javax.annotation.Nullable;
-
-import static net.minecraft.world.item.Items.BUCKET;
 
 @SuppressWarnings("UnstableApiUsage")
 public class GarnishedFluids {
@@ -275,36 +270,70 @@ public class GarnishedFluids {
 
 	@Nullable
 	public static BlockState getLavaInteraction(FluidState fluidState) {
-		lavaInteraction(fluidState, GARNISH.get(), AllPaletteStoneTypes.CALCITE.getBaseBlock().get());
-		lavaInteraction(fluidState, PEANUT_OIL.get(), AllPaletteStoneTypes.DRIPSTONE.getBaseBlock().get());
-		lavaInteraction(fluidState, APPLE_CIDER.get(), GarnishedBlocks.CARNOTITE.get());
-		lavaInteraction(fluidState, CASHEW_MIXTURE.get(), Blocks.END_STONE);
+		// Fluids.lavaInteraction(fluidState, GARNISH.get(), AllPaletteStoneTypes.CALCITE.getBaseBlock().get());
+		if (fluidState.is(GARNISH.get()))
+			return AllPaletteStoneTypes.CALCITE.getBaseBlock().get().defaultBlockState();
+		// Fluids.lavaInteraction(fluidState, PEANUT_OIL.get(), AllPaletteStoneTypes.DRIPSTONE.getBaseBlock().get());
+		if (fluidState.is(PEANUT_OIL.get()))
+			return AllPaletteStoneTypes.DRIPSTONE.getBaseBlock().get().defaultBlockState();
+		// Fluids.lavaInteraction(fluidState, APPLE_CIDER.get(), GarnishedBlocks.CARNOTITE.get());
+		if (fluidState.is(APPLE_CIDER.get()))
+			return GarnishedBlocks.CARNOTITE.getDefaultState();
+		// Fluids.lavaInteraction(fluidState, CASHEW_MIXTURE.get(), Blocks.END_STONE);
+		if (fluidState.is(PEANUT_OIL.get()))
+			return Blocks.END_STONE.defaultBlockState();
 
-		lavaInteraction(fluidState, MASTIC_RESIN.get(), GarnishedBlocks.ZULTANITE.get());
-		lavaInteraction(fluidState, RED_MASTIC_RESIN.get(), GarnishedBlocks.RED_ZULTANITE.get());
-		lavaInteraction(fluidState, ORANGE_MASTIC_RESIN.get(), GarnishedBlocks.ORANGE_ZULTANITE.get());
-		lavaInteraction(fluidState, YELLOW_MASTIC_RESIN.get(), GarnishedBlocks.YELLOW_ZULTANITE.get());
-		lavaInteraction(fluidState, GREEN_MASTIC_RESIN.get(), GarnishedBlocks.GREEN_ZULTANITE.get());
-		lavaInteraction(fluidState, LIME_MASTIC_RESIN.get(), GarnishedBlocks.LIME_ZULTANITE.get());
-		lavaInteraction(fluidState, BLUE_MASTIC_RESIN.get(), GarnishedBlocks.BLUE_ZULTANITE.get());
-		lavaInteraction(fluidState, LIGHT_BLUE_MASTIC_RESIN.get(), GarnishedBlocks.LIGHT_BLUE_ZULTANITE.get());
-		lavaInteraction(fluidState, CYAN_MASTIC_RESIN.get(), GarnishedBlocks.CYAN_ZULTANITE.get());
-		lavaInteraction(fluidState, PURPLE_MASTIC_RESIN.get(), GarnishedBlocks.PURPLE_ZULTANITE.get());
-		lavaInteraction(fluidState, MAGENTA_MASTIC_RESIN.get(), GarnishedBlocks.MAGENTA_ZULTANITE.get());
-		lavaInteraction(fluidState, PINK_MASTIC_RESIN.get(), GarnishedBlocks.PINK_ZULTANITE.get());
-		lavaInteraction(fluidState, BLACK_MASTIC_RESIN.get(), GarnishedBlocks.BLACK_ZULTANITE.get());
-		lavaInteraction(fluidState, GRAY_MASTIC_RESIN.get(), GarnishedBlocks.GRAY_ZULTANITE.get());
-		lavaInteraction(fluidState, LIGHT_GRAY_MASTIC_RESIN.get(), GarnishedBlocks.LIGHT_GRAY_ZULTANITE.get());
-		lavaInteraction(fluidState, WHITE_MASTIC_RESIN.get(), GarnishedBlocks.WHITE_ZULTANITE.get());
-		lavaInteraction(fluidState, BROWN_MASTIC_RESIN.get(), GarnishedBlocks.BROWN_ZULTANITE.get());
-
-		return null;
-	}
-
-	static BlockState lavaInteraction(FluidState fluidState, Fluid inputFluid, Block block) {
-		Fluid fluid = fluidState.getType();
-		if (fluid.isSame(inputFluid))
-			return block.defaultBlockState();
+		// Fluids.lavaInteraction(fluidState, MASTIC_RESIN.get(), GarnishedBlocks.ZULTANITE.get());
+		if (fluidState.is(MASTIC_RESIN.get()))
+			return GarnishedBlocks.ZULTANITE.getDefaultState();
+		// Fluids.lavaInteraction(fluidState, RED_MASTIC_RESIN.get(), GarnishedBlocks.RED_ZULTANITE.get());
+		if (fluidState.is(RED_MASTIC_RESIN.get()))
+			return GarnishedBlocks.RED_ZULTANITE.getDefaultState();
+		// Fluids.lavaInteraction(fluidState, ORANGE_MASTIC_RESIN.get(), GarnishedBlocks.ORANGE_ZULTANITE.get());
+		if (fluidState.is(ORANGE_MASTIC_RESIN.get()))
+			return GarnishedBlocks.ORANGE_ZULTANITE.getDefaultState();
+		// Fluids.lavaInteraction(fluidState, YELLOW_MASTIC_RESIN.get(), GarnishedBlocks.YELLOW_ZULTANITE.get());
+		if (fluidState.is(YELLOW_MASTIC_RESIN.get()))
+			return GarnishedBlocks.YELLOW_ZULTANITE.getDefaultState();
+		// Fluids.lavaInteraction(fluidState, GREEN_MASTIC_RESIN.get(), GarnishedBlocks.GREEN_ZULTANITE.get());
+		if (fluidState.is(GREEN_MASTIC_RESIN.get()))
+			return GarnishedBlocks.GREEN_ZULTANITE.getDefaultState();
+		// Fluids.lavaInteraction(fluidState, LIME_MASTIC_RESIN.get(), GarnishedBlocks.LIME_ZULTANITE.get());
+		if (fluidState.is(LIME_MASTIC_RESIN.get()))
+			return GarnishedBlocks.LIME_ZULTANITE.getDefaultState();
+		// Fluids.lavaInteraction(fluidState, BLUE_MASTIC_RESIN.get(), GarnishedBlocks.BLUE_ZULTANITE.get());
+		if (fluidState.is(BLUE_MASTIC_RESIN.get()))
+			return GarnishedBlocks.BLUE_ZULTANITE.getDefaultState();
+		// Fluids.lavaInteraction(fluidState, LIGHT_BLUE_MASTIC_RESIN.get(), GarnishedBlocks.LIGHT_BLUE_ZULTANITE.get());
+		if (fluidState.is(LIGHT_BLUE_MASTIC_RESIN.get()))
+			return GarnishedBlocks.LIGHT_BLUE_ZULTANITE.getDefaultState();
+		// Fluids.lavaInteraction(fluidState, CYAN_MASTIC_RESIN.get(), GarnishedBlocks.CYAN_ZULTANITE.get());
+		if (fluidState.is(CYAN_MASTIC_RESIN.get()))
+			return GarnishedBlocks.CYAN_ZULTANITE.getDefaultState();
+		// Fluids.lavaInteraction(fluidState, PURPLE_MASTIC_RESIN.get(), GarnishedBlocks.PURPLE_ZULTANITE.get());
+		if (fluidState.is(PURPLE_MASTIC_RESIN.get()))
+			return GarnishedBlocks.PURPLE_ZULTANITE.getDefaultState();
+		// Fluids.lavaInteraction(fluidState, MAGENTA_MASTIC_RESIN.get(), GarnishedBlocks.MAGENTA_ZULTANITE.get());
+		if (fluidState.is(MAGENTA_MASTIC_RESIN.get()))
+			return GarnishedBlocks.MAGENTA_ZULTANITE.getDefaultState();
+		// Fluids.lavaInteraction(fluidState, PINK_MASTIC_RESIN.get(), GarnishedBlocks.PINK_ZULTANITE.get());
+		if (fluidState.is(PINK_MASTIC_RESIN.get()))
+			return GarnishedBlocks.PINK_ZULTANITE.getDefaultState();
+		// Fluids.lavaInteraction(fluidState, BLACK_MASTIC_RESIN.get(), GarnishedBlocks.BLACK_ZULTANITE.get());
+		if (fluidState.is(BLACK_MASTIC_RESIN.get()))
+			return GarnishedBlocks.BLACK_ZULTANITE.getDefaultState();
+		// Fluids.lavaInteraction(fluidState, GRAY_MASTIC_RESIN.get(), GarnishedBlocks.GRAY_ZULTANITE.get());
+		if (fluidState.is(GRAY_MASTIC_RESIN.get()))
+			return GarnishedBlocks.GRAY_ZULTANITE.getDefaultState();
+		// Fluids.lavaInteraction(fluidState, LIGHT_GRAY_MASTIC_RESIN.get(), GarnishedBlocks.LIGHT_GRAY_ZULTANITE.get());
+		if (fluidState.is(LIGHT_GRAY_MASTIC_RESIN.get()))
+			return GarnishedBlocks.LIGHT_GRAY_ZULTANITE.getDefaultState();
+		// Fluids.lavaInteraction(fluidState, WHITE_MASTIC_RESIN.get(), GarnishedBlocks.WHITE_ZULTANITE.get());
+		if (fluidState.is(WHITE_MASTIC_RESIN.get()))
+			return GarnishedBlocks.WHITE_ZULTANITE.getDefaultState();
+		// Fluids.lavaInteraction(fluidState, BROWN_MASTIC_RESIN.get(), GarnishedBlocks.BROWN_ZULTANITE.get());
+		if (fluidState.is(BROWN_MASTIC_RESIN.get()))
+			return GarnishedBlocks.BROWN_ZULTANITE.getDefaultState();
 
 		return null;
 	}
