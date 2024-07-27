@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "garnished:brown_zultanite_brick_stairs"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:ritualistic_stone_brick_stairs"
+    }
+  ]
+}

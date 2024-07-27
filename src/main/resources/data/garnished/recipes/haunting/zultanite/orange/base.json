@@ -2,7 +2,7 @@
   "type": "create:haunting",
   "ingredients": [
     {
-      "tag": "garnished:stone_types/zultanite/orange"
+      "item": "garnished:orange_zultanite"
     }
   ],
   "results": [

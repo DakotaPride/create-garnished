@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "garnished:purple_zultanite"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:abyssal_stone"
+    }
+  ]
+}

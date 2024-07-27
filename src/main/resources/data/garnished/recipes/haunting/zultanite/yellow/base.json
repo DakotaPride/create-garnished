@@ -2,12 +2,12 @@
   "type": "create:haunting",
   "ingredients": [
     {
-      "tag": "garnished:stone_types/zultanite/magenta"
+      "item": "garnished:yellow_zultanite"
     }
   ],
   "results": [
     {
-      "item": "garnished:abyssal_stone"
+      "item": "garnished:carnotite"
     }
   ]
 }
