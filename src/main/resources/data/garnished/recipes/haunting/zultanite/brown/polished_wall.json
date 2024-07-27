@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "garnished:polished_brown_zultanite_wall"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:polished_ritualistic_stone_wall"
+    }
+  ]
+}

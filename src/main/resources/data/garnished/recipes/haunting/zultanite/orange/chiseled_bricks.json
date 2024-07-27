@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "garnished:chiseled_orange_zultanite_bricks"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:chiseled_ritualistic_stone_bricks"
+    }
+  ]
+}

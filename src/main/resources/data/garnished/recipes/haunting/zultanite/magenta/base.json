@@ -2,7 +2,7 @@
   "type": "create:haunting",
   "ingredients": [
     {
-      "tag": "garnished:stone_types/zultanite/purple"
+      "item": "garnished:magenta_zultanite"
     }
   ],
   "results": [

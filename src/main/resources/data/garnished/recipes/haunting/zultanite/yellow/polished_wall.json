@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "garnished:polished_yellow_zultanite_wall"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:polished_carnotite_wall"
+    }
+  ]
+}

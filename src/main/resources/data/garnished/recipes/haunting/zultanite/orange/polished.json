@@ -1,0 +1,13 @@
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "garnished:polished_orange_zultanite"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:polished_ritualistic_stone"
+    }
+  ]
+}
