@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "garnished:magenta_mastic_block"
+    }
+  ],
+  "results": [
+    {
+      "amount": 20250,
+      "fluid": "garnished:magenta_mastic_resin"
+    }
+  ]
+}
