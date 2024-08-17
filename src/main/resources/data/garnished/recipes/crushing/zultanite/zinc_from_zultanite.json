@@ -8,19 +8,14 @@
   "processingTime": 250,
   "results": [
     {
-      "count": 1,
-      "item": "create:zinc_nugget",
-      "chance": 0.15
-    },
-    {
       "count": 2,
       "item": "create:zinc_nugget",
       "chance": 0.10
     },
     {
       "count": 1,
-      "item": "create:crushed_raw_zinc",
-      "chance": 0.10
+      "item": "create:zinc_nugget",
+      "chance": 0.05
     },
     {
       "count": 1,
