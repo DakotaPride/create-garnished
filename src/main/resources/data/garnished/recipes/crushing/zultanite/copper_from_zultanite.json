@@ -1,0 +1,26 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "tag": "garnished:stone_types/zultanite/green"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "count": 2,
+      "item": "create:copper_nugget",
+      "chance": 0.10
+    },
+    {
+      "count": 1,
+      "item": "create:copper_nugget",
+      "chance": 0.05
+    },
+    {
+      "count": 1,
+      "item": "minecraft:clay_ball",
+      "chance": 0.05
+    }
+  ]
+}
