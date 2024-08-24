@@ -9,12 +9,12 @@
   "results": [
     {
       "count": 2,
-      "item": "create:iron_nugget",
+      "item": "minecraft:iron_nugget",
       "chance": 0.10
     },
     {
       "count": 1,
-      "item": "create:iron_nugget",
+      "item": "minecraft:iron_nugget",
       "chance": 0.05
     },
     {
