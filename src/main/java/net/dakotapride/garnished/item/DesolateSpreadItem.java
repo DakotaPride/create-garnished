@@ -1,5 +1,7 @@
 package net.dakotapride.garnished.item;
 
+import org.jetbrains.annotations.NotNull;
+
 import net.dakotapride.garnished.block.IDesolateSpread;
 import net.dakotapride.garnished.registry.GarnishedFeatures;
 import net.minecraft.core.BlockPos;
@@ -19,8 +21,6 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.chunk.ChunkGenerator;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-
-import org.jetbrains.annotations.NotNull;
 
 public class DesolateSpreadItem extends Item {
     public static final int SPREAD_WIDTH = 3;

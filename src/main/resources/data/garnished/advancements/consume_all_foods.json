@@ -1977,16 +1977,6 @@
         }
       }
     },
-    "crestfallen_flora": {
-      "trigger": "minecraft:consume_item",
-      "conditions": {
-        "item": {
-          "items": [
-            "garnished:crestfallen_flora"
-          ]
-        }
-      }
-    },
     "bottled_malodorous_mixture": {
       "trigger": "minecraft:consume_item",
       "conditions": {
@@ -2652,9 +2642,6 @@
     ],
     [
       "piquant_pretzel"
-    ],
-    [
-      "crestfallen_flora"
     ],
     [
       "bottled_malodorous_mixture"

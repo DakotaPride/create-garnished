@@ -1,0 +1,37 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "garnished:cooked_tenebrous_meat"
+    },
+    {
+      "item": "garnished:cooked_tenebrous_meat"
+    },
+    {
+      "item": "garnished:crushed_shroomlight"
+    },
+    {
+      "item": "garnished:crushed_shroomlight"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "garnished:gloomy_gathering"
+  }
+}

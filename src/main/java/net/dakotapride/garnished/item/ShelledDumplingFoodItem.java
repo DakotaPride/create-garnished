@@ -1,10 +1,10 @@
 package net.dakotapride.garnished.item;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.minecraft.world.item.Item;
 
-public class ShelledDumplingFoodItem extends Item implements IGarnishedItem {
+public class ShelledDumplingFoodItem extends Item implements IGarnishedUtilities {
 	public ShelledDumplingFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.SHELLED_DUMPLING).stacksTo(16));
+		super(properties.food(GarnishedFoodValues.SHELLED_DUMPLING).stacksTo(16));
 	}
 }

@@ -5,9 +5,11 @@ import net.dakotapride.garnished.modifier.LootTableModifiers;
 import net.dakotapride.garnished.recipe.GarnishedFanProcessing;
 import net.dakotapride.garnished.registry.GarnishedAdvancementUtils;
 import net.dakotapride.garnished.registry.GarnishedBlockEntities;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.dakotapride.garnished.registry.GarnishedRecipeTypes;
 import net.minecraft.resources.ResourceLocation;
 
+import net.minecraft.tags.BiomeTags;
 import net.minecraft.world.level.block.ComposterBlock;
 
 import org.slf4j.Logger;
@@ -23,7 +25,6 @@ import net.dakotapride.garnished.registry.GarnishedEffects;
 import net.dakotapride.garnished.registry.GarnishedEnchantments;
 import net.dakotapride.garnished.registry.GarnishedFeatures;
 import net.dakotapride.garnished.registry.GarnishedFluids;
-import net.dakotapride.garnished.registry.GarnishedFoods;
 import net.dakotapride.garnished.registry.GarnishedItems;
 import net.dakotapride.garnished.registry.GarnishedTabs;
 import net.dakotapride.garnished.registry.GarnishedTags;
@@ -59,7 +60,7 @@ public class CreateGarnished implements ModInitializer {
 		GarnishedBlocks.setRegister();
 		GarnishedTabs.setRegister();
 		GarnishedFluids.setRegister();
-		GarnishedFoods.setRegister();
+		GarnishedFoodValues.setRegister();
 		GarnishedEffects.setRegister();
 		GarnishedEnchantments.setRegister();
 		GarnishedTags.setRegister();
@@ -83,6 +84,14 @@ public class CreateGarnished implements ModInitializer {
 				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.DULSE_KELP_PLACED);
 		BiomeModifications.addFeature(BiomeSelectors.tag(GarnishedTags.HAS_REMNANT_TAG),
 				GenerationStep.Decoration.UNDERGROUND_ORES, GarnishedFeatures.REMNANT_PLACED);
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.WARPED_FOREST),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.PANSOPHICAL_DAISY_PLACED);
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.CRIMSON_FOREST),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.INCANDESCENT_LILY_PLACED);
+		BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_NETHER),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SORROWFUL_LICHEN_PLACED);
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.BASALT_DELTAS),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SORROWFUL_LICHEN_BASALT_DELTAS_PLACED);
 
 		LOGGER.info("Create addon mod [{}] is loading alongside Create [{}]!", NAME, Create.VERSION);
 		LOGGER.info(EnvExecutor.unsafeRunForDist(
@@ -188,6 +197,7 @@ public class CreateGarnished implements ModInitializer {
 		ComposterBlock.COMPOSTABLES.put(GarnishedItems.MELTED_CINDER_FLOUR_HAZELNUT.get(), 0.40f);
 		ComposterBlock.COMPOSTABLES.put(GarnishedItems.MELTED_CINDER_FLOUR_CHESTNUT.get(), 0.40f);
 		ComposterBlock.COMPOSTABLES.put(GarnishedBlocks.NUT_LEAVES.asItem(), 0.35f);
+		ComposterBlock.COMPOSTABLES.put(GarnishedBlocks.UNASSIGNED_NUT_LEAVES.asItem(), 0.35f);
 		ComposterBlock.COMPOSTABLES.put(GarnishedBlocks.BUHG_LEAVES.asItem(), 0.35f);
 		ComposterBlock.COMPOSTABLES.put(GarnishedBlocks.CASHEW_LEAVES.asItem(), 0.35f);
 		ComposterBlock.COMPOSTABLES.put(GarnishedBlocks.WALNUT_LEAVES.asItem(), 0.35f);

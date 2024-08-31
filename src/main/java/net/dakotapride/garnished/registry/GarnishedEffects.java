@@ -1,7 +1,7 @@
 package net.dakotapride.garnished.registry;
 
 import net.dakotapride.garnished.CreateGarnished;
-import net.dakotapride.garnished.effect.AustralMobEffect;
+import net.dakotapride.garnished.effect.AugmentedMobEffect;
 import net.dakotapride.garnished.effect.AversionMobEffect;
 import net.dakotapride.garnished.effect.CognateMobEffect;
 import net.dakotapride.garnished.effect.FlagrantMobEffect;
@@ -52,7 +52,7 @@ public class GarnishedEffects {
 
 	public static MobEffect TRUTH_SEEKER = effect("truth_seeker", new TruthSeekerMobEffect());
 
-	public static MobEffect AUSTRAL = effect("austral", new AustralMobEffect()
+	public static MobEffect AUGMENTED = effect("augmented", new AugmentedMobEffect()
 			.addAttributeModifier(Attributes.MOVEMENT_SPEED, "8e5b13bb-d71e-4e28-a4e2-b0e98eb4b9d3",
 					0.045, AttributeModifier.Operation.MULTIPLY_TOTAL)
 			.addAttributeModifier(Attributes.ATTACK_DAMAGE, "b9d7efff-0199-457d-bcfb-190ef862d2b0",

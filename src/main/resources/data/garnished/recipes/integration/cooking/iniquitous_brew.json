@@ -1,0 +1,37 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "garnished:incandescent_petal"
+    },
+    {
+      "item": "garnished:incandescent_lily"
+    },
+    {
+      "item": "garnished:incandescent_lily"
+    },
+    {
+      "item": "minecraft:crimson_roots"
+    },
+    {
+      "item": "minecraft:crimson_roots"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "garnished:iniquitous_brew"
+  }
+}

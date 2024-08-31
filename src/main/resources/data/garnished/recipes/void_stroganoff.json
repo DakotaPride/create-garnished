@@ -2,6 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
+      "item": "minecraft:bowl"
+    },
+    {
       "item": "garnished:garnish_powder"
     },
     {
@@ -12,9 +15,6 @@
     },
     {
       "item": "garnished:numbing_parchment"
-    },
-    {
-      "item": "minecraft:bowl"
     }
   ],
   "result": {

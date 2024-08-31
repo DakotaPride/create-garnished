@@ -2,6 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
+      "item": "minecraft:bowl"
+    },
+    {
       "item": "garnished:frost"
     },
     {
@@ -12,9 +15,6 @@
     },
     {
       "item": "garnished:cashew_sorbet_scoop"
-    },
-    {
-      "item": "minecraft:bowl"
     }
   ],
   "result": {

@@ -1,10 +1,10 @@
 package net.dakotapride.garnished.item;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.minecraft.world.item.Item;
 
-public class MeatScrapsFoodItem extends Item implements IGarnishedItem {
+public class MeatScrapsFoodItem extends Item implements IGarnishedUtilities {
 	public MeatScrapsFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.MEAT_SCRAPS));
+		super(properties.food(GarnishedFoodValues.MEAT_SCRAPS));
 	}
 }

@@ -123,6 +123,11 @@ public class GarnishedJEI implements IModPlugin {
 
 	@Override
 	public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
+
+		registration.getJeiHelpers().getRecipeType(new ResourceLocation("create", "sandpaper_polishing")).ifPresent(type -> {
+			registration.addRecipeCatalyst(new ItemStack(GarnishedItems.POLAR_HIDE_SCRATCH_PAPER.get()), type);
+		});
+
 		allCategories.forEach(c -> c.registerCatalysts(registration));
 	}
 

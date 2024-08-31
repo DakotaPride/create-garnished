@@ -2,14 +2,12 @@ package net.dakotapride.garnished.item;
 
 import org.jetbrains.annotations.NotNull;
 
-import net.dakotapride.garnished.registry.GarnishedEffects;
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
@@ -18,9 +16,9 @@ import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
-public class VoidMixtureFoodItem extends Item implements IGarnishedItem {
+public class VoidMixtureFoodItem extends Item implements IGarnishedUtilities {
 	public VoidMixtureFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.VOID_MIXTURE).stacksTo(1));
+		super(properties.food(GarnishedFoodValues.VOID_MIXTURE).stacksTo(1));
 	}
 
 	@Override

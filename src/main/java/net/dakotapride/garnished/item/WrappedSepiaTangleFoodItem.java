@@ -1,6 +1,8 @@
 package net.dakotapride.garnished.item;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import org.jetbrains.annotations.NotNull;
+
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.dakotapride.garnished.registry.GarnishedItems;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;
@@ -12,14 +14,11 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUtils;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
-import org.jetbrains.annotations.NotNull;
-
-public class WrappedSepiaTangleFoodItem extends Item implements IGarnishedItem {
+public class WrappedSepiaTangleFoodItem extends Item implements IGarnishedUtilities {
 	public WrappedSepiaTangleFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.WRAPPED_SEPIA_TANGLE).stacksTo(16));
+		super(properties.food(GarnishedFoodValues.SEPIA_TANGLE).stacksTo(16));
 	}
 
 	@Override

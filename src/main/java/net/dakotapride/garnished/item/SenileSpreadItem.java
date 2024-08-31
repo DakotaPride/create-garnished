@@ -1,7 +1,5 @@
 package net.dakotapride.garnished.item;
 
-import net.minecraft.core.registries.Registries;
-
 import org.jetbrains.annotations.NotNull;
 
 import net.dakotapride.garnished.block.ISenileSpread;
@@ -10,6 +8,7 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
 import net.minecraft.core.particles.ParticleTypes;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;

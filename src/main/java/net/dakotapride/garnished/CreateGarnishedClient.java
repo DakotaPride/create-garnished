@@ -71,6 +71,7 @@ public class CreateGarnishedClient implements ClientModInitializer {
 
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.NUT_PLANT.get(), RenderType.cutout());
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.NUT_LEAVES.get(), RenderType.cutout());
+		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.UNASSIGNED_NUT_LEAVES.get(), RenderType.cutout());
 
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.ALMOND_LEAVES.get(), RenderType.cutoutMipped());
 		BlockRenderLayerMap.INSTANCE.putBlock(GarnishedBlocks.CASHEW_LEAVES.get(), RenderType.cutoutMipped());
@@ -179,8 +180,8 @@ public class CreateGarnishedClient implements ClientModInitializer {
 
 	public static synchronized void blockColourProvider(BlockColors colors) {
 		colors.register((unknown, lightReader, pos, unknown2) -> lightReader != null && pos != null ?
-						BiomeColors.getAverageFoliageColor(lightReader, pos) : FoliageColor.get(0.5D, 1.0D),
-				GarnishedBlocks.NUT_LEAVES.get(),
+						BiomeColors.getAverageFoliageColor(lightReader, pos) : FoliageColor.get(0.6D, 1.0D),
+				GarnishedBlocks.NUT_LEAVES.get(), GarnishedBlocks.UNASSIGNED_NUT_LEAVES.get(),
 				GarnishedBlocks.ALMOND_LEAVES.get(), GarnishedBlocks.CASHEW_LEAVES.get(), GarnishedBlocks.WALNUT_LEAVES.get(),
 				GarnishedBlocks.PECAN_LEAVES.get(), GarnishedBlocks.BUHG_LEAVES.get(), GarnishedBlocks.PISTACHIO_LEAVES.get(),
 				GarnishedBlocks.MACADAMIA_LEAVES.get(), GarnishedBlocks.HAZELNUT_LEAVES.get(), GarnishedBlocks.CHESTNUT_LEAVES.get());
@@ -192,7 +193,7 @@ public class CreateGarnishedClient implements ClientModInitializer {
 			return colors.getColor(state, null, null, tintIndex);
 		};
 
-		itemColors.register(itemBlockColourHandler, GarnishedBlocks.NUT_LEAVES.get(),
+		itemColors.register(itemBlockColourHandler, GarnishedBlocks.NUT_LEAVES.get(), GarnishedBlocks.UNASSIGNED_NUT_LEAVES.get(),
 				GarnishedBlocks.ALMOND_LEAVES.get(), GarnishedBlocks.CASHEW_LEAVES.get(), GarnishedBlocks.WALNUT_LEAVES.get(),
 				GarnishedBlocks.PECAN_LEAVES.get(), GarnishedBlocks.BUHG_LEAVES.get(), GarnishedBlocks.PISTACHIO_LEAVES.get(),
 				GarnishedBlocks.MACADAMIA_LEAVES.get(), GarnishedBlocks.HAZELNUT_LEAVES.get(), GarnishedBlocks.CHESTNUT_LEAVES.get());

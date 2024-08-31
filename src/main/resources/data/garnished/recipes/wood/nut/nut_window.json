@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "garnished:nut_planks"
+    },
+    "X": {
+      "tag": "c:glass/colorless"
+    }
+  },
+  "pattern": [
+    " # ",
+    "#X#"
+  ],
+  "result": {
+    "count": 2,
+    "item": "garnished:nut_window"
+  },
+  "show_notification": true
+}

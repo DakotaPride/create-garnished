@@ -63,10 +63,10 @@ public class GarnishedFeatures {
 
 	public static final ResourceKey<PlacedFeature> REMNANT_PLACED = registerPlacedKey("ores_overworld");
 
-	public static final ResourceKey<ConfiguredFeature<?, ?>> PANSOPHICAL_DAISY = registerConfiguredKey("pansophical_daisy_configured");
-	public static final ResourceKey<ConfiguredFeature<?, ?>> INCANDESCENT_LILY = registerConfiguredKey("incandescent_lily_configured");
-	public static final ResourceKey<ConfiguredFeature<?, ?>> SORROWFUL_LICHEN = registerConfiguredKey("sorrowful_lichen_configured");
-	public static final ResourceKey<ConfiguredFeature<?, ?>> SORROWFUL_LICHEN_BASALT_DELTAS = registerConfiguredKey("sorrowful_lichen_basalt_deltas_configured");
+	public static final ResourceKey<PlacedFeature> PANSOPHICAL_DAISY_PLACED = registerPlacedKey("pansophical_daisy_placed");
+	public static final ResourceKey<PlacedFeature> INCANDESCENT_LILY_PLACED = registerPlacedKey("incandescent_lily_placed");
+	public static final ResourceKey<PlacedFeature> SORROWFUL_LICHEN_PLACED = registerPlacedKey("sorrowful_lichen_placed");
+	public static final ResourceKey<PlacedFeature> SORROWFUL_LICHEN_BASALT_DELTAS_PLACED = registerPlacedKey("sorrowful_lichen_basalt_deltas_placed");
 
 
 	public static ResourceKey<ConfiguredFeature<?, ?>> registerConfiguredKey(String name) {

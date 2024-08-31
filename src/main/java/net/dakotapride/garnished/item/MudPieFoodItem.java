@@ -1,6 +1,8 @@
 package net.dakotapride.garnished.item;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import org.jetbrains.annotations.NotNull;
+
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
@@ -14,11 +16,9 @@ import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
-import org.jetbrains.annotations.NotNull;
-
-public class MudPieFoodItem extends Item implements IGarnishedItem {
+public class MudPieFoodItem extends Item implements IGarnishedUtilities {
 	public MudPieFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.MUD_PIE).stacksTo(1));
+		super(properties.food(GarnishedFoodValues.MUD_PIE).stacksTo(1));
 	}
 
 	@Override
@@ -49,5 +49,4 @@ public class MudPieFoodItem extends Item implements IGarnishedItem {
 	public @NotNull InteractionResultHolder<ItemStack> use(@NotNull Level level, @NotNull Player player, @NotNull InteractionHand usedHand) {
 		return ItemUtils.startUsingInstantly(level, player, usedHand);
 	}
-
 }

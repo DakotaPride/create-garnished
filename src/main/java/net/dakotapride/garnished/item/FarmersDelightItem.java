@@ -2,9 +2,10 @@ package net.dakotapride.garnished.item;
 
 import java.util.List;
 
+import net.fabricmc.loader.api.FabricLoader;
+
 import org.jetbrains.annotations.Nullable;
 
-import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.ChatFormatting;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;

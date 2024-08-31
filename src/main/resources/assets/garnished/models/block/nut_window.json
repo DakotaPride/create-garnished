@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "garnished:block/nut_planks",
+    "side": "garnished:block/nut_window"
+  }
+}

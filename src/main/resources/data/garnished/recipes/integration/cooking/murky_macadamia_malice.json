@@ -1,0 +1,40 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "garnished:murky_jelly"
+    },
+    {
+      "item": "garnished:murky_jelly"
+    },
+    {
+      "item": "garnished:macadamia"
+    },
+    {
+      "item": "garnished:macadamia"
+    },
+    {
+      "item": "garnished:volatile_dust"
+    },
+    {
+      "item": "garnished:volatile_dust"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "garnished:murky_macadamia_malice"
+  }
+}

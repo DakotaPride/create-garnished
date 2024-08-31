@@ -7,13 +7,6 @@
   "authors": [
     "DakotaPride"
   ],
-  "contributors": [
-    "DejojoTheAwsome (Creator)",
-    "Seaseii (Translations)",
-    "NegoDya (Translations)",
-    "JohnDoeKnownJury (Concepts)",
-    "WitherMonarch (Reporter)"
-  ],
   "contact": {
     "sources": "https://github.com/DakotaPride/create-garnished",
     "issues": "https://github.com/DakotaPride/create-garnished/issues"
@@ -45,6 +38,7 @@
     "minecraft": "~1.20"
   },
   "breaks": {
-    "redirector": "*"
+    "redirector": "*",
+    "dynamictrees": "*"
   }
 }

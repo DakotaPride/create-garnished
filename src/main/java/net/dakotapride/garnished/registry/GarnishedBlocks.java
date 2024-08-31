@@ -1,9 +1,10 @@
 package net.dakotapride.garnished.registry;
 
+import com.simibubi.create.content.decoration.palettes.ConnectedGlassPaneBlock;
+import com.simibubi.create.content.decoration.palettes.WindowBlock;
 import com.simibubi.create.foundation.data.AssetLookup;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.tterrag.registrate.util.entry.BlockEntry;
-
 import com.tterrag.registrate.util.nullness.NonNullFunction;
 
 import net.dakotapride.garnished.CreateGarnished;
@@ -13,12 +14,12 @@ import net.dakotapride.garnished.block.AbyssalStoneStairsBlock;
 import net.dakotapride.garnished.block.AbyssalStoneWallBlock;
 import net.dakotapride.garnished.block.BokChoyPlantBlock;
 import net.dakotapride.garnished.block.CarnotiteStairsBlock;
-import net.dakotapride.garnished.block.DragonBreathFluidBlock;
 import net.dakotapride.garnished.block.DragonStoneStairsBlock;
 import net.dakotapride.garnished.block.EnderJellyBlock;
 import net.dakotapride.garnished.block.MasticBlock;
 import net.dakotapride.garnished.block.NetherFlowerBlock;
 import net.dakotapride.garnished.block.NetherLichenBlock;
+import net.dakotapride.garnished.block.NumbingParchmentBlock;
 import net.dakotapride.garnished.block.NutSackBlock;
 import net.dakotapride.garnished.block.RitualisticStoneStairsBlock;
 import net.dakotapride.garnished.block.SolidifiedGarnishBlock;
@@ -78,7 +79,6 @@ import net.dakotapride.garnished.block.sepia.SepiaWallSignBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FenceBlock;
-import net.minecraft.world.level.block.LeavesBlock;
 import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.SlabBlock;
 import net.minecraft.world.level.block.SoundType;
@@ -86,6 +86,9 @@ import net.minecraft.world.level.block.WallBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
+
+import static net.dakotapride.garnished.registry.GarnishedCT.woodenWindowBlock;
+import static net.dakotapride.garnished.registry.GarnishedCT.woodenWindowPaneBlock;
 
 @SuppressWarnings({"unused"})
 public class GarnishedBlocks {
@@ -215,6 +218,14 @@ public class GarnishedBlocks {
 					.initialProperties(() -> Blocks.OAK_SAPLING)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.properties(p -> p.mapColor(MapColor.GRASS).noCollission().instabreak().sound(SoundType.GRASS))
+					.register();
+
+	public static final BlockEntry<NutLeavesBlock> UNASSIGNED_NUT_LEAVES =
+			REGISTRATE.block("unassigned_nut_leaves", NutLeavesBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.initialProperties(() -> Blocks.OAK_LEAVES)
+					.simpleItem()
+					.properties(p -> p.mapColor(MapColor.GRASS).noOcclusion().strength(0.2F).randomTicks())
 					.register();
 
 	public static final BlockEntry<NutLeavesBlock> NUT_LEAVES =
@@ -518,6 +529,27 @@ public class GarnishedBlocks {
 					.simpleItem()
 					.initialProperties(() -> Blocks.OAK_PRESSURE_PLATE)
 					.properties(p -> p.mapColor(MapColor.COLOR_LIGHT_GREEN)).register();
+
+	// 2.0 - It took how many months for these windows to FINALLY be added? Damn.
+	public static final BlockEntry<WindowBlock> NUT_WINDOW = woodenWindowBlock("nut", () -> GarnishedCT.NUT_WINDOW, GarnishedBlocks.NUT_PLANKS);
+	public static final BlockEntry<WindowBlock> SEPIA_WINDOW = woodenWindowBlock("sepia", () -> GarnishedCT.SEPIA_WINDOW, GarnishedBlocks.SEPIA_PLANKS);
+
+	public static final BlockEntry<ConnectedGlassPaneBlock> NUT_WINDOW_PANE =
+			woodenWindowPaneBlock("nut", () -> GarnishedCT.NUT_WINDOW_PANE, GarnishedBlocks.NUT_WINDOW);
+	public static final BlockEntry<ConnectedGlassPaneBlock> SEPIA_WINDOW_PANE =
+			woodenWindowPaneBlock("sepia", () -> GarnishedCT.SEPIA_WINDOW_PANE, GarnishedBlocks.SEPIA_WINDOW);
+
+	// Other
+	public static final BlockEntry<NumbingParchmentBlock> NUMBING_PARCHMENT_BLOCK =
+			REGISTRATE.block("numbing_parchment_block", NumbingParchmentBlock::new)
+					//.onRegister(connectedTextures(() -> new SimpleCTBehaviour(GarnishedCT.NUMBING_PARCHMENT)))
+					.initialProperties(() -> Blocks.WHITE_WOOL)
+					.simpleItem().register();
+	public static final BlockEntry<NumbingParchmentBlock.Carpet> NUMBING_PARCHMENT_CARPET =
+			REGISTRATE.block("numbing_parchment_carpet", NumbingParchmentBlock.Carpet::new)
+					//.onRegister(connectedTextures(() -> new SimpleCTBehaviour(GarnishedCT.NUMBING_PARCHMENT)))
+					.initialProperties(() -> Blocks.WHITE_CARPET)
+					.simpleItem().register();
 
 	public static <T extends Block> BlockEntry<T> masticResinRegistration(String colour0, String block0, NonNullFunction<BlockBehaviour.Properties, T> factory, Block block1) {
 		return REGISTRATE.block((colour0 == "" ? colour0 : colour0 + "_") + block0, factory)

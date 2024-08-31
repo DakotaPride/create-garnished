@@ -7,6 +7,7 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 
 import com.simibubi.create.Create;
+import com.simibubi.create.compat.emi.CreateEmiPlugin;
 import com.simibubi.create.compat.emi.GhostIngredientHandler;
 import com.simibubi.create.content.equipment.blueprint.BlueprintScreen;
 import com.simibubi.create.content.logistics.filter.AttributeFilterScreen;
@@ -17,6 +18,8 @@ import com.simibubi.create.content.trains.schedule.ScheduleScreen;
 import dev.emi.emi.api.recipe.EmiInfoRecipe;
 import io.github.fabricators_of_create.porting_lib.util.FluidUnit;
 import net.dakotapride.garnished.registry.GarnishedBlocks;
+
+import net.dakotapride.garnished.registry.GarnishedItems;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -103,6 +106,7 @@ public class GarnishedEMI implements EmiPlugin {
 
 		ALL.forEach((id, category) -> registry.addCategory(category));
 
+		registry.addWorkstation(CreateEmiPlugin.SANDPAPER_POLISHING, EmiStack.of(GarnishedItems.POLAR_HIDE_SCRATCH_PAPER));
 
 		registry.addWorkstation(FAN_FREEZING, FanEmiRecipe.getFan("fan_freezing"));
 		registry.addWorkstation(FAN_RED_DYEING, FanEmiRecipe.getFan("fan_red_dyeing"));

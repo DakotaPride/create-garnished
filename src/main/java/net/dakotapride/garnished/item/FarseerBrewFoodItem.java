@@ -2,7 +2,7 @@ package net.dakotapride.garnished.item;
 
 import org.jetbrains.annotations.NotNull;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
@@ -16,9 +16,9 @@ import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
-public class FarseerBrewFoodItem extends Item implements IGarnishedItem {
+public class FarseerBrewFoodItem extends Item implements IGarnishedUtilities {
 	public FarseerBrewFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.FARSEER_BREW).stacksTo(1));
+		super(properties.food(GarnishedFoodValues.FARSEER_BREW).stacksTo(1));
 	}
 
 	@Override
@@ -28,6 +28,9 @@ public class FarseerBrewFoodItem extends Item implements IGarnishedItem {
 			CriteriaTriggers.CONSUME_ITEM.trigger(serverPlayer, stack);
 			serverPlayer.awardStat(Stats.ITEM_USED.get(this));
 		}
+
+		//if (!level.isClientSide)
+			//livingEntity.addEffect(new MobEffectInstance(GarnishedEffects.TRUTH_SEEKER.get(), tick * 16, 1));
 
 		if (stack.isEmpty()) {
 			return new ItemStack(Items.BOWL);

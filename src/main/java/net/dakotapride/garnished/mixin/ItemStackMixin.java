@@ -1,5 +1,7 @@
 package net.dakotapride.garnished.mixin;
 
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
+
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -33,6 +35,19 @@ public class ItemStackMixin {
 		if (activeItem.is(GarnishedItems.MUD_PIE.get())) {
 			entity.hurt(level.damageSources().source(GarnishedDamageSource.MULCH_MUNCHING), 1.0F);
 		}
+
+		// Sugar High functionality
+		GarnishedFoodValues.hasSugarHigh = entity.hasEffect(GarnishedEffects.SUGAR_HIGH);
+		// Freezing functionality
+		GarnishedFoodValues.hasFreezing = entity.hasEffect(GarnishedEffects.FREEZING);
+		// Hunger functionality
+		GarnishedFoodValues.hasHunger = entity.hasEffect(MobEffects.HUNGER);
+		// Levitation functionality
+		GarnishedFoodValues.hasLevitation = entity.hasEffect(MobEffects.LEVITATION);
+		// Bad Omen functionality
+		GarnishedFoodValues.hasBadOmen = entity.hasEffect(MobEffects.BAD_OMEN);
+		// Fire functionality
+		GarnishedFoodValues.isOnFire = entity.isOnFire() || !entity.fireImmune();
 
 	}
 

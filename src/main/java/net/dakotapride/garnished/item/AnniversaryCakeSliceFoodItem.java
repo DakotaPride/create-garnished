@@ -1,9 +1,9 @@
 package net.dakotapride.garnished.item;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 
 public class AnniversaryCakeSliceFoodItem extends FarmersDelightItem {
     public AnniversaryCakeSliceFoodItem(Properties properties) {
-        super(properties.food(GarnishedFoods.ANNIVERSARY_CAKE_SLICE));
+        super(properties.food(GarnishedFoodValues.ANNIVERSARY_CAKE_SLICE));
     }
 }
