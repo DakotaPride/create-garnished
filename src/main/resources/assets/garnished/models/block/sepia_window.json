@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "garnished:block/sepia_planks",
+    "side": "garnished:block/sepia_window"
+  }
+}

@@ -1,11 +1,11 @@
 package net.dakotapride.garnished.item;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.minecraft.world.item.Item;
 
-public class GarnishedMealFoodItem extends Item implements IGarnishedItem {
+public class GarnishedMealFoodItem extends Item implements IGarnishedUtilities {
 	public GarnishedMealFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.GARNISHED_MEAL).stacksTo(16));
+		super(properties.food(GarnishedFoodValues.GARNISHED_MEAL).stacksTo(16));
 	}
 
 }

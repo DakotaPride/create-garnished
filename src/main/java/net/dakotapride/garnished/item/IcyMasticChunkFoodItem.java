@@ -2,20 +2,18 @@ package net.dakotapride.garnished.item;
 
 import org.jetbrains.annotations.NotNull;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class IcyMasticChunkFoodItem extends Item implements IGarnishedItem {
+public class IcyMasticChunkFoodItem extends Item implements IGarnishedUtilities {
     public IcyMasticChunkFoodItem(Properties properties) {
-        super(properties.stacksTo(16).food(GarnishedFoods.ICY_MASTIC_CHUNK));
+        super(properties.stacksTo(16).food(GarnishedFoodValues.ICY_MASTIC_CHUNK));
     }
 
     @Override
@@ -24,9 +22,6 @@ public class IcyMasticChunkFoodItem extends Item implements IGarnishedItem {
         if (livingEntity instanceof ServerPlayer serverPlayer) {
             CriteriaTriggers.CONSUME_ITEM.trigger(serverPlayer, stack);
             serverPlayer.awardStat(Stats.ITEM_USED.get(this));
-
-            livingEntity.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SLOWDOWN, 100, 2));
-            livingEntity.addEffect(new MobEffectInstance(MobEffects.REGENERATION, 160, 1));
         }
 
         return super.finishUsingItem(stack, level, livingEntity);

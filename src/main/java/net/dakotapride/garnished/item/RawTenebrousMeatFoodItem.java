@@ -1,10 +1,10 @@
 package net.dakotapride.garnished.item;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.minecraft.world.item.Item;
 
-public class RawTenebrousMeatFoodItem extends Item implements IGarnishedItem {
+public class RawTenebrousMeatFoodItem extends Item implements IGarnishedUtilities {
 	public RawTenebrousMeatFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.RAW_TENEBROUS_MEAT));
+		super(properties.food(GarnishedFoodValues.RAW_TENEBROUS_MEAT));
 	}
 }

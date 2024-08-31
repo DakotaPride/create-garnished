@@ -10,6 +10,7 @@ import com.simibubi.create.AllFluids;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.AllMenuTypes;
 import com.simibubi.create.compat.emi.BlueprintTransferHandler;
+import com.simibubi.create.compat.emi.CreateEmiPlugin;
 import com.simibubi.create.compat.emi.DoubleItemIcon;
 import com.simibubi.create.compat.emi.recipes.fan.FanEmiRecipe;
 import com.simibubi.create.content.decoration.palettes.AllPaletteStoneTypes;
@@ -30,6 +31,7 @@ import net.dakotapride.garnished.CreateGarnished;
 import net.dakotapride.garnished.recipe.MagentaDyeBlowingFanRecipe;
 import net.dakotapride.garnished.registry.GarnishedBlocks;
 import net.dakotapride.garnished.registry.GarnishedFluids;
+import net.dakotapride.garnished.registry.GarnishedItems;
 import net.dakotapride.garnished.registry.GarnishedRecipeTypes;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
@@ -89,6 +91,8 @@ public class GarnishedEMI implements EmiPlugin {
 
 		ALL.forEach((id, category) -> registry.addCategory(category));
 
+
+		registry.addWorkstation(CreateEmiPlugin.SANDPAPER_POLISHING, EmiStack.of(GarnishedItems.POLAR_HIDE_SCRATCH_PAPER.get()));
 
 		registry.addWorkstation(FAN_FREEZING, FanEmiRecipe.getFan("fan_freezing"));
 		registry.addWorkstation(FAN_RED_DYEING, FanEmiRecipe.getFan("fan_red_dyeing"));

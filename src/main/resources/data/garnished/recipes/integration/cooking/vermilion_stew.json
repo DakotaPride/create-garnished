@@ -1,0 +1,40 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "garnished:dried_vermilion_kelp"
+    },
+    {
+      "item": "garnished:dried_vermilion_kelp"
+    },
+    {
+      "item": "garnished:dried_vermilion_kelp"
+    },
+    {
+      "item": "minecraft:fire_coral_fan"
+    },
+    {
+      "item": "minecraft:fire_coral_fan"
+    },
+    {
+      "item": "garnished:brittle_dust"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "garnished:vermilion_stew"
+  }
+}

@@ -1,10 +1,10 @@
 package net.dakotapride.garnished.item;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.minecraft.world.item.Item;
 
-public class PecanPieFoodItem extends Item implements IGarnishedItem {
+public class PecanPieFoodItem extends Item implements IGarnishedUtilities {
 	public PecanPieFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.PECAN_PIE));
+		super(properties.food(GarnishedFoodValues.PECAN_PIE));
 	}
 }

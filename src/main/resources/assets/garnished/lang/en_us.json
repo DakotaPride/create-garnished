@@ -299,6 +299,8 @@
   "block.garnished.nut_fence_gate": "Nut Fence Gate",
   "block.garnished.nut_button": "Nut Button",
   "block.garnished.nut_pressure_plate": "Nut Pressure Plate",
+  "block.garnished.nut_window": "Nut Window",
+  "block.garnished.nut_window_pane": "Nut Window Pane",
   "block.garnished.nut_sign": "Nut Sign",
   "item.garnished.nut_boat": "Nut Boat",
   "item.garnished.nut_chest_boat": "Nut Boat With Chest",
@@ -310,6 +312,11 @@
   "block.garnished.sepia_button": "Sepia Button",
   "block.garnished.sepia_pressure_plate": "Sepia Pressure Plate",
   "block.garnished.sepia_sign": "Sepia Sign",
+  "block.garnished.sepia_window": "Sepia Window",
+  "block.garnished.sepia_window_pane": "Sepia Window Pane",
+
+  "block.garnished.numbing_parchment_block": "Block of Numbing Parchment",
+  "block.garnished.numbing_parchment_carpet": "Numbing Clothe",
 
   "item.garnished.baklava": "Baklava",
   "item.garnished.slime_drop": "Slime Drop",
@@ -1139,6 +1146,7 @@
   "block.garnished.chestnut_sack": "Compacted Nut Sack",
 
   "block.garnished.nut_leaves": "Nut Leaves",
+  "block.garnished.unassigned_nut_leaves": "Nut Leaves",
   "block.garnished.peanut_leaves": "Nut Leaves",
   "block.garnished.cashew_leaves": "Nut Leaves",
   "block.garnished.almond_leaves": "Nut Leaves",

@@ -1,0 +1,28 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "minecraft:cooked_porkchop"
+    },
+    {
+      "item": "garnished:wheat_graze"
+    },
+    {
+      "item": "garnished:wheat_graze"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "item": "garnished:porkchop_and_graze"
+  }
+}

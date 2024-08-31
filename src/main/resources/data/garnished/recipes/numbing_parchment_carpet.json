@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:numbing_parchment_block"
+    }
+  },
+  "result": {
+    "item": "garnished:numbing_parchment_carpet",
+    "count": 6
+  }
+}

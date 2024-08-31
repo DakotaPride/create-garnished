@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "garnished:frost"
+    },
+    {
+      "item": "garnished:solemn_dust"
+    },
+    {
+      "item": "garnished:crushed_shroomlight"
+    },
+    {
+      "item": "garnished:cashew_sorbet_scoop"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "garnished:frosted_dessert"
+  }
+}

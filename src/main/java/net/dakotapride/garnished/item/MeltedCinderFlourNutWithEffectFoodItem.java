@@ -5,7 +5,7 @@ import java.util.List;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.dakotapride.garnished.registry.GarnishedItems;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.gui.screens.Screen;
@@ -17,60 +17,60 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 
-public class MeltedCinderFlourNutWithEffectFoodItem extends Item implements IGarnishedItem {
+public class MeltedCinderFlourNutWithEffectFoodItem extends Item implements IGarnishedUtilities {
 	public MeltedCinderFlourNutWithEffectFoodItem(FoodProperties foodProperties, Properties properties) {
 		super(properties.food(foodProperties));
 	}
 
 	public static class Peanut extends MeltedCinderFlourNutWithEffectFoodItem {
 		public Peanut(Properties properties) {
-			super(GarnishedFoods.MELTED_CINDER_FLOUR_PEANUT, properties);
+			super(GarnishedFoodValues.MELTED_CINDER_FLOUR_PEANUT, properties);
 		}
 	}
 	public static class Walnut extends MeltedCinderFlourNutWithEffectFoodItem {
 		public Walnut(Properties properties) {
-			super(GarnishedFoods.MELTED_CINDER_FLOUR_WALNUT, properties);
+			super(GarnishedFoodValues.MELTED_CINDER_FLOUR_WALNUT, properties);
 		}
 	}
 	public static class Chestnut extends MeltedCinderFlourNutWithEffectFoodItem {
 		public Chestnut(Properties properties) {
-			super(GarnishedFoods.MELTED_CINDER_FLOUR_CHESTNUT, properties);
+			super(GarnishedFoodValues.MELTED_CINDER_FLOUR_CHESTNUT, properties);
 		}
 	}
 	public static class Hazelnut extends MeltedCinderFlourNutWithEffectFoodItem {
 		public Hazelnut(Properties properties) {
-			super(GarnishedFoods.MELTED_CINDER_FLOUR_HAZELNUT, properties);
+			super(GarnishedFoodValues.MELTED_CINDER_FLOUR_HAZELNUT, properties);
 		}
 	}
 	public static class Macadamia extends MeltedCinderFlourNutWithEffectFoodItem {
 		public Macadamia(Properties properties) {
-			super(GarnishedFoods.MELTED_CINDER_FLOUR_MACADAMIA, properties);
+			super(GarnishedFoodValues.MELTED_CINDER_FLOUR_MACADAMIA, properties);
 		}
 	}
 	public static class Cashew extends MeltedCinderFlourNutWithEffectFoodItem {
 		public Cashew(Properties properties) {
-			super(GarnishedFoods.MELTED_CINDER_FLOUR_CASHEW, properties);
+			super(GarnishedFoodValues.MELTED_CINDER_FLOUR_CASHEW, properties);
 		}
 	}
 	public static class Pistachio extends MeltedCinderFlourNutWithEffectFoodItem {
 		public Pistachio(Properties properties) {
-			super(GarnishedFoods.MELTED_CINDER_FLOUR_PISTACHIO, properties);
+			super(GarnishedFoodValues.MELTED_CINDER_FLOUR_PISTACHIO, properties);
 		}
 	}
 	public static class Almond extends MeltedCinderFlourNutWithEffectFoodItem {
 		public Almond(Properties properties) {
-			super(GarnishedFoods.MELTED_CINDER_FLOUR_ALMOND, properties);
+			super(GarnishedFoodValues.MELTED_CINDER_FLOUR_ALMOND, properties);
 		}
 	}
 	public static class Pecan extends MeltedCinderFlourNutWithEffectFoodItem {
 		public Pecan(Properties properties) {
-			super(GarnishedFoods.MELTED_CINDER_FLOUR_PECAN, properties);
+			super(GarnishedFoodValues.MELTED_CINDER_FLOUR_PECAN, properties);
 		}
 	}
 
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
-		tooltip.add(Component.translatable(meltedCinderFlourText()).withStyle(getCinderFlourColouring()));
+		tooltip.add(Component.translatable(meltedCinderFlourText()).withStyle(cinderFlour()));
 
 		if (!Screen.hasShiftDown()) {
 			tooltip.add(Component.literal(""));

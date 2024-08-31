@@ -30,7 +30,7 @@
         {
           "weight": 3,
           "data": {
-            "Name": "minecraft:oak_leaves",
+            "Name": "garnished:unassigned_nut_leaves",
             "Properties": {
               "distance": "7",
               "persistent": "false",

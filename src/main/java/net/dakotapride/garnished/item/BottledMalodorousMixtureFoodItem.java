@@ -2,7 +2,7 @@ package net.dakotapride.garnished.item;
 
 import org.jetbrains.annotations.NotNull;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
@@ -13,9 +13,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
-public class BottledMalodorousMixtureFoodItem extends Item implements IGarnishedItem {
+public class BottledMalodorousMixtureFoodItem extends Item implements IGarnishedUtilities {
 	public BottledMalodorousMixtureFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.BOTTLED_MALODOROUS_MIXTURE).stacksTo(16));
+		super(properties.food(GarnishedFoodValues.BOTTLED_MALODOROUS_MIXTURE).stacksTo(16));
 	}
 
 	@Override

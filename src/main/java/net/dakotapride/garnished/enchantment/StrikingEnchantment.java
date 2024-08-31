@@ -23,7 +23,18 @@ public class StrikingEnchantment extends HatchetEnchantment {
 
     @Override
     public float getDamageBonus(int level, @NotNull MobType mobType) {
-        return 1.4F + (float)Math.max(0, level - 1) * 0.60F;
+		return 1.4F + (float)Math.max(0, level - 0.50) * 0.60F;
+		// 1.4 + ((if 0 is greater than (level - 0.50) = 0, otherwise (level - 0.50)) * 0.60)
+
+		// 1.4 + (((level = 4) (level - 0.50)) * 0.60)
+		// 1.4 + (3.5 * 0.60)
+		// 1.4 + 2.1
+		// 3.5 damage increase at level 4
+
+		// 1.4 + (((level = 1) (level - 0.50)) * 0.60)
+		// 1.4 + (0.50 * 0.60)
+		// 1.4 + 0.30
+		// 1.7 damage increase at level 1
     }
 
     @Override

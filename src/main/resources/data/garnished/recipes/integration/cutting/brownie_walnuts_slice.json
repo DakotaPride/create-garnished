@@ -1,0 +1,25 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "garnished:brownie_walnuts"
+    }
+  ],
+  "result": [
+    {
+      "count": 4,
+      "item": "garnished:brownie_walnuts_piece"
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knives"
+  }
+}

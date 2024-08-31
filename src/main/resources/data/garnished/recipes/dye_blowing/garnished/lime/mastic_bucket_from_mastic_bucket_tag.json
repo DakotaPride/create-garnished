@@ -2,7 +2,7 @@
   "type": "garnished:lime_dye_blowing",
   "ingredients": [
     {
-      "tag": "forge:buckets/mastic_resin"
+      "tag": "c:buckets/mastic_resin"
     }
   ],
   "results": [

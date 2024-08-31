@@ -1,0 +1,7 @@
+{
+  "parent": "create:block/connected_glass_pane/side",
+  "textures": {
+    "edge": "garnished:block/sepia_planks",
+    "pane": "garnished:block/sepia_window"
+  }
+}

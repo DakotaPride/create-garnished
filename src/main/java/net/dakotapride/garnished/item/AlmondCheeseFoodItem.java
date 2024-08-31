@@ -1,10 +1,10 @@
 package net.dakotapride.garnished.item;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.minecraft.world.item.Item;
 
-public class AlmondCheeseFoodItem extends Item implements IGarnishedItem {
+public class AlmondCheeseFoodItem extends Item implements IGarnishedUtilities {
 	public AlmondCheeseFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.ALMOND_CHEESE));
+		super(properties.food(GarnishedFoodValues.ALMOND_CHEESE));
 	}
 }

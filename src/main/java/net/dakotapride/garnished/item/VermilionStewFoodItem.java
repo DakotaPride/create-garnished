@@ -2,7 +2,7 @@ package net.dakotapride.garnished.item;
 
 import org.jetbrains.annotations.NotNull;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
@@ -16,9 +16,9 @@ import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
-public class VermilionStewFoodItem extends Item implements IGarnishedItem {
+public class VermilionStewFoodItem extends Item implements IGarnishedUtilities {
 	public VermilionStewFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.VERMILION_STEW).stacksTo(1));
+		super(properties.food(GarnishedFoodValues.VERMILION_STEW).stacksTo(1));
 	}
 
 	@Override

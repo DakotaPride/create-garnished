@@ -1,0 +1,37 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "garnished:prickly_pear"
+    },
+    {
+      "item": "garnished:prickly_pear"
+    },
+    {
+      "item": "garnished:prickly_pear"
+    },
+    {
+      "item": "garnished:solemn_dust"
+    },
+    {
+      "item": "garnished:solemn_dust"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "garnished:prickly_pear_stew"
+  }
+}

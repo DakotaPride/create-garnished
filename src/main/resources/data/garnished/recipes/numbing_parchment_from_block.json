@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:numbing_parchment_block"
+    }
+  ],
+  "result": {
+    "item": "garnished:numbing_parchment",
+    "count": 4
+  }
+}

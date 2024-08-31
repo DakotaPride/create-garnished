@@ -412,6 +412,8 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 			output.add(GarnishedBlocks.SEPIA_HYPHAE.asStack());
 			output.add(GarnishedBlocks.STRIPPED_SEPIA_HYPHAE.asStack());
 			output.add(GarnishedBlocks.SEPIA_PLANKS.asStack());
+			output.add(GarnishedBlocks.SEPIA_WINDOW.asStack());
+			output.add(GarnishedBlocks.SEPIA_WINDOW_PANE.asStack());
 			output.add(GarnishedBlocks.SEPIA_SLAB.asStack());
 			output.add(GarnishedBlocks.SEPIA_STAIRS.asStack());
 			output.add(GarnishedBlocks.SEPIA_TRAPDOOR.asStack());
@@ -424,6 +426,8 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 			output.add(GarnishedBlocks.NUT_WOOD.asStack());
 			output.add(GarnishedBlocks.STRIPPED_NUT_WOOD.asStack());
 			output.add(GarnishedBlocks.NUT_PLANKS.asStack());
+			output.add(GarnishedBlocks.NUT_WINDOW.asStack());
+			output.add(GarnishedBlocks.NUT_WINDOW_PANE.asStack());
 			output.add(GarnishedBlocks.NUT_SLAB.asStack());
 			output.add(GarnishedBlocks.NUT_STAIRS.asStack());
 			output.add(GarnishedBlocks.NUT_TRAPDOOR.asStack());
@@ -432,6 +436,28 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 			// output.add(GarnishedItems.NUT_HANGING_SIGN.asStack());
 			output.add(GarnishedItems.NUT_BOAT.asStack());
 			output.add(GarnishedItems.NUT_CHEST_BOAT.asStack());
+
+			output.add(GarnishedBlocks.NUT_LEAVES.asStack());
+			output.add(GarnishedBlocks.UNASSIGNED_NUT_LEAVES.asStack());
+			output.add(GarnishedBlocks.CASHEW_LEAVES.asStack());
+			output.add(GarnishedBlocks.WALNUT_LEAVES.asStack());
+			output.add(GarnishedBlocks.ALMOND_LEAVES.asStack());
+			output.add(GarnishedBlocks.PECAN_LEAVES.asStack());
+			output.add(GarnishedBlocks.PISTACHIO_LEAVES.asStack());
+			output.add(GarnishedBlocks.MACADAMIA_LEAVES.asStack());
+			output.add(GarnishedBlocks.BUHG_LEAVES.asStack());
+			output.add(GarnishedBlocks.HAZELNUT_LEAVES.asStack());
+			output.add(GarnishedBlocks.CHESTNUT_LEAVES.asStack());
+
+			output.add(GarnishedBlocks.CASHEW_SACK.asStack());
+			output.add(GarnishedBlocks.WALNUT_SACK.asStack());
+			output.add(GarnishedBlocks.ALMOND_SACK.asStack());
+			output.add(GarnishedBlocks.PECAN_SACK.asStack());
+			output.add(GarnishedBlocks.PISTACHIO_SACK.asStack());
+			output.add(GarnishedBlocks.MACADAMIA_SACK.asStack());
+			output.add(GarnishedBlocks.BUHG_SACK.asStack());
+			output.add(GarnishedBlocks.HAZELNUT_SACK.asStack());
+			output.add(GarnishedBlocks.CHESTNUT_SACK.asStack());
 
 			output.add(GarnishedBlocks.MASTIC_BLOCK.asStack());
 			output.add(GarnishedBlocks.RED_MASTIC_BLOCK.asStack());
@@ -838,6 +864,9 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 			output.add(GarnishedBlocks.DRIED_VERMILION_KELP_BLOCK.asStack());
 			output.add(GarnishedBlocks.DRIED_DULSE_KELP_BLOCK.asStack());
 			output.add(GarnishedBlocks.VOLTAIC_SEA_GRASS.asStack());
+
+			output.add(GarnishedBlocks.NUMBING_PARCHMENT_BLOCK.asStack());
+			output.add(GarnishedBlocks.NUMBING_PARCHMENT_CARPET.asStack());
 
 			output.add(GarnishedBlocks.SEPIA_FUNGUS.asStack());
 			output.add(GarnishedBlocks.SOUL_ROOTS.asStack());

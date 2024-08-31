@@ -1,0 +1,7 @@
+{
+  "parent": "create:item/pane",
+  "textures": {
+    "edge": "garnished:block/nut_planks",
+    "pane": "garnished:block/nut_window"
+  }
+}

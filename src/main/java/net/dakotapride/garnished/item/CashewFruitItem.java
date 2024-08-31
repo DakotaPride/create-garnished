@@ -5,7 +5,7 @@ import java.util.List;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
@@ -16,9 +16,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 
-public class CashewFruitItem extends Item implements IGarnishedItem {
+public class CashewFruitItem extends Item implements IGarnishedUtilities {
 	public CashewFruitItem(Properties properties) {
-		super(properties.food(GarnishedFoods.CASHEW_FRUIT));
+		super(properties.food(GarnishedFoodValues.CASHEW_APPLE));
 	}
 
 	@Override

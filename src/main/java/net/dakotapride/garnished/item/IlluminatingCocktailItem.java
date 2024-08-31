@@ -1,14 +1,12 @@
 package net.dakotapride.garnished.item;
 
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
-import net.minecraft.world.item.UseAnim;
-
 import org.jetbrains.annotations.NotNull;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
@@ -18,12 +16,13 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
 
-public class IlluminatingCocktailItem extends Item implements IGarnishedItem {
+public class IlluminatingCocktailItem extends Item implements IGarnishedUtilities {
 	private static final int DRINK_DURATION = 40;
 	public IlluminatingCocktailItem(Properties properties) {
-		super(properties.food(GarnishedFoods.ILLUMINATING_COCKTAIL).stacksTo(16));
+		super(properties.food(GarnishedFoodValues.ILLUMINATING_COCKTAIL).stacksTo(16));
 	}
 
 	@Override

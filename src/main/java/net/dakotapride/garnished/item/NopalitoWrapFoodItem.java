@@ -1,10 +1,10 @@
 package net.dakotapride.garnished.item;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.minecraft.world.item.Item;
 
-public class NopalitoWrapFoodItem extends Item implements IGarnishedItem {
+public class NopalitoWrapFoodItem extends Item implements IGarnishedUtilities {
 	public NopalitoWrapFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.NOPALITO_WRAP).stacksTo(16));
+		super(properties.food(GarnishedFoodValues.NOPALITO_WRAP).stacksTo(16));
 	}
 }

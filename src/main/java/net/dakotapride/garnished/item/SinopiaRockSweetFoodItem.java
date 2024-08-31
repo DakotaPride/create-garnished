@@ -1,10 +1,10 @@
 package net.dakotapride.garnished.item;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.minecraft.world.item.Item;
 
-public class SinopiaRockSweetFoodItem extends Item implements IGarnishedItem {
+public class SinopiaRockSweetFoodItem extends Item implements IGarnishedUtilities {
 	public SinopiaRockSweetFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.SINOPIA_ROCK_SWEET).stacksTo(16));
+		super(properties.food(GarnishedFoodValues.SINOPIA_ROCK_SWEET).stacksTo(16));
 	}
 }

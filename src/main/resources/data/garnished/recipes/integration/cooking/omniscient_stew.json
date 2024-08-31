@@ -1,0 +1,34 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "farmersdelight"
+      ]
+    }
+  ],
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "garnished:pansophical_petal"
+    },
+    {
+      "item": "garnished:pansophical_petal"
+    },
+    {
+      "item": "garnished:fiendish_spore"
+    },
+    {
+      "item": "garnished:senile_bone"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "garnished:omniscient_stew"
+  }
+}

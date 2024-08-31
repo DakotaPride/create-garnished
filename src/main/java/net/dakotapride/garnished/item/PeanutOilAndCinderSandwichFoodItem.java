@@ -1,11 +1,10 @@
 package net.dakotapride.garnished.item;
 
-import net.dakotapride.garnished.registry.GarnishedFoods;
-import net.minecraft.world.food.FoodProperties;
+import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.minecraft.world.item.Item;
 
-public class PeanutOilAndCinderSandwichFoodItem extends Item implements IGarnishedItem {
+public class PeanutOilAndCinderSandwichFoodItem extends Item implements IGarnishedUtilities {
 	public PeanutOilAndCinderSandwichFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoods.PEANUT_OIL_AND_CINDER_SANDWICH).stacksTo(16));
+		super(properties.food(GarnishedFoodValues.PEANUT_OIL_AND_CINDER_SANDWICH).stacksTo(16));
 	}
 }

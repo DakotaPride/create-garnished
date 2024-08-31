@@ -3,7 +3,7 @@
   "ingredients": [
     [
       {
-        "tag": "forge:stained_glass"
+        "tag": "c:stained_glass"
       },
       {
         "item": "minecraft:glass"
