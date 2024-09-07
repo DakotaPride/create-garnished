@@ -74,16 +74,13 @@ public class CreateGarnished implements ModInitializer {
 
 		// Generation
 		BiomeModifications.addFeature(BiomeSelectors.tag(GarnishedTags.HAS_NUT_TREES_TAG),
-		 		GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.NUT_TREE_PLACED);
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.NUT_TREE_PLACED);
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.SOUL_SAND_VALLEY),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SEPIA_FUNGUS_TREE_PLACED);
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.SOUL_SAND_VALLEY),
 				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SOUL_ROOTS_PLACED);
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.SOUL_SAND_VALLEY),
 				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SEPIA_FUNGUS_PLACED);
-		BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_END),
-				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.BARREN_ROOTS_PLACED);
-		BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_END),
-				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.CHORUS_PLANT_PLACED);
-
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.COLD_OCEAN),
 				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.VERMILION_KELP_PLACED);
 		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.COLD_OCEAN),
@@ -92,6 +89,14 @@ public class CreateGarnished implements ModInitializer {
 				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.DULSE_KELP_PLACED);
 		BiomeModifications.addFeature(BiomeSelectors.tag(GarnishedTags.HAS_REMNANT_TAG),
 				GenerationStep.Decoration.UNDERGROUND_ORES, GarnishedFeatures.REMNANT_PLACED);
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.WARPED_FOREST),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.PANSOPHICAL_DAISY_PLACED);
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.CRIMSON_FOREST),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.INCANDESCENT_LILY_PLACED);
+		BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_NETHER),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SORROWFUL_LICHEN_PLACED);
+		BiomeModifications.addFeature(BiomeSelectors.includeByKey(Biomes.BASALT_DELTAS),
+				GenerationStep.Decoration.VEGETAL_DECORATION, GarnishedFeatures.SORROWFUL_LICHEN_BASALT_DELTAS_PLACED);
 
 		LOGGER.info("Create addon mod [{}] is loading alongside Create [{}]!", NAME, Create.VERSION);
 		LOGGER.info(EnvExecutor.unsafeRunForDist(
