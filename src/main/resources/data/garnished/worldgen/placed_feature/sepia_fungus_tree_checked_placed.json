@@ -1,0 +1,30 @@
+{
+  "feature": "garnished:sepia_fungus_tree_configured",
+  "placement": [
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "garnished:sepia_fungus"
+        }
+      }
+    },
+    {
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:weighted_list",
+        "distribution": [
+          {
+            "weight": 3,
+            "data": 0
+          },
+          {
+            "weight": 1,
+            "data": 1
+          }
+        ]
+      }
+    }
+  ]
+}

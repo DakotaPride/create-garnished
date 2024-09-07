@@ -2,8 +2,29 @@
   "feature": "garnished:sepia_fungus_tree_configured",
   "placement": [
     {
-      "type": "minecraft:count_on_every_layer",
-      "count": 2
+      "type": "minecraft:count",
+      "count": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 12,
+          "max_inclusive": 24
+        }
+      }
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:uniform",
+        "min_inclusive": {
+          "absolute": 40
+        },
+        "max_inclusive": {
+          "absolute": 120
+        }
+      }
     },
     {
       "type": "minecraft:biome"
