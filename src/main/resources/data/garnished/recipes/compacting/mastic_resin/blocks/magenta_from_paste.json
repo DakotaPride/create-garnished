@@ -1,0 +1,37 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "garnished:mastic_paste_magenta"
+    },
+    {
+      "item": "garnished:mastic_paste_magenta"
+    },
+    {
+      "item": "garnished:mastic_paste_magenta"
+    },
+    {
+      "item": "garnished:mastic_paste_magenta"
+    },
+    {
+      "item": "garnished:mastic_paste_magenta"
+    },
+    {
+      "item": "garnished:mastic_paste_magenta"
+    },
+    {
+      "item": "garnished:mastic_paste_magenta"
+    },
+    {
+      "item": "garnished:mastic_paste_magenta"
+    },
+    {
+      "item": "garnished:mastic_paste_magenta"
+    }
+  ],
+  "results": [
+    {
+      "item": "garnished:magenta_mastic_block"
+    }
+  ]
+}

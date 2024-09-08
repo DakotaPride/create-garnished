@@ -10,17 +10,12 @@
     "#": {
       "tag": "garnished:mastic_paste"
     },
-    "X": [
-      {
-        "item": "minecraft:purple_dye"
-      },
-      {
-        "item": "minecraft:magenta_dye"
-      }
-    ]
+    "X": {
+      "item": "minecraft:white_dye"
+    }
   },
   "result": {
-    "item": "garnished:mastic_paste_purple",
+    "item": "garnished:mastic_paste_white",
     "count": 8
   }
 }

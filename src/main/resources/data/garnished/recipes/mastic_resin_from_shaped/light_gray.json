@@ -10,20 +10,12 @@
     "#": {
       "tag": "garnished:mastic_resin"
     },
-    "X": [
-      {
-        "item": "minecraft:blue_dye"
-      },
-      {
-        "item": "minecraft:cyan_dye"
-      },
-      {
-        "item": "minecraft:light_blue_dye"
-      }
-    ]
+    "X": {
+      "item": "minecraft:light_gray_dye"
+    }
   },
   "result": {
-    "item": "garnished:mastic_resin_blue",
+    "item": "garnished:mastic_resin_light_gray",
     "count": 8
   }
 }
