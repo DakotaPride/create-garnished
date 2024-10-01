@@ -7,6 +7,7 @@ import net.dakotapride.garnished.item.hatchet.IntegratedHatchetToolItem;
 import net.dakotapride.garnished.item.hatchet.tier.integrated.mythicupgrades.MythicUpgradesHatchetToolItem;
 import net.dakotapride.garnished.registry.GarnishedAdvancementUtils;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
 
 import net.minecraft.world.entity.EquipmentSlot;
@@ -34,6 +35,8 @@ import net.minecraft.world.entity.monster.Skeleton;
 import net.minecraft.world.entity.monster.WitherSkeleton;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+
+import java.util.Objects;
 
 @Mixin(LivingEntity.class)
 public abstract class LivingEntityMixin extends Entity {
@@ -85,8 +88,8 @@ public abstract class LivingEntityMixin extends Entity {
 	private void applyThornsDamage$getDamageAfterMagicAbsorb(DamageSource source, float amount, CallbackInfoReturnable<Float> cir) {
 
 		if (source.getDirectEntity() instanceof LivingEntity attacker) {
-			if (entity.hasEffect(GarnishedEffects.THORNS)) {
-				attacker.hurt(entity.damageSources().thorns(entity), 3.0F * entity.getEffect(GarnishedEffects.THORNS).getAmplifier());
+			if (entity.hasEffect(GarnishedEffects.THORNS) && entity.getEffect(GarnishedEffects.THORNS) != null) {
+				attacker.hurt(entity.damageSources().thorns(entity), 3.0F * Objects.requireNonNull(entity.getEffect(GarnishedEffects.THORNS)).getAmplifier());
 			}
 		}
 
@@ -94,9 +97,10 @@ public abstract class LivingEntityMixin extends Entity {
 
 	@Inject(method = "hurt", at = @At("HEAD"), cancellable = true)
 	private void negateArrowDamage$hurt(DamageSource pSource, float pAmount, CallbackInfoReturnable<Boolean> cir) {
-		if (entity.hasEffect(GarnishedEffects.TRUTH_SEEKER) && pSource.getDirectEntity() instanceof AbstractArrow) {
-			MobEffectInstance truthSeekerMobEffect = entity.getEffect(GarnishedEffects.TRUTH_SEEKER);
-			int effectAmplifier = truthSeekerMobEffect.getAmplifier();
+		if (entity.hasEffect(GarnishedEffects.TRUTH_SEEKER) && pSource.getDirectEntity() instanceof AbstractArrow && entity.getEffect(GarnishedEffects.TRUTH_SEEKER) != null) {
+			MobEffect truthSeekerMobEffect = GarnishedEffects.TRUTH_SEEKER;
+			//assert truthSeekerMobEffect != null;
+			int effectAmplifier = Objects.requireNonNull(entity.getEffect(truthSeekerMobEffect)).getAmplifier();
 			int boundInt = 20 - effectAmplifier;
 			int j = entity.getRandom().nextInt(10);
 			int k = j + 10;
