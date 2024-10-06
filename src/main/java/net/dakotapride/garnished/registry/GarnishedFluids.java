@@ -257,7 +257,7 @@ public class GarnishedFluids {
 		for (Direction direction : Iterate.directions) {
 			FluidState metFluidState =
 					fluidState.isSource() ? fluidState : world.getFluidState(pos.relative(direction));
-			if (!metFluidState.is(FluidTags.WATER))
+			if (metFluidState.is(FluidTags.LAVA))
 				continue;
 			BlockState lavaInteraction = getLavaInteraction(metFluidState);
 			if (lavaInteraction == null)
