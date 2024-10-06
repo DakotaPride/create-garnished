@@ -7,7 +7,7 @@
       ]
     }
   ],
-  "type": "garnished:blue_dye_blowing",
+  "type": "garnished:magenta_dye_blowing",
   "ingredients": [
     {
       "tag": "ae2:paint_balls"
@@ -15,7 +15,7 @@
   ],
   "results": [
     {
-      "item": "ae2:blue_paint_ball",
+      "item": "ae2:magenta_paint_ball",
       "count": 1
     }
   ]
