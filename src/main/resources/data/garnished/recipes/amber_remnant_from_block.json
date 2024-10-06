@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:amber_remnant_block"
+    }
+  ],
+  "result": {
+    "item": "garnished:amber_remnant",
+    "count": 4
+  }
+}

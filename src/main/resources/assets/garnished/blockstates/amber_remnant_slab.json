@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "garnished:block/amber_remnant_slab"
+    },
+    "type=double": {
+      "model": "garnished:block/amber_remnant_block"
+    },
+    "type=top": {
+      "model": "garnished:block/amber_remnant_slab_top"
+    }
+  }
+}
