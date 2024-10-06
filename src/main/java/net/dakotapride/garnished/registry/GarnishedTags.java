@@ -20,6 +20,7 @@ public class GarnishedTags {
 	public static final TagKey<Item> AVERSION_FOODS_TAG = garnishedTag("aversion_foods", BuiltInRegistries.ITEM);
 	public static final TagKey<Item> HATCHETS_TAG = commonTag("tools/hatchets", BuiltInRegistries.ITEM);
 	public static final TagKey<Fluid> GARNISHED_FLUIDS_TAG = garnishedTag("fluids", BuiltInRegistries.FLUID);
+	public static final TagKey<Fluid> MASTIC_RESIN_FLUIDS_TAG = garnishedTag("mastic_resin", BuiltInRegistries.FLUID);
 	public static final TagKey<Block> MINEABLE_WITH_HATCHET = commonTag("mineable/hatchet", BuiltInRegistries.BLOCK);
 	public static final TagKey<EntityType<?>> IS_AFFECTED_BY_SALVAGING = commonTag("affected_by/salvaging", BuiltInRegistries.ENTITY_TYPE);
 	public static final TagKey<EntityType<?>> IS_AFFECTED_BY_RAVAGING = commonTag("affected_by/ravaging", BuiltInRegistries.ENTITY_TYPE);

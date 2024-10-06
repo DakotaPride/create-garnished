@@ -4,7 +4,6 @@ import static net.minecraft.world.item.Items.BUCKET;
 
 import javax.annotation.Nullable;
 
-import com.simibubi.create.AllFluids;
 import com.simibubi.create.content.decoration.palettes.AllPaletteStoneTypes;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.fluid.FluidHelper;
@@ -31,7 +30,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.FluidTags;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
@@ -258,7 +256,7 @@ public class GarnishedFluids {
 		for (Direction direction : Iterate.directions) {
 			FluidState metFluidState =
 					fluidState.isSource() ? fluidState : world.getFluidState(pos.relative(direction));
-			if (!metFluidState.is(FluidTags.WATER))
+			if (metFluidState.is(FluidTags.LAVA))
 				continue;
 			BlockState lavaInteraction = getLavaInteraction(metFluidState);
 			if (lavaInteraction == null)
@@ -281,7 +279,7 @@ public class GarnishedFluids {
 		if (fluid.isSame(APPLE_CIDER.get()))
 			return GarnishedBlocks.CARNOTITE.getDefaultState();
 		// Fluids.lavaInteraction(fluidState, CASHEW_MIXTURE.get(), Blocks.END_STONE);
-		if (fluid.isSame(PEANUT_OIL.get()))
+		if (fluid.isSame(CASHEW_MIXTURE.get()))
 			return Blocks.END_STONE.defaultBlockState();
 
 		// Fluids.lavaInteraction(fluidState, MASTIC_RESIN.get(), GarnishedBlocks.ZULTANITE.get());
