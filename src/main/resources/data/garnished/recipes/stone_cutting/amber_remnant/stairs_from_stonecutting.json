@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "tag": "garnished:amber_remnant_blocks"
+  },
+  "result": "garnished:amber_remnant_stairs"
+}

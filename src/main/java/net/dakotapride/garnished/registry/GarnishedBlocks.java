@@ -12,6 +12,7 @@ import net.dakotapride.garnished.block.AbyssalStoneBlock;
 import net.dakotapride.garnished.block.AbyssalStoneSlabBlock;
 import net.dakotapride.garnished.block.AbyssalStoneStairsBlock;
 import net.dakotapride.garnished.block.AbyssalStoneWallBlock;
+import net.dakotapride.garnished.block.AmberRemnantStairsBlock;
 import net.dakotapride.garnished.block.BokChoyPlantBlock;
 import net.dakotapride.garnished.block.CarnotiteStairsBlock;
 import net.dakotapride.garnished.block.DragonStoneStairsBlock;
@@ -1621,6 +1622,31 @@ public class GarnishedBlocks {
 					.properties(p -> p.explosionResistance(12.0F)).register();
 	public static final BlockEntry<WallBlock> SMOOTH_DRAGON_STONE_WALL =
 			REGISTRATE.block("smooth_dragon_stone_wall", WallBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+
+	public static final BlockEntry<Block> AMBER_REMNANT_BLOCK =
+			REGISTRATE.block("amber_remnant_block", Block::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<SlabBlock> AMBER_REMNANT_SLAB =
+			REGISTRATE.block("amber_remnant_slab", SlabBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<AmberRemnantStairsBlock> AMBER_REMNANT_STAIRS =
+			REGISTRATE.block("amber_remnant_stairs", AmberRemnantStairsBlock::new)
+					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
+					.simpleItem()
+					.initialProperties(() -> Blocks.STONE)
+					.properties(p -> p.explosionResistance(12.0F)).register();
+	public static final BlockEntry<WallBlock> AMBER_REMNANT_WALL =
+			REGISTRATE.block("amber_remnant_wall", WallBlock::new)
 					.blockstate((ctx, pov) -> pov.simpleBlock(ctx.get(), AssetLookup.standardModel(ctx, pov)))
 					.simpleItem()
 					.initialProperties(() -> Blocks.STONE)
