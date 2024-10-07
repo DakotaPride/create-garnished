@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "carnotite_variants",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:amber_remnant_block"
+    }
+  },
+  "result": {
+    "item": "garnished:amber_remnant_slab",
+    "count": 6
+  }
+}
