@@ -10,6 +10,10 @@
     "garnished:garnish_compound_block",
     "garnished:salt_compound_block",
     "garnished:ethereal_compound_block",
-    "garnished:senile_bone_block"
+    "garnished:senile_bone_block",
+    "garnished:amber_remnant_block",
+    "garnished:amber_remnant_slab",
+    "garnished:amber_remnant_stairs",
+    "garnished:amber_remnant_wall"
   ]
 }
