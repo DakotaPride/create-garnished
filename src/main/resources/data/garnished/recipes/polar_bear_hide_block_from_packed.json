@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "garnished:packed_polar_bear_hide_block"
+    }
+  ],
+  "result": {
+    "item": "garnished:polar_bear_hide_block",
+    "count": 1
+  }
+}

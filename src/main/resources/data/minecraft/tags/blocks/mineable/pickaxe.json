@@ -7,13 +7,10 @@
     "#garnished:stone_types/ritualistic_stone",
     "#garnished:stone_types/dragon_stone",
     "#garnished:stone_types/zultanite",
+    "#garnished:amber_remnant_blocks",
     "garnished:garnish_compound_block",
     "garnished:salt_compound_block",
     "garnished:ethereal_compound_block",
-    "garnished:senile_bone_block",
-    "garnished:amber_remnant_block",
-    "garnished:amber_remnant_slab",
-    "garnished:amber_remnant_stairs",
-    "garnished:amber_remnant_wall"
+    "garnished:senile_bone_block"
   ]
 }

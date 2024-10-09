@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "garnished:block/amber_remnant_bricks",
+    "side": "garnished:block/amber_remnant_bricks",
+    "top": "garnished:block/amber_remnant_bricks"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "garnished:block/amber_remnant_bricks"
+  }
+}

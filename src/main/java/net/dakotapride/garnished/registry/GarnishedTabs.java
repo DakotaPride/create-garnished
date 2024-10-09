@@ -912,6 +912,19 @@ public class GarnishedTabs {
 			output.accept(GarnishedBlocks.NUMBING_PARCHMENT_BLOCK.asStack());
 			output.accept(GarnishedBlocks.NUMBING_PARCHMENT_CARPET.asStack());
 
+			output.accept(GarnishedBlocks.POLAR_BEAR_HIDE_BLOCK.asStack());
+			output.accept(GarnishedBlocks.PACKED_POLAR_BEAR_HIDE_BLOCK.asStack());
+
+			output.accept(GarnishedBlocks.AMBER_REMNANT_BLOCK.asStack());
+			output.accept(GarnishedBlocks.AMBER_REMNANT_SLAB.asStack());
+			output.accept(GarnishedBlocks.AMBER_REMNANT_STAIRS.asStack());
+			output.accept(GarnishedBlocks.AMBER_REMNANT_WALL.asStack());
+
+			output.accept(GarnishedBlocks.AMBER_REMNANT_BRICKS.asStack());
+			output.accept(GarnishedBlocks.AMBER_REMNANT_BRICK_SLAB.asStack());
+			output.accept(GarnishedBlocks.AMBER_REMNANT_BRICK_STAIRS.asStack());
+			output.accept(GarnishedBlocks.AMBER_REMNANT_BRICK_WALL.asStack());
+
 			output.accept(GarnishedBlocks.SEPIA_FUNGUS.asStack());
 			output.accept(GarnishedBlocks.SOUL_ROOTS.asStack());
 			output.accept(GarnishedBlocks.INCANDESCENT_LILY.asStack());
