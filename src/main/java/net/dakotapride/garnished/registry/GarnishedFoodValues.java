@@ -144,7 +144,7 @@ public enum GarnishedFoodValues implements IGarnishedUtilities {
     public static final FoodProperties YAM_O_GLOW_PUFFS = generic(OVERWORLD_MIN.nutrition, 0.20f).fast().build();
     public static final FoodProperties CACKLING_PIE = ow_max().build();
     public static final FoodProperties SHINING_DISH = generic(OVERWORLD_MAX.nutrition, 0.40f)
-            .effect(new MobEffectInstance(MobEffects.GLOWING), 0.45f).build(); // 45% chance of occurring
+			.effect(new MobEffectInstance(MobEffects.GLOWING, 300), 0.45f).build(); // 45% chance of occurring
     public static final FoodProperties MUESLI = generic(OVERWORLD_MAX.nutrition, 0.60f).build();
     public static final FoodProperties GENERIC_DRIED_KELP = generic(2, 0.30f).fast().build();
     public static final FoodProperties DRIED_DULSE_KELP = generic(4, GENERIC_DRIED_KELP.getSaturationModifier()).fast().build();
