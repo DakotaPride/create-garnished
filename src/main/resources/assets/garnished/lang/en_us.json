@@ -315,12 +315,18 @@
   "block.garnished.sepia_window": "Sepia Window",
   "block.garnished.sepia_window_pane": "Sepia Window Pane",
 
+  "block.garnished.polar_bear_hide_block": "Block of Polar Bear Hide",
+  "block.garnished.packed_polar_bear_hide_block": "Block of Packed Polar Bear Hide",
   "block.garnished.numbing_parchment_block": "Block of Numbing Parchment",
   "block.garnished.numbing_parchment_carpet": "Numbing Clothe",
   "block.garnished.amber_remnant_block": "Block of Amber Remnant",
   "block.garnished.amber_remnant_slab": "Amber Remnant Slab",
   "block.garnished.amber_remnant_stairs": "Amber Remnant Stairs",
   "block.garnished.amber_remnant_wall": "Amber Remnant Wall",
+  "block.garnished.amber_remnant_bricks": "Amber Remnant Bricks",
+  "block.garnished.amber_remnant_brick_slab": "Amber Remnant Brick Slab",
+  "block.garnished.amber_remnant_brick_stairs": "Amber Remnant Brick Stairs",
+  "block.garnished.amber_remnant_brick_wall": "Amber Remnant Brick Wall",
 
   "item.garnished.baklava": "Baklava",
   "item.garnished.slime_drop": "Slime Drop",

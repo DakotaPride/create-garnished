@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "amber_remnant_variants",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "garnished:amber_remnant_bricks"
+    }
+  },
+  "result": {
+    "item": "garnished:amber_remnant_brick_slab",
+    "count": 6
+  }
+}

@@ -115,6 +115,7 @@ public class GarnishedCT {
     public static final CTSpriteShiftEntry SEPIA_WINDOW = vertical("sepia_window");
     public static final CTSpriteShiftEntry NUT_WINDOW_PANE = vertical("nut_window");
     public static final CTSpriteShiftEntry SEPIA_WINDOW_PANE = vertical("sepia_window");
+	public static final CTSpriteShiftEntry AMBER_REMNANT_BLOCK = omni("amber_remnant_block");
     //public static final CTSpriteShiftEntry NUMBING_PARCHMENT = omni("numbing_parchment_block");
 
     private static SpriteShiftEntry get(String originalLocation, String targetLocation) {

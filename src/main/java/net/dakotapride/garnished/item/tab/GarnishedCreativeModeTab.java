@@ -868,6 +868,19 @@ public class GarnishedCreativeModeTab extends CreativeModeTab {
 			output.add(GarnishedBlocks.NUMBING_PARCHMENT_BLOCK.asStack());
 			output.add(GarnishedBlocks.NUMBING_PARCHMENT_CARPET.asStack());
 
+			output.add(GarnishedBlocks.POLAR_BEAR_HIDE_BLOCK.asStack());
+			output.add(GarnishedBlocks.PACKED_POLAR_BEAR_HIDE_BLOCK.asStack());
+
+			output.add(GarnishedBlocks.AMBER_REMNANT_BLOCK.asStack());
+			output.add(GarnishedBlocks.AMBER_REMNANT_SLAB.asStack());
+			output.add(GarnishedBlocks.AMBER_REMNANT_STAIRS.asStack());
+			output.add(GarnishedBlocks.AMBER_REMNANT_WALL.asStack());
+
+			output.add(GarnishedBlocks.AMBER_REMNANT_BRICKS.asStack());
+			output.add(GarnishedBlocks.AMBER_REMNANT_BRICK_SLAB.asStack());
+			output.add(GarnishedBlocks.AMBER_REMNANT_BRICK_STAIRS.asStack());
+			output.add(GarnishedBlocks.AMBER_REMNANT_BRICK_WALL.asStack());
+
 			output.add(GarnishedBlocks.SEPIA_FUNGUS.asStack());
 			output.add(GarnishedBlocks.SOUL_ROOTS.asStack());
 			output.add(GarnishedBlocks.INCANDESCENT_LILY.asStack());
