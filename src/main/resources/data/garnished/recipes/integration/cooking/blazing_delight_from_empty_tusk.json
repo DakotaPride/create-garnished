@@ -9,32 +9,29 @@
   ],
   "type": "farmersdelight:cooking",
   "container": {
-    "item": "minecraft:bowl"
+    "item": "garnished:empty_crimson_tusk"
   },
   "cookingtime": 200,
   "experience": 1.0,
   "ingredients": [
     {
-      "item": "garnished:voltaic_sea_grass"
+      "item": "garnished:enflamed_mandible"
     },
     {
-      "item": "garnished:voltaic_sea_grass"
+      "tag": "c:ender_dusts"
     },
     {
-      "item": "garnished:voltaic_sea_grass"
+      "item": "garnished:crushed_shroomlight"
     },
     {
-      "item": "minecraft:tube_coral_fan"
+      "item": "garnished:malodorous_mixture"
     },
     {
-      "item": "minecraft:tube_coral_fan"
-    },
-    {
-      "item": "minecraft:lustrous_pearl"
+      "item": "garnished:torrid_blend"
     }
   ],
   "recipe_book_tab": "meals",
   "result": {
-    "item": "garnished:galvanic_haunting"
+    "item": "garnished:blazing_delight"
   }
 }

@@ -9,7 +9,7 @@
   ],
   "type": "farmersdelight:cooking",
   "container": {
-    "tag": "garnished:crimson_tusks"
+    "item": "garnished:crimson_tusk"
   },
   "cookingtime": 200,
   "experience": 1.0,
