@@ -1,10 +1,9 @@
 package net.dakotapride.garnished.item;
 
 import net.dakotapride.garnished.registry.GarnishedFoodValues;
-import net.minecraft.world.item.Item;
 
-public class CinderRollFoodItem extends Item implements IGarnishedUtilities {
+public class CinderRollFoodItem extends ConditionalEffectItem implements IGarnishedUtilities {
 	public CinderRollFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoodValues.CINDER_ROLL).stacksTo(16));
+		super(5, 1.0F, properties.food(GarnishedFoodValues.CINDER_ROLL).stacksTo(16));
 	}
 }

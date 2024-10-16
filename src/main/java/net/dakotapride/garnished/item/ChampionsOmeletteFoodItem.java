@@ -1,10 +1,9 @@
 package net.dakotapride.garnished.item;
 
 import net.dakotapride.garnished.registry.GarnishedFoodValues;
-import net.minecraft.world.item.Item;
 
-public class ChampionsOmeletteFoodItem extends Item implements IGarnishedUtilities {
+public class ChampionsOmeletteFoodItem extends ConditionalEffectItem implements IGarnishedUtilities {
 	public ChampionsOmeletteFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoodValues.CHAMPIONS_OMELETTE).stacksTo(16));
+		super(3, 1.0F, properties.food(GarnishedFoodValues.CHAMPIONS_OMELETTE).stacksTo(16));
 	}
 }

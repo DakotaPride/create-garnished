@@ -1,10 +1,9 @@
 package net.dakotapride.garnished.item;
 
 import net.dakotapride.garnished.registry.GarnishedFoodValues;
-import net.minecraft.world.item.Item;
 
-public class EnderJellyFoodItem extends Item implements IGarnishedUtilities {
+public class EnderJellyFoodItem extends ConditionalEffectItem implements IGarnishedUtilities {
 	public EnderJellyFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoodValues.ENDER_JELLY));
+		super(0, 1.0F, properties.food(GarnishedFoodValues.ENDER_JELLY));
 	}
 }

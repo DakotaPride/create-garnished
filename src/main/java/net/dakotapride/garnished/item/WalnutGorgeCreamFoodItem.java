@@ -10,15 +10,14 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
-public class WalnutGorgeCreamFoodItem extends Item implements IGarnishedUtilities {
+public class WalnutGorgeCreamFoodItem extends ConditionalEffectItem implements IGarnishedUtilities {
 	public WalnutGorgeCreamFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoodValues.WALNUT_GORGE_CREAM).stacksTo(1));
+		super(0, 0.75F, properties.food(GarnishedFoodValues.WALNUT_GORGE_CREAM).stacksTo(1));
 	}
 
 	@Override
@@ -40,7 +39,7 @@ public class WalnutGorgeCreamFoodItem extends Item implements IGarnishedUtilitie
 				}
 			}
 
-			return stack;
+			return super.finishUsingItem(stack, level, livingEntity);
 		}
 
 	}

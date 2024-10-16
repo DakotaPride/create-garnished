@@ -10,15 +10,14 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
-public class GrimStewFoodItem extends Item implements IGarnishedUtilities {
+public class GrimStewFoodItem extends ConditionalEffectItem implements IGarnishedUtilities {
 	public GrimStewFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoodValues.GRIM_STEW).stacksTo(1));
+		super(5, 0.75F, properties.food(GarnishedFoodValues.GRIM_STEW).stacksTo(1));
 	}
 
 	@Override
@@ -40,7 +39,7 @@ public class GrimStewFoodItem extends Item implements IGarnishedUtilities {
 				}
 			}
 
-			return stack;
+			return super.finishUsingItem(stack, level, livingEntity);
 		}
 
 	}

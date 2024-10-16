@@ -45,7 +45,7 @@ public class DesolateStewFoodItem extends Item implements IGarnishedUtilities {
 				}
 			}
 
-			return stack;
+			return super.finishUsingItem(stack, level, livingEntity);
 		}
 
 	}
