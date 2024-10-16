@@ -111,7 +111,7 @@ public interface IGarnishedUtilities {
 			}
 		}
 
-        CreateGarnished.LOGGER.info("achieved float value: {}, requested value: {}", floatChance, chance);
+        //CreateGarnished.LOGGER.info("achieved float value: {}, requested value: {}", floatChance, chance);
 
 		return new MobEffectInstance(MobEffects.REGENERATION, tick * 20, 1, false, false, false);
 	}
