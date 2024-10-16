@@ -40,7 +40,7 @@ public class WrappedWarpedTangleFoodItem extends Item implements IGarnishedUtili
 				}
 			}
 
-			return stack;
+			return super.finishUsingItem(stack, level, livingEntity);
 		}
 
 	}

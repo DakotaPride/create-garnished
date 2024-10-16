@@ -76,7 +76,7 @@ public class BitterAppleCiderFoodItem extends Item implements IGarnishedUtilitie
 				}
 			}
 
-			return stack;
+			return super.finishUsingItem(stack, level, livingEntity);
 		}
 
 	}

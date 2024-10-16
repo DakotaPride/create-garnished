@@ -8,14 +8,13 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
-public class BottledMalodorousMixtureFoodItem extends Item implements IGarnishedUtilities {
+public class BottledMalodorousMixtureFoodItem extends ConditionalEffectItem implements IGarnishedUtilities {
 	public BottledMalodorousMixtureFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoodValues.BOTTLED_MALODOROUS_MIXTURE).stacksTo(16));
+		super(5, 0.15F, properties.food(GarnishedFoodValues.BOTTLED_MALODOROUS_MIXTURE).stacksTo(16));
 	}
 
 	@Override
@@ -37,7 +36,7 @@ public class BottledMalodorousMixtureFoodItem extends Item implements IGarnished
 				}
 			}
 
-			return stack;
+			return super.finishUsingItem(stack, level, livingEntity);
 		}
 
 	}

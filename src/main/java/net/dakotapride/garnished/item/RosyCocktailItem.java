@@ -12,17 +12,16 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
 
-public class RosyCocktailItem extends Item implements IGarnishedUtilities {
+public class RosyCocktailItem extends ConditionalEffectItem implements IGarnishedUtilities {
 	private static final int DRINK_DURATION = 40;
 	public RosyCocktailItem(Properties properties) {
-		super(properties.food(GarnishedFoodValues.ROSY_COCKTAIL).stacksTo(8));
+		super(2, 0.50F, properties.food(GarnishedFoodValues.ROSY_COCKTAIL).stacksTo(8));
 	}
 
 	@Override
@@ -44,7 +43,7 @@ public class RosyCocktailItem extends Item implements IGarnishedUtilities {
 				}
 			}
 
-			return stack;
+			return super.finishUsingItem(stack, level, livingEntity);
 		}
 
 	}

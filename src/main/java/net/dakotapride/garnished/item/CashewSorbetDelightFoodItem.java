@@ -10,15 +10,14 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
-public class CashewSorbetDelightFoodItem extends Item implements IGarnishedUtilities {
+public class CashewSorbetDelightFoodItem extends ConditionalEffectItem implements IGarnishedUtilities {
 	public CashewSorbetDelightFoodItem(Properties properties) {
-		super(properties.food(GarnishedFoodValues.CASHEW_SORBET_DELIGHT).stacksTo(1));
+		super(0, 0.80F, properties.food(GarnishedFoodValues.CASHEW_SORBET_DELIGHT).stacksTo(1));
 	}
 
 	@Override
@@ -40,7 +39,7 @@ public class CashewSorbetDelightFoodItem extends Item implements IGarnishedUtili
 				}
 			}
 
-			return stack;
+			return super.finishUsingItem(stack, level, livingEntity);
 		}
 
 	}

@@ -12,17 +12,16 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
 
-public class ChorusCocktailItem extends Item implements IGarnishedUtilities {
+public class ChorusCocktailItem extends ConditionalEffectItem implements IGarnishedUtilities {
 	private static final int DRINK_DURATION = 40;
 	public ChorusCocktailItem(Properties properties) {
-		super(properties.food(GarnishedFoodValues.CHORUS_COCKTAIL).stacksTo(16));
+		super(3, 1.0F, properties.food(GarnishedFoodValues.CHORUS_COCKTAIL).stacksTo(16));
 	}
 
 	@Override
@@ -44,7 +43,7 @@ public class ChorusCocktailItem extends Item implements IGarnishedUtilities {
 				}
 			}
 
-			return stack;
+			return super.finishUsingItem(stack, level, livingEntity);
 		}
 
 	}

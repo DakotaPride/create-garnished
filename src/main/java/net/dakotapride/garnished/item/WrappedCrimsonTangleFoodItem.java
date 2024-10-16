@@ -40,7 +40,7 @@ public class WrappedCrimsonTangleFoodItem extends Item implements IGarnishedUtil
 				}
 			}
 
-			return stack;
+			return super.finishUsingItem(stack, level, livingEntity);
 		}
 
 	}
