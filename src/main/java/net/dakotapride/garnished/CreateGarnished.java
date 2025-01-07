@@ -1,5 +1,8 @@
 package net.dakotapride.garnished;
 
+import com.simibubi.create.foundation.item.ItemDescription;
+import com.simibubi.create.foundation.item.TooltipHelper;
+
 import net.dakotapride.garnished.modifier.LootTableModifiers;
 
 import net.dakotapride.garnished.recipe.GarnishedFanProcessing;
@@ -7,6 +10,9 @@ import net.dakotapride.garnished.registry.GarnishedAdvancementUtils;
 import net.dakotapride.garnished.registry.GarnishedBlockEntities;
 import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.dakotapride.garnished.registry.GarnishedRecipeTypes;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.resources.ResourceLocation;
 
 import net.minecraft.tags.BiomeTags;
@@ -52,6 +58,10 @@ public class CreateGarnished implements ModInitializer {
 		return new ResourceLocation(ID, path);
 	}
 
+	static {
+		REGISTRATE.get().setTooltipModifierFactory(item -> new ItemDescription.Modifier(item, TooltipHelper.Palette.STANDARD_CREATE));
+	}
+
 	@Override
 	public void onInitialize() {
 
@@ -68,6 +78,11 @@ public class CreateGarnished implements ModInitializer {
 		GarnishedFanProcessing.register();
 		LootTableModifiers.modifyLootTables();
 		REGISTRATE.get().register();
+
+		// Legacy Amber Remnant textures
+		FabricLoader.getInstance().getModContainer(ID).ifPresent(modContainer -> {
+			ResourceManagerHelper.registerBuiltinResourcePack(new ResourceLocation(ID, "legacy_amber"), modContainer, ResourcePackActivationType.NORMAL);
+		});
 
 		// Generation
 		BiomeModifications.addFeature(BiomeSelectors.tag(GarnishedTags.HAS_NUT_TREES_TAG),

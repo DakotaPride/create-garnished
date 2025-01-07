@@ -1,5 +1,10 @@
 package net.dakotapride.garnished.item;
 
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.effect.MobEffect;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.item.TooltipFlag;
+
 import org.jetbrains.annotations.NotNull;
 
 import net.dakotapride.garnished.registry.GarnishedFoodValues;
@@ -18,10 +23,19 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.level.Level;
 
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
+
 public class RosyCocktailItem extends ConditionalEffectItem implements IGarnishedUtilities {
 	private static final int DRINK_DURATION = 40;
 	public RosyCocktailItem(Properties properties) {
 		super(2, 0.50F, properties.food(GarnishedFoodValues.ROSY_COCKTAIL).stacksTo(8));
+	}
+
+	@Override
+	public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag isAdvanced) {
+		addEffectTooltip(tooltip, MobEffects.REGENERATION, 5, 100F);
 	}
 
 	@Override

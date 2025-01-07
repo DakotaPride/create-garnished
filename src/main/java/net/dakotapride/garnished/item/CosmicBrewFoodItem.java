@@ -1,5 +1,10 @@
 package net.dakotapride.garnished.item;
 
+import net.dakotapride.garnished.registry.GarnishedEffects;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.item.TooltipFlag;
+
 import org.jetbrains.annotations.NotNull;
 
 import net.dakotapride.garnished.registry.GarnishedFoodValues;
@@ -16,9 +21,18 @@ import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
+
 public class CosmicBrewFoodItem extends Item implements IGarnishedUtilities {
 	public CosmicBrewFoodItem(Properties properties) {
 		super(properties.food(GarnishedFoodValues.COSMIC_BREW).stacksTo(1));
+	}
+
+	@Override
+	public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag isAdvanced) {
+		addEffectTooltip(tooltip, MobEffects.NIGHT_VISION, 600F);
 	}
 
 	@Override

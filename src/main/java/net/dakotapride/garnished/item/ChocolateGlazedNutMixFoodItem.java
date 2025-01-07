@@ -19,6 +19,6 @@ public class ChocolateGlazedNutMixFoodItem extends Item implements IGarnishedUti
 
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
-		tooltip.add(Component.translatable(chocolateGlazedText()).setStyle(chocolateGlazed()));
+		//tooltip.add(Component.translatable(chocolateGlazedText()).setStyle(chocolateGlazed()));
 	}
 }

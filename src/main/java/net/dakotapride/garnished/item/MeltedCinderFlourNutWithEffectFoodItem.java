@@ -2,6 +2,8 @@ package net.dakotapride.garnished.item;
 
 import java.util.List;
 
+import net.minecraft.world.effect.MobEffects;
+
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -26,93 +28,139 @@ public class MeltedCinderFlourNutWithEffectFoodItem extends Item implements IGar
 		public Peanut(Properties properties) {
 			super(GarnishedFoodValues.MELTED_CINDER_FLOUR_PEANUT, properties);
 		}
+
+		@Override
+		public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
+			addEffectTooltip(tooltip, MobEffects.MOVEMENT_SLOWDOWN, cinder_dur);
+			addEffectTooltip(tooltip, MobEffects.INVISIBILITY, cinder_dur);
+		}
 	}
 	public static class Walnut extends MeltedCinderFlourNutWithEffectFoodItem {
 		public Walnut(Properties properties) {
 			super(GarnishedFoodValues.MELTED_CINDER_FLOUR_WALNUT, properties);
+		}
+
+		@Override
+		public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
+			addEffectTooltip(tooltip, MobEffects.DAMAGE_BOOST, cinder_dur);
 		}
 	}
 	public static class Chestnut extends MeltedCinderFlourNutWithEffectFoodItem {
 		public Chestnut(Properties properties) {
 			super(GarnishedFoodValues.MELTED_CINDER_FLOUR_CHESTNUT, properties);
 		}
+
+		@Override
+		public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
+			addEffectTooltip(tooltip, MobEffects.SLOW_FALLING, cinder_dur);
+		}
 	}
 	public static class Hazelnut extends MeltedCinderFlourNutWithEffectFoodItem {
 		public Hazelnut(Properties properties) {
 			super(GarnishedFoodValues.MELTED_CINDER_FLOUR_HAZELNUT, properties);
+		}
+
+		@Override
+		public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
+			addEffectTooltip(tooltip, MobEffects.MOVEMENT_SPEED, 2, cinder_dur);
 		}
 	}
 	public static class Macadamia extends MeltedCinderFlourNutWithEffectFoodItem {
 		public Macadamia(Properties properties) {
 			super(GarnishedFoodValues.MELTED_CINDER_FLOUR_MACADAMIA, properties);
 		}
+
+		@Override
+		public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
+			addEffectTooltip(tooltip, MobEffects.FIRE_RESISTANCE, cinder_dur);
+		}
 	}
 	public static class Cashew extends MeltedCinderFlourNutWithEffectFoodItem {
 		public Cashew(Properties properties) {
 			super(GarnishedFoodValues.MELTED_CINDER_FLOUR_CASHEW, properties);
+		}
+
+		@Override
+		public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
+			addEffectTooltip(tooltip, MobEffects.MOVEMENT_SPEED, cinder_dur);
 		}
 	}
 	public static class Pistachio extends MeltedCinderFlourNutWithEffectFoodItem {
 		public Pistachio(Properties properties) {
 			super(GarnishedFoodValues.MELTED_CINDER_FLOUR_PISTACHIO, properties);
 		}
+
+		@Override
+		public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
+			addEffectTooltip(tooltip, MobEffects.NIGHT_VISION, cinder_dur);
+		}
 	}
 	public static class Almond extends MeltedCinderFlourNutWithEffectFoodItem {
 		public Almond(Properties properties) {
 			super(GarnishedFoodValues.MELTED_CINDER_FLOUR_ALMOND, properties);
+		}
+
+		@Override
+		public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
+			addEffectTooltip(tooltip, MobEffects.DIG_SPEED, cinder_dur);
 		}
 	}
 	public static class Pecan extends MeltedCinderFlourNutWithEffectFoodItem {
 		public Pecan(Properties properties) {
 			super(GarnishedFoodValues.MELTED_CINDER_FLOUR_PECAN, properties);
 		}
+
+		@Override
+		public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
+			addEffectTooltip(tooltip, MobEffects.DAMAGE_RESISTANCE, cinder_dur);
+		}
 	}
 
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
-		tooltip.add(Component.translatable(meltedCinderFlourText()).withStyle(cinderFlour()));
-
-		if (!Screen.hasShiftDown()) {
-			tooltip.add(Component.literal(""));
-			tooltip.add(Component.translatable("text.garnished.hold_shift").withStyle(ChatFormatting.DARK_GRAY));
-		} else {
-			tooltip.add(Component.literal(""));
-			tooltip.add(Component.translatable("text.garnished.holding_shift").withStyle(ChatFormatting.DARK_GRAY));
-		}
-
-		if (Screen.hasShiftDown()) {
-			tooltip.add(Component.literal(""));
-			tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list").withStyle(Style.EMPTY.withColor(0xeeda78)));
-			if (stack.is(GarnishedItems.STRENGTH_CINDER_WALNUT.get())) {
-				// tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.strength").withStyle(Style.EMPTY.withColor(0xc7954b)));
-				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.strength.desc").withStyle(Style.EMPTY.withColor(0xc7954b)));
-			} else if (stack.is(GarnishedItems.RESISTANCE_CINDER_PECAN.get())) {
-				// tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.resistance").withStyle(Style.EMPTY.withColor(0xc7954b)));
-				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.resistance.desc").withStyle(Style.EMPTY.withColor(0xc7954b)));
-			} else if (stack.is(GarnishedItems.SPEED_CINDER_CASHEW.get())) {
-				// tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.speed").withStyle(Style.EMPTY.withColor(0xc7954b)));
-				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.speed.desc").withStyle(Style.EMPTY.withColor(0xc7954b)));
-			} else if (stack.is(GarnishedItems.POTENT_SPEED_CINDER_HAZELNUT.get())) {
-				// tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.potent_speed").withStyle(Style.EMPTY.withColor(0xc7954b)));
-				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.potent_speed.desc").withStyle(Style.EMPTY.withColor(0xc7954b)));
-			} else if (stack.is(GarnishedItems.SLOW_FALLING_CINDER_CHESTNUT.get())) {
-				// tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.slow_falling").withStyle(Style.EMPTY.withColor(0xc7954b)));
-				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.slow_falling.desc").withStyle(Style.EMPTY.withColor(0xc7954b)));
-			} else if (stack.is(GarnishedItems.NIGHT_VISION_CINDER_PISTACHIO.get())) {
-				// tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.night_vision").withStyle(Style.EMPTY.withColor(0xc7954b)));
-				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.night_vision.desc").withStyle(Style.EMPTY.withColor(0xc7954b)));
-			} else if (stack.is(GarnishedItems.FIRE_RESISTANCE_CINDER_MACADAMIA.get())) {
-				// tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.fire_resistance").withStyle(Style.EMPTY.withColor(0xc7954b)));
-				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.fire_resistance.desc").withStyle(Style.EMPTY.withColor(0xc7954b)));
-			} else if (stack.is(GarnishedItems.HASTE_CINDER_ALMOND.get())) {
-				// tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.haste").withStyle(Style.EMPTY.withColor(0xc7954b)));
-				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.haste.desc").withStyle(Style.EMPTY.withColor(0xc7954b)));
-			} else if (stack.is(GarnishedItems.EFFECT_CINDER_BUHG.get())) {
-				// tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.buhg_effects").withStyle(Style.EMPTY.withColor(0xc7954b)));
-				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.buhg_effects.desc.1").withStyle(Style.EMPTY.withColor(0xc7954b)));
-				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.buhg_effects.desc.2").withStyle(Style.EMPTY.withColor(0xc7954b)));
-			}
-		}
+//		tooltip.add(Component.translatable(meltedCinderFlourText()).withStyle(cinderFlour()));
+//
+//		if (!Screen.hasShiftDown()) {
+//			tooltip.add(Component.literal(""));
+//			tooltip.add(Component.translatable("text.garnished.hold_shift").withStyle(ChatFormatting.DARK_GRAY));
+//		} else {
+//			tooltip.add(Component.literal(""));
+//			tooltip.add(Component.translatable("text.garnished.holding_shift").withStyle(ChatFormatting.DARK_GRAY));
+//		}
+//
+//		if (Screen.hasShiftDown()) {
+//			tooltip.add(Component.literal(""));
+//			tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list").withStyle(Style.EMPTY.withColor(0xeeda78)));
+//			if (stack.is(GarnishedItems.STRENGTH_CINDER_WALNUT.get())) {
+//				// tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.strength").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.strength.desc").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//			} else if (stack.is(GarnishedItems.RESISTANCE_CINDER_PECAN.get())) {
+//				// tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.resistance").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.resistance.desc").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//			} else if (stack.is(GarnishedItems.SPEED_CINDER_CASHEW.get())) {
+//				// tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.speed").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.speed.desc").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//			} else if (stack.is(GarnishedItems.POTENT_SPEED_CINDER_HAZELNUT.get())) {
+//				// tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.potent_speed").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.potent_speed.desc").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//			} else if (stack.is(GarnishedItems.SLOW_FALLING_CINDER_CHESTNUT.get())) {
+//				// tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.slow_falling").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.slow_falling.desc").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//			} else if (stack.is(GarnishedItems.NIGHT_VISION_CINDER_PISTACHIO.get())) {
+//				// tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.night_vision").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.night_vision.desc").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//			} else if (stack.is(GarnishedItems.FIRE_RESISTANCE_CINDER_MACADAMIA.get())) {
+//				// tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.fire_resistance").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.fire_resistance.desc").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//			} else if (stack.is(GarnishedItems.HASTE_CINDER_ALMOND.get())) {
+//				// tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.haste").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.haste.desc").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//			} else if (stack.is(GarnishedItems.EFFECT_CINDER_BUHG.get())) {
+//				// tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.buhg_effects").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.buhg_effects.desc.1").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//				tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect_list.buhg_effects.desc.2").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//			}
+//		}
 
 		// if (getCinderEffect(stack) != null && !stack.is(GarnishedItems.EFFECT_CINDER_BUHG.get()) && !stack.is(GarnishedItems.POTENT_SPEED_CINDER_HAZELNUT.get())) {
 		//			tooltip.add(Component.translatable("text.garnished.nut.cinder_flour.effect",

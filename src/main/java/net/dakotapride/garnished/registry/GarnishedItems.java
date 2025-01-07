@@ -47,6 +47,7 @@ import net.dakotapride.garnished.item.wood.NutBoatItem;
 import net.dakotapride.garnished.item.wood.NutChestBoatItem;
 import net.dakotapride.garnished.item.wood.NutSignItem;
 import net.dakotapride.garnished.item.wood.SepiaSignItem;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Rarity;
 
@@ -728,8 +729,8 @@ public class GarnishedItems {
 
 	public static final ItemEntry<SandPaperItem> POLAR_HIDE_SCRATCH_PAPER =
 			REGISTRATE.item("polar_hide_scratch_paper", SandPaperItem::new)
-					.onRegister(s -> ItemDescription.referKey(s, AllItems.SAND_PAPER))
-					.properties(p -> p.defaultDurability(32)).register();
+					.properties(p -> p.defaultDurability(32))
+					.onRegisterAfter(Registries.ITEM, v -> ItemDescription.referKey(v, AllItems.SAND_PAPER)).register();
 
 	public static final ItemEntry<Item> FROST =
 			REGISTRATE.item("frost", Item::new).register();
@@ -764,7 +765,8 @@ public class GarnishedItems {
 	public static final ItemEntry<BokChoyFoodItem> BOK_CHOY =
 			REGISTRATE.item("bok_choy", BokChoyFoodItem::new).register();
 	public static final ItemEntry<SweetTeaItem> SWEET_TEA =
-			REGISTRATE.item("sweet_tea", SweetTeaItem::new).register();
+			REGISTRATE.item("sweet_tea", SweetTeaItem::new)
+					.onRegisterAfter(Registries.ITEM, v -> ItemDescription.referKey(v, AllItems.BUILDERS_TEA)).register();
 
 	public static final ItemEntry<BokChoyLeafItem> BOK_CHOY_SEEDS =
 			REGISTRATE.item("bok_choy_seeds", BokChoyLeafItem::new).register();

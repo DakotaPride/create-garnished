@@ -37,16 +37,7 @@ public class AppleCiderFoodItem extends Item {
 
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level pLevel, @NotNull List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
-		if (!Screen.hasShiftDown()) {
-			tooltip.add(Component.translatable("text.garnished.hold_shift").withStyle(ChatFormatting.DARK_GRAY));
-		} else {
-			tooltip.add(Component.translatable("text.garnished.holding_shift").withStyle(ChatFormatting.DARK_GRAY));
-		}
-
-		if (Screen.hasShiftDown()) {
-			tooltip.add(Component.literal(""));
-			tooltip.add(Component.translatable("text.garnished.effect.clears_wither", "Wither").withStyle(Style.EMPTY.withColor(0xc7954b)));
-		}
+		tooltip.add(Component.translatable("text.garnished.effect.clears_wither", "Wither").withStyle(ChatFormatting.GOLD));
 	}
 
 	@Override

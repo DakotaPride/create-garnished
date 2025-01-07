@@ -6,34 +6,17 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.function.Supplier;
 
-import com.simibubi.create.Create;
-import com.simibubi.create.compat.emi.CreateEmiPlugin;
-import com.simibubi.create.compat.emi.GhostIngredientHandler;
-import com.simibubi.create.content.equipment.blueprint.BlueprintScreen;
-import com.simibubi.create.content.logistics.filter.AttributeFilterScreen;
-import com.simibubi.create.content.logistics.filter.FilterScreen;
-import com.simibubi.create.content.redstone.link.controller.LinkedControllerScreen;
-import com.simibubi.create.content.trains.schedule.ScheduleScreen;
-
-import dev.emi.emi.api.recipe.EmiInfoRecipe;
-import io.github.fabricators_of_create.porting_lib.util.FluidUnit;
-import net.dakotapride.garnished.registry.GarnishedBlocks;
-
-import net.dakotapride.garnished.registry.GarnishedItems;
-
-import org.jetbrains.annotations.NotNull;
-
 import com.simibubi.create.AllFluids;
 import com.simibubi.create.AllItems;
 import com.simibubi.create.AllMenuTypes;
 import com.simibubi.create.compat.emi.BlueprintTransferHandler;
+import com.simibubi.create.compat.emi.CreateEmiPlugin;
 import com.simibubi.create.compat.emi.DoubleItemIcon;
 import com.simibubi.create.compat.emi.recipes.fan.FanEmiRecipe;
 import com.simibubi.create.content.decoration.palettes.AllPaletteStoneTypes;
 import com.simibubi.create.content.fluids.VirtualFluid;
 import com.simibubi.create.foundation.gui.menu.AbstractSimiContainerScreen;
 import com.simibubi.create.foundation.item.TagDependentIngredientItem;
-import com.tterrag.registrate.fabric.SimpleFlowableFluid;
 
 import dev.emi.emi.api.EmiPlugin;
 import dev.emi.emi.api.EmiRegistry;
@@ -45,14 +28,14 @@ import dev.emi.emi.api.stack.Comparison;
 import dev.emi.emi.api.stack.EmiStack;
 import dev.emi.emi.api.widget.Bounds;
 import net.dakotapride.garnished.CreateGarnished;
+import net.dakotapride.garnished.registry.GarnishedBlocks;
 import net.dakotapride.garnished.registry.GarnishedFluids;
+import net.dakotapride.garnished.registry.GarnishedItems;
 import net.dakotapride.garnished.registry.GarnishedRecipeTypes;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Recipe;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.material.Fluids;
 
 public class GarnishedEMI implements EmiPlugin {

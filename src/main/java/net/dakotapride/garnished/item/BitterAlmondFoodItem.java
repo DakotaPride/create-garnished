@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.annotation.Nullable;
 
+import net.minecraft.world.effect.MobEffects;
+
 import org.jetbrains.annotations.NotNull;
 
 import net.dakotapride.garnished.registry.GarnishedFoodValues;
@@ -20,6 +22,7 @@ public class BitterAlmondFoodItem extends Item implements IGarnishedUtilities {
 
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
-		tooltip.add(Component.translatable(garnishedText()).withStyle(standard()));
+		//tooltip.add(Component.translatable(garnishedText()).withStyle(standard()));
+		addEffectTooltip(tooltip, MobEffects.POISON, almond_dur);
 	}
 }

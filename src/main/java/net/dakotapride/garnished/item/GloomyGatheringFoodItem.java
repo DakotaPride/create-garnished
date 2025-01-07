@@ -1,5 +1,9 @@
 package net.dakotapride.garnished.item;
 
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.item.TooltipFlag;
+
 import org.jetbrains.annotations.NotNull;
 
 import net.dakotapride.garnished.registry.GarnishedFoodValues;
@@ -16,9 +20,19 @@ import net.minecraft.world.item.ItemUtils;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 
+import org.jetbrains.annotations.Nullable;
+
+import java.util.List;
+
 public class GloomyGatheringFoodItem extends Item implements IGarnishedUtilities {
 	public GloomyGatheringFoodItem(Properties properties) {
 		super(properties.food(GarnishedFoodValues.GLOOMY_GATHERING).stacksTo(1));
+	}
+
+	@Override
+	public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag isAdvanced) {
+		addEffectTooltip(tooltip, MobEffects.REGENERATION, 600);
+		addEffectTooltip(tooltip, MobEffects.DAMAGE_RESISTANCE, 300);
 	}
 
 	@Override

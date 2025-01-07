@@ -35,21 +35,27 @@ public class CrypticAppleCiderFoodItem extends ConditionalEffectItem implements 
 
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, @NotNull List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
-		if (!Screen.hasShiftDown()) {
-			tooltip.add(Component.translatable("text.garnished.hold_shift").withStyle(ChatFormatting.DARK_GRAY));
-		} else {
-			tooltip.add(Component.translatable("text.garnished.holding_shift").withStyle(ChatFormatting.DARK_GRAY));
-		}
-
-		if (Screen.hasShiftDown()) {
-			tooltip.add(Component.literal(""));
-			tooltip.add(Component.translatable("text.garnished.effect.clears_wither").withStyle(Style.EMPTY.withColor(0xc7954b)));
-			tooltip.add(Component.literal(""));
-			tooltip.add(Component.translatable("text.garnished.apple_cider.cryptic.desc.1").withStyle(Style.EMPTY.withColor(0xc7954b)));
-			tooltip.add(Component.translatable("text.garnished.apple_cider.cryptic.desc.2").withStyle(Style.EMPTY.withColor(0xc7954b)));
-			tooltip.add(Component.translatable("text.garnished.apple_cider.cryptic.desc.3").withStyle(Style.EMPTY.withColor(0xc7954b)));
-			tooltip.add(Component.translatable("text.garnished.apple_cider.cryptic.desc.4").withStyle(Style.EMPTY.withColor(0xc7954b)));
-		}
+//		if (!Screen.hasShiftDown()) {
+//			tooltip.add(Component.translatable("text.garnished.hold_shift").withStyle(ChatFormatting.DARK_GRAY));
+//		} else {
+//			tooltip.add(Component.translatable("text.garnished.holding_shift").withStyle(ChatFormatting.DARK_GRAY));
+//		}
+//
+//		if (Screen.hasShiftDown()) {
+//			tooltip.add(Component.literal(""));
+//			tooltip.add(Component.translatable("text.garnished.effect.clears_wither").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//			tooltip.add(Component.literal(""));
+//			tooltip.add(Component.translatable("text.garnished.apple_cider.cryptic.desc.1").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//			tooltip.add(Component.translatable("text.garnished.apple_cider.cryptic.desc.2").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//			tooltip.add(Component.translatable("text.garnished.apple_cider.cryptic.desc.3").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//			tooltip.add(Component.translatable("text.garnished.apple_cider.cryptic.desc.4").withStyle(Style.EMPTY.withColor(0xc7954b)));
+//		}
+		tooltip.add(Component.translatable("text.garnished.effect.clears_wither", "Wither").withStyle(ChatFormatting.GOLD));
+		tooltip.add(Component.literal(""));
+		addEffectTooltip(tooltip, MobEffects.DAMAGE_BOOST, cr_cider_dur);
+		addChanceForEffect(tooltip, 0.50F);
+		addEffectTooltip(tooltip, MobEffects.MOVEMENT_SLOWDOWN, cr_cider_dur);
+		addChanceForEffect(tooltip, 0.50F);
 	}
 
 	@Override

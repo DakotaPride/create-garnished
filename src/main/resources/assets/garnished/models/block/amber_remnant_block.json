@@ -1,6 +1,7 @@
 {
-  "parent": "minecraft:block/cube_all",
+  "parent": "minecraft:block/cube_column",
   "textures": {
-    "all": "garnished:block/amber_remnant_block"
+    "end": "garnished:block/amber_remnant_block_top",
+    "side": "garnished:block/amber_remnant_block_side"
   }
 }

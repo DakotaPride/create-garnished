@@ -2,6 +2,8 @@ package net.dakotapride.garnished.item;
 
 import java.util.List;
 
+import net.minecraft.world.effect.MobEffects;
+
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -19,6 +21,7 @@ public class UngarnishedNutFoodItem extends Item implements IGarnishedUtilities 
 
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
-		tooltip.add(Component.translatable(ungarnishedText()).withStyle(standard()));
+		// tooltip.add(Component.translatable(ungarnishedText()).withStyle(standard()));
+		addEffectTooltip(tooltip, MobEffects.CONFUSION, 240);
 	}
 }

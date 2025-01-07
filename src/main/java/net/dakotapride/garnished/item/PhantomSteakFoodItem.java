@@ -18,6 +18,6 @@ public class PhantomSteakFoodItem extends Item implements IGarnishedUtilities {
 
 	@Override
 	public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag isAdvanced) {
-		tooltip.add(Component.translatable("text.garnished.salted_food").withStyle(standard()));
+		//tooltip.add(Component.translatable("text.garnished.salted_food").withStyle(standard()));
 	}
 }

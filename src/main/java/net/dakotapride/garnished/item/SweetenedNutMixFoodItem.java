@@ -19,6 +19,6 @@ public class SweetenedNutMixFoodItem extends Item implements IGarnishedUtilities
 
 	@Override
 	public void appendHoverText(@NotNull ItemStack stack, @Nullable Level level, List<Component> tooltip, @NotNull TooltipFlag isAdvanced) {
-		tooltip.add(Component.translatable(sweetenedText()).withStyle(sweetened()));
+		//tooltip.add(Component.translatable(sweetenedText()).withStyle(sweetened()));
 	}
 }

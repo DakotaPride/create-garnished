@@ -18,6 +18,6 @@ public class MeltedCinderFlourNutFoodItem extends Item implements IGarnishedUtil
 
 	@Override
 	public void appendHoverText(ItemStack stack, @Nullable Level level, List<Component> tooltip, TooltipFlag isAdvanced) {
-		tooltip.add(Component.translatable(meltedCinderFlourText()).withStyle(cinderFlour()));
+		//tooltip.add(Component.translatable(meltedCinderFlourText()).withStyle(cinderFlour()));
 	}
 }

@@ -8,13 +8,13 @@
   "processingTime": 150,
   "results": [
     {
-      "count": 1,
+      "count": 3,
       "item": "garnished:shattered_amber_remnant"
     },
     {
       "chance": 0.25,
       "item": "garnished:shattered_amber_remnant",
-      "count": 1
+      "count": 3
     }
   ]
 }

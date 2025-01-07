@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "amber_remnant",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "item": "garnished:shattered_amber_remnant"
+    },
+    {
+      "item": "garnished:shattered_amber_remnant"
+    },
+    {
+      "item": "garnished:shattered_amber_remnant"
+    },
+    {
+      "item": "garnished:shattered_amber_remnant"
+    },
+    {
+      "item": "garnished:shattered_amber_remnant"
+    },
+    {
+      "item": "garnished:shattered_amber_remnant"
+    },
+    {
+      "item": "garnished:shattered_amber_remnant"
+    },
+    {
+      "item": "garnished:shattered_amber_remnant"
+    }
+  ],
+  "result": {
+    "item": "garnished:amber_remnant",
+    "count": 4
+  }
+}

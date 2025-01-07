@@ -1,14 +1,24 @@
 package net.dakotapride.garnished.item;
 
+import java.util.List;
 import java.util.Random;
 
 import net.dakotapride.garnished.CreateGarnished;
 import net.dakotapride.garnished.registry.GarnishedEffects;
 import net.dakotapride.garnished.registry.GarnishedFoodValues;
 import net.minecraft.ChatFormatting;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.Style;
+import net.minecraft.util.Mth;
+import net.minecraft.util.StringUtil;
+import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffectUtil;
 import net.minecraft.world.effect.MobEffects;
+
+import org.apache.commons.lang3.text.WordUtils;
 
 public interface IGarnishedUtilities {
 	int tick = 20;
@@ -22,6 +32,37 @@ public interface IGarnishedUtilities {
 	int cognate_dur = tick * 60;
 	int cane_effect_dur = tick * 10;
 	int sugar_high_dur = tick * 25;
+
+	default void addEffectTooltip(List<Component> tooltip, MobEffect effect, int amplifier, float duration) {
+		tooltip.add(Component.translatable("text.garnished.applies_effect", Component.translatable(effect.getDescriptionId()), amplifier, formatDuration(new MobEffectInstance(effect), duration, 1)).withStyle(effect.getCategory().getTooltipFormatting()));
+	}
+
+	default void addEffectTooltip(List<Component> tooltip, MobEffect effect, float duration) {
+		tooltip.add(Component.translatable("text.garnished.applies_effect.no_amplifier", Component.translatable(effect.getDescriptionId()), formatDuration(new MobEffectInstance(effect), duration, 1)).withStyle(effect.getCategory().getTooltipFormatting()));
+	}
+
+	default void addEffectTooltipConditionalPositive(List<Component> tooltip, MobEffect effect, float duration) {
+		tooltip.add(Component.translatable("text.garnished.applies_effect.no_amplifier.conditional.pos", Component.translatable(effect.getDescriptionId()).withStyle(ChatFormatting.BLUE), Component.translatable("text.garnished.effect.duration", formatDuration(new MobEffectInstance(effect), duration, 1)).withStyle(effect.getCategory().getTooltipFormatting())).withStyle(ChatFormatting.GOLD));
+	}
+
+	default void addEffectTooltipConditionalNegative(List<Component> tooltip, MobEffect effect, float duration) {
+		tooltip.add(Component.translatable("text.garnished.applies_effect.no_amplifier.conditional.neg", Component.translatable(effect.getDescriptionId()).withStyle(ChatFormatting.RED), Component.translatable("text.garnished.effect.duration", formatDuration(new MobEffectInstance(effect), duration, 1)).withStyle(effect.getCategory().getTooltipFormatting())).withStyle(ChatFormatting.GOLD));
+	}
+
+	default void addChanceForEffect(List<Component> tooltip, float chance) {
+		if (Screen.hasShiftDown()) {
+			tooltip.add(Component.translatable("text.garnished.applies_effect.chance", (chance * 100) + "%").withStyle(ChatFormatting.GRAY));
+		}
+	}
+
+	default Component formatDuration(MobEffectInstance effect, float duration, float durationFactor) {
+		if (effect.isInfiniteDuration()) {
+			return Component.translatable("effect.duration.infinite");
+		} else {
+			int i = Mth.floor(duration * durationFactor);
+			return Component.literal(StringUtil.formatTickDuration(i));
+		}
+	}
 
 
 	default String garnishedText() {
