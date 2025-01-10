@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "garnished:block/amber_remnant_block",
+    "side": "garnished:block/amber_remnant_block",
+    "top": "garnished:block/amber_remnant_block"
+  }
+}
