@@ -110,7 +110,7 @@ public class GarnishedFluids {
 						.tickRate(25)
 						.flowSpeed(3)
 						.blastResistance(100f))
-				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.liquid_garnish", 1500, 1400))
+				.fluidAttributes(() -> new CreateAdditionsAttributeHandler("fluid.garnished.garnish", 1500, 1400))
 				.onRegisterAfter(Registries.ITEM, fluid -> {
 					Fluid source = fluid.getSource();
 					FluidStorage.combinedItemApiProvider(source.getBucket()).register(context ->
