@@ -43,7 +43,7 @@ import net.minecraft.world.item.alchemy.PotionBrewing;
 import net.minecraft.world.item.alchemy.Potions;
 import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.levelgen.GenerationStep;
-import plus.dragons.createdragonlib.lang.Lang;
+//import plus.dragons.createdragonlib.lang.Lang;
 
 public class CreateGarnished implements ModInitializer {
 
